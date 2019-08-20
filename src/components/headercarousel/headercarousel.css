@@ -1,0 +1,56 @@
+.headerLogo{
+	width: 500px;
+}
+
+#introduction{
+  display: flex;
+  align-items: center;
+}
+
+.iconBrand{
+  margin-right: 10px;
+}
+
+.slide{
+	width: 100vw;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#logoImage{
+	width: 300px;
+
+}
+#codeText{
+	padding-bottom: 0px;
+	font-size:40px;
+  font-family: 'Open Sans', sans-serif !important;
+	align-content:bottom;
+}
+.parallax {
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.55), 
+      rgba(0, 0, 0, 0.55)
+          ),
+    url("sideshow1.png");
+
+  /* Set a specific height */
+  min-height: 120vh; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  text-align: left;
+  padding-top: 45vh;
+  padding-left: 20vh;
+  color:white;
+
+  -webkit-clip-path: polygon(0 0, 100% 0, 200% 56%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}

@@ -1,0 +1,38 @@
+.container{
+  color: white;
+  margin: 0px;
+  width: inherit;
+}
+
+.row{
+  padding: 25px;
+}
+
+.bottom-container{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: #161616;
+  font-family: 'Open Sans', sans-serif !important;
+  text-align: center;
+}
+
+.top-container{
+  font-family: 'Open Sans', sans-serif !important;
+  text-align: left;
+}
+
+.top-row{
+}
+
+.col-sm{
+}
+
+.copy-right{
+  color: #636363 !important;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+.footer-catchy-text{
+  font-size: 30px;
+}
