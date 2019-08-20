@@ -3,12 +3,14 @@ import 'bootstrap/dist/css/bootstrap.css';
 import NewsHomeBox from './NewsHomeBox.js'
 
 const NewsHome =(props)=> {
-  const size = 3
+  const size = 4
   const news = []
-  for(let i = 0; i <= size; i++ ){
-  	console.log(props.events[i])
-  	news.push(<NewsHomeBox news={props.events[i]}/>)
+  let i = 0;
+  while(news.length != size){
+  	if(!props.events[i].summary.includes("Week") && !(typeof props.events[i].location === 'undefined')) news.push(<NewsHomeBox news={props.events[i]}/>)
+  	i++; 
   }
+
   return (
     <div>{news}</div>
   );
