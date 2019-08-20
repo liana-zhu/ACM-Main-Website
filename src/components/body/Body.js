@@ -20,7 +20,7 @@ class Body extends React.Component {
           } else if (!isLoaded) {
             news = <div>Loading...</div>;
           } else {
-            news = <NewsHome events={this.props.state.calendarEvents.reverse()}/>
+            news = <NewsHome events={this.props.state.calendarEvents}/>
         }
         return(
             <div>

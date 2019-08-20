@@ -5,7 +5,7 @@ import './newshomebox.css';
 
 const NewsHomeBox =(props)=> {
 
-  return (<div className="news-item" style={{backgroundImage: "url(" + props.news.description + ")"}}>
+  return (<div className="news-item" style={{backgroundImage: "url(" + props.news.location + ")"}}>
   	<div className="news-text">
     <div><b>{props.news.summary}</b></div><br></br>
     <div>Author: {props.news.creator.displayName}</div><br></br>

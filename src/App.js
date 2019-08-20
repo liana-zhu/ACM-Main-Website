@@ -25,7 +25,8 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    fetch("https://www.googleapis.com/calendar/v3/calendars/26phfmnvv0r3fi3eaunsnv13oo@group.calendar.google.com/events?orderBy=startTime&singleEvents=true&key=AIzaSyDGuNUOIbfmjWtUg5lexVuaFRgKrtAg2zQ")
+
+    fetch("https://www.googleapis.com/calendar/v3/calendars/acm.calstatela%40gmail.com/events?orderBy=startTime&singleEvents=true&timeMin=2019-08-19T15%3A17%3A00%2B00%3A00&key=AIzaSyDI1k8ZbH2VsqxqwVAefQylegA7ORaW05c")
       .then(res => res.json())
       .then(
         (result) => {
