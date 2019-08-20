@@ -30,12 +30,11 @@
 	align-content:bottom;
 }
 .parallax {
-    background: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.55), 
-      rgba(0, 0, 0, 0.55)
-          ),
-    url("sideshow1.png");
+  background: 
+  linear-gradient(
+  rgba(0, 0, 0, 0.55), 
+  rgba(0, 0, 0, 0.55)),
+  url("sideshow1.png");
 
   /* Set a specific height */
   min-height: 120vh; 
