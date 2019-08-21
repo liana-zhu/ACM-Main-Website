@@ -40,15 +40,17 @@ class Body extends React.Component {
                 <div className="body">
 
                     <div class="container container-body">
-                        <div class="row">
+                        <div class="row container-news">
                             <div className="news">
                                 <h2 class="small-header">Upcoming Events and Recent News</h2>
                                 {news}
-                        </div>
+
+                            </div>
+
+                            
                         </div>
 
-
-                        <div class="row">
+                        <div className="row container-quote">
                             <div class="quote-style-1">Learning takes more than just attending classes. <br></br>It takes hands-on experience. <span className="highlight-text"><i><b>#ACM</b></i></span></div>
                             <div class="col-sm subcon-body">
                                     <div class="quote-style-2">
@@ -62,7 +64,7 @@ class Body extends React.Component {
                                     <br></br>
                                 </div>
                             </div>
-                        
+                            
                         </div>
 
 

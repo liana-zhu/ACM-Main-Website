@@ -7,7 +7,6 @@
 }
 .subcon-body{
 	text-align: left;
-	background-color: #1f1f1f;
 	width: 100vw;
 }
 .container-body{
@@ -20,7 +19,6 @@
 .row{
 	width: 100vw;
 	padding: 0px !important;
-	align-content: center;
 }
 
 .small-header{
@@ -33,11 +31,23 @@
 	margin-right: auto;
 	text-align: left;
 	padding: 50px;
+
+}
+
+.container-news{
+
+}
+
+
+
+.container-quote{
+	-webkit-clip-path: polygon(0 0, 100% 18%, 100% 100%, 0% 100%);
+	clip-path: polygon(0 0, 100% 18%, 100% 100%, 0% 100%);
+	background-color: #161616;
 }
 
 .quote-style-1{
     font-family: 'Open Sans', sans-serif !important;
-	background-color: #1f1f1f;
 	padding: 10%;
 	font-size: 35px;
 	color: white;
