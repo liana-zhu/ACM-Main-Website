@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-import {BrowserRouter,Route} from 'react-router-dom'
+import {BrowserRouter,Route,Redirect} from 'react-router-dom'
 
 import './App.css';
 import Navi from './components/navbar/Navi.js';
@@ -56,6 +56,8 @@ class App extends React.Component {
           <Route path='/calendar' component={Calendar}/>
           <Route path='/membership' component={Membership}/>
           <Route path='/contactus' component={ContactUs}/>
+          <Redirect from="/" to="/home" />
+
         </BrowserRouter>
         <FooterCarousel/>
       </div>

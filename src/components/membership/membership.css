@@ -1,0 +1,24 @@
+.default-padding-top{
+	padding-top: 50px;
+	color:white;
+	text-align: left;
+}
+
+.card{
+	width: auto;
+	height: auto;
+	padding: 50px;
+	margin: 50px;
+}
+
+.header-left{
+	float: left;
+}
+
+.t-shirts{
+	width: 200px;
+}
+
+h2{
+	padding-top: 10px;
+}

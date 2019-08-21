@@ -92,8 +92,7 @@ class Body extends React.Component {
                             </div>
                         </div>
 
-
-                        <div class="row full-container full-container-special">
+                        <div class="row full-container full-container-special d-none d-sm-block">
                             <div class="container">
                                 <div class="row">
                                     
