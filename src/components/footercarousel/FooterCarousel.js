@@ -12,7 +12,7 @@ import Image8 from './images/image8.jpg'
 import Image9 from './images/image9.jpg'
 import './footercarousel.css'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
-import {faInstagram, faFacebookF, faSnapchatGhost} from "@fortawesome/free-brands-svg-icons"
+import {faInstagram, faFacebookF, faDiscord} from "@fortawesome/free-brands-svg-icons"
 
 import 'bootstrap/dist/css/bootstrap.css';
 class FooterCarousel extends React.Component {
@@ -22,7 +22,9 @@ class FooterCarousel extends React.Component {
             <div className="row bottom-container">
             <div className="col-sm footer-text">
               acm.calstatela@gmail.com<br></br>
-                                   <FontAwesomeIcon className="iconBrand" size="2x" icon={faInstagram}></FontAwesomeIcon> <FontAwesomeIcon  className="iconBrand" size="2x" icon={faFacebookF}></FontAwesomeIcon>  <FontAwesomeIcon  className="iconBrand" size="2x" icon={faSnapchatGhost}></FontAwesomeIcon>
+                                  <a href="https://www.instagram.com/calstatela_acm/?hl=en"> <FontAwesomeIcon className="iconBrand" size="2x" icon={faInstagram}></FontAwesomeIcon></a>
+                                  <a href="https://www.facebook.com/calstatela.acm"> <FontAwesomeIcon  className="iconBrand" size="2x" icon={faFacebookF}></FontAwesomeIcon></a>
+                                  <a href="https://discordapp.com/invite/wX58JRv"><FontAwesomeIcon  className="iconBrand" size="2x" icon={faDiscord}></FontAwesomeIcon></a>
               </div>
               <div className="col-sm footer-text">
                   <span className="footer-catchy-text">It's not a bug. <span className="highlight-text"><b><i>It's a feature.</i></b></span></span><br></br>
