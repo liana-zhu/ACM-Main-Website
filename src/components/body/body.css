@@ -15,19 +15,24 @@
 	font-family: 'Montserrat', sans-serif;
 	padding: 0px !important;
 	margin-left: 0px !important;
+	justify-content: center;
 }
 .row{
 	width: 100vw;
-	padding-left: 100px;
-	padding-right: 100px;
+	padding: 0px !important;
+	align-content: center;
 }
 
-.row-header{
-	padding-top: 10%;
-	padding-bottom: 10%;
+.small-header{
+	text-transform: uppercase;
+	font-size: 15px;
 }
+
 .news{
-	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	padding: 50px;
 }
 
 .quote-style-1{
@@ -38,9 +43,74 @@
 	color: white;
 	width: 100vw;
 }
-
 .quote-style-2{
     font-family: 'Open Sans', sans-serif !important;
 	font-size: 35px;
 	color: white;
+}
+
+.projects-text{
+	background-color: #029CD7;
+}
+
+.image-cropper {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    border: solid 2px white;
+}
+.profile-pic {
+  display: inline;
+  margin: 0 auto;
+  margin-left: -25%; 
+  height: 100%;
+  width: auto;
+}
+
+.full-container{
+  width: 100vw !important;
+  height: auto !important;
+  padding-top: 200px;
+}
+
+.officer-info{
+	width: 350px;
+	padding-left: 50px;
+}
+
+.h2-black{
+	color: black;
+}
+
+.space-projects-image{
+	background-image: url('./space-invaders.jpg');
+	background-size: contain;
+	height: auto;
+}
+
+.react-projects-image{
+	background-image: url('./react-background.png');
+	background-size: contain;
+	height: auto;
+}
+
+.projects-text{
+	text-align: left;
+	width: auto;
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+.container-text{
+	width: 500px;
+}
+
+h2{
+	font-size: 23px;
+}
+
+.officer-info{
+	display: inline-block;
+	text-align: left;
 }
