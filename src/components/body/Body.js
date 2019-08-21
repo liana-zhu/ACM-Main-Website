@@ -21,6 +21,9 @@ import NewsHome from '../news/newshome/NewsHome.js';
 import HeaderCarousel from '../headercarousel/HeaderCarousel.js';
 import './body.css'
 
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import {faHandshake, faUsers, faLaptopCode} from "@fortawesome/free-solid-svg-icons"
+
 class Body extends React.Component {
 
     // TODO: Make this dynamic
@@ -37,7 +40,7 @@ class Body extends React.Component {
         return(
             <div>
                 <HeaderCarousel/>
-                <div className="body">
+                <div className="body container">
 
                     <div class="container container-body">
                         <div class="row container-news">
@@ -45,13 +48,31 @@ class Body extends React.Component {
                                 <h2 class="small-header">Upcoming Events and Recent News</h2>
                                 {news}
 
+                            </div>                            
+                        </div>
+                        <div className="row container-quote">
+                            
+                            <div class="quote-style-1">
+                            <div className="god-saver"></div>Learning takes more than just attending classes. <br></br>It takes hands-on experience. <span className="highlight-text"><i><b>#ACM</b></i></span>
+                            </div>
+                            <div className="row"> <h2 className="benefits-h1">ACM BRINGS TO CSULA...</h2></div>
+
+                            <div className="row container-benefits">
+                                        <div className="col-sm"><FontAwesomeIcon className="fa-5x fa-style" icon={faHandshake}></FontAwesomeIcon><div className="benefits-text">
+                                        <h2 className="benefits-h2"><b>Professional Development</b></h2>
+                                        <p>Resume Workshops, Guest speakers (Google, Spawar, JPL, etc..), and Tech-Company tours.<br></br></p></div></div>
+                                        <div className="col-sm"><FontAwesomeIcon className="fa-5x fa-style" icon={faLaptopCode}></FontAwesomeIcon><div className="benefits-text">
+                                        <h2 className="benefits-h2"><b>Career Growth</b></h2>
+                                        Leadership opportunities, After-workshop-hours additional tutoring/help, and Project workshops (Game and web development)
+                                        <p></p></div></div>
+                                        <div className="col-sm"><FontAwesomeIcon className="fa-5x fa-style" icon={faUsers}></FontAwesomeIcon><div className="benefits-text">
+                                        <h2 className="benefits-h2"><b>Socializing and Networking</b></h2>
+                                        <p>Social events (Hiking, camping, etc..), Game Nights, Movie Night<br></br></p></div></div>
+                                        
                             </div>
 
-                            
-                        </div>
+                            <div className="row"> <h2 className="benefits-h1">AND THAT'S JUST TO NAME A FEW...</h2></div>
 
-                        <div className="row container-quote">
-                            <div class="quote-style-1">Learning takes more than just attending classes. <br></br>It takes hands-on experience. <span className="highlight-text"><i><b>#ACM</b></i></span></div>
                             <div class="col-sm subcon-body">
                                     <div class="quote-style-2">
                                         ACM is a <span className="highlight-text"><b><i>project-based</i></b></span> club.<br></br><span className="highlight-text-style2"><b><i>What does this mean?</i></b></span>
