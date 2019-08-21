@@ -8,6 +8,7 @@
 .subcon-body{
 	text-align: left;
 	width: 100vw;
+	padding: 100px;
 }
 .container-body{
 	color: white;
@@ -24,6 +25,7 @@
 .small-header{
 	text-transform: uppercase;
 	font-size: 15px;
+	padding: 0px;
 }
 
 .news{
@@ -36,7 +38,7 @@
 
 .god-saver{
 	width: auto;
-	height: 70px;
+	height: 150px;
 
 }
 
@@ -51,8 +53,8 @@
 }
 
 .container-quote{
-	-webkit-clip-path: polygon(0 0, 100% 18%, 100% 100%, 0% 100%);
-	clip-path: polygon(0 0, 100% 18%, 100% 100%, 0% 100%);
+	-webkit-clip-path: polygon(0 0, 100% 7%, 100% 100%, 0% 100%);
+	clip-path: polygon(0 0, 100% 7%, 100% 100%, 0% 100%);
 	background-color: #161616;
 }
 
@@ -71,6 +73,10 @@
 
 .projects-text{
 	background-color: #029CD7;
+	text-align: right;
+	width: 100px;
+	padding-top: 10%;
+	padding-bottom: 10%;
 }
 
 .image-cropper {
@@ -116,12 +122,17 @@
 	height: auto;
 }
 
-.projects-text{
-	text-align: left;
-	width: auto;
-	padding-top: 10%;
-	padding-bottom: 10%;
+
+.hr-header{
+	color:  #029CD7;
 }
+.container-projects{
+	background-color:black;
+	-webkit-clip-path: polygon(0 17%, 100% 0, 100% 100%, 0% 100%);
+	clip-path: polygon(0 17%, 100% 0, 100% 100%, 0% 100%);
+	margin: 0px;
+}
+
 .container-text{
 	width: 500px;
 }

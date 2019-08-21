@@ -19,37 +19,16 @@ class FooterCarousel extends React.Component {
   render() {
     return (
           <div className="container top-container">
-            <div className="row top-row">
-              <div className="col-sm">
-                 <b>ABOUT US</b><br></br>
-                 What is ACM?<br/>
-                 Our Mission<br/>
-                 Benefits<br/>
-                 Leaders<br/>
-              </div>
-              <div className="col-sm">
-                <b>CALENDAR</b><br></br>
-                 Annual Calendar<br/>
-                 Announcements/Events<br/>
-              </div>
-              <div className="col-sm">
-                <b>MEMBERSHIP</b><br></br>
-                 Types of Memberships<br/>
-                 Payment Options<br/>
-                 Contact Us<br/>
-              </div>
-            </div>
             <div className="row bottom-container">
-            <div className="col-sm">
+            <div className="col-sm footer-text">
               acm.calstatela@gmail.com<br></br>
                                    <FontAwesomeIcon className="iconBrand" size="2x" icon={faInstagram}></FontAwesomeIcon> <FontAwesomeIcon  className="iconBrand" size="2x" icon={faFacebookF}></FontAwesomeIcon>  <FontAwesomeIcon  className="iconBrand" size="2x" icon={faSnapchatGhost}></FontAwesomeIcon>
               </div>
-              <div className="col-sm">
+              <div className="col-sm footer-text">
                   <span className="footer-catchy-text">It's not a bug. <span className="highlight-text"><b><i>It's a feature.</i></b></span></span><br></br>
-                <hr></hr>
                 <b className="copy-right">© Association of Computing Machinery - California State University, Los Angeles.</b>
               </div>
-               <div className="col-sm">
+               <div className="col-sm footer-text">
                  5151 State University Dr,<br></br>Los Angeles, CA 90032
 
 

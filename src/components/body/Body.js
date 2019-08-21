@@ -53,10 +53,11 @@ class Body extends React.Component {
                         <div className="row container-quote">
                             
                             <div class="quote-style-1">
-                            <div className="god-saver"></div>Learning takes more than just attending classes. <br></br>It takes hands-on experience. <span className="highlight-text"><i><b>#ACM</b></i></span>
+                            <div className="god-saver d-lg-none"></div>Learning takes more than just attending classes. <br></br>It takes hands-on experience. <span className="highlight-text"><i><b>#ACM</b></i></span>
                             </div>
-                            <div className="row"> <h2 className="benefits-h1">ACM BRINGS TO CSULA...</h2></div>
-
+                            <div className="row"> <h2 className="benefits-h1">
+                            <div className="hr-header">__________________________________________</div><br></br><br></br>
+                            ACM BRINGS TO CSULA...</h2></div>
                             <div className="row container-benefits">
                                         <div className="col-sm"><FontAwesomeIcon className="fa-5x fa-style" icon={faHandshake}></FontAwesomeIcon><div className="benefits-text">
                                         <h2 className="benefits-h2"><b>Professional Development</b></h2>
@@ -71,9 +72,12 @@ class Body extends React.Component {
                                         
                             </div>
 
-                            <div className="row"> <h2 className="benefits-h1">AND THAT'S JUST TO NAME A FEW...</h2></div>
+                            <div className="row"> <h2 className="benefits-h1">AND THAT'S JUST TO NAME A FEW...
 
-                            <div class="col-sm subcon-body">
+                            <br></br><br></br><div className="hr-header">__________________________________________</div></h2></div>
+
+                            <div class="row container-projects"><div class="col-sm subcon-body ">
+                                    <div className="god-saver d-lg-none"></div>
                                     <div class="quote-style-2">
                                         ACM is a <span className="highlight-text"><b><i>project-based</i></b></span> club.<br></br><span className="highlight-text-style2"><b><i>What does this mean?</i></b></span>
                                     </div>
@@ -85,7 +89,7 @@ class Body extends React.Component {
                                     <br></br>
                                 </div>
                             </div>
-                            
+                            </div>
                         </div>
 
 
@@ -103,7 +107,7 @@ class Body extends React.Component {
                                     <b>Time </b> September 3rd 1:00 PM - 3:30 PM</p></div></div>
                                 </div>
                                 <div class="row">
-                                    <div className="col-sm projects-text"><div className="container-text"><h2><b>Upperclassmen Classmen</b> | React Chatapplication with Firebase</h2>
+                                    <div className="col-sm projects-text"><div className="container-text"><h2><b>Upperclassmen Classmen</b> | React Chat-application with Firebase</h2>
                                     <p>Web development is constantly evolving. Classes only teach the basics like HTML/CSS however there is far more to web development today. This workshop will test your abilities to adapt to new technologies that are regularily used in the professional workforce. In a series of workshops, you will learn the fundamentals of web application development with the popular web framework React.js.</p>
 
                                     <p><b>Technologies </b> Git/Github, React.js, Firebase, Node.js and HTML/CSS<br></br>
@@ -126,15 +130,16 @@ class Body extends React.Component {
                                     a profession. ACM provides the computing field's premier Digital Library and serves its
                                     members and the computing profession with leading-edge publications, conferences, and career
                                     resources.
-                                    <br></br>
-                                    <br></br>
-                                    <button type="button" class="btn btn-outline-light">Learn More...</button>
+                                    
                                 </div>
                             </div>
                         
                         </div>
                     </div>
 
+                    <h2>
+                    <div className="hr-header">__________________________________________</div><br></br><br></br>
+                            ACM 2019-2020 BOARD</h2>
                     <div class="row full-container">
                             <div class="container">
                                 <div class="row">
@@ -153,6 +158,8 @@ class Body extends React.Component {
                                 </div>
                             </div>
                         </div>
+                        <div className="hr-header">__________________________________________</div><br></br><br></br>
+
                </div>
             </div>
         );

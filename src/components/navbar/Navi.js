@@ -32,42 +32,16 @@ class Navi extends React.Component {
                     <a className="navbar-brand" href="{{ url_for('home') }}">
                             {//<img id="logo" src={logo} width="110" class="d-inline-block align-top" alt="Logo"></img>
                     }</a>
-                <div className="navbar-header">
-                    <button id="colorchange" className="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-                <div className="collapse navbar-collapse" id="navbarNav">
+                <div id="navbarNav">
                     <ul className="navbar-nav ml-auto">
                         <Link to='/home'>
                             <li className="nav-item active">
-                                <a className="nav-link" href="#">Home<span className="sr-only">(current)</span></a>
-                            </li>
-                        </Link>
-                        <Link to='/aboutus'>
-                            <li className="nav-item active">
-                                <a className="nav-link" href="#">About Us<span className="sr-only">(current)</span></a>
-                            </li>
-                        </Link>
-                        <Link to='/calendar'>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Calendar</a>
+                                <a className="nav-link return" href="#">Home<span className="sr-only">(current)</span></a>
                             </li>
                         </Link>
                         <Link to='/membership'>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Membership</a>
-                            </li>
-                        </Link>
-                        <Link to='/contactus'>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Contact Us</a>
-                                {/*
-                                <div class="d-flex flex-row ml-3 mr-3 mb-3 about_us_text_computer"><i
-                                    class="fas fa-envelope-open col-6 mt-2"></i><a
-                                    href="mailto:acm.calstatela@gmail.com">Email Us</a>
-                            </div>
-                                */}
+                                <a className="nav-link" href="#"><button type="button" class="btn btn-outline-light">Membership</button></a>
                             </li>
                         </Link>
 

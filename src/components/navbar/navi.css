@@ -9,11 +9,14 @@
     text-transform: uppercase;
     -webkit-transition: all 0.3s ease-in-out 0s;
     text-align:center;
-    
+    vertical-align: center;
 }
 
 .brandlogos{
     padding-top: 25px;
+}
+.return{
+    margin-top: 10px;
 }
 
 .iconBrand{

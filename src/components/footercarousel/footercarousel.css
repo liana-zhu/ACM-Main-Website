@@ -4,13 +4,8 @@
   width: inherit;
 }
 
-.row{
-  padding: 25px;
-}
-
 .bottom-container{
-  padding-top: 5%;
-  padding-bottom: 5%;
+  height: 300px;
   background-color: #161616;
   font-family: 'Open Sans', sans-serif !important;
   text-align: center;
@@ -19,6 +14,11 @@
 .top-container{
   font-family: 'Open Sans', sans-serif !important;
   text-align: left;
+}
+
+.footer-text
+{
+  padding-top:7%;
 }
 
 .copy-right{
