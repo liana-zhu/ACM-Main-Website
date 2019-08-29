@@ -15,9 +15,9 @@ const NewsHomeBox =(props)=> {
   	<div className="news-text">
     <div className="news-email">By {props.news.creator.email}</div>
     <div><b>{props.news.summary}</b></div>
-    <div><div className="news-description">{props.news.description}</div>
-    <div className="times"><div id="date">{dateStr}</div>
-    </div>
+    <div><div dangerouslySetInnerHTML={{ __html: props.news.description }} className="news-description"></div>
+    <div id="date">{props.news.start.dateTime}</div>
+    <div id="time">{props.news.start.dateTime}</div>
     </div>
     </div>
     </div>
