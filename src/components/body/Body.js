@@ -169,8 +169,8 @@ BOARD<br></br><br></br>
                     <b>Isaac Villalva</b> | General committee<br></br>
                     <b>David Tang</b> | General committee<br></br>
 
-                    (Pending Pictures)
-                    Do you want to me a <i>leader</i>? Send an email to acm.calstatela@gmail.com.
+                    (Pending Pictures)<br></br><br></br>
+                    Do you want to me a <i>leader</i>?<br></br> Send an email to acm.calstatela@gmail.com.
                     <br></br><br></br>
                     </div>
                </div>
