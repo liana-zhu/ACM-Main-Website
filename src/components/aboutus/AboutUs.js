@@ -8,7 +8,7 @@ import Image4 from './leaders/deric.jpg'
 import Image5 from './leaders/diego.jpg'
 import Image6 from './leaders/emily.jpg'
 import Image7 from './leaders/gio.jpg'
-import Image8 from './leaders/giovanni.jpg'
+import Image8 from './leaders/Giovanni.jpg'
 import Image9 from './leaders/ingelbert.jpg'
 import Image10 from './leaders/kalvin.jpg'
 import "./aboutus.css"

@@ -17,6 +17,11 @@
 
 }
 
+.times{
+	float: right;
+	margin-top: 87px;
+}
+
 .news-email{
 	font-size: 12px;
     text-transform: uppercase;

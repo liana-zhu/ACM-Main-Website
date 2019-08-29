@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+html{
+    overflow-x: hidden;
+}
+
 body {
     font-family: "Open sans";
     background-color: #1f1f1f !important;
     text-align: center !important;
+    overflow-x: hidden;
 }
 
 .carousel-caption{

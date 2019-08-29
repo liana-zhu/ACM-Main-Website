@@ -14,7 +14,7 @@ class Navi extends React.Component {
         window.addEventListener('scroll', function() {
         console.log('scrolling');
             let y = window.scrollY
-            if (y > 100) {
+            if (y > 600) {
                 console.log(y)
                 const element = document.getElementById('navb');
                 element.classList.add("solid")
@@ -34,7 +34,7 @@ class Navi extends React.Component {
                     }</a>
                 <div id="navbarNav">
                     <ul className="navbar-nav ml-auto">
-                        <Link to='/home'>
+                        <Link to='/'>
                             <li className="nav-item active">
                                 <a className="nav-link return" href="#">Home<span className="sr-only">(current)</span></a>
                             </li>

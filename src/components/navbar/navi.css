@@ -1,4 +1,5 @@
 .navbar {
+    width: 100vw;
     background-color: transparent;
     border-radius: 0 !important;
     letter-spacing: 2px;
@@ -43,7 +44,7 @@
 
 .nav-item{
     font-weight: bold;
-    padding-right: 4rem;
+    padding-right: 1rem;
 }
 
 .btn{
