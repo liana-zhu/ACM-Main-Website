@@ -1,5 +1,6 @@
 import React from 'react'
 import "./membership.css"
+import VenmoQr from './assets/venmo-qr.jpg'
 
 const Membership = () => {
 	return (
@@ -31,7 +32,7 @@ const Membership = () => {
 				❖ Access to all professional speaker events (Google, Spawar, JPL, more!)<br></br>
 				❖ Tutoring and mentorship opportunities 
 				<br></br>
-				<b><u>As of this semester, we will only be accepting PayPal if you're paying online instead of cash.<br></br> All payments MUST be sent to acm.calstatela@gmail.com.
+				<b><u>As of this semester, we will only be accepting PayPal and Venmo if you're paying online instead of cash.<br></br> All payments MUST be sent to acm.calstatela@gmail.com.
 				</u></b></div>
 				<div className="card"><h2>How to become an ACM Member</h2>
 				The two steps to becoming a member are to first "Pay" and then "Sign-up". The steps are detailed below - please follow them to ensure a smooth transaction. Please note that there are NO REFUNDS and that membership DOES NOT guarantee project space.
@@ -40,15 +41,22 @@ const Membership = () => {
 				<br></br>
 				<i> 1-A. Cash Payments</i> Find the ACM Treasurer Geovanny Huerta (or set up a meeting via email: acm.calstatela@gmail.com) and once met with, give exact amount to him. He will give you a receipt. Take a picture of this receipt and proceed to the second step.
 				<i> 1-B. Online Payments</i> Please make sure you have a working paypal account (i.e., can make payments). Pay with paypal by clicking the following button:
-				<a href="https://www.paypal.com/checkoutnow?locale.x=en_US&fundingSource=paypal&sessionID=34fddf83ec_mti6mji6mdm&buttonSessionID=a0dd7194f3_mti6mji6mzc&env=production&fundingOffered=paypal&logLevel=warn&sdkMeta=eyJ1cmwiOiJodHRwczovL3d3dy5wYXlwYWxvYmplY3RzLmNvbS9hcGkvY2hlY2tvdXQuanMifQ%3D%3D&uid=fee22108f3&version=4&token=EC-74H47305T0781223K&xcomponent=1#/checkout/login" class="btn btn-info" role="button">Pay with Paypal</a>
-				Once finished, take a screenshot of your paypal receipt. You can either take a screenshot of the confirmation email OR your transaction history - whatever proves that you have made the purchase. 
+				<a href="https://www.paypal.com/checkoutnow?locale.x=en_US&fundingSource=paypal&sessionID=34fddf83ec_mti6mji6mdm&buttonSessionID=a0dd7194f3_mti6mji6mzc&env=production&fundingOffered=paypal&logLevel=warn&sdkMeta=eyJ1cmwiOiJodHRwczovL3d3dy5wYXlwYWxvYmplY3RzLmNvbS9hcGkvY2hlY2tvdXQuanMifQ%3D%3D&uid=fee22108f3&version=4&token=EC-74H47305T0781223K&xcomponent=1#/checkout/login" class="btn btn-info btn-membership" role="button">Pay with Paypal</a>
+				<br></br>
+				You can also pay with venmo using this QR code:
+				<div className='venmo-container'>
+					<div className='venmo-qr'>
+						<img src={VenmoQr}/>
+					</div>
+				</div>
+				
+				Once finished, take a screenshot of your paypal invoice or venmo invoice. You can either take a screenshot of the confirmation email OR your transaction history - whatever proves that you have made the purchase. 
 				<br></br>
 				<br></br><br></br>
 
 				<h2>2. Fill out the Membership Registration Form</h2>
 				Once you're finished making the payment, please fill out the Google Form with your information (button below). In the very bottom, you will be asked to provide a proof of payment. Please attach the screenshot of either your cash receipt (from the treasurer) or the paypal screenshot.
-				<a href="https://docs.google.com/forms/d/e/1FAIpQLSfrLZsGugSQvWOiViaOD9NufRGCCNjOFoBzQmbaISwnYsl3Lw/viewform?usp=sf_link" class="btn btn-info" role="button">Registration Form</a>
-
+				<a href="https://docs.google.com/forms/d/e/1FAIpQLSfrLZsGugSQvWOiViaOD9NufRGCCNjOFoBzQmbaISwnYsl3Lw/viewform?usp=sf_link" class="btn btn-info btn-membership" role="button">Registration Form</a>
 				<h2>3. Additional steps</h2>
 				Once you have made the payment and filled the google form, you're done! You should expect to recieve emails from us with further information in the following days. If you have any additional questions, you can contact us through our email acm.calstatela@gmail.com or through discord (https://discordapp.com/invite/wX58JRv).
 				<i> </i>

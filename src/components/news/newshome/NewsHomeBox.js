@@ -4,7 +4,12 @@ import './newshomebox.css';
 
 
 const NewsHomeBox =(props)=> {
-
+  let propDate = props.news.start.dateTime;
+  const date = new Date(propDate);
+  const day = date.getDate();
+  const year = date.getFullYear();
+  const month = date.getMonth()+1;
+  const dateStr = month+"/"+day+"/"+year;
   return (<div className="news-item">
     <div className="news-header-image" style={{backgroundImage: "url(" + props.news.location + ")"}}></div>
   	<div className="news-text">
