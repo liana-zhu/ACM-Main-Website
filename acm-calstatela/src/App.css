@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html{
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Open sans";
+    background-color: #1f1f1f !important;
+    text-align: center !important;
+    overflow-x: hidden;
+}
+
+.carousel-caption{
+    margin-bottom: 30rem !important;
+}
+
+.component-default{
+    padding-top: 50px;
+}
+
+a { 
+    color: white; 
+    text-decoration: none;
+}
+
+a:hover{
+    color: #029CD7 !important;
+    text-decoration: none;
+}
+
+.carousel-caption h1 {
+    font-size: 5rem !important;
+    overflow-wrap: normal !important;
+    line-height: 0.9;
+    text-align: left !important;
+    width: 70% !important;
+}
+
+.carousel-caption button{
+    margin-left: 4%;
+}
+
+#sub-title {
+    font-weight: 100 !important;
+    position: absolute !important;
+    top: 0px;
+}
+
+/* #text-header{
+    margin-bottom: 10% !important;
+} */
+.btn-container button:hover{
+    background-color: #007bff !important;
+    border-color: #007bff !important;
+}
+
+#signup2:hover{
+    background-color: #2ecc71 !important;
+    color: #ffffff !important;
+    border-color: #2ecc71 !important;
+}
+
+.wsacm{
+    margin-top: 3rem;
+}
+
+@media screen and (max-width:940px) {
+    .carousel-item h1{
+        font-size: 3rem !important;
+        width: 100% !important;
+    }
+
+    .nav-item button{
+        width: 100% !important;
+    }
+}
+
+.footer-url{
+  line-height: 1.7rem;
+}
+.footer{
+    background-color: #252830;
+    margin: 0;
+}
+
+.text-center{
+    color: white;
+}
+
+#text-color-fixer{
+    color: #212529;
+    margin-top: 1rem;
+}
+
+body:not(.keyboardUser) *:focus {
+    outline: none;
+  }
+
+  textarea:focus, 
+  textarea.form-control:focus, 
+  input.form-control:focus, 
+  input[type=text]:focus, 
+  [type=text].form-control:focus, 
+  [type=password].form-control:focus, 
+  [type=email].form-control:focus, 
+  [type=tel].form-control:focus, 
+  [contenteditable].form-control:focus {
+    box-shadow: inset 0 -1px 0 #ddd;
+  }
+
+.card{
+    background-color: #252830 !important;
+    border-radius: 10px !important;
+    margin: 0.5rem;
+    position: relative !important;
+    height: 15rem;
+    width: 15rem;
+}
+
+#lstext{
+    margin-top: 0.5rem;
+}
+
+.marquee {
+  height: 25px;
+  width: 500px;
+/*  Make sure marquee is wide enough to fit your content  */
+  overflow: hidden;
+  position: relative;
+  
+  float: left;
+}
+
+@keyframes marquee {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+
+#imgsets{
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position-x: 2rem;
+    background-position-y: 2rem;
+    background-position: center;
+    height: 100rem;
+}
+
+.card h3{
+    color: #ffffff;
+}
+
+.card p{
+    color: #ffffff;
+}
+
+.card img{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.project-arduino{
+    border-radius: 5px;
+    background-size: 100%;
+    height: 15rem;
+    width: 25rem;
+}
+
+.project-software{
+    border-radius: 5px;
+    background-size: 140%;
+    background-repeat: no-repeat;
+    height: 15rem;
+    width: 25rem;
+}
+
+.row button{
+    margin: 0.5rem !important;
+    filter: grayscale(50%);
+}
+
+.row button:hover{
+    filter: grayscale(0%);
+}
+
+
+.footer{
+    width: 100%;
+}
+
+#cabinetians{
+    height: 5rem;
+    width: 15rem;
+}
+
+#cabfont{
+    font-size: 20px;
+}
+
+.cabmembers{
+    border-radius: 10% !important;
+    margin: 0.5rem;
+    height: 4rem !important;
+    width: 4rem !important;
+    background-repeat: no-repeat;
+}
+
+.text-container{
+    width: 19rem;
+    position: absolute;
+    top: 15px;
+
+}
+
+.footer p{
+    color: white !important;
+}
+
+.page-footer {
+  background-color:  #1f1f1f;
+}
+
+.footer-divider {
+    border-top-color: rgb(107, 107, 107) !important;
+    margin: 0, 15% !important;
+}
+
+.loginbtn{
+    width: 100% !important;
+}
+
+.carousel-inner{
+    height: 55rem !important;
+}
+
+.carousel-item img{
+    background-position: center, bottom !important;
+    background-size: cover !important;
+    width: unset !important;
+}
+
+.highlight-text{
+    color: #029CD7 !important;
+    font-family: 'Libre Caslon Text', serif;
+}
+
+
+.highlight-text-style2{
+    font-family: 'Libre Caslon Text', serif;
+}
+
+.icon{
+    width: 2rem !important;
+}
+
+/* Animation for Marquee */
+
+.jssorl-009-spin img {
+    animation-name: jssorl-009-spin;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes jssorl-009-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+h1{
+  font-family: "Roboto";
+}
+
+.nav-link{
+  font-family: "Roboto";
+}
