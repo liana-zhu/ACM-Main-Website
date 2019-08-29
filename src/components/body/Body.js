@@ -160,10 +160,15 @@ BOARD<br></br><br></br>
 <br></br><br></br>
                     OFFICERS/COMITTEE<br></br>
 
-                    <b>Deric Kwok</b> | "Jack of all trades" committee<br></br>
-                    <b>Elton Lin</b> |   "Jack of all trades" committee<br></br>
-                    <b>Cristian Corrales</b> |   "Project" officer<br></br> 
-                    <b>Ayush Singh</b> |   "TBD" comittee<br></br> 
+                    <b>Deric Kwok</b> | Web committee<br></br>
+                    <b>Elton Lin</b> |   Administrative committee<br></br>
+                    <b>Cristian Corrales</b> |   Project officer<br></br> 
+                    <b>Ayush Singh</b> |   Outreach comittee<br></br> 
+                    <b>Marco Aguilar</b> | Web committee<br></br>
+                    <b>George Chan</b> | Web committee<br></br>
+                    <b>Isaac Villalva</b> | General committee<br></br>
+                    <b>David Tang</b> | General committee<br></br>
+
                     (Pending Pictures)
                     <br></br><br></br>
                     </div>
