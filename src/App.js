@@ -56,8 +56,6 @@ class App extends React.Component {
           <Route path='/calendar' component={Calendar}/>
           <Route path='/membership' component={Membership}/>
           <Route path='/contactus' component={ContactUs}/>
-          <Redirect from="/" to="/home" />
-
         </BrowserRouter>
         <FooterCarousel/>
       </div>

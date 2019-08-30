@@ -1,9 +1,17 @@
 import React from 'react'
-import "./membership.css"
-
+import { PayPalButton } from 'react-paypal-button'
 import VenmoQr from './assets/venmo-qr.jpg'
 
 const Membership = () => {
+	const paypalOptions = {
+    clientId: '12345',
+    intent: 'capture'
+  }
+ 
+  const buttonStyles = {
+    layout: 'vertical',
+    shape: 'rect',
+  }
 	return (
 		<div className="default-padding-top">
 			<div class="quote-style-1">
@@ -26,7 +34,6 @@ const Membership = () => {
 						❖ Volunteer Opportunities<br></br>
 				</div>
 				<div className="card"><h2>Membership Details/Payment Info</h2>
-
 				As of Fall 2019, we have a "basic" $5 Membership fee which includes all of the following benefits:<br></br>
 				❖ Access to join either upperclassmen/lowerclassmen workshop.<br></br>
 				❖ Complementary pizza.<br></br>
@@ -42,9 +49,11 @@ const Membership = () => {
 				<br></br>
 				<i> 1-A. Cash Payments</i> Find the ACM Treasurer Geovanny Huerta (or set up a meeting via email: acm.calstatela@gmail.com) and once met with, give exact amount to him. He will give you a receipt. Take a picture of this receipt and proceed to the second step.
 				<i> 1-B. Online Payments</i> Please make sure you have a working paypal account (i.e., can make payments). Pay with paypal by clicking the following button:
-				
-				<a href="https://www.paypal.com/checkoutnow?locale.x=en_US&fundingSource=paypal&sessionID=34fddf83ec_mti6mji6mdm&buttonSessionID=a0dd7194f3_mti6mji6mzc&env=production&fundingOffered=paypal&logLevel=warn&sdkMeta=eyJ1cmwiOiJodHRwczovL3d3dy5wYXlwYWxvYmplY3RzLmNvbS9hcGkvY2hlY2tvdXQuanMifQ%3D%3D&uid=fee22108f3&version=4&token=EC-74H47305T0781223K&xcomponent=1#/checkout/login" class="btn btn-info btn-membership" role="button">Pay with Paypal</a>
-				<br></br>
+<PayPalButton
+      paypalOptions={paypalOptions}
+      buttonStyles={buttonStyles}
+      amount={1.00}
+    />				<br></br>
 				You can also pay with venmo using this QR code:
 				<div className='venmo-container'>
 					<div className='venmo-qr'>
