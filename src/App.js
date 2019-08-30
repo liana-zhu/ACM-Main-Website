@@ -26,7 +26,7 @@ class App extends React.Component {
 
   componentDidMount() {
     // TODO: Make this configurable and change the "timeMin" parameter dynamically.
-    fetch("https://www.googleapis.com/calendar/v3/calendars/acm.calstatela%40gmail.com/events?orderBy=startTime&singleEvents=true&timeMin=2019-08-19T15%3A17%3A00%2B00%3A00&key=AIzaSyDI1k8ZbH2VsqxqwVAefQylegA7ORaW05c")
+    fetch("https://www.googleapis.com/calendar/v3/calendars/acm.calstatela%40gmail.com/events?orderBy=startTime&singleEvents=true&timeMin=2019-08-22T15%3A17%3A00%2B00%3A00&key=AIzaSyDI1k8ZbH2VsqxqwVAefQylegA7ORaW05c")
       .then(res => res.json())
       .then(
         (result) => {
@@ -56,8 +56,6 @@ class App extends React.Component {
           <Route path='/calendar' component={Calendar}/>
           <Route path='/membership' component={Membership}/>
           <Route path='/contactus' component={ContactUs}/>
-          <Redirect from="/" to="/home" />
-
         </BrowserRouter>
         <FooterCarousel/>
       </div>
