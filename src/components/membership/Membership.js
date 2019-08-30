@@ -35,6 +35,12 @@ class Membership extends React.Component {
 					❖ Access to all professional speaker events (Google, Spawar, JPL, more!)<br></br>
 					❖ Tutoring and mentorship opportunities 
 					<br></br>
+					<br></br>
+
+					We also have a $12 Membership fee which includes all of the following benefits:<br></br>
+					❖ The same benefits as in the basic membership.<br></br>
+					❖ And a 'It's not a bug. It's a feature' members t-shirt.<br></br>
+					<br></br>
 					<b><u>As of this semester, we will only be accepting PayPal and Venmo if you're paying online instead of cash.<br></br> All payments MUST be sent to acm.calstatela@gmail.com.
 					</u></b></div>
 					<div className="card"><h2>How to become an ACM Member</h2>
