@@ -1,3 +1,53 @@
+.headerLogo{
+	width: 500px;
+}
+.header-text{
+  font-size: 30px;
+  font-family: 'Open Sans', sans-serif !important;
+}
+.iconBrand{
+  margin-right: 10px;
+}
+
+.slide{
+	width: 100vw;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#logoImage{
+	width: 300px;
+
+}
+.parallax_style2 {
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.0), 
+      rgba(0, 0, 0, 0.0)
+          ),
+    url('./assets/header_image.png');
+
+  /* Set a specific height */
+  min-height: 60vh; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: top;
+
+  padding-top: 45vh;
+  padding-left: 20vh;
+  text-align:left;
+  color:white;
+
+  -webkit-clip-path: polygon(0 0, 100% 0, 200% 56%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
 /*
 
 added coded
@@ -13,10 +63,13 @@ end of code
 */
 
 
-.default-padding-top{
-	padding-top: 50px;
-	color:white;
+#membership-body{
+	background-color: #161616;
 	text-align: left;
+}
+
+#membership-pills{
+	display: inline-block;
 }
 
 .card{
