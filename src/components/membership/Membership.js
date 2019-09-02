@@ -1,7 +1,7 @@
 import React from 'react'
 import "./membership.css"
 import VenmoQr from './assets/venmo-qr.jpg'
-import 'bootstrap/dist/css/bootstrap.css';
+import {Tabs,Row,Col,Tab,Nav} from 'react-bootstrap'
 
 class Membership extends React.Component {
 
@@ -16,19 +16,7 @@ class Membership extends React.Component {
 	                            </div>
 				<p className="default-padding-top">
 
-					<div className="card" id="membership-pills">
-						<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-						  <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
-						  <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
-						  <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a>
-						  <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
-						</div>
-						<div class="tab-content" id="v-pills-tabContent">
-						  <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">...</div>
-						  <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
-						  <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
-						  <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
-						</div>
+					<div className="card">
 
 					<h2 className="header-left">Why join ACM?</h2>
 
@@ -65,6 +53,35 @@ class Membership extends React.Component {
 					
 					<h2>1. Payment</h2> The first step is to make the payment. There are two types ways to make a payment, choose what is most convient for you.
 					<br></br>
+
+					<Tab.Container id="left-tabs-example" defaultActiveKey="first">
+						  <Row>
+						    <Col sm={3}>
+						      <Nav variant="pills" className="flex-column">
+						        <Nav.Item>
+						          <Nav.Link eventKey="first">Regular</Nav.Link>
+						        </Nav.Item>
+						        <Nav.Item>
+						          <Nav.Link eventKey="second">Gold</Nav.Link>
+						        </Nav.Item>
+						        <Nav.Item>
+						          <Nav.Link eventKey="third">Faculty/Alumni</Nav.Link>
+						        </Nav.Item>
+						      </Nav>
+						    </Col>
+						    <Col sm={9}>
+						      <Tab.Content>
+						        <Tab.Pane eventKey="first">
+						        dsadadsa
+						        </Tab.Pane>
+						        <Tab.Pane eventKey="second">
+						        </Tab.Pane>
+						      </Tab.Content>
+						    </Col>
+						  </Row>
+					</Tab.Container>
+
+
 					<i> 1-A. Cash Payments</i> Find the ACM Treasurer Geovanny Huerta (or set up a meeting via email: acm.calstatela@gmail.com) and once met with, give exact amount to him. He will give you a receipt. Take a picture of this receipt and proceed to the second step.
 					<i> 1-B. Online Payments</i> Please make sure you have a working paypal account (i.e., can make payments). Pay with paypal by clicking the following button:
 					<div className='paypal-form-container'>
