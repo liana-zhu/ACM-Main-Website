@@ -11,6 +11,12 @@ body {
     overflow-x: hidden;
 }
 
+.default-padding-top{
+    padding-top: 50px;
+    color:white;
+    text-align: left;
+}
+
 .carousel-caption{
     margin-bottom: 30rem !important;
 }

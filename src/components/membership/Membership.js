@@ -1,19 +1,36 @@
 import React from 'react'
 import "./membership.css"
 import VenmoQr from './assets/venmo-qr.jpg'
-
+import 'bootstrap/dist/css/bootstrap.css';
 
 class Membership extends React.Component {
 
 		render(){
 			return (
-			<div className="default-padding-top">
+
+			<div id="membership-body">
+				<div className="parallax_style2">
+	             </div>
 				<div class="quote-style-1">
 	                            <div className="god-saver d-lg-none"></div>So you're <i>interested</i>?<br></br>Cool! Welcome to the <span className="highlight-text"><i><b>family</b></i></span>!
 	                            </div>
-				<p className="default-padding-top"> 
+				<p className="default-padding-top">
 
-					<div className="card"><h2 className="header-left">Why join ACM?</h2>
+					<div className="card" id="membership-pills">
+						<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+						  <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+						  <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
+						  <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a>
+						  <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+						</div>
+						<div class="tab-content" id="v-pills-tabContent">
+						  <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">...</div>
+						  <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
+						  <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
+						  <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+						</div>
+
+					<h2 className="header-left">Why join ACM?</h2>
 
 							Classes aren't enough to give your practical experience once you hit the work-force. CSULA's very own chapter of the Association for<br></br> Computing Machinery takes care of its members in more ways then one. We do our best to keep you updated on special events as well as ongoing club activities.
 							<br></br><br></br>
