@@ -1,8 +1,5 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
-//import slide1 from './slides/sideshow1.png';
-//import slide2 from './slides/sideshow1.png';
-//import slide3 from './slides/sideshow1.png';
 
 import Image0 from './leaders/kalvin.jpg'
 import Image1 from './leaders/gio.jpg'
@@ -66,7 +63,7 @@ class Body extends React.Component {
                             </div>
                             <div className="row"> <h2 className="benefits-h1">
                             <div className="hr-header">__________________________________________</div><br></br><br></br>
-                            ACM BRINGS TO CSULA...</h2></div>
+                            ACM BRINGS TO CAL STATE LA...</h2></div>
                             <div className="row container-benefits">
                                         <div className="col-sm"><FontAwesomeIcon className="fa-5x fa-style" icon={faHandshake}></FontAwesomeIcon><div className="benefits-text">
                                         <h2 className="benefits-h2"><b>Professional Development</b></h2>
@@ -112,14 +109,18 @@ class Body extends React.Component {
                                     <p>Are you interested in creating something where results show immediately? Have you ever played videogames but always wondered, how are they made? In this condense series of workshops, you will learn the Python and through developing your very own class arcade game: Space Invaders.</p>
 
                                     <p><b>Technologies </b> Git/Github, Python and more python...<br></br>
-                                    <b>Time </b> September 3rd 1:00 PM - 3:30 PM</p></div></div>
+                                    <b>Time </b> September 3rd 1:00 PM - 3:30 PM</p>
+
+                                    <a href="https://forms.gle/KQaZkiyGaMPpKyx59" class="btn btn-info btn-membership" role="button">Register!</a></div></div>
                                 </div>
                                 <div class="row">
                                     <div className="col-sm projects-text"><div className="container-text"><h2><b>Upperclassmen Classmen</b> | React Chatapplication with Firebase</h2>
                                     <p>Web development is constantly evolving. Classes only teach the basics like HTML/CSS however there is far more to web development today. This workshop will test your abilities to adapt to new technologies that are regularily used in the professional workforce. In a series of workshops, you will learn the fundamentals of web application development with the popular web framework React.js.</p>
 
                                     <p><b>Technologies </b> Git/Github, React.js, Firebase, Node.js and HTML/CSS<br></br>
-                                    <b>Time </b> September 3rd 1:00 PM - 3:30 PM</p></div></div>
+                                    <b>Time </b> September 3rd 1:00 PM - 3:30 PM</p>
+                                    </div><a href="https://forms.gle/KQaZkiyGaMPpKyx59" class="btn btn-info btn-membership" role="button">Register!</a>
+                                    </div>
                                     <div className="col-sm react-projects-image"></div>
                                 </div>
                             </div>

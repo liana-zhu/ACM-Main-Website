@@ -14,7 +14,8 @@ import Body from './components/body/Body.js';
 import FooterCarousel from './components/footercarousel/FooterCarousel.js';
 
 class App extends React.Component {
-  
+
+
   constructor(props){
     super(props)
     this.state={
