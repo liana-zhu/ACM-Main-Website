@@ -135,7 +135,7 @@ class Membership extends React.Component {
 
 					<h2>2. Fill out the Membership Registration Form</h2>
 					Once you're finished making the payment, please fill out the Google Form with your information (button below). In the very bottom, you will be asked to provide a proof of payment. Please attach the screenshot of either your cash receipt (from the treasurer) or the paypal screenshot.
-					<a href="https://docs.google.com/forms/d/e/1FAIpQLSfrLZsGugSQvWOiViaOD9NufRGCCNjOFoBzQmbaISwnYsl3Lw/viewform?usp=sf_link" class="btn btn-info btn-membership" role="button">Registration Form</a>
+					<a href="https://docs.google.com/forms/d/e/1FAIpQLSfrLZsGugSQvWOiViaOD9NufRGCCNjOFoBzQmbaISwnYsl3Lw/viewform?usp=sf_link" class="btn btn-info btn-membership anchor-white" role="button">Registration Form</a>
 					<h2>3. Additional steps</h2>
 					Once you have made the payment and filled the google form, you're done! You should expect to recieve emails from us with further information in the following days. If you have any additional questions, you can contact us through our email acm.calstatela@gmail.com or through discord (https://discordapp.com/invite/wX58JRv).
 					<i> </i>

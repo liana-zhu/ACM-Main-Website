@@ -26,8 +26,12 @@ body {
 }
 
 a { 
-    color: white; 
+    color: black !important;
     text-decoration: none;
+}
+
+.anchor-white {
+    color: white !important;
 }
 
 a:hover{

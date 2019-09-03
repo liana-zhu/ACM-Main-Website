@@ -47,11 +47,11 @@ class Body extends React.Component {
                             <div className="news">
                                 <div className="d-block d-sm-none d-md-none">
                                     <h2 class="small-header">Upcoming Events and Recent News</h2><br></br>
-                                    <a className="view-more-sm" href="https://calendar.google.com/calendar/embed?src=acm.calstatela%40gmail.com&ctz=America%2FLos_Angeles">View Events on Google Calendar...</a>
+                                    <a className="view-more-sm anchor-white" href="https://calendar.google.com/calendar/embed?src=acm.calstatela%40gmail.com&ctz=America%2FLos_Angeles">View Events on Google Calendar...</a>
                                     
                                 </div>
                                 <div className="d-none d-sm-block d-md-block">
-                                    <a className="view-more" href="https://calendar.google.com/calendar/embed?src=acm.calstatela%40gmail.com&ctz=America%2FLos_Angeles">View Events on Google Calendar...</a>
+                                    <a className="view-more anchor-white" href="https://calendar.google.com/calendar/embed?src=acm.calstatela%40gmail.com&ctz=America%2FLos_Angeles">View Events on Google Calendar...</a>
                                     <h2 class="small-header">Upcoming Events and Recent News</h2>
                                 </div>
                                 <div className='news-container'>
