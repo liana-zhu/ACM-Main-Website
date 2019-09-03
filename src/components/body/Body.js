@@ -153,25 +153,25 @@ BOARD<br></br><br></br>
 
 <div className="row-leaders">
                                            <div className="col-leaders"><img className="image-cropper profile-pic " src={Image0}></img><div className="officer-info"><h2>Kalvin Mateo</h2>President</div></div>
-                                            <div className="col-leaders"><img className="image-cropper profile-pic " src={Image1}></img><div className="officer-info"><h2>Giovanny Garcia</h2>Vice-President</div></div></div>
+                                            <div className="col-leaders"><img className="image-cropper profile-pic " src={Image1}></img><div className="officer-info"><h2>Giovanni Garcia</h2>Vice-President</div></div></div>
              <div className="row-leaders">
                    
-                                <div className="col-leaders"><img className="image-cropper profile-pic " src={Image2}></img><div className="officer-info"><h2>Geovanni Huerta</h2>Treasurer</div></div>
+                                <div className="col-leaders"><img className="image-cropper profile-pic " src={Image2}></img><div className="officer-info"><h2>Geovanny Huerta</h2>Treasurer</div></div>
 
-             <div className="col-leaders"><img className="image-cropper profile-pic " src={Image3}></img><div className="officer-info"><h2>Geovanny Castellanos</h2>VP of Internal Affairs</div></div></div>
+             <div className="col-leaders"><img className="image-cropper profile-pic " src={Image3}></img><div className="officer-info"><h2>Giovanni Castellanos</h2>VP of Internal Affairs</div></div></div>
 <div className="row-leaders">
 
 <div className="col-leaders"><img className="image-cropper profile-pic " src={Image4}></img><div className="officer-info"><h2>Ingelbert Figueroa</h2>VP of External Affairs</div></div>
 <div className="col-leaders"><img className="image-cropper profile-pic " src={Image5}></img><div className="officer-info"><h2>Andrew Gonzalez</h2>Project Manager</div></div></div>
 <div className="row-leaders">
 
-<div className="col-leaders"><img className="image-cropper profile-pic " src={Image6}></img><div className="officer-info"><h2>Srivats V.</h2>Secretary</div></div>
+<div className="col-leaders"><img className="image-cropper profile-pic " src={Image6}></img><div className="officer-info"><h2>Srivats Venkataraman</h2>Secretary</div></div>
 <div className="col-leaders"><img className="image-cropper profile-pic " src={Image7}></img><div className="officer-info"><h2>Emily Pascua</h2>Web Master</div></div></div>
 <br></br><br></br>
                     OFFICERS/COMITTEE<br></br>
 
                     <b>Deric Kwok</b> | Web committee<br></br>
-                    <b>Elton Lin</b> |   Administrative committee<br></br>
+                    <b>Elton Lin</b> |   Administrative officer<br></br>
                     <b>Cristian Corrales</b> |   Project officer<br></br> 
                     <b>Ayush Singh</b> |   Outreach comittee<br></br> 
                     <b>Marco Aguilar</b> | Web committee<br></br>
