@@ -39,6 +39,11 @@ class Navi extends React.Component {
                                 <a className="nav-link anchor-white return" href="#">Home<span className="sr-only">(current)</span></a>
                             </li>
                         </Link>
+                        <Link to="/projects">
+                            <li className="nav-item">
+                                <a className="nav-link anchor-white return" href="#">Projects</a>
+                            </li>
+                        </Link>
                         <Link to='/membership'>
                             <li className="nav-item">
                                 <a className="nav-link anchor-white" href="#"><button type="button" class="btn btn-outline-light">Membership</button></a>

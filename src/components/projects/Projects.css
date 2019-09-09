@@ -1,0 +1,56 @@
+.quote-style-2 {
+    text-align: left;
+    padding-top: 75px;
+    padding-left: 75px;
+}
+
+.project-card {
+    margin: auto;
+    text-align: left;
+    color: white;
+}
+
+.project-nav-link {
+    color: white;
+}
+
+.quote-block {    
+    border-radius: 15px;
+	background-color:#1f1f1f !important;
+}
+
+.quote-bg {
+    background: url('pictures/56775641_2321879274713318_1528259817590751232_n.jpg');
+    background-size: cover;  
+    background-attachment: fixed;
+    background-blend-mode: darken;
+}
+
+.project-tab-content {
+    width: 70vw
+}
+
+.project-images {
+    max-width: 20vw;
+    margin: 5px;
+}
+
+.project-poster {
+    max-width: 40vw;
+}
+
+.project-body {
+    color: white
+}
+
+.mentorship-body {
+    padding-top: 10vh;
+    padding-left: 10vw;
+    padding-bottom: 8vh;
+    padding-right: 10vw;
+    text-align: left;
+}
+
+.disclaimer {
+    font-size: 20px;
+}
