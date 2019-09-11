@@ -16,7 +16,7 @@
 
 .quote-block {    
     border-radius: 15px;
-	background-color:#1f1f1f !important;
+    background-color:#1f1f1f !important;
 }
 
 .quote-bg {
@@ -31,12 +31,14 @@
 }
 
 .project-images {
+    min-width: 2in;
     max-width: 20vw;
     margin: 5px;
 }
 
 .project-poster {
-    max-width: 40vw;
+    min-width: 200px;
+    max-width: 20vw;
 }
 
 .project-body {
@@ -53,4 +55,15 @@
 
 .disclaimer {
     font-size: 20px;
+}
+
+.anchor-blue {
+    color: #029CD7 !important;
+}
+
+.mentorship-images {
+    float: right;
+    min-width: 1.75in;
+    max-width: 20vw;
+    margin: 15px;
 }

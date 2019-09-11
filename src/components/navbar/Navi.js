@@ -41,7 +41,7 @@ class Navi extends React.Component {
                         </Link>
                         <Link to="/projects">
                             <li className="nav-item">
-                                <a className="nav-link anchor-white return" href="#">Projects</a>
+                                <a className="nav-link anchor-white return" href="#">Projects/Programs</a>
                             </li>
                         </Link>
                         <Link to='/membership'>
