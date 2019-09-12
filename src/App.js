@@ -9,6 +9,7 @@ import AboutUs from './components/aboutus/AboutUs'
 import Calendar from './components/calendar/Calendar'
 import Membership from './components/membership/Membership'
 import ContactUs from './components/contactus/ContactUs'
+import Events from './components/events/Events';
 
 import HeaderCarousel from './components/headercarousel/HeaderCarousel.js';
 import Body from './components/body/Body.js';
@@ -58,6 +59,7 @@ class App extends React.Component {
           <Route path='/calendar' component={Calendar}/>
           <Route path='/membership' component={Membership}/>
           <Route path='/contactus' component={ContactUs}/>
+          <Route path='/events' component={Events}/>
         </BrowserRouter>
         <FooterCarousel/>
       </div>
