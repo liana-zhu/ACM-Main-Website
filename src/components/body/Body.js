@@ -180,7 +180,7 @@ BOARD<br></br><br></br>
                     <b>David Tang</b> | General committee<br></br>
 
                     (Pending Pictures)<br></br><br></br>
-                    Do you want to me a <i>leader</i>?<br></br> Send an email to acm.calstatela@gmail.com.
+                    Do you want to be a <i>leader</i>?<br></br> Send an email to acm.calstatela@gmail.com.
                     <br></br><br></br>
                     </div>
                </div>
