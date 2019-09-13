@@ -15,7 +15,7 @@ class HeaderCarousel extends React.Component {
                 <div className="parallax">
                   <div id="introduction"><img id="logoImage" src={logo}></img>
                   <div className="d-none d-md-block"><span id="codeText">.creates('<Typed className="typed"
-                        strings={["creative thinkers", "future leaders", "realife experience", "problem solvers"]}
+                        strings={["creative thinkers", "future leaders", "real-life experience", "problem solvers"]}
                         typeSpeed={100}
                         backDelay={60}
                         loop
