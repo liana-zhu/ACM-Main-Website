@@ -33,7 +33,7 @@ class Events extends React.Component {
                     <Jumbotron className="jumbo">
                         <h1 className="jumbo-text">View Events on Google Calendar...</h1>
 
-                        <Button variant="primary" size="lg" className="calendar-button">ACM Calendar</Button>
+                        <a href="https://calendar.google.com/calendar/embed?src=acm.calstatela%40gmail.com&ctz=America%2FLos_Angeles"><Button variant="primary" size="lg" className="calendar-button">ACM Calendar</Button></a>
                     </Jumbotron>
                 </div>
                 <div className="blue-line"></div>
