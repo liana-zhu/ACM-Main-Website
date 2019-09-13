@@ -42,6 +42,10 @@ class Navi extends React.Component {
                         <Link to="/events">
                             <li className="nav-item">
                                 <a className="nav-link anchor-white return" href="#">Events</a>
+                        </Link>
+                        <Link to="/projects">
+                            <li className="nav-item">
+                                <a className="nav-link anchor-white return" href="#">Projects/Programs</a>
                             </li>
                         </Link>
                         <Link to='/membership'>
@@ -49,8 +53,6 @@ class Navi extends React.Component {
                                 <a className="nav-link anchor-white" href="#"><button type="button" class="btn btn-outline-light">Membership</button></a>
                             </li>
                         </Link>
-
-
                     </ul>
                 </div>
             </nav>
