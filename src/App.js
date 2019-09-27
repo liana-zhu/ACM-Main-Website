@@ -3,11 +3,14 @@ import logo from './logo.svg';
 import {BrowserRouter,Route,Redirect} from 'react-router-dom'
 
 import './App.css';
+import Config from './config';
 import Navi from './components/navbar/Navi.js';
 import AboutUs from './components/aboutus/AboutUs'
 import Calendar from './components/calendar/Calendar'
 import Membership from './components/membership/Membership'
 import ContactUs from './components/contactus/ContactUs'
+import Events from './components/events/Events';
+import Projects from './components/projects/Projects'
 
 import HeaderCarousel from './components/headercarousel/HeaderCarousel.js';
 import Body from './components/body/Body.js';
@@ -27,7 +30,7 @@ class App extends React.Component {
 
   componentDidMount() {
     // TODO: Make this configurable and change the "timeMin" parameter dynamically.
-    fetch("https://www.googleapis.com/calendar/v3/calendars/acm.calstatela%40gmail.com/events?orderBy=startTime&singleEvents=true&timeMin=2019-08-22T15%3A17%3A00%2B00%3A00&key=AIzaSyDI1k8ZbH2VsqxqwVAefQylegA7ORaW05c")
+    fetch("https://www.googleapis.com/calendar/v3/calendars/acm.calstatela%40gmail.com/events?orderBy=startTime&singleEvents=true&timeMin=2019-08-22T15%3A17%3A00%2B00%3A00&key=" + Config.api_key)
       .then(res => res.json())
       .then(
         (result) => {
@@ -57,6 +60,8 @@ class App extends React.Component {
           <Route path='/calendar' component={Calendar}/>
           <Route path='/membership' component={Membership}/>
           <Route path='/contactus' component={ContactUs}/>
+          <Route path='/events' component={Events}/>
+          <Route path='/projects' component={Projects}/>
         </BrowserRouter>
         <FooterCarousel/>
       </div>
