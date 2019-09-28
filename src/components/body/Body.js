@@ -120,7 +120,6 @@ class Body extends React.Component {
                 </div>
               </div>
             </div>
-
             <div className="row">
               {" "}
               <h2 className="benefits-h1">
