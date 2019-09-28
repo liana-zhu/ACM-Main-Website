@@ -122,8 +122,21 @@ end of code
 	margin: 50px;
 }
 
+a{
+	color: white !important;
+}
+
+.nav-item{
+	color:white !important;
+
+}
+
 .header-left{
 	float: left;
+}
+
+.btn-info{
+	color:white !important;
 }
 
 .t-shirts{
@@ -134,9 +147,6 @@ end of code
 	text-align: center;
 }
 
-.membership-btn-override {
-	background-color: #edce00;
-}
 
 .venmo-container {
 	display: flex;

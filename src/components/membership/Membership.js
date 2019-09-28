@@ -1,7 +1,7 @@
 import React from 'react'
 import "./membership.css"
 import VenmoQr from './assets/venmo-qr.jpg'
-import {Tabs,Row,Col,Tab,Nav} from 'react-bootstrap'
+import {Tabs,Row,Col,Tab,Nav, Button} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
 import Modal from 'react-awesome-modal';
 
@@ -28,6 +28,8 @@ class Membership extends React.Component {
 								CSULA's very own chapter of the Association for Computing Machinery takes care of its<br></br>
 								members in more ways then one. We do our best to keep you updated on special events<br></br>
 								as well as ongoing club activities. We were also <span className="highlight-text"><b>voted best student org. of the year</b></span>!
+								<br></br>
+								<br></br>
 								</div>
 	                            </div>
 				<div className="default-padding-top" >
@@ -121,9 +123,8 @@ class Membership extends React.Component {
 								<a href={VenmoQr}>
 								<button class='btn btn-info btn-membership' src={VenmoQr}>Venmo QR Code</button></a>
 								<br></br><br></br>
-						        <i>3 - Cash (Least Prefered)</i><br></br>
-						        Find the ACM Treasurer Geovanny Huerta (or set up a meeting via email: acm.calstatela@gmail.com)and once met with, give exact amount to him. He will give you a receipt. Take a picture of this receipt and proceed to the second step.
-						        <br></br>
+								For more options, visit our office hours at E&T C-245 from 4:30 PM - 5:00 PM every Thursday.
+						     		        <br></br>
 						        <br></br>
 						        <h2><span className="highlight-text"><b><i>Step Two</i></b></span> ❖ Sign-up</h2>
 						        Once you're finished making the payment, please fill out the Google Form with your information
@@ -180,8 +181,7 @@ class Membership extends React.Component {
 								<a href={VenmoQr}>
 								<button class='btn btn-info btn-membership' src={VenmoQr}>Venmo QR Code</button></a>
 								<br></br><br></br>
-						        <i>3 - Cash (Least Prefered)</i><br></br>
-						        Find the ACM Treasurer Geovanny Huerta (or set up a meeting via email: acm.calstatela@gmail.com) <br></br>and once met with, give exact amount to him. He will give you a receipt. Take a picture of this receipt and proceed to the second step.
+								For more options, visit our office hours at E&T C-245 from 4:30 PM - 5:00 PM every Thursday.
 						        <br></br>
 						        <br></br>
 						        <h2><span className="highlight-text"><b><i>Step Two</i></b></span> ❖ Sign-up</h2>
@@ -196,7 +196,7 @@ class Membership extends React.Component {
 						        <h2><span className="highlight-text"><b><i>ACM Membership</i></b></span> ❖ GOLD TIER</h2>
 						        <h2>Benefits</h2>
 						        	- ACM's "It's not a bug; It's a feature" T-Shirt included.<br></br>
-						        	- All benefits from student membership included.<br></br>
+						        	- All benefits from student/faculty membership included.<br></br>
 									<a href="https://i.imgur.com/RerJpNV.png"><img src="https://i.imgur.com/RerJpNV.png"></img></a>
 								<h2>How to become a member?</h2>
 						        	The two steps to becoming a member are to first "Pay" and then "Sign-up". The steps are detailed below,<br></br>
@@ -237,8 +237,7 @@ class Membership extends React.Component {
 								<a href={VenmoQr}>
 								<button class='btn btn-info btn-membership' src={VenmoQr}>Venmo QR Code</button></a>
 								<br></br><br></br>
-						        <i>3 - Cash (Least Prefered)</i><br></br>
-						        Find the ACM Treasurer Geovanny Huerta (or set up a meeting via email: acm.calstatela@gmail.com) <br></br>and once met with, give exact amount to him. He will give you a receipt. Take a picture of this receipt and proceed to the second step.
+								For more options, visit our office hours at E&T C-245 from 4:30 PM - 5:00 PM every Thursday.
 						        <br></br>
 						        <br></br>
 						        <h2><span className="highlight-text"><b><i>Step Two</i></b></span> ❖ Sign-up</h2>
