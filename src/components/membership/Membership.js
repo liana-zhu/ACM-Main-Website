@@ -45,15 +45,7 @@ class Membership extends React.Component {
 						❖ Networking Opportunities<br></br>
 						❖ Volunteer Opportunities<br></br>
 						</div>
-	             	</div>
-	             	<div class="quote-style-2">
-	                            <br></br>
-	                            <span className="highlight-text"><i>Let's get started!</i></span>
-	                            <br></br>
-	                            <div className="membership-text">
-								Please select one of our three membership options...
-								</div><br></br>
-	                            </div>			
+	             	</div>	
 
 					<div className="card">
 						<Tab.Container id="left-tabs-example" defaultActiveKey="first">
@@ -253,8 +245,7 @@ class Membership extends React.Component {
 						  </Row>
 					</Tab.Container><br></br>
 					</div>
-					<div class="quote-style-2">
-	                            <br></br>
+					<div class="quote-style-2 membership-footer-text">
 	                            <span 
             className="highlight-text"><i>Thank you for your support!</i></span>
 	                            <br></br>
