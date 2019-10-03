@@ -4,6 +4,8 @@ import CurrentEventsModal from './CurrentEventsModal';
 import CardImageModal from './CardImageModal';
 import {Card, Button, Jumbotron, Container, Row, Col, Carousel, Image} from 'react-bootstrap';
 
+import Calendar from '../calendar/Calendar';
+
 // This component won't hold a state for not but decided 
 // to make it into a Class component for now
 class Events extends React.Component {
@@ -19,6 +21,11 @@ class Events extends React.Component {
     render() {
         return(
             <div className="events-container">
+                {/* <div><br/></div>
+                <div><br/></div>
+                <div><br/></div>
+                <Calendar /> */}
+
                 <div className="events-main">
                     <div className="events-main-text">
                         <p>Never miss an <span className="emphasis">Event</span></p>
