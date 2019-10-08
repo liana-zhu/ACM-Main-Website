@@ -65,11 +65,40 @@
     font-weight: bold;
 }
 
-.prev-button {
+.calendar-header {
+    display: flex;
+    font-weight: 500;
+}
+
+.calendar-header button {
+    color:white;
+    background-color: rgb(119, 118, 118);
+    height: 2rem;
+    width: 4rem;
+
+    align-self: center;
     margin-right: 1rem;
+
+    border: 1px solid rgb(119, 118, 118);
+    border-radius: 4px;
+}
+
+.prev-button {
+}
+
+.next-button {
+}
+
+.month-header {
+    font-size: 2rem;
+    font-weight: 400;
 }
 
 .today {
     background-color:#029CD7;
-    color: rgb(67, 67, 67);
+    color: white;
+}
+
+.today p:hover {
+    color: rgb(194, 194, 194);   
 }

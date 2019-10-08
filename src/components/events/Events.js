@@ -96,7 +96,7 @@ class Events extends React.Component {
 
                                 </Card.Text>
                                 
-                                <div class="rsvp-container">
+                                <div className="rsvp-container">
                                     <a
                                         href="https://docs.google.com/forms/d/e/1FAIpQLScywhcmVj_RjPPcjrS1zQHtD8tpH4L0o3X8AEcGhAnWKJ3ctQ/viewform"
                                         className="rsvp-button"

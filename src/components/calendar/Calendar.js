@@ -25,7 +25,6 @@ class Calendar extends React.Component {
         const yearBefore = new Date(new Date().setFullYear(new Date().getFullYear() - 1));
         let timeMin = this.ISODateString(yearBefore);
 
-        // Needs API KEY!
         axios.get('https://www.googleapis.com/calendar/v3/calendars/acm.calstatela@gmail.com/events?singleEvents=true&orderBy=startTime&maxResults=2000&timeMin=' + timeMin + '&key=' + config.calendar_key)
             .then(res => {
                 const events = this.state.events; // Empty object at first
@@ -240,11 +239,13 @@ class Calendar extends React.Component {
         return(
             <div className="calendar-container">
 
-                <button className="prev-button" onClick={this.decrementMonth}>Prev</button>
-                <button onClick={this.incrementMonth}>Next</button>
-                
-                <div style={{color: 'white'}}>
-                    {months[monthIndex]} {this.state.currentDate.getFullYear()}
+                <div className="calendar-header">
+                    <button className="prev-button" onClick={this.decrementMonth}>Prev</button>
+                    <button className="next-button" onClick={this.incrementMonth}>Next</button>
+                    
+                    <div className="month-header" style={{color: 'white'}}>
+                        {months[monthIndex]} {this.state.currentDate.getFullYear()}
+                    </div>
                 </div>
 
                 <div className="day-header-container">
