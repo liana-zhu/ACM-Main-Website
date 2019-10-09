@@ -92,6 +92,34 @@ function getWhen(props) {
 
 }
 
+function getFlyerLink(location) {
+    let start = location.search("\\(");
+    let end = location.search("\\)");
+
+    if(start !== -1 || end !== -1) {
+        // Create new location without the content inside ()
+        location = location.substring(0, start) + location.substring(end + 1, location.length);
+        
+        return location.trim();
+    }
+ 
+    return location;
+}
+
+function getRSVP(location) {
+    let start = location.search("\\(");
+    let end = location.search("\\)");
+
+    if(start !== -1 || end !== -1) {
+        // Get RSVP link
+        let link = location.substring(start + 1, end);
+        
+        return <a className="rsvp-button" href={link}>RSVP</a>
+    }
+
+    return '';
+}
+
 function EventModal(props) {
     const [show, setShow] = useState(false);
   
@@ -137,11 +165,11 @@ function EventModal(props) {
                 <Modal.Body className="events-modal-card">
                     <p>{when}</p>
 
-                    <p>
-                        {description}
-                    </p>
+                    {description}
 
-                    <Image src={location} fluid/>
+                    {getRSVP(location)}
+                    
+                    <Image src={getFlyerLink(location)} fluid/>
 
                 </Modal.Body>
 

@@ -8,6 +8,7 @@
     margin-bottom: .22rem;
     margin-left: .4rem;
     cursor: pointer;
+
 }
 
 .event-modal-paragraph:hover {
@@ -44,4 +45,10 @@
 .events-modal-card {
     background-color: black;
     color: white;
+}
+
+@media only screen and (max-width: 420px){
+    .event-modal-paragraph {
+        font-size: .7rem;
+    }
 }

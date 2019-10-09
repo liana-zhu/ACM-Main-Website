@@ -65,6 +65,10 @@
     font-weight: bold;
 }
 
+.test2 {
+    display: none;
+}
+
 .calendar-header {
     display: flex;
     font-weight: 500;
@@ -101,4 +105,25 @@
 
 .today p:hover {
     color: rgb(194, 194, 194);   
+}
+
+@media only screen and (max-width: 1004px){
+    .day-header {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 420px){
+
+    .day-header {
+        font-size: 1rem;
+    }
+
+    .test1{
+        display: none;
+    }
+
+    .test2 {
+        display: inline;
+    }
 }

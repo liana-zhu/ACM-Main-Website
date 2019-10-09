@@ -142,6 +142,8 @@ class Calendar extends React.Component {
         });
     }
 
+    // Good starting point for implementing the fade-in effect for
+    // modal
     getEvents(cellNumber) {
         const calendarYear = this.state.currentDate.getFullYear();
         const calendarMonth = this.state.currentDate.getMonth();
@@ -249,13 +251,34 @@ class Calendar extends React.Component {
                 </div>
 
                 <div className="day-header-container">
-                    <div className="day-header">Sun</div>
-                    <div className="day-header">Mon</div>
-                    <div className="day-header">Tue</div>
-                    <div className="day-header">Wed</div>
-                    <div className="day-header">Thu</div>
-                    <div className="day-header">Fri</div>
-                    <div className="day-header">Sat</div>
+                    <div className="day-header">
+                        <span className="test1">Sunday</span>
+                        <span className="test2">Sun</span>
+                    </div>
+                    <div className="day-header">
+                        <span className="test1">Monday</span>
+                        <span className="test2">Mon</span>
+                    </div>
+                    <div className="day-header">
+                        <span className="test1">Tuesday</span>
+                        <span className="test2">Tue</span>
+                    </div>
+                    <div className="day-header">
+                        <span className="test1">Wednesday</span>
+                        <span className="test2">Wed</span>
+                    </div>
+                    <div className="day-header">
+                        <span className="test1">Thursday</span>
+                        <span className="test2">Thu</span>
+                    </div>
+                    <div className="day-header">
+                        <span className="test1">Friday</span>
+                        <span className="test2">Fri</span>
+                    </div>
+                    <div className="day-header">
+                        <span className="test1">Saturday</span>
+                        <span className="test2">Sat</span>
+                    </div>
                 </div>
                 
                 {calendar}
