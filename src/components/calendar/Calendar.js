@@ -24,8 +24,7 @@ class Calendar extends React.Component {
         // Using year before to set timeMin in query
         const yearBefore = new Date(new Date().setFullYear(new Date().getFullYear() - 1));
         let timeMin = this.ISODateString(yearBefore);
-
-        axios.get('https://www.googleapis.com/calendar/v3/calendars/acm.calstatela@gmail.com/events?singleEvents=true&orderBy=startTime&maxResults=2000&timeMin=' + timeMin + '&key=' + config.calendar_key)
+        axios.get('https://www.googleapis.com/calendar/v3/calendars/acm.calstatela@gmail.com/events?singleEvents=true&orderBy=startTime&maxResults=2000&timeMin=' + timeMin + '&key=' + config.api_key)
             .then(res => {
                 const events = this.state.events; // Empty object at first
 

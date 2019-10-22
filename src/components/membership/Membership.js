@@ -11,42 +11,7 @@ class Membership extends React.Component {
 			return (
 
 			<div id="membership-body">
-				<div className="parallax_style2">
-	             </div>
-
-				<div class="quote-style-1">
-
-	                            <div className="god-saver d-lg-none"></div>
-	                            <div className="hr-header">__________________________________________</div>
-	                            <br></br>
-	                            So you're <i>interested</i>?<br></br>Cool! Welcome to the <span className="highlight-text"><i><b>family</b></i></span>!
-	                            <br></br>
-	                            <div className="hr-header">__________________________________________</div>
-	                            <br></br>
-	                            <div className="membership-text">
-								Classes aren't enough to give your practical experience once you hit the work-force.<br></br>
-								CSULA's very own chapter of the Association for Computing Machinery takes care of its<br></br>
-								members in more ways then one. We do our best to keep you updated on special events<br></br>
-								as well as ongoing club activities. We were also <span className="highlight-text"><b>voted best student org. of the year</b></span>!
-								<br></br>
-								<br></br>
-								</div>
-	                            </div>
 				<div className="default-padding-top" >
-					<div className="parallax_style3">
-					<div className="membership-parallax-text">
-						<h2>ACM benefits <span className="highlight-text"><b>future leaders</b></span>  by helping them...</h2>
-						❖ Develop skills with Project experience through Intensive Workshops<br></br>
-						❖ Internship & Scholarship Opportunities<br></br>
-						❖ Opportunities to get Involved & to be a Leader<br></br>
-						❖ Resume/Internship workshops<br></br>
-						❖ Tutoring for CS classes<br></br>
-						❖ Conference Opportunities/Tech company tours<br></br>
-						❖ Networking Opportunities<br></br>
-						❖ Volunteer Opportunities<br></br>
-						</div>
-	             	</div>	
-
 					<div className="card">
 						<Tab.Container id="left-tabs-example" defaultActiveKey="first">
 						  <Row>

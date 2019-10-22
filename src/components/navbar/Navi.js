@@ -16,7 +16,7 @@ class Navi extends React.Component {
         window.addEventListener('scroll', function() {
         console.log('scrolling');
             let y = window.scrollY
-            if (y > 600) {
+            if (y > 50) {
                 console.log(y)
                 const element = document.getElementById('navb');
                 element.classList.add("solid")
