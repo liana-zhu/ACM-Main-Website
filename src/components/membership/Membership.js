@@ -159,7 +159,7 @@ class Membership extends React.Component {
 						        <h2>Benefits</h2>
 						        	- ACM's "It's not a bug; It's a feature" T-Shirt included.<br></br>
 						        	- All benefits from student/faculty membership included.<br></br>
-									<a href="https://i.imgur.com/RerJpNV.png"><img src="https://i.imgur.com/RerJpNV.png"></img></a>
+									<a href="https://i.imgur.com/RerJpNV.png"><img className="shirt-image" src="https://i.imgur.com/RerJpNV.png"></img></a>
 								<h2>How to become a member?</h2>
 						        	The steps below are: "Payment" and "Sign-up". Please note that there are <span className="highlight-text">NO REFUNDS</span>.
 						        <br></br>
