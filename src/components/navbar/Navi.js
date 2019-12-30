@@ -92,7 +92,7 @@ class Navi extends React.Component {
                       </Link>
                 </Nav>
                 <Link to='/membership'>
-                <Button variant="outline-primary">Membership</Button>
+                <Button variant="light">Membership</Button>
                 </Link>
               </Navbar.Collapse>
             </Navbar>
