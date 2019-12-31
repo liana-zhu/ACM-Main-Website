@@ -2,6 +2,10 @@
     color: #029CD7;
 }
 
+.events-calendar-center{
+    padding-bottom: 25px;
+}
+
 .events-container {
     background-color: black !important;
     height: 100% !important;

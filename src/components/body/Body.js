@@ -229,21 +229,34 @@ class Body extends React.Component {
             <br></br>
             <br></br>
             <div className="row">
-              <h2 className="h2-leaders">OFFICERS AND COMITTEE</h2>
+              <h2 className="h2-leaders">OFFICERS</h2>
             </div>
             <div className="row-leaders">
               <div className="col-leaders">
                 <img className="image-cropper profile-pic " src={Elton}></img>
                 <div className="officer-info">
-                  <h2>Elton Lin</h2>Administrative officer
+                  <h2>Elton Lin</h2>Administrative Officer
                 </div>
               </div>
               <div className="col-leaders">
-                <img className="image-cropper profile-pic " src={Deric}></img>
+                <img className="image-cropper profile-pic " src={Cristian}></img>
                 <div className="officer-info">
-                  <h2>Deric Kwok</h2>General Comittee
+                  <h2>Cristian Corrales</h2>Project Officer
                 </div>
               </div>
+            </div>
+            <div className="row-leaders">
+              <div className="col-leaders">
+                <img className="image-cropper profile-pic " src={Diego}></img>
+                <div className="officer-info">
+                  <h2>Diego Flores</h2>Finance Officer
+                </div>
+              </div>
+            </div>
+            <br></br>
+            <br></br>
+            <div className="row">
+              <h2 className="h2-leaders">COMITTEE</h2>
             </div>
             <div className="row-leaders">
               <div className="col-leaders">
@@ -253,7 +266,10 @@ class Body extends React.Component {
                 </div>
               </div>
               <div className="col-leaders">
-                <img className="image-cropper profile-pic " src={David}></img>
+                <img
+                  className="image-cropper profile-pic "
+                  src={David}
+                ></img>
                 <div className="officer-info">
                   <h2>David Tang</h2>General Comittee
                 </div>
@@ -261,34 +277,40 @@ class Body extends React.Component {
             </div>
             <div className="row-leaders">
               <div className="col-leaders">
+                <img className="image-cropper profile-pic " src={Deric}></img>
+                <div className="officer-info">
+                  <h2>Deric Kwok</h2>General Comittee
+                </div>
+              </div>
+              <div className="col-leaders">
                 <img className="image-cropper profile-pic " src={Ayush}></img>
                 <div className="officer-info">
                   <h2>Ayush Singh</h2>Outreach Comittee
                 </div>
               </div>
-              <div className="col-leaders">
-                <img
-                  className="image-cropper profile-pic "
-                  src={Cristian}
-                ></img>
-                <div className="officer-info">
-                  <h2>Cristian Corrales</h2>Project Officer
-                </div>
-              </div>
             </div>
             <div className="row-leaders">
+              <div className="col-leaders">
+                <img className="image-cropper profile-pic " src={Mazel}></img>
+                <div className="officer-info">
+                  <h2>Mazel Fernandez</h2>Outreach Comittee
+                </div>
+              </div>
               <div className="col-leaders">
                 <img className="image-cropper profile-pic " src={Marco}></img>
                 <div className="officer-info">
                   <h2>Marco Aguilar</h2>Web Comittee
                 </div>
               </div>
+            </div>
+            <div className="row-leaders">
               <div className="col-leaders">
                 <img className="image-cropper profile-pic " src={George}></img>
                 <div className="officer-info">
                   <h2>George Chan</h2>Web Comittee
                 </div>
               </div>
+              
             </div>
             <div className="row">
               <h2 className="h2-leaders">FACULTY ADVISOR</h2>
