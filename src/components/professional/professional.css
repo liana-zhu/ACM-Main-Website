@@ -22,6 +22,7 @@
     display: grid;
     grid-template-rows: 1fr 1.4fr;
     padding-left: 3rem;
+    padding-top: 50px;
 }
 
 .events-main-text p:first-of-type {
@@ -40,7 +41,7 @@
 
 
 .events-main-background {
-    height: 100vh;
+    height: 50vh;
     background: url("images/acm_events_background.jpg") no-repeat center !important;
     background-size: cover !important;
     align-self: center;
@@ -292,7 +293,7 @@
 }
 
 /* class "carousel-inner" is giving me a lot of issues so we need
-to use pseudo-selector to make sure we change the height of our 
+to use pseudo-selector to make sure we change the height of our
 carousel without affecting others that other devs might use*/
 .past-events-carousel div:first-of-type{
     height: 30rem !important;
