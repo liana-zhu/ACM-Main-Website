@@ -90,6 +90,11 @@ added coded
 .paypal-form-container {
 	margin-top: 1rem;
 }
+
+/* Semicolon at </Carousel>; is required. We must hide it */
+#semicolon {
+	color:black;
+}
 /*
 
 end of code

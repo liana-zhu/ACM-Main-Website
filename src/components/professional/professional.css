@@ -291,6 +291,10 @@
     height: 35rem !important;
     width: 35rem !important;
 }
+/* Semicolon at </Carousel>; is required. We must hide it */
+#semicolon {
+	color:black;
+}
 
 /* class "carousel-inner" is giving me a lot of issues so we need
 to use pseudo-selector to make sure we change the height of our

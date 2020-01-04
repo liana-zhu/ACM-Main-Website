@@ -108,7 +108,7 @@ class Professional extends React.Component {
                                 <div><Image style={{ height: '30rem' }} src={require('./images/venom.png')} thumbnail /></div>
                                 <div><Image style={{ height: '30rem' }} src={require('./images/intro_web_workshop.png')} thumbnail /></div>
                                 <div><Image style={{ height: '30rem' }} src={require('./images/joker.png')} thumbnail /></div>
-                            </Carousel>;
+                            </Carousel><p id="semicolon" /* Semicolon is required for Carousel*/>;</p>
 
                         </div>
                     </Row>
