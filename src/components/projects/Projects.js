@@ -24,6 +24,9 @@ class Projects extends React.Component {
     render() {
         return (
             <div class="project-body">
+                <div class="quote-style-2">
+                    <p><i>Only through <span className="highlight-text">fire</span> can a strong sword be forged</i></p>
+                </div>
                 <div class="quote-style-1 quote-bg">
                     <div class="quote-block" style={{'margin-left': '15%', 'margin-right': '15%'}}>
                     <br></br>

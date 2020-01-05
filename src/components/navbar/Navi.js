@@ -5,8 +5,6 @@ import './navi.css'
 import 'bootstrap/dist/css/bootstrap.css';
 import logo from './acmlogo1.png';
 
-import {Navbar, NavDropdown, Nav, Form, FormControl, Button} from 'react-bootstrap'
-
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faInstagram, faFacebookF, faSnapchatGhost} from "@fortawesome/free-brands-svg-icons"
 
@@ -29,8 +27,7 @@ class Navi extends React.Component {
     }
 
     render (){
-        return(
-                       {/*<nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="navb">
+        return(<nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="navb">
             <nav className="container-fluid">
                     <a className="navbar-brand" href="{{ url_for('home') }}">
                             {//<img id="logo" src={logo} width="110" class="d-inline-block align-top" alt="Logo"></img>
@@ -61,42 +58,7 @@ class Navi extends React.Component {
                 </div>
             </nav>
             <hr></hr>
-        </nav>
-
-        <Navbar>
-              <Navbar.Toggle aria-controls="basic-navbar-nav" />
-              <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="mr-auto">
-                    <Nav.Link className="test" href="#home">HOME</Nav.Link>
-                    <Nav.Link className="test" href="#home">EVENTS</Nav.Link>
-                    <Nav.Link className="test" href="#home">PROGRAMS</Nav.Link>
-                </Nav>
-                <Button className="membership-navbar"variant="outline-primary" size="xsm">MEMBERSHIP</Button>
-              </Navbar.Collapse>
-            </Navbar>*/},
-            <Navbar className="fixed-top" id="navb" expand="lg">
-              <Navbar.Toggle aria-controls="basic-navbar-nav" />
-              <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="mr-auto">
-                    <Link to="/">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                    </Link>
-                    <Link to="/events">
-                      <Nav.Link href="#home">Events</Nav.Link>
-                      </Link>
-                    <Link to="/projects">
-                      <Nav.Link href="#home">Projects</Nav.Link>
-                      </Link>
-                    <Link to="/professional">
-                      <Nav.Link href="#home">Professional</Nav.Link>
-                      </Link>
-                </Nav>
-                <Link to='/membership'>
-                <Button variant="light">Membership</Button>
-                </Link>
-              </Navbar.Collapse>
-            </Navbar>
-            );
+        </nav>);
     }
 }
 
