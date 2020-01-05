@@ -37,15 +37,15 @@
 }
 
 .parallax_style2 {
-    background: 
+    background:
     linear-gradient(
-      rgba(0, 0, 0, 0.0), 
+      rgba(0, 0, 0, 0.0),
       rgba(0, 0, 0, 0.0)
           ),
     url('./assets/image1.png');
 
   /* Set a specific height */
-  min-height: 60vh; 
+  min-height: 60vh;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -66,11 +66,11 @@
 .parallax_style3 {
 	background-image: linear-gradient(to left, rgba(0,0,0,0), black 85%),
     url('./assets/image3.png');
-   
+
   background-attachment: fixed;
 
   /* Set a specific height */
-  min-height: 100vh; 
+  min-height: 100vh;
 
   /* Create the parallax scrolling effect */
   background-position: center;
@@ -90,12 +90,20 @@ added coded
 .paypal-form-container {
 	margin-top: 1rem;
 }
+
+/* Semicolon at </Carousel>; is required. We must hide it */
+#semicolon {
+	color:black;
+}
 /*
 
 end of code
 
 */
 
+.shirt-image {
+	padding-top: 1em;
+}
 
 #membership-body{
 	background-color: #161616;
@@ -111,7 +119,7 @@ end of code
 }
 
 .tab-container{
-	width: 15rem;
+	width: 9rem;
 }
 
 .card{
@@ -122,21 +130,31 @@ end of code
 	margin: 50px;
 }
 
+a{
+	color: white !important;
+}
+
+.nav-item{
+	color:white !important;
+
+}
+
 .header-left{
 	float: left;
+}
+
+.btn-info{
+	color:white !important;
 }
 
 .t-shirts{
 	width: 200px;
 }
 
-.quote-style-2{
-	text-align: center;
+.membership-footer-text{
+ text-align: center !important;
 }
 
-.membership-btn-override {
-	background-color: #edce00;
-}
 
 .venmo-container {
 	display: flex;
