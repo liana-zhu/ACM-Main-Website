@@ -2,10 +2,6 @@
     color: #029CD7;
 }
 
-.events-calendar-center{
-    padding-bottom: 25px;
-}
-
 .events-container {
     background-color: black !important;
     height: 100% !important;
@@ -26,6 +22,7 @@
     display: grid;
     grid-template-rows: 1fr 1.4fr;
     padding-left: 3rem;
+    padding-top: 50px;
 }
 
 .events-main-text p:first-of-type {
@@ -44,7 +41,7 @@
 
 
 .events-main-background {
-    height: 100vh;
+    height: 50vh;
     background: url("images/acm_events_background.jpg") no-repeat center !important;
     background-size: cover !important;
     align-self: center;
@@ -58,10 +55,11 @@
 
 
 
-.blue-line {
+.gray-line {
     width: 100%;
     height: 2px;
-    background-color: #029CD7;
+    background-color: gray;
+    margin-top: 3rem;
 }
 
 .acm-calendar {
@@ -100,6 +98,13 @@
     justify-content: center;
 }
 
+.todays-events-header {
+    font-size: 4.6rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-left: 2.6rem;
+    line-height: 1;
+}
 
 /* Current Events section */
 
@@ -286,9 +291,13 @@
     height: 35rem !important;
     width: 35rem !important;
 }
+/* Semicolon at </Carousel>; is required. We must hide it */
+#semicolon {
+	color:black;
+}
 
 /* class "carousel-inner" is giving me a lot of issues so we need
-to use pseudo-selector to make sure we change the height of our 
+to use pseudo-selector to make sure we change the height of our
 carousel without affecting others that other devs might use*/
 .past-events-carousel div:first-of-type{
     height: 30rem !important;

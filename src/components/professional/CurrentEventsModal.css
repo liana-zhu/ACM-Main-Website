@@ -1,0 +1,27 @@
+.test {
+    margin-left: -.5rem !important;
+}
+.current-events-button {
+    width: 6.7rem;
+    background-color: rgb(45, 45, 45);
+    border: 1px solid rgb(45, 45, 45);
+}
+.current-events-button:hover{
+    background-color: rgb(53, 53, 53);
+    border: 1px solid rgb(53, 53, 53);
+}
+.current-events-button:active{
+    background-color: rgb(31, 31, 31);
+    border: 1px solid rgb(31, 31, 31);
+}
+
+.events-modal {
+    background-color: rgba(0, 0, 0, 0.363);
+}
+
+.events-modal-card {
+    background-color: #1F1F1F;
+    border: 1px solid rgb(55, 55, 55);
+    border-radius: 0;
+    /* border-color: black; */
+}

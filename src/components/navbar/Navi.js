@@ -62,7 +62,7 @@ class Navi extends React.Component {
             </nav>
             <hr></hr>
         </nav>
-        
+
         <Navbar>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
@@ -87,9 +87,12 @@ class Navi extends React.Component {
                     <Link to="/projects">
                       <Nav.Link href="#home">Projects</Nav.Link>
                       </Link>
+                    <Link to="/professional">
+                      <Nav.Link href="#home">Professional</Nav.Link>
+                      </Link>
                 </Nav>
                 <Link to='/membership'>
-                <Button variant="outline-primary">Membership</Button>
+                <Button variant="light">Membership</Button>
                 </Link>
               </Navbar.Collapse>
             </Navbar>
