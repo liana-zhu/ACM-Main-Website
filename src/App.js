@@ -12,6 +12,7 @@ import ContactUs from './components/contactus/ContactUs'
 import Events from './components/events/Events';
 import Projects from './components/projects/Projects'
 import Professional from './components/professional/Professional';
+import Board from './components/board/Board';
 import HeaderCarousel from './components/headercarousel/HeaderCarousel.js';
 import Body from './components/body/Body.js';
 import FooterCarousel from './components/footercarousel/FooterCarousel.js';
