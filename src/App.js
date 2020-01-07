@@ -63,6 +63,7 @@ class App extends React.Component {
           <Route path='/events' component={Events}/>
           <Route path='/projects' component={Projects}/>
           <Route path='/professional' component={Professional}/>
+          <Route path='/board' component={Board}/>
         </BrowserRouter>
         <FooterCarousel/>
       </div>
