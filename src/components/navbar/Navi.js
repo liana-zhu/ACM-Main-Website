@@ -90,6 +90,9 @@ class Navi extends React.Component {
                     <Link to="/professional">
                       <Nav.Link href="#home">Professional</Nav.Link>
                       </Link>
+                    <Link to="/board">
+                      <Nav.Link href="#home">Board</Nav.Link>
+                      </Link>
                 </Nav>
                 <Link to='/membership'>
                 <Button variant="light">Membership</Button>

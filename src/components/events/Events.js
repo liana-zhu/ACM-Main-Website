@@ -71,7 +71,7 @@ class Events extends React.Component {
                             <Card.Header as="h3" className="current-card-header">ACM Game Night</Card.Header>
                             <Card.Body>
                                 
-                                <CardImageModal cardImage="unnamed.png" posterImage="unnamed.png" />
+                               
                                 
                                 
                                 <Card.Text style={{marginTop:'1rem'}}>
