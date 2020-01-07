@@ -5,4 +5,4 @@ Development Team:
 - George Chan ( Web Committee )
 - Ralph Belleca ( Web Committee )
 
-## Instructions for running the project are found in develop branch README
+Note: Instructions for running the project are found in develop branch README
