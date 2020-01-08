@@ -81,18 +81,21 @@ class Navi extends React.Component {
                     <Link to="/">
                         <Nav.Link href="#home">Home</Nav.Link>
                     </Link>
+                    <Link to="/aboutus">
+                      <Nav.Link href="#home">About us</Nav.Link>
+                    </Link>
                     <Link to="/events">
                       <Nav.Link href="#home">Events</Nav.Link>
-                      </Link>
+                    </Link>
                     <Link to="/projects">
                       <Nav.Link href="#home">Projects</Nav.Link>
-                      </Link>
+                    </Link>
                     <Link to="/professional">
                       <Nav.Link href="#home">Professional</Nav.Link>
-                      </Link>
+                    </Link>
                     <Link to="/board">
                       <Nav.Link href="#home">Board</Nav.Link>
-                      </Link>
+                    </Link>
                 </Nav>
                 <Link to='/membership'>
                 <Button variant="light">Membership</Button>
