@@ -105,7 +105,7 @@ class Navi extends React.Component {
         </Navbar.Collapse>
       </Navbar>*/
 
-      <Navbar collapseOnSelect id="navb" expand="lg" bg="dark" variant="dark">
+      <Navbar collapseOnSelect fixed="top" id="navb" expand="lg" bg="dark" variant="dark">
         <Navbar.Brand href="/">
           <img
             src={logo}
@@ -118,24 +118,18 @@ class Navi extends React.Component {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <Link to="/">
-              <Nav.Link href="#home">Home</Nav.Link>
-            </Link>
+            <Nav.Link href="/">Home</Nav.Link>
             <NavDropdown title="About" id="collasible-nav-dropdown">
-              <NavDropdown.Item><Link to="/aboutus"><div className="nav-dropdown-text">About Us</div></Link></NavDropdown.Item>
-              <NavDropdown.Item><Link to="/board"><div className="nav-dropdown-text">Our Board</div></Link></NavDropdown.Item>
+              <NavDropdown.Item href="/aboutus"><div className="nav-dropdown-text">About Us</div></NavDropdown.Item>
+              <NavDropdown.Item href="/board"><div className="nav-dropdown-text">Our Board</div></NavDropdown.Item>
             </NavDropdown>
-            <Link to="/events">
-              <Nav.Link href="#home">Events/Calendar</Nav.Link>
-            </Link>
+            <Nav.Link href="/events">Events/Calendar</Nav.Link>
             <NavDropdown title="Projects/Programs" id="collasible-nav-dropdown">
-              <NavDropdown.Item><Link to="/projects"><div className="nav-dropdown-text">Project Workshops</div></Link></NavDropdown.Item>
-              <NavDropdown.Item><Link to="/professional"><div className="nav-dropdown-text">Professional Workshops</div></Link></NavDropdown.Item>
+              <NavDropdown.Item href="/projects"><div className="nav-dropdown-text">Project Workshops</div></NavDropdown.Item>
+              <NavDropdown.Item href="/professional"><div className="nav-dropdown-text">Professional Workshops</div></NavDropdown.Item>
             </NavDropdown>
           </Nav>
-          <Link to='/membership'>
-            <Button variant="light">Membership</Button>
-          </Link>
+          <Nav.Link href="/membership"><Button variant="light">Membership</Button></Nav.Link>
         </Navbar.Collapse>
       </Navbar>
     );
