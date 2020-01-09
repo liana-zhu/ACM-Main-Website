@@ -1,36 +1,36 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 import './navi.css'
 import 'bootstrap/dist/css/bootstrap.css';
 import logo from './acmlogo1.png';
 
-import {Navbar, NavDropdown, Nav, Form, FormControl, Button} from 'react-bootstrap'
+import { Navbar, NavDropdown, Nav, Form, FormControl, Button } from 'react-bootstrap'
 
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
-import {faInstagram, faFacebookF, faSnapchatGhost} from "@fortawesome/free-brands-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faInstagram, faFacebookF, faSnapchatGhost } from "@fortawesome/free-brands-svg-icons"
 
 
 class Navi extends React.Component {
-    componentDidMount(){
-        window.addEventListener('scroll', function() {
-        console.log('scrolling');
-            let y = window.scrollY
-            if (y > 600) {
-                console.log(y)
-                const element = document.getElementById('navb');
-                element.classList.add("solid")
-             } else {
-                const element = document.getElementById('navb');
-              element.classList.remove("solid");
-            }
-          });
-        // TODO: Add class once the page is refreshed
-    }
+  /*componentDidMount() {
+    window.addEventListener('scroll', function () {
+      console.log('scrolling');
+      let y = window.scrollY
+      if (y > 600) {
+        console.log(y)
+        const element = document.getElementById('navb');
+        element.classList.add("solid")
+      } else {
+        const element = document.getElementById('navb');
+        element.classList.remove("solid");
+      }
+    });
+    // TODO: Add class once the page is refreshed
+  }*/
 
-    render (){
-        return(
-                       {/*<nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="navb">
+  render() {
+    return (
+      {/*<nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="navb">
             <nav className="container-fluid">
                     <a className="navbar-brand" href="{{ url_for('home') }}">
                             {//<img id="logo" src={logo} width="110" class="d-inline-block align-top" alt="Logo"></img>
@@ -74,36 +74,72 @@ class Navi extends React.Component {
                 <Button className="membership-navbar"variant="outline-primary" size="xsm">MEMBERSHIP</Button>
               </Navbar.Collapse>
             </Navbar>*/},
-            <Navbar className="fixed-top" id="navb" expand="lg">
-              <Navbar.Toggle aria-controls="basic-navbar-nav" />
-              <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="mr-auto">
-                    <Link to="/">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                    </Link>
-                    <Link to="/aboutus">
-                      <Nav.Link href="#home">About us</Nav.Link>
-                    </Link>
-                    <Link to="/events">
-                      <Nav.Link href="#home">Events</Nav.Link>
-                    </Link>
-                    <Link to="/projects">
-                      <Nav.Link href="#home">Projects</Nav.Link>
-                    </Link>
-                    <Link to="/professional">
-                      <Nav.Link href="#home">Professional</Nav.Link>
-                    </Link>
-                    <Link to="/board">
-                      <Nav.Link href="#home">Board</Nav.Link>
-                    </Link>
-                </Nav>
-                <Link to='/membership'>
-                <Button variant="light">Membership</Button>
-                </Link>
-              </Navbar.Collapse>
-            </Navbar>
-            );
-    }
+
+      /* Old navbar from Fall 2019     
+      <Navbar className="fixed-top" id="navb" expand="lg">
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mr-auto">
+            <Link to="/">
+              <Nav.Link href="#home">Home</Nav.Link>
+            </Link>
+            <Link to="/aboutus">
+              <Nav.Link href="#home">About us</Nav.Link>
+            </Link>
+            <Link to="/events">
+              <Nav.Link href="#home">Events</Nav.Link>
+            </Link>
+            <Link to="/projects">
+              <Nav.Link href="#home">Projects</Nav.Link>
+            </Link>
+            <Link to="/professional">
+              <Nav.Link href="#home">Professional</Nav.Link>
+            </Link>
+            <Link to="/board">
+              <Nav.Link href="#home">Board</Nav.Link>
+            </Link>
+          </Nav>
+          <Link to='/membership'>
+            <Button variant="light">Membership</Button>
+          </Link>
+        </Navbar.Collapse>
+      </Navbar>*/
+
+      <Navbar collapseOnSelect id="navb" expand="lg" bg="dark" variant="dark">
+        <Navbar.Brand href="/">
+          <img
+            src={logo}
+            width="60"
+            height="50"
+            className="d-inline-block align-top"
+            alt="ACM logo"
+          />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="mr-auto">
+            <Link to="/">
+              <Nav.Link href="#home">Home</Nav.Link>
+            </Link>
+            <NavDropdown title="About" id="collasible-nav-dropdown">
+              <NavDropdown.Item><Link to="/aboutus"><div className="nav-dropdown-text">About Us</div></Link></NavDropdown.Item>
+              <NavDropdown.Item><Link to="/board"><div className="nav-dropdown-text">Our Board</div></Link></NavDropdown.Item>
+            </NavDropdown>
+            <Link to="/events">
+              <Nav.Link href="#home">Events/Calendar</Nav.Link>
+            </Link>
+            <NavDropdown title="Projects/Programs" id="collasible-nav-dropdown">
+              <NavDropdown.Item><Link to="/projects"><div className="nav-dropdown-text">Project Workshops</div></Link></NavDropdown.Item>
+              <NavDropdown.Item><Link to="/professional"><div className="nav-dropdown-text">Professional Workshops</div></Link></NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+          <Link to='/membership'>
+            <Button variant="light">Membership</Button>
+          </Link>
+        </Navbar.Collapse>
+      </Navbar>
+    );
+  }
 }
 
 export default Navi;
