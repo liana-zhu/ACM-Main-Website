@@ -21,7 +21,6 @@ class AboutUs extends React.Component {
   render() {
     return (
       <div>
-		  <Header />
 			<Container>
 				<Row className="first-row">
 					<Col className="about-text">
@@ -45,13 +44,13 @@ class AboutUs extends React.Component {
 					</Col>
 					</Row>
 				<Row className="third-row">
-					<Col className="about-text">
+					<Col className="join-text">
 					<h1>How to join ACM?</h1>
 					<p>Even though we are a computer science organization, students of all majors are welcomed. Faculty and alumni are also welcomed to join ACM.</p>
           <p>At the beginning of each semester, we have a general meeting to provide people with information about current projects, programs and events. To learn 
             about the ACM member exclusive benefits, visit our membership page. </p>
 					</Col>
-					<Col lg={true}><Image style={{ height: '20rem' }} src={require('./images/space_invaders_workshop.png')} fluid /></Col>
+					<Col lg={true}><Image style={{ height: '20rem' }} src={require('./images/fall_2019_general_meeting.jpg')} fluid /></Col>
 					</Row>
 			</Container> 
           </div>

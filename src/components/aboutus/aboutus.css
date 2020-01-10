@@ -1,3 +1,7 @@
+.first-row {
+  margin-top: 60px;
+}
+
 .about-text {
   text-align: left;
   margin-left: 60px;
@@ -6,6 +10,11 @@
 .offer-text {
   text-align: left;
   margin-right: 60px;
+}
+
+.join-text {
+  text-align: left;
+  margin-left: 60px;
 }
 
 .first-row {
