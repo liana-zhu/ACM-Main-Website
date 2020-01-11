@@ -1,5 +1,6 @@
 .navbar {
     width: 100vw;
+    position: absolute;
     background-color: transparent !important;
     border-radius: 0 !important;
     letter-spacing: 2px;
@@ -7,9 +8,8 @@
     z-index: 100;
     transition: all 0.3s ease-in-out 0s;
     -moz-transition: all 0.3s ease-in-out 0s;
-    text-transform: uppercase;
     -webkit-transition: all 0.3s ease-in-out 0s;
-    text-align:center;
+    text-align: left;
     vertical-align: center;
 
 }
@@ -30,9 +30,8 @@
     box-shadow: 0 0 4px #15161Ace;
 }
 
-.solid{
-    background-color: #1f1f1f !important;
-    opacity: 1;
+.disappear{
+    display: none !important;
 
 }
 
@@ -76,3 +75,17 @@
 .nav-dropdown-text {
     color: black;
 }
+
+.navbar-toggler {
+    border: none;
+}
+
+@media only screen and (max-width: 600px)  {
+    .navbar {
+        background-color: #1c1c1e !important;
+    }
+    #homepage {
+        display: block !important;
+    }
+}
+

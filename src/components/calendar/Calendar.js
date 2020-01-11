@@ -66,7 +66,7 @@ class Calendar extends React.Component {
 
                     // If the same, then we can simply push onto list
                     // If NOT the same, create key,value entry!
-                    if(currentUTC == previousUTC) {
+                    if(currentUTC === previousUTC) {
                         events[currentUTC].push(res.data.items[i]);
                     } else {
                         events[currentUTC] = [res.data.items[i]];
@@ -153,11 +153,11 @@ class Calendar extends React.Component {
         let monthString = (cellDate.getMonth() + 1).toString();
         let dayString = (cellDate.getDate()).toString();
 
-        if(monthString.length == 1) {
+        if(monthString.length === 1) {
             monthString = "0" + monthString;
         }
         
-        if(dayString.length == 1) {
+        if(dayString.length === 1) {
             dayString = "0" + dayString;
         }
 
@@ -207,7 +207,7 @@ class Calendar extends React.Component {
             let rowCells = [];
             for(let j = 0; j < 7; j++) {
 
-                if(i == 0 && firstDayDate.getDay() <= j) {
+                if(i === 0 && firstDayDate.getDay() <= j) {
                     // Class 'today' is added if cell contains user's current day
                     rowCells.push(
                         <div className={"cell" + (this.isCurrentDate(dayCount) ? ' today' : '')}>
@@ -215,7 +215,7 @@ class Calendar extends React.Component {
                             {this.getEvents(dayCount)}
                         </div>);
                     dayCount++;
-                } else if(i == (weekCount - 1) && lastDayDate.getDay() < j) {
+                } else if(i === (weekCount - 1) && lastDayDate.getDay() < j) {
                     // This block takes care of the empty cells after last day of month
                     // Do NOT increment dayCount
                     rowCells.push(<div className="cell"></div>);
