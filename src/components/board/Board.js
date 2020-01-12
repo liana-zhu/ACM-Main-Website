@@ -410,7 +410,7 @@ class Board extends React.Component {
                         <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={Alexis}></img>
                           <div className="officer-info">
-                            <h2>Alexis</h2>Project Committee
+                            <h2>Erving Lopez</h2>Project Committee
                             </div>
                         </div>
                       </div>
