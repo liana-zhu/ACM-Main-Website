@@ -9,7 +9,7 @@ class Mentorship extends React.Component {
             <div>
                 <Tab.Container defaultActiveKey="menteeRole">
                     <br></br>
-                    <h2><b>If projects aren't really your speed, perhaps the <span class="highlight-text">mentorship program</span> is more up your alley.</b></h2><br></br>
+                    <h2><b>The <span class="highlight-text">mentorship program</span> is a life-changing experience that will help you in school and prepare you for your future career.</b></h2><br></br>
                     <img src={require("./pictures/Mentorship_program_flyer.png")} class="img-fluid project-poster"></img>
                     <img src={require("./pictures/mentorAndMentee.png")} class="img-fluid project-poster" style={{'margin': '50px'}}></img>
                     <br></br><br></br>
@@ -57,7 +57,7 @@ class Mentorship extends React.Component {
                             <p>
                                 In this world, it could be a bit difficult to find some footing for a stable, independent life. Thankfully, if you are one 
                                 of these people, <i><span class="highlight-text">you are not alone.</span></i> If you become a mentee in this program, a mentor can show you the ropes to
-                                not just help you on your way to landing that six-figure job, but also help you navigate the pothole-filled road called life.<br></br><br></br>
+                                not only help you on your way to landing that six-figure job, but also help you navigate the pothole-filled road called life.<br></br><br></br>
 
                                 In this program, mentees will:<br></br><br></br>
 
