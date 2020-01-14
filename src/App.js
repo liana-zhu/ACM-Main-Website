@@ -13,6 +13,7 @@ import Events from './components/events/Events';
 import Projects from './components/projects/Projects'
 import Professional from './components/professional/Professional';
 import Board from './components/board/Board';
+import Programs from './components/programs/Programs';
 import HeaderCarousel from './components/headercarousel/HeaderCarousel.js';
 import Body from './components/body/Body.js';
 import FooterCarousel from './components/footercarousel/FooterCarousel.js';
@@ -65,6 +66,7 @@ class App extends React.Component {
           <Route path='/projects' component={Projects}/>
           <Route path='/professional' component={Professional}/>
           <Route path='/board' component={Board}/>
+          <Route path='/programs' component={Programs}/>
         </BrowserRouter>
         <FooterCarousel/>
       </div>
