@@ -102,12 +102,12 @@ class Professional extends React.Component {
                                 deviceType={this.props.deviceType}
                                 dotListClass="custom-dot-list-style"
                                 itemClass="carousel-item-padding-40-px">
-                                <div><Image style={{ height: '30rem', marginRight: '1rem' }} src={require('./images/awards_ceremony.png')} thumbnail /></div>
-                                <div><Image style={{ height: '30rem' }} src={require('./images/upperclassmen_workshop.png')} thumbnail /></div>
-                                <div><Image style={{ height: '30rem' }} src={require('./images/Hackathon.png')} thumbnail /></div>
-                                <div><Image style={{ height: '30rem' }} src={require('./images/venom.png')} thumbnail /></div>
-                                <div><Image style={{ height: '30rem' }} src={require('./images/intro_web_workshop.png')} thumbnail /></div>
-                                <div><Image style={{ height: '30rem' }} src={require('./images/joker.png')} thumbnail /></div>
+                                <div><Image style={{ height: '30rem', marginRight: '1rem' }} src={require('./images/eduardo_almeida_google.png')} thumbnail /></div>
+                                <div><Image style={{ height: '30rem' }} src={require('./images/github_workshop.PNG')} thumbnail /></div>
+                                <div><Image style={{ height: '30rem' }} src={require('./images/mwd_jpl_spring_2019.png')} thumbnail /></div>
+                                <div><Image style={{ height: '30rem' }} src={require('./images/spring_2019_resume_workshop.png')} thumbnail /></div>
+                                <div><Image style={{ height: '30rem' }} src={require('./images/richard_fung_2018_google.png')} thumbnail /></div>
+                                <div><Image style={{ height: '30rem' }} src={require('./images/internship.png')} thumbnail /></div>
                             </Carousel><p id="semicolon" /* Semicolon is required for Carousel*/>;</p>
 
                         </div>
