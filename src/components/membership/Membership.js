@@ -24,7 +24,7 @@ class Membership extends React.Component {
 			},
 			tablet: {
 				breakpoint: { max: 1024, min: 464 },
-				items: 2,
+				items: 1,
 				slidesToSlide: 1, // optional, default to 1.
 			},
 			mobile: {
@@ -57,12 +57,12 @@ class Membership extends React.Component {
 								deviceType={this.props.deviceType}
 								dotListClass="custom-dot-list-style"
 								itemClass="carousel-item-padding-40-px">
-								<div><Image style={{ height: '30rem' }} src={require('./images/awards_ceremony.png')} thumbnail /></div>
-                                <div><Image style={{ height: '30rem' }} src={require('./images/upperclassmen_workshop.png')} thumbnail /></div>
-                                <div><Image style={{ height: '30rem' }} src={require('./images/Hackathon.png')} thumbnail /></div>
-                                <div><Image style={{ height: '30rem' }} src={require('./images/venom.png')} thumbnail /></div>
-                                <div><Image style={{ height: '30rem' }} src={require('./images/intro_web_workshop.png')} thumbnail /></div>
-                                <div><Image style={{ height: '30rem' }} src={require('./images/joker.png')} thumbnail /></div>
+								<div><Image style={{ height: '30rem' }} src={require('./images/jpl_tour.png')} fluid /></div>
+                                <div><Image style={{ height: '30rem' }} src={require('./images/trophy.png')} fluid /></div>
+                                <div><Image style={{ height: '30rem' }} src={require('./images/space_invaders.png')} fluid /></div>
+                                <div><Image style={{ height: '30rem' }} src={require('./images/accord_workshop.png')} fluid /></div>
+                                <div><Image style={{ height: '30rem' }} src={require('./images/hackathon_spring_2019.png')} fluid /></div>
+                                <div><Image style={{ height: '30rem' }} src={require('./images/bowling_spring_2019.png')} fluid /></div>
 							</Carousel><p id="semicolon" /* Semicolon is required for Carousel*/>;</p>
                         </div>
 						</Container>
