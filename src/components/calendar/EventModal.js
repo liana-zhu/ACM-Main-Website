@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {Button, Modal, Image, Card} from 'react-bootstrap';
 import './EventModal.css';
+let description = '';
 
 function checkIfUndefined(attribute) {
 
@@ -20,6 +21,10 @@ function formatAMPM(date) {
     minutes = minutes < 10 ? '0'+minutes : minutes;
     let strTime = hours + ':' + minutes + '' + ampm;
     return strTime;
+}
+
+function dangerouslySetDescription() {
+    return {__html: description}
 }
 
 function getWhen(props) {
@@ -130,7 +135,6 @@ function EventModal(props) {
     // This is gonna be used for the image in the modal.
     let location = '';
 
-    let description = '';
 
     let when = ''; 
 
@@ -165,7 +169,7 @@ function EventModal(props) {
                 <Modal.Body className="events-modal-card">
                     <p>{when}</p>
 
-                    {description}
+                    <div dangerouslySetInnerHTML={dangerouslySetDescription()} />
 
                     {getRSVP(location)}
                     
