@@ -44,12 +44,12 @@ class Membership extends React.Component {
 							<Carousel
 								swipeable={false}
 								draggable={false}
-								showDots={true}
+								//showDots={true}
 								responsive={responsive}
 								ssr={true} // means to render carousel on server-side.
 								infinite={true}
-								autoPlay={this.props.deviceType !== "mobile" ? true : false}
-								autoPlaySpeed={5000}
+								//autoPlay={this.props.deviceType !== "mobile" ? true : false}
+								//autoPlaySpeed={5000}
 								keyBoardControl={true}
 								customTransition="all .5"
 								transitionDuration={500}
