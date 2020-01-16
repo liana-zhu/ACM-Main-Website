@@ -30,7 +30,7 @@ class Professional extends React.Component {
             desktop: {
                 breakpoint: { max: 3000, min: 1024 },
                 items: 4,
-                slidesToSlide: 3, // optional, default to 1.
+                slidesToSlide: 4, // optional, default to 1.
             },
             tablet: {
                 breakpoint: { max: 1024, min: 464 },
@@ -89,12 +89,12 @@ class Professional extends React.Component {
                             <Carousel
                                 swipeable={false}
                                 draggable={false}
-                                showDots={true}
+                                //showDots={true}
                                 responsive={responsive}
                                 ssr={true} // means to render carousel on server-side.
                                 infinite={true}
-                                autoPlay={this.props.deviceType !== "mobile" ? true : false}
-                                autoPlaySpeed={5000}
+                                //autoPlay={this.props.deviceType !== "mobile" ? true : false}
+                                //autoPlaySpeed={5000}
                                 keyBoardControl={true}
                                 customTransition="all .5"
                                 transitionDuration={500}
@@ -108,6 +108,8 @@ class Professional extends React.Component {
                                 <div><Image style={{ height: '30rem' }} src={require('./images/spring_2019_resume_workshop.png')} thumbnail /></div>
                                 <div><Image style={{ height: '30rem' }} src={require('./images/richard_fung_2018_google.png')} thumbnail /></div>
                                 <div><Image style={{ height: '30rem' }} src={require('./images/internship.png')} thumbnail /></div>
+                                <div><Image style={{ height: '30rem' }} src={require('./images/manny_sanchez_lockheed_spring_2019.png')} thumbnail /></div>
+                                <div><Image style={{ height: '30rem' }} src={require('./images/linkedin_handshake_workshop.png')} thumbnail /></div>
                             </Carousel><p id="semicolon" /* Semicolon is required for Carousel*/>;</p>
 
                         </div>
