@@ -109,7 +109,7 @@ class Navi extends React.Component {
         <Navbar.Brand href="/">
           <img
             src={logo}
-            width="60"
+            width="90"
             height="50"
             className="d-inline-block align-top"
             alt="ACM logo"
