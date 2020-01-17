@@ -63,7 +63,7 @@ class Professional extends React.Component {
                         <p className="todays-events-header">Today's Event</p>
                     </Row>
                     <Row className="justify-content-md-center">
-                        <Image style={{ height: '30rem', marginRight: '1rem' }} src={require('./images/awards_ceremony.png')} thumbnail />
+                        <Image style={{ height: '30rem', marginRight: '1rem' }} src={require('./images/General Meeting.png')} thumbnail />
                     </Row>
                 </Container>
                 <div className="gray-line"></div>
@@ -73,10 +73,9 @@ class Professional extends React.Component {
                     </Row>
 
                     <Row className="current-events-images">
-                        <Col sm><Image src={require('./images/internship.png')} thumbnail /></Col>
-                        <Col sm><Image src={require('./images/resume_workshop.png')} thumbnail /></Col>
-                        <Col sm><Image src={require('./images/pizza_and_boba.png')} thumbnail /></Col>
-                        <Col sm><Image src={require('./images/joker.png')} thumbnail /></Col>
+                        <Col sm><Image style={{ height: '30rem' }} src={require('./images/General Meeting.png')} thumbnail /></Col>
+                        <Col sm><Image style={{ height: '30rem' }} src={require('./images/Space Invaders.png')} thumbnail /></Col>
+                        <Col sm><Image style={{ height: '30rem' }} src={require('./images/Personal Website.png')} thumbnail /></Col>
                     </Row>
                 </Container>
                 <div className="gray-line"></div>
@@ -102,7 +101,7 @@ class Professional extends React.Component {
                                 deviceType={this.props.deviceType}
                                 dotListClass="custom-dot-list-style"
                                 itemClass="carousel-item-padding-40-px">
-                                <div><Image style={{ height: '30rem', marginRight: '1rem' }} src={require('./images/eduardo_almeida_google.png')} thumbnail /></div>
+                                <div><Image style={{ height: '30rem'}} src={require('./images/eduardo_almeida_google.png')} thumbnail /></div>
                                 <div><Image style={{ height: '30rem' }} src={require('./images/github_workshop.PNG')} thumbnail /></div>
                                 <div><Image style={{ height: '30rem' }} src={require('./images/mwd_jpl_spring_2019.png')} thumbnail /></div>
                                 <div><Image style={{ height: '30rem' }} src={require('./images/spring_2019_resume_workshop.png')} thumbnail /></div>
