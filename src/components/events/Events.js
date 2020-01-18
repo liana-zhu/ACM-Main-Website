@@ -30,8 +30,8 @@ class Events extends React.Component {
                         <p>Never miss an <span className="emphasis">Event</span></p>
                         <p>Stay in the loop</p>
                     </div>
-                    {/* events-main-background doesn't work, so <Image> is used to replace it */}
-                    <Image style={{ height: '50rem', width: '95rem' }} src={require('./images/acm_events_background.jpg')} fluid />
+                    {/* The class name "events-main-background" doesn't work. Changing the class name makes the code work */}
+                    <div className="background-image"></div>
                 </div>
                 <div className="blue-line"></div>
                 <Container className="current-events-container"> 
