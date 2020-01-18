@@ -106,9 +106,9 @@ class Board extends React.Component {
                             </div>
                         </div>
                         <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={GioC2019}></img>
+                          <img className="image-cropper profile-pic " src={Srivats2019}></img>
                           <div className="officer-info">
-                            <h2>Giovanni Castellanos</h2>VP of Internal Affairs
+                            <h2>Srivats Venkataraman</h2>Secretary
                             </div>
                         </div>
                       </div>
@@ -116,24 +116,24 @@ class Board extends React.Component {
                         <div className="col-leaders">
                           <img
                             className="image-cropper profile-pic "
-                            src={Vacant}
+                            src={GioC2019}
                           ></img>
                           <div className="officer-info">
-                            <h2>Vacant</h2>VP of External Affairs
+                            <h2>Giovanni Castellanos</h2>VP of Internal Affairs
                             </div>
                         </div>
                         <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Andrew2019}></img>
+                          <img className="image-cropper profile-pic " src={Vacant}></img>
                           <div className="officer-info">
-                            <h2>Andrew Gonzalez</h2>Project Manager
+                            <h2>Vacant </h2>VP of External Affairs
                             </div>
                         </div>
                       </div>
                       <div className="row-leaders">
                         <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Srivats2019}></img>
+                          <img className="image-cropper profile-pic " src={Andrew2019}></img>
                           <div className="officer-info">
-                            <h2>Srivats Venkataraman</h2>Secretary
+                            <h2>Andrew Gonzalez</h2>Project Manager
                             </div>
                         </div>
                         <div className="col-leaders">
@@ -156,17 +156,17 @@ class Board extends React.Component {
                             </div>
                         </div>
                         <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={DavidT}></img>
+                          <img className="image-cropper profile-pic " src={Diego2019}></img>
                           <div className="officer-info">
-                            <h2>David Tang</h2>Web Officer
+                            <h2>Diego Flores</h2>Finance Officer
                             </div>
                         </div>
                       </div>
                       <div className="row-leaders">
                         <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Diego2019}></img>
+                          <img className="image-cropper profile-pic " src={DavidT}></img>
                           <div className="officer-info">
-                            <h2>Diego Flores</h2>Finance Officer
+                            <h2>David Tang</h2>Web Officer
                             </div>
                         </div>
                       </div>
@@ -177,59 +177,31 @@ class Board extends React.Component {
                       </div>
                       <div className="row-leaders">
                         <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Isaac}></img>
+                          <img className="image-cropper profile-pic " src={Deric2019}></img>
                           <div className="officer-info">
-                            <h2>Isaac Villalva</h2>General Committee
+                            <h2>Deric Kwok</h2>General Committee
                             </div>
                         </div>
                         <div className="col-leaders">
                           <img
                             className="image-cropper profile-pic "
-                            src={Deric2019}
+                            src={Ayush}
                           ></img>
-                          <div className="officer-info">
-                            <h2>Deric Kwok</h2>General Committee
-                            </div>
-                        </div>
-                      </div>
-                      <div className="row-leaders">
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={George}></img>
-                          <div className="officer-info">
-                            <h2>George Chan</h2>Web Committee</div>
-                        </div>
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Vacant}></img>
-                          <div className="officer-info">
-                            <h2>Ralph Belleca</h2>Web Committee
-                            </div>
-                        </div>
-                      </div>
-                      <div className="row-leaders">
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Ayush}></img>
                           <div className="officer-info">
                             <h2>Ayush Singh</h2>Outreach Committee
                             </div>
                         </div>
+                      </div>
+                      <div className="row-leaders">
                         <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={Vacant}></img>
                           <div className="officer-info">
-                            <h2>Kevin Flores</h2>Outreach Committee
-                            </div>
+                            <h2>Kevin Flores</h2>Outreach Committee</div>
                         </div>
-                      </div>
-                      <div className="row-leaders">
                         <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={Mazel}></img>
                           <div className="officer-info">
                             <h2>Mazel Fernandez</h2>Outreach Committee
-                            </div>
-                        </div>
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Vacant}></img>
-                          <div className="officer-info">
-                            <h2>Luis Gonzalez</h2>Project Committee
                             </div>
                         </div>
                       </div>
@@ -238,6 +210,26 @@ class Board extends React.Component {
                           <img className="image-cropper profile-pic " src={Vacant}></img>
                           <div className="officer-info">
                             <h2>John Grover</h2>Project Committee
+                            </div>
+                        </div>
+                        <div className="col-leaders">
+                          <img className="image-cropper profile-pic " src={Vacant}></img>
+                          <div className="officer-info">
+                            <h2>Luis Garcia</h2>Project Committee
+                            </div>
+                        </div>
+                      </div>
+                      <div className="row-leaders">
+                        <div className="col-leaders">
+                          <img className="image-cropper profile-pic " src={George}></img>
+                          <div className="officer-info">
+                            <h2>George Chan</h2>Web Committee
+                            </div>
+                        </div>
+                        <div className="col-leaders">
+                          <img className="image-cropper profile-pic " src={Vacant}></img>
+                          <div className="officer-info">
+                            <h2>Ralph Belleca</h2>Web Committee
                             </div>
                         </div>
                       </div>
