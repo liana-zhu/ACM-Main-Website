@@ -12,7 +12,7 @@
     text-align: left !important;
 }
 
-
+/* Text is blocking (covering) the calendar. Bug? */
 .events-main-text {
     height: 100%;
     width: 100%;
@@ -41,8 +41,8 @@
     margin-bottom: 4rem;
 }
 
-
-
+/* When CSS is changed, the background image doesn't change at all. Broken code or bug? 
+   I replaced the background image with an <Image>*/
 .events-main-background {
     height: 100vh;
     background: url("images/acm_events_background.jpg") no-repeat center !important;
