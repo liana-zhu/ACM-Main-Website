@@ -67,3 +67,7 @@
     max-width: 20vw;
     margin: 15px;
 }
+
+#homepage {
+    display: block;
+}

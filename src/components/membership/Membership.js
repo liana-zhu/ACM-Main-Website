@@ -14,6 +14,11 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 class Membership extends React.Component {
+
+	componentDidUpdate() {
+		window.scrollTo(0, 0);
+	  }
+
 	render() {
 		//const responsive is used for multi carousel
 		const responsive = {

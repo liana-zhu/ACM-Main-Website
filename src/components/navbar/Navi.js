@@ -7,8 +7,8 @@ import logo from './acmlogo1.png';
 
 import { Navbar, NavDropdown, Nav, Form, FormControl, Button } from 'react-bootstrap'
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faInstagram, faFacebookF, faSnapchatGhost } from "@fortawesome/free-brands-svg-icons"
+//import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+//import { faInstagram, faFacebookF, faSnapchatGhost } from "@fortawesome/free-brands-svg-icons"
 
 
 class Navi extends React.Component {
@@ -20,7 +20,10 @@ class Navi extends React.Component {
     if (querytHomePage.href == window.location.href) {
       findHomepage.classList.add("disappear");
     }
-    
+
+    //https://stackoverflow.com/questions/4326845/how-can-i-determine-the-direction-of-a-jquery-scroll-event
+
+    /*
     window.addEventListener('scroll', function () {
       //console.log('scrolling');
       let y = window.scrollY;
@@ -34,6 +37,7 @@ class Navi extends React.Component {
       }
       
     });
+    */
     // TODO: Add class once the page is refreshed
   }
 
