@@ -17,6 +17,10 @@ class Events extends React.Component {
         alert('Show Modal!');
     }
 
+    componentDidUpdate() {
+        window.scrollTo(0, 0);
+      }
+
     render() {
         return(
             <div className="events-container">

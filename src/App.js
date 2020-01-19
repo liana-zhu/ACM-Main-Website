@@ -2,7 +2,10 @@ import React from 'react';
 import logo from './logo.svg';
 import {BrowserRouter,Route,Redirect} from 'react-router-dom'
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import './App.css';
+import Home from './components/home/home';
 import Config from './config';
 import Navi from './components/navbar/Navi.js';
 import AboutUs from './components/aboutus/AboutUs'
@@ -57,7 +60,8 @@ class App extends React.Component {
       <div>
         <BrowserRouter>
           <Navi/>
-          <Route exact path='/' render={() => <Body state={this.state}/>}/>
+          <Route exact path='/' component={Home}/>
+          {/*<Route exact path='/' render={() => <Body state={this.state}/>}/>*/}
           <Route path='/aboutus' component={AboutUs}/>
           <Route path='/calendar' component={Calendar}/>
           <Route path='/membership' component={Membership}/>

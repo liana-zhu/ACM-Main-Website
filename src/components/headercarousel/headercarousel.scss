@@ -44,12 +44,30 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
+  padding-left: 20vh;
   text-align: left;
   padding-top: 45vh;
-  padding-left: 20vh;
   color:white;
-
-  -webkit-clip-path: polygon(0 0, 100% 0, 200% 56%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
+
+@media screen and (max-width: 1138px) {
+  #introduction {
+    display: block;
+  }
+} 
+
+@media screen and (max-width: 597px) {
+  .parallax {
+
+    padding-left: inherit;
+
+    #logoImage {
+      width: 100%;
+    }
+
+    #introduction {
+      padding: 6rem;
+    }
+
+  }
+} 
