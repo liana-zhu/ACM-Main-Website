@@ -62,6 +62,7 @@ class Navi extends React.Component {
             </NavDropdown>
             <NavDropdown title="programs" id="collasible-nav-dropdown">
               <NavDropdown.Item href="/projects"><div className="nav-dropdown-text">Project Workshops</div></NavDropdown.Item>
+              <NavDropdown.Item href="/programs"><div className="nav-dropdown-text">Programs</div></NavDropdown.Item>
               <NavDropdown.Item href="/professional"><div className="nav-dropdown-text">Professional Workshops</div></NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="/events">calendar</Nav.Link>

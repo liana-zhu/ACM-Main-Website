@@ -8,6 +8,9 @@ In the project directory, you can run:
 
 ### `npm start`
 
+### DO NOT DO `npm update`
+This will make Microsoft Edge display a blank page.
+
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 

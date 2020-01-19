@@ -30,7 +30,7 @@ class Professional extends React.Component {
             desktop: {
                 breakpoint: { max: 3000, min: 1024 },
                 items: 4,
-                slidesToSlide: 3, // optional, default to 1.
+                slidesToSlide: 4, // optional, default to 1.
             },
             tablet: {
                 breakpoint: { max: 1024, min: 464 },
@@ -58,26 +58,27 @@ class Professional extends React.Component {
                     </div>
                 </div>
 
-                <Container className="todays-events-container">
+                {/*<Container className="todays-events-container">
                     <Row className="justify-content-md-center">
                         <p className="todays-events-header">Today's Event</p>
                     </Row>
                     <Row className="justify-content-md-center">
-                        <Image style={{ height: '30rem', marginRight: '1rem' }} src={require('./images/awards_ceremony.png')} thumbnail />
+                        <Image style={{ height: '30rem', marginRight: '1rem' }} src={require('./images/General Meeting.png')} thumbnail />
                     </Row>
                 </Container>
-                <div className="gray-line"></div>
+                <div className="gray-line"></div>*/}
                 <Container className="current-events-container">
                     <Row className="justify-content-md-center">
                         <p className="current-events-header">Events for this week</p>
                     </Row>
-
-                    <Row className="current-events-images">
-                        <Col sm><Image src={require('./images/internship.png')} thumbnail /></Col>
-                        <Col sm><Image src={require('./images/resume_workshop.png')} thumbnail /></Col>
-                        <Col sm><Image src={require('./images/pizza_and_boba.png')} thumbnail /></Col>
-                        <Col sm><Image src={require('./images/joker.png')} thumbnail /></Col>
+                    <Row className="justify-content-md-center">
+                        <Image style={{ height: '30rem', marginRight: '1rem' }} src={require('./images/General Meeting.png')} thumbnail />
                     </Row>
+                    {/*<Row className="current-events-images">
+                        <Col sm><Image style={{ height: '30rem' }} src={require('./images/General Meeting.png')} thumbnail /></Col>
+                        <Col sm><Image style={{ height: '30rem' }} src={require('./images/Space Invaders.png')} thumbnail /></Col>
+                        <Col sm><Image style={{ height: '30rem' }} src={require('./images/Personal Website.png')} thumbnail /></Col>
+                    </Row>*/}
                 </Container>
                 <div className="gray-line"></div>
                 <Container>
@@ -89,12 +90,12 @@ class Professional extends React.Component {
                             <Carousel
                                 swipeable={false}
                                 draggable={false}
-                                showDots={true}
+                                //showDots={true}
                                 responsive={responsive}
                                 ssr={true} // means to render carousel on server-side.
                                 infinite={true}
-                                autoPlay={this.props.deviceType !== "mobile" ? true : false}
-                                autoPlaySpeed={5000}
+                                //autoPlay={this.props.deviceType !== "mobile" ? true : false}
+                                //autoPlaySpeed={5000}
                                 keyBoardControl={true}
                                 customTransition="all .5"
                                 transitionDuration={500}
@@ -102,12 +103,14 @@ class Professional extends React.Component {
                                 deviceType={this.props.deviceType}
                                 dotListClass="custom-dot-list-style"
                                 itemClass="carousel-item-padding-40-px">
-                                <div><Image style={{ height: '30rem', marginRight: '1rem' }} src={require('./images/awards_ceremony.png')} thumbnail /></div>
-                                <div><Image style={{ height: '30rem' }} src={require('./images/upperclassmen_workshop.png')} thumbnail /></div>
-                                <div><Image style={{ height: '30rem' }} src={require('./images/Hackathon.png')} thumbnail /></div>
-                                <div><Image style={{ height: '30rem' }} src={require('./images/venom.png')} thumbnail /></div>
-                                <div><Image style={{ height: '30rem' }} src={require('./images/intro_web_workshop.png')} thumbnail /></div>
-                                <div><Image style={{ height: '30rem' }} src={require('./images/joker.png')} thumbnail /></div>
+                                <div><Image style={{ height: '30rem'}} src={require('./images/eduardo_almeida_google.png')} thumbnail /></div>
+                                <div><Image style={{ height: '30rem' }} src={require('./images/github_workshop.PNG')} thumbnail /></div>
+                                <div><Image style={{ height: '30rem' }} src={require('./images/mwd_jpl_spring_2019.png')} thumbnail /></div>
+                                <div><Image style={{ height: '30rem' }} src={require('./images/spring_2019_resume_workshop.png')} thumbnail /></div>
+                                <div><Image style={{ height: '30rem' }} src={require('./images/richard_fung_2018_google.png')} thumbnail /></div>
+                                <div><Image style={{ height: '30rem' }} src={require('./images/internship.png')} thumbnail /></div>
+                                <div><Image style={{ height: '30rem' }} src={require('./images/manny_sanchez_lockheed_spring_2019.png')} thumbnail /></div>
+                                <div><Image style={{ height: '30rem' }} src={require('./images/linkedin_handshake_workshop.png')} thumbnail /></div>
                             </Carousel><p id="semicolon" /* Semicolon is required for Carousel*/>;</p>
 
                         </div>
