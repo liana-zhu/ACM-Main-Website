@@ -57,7 +57,7 @@ class Professional extends React.Component {
                     <div className="events-main-background">
                     </div>
                 </div>
-
+                {/* Today's event should not be here. Events for this week should not be here and should be on home page */}
                 {/*<Container className="todays-events-container">
                     <Row className="justify-content-md-center">
                         <p className="todays-events-header">Today's Event</p>
@@ -66,7 +66,7 @@ class Professional extends React.Component {
                         <Image style={{ height: '30rem', marginRight: '1rem' }} src={require('./images/General Meeting.png')} thumbnail />
                     </Row>
                 </Container>
-                <div className="gray-line"></div>*/}
+                <div className="gray-line"></div>
                 <Container className="current-events-container">
                     <Row className="justify-content-md-center">
                         <p className="current-events-header">Events for this week</p>
@@ -78,9 +78,9 @@ class Professional extends React.Component {
                         <Col sm><Image style={{ height: '30rem' }} src={require('./images/General Meeting.png')} thumbnail /></Col>
                         <Col sm><Image style={{ height: '30rem' }} src={require('./images/Space Invaders.png')} thumbnail /></Col>
                         <Col sm><Image style={{ height: '30rem' }} src={require('./images/Personal Website.png')} thumbnail /></Col>
-                    </Row>*/}
+                    </Row>
                 </Container>
-                <div className="gray-line"></div>
+            <div className="gray-line"></div>*/}
                 <Container>
                     <Row className="justify-content-md-center">
                         <p className="past-events-header">Past Events</p>
