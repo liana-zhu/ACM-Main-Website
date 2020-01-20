@@ -102,7 +102,7 @@ class Membership extends React.Component {
 						        	membership <span className="highlight-text">DOES NOT</span> guarantee project space.
 						        <br></br>
 
-											<h2>Questions/Concerns?</h2>
+											<h2>Any questions or concerns?</h2>
 											<p>Send an email to acm.calstatela@gmail.com</p>
 
 											<h2><span className="highlight-text"><b><i>Step One</i></b></span> ❖ Payment</h2>
@@ -158,7 +158,7 @@ class Membership extends React.Component {
 											The steps below are: "Payment" and "Sign-up". Please note that there are <span className="highlight-text">NO REFUNDS</span>.
 						        <br></br>
 
-											<h2>Questions/Concerns?</h2>
+											<h2>Any questions or concerns?</h2>
 											<p>Send an email to acm.calstatela@gmail.com</p>
 
 											<h2><span className="highlight-text"><b><i>Step One</i></b></span> ❖ Payment</h2>
@@ -214,7 +214,7 @@ class Membership extends React.Component {
 						        <br></br>
 
 
-											<h2>Questions/Concerns?</h2>
+											<h2>Any questions or concerns?</h2>
 											<p>Send an email to acm.calstatela@gmail.com</p>
 
 											<h2><span className="highlight-text"><b><i>Step One</i></b></span> ❖ Payment</h2>
