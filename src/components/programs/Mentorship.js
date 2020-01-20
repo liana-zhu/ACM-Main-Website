@@ -13,17 +13,17 @@ class Mentorship extends React.Component {
                     <img src={require("./pictures/Mentorship_program_flyer.png")} class="img-fluid project-poster"></img>
                     <img src={require("./pictures/mentorAndMentee.png")} class="img-fluid project-poster" style={{'margin': '50px'}}></img>
                     <br></br><br></br>
-                    In this program, you can either be a mentor or a mentee. Click or tap either one of the tabs below to learn more about their respective roles.<br></br><br></br>
+                    
                     <Nav variant="tabs">
                         <Nav.Item>
                             <Nav.Link className="anchor-blue" eventKey="menteeRole">Mentee</Nav.Link>
                         </Nav.Item>
-                        <Nav.Item>
+                        {/*<Nav.Item>
                             <Nav.Link className="anchor-blue" eventKey="mentorRole">Mentor</Nav.Link>
-                        </Nav.Item>
+                        </Nav.Item>*/}
                     </Nav>
                     <Tab.Content className="project-tab-content">
-                        <Tab.Pane eventKey="mentorRole"><br></br>
+                        {/*<Tab.Pane eventKey="mentorRole"><br></br>
 
                             <img src={require('./pictures/leader.png')} class="img-fluid mentorship-images"></img>
 
@@ -49,7 +49,7 @@ class Mentorship extends React.Component {
 
                             </p>
 
-                        </Tab.Pane>
+                        </Tab.Pane>*/}
                         <Tab.Pane eventKey="menteeRole"><br></br>
 
                             <img src={require('./pictures/mentee.png')} class="img-fluid mentorship-images" style={{'float': 'left'}}></img>
@@ -72,7 +72,7 @@ class Mentorship extends React.Component {
 
                         </Tab.Pane>
                     </Tab.Content>
-                    <br></br><b>The deadline to apply is February 4, 2020 at 5:00 PM. Join our <span class="highlight-text">mentorship program</span> today before it's too late!</b><br></br><br></br>
+                    <br></br><b>The deadline to apply is <span class="highlight-text">February 4, 2020 at 5:00 PM.</span> Join our <span class="highlight-text">mentorship program</span> today before it's too late!</b><br></br><br></br>
                 
                     <Button variant="success" size="lg" href="https://docs.google.com/forms/d/e/1FAIpQLSfZ_4dJlVGAadGbhej6UeJiSx3k6ubnmWCR2O-qp0Jt55FZcQ/viewform">Join Now!</Button>
                 </Tab.Container>
