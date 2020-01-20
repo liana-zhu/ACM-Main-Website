@@ -8,23 +8,61 @@ import 'bootstrap/dist/css/bootstrap.css'
 class NewProject extends React.Component {
     constructor(props){
         super(props)
+        this.state = {
+            today: new Date()
+        }
     }
 
     render() {
         let button;
+        const openDate = this.props.openDate.split("/");
+        const mmOpen = openDate[0];
+        const ddOpen = openDate[1];
+        const yyyyOpen = openDate[2];
+        
+        const dd = String(this.state.today.getDate()).padStart(2, '0');
+        const mm = String(this.state.today.getMonth() + 1).padStart(2, '0'); //January is 0!
+        const yyyy = this.state.today.getFullYear();
 
-        if (this.props.linkToSignUp == "") {
-            button = <Button variant="secondary" disabled>You cannot sign up for this project at the moment.</Button>
-        }
-        else if (this.props.linkToSignUp == "passed") {
-            button = <Button variant="secondary" disabled>The deadline to sign up has passed. Sorry!</Button>
-        }
-        else if (this.props.linkToSignUp == "notReady") {
-            button = <Button variant="secondary" disabled>This project is not open yet.</Button>
+        const today = new Date(mm + "/" + dd + "/" + yyyy);
+        const openDeadline = new Date(mmOpen + "/" + ddOpen + "/" + yyyyOpen);
+        const diffTime = (today - openDeadline);
+
+        if (diffTime >= 0) {
+            if (this.props.linkToSignUp == "") {
+                button = <Button variant="secondary" disabled>You cannot sign up for this project at the moment.</Button>
+            }
+            else if (this.props.linkToSignUp == "passed") {
+                button = <Button variant="secondary" disabled>The deadline to sign up has passed. Sorry!</Button>
+            }
+            else if (this.props.linkToSignUp == "notReady") {
+                button = <Button variant="secondary" disabled>This project is not open yet.</Button>
+            }
+            else {
+                button = <Button variant="success" href={this.props.linkToSignUp}>Click here to Sign Up!</Button>
+            } 
         }
         else {
-            button = <Button variant="success" href={this.props.linkToSignUp}>Click here to Sign Up!</Button>
+            button = <Button variant="secondary" disabled>This project will open at {this.props.openDate}.</Button>            
         }
+
+        // if (this.props.isFormReady) {
+        //     if (this.props.linkToSignUp == "") {
+        //         button = <Button variant="secondary" disabled>You cannot sign up for this project at the moment.</Button>
+        //     }
+        //     else if (this.props.linkToSignUp == "passed") {
+        //         button = <Button variant="secondary" disabled>The deadline to sign up has passed. Sorry!</Button>
+        //     }
+        //     else if (this.props.linkToSignUp == "notReady") {
+        //         button = <Button variant="secondary" disabled>This project is not open yet.</Button>
+        //     }
+        //     else {
+        //         button = <Button variant="success" href={this.props.linkToSignUp}>Click here to Sign Up!</Button>
+        //     }                
+        // }
+        // else {
+        //     button = <Button variant="secondary" disabled>This project will open at {this.props.linkToSignUp}.</Button>
+        // }
 
         return (
             <div>
