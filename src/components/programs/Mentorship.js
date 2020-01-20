@@ -10,7 +10,7 @@ class Mentorship extends React.Component {
                 <Tab.Container defaultActiveKey="menteeRole">
                     <br></br>
                     <h2><b>The <span class="highlight-text">mentorship program</span> is a life-changing experience that will help you in school and prepare you for your future career.</b></h2><br></br>
-                    <img src={require("./pictures/Mentorship_program_flyer.png")} class="img-fluid project-poster"></img>
+                    <img src={require("./pictures/Mentorship Program Spring 2020.png")} class="img-fluid project-poster"></img>
                     <img src={require("./pictures/mentorAndMentee.png")} class="img-fluid project-poster" style={{'margin': '50px'}}></img>
                     <br></br><br></br>
                     
@@ -51,8 +51,8 @@ class Mentorship extends React.Component {
 
                         </Tab.Pane>*/}
                         <Tab.Pane eventKey="menteeRole"><br></br>
-
-                            <img src={require('./pictures/mentee.png')} class="img-fluid mentorship-images" style={{'float': 'left'}}></img>
+                            {/* Paragraph below looks messy on mobile view, when using a small screen /*}
+                            {/*<img src={require('./pictures/mentee.png')} class="img-fluid mentorship-images" style={{'float': 'left'}}></img>*/}
 
                             <p>
                                 In this world, it could be a bit difficult to find some footing for a stable, independent life. Thankfully, if you are one 
