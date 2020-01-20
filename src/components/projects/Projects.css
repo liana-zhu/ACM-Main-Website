@@ -1,5 +1,5 @@
 .project-title-card {
-    height: 110vh;
+    height: 100vh;
     background: 
     linear-gradient(
     rgba(0, 0, 0, 0.55), 
@@ -110,11 +110,6 @@
     margin: 15px;
 }
 
-
-#homepage {
-    display: block;
-}
-  
 .carousel-image {
     max-height: 75rem;
     max-width: 50rem;
