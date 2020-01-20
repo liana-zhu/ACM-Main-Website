@@ -237,8 +237,8 @@ class Projects extends React.Component {
                                                         technologies={['HTML5', 'CSS', 'JavaScript', 'Bootstrap']}
                                                         poster='./pictures/webDev.jpg'
                                                         projectImages={['./pictures/web1.jpg', './pictures/web2.jpg', './pictures/web3.jpg']}
-                                                        projectLeadersImages={['./leaders/Deric K.png', './leaders/Brian.jpg']}
-                                                        projectLeaders={['Deric Kwok', 'Brian Hernandez']}
+                                                        projectLeadersImages={['./leaders/Deric K.png']}
+                                                        projectLeaders={['Deric Kwok']}
                                                         />
                                                 </Tab.Pane>
 
