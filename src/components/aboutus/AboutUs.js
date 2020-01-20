@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 
-import { Container, Row, Col, Image } from 'react-bootstrap'
+import { Container, Row, Col, Image, Button } from 'react-bootstrap'
 import Jumbotron from "react-bootstrap/Jumbotron";
 import Calendar from "../calendar/Calendar.js";
 import FooterCarousel from "../footercarousel/FooterCarousel.js";
@@ -51,8 +51,9 @@ class AboutUs extends React.Component {
 						<Col className="join-text">
 							<h1>How to join ACM?</h1>
 							<p>Even though we are a computer science organization, students of all majors are welcomed. Faculty and alumni are also welcomed to join ACM.</p>
-							<p>At the beginning of each semester, we have a general meeting to provide people with information about current projects, programs and events. To learn
-            about the ACM member exclusive benefits, visit our membership page. </p>
+							<p>At the beginning of each semester, we have a general meeting to provide people with information about current projects, programs, and events. To learn
+            about the ACM member exclusive benefits, click the button below:</p><br></br>
+			<Button href="/membership">Membership</Button><br></br><br></br>
 						</Col>
 						<Col lg={true}><Image style={{ height: '25rem', width: '35rem' }} src={require('./images/fall_2019_general_meeting.jpg')} fluid /></Col>
 					</Row>
