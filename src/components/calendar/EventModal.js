@@ -125,6 +125,22 @@ function getRSVP(location) {
     return '';
 }
 
+function checkLocationFlyer(location) {
+    let the_location = location
+
+    if (location) {
+        if (the_location.includes(".png") || the_location.includes(".jpg") || the_location.includes(".jpeg")) {
+            return <Image src={getFlyerLink(location)} fluid/>
+        }
+        else {
+            return <p>Location: {the_location}</p>
+        }
+    }
+    else {
+        return ""
+    }
+}
+
 function EventModal(props) {
     const [show, setShow] = useState(false);
   
@@ -173,7 +189,8 @@ function EventModal(props) {
 
                     {getRSVP(location)}
                     
-                    <Image src={getFlyerLink(location)} fluid/>
+                    {/* <Image src={getFlyerLink(location)} fluid/> */}
+                    {checkLocationFlyer(location)}
 
                 </Modal.Body>
 
