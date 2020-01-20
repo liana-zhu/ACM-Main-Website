@@ -32,7 +32,7 @@ class Projects extends React.Component {
                     <div className="project-title-text">
                     <p></p>
                         <p>Looking for experience?</p>
-                        <p>Participate in our <span className="emphasis">projects and programs</span>!</p>
+                        <p>Participate in our <span className="emphasis">projects</span>!</p>
                     </div>
                     <div className="project-title-card"></div>
                 </div>
@@ -71,10 +71,8 @@ class Projects extends React.Component {
                                                 <Tab.Pane eventKey="low1920">
                                                     <LegacyProject
                                                         opener="Who doesn't enjoy games even a little?"
-                                                        description="The instant gratification, the flashy lights, the addictive 
-                                                        player-application feedback. In this workshop, we recreated a classic arcade game 
-                                                        from the late 70's, Space Invaders, using Python, a high-level 
-                                                        programming language that is not only extremely easy to learn but also widely used."
+                                                        //Description is long, but put on a single line to avoid word spacing issues
+                                                        description="The instant gratification, the flashy lights, the addictive player-application feedback. In this workshop, we recreated a classic arcade game from the late 70's, Space Invaders, using Python, a high-level programming language that is not only extremely easy to learn but also widely used."
                                                         technologies={['Python', 'PyGame', 'Python', 'Git/Github', 'Did I mention Python...?']}
                                                         poster='./pictures/beginner.png'
                                                         projectImages={[
@@ -125,9 +123,8 @@ class Projects extends React.Component {
                                                 <Tab.Pane eventKey="hi1920">
                                                     <LegacyProject 
                                                         opener='Looking for a bit of a challenge?'
-                                                        description='In this workshop, we created a chat application (a chapplication) 
-                                                        using React, a Javascript web framework that everybody and their grandmas use. Learning how to use React could 
-                                                        score you major brownie points to potential recruiters.'
+                                                        //Description is long, but put on a single line to avoid word spacing issues
+                                                        description='In this workshop, we created a chat application (a chapplication) using React, a Javascript web framework that everybody and their grandmas use. Learning how to use React could score you major brownie points to potential recruiters.'
                                                         technologies={['React.js', 'Git/Github', 'Firebase', 'Node.js', 'HTML', 'CSS']}
                                                         poster='./pictures/intermediate.png'
                                                         projectImages={[
@@ -170,7 +167,7 @@ class Projects extends React.Component {
                                                             './Accord/39.jpg'
                                                         ]}
                                                         projectLeadersImages={['./leaders/Emily P.png', './leaders/Inelbert F.png', './leaders/Srivats V.png', './leaders/Deric K.png']}
-                                                        projectLeaders={['Emily Pascua', 'Ingelbert Figuerora', 'Srivats Venkataraman', 'Deric Kwok']}
+                                                        projectLeaders={['Emily Pascua', 'Ingelbert Figueroa', 'Srivats Venkataraman', 'Deric Kwok']}
                                                         />
                                                 </Tab.Pane>
                                             </Tab.Content>
@@ -192,11 +189,8 @@ class Projects extends React.Component {
                                                 <Tab.Pane eventKey="low1819">
                                                     <LegacyProject
                                                         opener=''
-                                                        description='Past attendees of the workshops for this project learned how to create their own website. 
-                                                            There are people who make their own websites to advertise themselves, so learning how to 
-                                                            make your own website could give you an advantage in the job-hunting scene. As HTML and CSS, 
-                                                            the two technologies that make up many websites, 
-                                                            are both fairly easy to learn, the workshops were geared toward beginners. '
+                                                        //Description is long, but put on a single line to avoid word spacing issues
+                                                        description='Past attendees of the workshops for this project learned how to create their own website. There are people who make their own websites to advertise themselves, so learning how to make your own website could give you an advantage in the job-hunting scene. As HTML and CSS, the two technologies that make up many websites, are both fairly easy to learn, the workshops were geared toward beginners. '
                                                         technologies={['HTML5', 'CSS', 'Javascript', 'Bootstrap']}
                                                         poster='./pictures/webDev.jpg'
                                                         projectImages={['./pictures/web1.jpg', './pictures/web2.jpg', './pictures/web3.jpg']}
@@ -208,16 +202,13 @@ class Projects extends React.Component {
                                                 <Tab.Pane eventKey="hi1819">
                                                     <LegacyProject
                                                         opener=''
-                                                        description="The workshops for this project focused on teaching its attendees how to use Android Studio to design and build an 
-                                                            Android app. Using Android Studio, past attendees ported ACM's website to an app format. Although creative freedom 
-                                                            was limited compared to the beginner's project of this year, workshop attendees had the creative freedom to design 
-                                                            the app in any way they so chose. Due to the skills required to operate Android Studio, the workshops were geared 
-                                                            towards advanced programmers who already knew the fundamentals of programming with Java."
+                                                        //Description is long, but put on a single line to avoid word spacing issues
+                                                        description="The workshops for this project focused on teaching its attendees how to use Android Studio to design and build an Android app. Using Android Studio, past attendees ported ACM's website to an app format. Although creative freedom was limited compared to the beginner's project of this year, workshop attendees had the creative freedom to design the app in any way they wanted. Due to the skills required to operate Android Studio, the workshops were geared towards advanced programmers who already knew the fundamentals of programming with Java."
                                                         technologies={['Android Studio', 'Java']}
                                                         poster='./pictures/androidDev.jpg'
                                                         projectImages={['./pictures/android1.jpg', './pictures/android2.jpg', './pictures/android3.jpg']}
                                                         projectLeadersImages={['./leaders/Inelbert F.png', './leaders/Emily P.png', './leaders/Srivats V.png']}
-                                                        projectLeaders={['Ingelbert Figuerora', 'Emily Pascua', 'Srivats Venkataraman']}
+                                                        projectLeaders={['Ingelbert Figueroa', 'Emily Pascua', 'Srivats Venkataraman']}
                                                         />
                                                 </Tab.Pane>
 

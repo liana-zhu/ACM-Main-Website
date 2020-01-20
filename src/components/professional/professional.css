@@ -21,7 +21,7 @@
     display: grid;
     grid-template-rows: 1fr 1.4fr;
     padding-left: 3rem;
-    padding-top: 50px;
+    padding-top: 70px;
 }
 
 .events-main-text p:first-of-type {
@@ -40,7 +40,7 @@
 
 
 .events-main-background {
-    height: 50vh;
+    height: 100vh;
     background: url("images/acm_events_background.jpg") no-repeat center !important;
     background-size: cover !important;
     align-self: center;

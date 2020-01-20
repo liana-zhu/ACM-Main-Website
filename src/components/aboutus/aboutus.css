@@ -1,3 +1,37 @@
+.about-us-card {
+  height: 110vh;
+  background: 
+  linear-gradient(
+  rgba(0, 0, 0, 0.55), 
+  rgba(0, 0, 0, 0.55)),
+  url("./images/classroom.png");
+  background-size: cover !important;
+  align-self: center;
+  font-size: 4.4rem;
+  color: white;
+  opacity: .6;
+  font-weight: bold;
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+
+.about-us-text {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  font-size: 3.0rem;
+  color: white;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+  padding-top: 40vh;
+
+  /* display: grid; */
+  grid-template-rows: 1fr 1.4fr;
+  padding-left: 3rem;
+}
+
 .first-row {
   margin-top: 60px;
 }
@@ -9,7 +43,7 @@
 
 .offer-text {
   text-align: left;
-  margin-right: 60px;
+  margin-left: 60px;
 }
 
 .join-text {
