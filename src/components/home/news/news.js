@@ -13,7 +13,7 @@ class News extends Component {
                     <div className="content">
                         <div className="subTitle"> news </div>
                         <div className="title"> What's Happening </div>
-                        <div className="description"> You can also add our organization calendar to your personal calendar so you won’t ever miss an upcoming event.  </div>
+                        <div className="description"> Check our organization's calendar so you won’t miss an upcoming event.  </div>
                         <div className="link-btn mt-4">
                             <Link className="label px-5" to="/events">
                                 learn more
