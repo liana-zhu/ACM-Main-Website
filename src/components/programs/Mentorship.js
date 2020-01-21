@@ -72,7 +72,7 @@ class Mentorship extends React.Component {
 
                         </Tab.Pane>
                     </Tab.Content>
-                    <br></br><b>The deadline to apply is <span class="highlight-text">February 4, 2020 at 5:00 PM.</span> Join our <span class="highlight-text">mentorship program</span> today before it's too late!</b><br></br><br></br>
+                    <br></br><b>The deadline to apply is <span class="highlight-text">Tuesday, February 4, 2020 at 5:00 PM.</span> Join our <span class="highlight-text">mentorship program</span> today before it's too late!</b><br></br><br></br>
                 
                     <Button variant="success" size="lg" href="https://docs.google.com/forms/d/e/1FAIpQLSfZ_4dJlVGAadGbhej6UeJiSx3k6ubnmWCR2O-qp0Jt55FZcQ/viewform">Join Now!</Button>
                 </Tab.Container>
