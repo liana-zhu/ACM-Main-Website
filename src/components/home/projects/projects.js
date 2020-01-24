@@ -13,9 +13,9 @@ class Projects extends Component {
                         <div className="title"> We are Hackers </div>
                         <div className="description"> Our chapter is a project-based organization, where we experiment with industry technology trends.   </div>
                         <div className="link-btn mt-4">
-                            <Link className="label px-5" to="/projects">
+                            <a className="label px-5" href="/projects">
                                 what's hacking?
-                            </Link>
+                            </a>
                         </div>
                     </div>
                 </div>

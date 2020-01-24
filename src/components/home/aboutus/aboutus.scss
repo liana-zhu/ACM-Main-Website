@@ -15,11 +15,14 @@
 
         width: 50%;
         height: 100%;
+        display: table;
         
         .content { 
             
             width: 51rem;
             padding: 8rem;
+            display: table-cell;
+            vertical-align: middle;
 
             .subTitle {
                 font-size: 2rem;

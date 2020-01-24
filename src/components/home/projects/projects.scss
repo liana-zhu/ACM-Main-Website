@@ -10,12 +10,17 @@
     .left {
 
         width: 50%;
+        height: 100%;
+        display: table;
         
         .content {
 
             width: 51rem;
             padding: 8rem;
             padding-top: 8rem;
+            vertical-align: middle;
+            display: table-cell;
+            
 
             .subTitle {
                 font-size: 2rem;

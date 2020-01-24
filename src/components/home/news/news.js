@@ -15,9 +15,9 @@ class News extends Component {
                         <div className="title"> What's Happening </div>
                         <div className="description"> Check our organization's calendar so you won’t miss an upcoming event.  </div>
                         <div className="link-btn mt-4">
-                            <Link className="label px-5" to="/events">
+                            <a className="label px-5" href="/events">
                                 learn more
-                            </Link>
+                            </a>
                         </div>
                     </div>
                 </div>

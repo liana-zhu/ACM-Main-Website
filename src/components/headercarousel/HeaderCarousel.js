@@ -12,18 +12,21 @@ class HeaderCarousel extends React.Component {
     render (){
         return( 
             <div className="parallax">
-                <div id="introduction">
-                    <img id="logoImage" src={logo}/>
-                    <div className="d-none d-md-block">
-                        <span id="codeText">
-                            .creates('<Typed className="typed"
-                            strings={["creative thinkers", "future leaders", "real-life experience", "problem solvers"]}
-                            typeSpeed={100}
-                            backDelay={60}
-                            loop/>');
-                        </span>
+                <div className="middler">
+                    <div id="introduction">
+                        <img id="logoImage" src={logo}/>
+                        <div className="d-none d-md-block">
+                            <span id="codeText">
+                                .creates('<Typed className="typed"
+                                strings={["creative thinkers", "future leaders", "real-life experience", "problem solvers"]}
+                                typeSpeed={100}
+                                backDelay={60}
+                                loop/>');
+                            </span>
+                        </div>
                     </div>
                 </div>
+
             </div>
     );
     }
