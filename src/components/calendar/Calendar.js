@@ -1,5 +1,10 @@
 import React from 'react'
+import './Calendar.css';
+import axios from 'axios';
+import config from '../../config';
 import 'bootstrap/dist/css/bootstrap.css';
+
+import EventModal from './EventModal';
 
 class Calendar extends React.Component {
 

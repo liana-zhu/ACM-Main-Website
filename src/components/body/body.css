@@ -17,11 +17,11 @@
 .subcon-body{
 	text-align: left;
 	width: 100vw;
-	padding: 100px;
+	padding: 25px;
 }
 
 .container-body{
-	width: inherit;
+	width: 100vw;
 	color: white;
 	font-family: 'Montserrat', sans-serif;
 	padding: 0px !important;
@@ -30,6 +30,11 @@
 .row{
 	width: 100vw;
 	padding: 0px !important;
+}
+
+.row-leaders{
+	width: 100vw;
+	padding-left: 10vw;
 }
 
 .small-header{
@@ -41,7 +46,6 @@
 
 .col-leaders{
 	display:inline-flex;
-	margin-left: 100px;
 }
 
 .news{
@@ -92,7 +96,6 @@ a:hover{
 }
 
 .container-benefits{
-	margin-left: 3%;
 	margin-right: 3%;
 }
 
@@ -102,9 +105,17 @@ a:hover{
 	background-color: #161616;
 }
 
+.leaders-div{
+	background-color: #121212 !important;
+}
+
+.space{
+	height: 150px;
+}
+
 .quote-style-1{
     font-family: 'Open Sans', sans-serif !important;
-	padding: 10%;
+	padding: 5%;
 	font-size: 35px;
 	color: white;
 	width: 100vw;
@@ -113,6 +124,7 @@ a:hover{
     font-family: 'Open Sans', sans-serif !important;
 	font-size: 35px;
 	color: white;
+	padding: 0px !important;
 }
 
 .projects-text{
@@ -142,14 +154,13 @@ a:hover{
 .profile-pic {
   display: inline;
   margin: 0 auto;
-  margin-left: -25%; 
   height: 100%;
 
 }
 
 .officer-info{
 	width: 350px;
-	padding-left: 50px;
+	padding-left: 25px;
 }
 
 .h2-black{
@@ -194,10 +205,29 @@ a:hover{
 	text-align: center;
 }
 
+.leaders-div{
+clip-path: polygon(0 0, 100% 7%, 100% 100%, 0% 100%);
+padding-top: 150px !important;
+}
+
+.centered-leader{
+	text-align: center;
+}
+
+.quote-style-4{
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
 h2{
 	margin-left: auto;
 	margin-right: auto;
 	font-size: 23px;
+}
+
+
+.h2-leaders{
+	padding: 10px;
 }
 
 .officer-info{
