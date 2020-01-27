@@ -12,7 +12,6 @@
     -webkit-transition: all 0.3s ease-in-out 0s;
     text-align: left;
     vertical-align: center;
-
 }
 
 .brandlogos{
@@ -26,7 +25,7 @@
     color:white;
 }
 
-.Navbar.solid {
+.navbar.solid {
     background-color: #1f1f1f !important;
     box-shadow: 0 0 4px #15161Ace;
 }
@@ -38,15 +37,13 @@
 
 .navbar a{ 
     color: #ffffff !important;
-    font-size:10pt;
+    font-size: 9pt;
+    font-style: bold;
 }
 
-.nav-membership-button{
-    width: 100%;
-    justify-content: center;
-}
 
 .nav-item{
+    font-weight: bold;
     padding-right: 1rem;
 }
 
@@ -64,9 +61,8 @@
     border-color: #2ecc71 !important;
 }
 
-
-.mr-auto{
-    justify-content: center !important;
+.navbar-toggler{
+    border-color: transparent !important;
 }
 
 #logo{

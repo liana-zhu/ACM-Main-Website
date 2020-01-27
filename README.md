@@ -1,7 +1,11 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## ACM Website 2019 - 2020
 
-## Available Scripts
+Development Team:
+- David Tang ( Web Committee )
+- George Chan ( Web Committee )
+- Ralph Belleca ( Web Committee )
 
+<<<<<<< HEAD
 In the project directory, you can run:
 
 ### `npm clean-install`
@@ -73,3 +77,6 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 # 123
 # ACM_Website_2019-2020
+=======
+Note: Instructions for running the project are found in develop branch README
+>>>>>>> master

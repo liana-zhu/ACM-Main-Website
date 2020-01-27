@@ -39,7 +39,7 @@ class Membership extends React.Component {
 			},
 		};
 
-		return (
+			return (
 
 			<div id="membership-body">
 				<div className="default-padding-top" >
@@ -140,8 +140,8 @@ class Membership extends React.Component {
 											Your proof of payment can be a screenshot of your PayPal/Venmo payment.
 								Once you have your proof of payment, sign up by clicking on the button below:<br></br><br></br>
 
-											<a href="https://docs.google.com/forms/d/e/1FAIpQLSfrLZsGugSQvWOiViaOD9NufRGCCNjOFoBzQmbaISwnYsl3Lw/viewform?usp=sf_link" class="btn btn-info btn-membership" role="button">Registration Form</a>
-
+								<a href="https://docs.google.com/forms/d/e/1FAIpQLSfrLZsGugSQvWOiViaOD9NufRGCCNjOFoBzQmbaISwnYsl3Lw/viewform?usp=sf_link" class="btn btn-info btn-membership" role="button">Registration Form</a>
+										
 										</Tab.Pane>
 										<Tab.Pane eventKey="second">
 											<h2><span className="highlight-text"><b><i>ACM Membership</i></b></span> ❖ REGULAR TIER</h2>
@@ -166,27 +166,27 @@ class Membership extends React.Component {
 
 											<i>1 - Paypal</i><br></br>
 											<p>Please make sure you have a working PayPal account (i.e., can make payments) before clicking the button below:
-			
+
 						        <div className='paypal-form-container'>
-													<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-														<input type="hidden" name="cmd" value="_xclick" />
-														<input type="hidden" name="business" value="acm.calstatela@gmail.com" />
-														<input type="hidden" name="lc" value="US" />
-														<input type="hidden" name="item_name" value="ACM Membership 2019-2020" />
-														<input type="hidden" name="button_subtype" value="services" />
-														<input type="hidden" name="no_note" value="0" />
-														<input type="hidden" name="currency_code" value="USD" />
-														<input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest" />
-
-														<select hidden name="os0">
-															<option type="hidden" value="Regular">Faculty/Alumni $5.50 USD</option>
-														</select>
-
-														<input type="hidden" name="option_select0" value="Regular" />
-														<input type="hidden" name="option_amount0" value="5.50" />
-														<button class='btn btn-info btn-membership'>Pay With PayPal</button>
-													</form>
-													** Additional 50 cent processing fee.
+									<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+									<input type="hidden" name="cmd" value="_xclick"/>
+									<input type="hidden" name="business" value="acm.calstatela@gmail.com"/>
+									<input type="hidden" name="lc" value="US"/>
+									<input type="hidden" name="item_name" value="ACM Membership 2019-2020"/>
+									<input type="hidden" name="button_subtype" value="services"/>
+									<input type="hidden" name="no_note" value="0"/>
+									<input type="hidden" name="currency_code" value="USD"/>
+									<input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest"/>
+									
+									<select hidden name="os0">
+										<option  type="hidden" value="Regular">Faculty/Alumni $5.50 USD</option>
+									</select>
+								
+									<input  type="hidden" name="option_select0" value="Regular"/>
+									<input type="hidden" name="option_amount0" value="5.50"/>
+									<button class='btn btn-info btn-membership'>Pay With PayPal</button>
+									</form>
+																** Additional 50 cent processing fee.
 
 								</div></p>
 
@@ -213,48 +213,51 @@ class Membership extends React.Component {
 											<h2>How to become a member?</h2>
 											The steps below are: "Payment" and "Sign-up". Please note that there are <span className="highlight-text">NO REFUNDS</span>.
 						        <br></br>
-
-											<h2>Any questions or concerns?</h2>
+										
+										<h2>Any questions or concerns?</h2>
 											<p>Send an email to acm.calstatela@gmail.com</p>
-
+											
 											<h2><span className="highlight-text"><b><i>Step One</i></b></span> ❖ Payment</h2>
 											The first step is to make a payment. Choose the most convenient method of payment for you.<br></br><br></br>
 
-											<i>1 - Paypal</i><br></br>
-											<p>Please make sure you have a working PayPal account (i.e., can make payments) before clicking the button below:
-			
-						        <div className='paypal-form-container'>
-													<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-														<input type="hidden" name="cmd" value="_xclick" />
-														<input type="hidden" name="business" value="acm.calstatela@gmail.com" />
-														<input type="hidden" name="lc" value="US" />
-														<input type="hidden" name="item_name" value="ACM Membership 2019-2020" />
-														<input type="hidden" name="button_subtype" value="services" />
-														<input type="hidden" name="no_note" value="0" />
-														<input type="hidden" name="currency_code" value="USD" />
-														<input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest" />
+										<i>1 - Paypal</i><br></br>
+										<p>Please make sure you have a working PayPal account (i.e., can make payments) before clicking the button below:
 
-														<select hidden name="os0">
-															<option type="hidden" value="Regular">Faculty/Alumni $5.50 USD</option>
-														</select>
+										<div className='paypal-form-container'>
+										<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+										<input type="hidden" name="cmd" value="_xclick"/>
+										<input type="hidden" name="business" value="acm.calstatela@gmail.com"/>
+										<input type="hidden" name="lc" value="US"/>
+										<input type="hidden" name="item_name" value="ACM Membership 2019-2020"/>
+										<input type="hidden" name="button_subtype" value="services"/>
+										<input type="hidden" name="no_note" value="0"/>
+										<input type="hidden" name="currency_code" value="USD"/>
+										<input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest"/>
 
-														<input type="hidden" name="option_select0" value="Regular" />
-														<input type="hidden" name="option_amount0" value="5.50" />
-														<button class='btn btn-info btn-membership'>Pay With PayPal</button>
-													</form>
-													** Additional 50 cent processing fee.
+										<select hidden name="os0">
+										<option  type="hidden" value="Regular">Faculty/Alumni $5.50 USD</option>
+										</select>
 
-								</div></p>
+										<input  type="hidden" name="option_select0" value="Regular"/>
+										<input type="hidden" name="option_amount0" value="5.50"/>
+										<button class='btn btn-info btn-membership'>Pay With PayPal</button>
+										</form>
+															** Additional 50 cent processing fee.
 
-											<i>2 - Venmo</i><br></br>
-											Please scan the QR code and enter $5.00.<br></br><br></br>
-											<a href={VenmoQr}>
-												<button class='btn btn-info btn-membership' src={VenmoQr}>Venmo QR Code</button></a>
-											<br></br><br></br>
+										</div></p>
 
-											<h2><span className="highlight-text"><b><i>Step Two</i></b></span> ❖ Sign-up</h2>
+						        <br></br>
+						        <h2><span className="highlight-text"><b><i>Step Two</i></b></span> ❖ Sign-up</h2>
+						        Once you're finished making the payment, please fill out the Google Form with your information<br></br>
+						        (button below). In the very bottom, you will be asked to provide a proof of payment. Please attach the<br></br>
+						        screenshot of either your cash receipt (from the treasurer) or the paypal screenshot.<br></br><br></br>
+
+						        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfrLZsGugSQvWOiViaOD9NufRGCCNjOFoBzQmbaISwnYsl3Lw/viewform?usp=sf_link" class="btn btn-info btn-membership" role="button">Registration Form</a>
+
+
+										<h2><span className="highlight-text"><b><i>Step Two</i></b></span> ❖ Sign-up</h2>
 											Your proof of payment can be a screenshot of your PayPal/Venmo payment.
-								Once you have your proof of payment, sign up by clicking on the button below:<br></br><br></br>
+								Once you have your proof of payment, sign up by clicking on the button below: <br></br><br></br>
 
 											<a href="https://docs.google.com/forms/d/e/1FAIpQLSfrLZsGugSQvWOiViaOD9NufRGCCNjOFoBzQmbaISwnYsl3Lw/viewform?usp=sf_link" class="btn btn-info btn-membership" role="button">Registration Form</a>
 
@@ -264,16 +267,17 @@ class Membership extends React.Component {
 							</Row>
 						</Tab.Container><br></br>
 					</div>
-					<div class="quote-style-2 membership-footer-text">
-						<span
-							className="highlight-text"><i>Thank you for your support!</i></span>
-						<br></br>
-						<div className="membership-text">
-							You're done! Expect to hear from us!
+					<div class="quote-style-2">
+	                            <br></br>
+	                            <span 
+            className="highlight-text"><i>Thank you for your support!</i></span>
+	                            <br></br>
+	                            <div className="membership-text">
+								You're done! Expect to hear from us!
 								</div><br></br>
-					</div>				</div>
+	                            </div>				</div>
 			</div>
-		)
+		) 
 	}
 }
 
