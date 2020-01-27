@@ -107,7 +107,7 @@ end of code
 }
 
 .tab-content{
-	width: 50vw;
+	width: 55vw;
 }
 
 .tab-container{
@@ -118,8 +118,8 @@ end of code
 	width: auto;
 	height: auto;
 	background-color:#1f1f1f !important;
-	padding: 50px;
-	margin: 50px;
+	padding: 20px;
+	margin: 20px;
 }
 
 .header-left{

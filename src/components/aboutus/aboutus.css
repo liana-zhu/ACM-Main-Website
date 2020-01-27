@@ -1,20 +1,64 @@
-.image-cropper {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    overflow: hidden;
-    border-radius: 50%;
-    border: solid 2px white;
-}
-.profile-pic {
-  display: inline;
-  margin: 0 auto;
-  margin-left: -25%; 
-  height: 100%;
-  width: auto;
+.about-us-card {
+  height: 110vh;
+  background: 
+  linear-gradient(
+  rgba(0, 0, 0, 0.55), 
+  rgba(0, 0, 0, 0.55)),
+  url("./images/classroom.png");
+  background-size: cover !important;
+  align-self: center;
+  font-size: 4.4rem;
+  color: white;
+  opacity: .6;
+  font-weight: bold;
+  grid-row: 1/2;
+  grid-column: 2/3;
 }
 
-.officers{
-  width: 100px !important;
-  height: auto !important;
+.about-us-text {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  font-size: 3.0rem;
+  color: white;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+  padding-top: 40vh;
+
+  /* display: grid; */
+  grid-template-rows: 1fr 1.4fr;
+  padding-left: 3rem;
+}
+
+.first-row {
+  margin-top: 60px;
+}
+
+.about-text {
+  text-align: left;
+  margin-left: 60px;
+}
+
+.offer-text {
+  text-align: left;
+  margin-left: 60px;
+}
+
+.join-text {
+  text-align: left;
+  margin-left: 60px;
+}
+
+.first-row {
+  margin-bottom: 30px;
+}
+
+.second-row {
+  margin-bottom: 30px;
+}
+
+.third-row {
+  margin-bottom: 30px;
 }

@@ -1,0 +1,69 @@
+.quote-style-1 {
+    text-align: center;
+    padding-top: 75px;
+    padding-left: 75px;
+}
+
+.programs-card {
+    margin: auto;
+    text-align: left;
+    color: white;
+}
+
+.programs-nav-link {
+    color: white;
+}
+
+.quote-block {    
+    border-radius: 15px;
+    background-color:#1f1f1f !important;
+}
+
+.quote-bg {
+    background: url('pictures/56775641_2321879274713318_1528259817590751232_n.jpg');
+    background-size: cover;  
+    background-attachment: fixed;
+    background-blend-mode: darken;
+}
+
+.programs-tab-content {
+    width: 70vw
+}
+
+.programs-images {
+    min-width: 2in;
+    max-width: 20vw;
+    margin: 5px;
+}
+
+.programs-poster {
+    min-width: 200px;
+    max-width: 20vw;
+}
+
+.programs-body {
+    color: white
+}
+
+.mentorship-body {
+    padding-top: 10vh;
+    padding-left: 10vw;
+    padding-bottom: 8vh;
+    padding-right: 10vw;
+    text-align: left;
+}
+
+.disclaimer {
+    font-size: 20px;
+}
+
+.anchor-blue {
+    color: #029CD7 !important;
+}
+
+.mentorship-images {
+    float: right;
+    min-width: 1.75in;
+    max-width: 20vw;
+    margin: 15px;
+}

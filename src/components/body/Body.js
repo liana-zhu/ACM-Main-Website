@@ -1,22 +1,12 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
 
-import Image0 from './leaders/kalvin.jpg'
-import Image1 from './leaders/gio.jpg'
-import Image2 from './leaders/LittleGeo.jpg'
-import Image3 from './leaders/Giovanni.jpg'
-import Image4 from './leaders/ingelbert.jpg'
-import Image5 from './leaders/andrew.jpg'
-import Image6 from './leaders/srivats.jpg'
-import Image7 from './leaders/emily.jpg'
-
-import Image8 from './space-invaders.jpg'
-
-import Calendar from '../calendar/Calendar.js';
-import FooterCarousel from '../footercarousel/FooterCarousel.js';
-import NewsHome from '../news/newshome/NewsHome.js';
-import HeaderCarousel from '../headercarousel/HeaderCarousel.js';
-import './body.css'
+import Jumbotron from "react-bootstrap/Jumbotron";
+import Calendar from "../calendar/Calendar.js";
+import FooterCarousel from "../footercarousel/FooterCarousel.js";
+import NewsHome from "../news/newshome/NewsHome.js";
+import HeaderCarousel from "../headercarousel/HeaderCarousel.js";
+import "./body.css";
 
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faHandshake, faUsers, faLaptopCode} from "@fortawesome/free-solid-svg-icons"

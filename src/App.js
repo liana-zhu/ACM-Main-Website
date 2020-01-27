@@ -2,7 +2,10 @@ import React from 'react';
 import logo from './logo.svg';
 import {BrowserRouter,Route,Redirect} from 'react-router-dom'
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import './App.css';
+import Home from './components/home/home';
 import Config from './config';
 import Navi from './components/navbar/Navi.js';
 import AboutUs from './components/aboutus/AboutUs'
@@ -11,7 +14,9 @@ import Membership from './components/membership/Membership'
 import ContactUs from './components/contactus/ContactUs'
 import Events from './components/events/Events';
 import Projects from './components/projects/Projects'
-
+import Professional from './components/professional/Professional';
+import Board from './components/board/Board';
+import Programs from './components/programs/Programs';
 import HeaderCarousel from './components/headercarousel/HeaderCarousel.js';
 import Body from './components/body/Body.js';
 import FooterCarousel from './components/footercarousel/FooterCarousel.js';
@@ -55,13 +60,17 @@ class App extends React.Component {
       <div>
         <BrowserRouter>
           <Navi/>
-          <Route exact path='/' render={() => <Body state={this.state}/>}/>
+          <Route exact path='/' component={Home}/>
+          {/*<Route exact path='/' render={() => <Body state={this.state}/>}/>*/}
           <Route path='/aboutus' component={AboutUs}/>
           <Route path='/calendar' component={Calendar}/>
           <Route path='/membership' component={Membership}/>
           <Route path='/contactus' component={ContactUs}/>
           <Route path='/events' component={Events}/>
           <Route path='/projects' component={Projects}/>
+          <Route path='/professional' component={Professional}/>
+          <Route path='/board' component={Board}/>
+          <Route path='/programs' component={Programs}/>
         </BrowserRouter>
         <FooterCarousel/>
       </div>

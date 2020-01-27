@@ -1,0 +1,88 @@
+.navbar {
+    width: 100vw;
+    position: absolute;
+    background-color: transparent !important;
+    border-radius: 0 !important;
+    letter-spacing: 2px;
+    border: none !important;
+    z-index: 100;
+    transition: all 0.3s ease-in-out 0s;
+    font-size: 2rem;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    text-align: left;
+    vertical-align: center;
+}
+
+.brandlogos{
+    padding-top: 25px;
+}
+.return{
+    margin-top: 10px;
+}
+
+.iconBrand{
+    color:white;
+}
+
+.navbar.solid {
+    background-color: #1f1f1f !important;
+    box-shadow: 0 0 4px #15161Ace;
+}
+
+.disappear{
+    display: none !important;
+
+}
+
+.navbar a{ 
+    color: #ffffff !important;
+    font-size: 9pt;
+    font-style: bold;
+}
+
+
+.nav-item{
+    font-weight: bold;
+    padding-right: 1rem;
+}
+
+.btn{
+    width: 10rem;
+}
+
+.nav-link:hover{
+    color: #029CD7 !important;
+}
+
+.nav-item button:hover{
+    background-color: #029CD7 !important;
+    color: #ffffff !important;
+    border-color: #2ecc71 !important;
+}
+
+.navbar-toggler{
+    border-color: transparent !important;
+}
+
+#logo{
+    width:75px;
+}
+
+.nav-dropdown-text {
+    color: black;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+@media only screen and (max-width: 600px)  {
+    .navbar {
+        background-color: #1c1c1e !important;
+    }
+    #homepage {
+        display: block !important;
+    }
+}
+

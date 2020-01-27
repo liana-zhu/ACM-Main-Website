@@ -1,0 +1,81 @@
+.headerLogo{
+	width: 500px;
+}
+
+.middler {
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+}
+
+#introduction{
+  display: flex;
+  align-items: center;
+}
+
+.iconBrand{
+  margin-right: 10px;
+}
+
+.slide{
+	width: 100vw;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#logoImage{
+	width: 300px;
+
+}
+#codeText{
+	padding-bottom: 0px;
+	font-size:40px;
+  font-family: 'Open Sans', sans-serif !important;
+	align-content:bottom;
+}
+.parallax {
+  background: 
+  linear-gradient(
+  rgba(0, 0, 0, 0.55), 
+  rgba(0, 0, 0, 0.55)),
+  url("sideshow1.png");
+
+  /* Set a specific height */
+  min-height: 100vh; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 20vh;
+  text-align: left;
+  color:white;
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 1138px) {
+  #introduction {
+    display: block;
+  }
+} 
+
+@media screen and (max-width: 597px) {
+  .parallax {
+
+    padding-left: inherit;
+
+    #logoImage {
+      width: 100%;
+    }
+
+    #introduction {
+      padding: 6rem;
+    }
+
+  }
+} 
