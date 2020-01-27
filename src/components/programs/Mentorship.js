@@ -10,7 +10,7 @@ class Mentorship extends React.Component {
                 <Tab.Container defaultActiveKey="menteeRole">
                     <br></br>
                     <h2><b>The <span class="highlight-text">mentorship program</span> is a life-changing experience that will help you in school and prepare you for your future career.</b></h2><br></br>
-                    <img src={require("./pictures/Mentorship Program Spring 2020.png")} class="img-fluid project-poster"></img>
+                    <img src={require("./pictures/Mentorship Flyer.png")} class="img-fluid project-poster"></img>
                     <img src={require("./pictures/mentorAndMentee.png")} class="img-fluid project-poster" style={{'margin': '50px'}}></img>
                     <br></br><br></br>
                     
