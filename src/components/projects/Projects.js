@@ -49,9 +49,15 @@ class Projects extends React.Component {
                             <Col sm={10}>                                
                                 <Tab.Content className="project-tab-content">
                                 
-                                    <h3><b>Disclaimer!</b></h3>
-                                    <span class="disclaimer"><b>You must be a member of ACM to participate in the projects!</b> If you are not a member, 
-                                    <b><i><span class="highlight-text"> you will not be allowed in.</span></i></b></span><br></br><br></br>
+                                <h3><b>Disclaimer!</b></h3>
+                                    <span class="disclaimer"><b>1. You must be a member of ACM to participate in the projects!</b> If you are not a member, 
+                                    <b><i><span class="highlight-text"> you will not be allowed in.</span></i></b></span><br></br>
+                                    <span class="disclaimer"><b>2. Admittance to these projects are <span class="highlight-text">first come, first served.
+                                    </span></b> Space is limited in these projects, so you are advised to attend the First General Meeting to secure 
+                                    yourself a spot in the project of your choosing.</span><br></br>
+                                    <span class="disclaimer"><b>3. The deadline to apply to the Spring 2020 projects is <i><span class="highlight-text">
+                                    Monday, February 10th, 2020 at 6:00 PM.</span></i></b></span><br></br>
+                                    <br></br><br></br>
 
                                     <Tab.Pane eventKey="spring2020projects">
                                         <Tab.Container defaultActiveKey="S2020beginner">                                            
@@ -71,8 +77,11 @@ class Projects extends React.Component {
                                                         description="Personal Website is a beginner’s project that requires little to no programming experience. If you have no coding experience or you are just interested in coding, then this is the perfect project for you. In this project, you will create your own personal website. This project is an excellent way to create a portfolio to showcase your art or promote yourself. You can even create your own blog and design the website however you like. The technologies that you will learn will include: HTML, CSS, JavaScript, and Bootstrap."
                                                         technologies={["HTML", "CSS", "JavaScript", "Bootstrap"]}
                                                         poster="./spring2020/Personal Website.png"
-                                                        linkToSignUp=""
+                                                        linkToSignUp="https://docs.google.com/forms/d/e/1FAIpQLSePO_VbTGlI838nY0oXqDpQDGC6GZ6guEMwJqrHHp32gR3-ag/viewform"
                                                         openDate="01/28/2020"
+                                                        opentime="14:59:59"
+                                                        deadlineDate="2/10/2020"
+                                                        deadlineTime="17:59:59"
                                                         projectLeadersImages={["./leaders/Srivats V.png", "./leaders/Giovanni C.png", "./leaders/Vacant.png"]}
                                                         projectLeaders={["Srivats Venkataraman", "Giovanni Castellanos", "Kevin Flores (Missing Picture)"]}
                                                         />
@@ -84,8 +93,11 @@ class Projects extends React.Component {
                                                         description="Space Invaders Part II is a game development project, which is a continuation of last semester's project. New features include new bosses, level progressions, and special abilities. This project will contain a lot of object-oriented programming along with some data structures. This project is meant for more experienced programmers who would like a challenge and for those who participated in last semester’s Space Invaders Part I. The technologies and language used will be Python and Pycharm."
                                                         technologies={["Python", "PyCharm"]}
                                                         poster="./spring2020/Space Invaders 2.0.png"
-                                                        linkToSignUp=""
+                                                        linkToSignUp="https://docs.google.com/forms/d/e/1FAIpQLSeZ9Pdvj0luRQgZ7B7JWM8eRA3-xq0Mn9VYH_K59MeKz7ehNw/viewform"
                                                         openDate="01/28/2020"
+                                                        opentime="14:59:59"
+                                                        deadlineDate="2/10/2020"
+                                                        deadlineTime="17:59:59"
                                                         projectLeadersImages={["./leaders/Andrew G.png", "./leaders/Elton M.png", "./leaders/Vacant.png", "./leaders/Vacant.png"]}
                                                         projectLeaders={["Andrew Gonzalez", "Elton Lin", "John Grover (Missing Picture)", "Luis Garcia (Missing Picture)"]}
                                                         />
