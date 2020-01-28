@@ -8,21 +8,17 @@ import DavidT from "./2019-2020-leaders/David.png";
 import Deric2019 from "./2019-2020-leaders/Deric K.png";
 import Diego2019 from "./2019-2020-leaders/Diego F.png";
 import Elton from "./2019-2020-leaders/Elton M.png";
-import Emily2019 from "./2019-2020-leaders/Emily P.png";
 import George from "./2019-2020-leaders/George C.png";
 import GeovannyH2019 from "./2019-2020-leaders/Geovanny H.png";
-import GioG2019 from "./2019-2020-leaders/Gio G.png";
 import GioC2019 from "./2019-2020-leaders/Giovanni C.png";
-import Ingelbert2019 from "./2019-2020-leaders/Inelbert F.png";
-import Isaac from "./2019-2020-leaders/Isaac V.png";
 import Kalvin2019 from "./2019-2020-leaders/Kalvin M.png";
-import Marco from "./2019-2020-leaders/Marco A.png";
 import Mazel from "./2019-2020-leaders/Mazel H.png";
 import Randy from "./2019-2020-leaders/Randy Moss Advisor-2.jpg";
 import Srivats2019 from "./2019-2020-leaders/Srivats V.png";
 import Wilson2019 from "./2019-2020-leaders/wilson.jpg";
 import Vacant from "./2019-2020-leaders/Vacant.png";
 
+//Alexis is Erving
 import Alexis from "./2018-2019-leaders/alexis.jpg"
 import Andrew2018 from "./2018-2019-leaders/andrew.jpg"
 import Brian from "./2018-2019-leaders/brian.jpg"
@@ -40,19 +36,9 @@ import Ryan from "./2018-2019-leaders/ryan.jpg"
 import Srivats2018 from "./2018-2019-leaders/srivats.jpg"
 import Wilson2018 from "./2018-2019-leaders/wilson.jpg"
 
-import { Tabs, Row, Col, Tab, Nav, Button } from 'react-bootstrap'
+import {Row, Col, Tab, Nav} from 'react-bootstrap'
 import Jumbotron from "react-bootstrap/Jumbotron";
-import Calendar from "../calendar/Calendar.js";
-import FooterCarousel from "../footercarousel/FooterCarousel.js";
-import NewsHome from "../news/newshome/NewsHome.js";
 import "./board.css";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faHandshake,
-  faUsers,
-  faLaptopCode
-} from "@fortawesome/free-solid-svg-icons";
 
 class Board extends React.Component {
   render() {

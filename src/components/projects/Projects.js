@@ -216,7 +216,7 @@ class Projects extends React.Component {
                                                             './Accord/38.jpg', 
                                                             './Accord/39.jpg'
                                                         ]}
-                                                        projectLeadersImages={['./leaders/Emily P.png', './leaders/Inelbert F.png', './leaders/Srivats V.png', './leaders/Deric K.png']}
+                                                        projectLeadersImages={['./leaders/Emily P.png', './leaders/Ingelbert F.png', './leaders/Srivats V.png', './leaders/Deric K.png']}
                                                         projectLeaders={['Emily Pascua', 'Ingelbert Figueroa', 'Srivats Venkataraman', 'Deric Kwok']}
                                                         />
                                                 </Tab.Pane>
@@ -257,7 +257,7 @@ class Projects extends React.Component {
                                                         technologies={['Android Studio', 'Java']}
                                                         poster='./pictures/androidDev.jpg'
                                                         projectImages={['./pictures/android1.jpg', './pictures/android2.jpg', './pictures/android3.jpg']}
-                                                        projectLeadersImages={['./leaders/Inelbert F.png', './leaders/Emily P.png', './leaders/Srivats V.png']}
+                                                        projectLeadersImages={['./leaders/Ingelbert F.png', './leaders/Emily P.png', './leaders/Srivats V.png']}
                                                         projectLeaders={['Ingelbert Figueroa', 'Emily Pascua', 'Srivats Venkataraman']}
                                                         />
                                                 </Tab.Pane>
