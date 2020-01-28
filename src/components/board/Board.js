@@ -67,7 +67,8 @@ class Board extends React.Component {
                           ACM 2019-2020 BOARD
                           </h2>
                       </div>
-                      <div className="row-leaders">
+                      {/* Fixed format (alignment) of leaders by adding "centered-leader" to class name of each row*/}
+                      <div className="row-leaders centered-leader">
                         <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={Kalvin2019}></img>
                           <div className="officer-info">
@@ -81,7 +82,7 @@ class Board extends React.Component {
                             </div>
                         </div>
                       </div>
-                      <div className="row-leaders">
+                      <div className="row-leaders centered-leader">
                         <div className="col-leaders">
                           <img
                             className="image-cropper profile-pic "
@@ -98,7 +99,7 @@ class Board extends React.Component {
                             </div>
                         </div>
                       </div>
-                      <div className="row-leaders">
+                      <div className="row-leaders centered-leader">
                         <div className="col-leaders">
                           <img
                             className="image-cropper profile-pic "
@@ -115,7 +116,7 @@ class Board extends React.Component {
                             </div>
                         </div>
                       </div>
-                      <div className="row-leaders">
+                      <div className="row-leaders centered-leader">
                         <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={Andrew2019}></img>
                           <div className="officer-info">
@@ -134,7 +135,7 @@ class Board extends React.Component {
                       <div className="row">
                         <h2 className="h2-leaders">OFFICERS</h2>
                       </div>
-                      <div className="row-leaders">
+                      <div className="row-leaders centered-leader">
                         <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={Elton}></img>
                           <div className="officer-info">
@@ -148,7 +149,7 @@ class Board extends React.Component {
                             </div>
                         </div>
                       </div>
-                      <div className="row-leaders">
+                      <div className="row-leaders centered-leader">
                         <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={DavidT}></img>
                           <div className="officer-info">
@@ -161,7 +162,7 @@ class Board extends React.Component {
                       <div className="row">
                         <h2 className="h2-leaders">COMMITTEE</h2>
                       </div>
-                      <div className="row-leaders">
+                      <div className="row-leaders centered-leader">
                         <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={Deric2019}></img>
                           <div className="officer-info">
@@ -178,7 +179,7 @@ class Board extends React.Component {
                             </div>
                         </div>
                       </div>
-                      <div className="row-leaders">
+                      <div className="row-leaders centered-leader">
                         <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={Vacant}></img>
                           <div className="officer-info">
@@ -191,7 +192,7 @@ class Board extends React.Component {
                             </div>
                         </div>
                       </div>
-                      <div className="row-leaders">
+                      <div className="row-leaders centered-leader">
                         <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={Vacant}></img>
                           <div className="officer-info">
@@ -205,7 +206,7 @@ class Board extends React.Component {
                             </div>
                         </div>
                       </div>
-                      <div className="row-leaders">
+                      <div className="row-leaders centered-leader">
                         <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={George}></img>
                           <div className="officer-info">
@@ -222,7 +223,7 @@ class Board extends React.Component {
                       <div className="row">
                         <h2 className="h2-leaders">ADVISORS</h2>
                       </div>
-                      <div className="row-leaders">
+                      <div className="row-leaders centered-leader">
                         <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={Randy}></img>
                           <div className="officer-info">
@@ -245,7 +246,7 @@ class Board extends React.Component {
                           ACM 2018-2019 BOARD
                           </h2>
                       </div>
-                      <div className="row-leaders">
+                      <div className="row-leaders centered-leader">
                         <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={Wilson2018}></img>
                           <div className="officer-info">
@@ -259,7 +260,7 @@ class Board extends React.Component {
                             </div>
                         </div>
                       </div>
-                      <div className="row-leaders">
+                      <div className="row-leaders centered-leader">
                         <div className="col-leaders">
                           <img
                             className="image-cropper profile-pic "
@@ -276,7 +277,7 @@ class Board extends React.Component {
                             </div>
                         </div>
                       </div>
-                      <div className="row-leaders">
+                      <div className="row-leaders centered-leader">
                         <div className="col-leaders">
                           <img
                             className="image-cropper profile-pic "
@@ -293,7 +294,7 @@ class Board extends React.Component {
                             </div>
                         </div>
                       </div>
-                      <div className="row-leaders">
+                      <div className="row-leaders centered-leader">
                         <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={Brian}></img>
                           <div className="officer-info">
@@ -312,7 +313,7 @@ class Board extends React.Component {
                       <div className="row">
                         <h2 className="h2-leaders">OFFICERS</h2>
                       </div>
-                      <div className="row-leaders">
+                      <div className="row-leaders centered-leader">
                         <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={Kalvin2018}></img>
                           <div className="officer-info">
@@ -326,7 +327,7 @@ class Board extends React.Component {
                             </div>
                         </div>
                       </div>
-                      <div className="row-leaders">
+                      <div className="row-leaders centered-leader">
                         <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={GioC2018}></img>
                           <div className="officer-info">
@@ -340,7 +341,7 @@ class Board extends React.Component {
                             </div>
                         </div>
                       </div>
-                      <div className="row-leaders">
+                      <div className="row-leaders centered-leader">
                         <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={Ryan}></img>
                           <div className="officer-info">
@@ -353,7 +354,7 @@ class Board extends React.Component {
                       <div className="row">
                         <h2 className="h2-leaders">COMMITTEE</h2>
                       </div>
-                      <div className="row-leaders">
+                      <div className="row-leaders centered-leader">
                         <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={Emily2018}></img>
                           <div className="officer-info">
@@ -370,7 +371,7 @@ class Board extends React.Component {
                             </div>
                         </div>
                       </div>
-                      <div className="row-leaders">
+                      <div className="row-leaders centered-leader">
                         <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={Ingelbert2018}></img>
                           <div className="officer-info">
@@ -384,7 +385,7 @@ class Board extends React.Component {
                             </div>
                         </div>
                       </div>
-                      <div className="row-leaders">
+                      <div className="row-leaders centered-leader">
                         <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={Alexis}></img>
                           <div className="officer-info">
