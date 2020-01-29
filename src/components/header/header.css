@@ -21,19 +21,19 @@
 	width: 300px;
 
 }
-.parallax_style2 {
+/* .parallax_style2 {
     background: 
     linear-gradient(
       rgba(0, 0, 0, 0.55), 
       rgba(0, 0, 0, 0.55)
           ),
-    url("throphie.png");
+    url("throphie.png"); */
 
   /* Set a specific height */
-  min-height: 60vh; 
+  /* min-height: 60vh;  */
 
   /* Create the parallax scrolling effect */
-  background-attachment: fixed;
+  /* background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -46,4 +46,4 @@
 
   -webkit-clip-path: polygon(0 0, 100% 0, 200% 56%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-}
+} */
