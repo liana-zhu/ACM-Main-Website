@@ -83,7 +83,7 @@ class Projects extends React.Component {
                                                         deadlineDate="2/10/2020"
                                                         deadlineTime="17:59:59"
                                                         projectLeadersImages={["./leaders/Srivats V.png", "./leaders/Giovanni C.png", "./leaders/Vacant.png"]}
-                                                        projectLeaders={["Srivats Venkataraman", "Giovanni Castellanos", "Kevin Flores (Missing Picture)"]}
+                                                        projectLeaders={["Srivats Venkataraman", "Giovanni Castellanos", "Kevin Flores"]}
                                                         />
                                                 </Tab.Pane>
                                                 <Tab.Pane eventKey="S2020advanced">
@@ -99,7 +99,7 @@ class Projects extends React.Component {
                                                         deadlineDate="2/10/2020"
                                                         deadlineTime="17:59:59"
                                                         projectLeadersImages={["./leaders/Andrew G.png", "./leaders/Elton M.png", "./leaders/Vacant.png", "./leaders/Vacant.png"]}
-                                                        projectLeaders={["Andrew Gonzalez", "Elton Lin", "John Grover (Missing Picture)", "Luis Gonzalez (Missing Picture)"]}
+                                                        projectLeaders={["Andrew Gonzalez", "Elton Lin", "John Grover", "Luis Gonzalez"]}
                                                         />
                                                 </Tab.Pane>
                                             </Tab.Content>

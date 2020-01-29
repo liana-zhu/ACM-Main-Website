@@ -1,15 +1,4 @@
 import React from 'react'
-import Marquee from 'react-double-marquee'
-import Image0 from './images/image0.jpg'
-import Image1 from './images/image1.jpg'
-import Image2 from './images/image2.jpg'
-import Image3 from './images/image3.jpg'
-import Image4 from './images/image4.jpg'
-import Image5 from './images/image5.jpg'
-import Image6 from './images/image6.jpg'
-import Image7 from './images/image7.jpg'
-import Image8 from './images/image8.jpg'
-import Image9 from './images/image9.jpg'
 import './footercarousel.css'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faInstagram, faFacebookF, faDiscord} from "@fortawesome/free-brands-svg-icons"
