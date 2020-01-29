@@ -126,45 +126,12 @@ class Projects extends React.Component {
                                                         technologies={['Python', 'PyGame', 'Python', 'Git/Github', 'Did I mention Python...?']}
                                                         poster='./pictures/beginner.png'
                                                         projectImages={[
-                                                            './Space Invaders/IMG_9734.jpg',
-                                                            './Space Invaders/IMG_9735.jpg',
-                                                            './Space Invaders/IMG_9736.jpg',
-                                                            './Space Invaders/IMG_9738.jpg',
-                                                            './Space Invaders/IMG_9739.jpg',
-                                                            './Space Invaders/IMG_9740.jpg',
-                                                            './Space Invaders/IMG_9741.jpg',
-                                                            './Space Invaders/IMG_9744.jpg',
-                                                            './Space Invaders/IMG_9745.jpg',
-                                                            './Space Invaders/IMG_9746.jpg',
-                                                            './Space Invaders/IMG_9747.jpg',
-                                                            './Space Invaders/IMG_9748.jpg',
-                                                            './Space Invaders/IMG_9750.jpg',
-                                                            './Space Invaders/IMG_9755.jpg',
-                                                            './Space Invaders/IMG_9756.jpg',
-                                                            './Space Invaders/IMG_9759.jpg',
-                                                            './Space Invaders/IMG_9760.jpg',
-                                                            './Space Invaders/IMG_9763.jpg',
-                                                            './Space Invaders/IMG_9764.jpg',
-                                                            './Space Invaders/IMG_9765.jpg',
-                                                            './Space Invaders/IMG_9767.jpg',
-                                                            './Space Invaders/IMG_9768.jpg',
-                                                            './Space Invaders/IMG_9769.jpg',
-                                                            './Space Invaders/IMG_9962.jpg',
-                                                            './Space Invaders/IMG_9963.jpg',
-                                                            './Space Invaders/IMG_9965.jpg',
-                                                            './Space Invaders/IMG_9967.jpg',
-                                                            './Space Invaders/IMG_9968.jpg',
-                                                            './Space Invaders/IMG_9969.jpg',
-                                                            './Space Invaders/IMG_9970.jpg',
-                                                            './Space Invaders/IMG_9973.jpg',
-                                                            './Space Invaders/IMG_9974.jpg',
-                                                            './Space Invaders/IMG_9975.jpg',
-                                                            './Space Invaders/IMG_9976.jpg',
-                                                            './Space Invaders/IMG_9977.jpg',
-                                                            './Space Invaders/1a.jpg', 
-                                                            './Space Invaders/1b.jpg', 
-                                                            './Space Invaders/2a.jpg'
-                                                        ]}
+                                                            './Space Invaders/space1.jpg',
+                                                            './Space Invaders/space2.jpg',
+                                                            './Space Invaders/space3.jpg',
+                                                            './Space Invaders/space4.jpg',
+                                                            './Space Invaders/space5.jpg'
+                                                             ]}
                                                         projectLeadersImages={['./leaders/Andrew G.png','./leaders/Cristian C.png', './leaders/Elton M.png']}
                                                         projectLeaders={['Andrew Gonzalez', 'Cristian Corrales', 'Elton Lin']}
                                                         />
@@ -178,43 +145,10 @@ class Projects extends React.Component {
                                                         technologies={['React.js', 'Git/Github', 'Firebase', 'Node.js', 'HTML', 'CSS']}
                                                         poster='./pictures/intermediate.png'
                                                         projectImages={[
-                                                            './Accord/1.jpg', 
-                                                            './Accord/10.jpg', 
-                                                            './Accord/11.jpg', 
-                                                            './Accord/12.jpg', 
-                                                            './Accord/13.jpg', 
-                                                            './Accord/14.jpg', 
-                                                            './Accord/15.jpg', 
-                                                            './Accord/16.jpg', 
-                                                            './Accord/17.jpg', 
-                                                            './Accord/18.jpg', 
-                                                            './Accord/19.jpg', 
-                                                            './Accord/2.jpg',
-                                                            './Accord/3.jpg', 
-                                                            './Accord/4.jpg', 
-                                                            './Accord/40.jpg', 
-                                                            './Accord/41.jpg', 
-                                                            './Accord/42.jpg', 
-                                                            './Accord/43.jpg', 
-                                                            './Accord/44.jpg', 
-                                                            './Accord/5.jpg', 
-                                                            './Accord/50.jpg', 
-                                                            './Accord/51.jpg', 
-                                                            './Accord/52.jpg', 
-                                                            './Accord/53.jpg', 
-                                                            './Accord/54.jpg', 
-                                                            './Accord/55.jpg', 
-                                                            './Accord/56.jpg',
-                                                            './Accord/57.jpg', 
-                                                            './Accord/58.jpg', 
-                                                            './Accord/59.jpg', 
-                                                            './Accord/6.jpg', 
-                                                            './Accord/60.jpg', 
-                                                            './Accord/61.jpg', 
-                                                            './Accord/62.jpg', 
-                                                            './Accord/37.jpg', 
-                                                            './Accord/38.jpg', 
-                                                            './Accord/39.jpg'
+                                                            './Accord/accord1.jpg', 
+                                                            './Accord/accord2.jpg', 
+                                                            './Accord/accord3.jpg', 
+                                                            './Accord/accord4.jpg'
                                                         ]}
                                                         projectLeadersImages={['./leaders/Emily P.png', './leaders/Ingelbert F.png', './leaders/Srivats V.png', './leaders/Deric K.png']}
                                                         projectLeaders={['Emily Pascua', 'Ingelbert Figueroa', 'Srivats Venkataraman', 'Deric Kwok']}
