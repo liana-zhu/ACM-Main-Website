@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-In the project directory, you can run:
+Using the command line (not Git), go to the project directory and run:
 
 ### `npm clean-install`
 
