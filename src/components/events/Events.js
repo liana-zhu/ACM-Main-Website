@@ -24,7 +24,8 @@ class Events extends React.Component {
     render() {
         let important_upcoming_events = <div>test</div>;
         const today = new Date()
-        const testDeadline = new Date("01-28-2020 23:59:59");
+        //Use '/' not '-' for dates to prevent issues on Firefox.
+        const testDeadline = new Date("01/28/2020 23:59:59");
         const isPastDeadline = today.getTime() > testDeadline.getTime();
         if (isPastDeadline) {
             important_upcoming_events = <div><br></br><br></br></div>;
