@@ -78,9 +78,10 @@ class Projects extends React.Component {
                                                         technologies={["HTML", "CSS", "JavaScript", "Bootstrap"]}
                                                         poster="./spring2020/Personal Website.png"
                                                         linkToSignUp="https://docs.google.com/forms/d/e/1FAIpQLSePO_VbTGlI838nY0oXqDpQDGC6GZ6guEMwJqrHHp32gR3-ag/viewform"
+                                                        //Use '/' not '-' for dates to prevent issues on Firefox.
                                                         openDate="01/28/2020"
                                                         opentime="14:59:59"
-                                                        deadlineDate="2/10/2020"
+                                                        deadlineDate="02/09/2020"
                                                         deadlineTime="17:59:59"
                                                         projectLeadersImages={["./leaders/Srivats V.png", "./leaders/Giovanni C.png", "./leaders/Vacant.png"]}
                                                         projectLeaders={["Srivats Venkataraman", "Giovanni Castellanos", "Kevin Flores"]}
@@ -94,9 +95,10 @@ class Projects extends React.Component {
                                                         technologies={["Python", "PyCharm"]}
                                                         poster="./spring2020/Space Invaders 2.0.png"
                                                         linkToSignUp="https://docs.google.com/forms/d/e/1FAIpQLSeZ9Pdvj0luRQgZ7B7JWM8eRA3-xq0Mn9VYH_K59MeKz7ehNw/viewform"
+                                                        //Use '/' not '-' for dates to prevent issues on Firefox.
                                                         openDate="01/28/2020"
                                                         opentime="14:59:59"
-                                                        deadlineDate="2/10/2020"
+                                                        deadlineDate="02/09/2020"
                                                         deadlineTime="17:59:59"
                                                         projectLeadersImages={["./leaders/Andrew G.png", "./leaders/Elton M.png", "./leaders/Vacant.png", "./leaders/Vacant.png"]}
                                                         projectLeaders={["Andrew Gonzalez", "Elton Lin", "John Grover", "Luis Gonzalez"]}
