@@ -12,35 +12,27 @@ class NewProject extends React.Component {
 
     render() {
 
-        // if (this.props.isFormReady) {
-        //     if (this.props.linkToSignUp == "") {
-        //         button = <Button variant="secondary" disabled>You cannot sign up for this project at the moment.</Button>
-        //     }
-        //     else if (this.props.linkToSignUp == "passed") {
-        //         button = <Button variant="secondary" disabled>The deadline to sign up has passed. Sorry!</Button>
-        //     }
-        //     else if (this.props.linkToSignUp == "notReady") {
-        //         button = <Button variant="secondary" disabled>This project is not open yet.</Button>
-        //     }
-        //     else {
-        //         button = <Button variant="success" href={this.props.linkToSignUp}>Click here to Sign Up!</Button>
-        //     }                
-        // }
-        // else {
-        //     button = <Button variant="secondary" disabled>This project will open at {this.props.linkToSignUp}.</Button>
-        // }
+        let button
+        const today = new Date()
+        const deadline = new Date(this.props.deadlineDate + " " + this.props.deadlineTime)
+        
+        if (today >= deadline) {
+            button = <Button variant="secondary" disabled>The deadline to sign up has passed. Sorry!</Button>
+        }
+        else {
+            button = <Button variant="success" href={this.props.linkToSignUp}>Click here to Sign Up!</Button>
+        }
 
         return (
             <div>
                 <br></br>
                 <b>{this.props.opener} </b>{this.props.description}<br></br><br></br>
                 
-                <Button variant="success" href={this.props.linkToSignUp}>Click here to Sign Up!</Button><br></br><br></br>
+                {button}<br></br><br></br>
 
                 <h2>❖ <span class="highlight-text">Expected Technologies in this Project:</span></h2><br></br>
                 <ul>
                     {this.props.technologies.map((value, index) => {
-                        console.log({value})
                         return <li>{value}</li>
                     })}
                 </ul>
