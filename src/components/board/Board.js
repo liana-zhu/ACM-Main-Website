@@ -15,6 +15,8 @@ import Kalvin2019 from "./2019-2020-leaders/Kalvin M.png";
 import Mazel from "./2019-2020-leaders/Mazel H.png";
 import Randy from "./2019-2020-leaders/Randy Moss Advisor-2.jpg";
 import Srivats2019 from "./2019-2020-leaders/Srivats V.png";
+import Grover from "./2019-2020-leaders/Grover.JPG";
+import Luis from "./2019-2020-leaders/Luis.JPG";
 import Wilson2019 from "./2019-2020-leaders/wilson.jpg";
 import Vacant from "./2019-2020-leaders/Vacant.png";
 
@@ -194,13 +196,13 @@ class Board extends React.Component {
                       </div>
                       <div className="row-leaders centered-leader">
                         <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Vacant}></img>
+                          <img className="image-cropper profile-pic " src={Grover}></img>
                           <div className="officer-info">
                             <h2>John Grover</h2>Project Committee
                             </div>
                         </div>
                         <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Vacant}></img>
+                          <img className="image-cropper profile-pic " src={Luis}></img>
                           <div className="officer-info">
                             <h2>Luis Gonzalez</h2>Project Committee
                             </div>
