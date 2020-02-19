@@ -12,7 +12,6 @@ import George from "./2019-2020-leaders/George C.png";
 import GeovannyH2019 from "./2019-2020-leaders/Geovanny H.png";
 import GioC2019 from "./2019-2020-leaders/Giovanni C.png";
 import Kalvin2019 from "./2019-2020-leaders/Kalvin M.png";
-import Mazel from "./2019-2020-leaders/Mazel H.png";
 import Randy from "./2019-2020-leaders/Randy Moss Advisor-2.jpg";
 import Srivats2019 from "./2019-2020-leaders/Srivats V.png";
 import Grover from "./2019-2020-leaders/Grover.JPG";
@@ -38,7 +37,7 @@ import Ryan from "./2018-2019-leaders/ryan.jpg"
 import Srivats2018 from "./2018-2019-leaders/srivats.jpg"
 import Wilson2018 from "./2018-2019-leaders/wilson.jpg"
 
-import {Row, Col, Tab, Nav} from 'react-bootstrap'
+import { Row, Col, Tab, Nav } from 'react-bootstrap'
 import Jumbotron from "react-bootstrap/Jumbotron";
 import "./board.css";
 
@@ -188,33 +187,28 @@ class Board extends React.Component {
                             <h2>Kevin Flores</h2>Outreach Committee</div>
                         </div>
                         <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Mazel}></img>
-                          <div className="officer-info">
-                            <h2>Mazel Fernandez</h2>Outreach Committee
-                            </div>
-                        </div>
-                      </div>
-                      <div className="row-leaders centered-leader">
-                        <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={Grover}></img>
                           <div className="officer-info">
                             <h2>John Grover</h2>Project Committee
                             </div>
                         </div>
+
+                      </div>
+                      <div className="row-leaders centered-leader">
                         <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={Luis}></img>
                           <div className="officer-info">
                             <h2>Luis Gonzalez</h2>Project Committee
                             </div>
                         </div>
-                      </div>
-                      <div className="row-leaders centered-leader">
                         <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={George}></img>
                           <div className="officer-info">
                             <h2>George Chan</h2>Web Committee
                             </div>
                         </div>
+                      </div>
+                      <div className="row-leaders centered-leader">
                         <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={Vacant}></img>
                           <div className="officer-info">
