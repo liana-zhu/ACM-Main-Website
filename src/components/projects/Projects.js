@@ -49,9 +49,15 @@ class Projects extends React.Component {
                             <Col sm={10}>                                
                                 <Tab.Content className="project-tab-content">
                                 
-                                    <h3><b>Disclaimer!</b></h3>
-                                    <span class="disclaimer"><b>You must be a member of ACM to participate in the projects!</b> If you are not a member, 
-                                    <b><i><span class="highlight-text"> you will not be allowed in.</span></i></b></span><br></br><br></br>
+                                <h3><b>Disclaimer!</b></h3>
+                                    <span class="disclaimer"><b>1. You must be a member of ACM to participate in the projects!</b> If you are not a member, 
+                                    <b><i><span class="highlight-text"> you will not be allowed in.</span></i></b></span><br></br>
+                                    <span class="disclaimer"><b>2. Admittance to these projects are <span class="highlight-text">first come, first served.
+                                    </span></b> Space is limited in these projects, so you are advised to attend the First General Meeting to secure 
+                                    yourself a spot in the project of your choosing.</span><br></br>
+                                    <span class="disclaimer"><b>3. The deadline to apply to the Spring 2020 projects is <i><span class="highlight-text">
+                                    Sunday, February 9th, 2020 at 6:00 PM.</span></i></b></span><br></br>
+                                    <br></br><br></br>
 
                                     <Tab.Pane eventKey="spring2020projects">
                                         <Tab.Container defaultActiveKey="S2020beginner">                                            
@@ -71,10 +77,14 @@ class Projects extends React.Component {
                                                         description="Personal Website is a beginner’s project that requires little to no programming experience. If you have no coding experience or you are just interested in coding, then this is the perfect project for you. In this project, you will create your own personal website. This project is an excellent way to create a portfolio to showcase your art or promote yourself. You can even create your own blog and design the website however you like. The technologies that you will learn will include: HTML, CSS, JavaScript, and Bootstrap."
                                                         technologies={["HTML", "CSS", "JavaScript", "Bootstrap"]}
                                                         poster="./spring2020/Personal Website.png"
-                                                        linkToSignUp=""
+                                                        linkToSignUp="https://docs.google.com/forms/d/e/1FAIpQLSePO_VbTGlI838nY0oXqDpQDGC6GZ6guEMwJqrHHp32gR3-ag/viewform"
+                                                        //Use '/' not '-' for dates to prevent issues on Firefox.
                                                         openDate="01/28/2020"
+                                                        opentime="14:59:59"
+                                                        deadlineDate="02/09/2020"
+                                                        deadlineTime="17:59:59"
                                                         projectLeadersImages={["./leaders/Srivats V.png", "./leaders/Giovanni C.png", "./leaders/Vacant.png"]}
-                                                        projectLeaders={["Srivats Venkataraman", "Giovanni Castellanos", "Kevin Flores (Missing Picture)"]}
+                                                        projectLeaders={["Srivats Venkataraman", "Giovanni Castellanos", "Kevin Flores"]}
                                                         />
                                                 </Tab.Pane>
                                                 <Tab.Pane eventKey="S2020advanced">
@@ -84,10 +94,14 @@ class Projects extends React.Component {
                                                         description="Space Invaders Part II is a game development project, which is a continuation of last semester's project. New features include new bosses, level progressions, and special abilities. This project will contain a lot of object-oriented programming along with some data structures. This project is meant for more experienced programmers who would like a challenge and for those who participated in last semester’s Space Invaders Part I. The technologies and language used will be Python and Pycharm."
                                                         technologies={["Python", "PyCharm"]}
                                                         poster="./spring2020/Space Invaders 2.0.png"
-                                                        linkToSignUp=""
+                                                        linkToSignUp="https://docs.google.com/forms/d/e/1FAIpQLSeZ9Pdvj0luRQgZ7B7JWM8eRA3-xq0Mn9VYH_K59MeKz7ehNw/viewform"
+                                                        //Use '/' not '-' for dates to prevent issues on Firefox.
                                                         openDate="01/28/2020"
-                                                        projectLeadersImages={["./leaders/Andrew G.png", "./leaders/Elton M.png", "./leaders/Vacant.png", "./leaders/Vacant.png"]}
-                                                        projectLeaders={["Andrew Gonzalez", "Elton Lin", "John Grover (Missing Picture)", "Luis Garcia (Missing Picture)"]}
+                                                        opentime="14:59:59"
+                                                        deadlineDate="02/09/2020"
+                                                        deadlineTime="17:59:59"
+                                                        projectLeadersImages={["./leaders/Andrew G.png", "./leaders/Elton M.png", "./leaders/Grover.JPG", "./leaders/Luis.JPG"]}
+                                                        projectLeaders={["Andrew Gonzalez", "Elton Lin", "John Grover", "Luis Gonzalez"]}
                                                         />
                                                 </Tab.Pane>
                                             </Tab.Content>
@@ -114,45 +128,12 @@ class Projects extends React.Component {
                                                         technologies={['Python', 'PyGame', 'Python', 'Git/Github', 'Did I mention Python...?']}
                                                         poster='./pictures/beginner.png'
                                                         projectImages={[
-                                                            './Space Invaders/IMG_9734.jpg',
-                                                            './Space Invaders/IMG_9735.jpg',
-                                                            './Space Invaders/IMG_9736.jpg',
-                                                            './Space Invaders/IMG_9738.jpg',
-                                                            './Space Invaders/IMG_9739.jpg',
-                                                            './Space Invaders/IMG_9740.jpg',
-                                                            './Space Invaders/IMG_9741.jpg',
-                                                            './Space Invaders/IMG_9744.jpg',
-                                                            './Space Invaders/IMG_9745.jpg',
-                                                            './Space Invaders/IMG_9746.jpg',
-                                                            './Space Invaders/IMG_9747.jpg',
-                                                            './Space Invaders/IMG_9748.jpg',
-                                                            './Space Invaders/IMG_9750.jpg',
-                                                            './Space Invaders/IMG_9755.jpg',
-                                                            './Space Invaders/IMG_9756.jpg',
-                                                            './Space Invaders/IMG_9759.jpg',
-                                                            './Space Invaders/IMG_9760.jpg',
-                                                            './Space Invaders/IMG_9763.jpg',
-                                                            './Space Invaders/IMG_9764.jpg',
-                                                            './Space Invaders/IMG_9765.jpg',
-                                                            './Space Invaders/IMG_9767.jpg',
-                                                            './Space Invaders/IMG_9768.jpg',
-                                                            './Space Invaders/IMG_9769.jpg',
-                                                            './Space Invaders/IMG_9962.jpg',
-                                                            './Space Invaders/IMG_9963.jpg',
-                                                            './Space Invaders/IMG_9965.jpg',
-                                                            './Space Invaders/IMG_9967.jpg',
-                                                            './Space Invaders/IMG_9968.jpg',
-                                                            './Space Invaders/IMG_9969.jpg',
-                                                            './Space Invaders/IMG_9970.jpg',
-                                                            './Space Invaders/IMG_9973.jpg',
-                                                            './Space Invaders/IMG_9974.jpg',
-                                                            './Space Invaders/IMG_9975.jpg',
-                                                            './Space Invaders/IMG_9976.jpg',
-                                                            './Space Invaders/IMG_9977.jpg',
-                                                            './Space Invaders/1a.jpg', 
-                                                            './Space Invaders/1b.jpg', 
-                                                            './Space Invaders/2a.jpg'
-                                                        ]}
+                                                            './Space Invaders/space1.jpg',
+                                                            './Space Invaders/space2.jpg',
+                                                            './Space Invaders/space3.jpg',
+                                                            './Space Invaders/space4.jpg',
+                                                            './Space Invaders/space5.jpg'
+                                                             ]}
                                                         projectLeadersImages={['./leaders/Andrew G.png','./leaders/Cristian C.png', './leaders/Elton M.png']}
                                                         projectLeaders={['Andrew Gonzalez', 'Cristian Corrales', 'Elton Lin']}
                                                         />
@@ -166,45 +147,12 @@ class Projects extends React.Component {
                                                         technologies={['React.js', 'Git/Github', 'Firebase', 'Node.js', 'HTML', 'CSS']}
                                                         poster='./pictures/intermediate.png'
                                                         projectImages={[
-                                                            './Accord/1.jpg', 
-                                                            './Accord/10.jpg', 
-                                                            './Accord/11.jpg', 
-                                                            './Accord/12.jpg', 
-                                                            './Accord/13.jpg', 
-                                                            './Accord/14.jpg', 
-                                                            './Accord/15.jpg', 
-                                                            './Accord/16.jpg', 
-                                                            './Accord/17.jpg', 
-                                                            './Accord/18.jpg', 
-                                                            './Accord/19.jpg', 
-                                                            './Accord/2.jpg',
-                                                            './Accord/3.jpg', 
-                                                            './Accord/4.jpg', 
-                                                            './Accord/40.jpg', 
-                                                            './Accord/41.jpg', 
-                                                            './Accord/42.jpg', 
-                                                            './Accord/43.jpg', 
-                                                            './Accord/44.jpg', 
-                                                            './Accord/5.jpg', 
-                                                            './Accord/50.jpg', 
-                                                            './Accord/51.jpg', 
-                                                            './Accord/52.jpg', 
-                                                            './Accord/53.jpg', 
-                                                            './Accord/54.jpg', 
-                                                            './Accord/55.jpg', 
-                                                            './Accord/56.jpg',
-                                                            './Accord/57.jpg', 
-                                                            './Accord/58.jpg', 
-                                                            './Accord/59.jpg', 
-                                                            './Accord/6.jpg', 
-                                                            './Accord/60.jpg', 
-                                                            './Accord/61.jpg', 
-                                                            './Accord/62.jpg', 
-                                                            './Accord/37.jpg', 
-                                                            './Accord/38.jpg', 
-                                                            './Accord/39.jpg'
+                                                            './Accord/accord1.jpg', 
+                                                            './Accord/accord2.jpg', 
+                                                            './Accord/accord3.jpg', 
+                                                            './Accord/accord4.jpg'
                                                         ]}
-                                                        projectLeadersImages={['./leaders/Emily P.png', './leaders/Inelbert F.png', './leaders/Srivats V.png', './leaders/Deric K.png']}
+                                                        projectLeadersImages={['./leaders/Emily P.png', './leaders/Ingelbert F.png', './leaders/Srivats V.png', './leaders/Deric K.png']}
                                                         projectLeaders={['Emily Pascua', 'Ingelbert Figueroa', 'Srivats Venkataraman', 'Deric Kwok']}
                                                         />
                                                 </Tab.Pane>
@@ -245,7 +193,7 @@ class Projects extends React.Component {
                                                         technologies={['Android Studio', 'Java']}
                                                         poster='./pictures/androidDev.jpg'
                                                         projectImages={['./pictures/android1.jpg', './pictures/android2.jpg', './pictures/android3.jpg']}
-                                                        projectLeadersImages={['./leaders/Inelbert F.png', './leaders/Emily P.png', './leaders/Srivats V.png']}
+                                                        projectLeadersImages={['./leaders/Ingelbert F.png', './leaders/Emily P.png', './leaders/Srivats V.png']}
                                                         projectLeaders={['Ingelbert Figueroa', 'Emily Pascua', 'Srivats Venkataraman']}
                                                         />
                                                 </Tab.Pane>

@@ -25,30 +25,30 @@
 .membership-text{
 	font-size:16px;
 }
-
+/*
 .membership-parallax-text{
 	position: absolute;
 	padding-top: 35vh;
 	padding-left: 10vh;
 	margin:auto;
-}
+}*/
 .membership-shirt{
 	width: 0px;
 }
 
-.parallax_style2 {
+/* .parallax_style2 {
     background:
     linear-gradient(
       rgba(0, 0, 0, 0.0),
       rgba(0, 0, 0, 0.0)
           ),
-    url('./assets/image1.png');
+    url('./assets/image1.png'); */
 
   /* Set a specific height */
-  min-height: 60vh;
+  /* min-height: 60vh; */
 
   /* Create the parallax scrolling effect */
-  background-attachment: fixed;
+  /* background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -61,26 +61,26 @@
 
   -webkit-clip-path: polygon(0 0, 100% 0, 200% 56%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-}
+} */
 
-.parallax_style3 {
+/* .parallax_style3 {
 	background-image: linear-gradient(to left, rgba(0,0,0,0), black 85%),
     url('./assets/image3.png');
 
-  background-attachment: fixed;
+  background-attachment: fixed; */
 
   /* Set a specific height */
-  min-height: 100vh;
+  /* min-height: 100vh; */
 
   /* Create the parallax scrolling effect */
-  background-position: center;
+  /* background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color:white;
 
   -webkit-clip-path: polygon(0 0, 100% 0, 200% 56%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-}
+} */
 
 /*
 

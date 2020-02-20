@@ -167,19 +167,6 @@ a:hover{
 	color: black;
 }
 
-.space-projects-image{
-	background-image: url('./space-invaders.jpg');
-	background-size: cover;
-	height: auto;
-}
-
-.react-projects-image{
-	background-image: url('./react-background.png');
-	background-size: cover;
-	height: auto;
-}
-
-
 .hr-header{
 	color:  #029CD7;
 }
