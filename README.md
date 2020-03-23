@@ -1,5 +1,5 @@
-## Check out the Wiki
-https://github.com/acm-csula/ACM-Website-Fall-2019/wiki
+## Detailed information about the project
+Check the [Wiki](https://github.com/acm-csula/ACM-Website-Fall-2019/wiki)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -22,6 +22,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
+
+## How do I work on the project?
+Please refer to the [Development Procedures](https://github.com/acm-csula/ACM-Website-Fall-2019/wiki/Development-Procedures) in the Wiki.
 
 ## Available Scripts
 
