@@ -1,3 +1,6 @@
+## Check out the Wiki
+https://github.com/acm-csula/ACM-Website-Fall-2019/wiki
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## How do I clone this repository?
