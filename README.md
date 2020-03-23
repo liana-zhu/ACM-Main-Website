@@ -3,7 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## How do I clone this repository?
 On GitHub, click on "Clone or Download". Copy the URL. <br>
 On Git, run: <br>
-git clone [url you just copied] <br>
+### `git clone [url you just copied]` <br>
 
 ## Available Scripts
 
