@@ -5,8 +5,7 @@ On GitHub, click on "Clone or Download". Copy the URL. <br>
 On Git, run: <br>
 ### `git clone [url you just copied]` <br>
 
-## Available Scripts
-
+## How do I run the project after cloning?
 Using the command line (not Git), go to the project directory and run:
 
 ### `npm clean-install`
@@ -20,6 +19,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
+
+## Available Scripts
 
 ### `npm test`
 
