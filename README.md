@@ -1,3 +1,6 @@
+## Detailed information about the project
+Check the [Wiki](https://github.com/acm-csula/ACM-Website-Fall-2019/wiki)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## How do I clone this repository?
@@ -5,8 +8,7 @@ On GitHub, click on "Clone or Download". Copy the URL. <br>
 On Git, run: <br>
 ### `git clone [url you just copied]` <br>
 
-## Available Scripts
-
+## How do I run the project after cloning?
 Using the command line (not Git), go to the project directory and run:
 
 ### `npm clean-install`
@@ -20,6 +22,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
+
+## How do I work on the project?
+Please refer to the [Development Procedures](https://github.com/acm-csula/ACM-Website-Fall-2019/wiki/Development-Procedures) in the Wiki.
+
+## Available Scripts
 
 ### `npm test`
 
