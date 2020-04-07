@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 
 import Carousel from '../headercarousel/HeaderCarousel';
+import ImpAnnouncement from './impAnnouncements/impAnnouncements';
 import AboutUs from './aboutus/aboutus';
 import Project from './projects/projects';
 import News from './news/news';
@@ -11,6 +12,7 @@ class Home extends Component {
         return(
             <section className="homeWrapper">
                 <Carousel/>
+                <ImpAnnouncement/>
                 <AboutUs/>
                 <Project/>
                 <News/>
