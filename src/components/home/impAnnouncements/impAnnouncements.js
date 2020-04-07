@@ -14,7 +14,7 @@ class ImpAnnouncements extends Component {
                             <li>All professional development workshops have been cancelled</li>
                             <li>If you are in the mentorship program, check your email for further details</li>
                             <li>If you are in the project workshop, check your email for further details</li>
-                            <li>New Board 2020-2021: <a href="https://www.instagram.com/p/B9_BN82gNvT/">ACM Instagram page</a></li>
+                            <li>New Board 2020-2021: Check out the <a href="https://www.instagram.com/p/B9_BN82gNvT/">ACM Instagram page</a></li>
                         </ul>
                     </div>
                 </div>
