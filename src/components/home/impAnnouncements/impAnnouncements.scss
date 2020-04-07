@@ -38,9 +38,15 @@
         }
         
         .description {
+            text-align: left;
             padding-top: 2rem;
             font-weight: lighter;
             font-size: 2rem;
+        }
+        
+        a {
+            color: blue;
+            text-decoration: underline;
         }
     }
 }
