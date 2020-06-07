@@ -38,7 +38,7 @@ class ContactUs extends React.Component {
 						<p>SOCIAL MEDIA</p>
 						
 							<a href="https://www.instagram.com/calstatela_acm/?hl=en">
-								{/* <FontAwesomeIcon className="iconBrand" size="2x" icon={faInstagram}></FontAwesomeIcon> */}
+								{/* <FontAwesnomeIcon className="iconBrand" size="2x" icon={faInstagram}></FontAwesomeIcon> */}
 								<img
 								src={ig_logo}
 								class="contact-us-logo"
