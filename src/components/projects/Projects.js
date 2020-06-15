@@ -30,19 +30,6 @@ class Projects extends React.Component {
                     </div>
                     <div className="project-title-card"></div>
                 </div>
-
-                <div>
-                    <h3 class="disclaimer_header"><b>Disclaimer!</b></h3>
-                    <span class="disclaimer"><b>1. You must be a member of ACM to participate in the projects!</b> If you are not a member, 
-                    <b><i><span class="highlight-text"> you will not be allowed in.</span></i></b></span><br></br>
-                    <span class="disclaimer"><b>2. Admittance to these projects are <span class="highlight-text">first come, first served.
-                    </span></b> Space is limited in these projects, so you are advised to attend the First General Meeting to secure 
-                    yourself a spot in the project of your choosing.</span><br></br>
-                    <span class="disclaimer"><b>3. The deadline to apply to the Spring 2020 projects is <i><span class="highlight-text">
-                    Sunday, February 9th, 2020 at 6:00 PM.</span></i></b></span><br></br>
-                    <br></br><br></br>
-                </div>
-
                 <div class="card project-card">
                     <Tab.Container id="left-tabs-example" defaultActiveKey="spring2020projects">
                         <Row>
@@ -62,7 +49,7 @@ class Projects extends React.Component {
                             <Col sm={10}>                                
                                 <Tab.Content className="project-tab-content">
                                 
-                                {/* <h3><b>Disclaimer!</b></h3>
+                                <h3><b>Disclaimer!</b></h3>
                                     <span class="disclaimer"><b>1. You must be a member of ACM to participate in the projects!</b> If you are not a member, 
                                     <b><i><span class="highlight-text"> you will not be allowed in.</span></i></b></span><br></br>
                                     <span class="disclaimer"><b>2. Admittance to these projects are <span class="highlight-text">first come, first served.
@@ -70,11 +57,11 @@ class Projects extends React.Component {
                                     yourself a spot in the project of your choosing.</span><br></br>
                                     <span class="disclaimer"><b>3. The deadline to apply to the Spring 2020 projects is <i><span class="highlight-text">
                                     Sunday, February 9th, 2020 at 6:00 PM.</span></i></b></span><br></br>
-                                    <br></br><br></br> */}
+                                    <br></br><br></br>
 
                                     <Tab.Pane eventKey="spring2020projects">
                                         <Tab.Container defaultActiveKey="S2020beginner">                                            
-                                            <Nav variant="pills">
+                                            <Nav variant="tabs">
                                                 <Nav.Item>
                                                     <Nav.Link className="project-nav-link anchor-blue" eventKey="S2020beginner">Beginner Project</Nav.Link>
                                                 </Nav.Item>
@@ -123,7 +110,7 @@ class Projects extends React.Component {
 
                                     <Tab.Pane eventKey="first">
                                         <Tab.Container defaultActiveKey="low1920">
-                                            <Nav variant="pills">
+                                            <Nav variant="tabs">
                                                 <Nav.Item>
                                                     <Nav.Link className="project-nav-link anchor-blue" eventKey="low1920">Beginner Project</Nav.Link>
                                                 </Nav.Item>
@@ -175,12 +162,12 @@ class Projects extends React.Component {
 
                                     <Tab.Pane eventKey="second">
                                         <Tab.Container defaultActiveKey="low1819">
-                                            <Nav variant="pills">
+                                            <Nav variant="tabs">
                                                 <Nav.Item>
-                                                    <Nav.Link className="project-nav-link anchor-white" eventKey="low1819">Beginner Project</Nav.Link>
+                                                    <Nav.Link className="project-nav-link anchor-blue" eventKey="low1819">Beginner Project</Nav.Link>
                                                 </Nav.Item>
                                                 <Nav.Item>
-                                                    <Nav.Link className="project-nav-link anchor-white" eventKey="hi1819">Advanced Project</Nav.Link>
+                                                    <Nav.Link className="project-nav-link anchor-blue" eventKey="hi1819">Advanced Project</Nav.Link>
                                                 </Nav.Item>
                                             </Nav>
                                             <Tab.Content className="project-tab-content">

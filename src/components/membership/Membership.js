@@ -1,7 +1,7 @@
 import React from 'react'
 import "./membership.css"
 import VenmoQr from './assets/venmo-qr.jpg'
-import { Tabs, Row, Col, Tab, Nav, Button, Card, Jumbotron, Container, Image, Accordion } from 'react-bootstrap'
+import { Tabs, Row, Col, Tab, Nav, Button, Card, Jumbotron, Container, Image } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
 import Modal from 'react-awesome-modal';
 
@@ -47,8 +47,8 @@ class Membership extends React.Component {
 						<Container className="justify-content-md-center">
 						<div className="past-container">
 							<Carousel
-								swipeable={true}
-								draggable={true}
+								swipeable={false}
+								draggable={false}
 								//showDots={true}
 								responsive={responsive}
 								ssr={true} // means to render carousel on server-side.
@@ -71,200 +71,7 @@ class Membership extends React.Component {
 							</Carousel><p id="semicolon" /* Semicolon is required for Carousel*/>;</p>
                         </div>
 						</Container>
-						<Accordion defaultActiveKey="0">
-						<Card>
-							<Card.Header style={{backgroundColor: "#000000"}}>
-							<Accordion.Toggle as={Card.Header} variant="link" eventKey="0" style={{color: "white", fontSize: "20px"}}>
-							Gold
-							</Accordion.Toggle>
-							</Card.Header>
-							<Accordion.Collapse eventKey="0">
-							<Card.Body  style={{backgroundColor: "#161616"}}>
-							<div className="text-info">
-											<h2><span className="highlight-text"><b><i>ACM Membership</i></b></span> ❖ GOLD TIER</h2>
-											<h2 className="text-info">Benefits</h2>
-											<div className="text-info">
-											- ACM's "It's not a bug; It's a feature" T-Shirt included.<br></br>
-											- All benefits from student/faculty membership included.<br></br>
-											</div>
-											<a href="https://i.imgur.com/RerJpNV.png"><img className="shirt-image" src="https://i.imgur.com/RerJpNV.png"></img></a>
-											<h2 className="text-info">How to become a member?</h2>
-											<div className="text-info">The steps below are: "Payment" and "Sign-up". Please note that there are <span className="highlight-text">NO REFUNDS</span>.<br></br></div>
-											<h2 className="text-info">Any questions or concerns?</h2>
-											<p className="text-info">Send an email to <a href="mailto:acm.calstatela@gmail.com" className="email" style={{color: "black"}}>acm.calstatela@gmail.com</a></p>
-											<h2><span className="highlight-text"><b><i>Step One</i></b></span> ❖ Payment</h2>
-											The first step is to make a payment. Choose the most convenient method of payment for you.<br></br><br></br>
-											<i>1 - Paypal</i><br></br>
-											<p className="text-info">Please make sure you have a working PayPal account (i.e., can make payments) before clicking the button below:
-											<div className='paypal-form-container'>
-													<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-														<input type="hidden" name="cmd" value="_xclick" />
-														<input type="hidden" name="business" value="acm.calstatela@gmail.com" />
-														<input type="hidden" name="lc" value="US" />
-														<input type="hidden" name="item_name" value="ACM Membership 2019-2020" />
-														<input type="hidden" name="button_subtype" value="services" />
-														<input type="hidden" name="no_note" value="0" />
-														<input type="hidden" name="currency_code" value="USD" />
-														<input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest" />
-
-														<select hidden name="os0">
-															<option type="hidden" value="Regular">Gold $12.50 USD</option>
-														</select>
-
-														<input type="hidden" name="option_select0" value="Regular" />
-														<input type="hidden" name="option_amount0" value="12.50" />
-														<button class='btn btn-info btn-membership'>Pay With PayPal</button>
-													</form>
-													** Additional 50 cent processing fee.
-											</div></p>
-
-											<i>2 - Venmo</i><br></br>
-											Please scan the QR code and enter $12.00.<br></br><br></br>
-											<a href={VenmoQr}>
-												<button class='btn btn-info btn-membership' src={VenmoQr}>Venmo QR Code</button></a>
-											<br></br><br></br>
-
-											<h2><span className="highlight-text"><b><i>Step Two</i></b></span> ❖ Sign-up</h2>
-											Your proof of payment can be a screenshot of your PayPal/Venmo payment.
-											Once you have your proof of payment, sign up by clicking on the button below:<br></br><br></br>
-											<a href="https://docs.google.com/forms/d/e/1FAIpQLSfrLZsGugSQvWOiViaOD9NufRGCCNjOFoBzQmbaISwnYsl3Lw/viewform?usp=sf_link" class="btn btn-info btn-membership" role="button">Registration Form</a>
-											</div>
-							</Card.Body>
-							</Accordion.Collapse>
-						</Card>
-						<Card>
-							<Card.Header style={{backgroundColor: "#000000"}}>
-							<Accordion.Toggle as={Card.Header} variant="link" eventKey="1" style={{color: "white", fontSize: "20px"}}>
-							Regular
-							</Accordion.Toggle>
-							</Card.Header>
-							<Accordion.Collapse eventKey="1">
-							<Card.Body  style={{backgroundColor: "#161616"}}>
-							<h2><span className="highlight-text"><b><i>ACM Membership</i></b></span> ❖ FACULTY/ALUMNI TIER</h2>
-											<h2>Benefits</h2>
-											- Receive weekly newsletters.<br></br>
-											- Access to Mentorship program (Only as a Mentor).<br></br>
-											<h2>How to become a member?</h2>
-											The steps below are: "Payment" and "Sign-up". Please note that there are <span className="highlight-text">NO REFUNDS</span>.
-						        <br></br>
-
-											<h2>Any questions or concerns?</h2>
-											<p>Send an email to acm.calstatela@gmail.com</p>
-
-											<h2><span className="highlight-text"><b><i>Step One</i></b></span> ❖ Payment</h2>
-											The first step is to make a payment. Choose the most convenient method of payment for you.<br></br><br></br>
-
-											<i>1 - Paypal</i><br></br>
-											<p>Please make sure you have a working PayPal account (i.e., can make payments) before clicking the button below:
-			
-						        <div className='paypal-form-container'>
-													<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-														<input type="hidden" name="cmd" value="_xclick" />
-														<input type="hidden" name="business" value="acm.calstatela@gmail.com" />
-														<input type="hidden" name="lc" value="US" />
-														<input type="hidden" name="item_name" value="ACM Membership 2019-2020" />
-														<input type="hidden" name="button_subtype" value="services" />
-														<input type="hidden" name="no_note" value="0" />
-														<input type="hidden" name="currency_code" value="USD" />
-														<input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest" />
-
-														<select hidden name="os0">
-															<option type="hidden" value="Regular">Faculty/Alumni $5.50 USD</option>
-														</select>
-
-														<input type="hidden" name="option_select0" value="Regular" />
-														<input type="hidden" name="option_amount0" value="5.50" />
-														<button class='btn btn-info btn-membership'>Pay With PayPal</button>
-													</form>
-													** Additional 50 cent processing fee.
-
-								</div></p>
-
-											<i>2 - Venmo</i><br></br>
-											Please scan the QR code and enter $5.00.<br></br><br></br>
-											<a href={VenmoQr}>
-												<button class='btn btn-info btn-membership' src={VenmoQr}>Venmo QR Code</button></a>
-											<br></br><br></br>
-
-											<h2><span className="highlight-text"><b><i>Step Two</i></b></span> ❖ Sign-up</h2>
-											Your proof of payment can be a screenshot of your PayPal/Venmo payment.
-								Once you have your proof of payment, sign up by clicking on the button below:<br></br><br></br>
-
-											<a href="https://docs.google.com/forms/d/e/1FAIpQLSfrLZsGugSQvWOiViaOD9NufRGCCNjOFoBzQmbaISwnYsl3Lw/viewform?usp=sf_link" class="btn btn-info btn-membership" role="button">Registration Form</a>
-							</Card.Body>
-							</Accordion.Collapse>
-						</Card>
-						<Card>
-							<Card.Header style={{backgroundColor: "#000000"}}>
-							<Accordion.Toggle as={Card.Header} variant="link" eventKey="2" style={{color: "white", fontSize: "20px"}}>
-							Faculty/Alumni
-							</Accordion.Toggle>
-							</Card.Header>
-							<Accordion.Collapse eventKey="2">
-							<Card.Body  style={{backgroundColor: "#161616"}}>
-							<h2><span className="highlight-text"><b><i>ACM Membership</i></b></span> ❖ REGULAR TIER</h2>
-											<h2>Benefits</h2>
-											- Receive weekly newsletters.<br></br>
-											- Access to project workshops (upper/lower classmen).<br></br>
-											- Access to professional development workshops.<br></br>
-											- Access to Mini-Hackathon.<br></br>
-											- Access to tutoring.<br></br>
-											- Access to Mentorship program.<br></br>
-											- Access to Mentorship program (Mentor/Mentee).<br></br>
-											<h2>How to become a member?</h2>
-											The steps below are: "Payment" and "Sign-up". Please note that there are <span className="highlight-text">NO REFUNDS</span> and that
-						        	membership <span className="highlight-text">DOES NOT</span> guarantee project space.
-						        <br></br>
-
-											<h2>Any questions or concerns?</h2>
-											<p>Send an email to acm.calstatela@gmail.com</p>
-
-											<h2><span className="highlight-text"><b><i>Step One</i></b></span> ❖ Payment</h2>
-											The first step is to make a payment. Choose the most convenient method of payment for you.<br></br><br></br>
-
-											<i>1 - Paypal</i><br></br>
-											<p>Please make sure you have a working PayPal account (i.e., can make payments) before clicking the button below:
-			
-						        <div className='paypal-form-container'>
-													<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-														<input type="hidden" name="cmd" value="_xclick" />
-														<input type="hidden" name="business" value="acm.calstatela@gmail.com" />
-														<input type="hidden" name="lc" value="US" />
-														<input type="hidden" name="item_name" value="ACM Membership 2019-2020" />
-														<input type="hidden" name="button_subtype" value="services" />
-														<input type="hidden" name="no_note" value="0" />
-														<input type="hidden" name="currency_code" value="USD" />
-														<input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest" />
-
-														<select hidden name="os0">
-															<option type="hidden" value="Regular">Faculty/Alumni $5.50 USD</option>
-														</select>
-
-														<input type="hidden" name="option_select0" value="Regular" />
-														<input type="hidden" name="option_amount0" value="5.50" />
-														<button class='btn btn-info btn-membership'>Pay With PayPal</button>
-													</form>
-													** Additional 50 cent processing fee.
-
-								</div></p>
-
-											<i>2 - Venmo</i><br></br>
-											Please scan the QR code and enter $5.00.<br></br><br></br>
-											<a href={VenmoQr}>
-												<button class='btn btn-info btn-membership' src={VenmoQr}>Venmo QR Code</button></a>
-											<br></br><br></br>
-
-
-											<h2><span className="highlight-text"><b><i>Step Two</i></b></span> ❖ Sign-up</h2>
-											Your proof of payment can be a screenshot of your PayPal/Venmo payment.
-								Once you have your proof of payment, sign up by clicking on the button below: <br></br><br></br>
-
-											<a href="https://docs.google.com/forms/d/e/1FAIpQLSfrLZsGugSQvWOiViaOD9NufRGCCNjOFoBzQmbaISwnYsl3Lw/viewform?usp=sf_link" class="btn btn-info btn-membership" role="button">Registration Form</a>
-							</Card.Body>
-							</Accordion.Collapse>
-						</Card>
-						</Accordion>
-						{/* <Tab.Container id="left-tabs-example" defaultActiveKey="first">
+						<Tab.Container id="left-tabs-example" defaultActiveKey="first">
 							<Row>
 								<Col sm={3}>
 									<Nav variant="pills" className="flex-column">
@@ -282,21 +89,26 @@ class Membership extends React.Component {
 								<Col sm={9}>
 									<Tab.Content className="tab-content">
 										<Tab.Pane eventKey="first">
-											<div className="info-container">
 											<h2><span className="highlight-text"><b><i>ACM Membership</i></b></span> ❖ GOLD TIER</h2>
 											<h2>Benefits</h2>
 											- ACM's "It's not a bug; It's a feature" T-Shirt included.<br></br>
 											- All benefits from student/faculty membership included.<br></br>
 											<a href="https://i.imgur.com/RerJpNV.png"><img className="shirt-image" src="https://i.imgur.com/RerJpNV.png"></img></a>
 											<h2>How to become a member?</h2>
-											The steps below are: "Payment" and "Sign-up". Please note that there are <span className="highlight-text">NO REFUNDS</span>.<br></br>
+											The steps below are: "Payment" and "Sign-up". Please note that there are <span className="highlight-text">NO REFUNDS</span>.
+						        <br></br>
+
+
 											<h2>Any questions or concerns?</h2>
-											<p>Send an email to <a href="mailto:acm.calstatela@gmail.com" className="email">acm.calstatela@gmail.com</a></p>
+											<p>Send an email to acm.calstatela@gmail.com</p>
+
 											<h2><span className="highlight-text"><b><i>Step One</i></b></span> ❖ Payment</h2>
 											The first step is to make a payment. Choose the most convenient method of payment for you.<br></br><br></br>
+
 											<i>1 - Paypal</i><br></br>
 											<p>Please make sure you have a working PayPal account (i.e., can make payments) before clicking the button below:
-											<div className='paypal-form-container'>
+			
+						        <div className='paypal-form-container'>
 													<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 														<input type="hidden" name="cmd" value="_xclick" />
 														<input type="hidden" name="business" value="acm.calstatela@gmail.com" />
@@ -316,7 +128,7 @@ class Membership extends React.Component {
 														<button class='btn btn-info btn-membership'>Pay With PayPal</button>
 													</form>
 													** Additional 50 cent processing fee.
-											</div></p>
+								</div></p>
 
 											<i>2 - Venmo</i><br></br>
 											Please scan the QR code and enter $12.00.<br></br><br></br>
@@ -326,9 +138,10 @@ class Membership extends React.Component {
 
 											<h2><span className="highlight-text"><b><i>Step Two</i></b></span> ❖ Sign-up</h2>
 											Your proof of payment can be a screenshot of your PayPal/Venmo payment.
-											Once you have your proof of payment, sign up by clicking on the button below:<br></br><br></br>
+								Once you have your proof of payment, sign up by clicking on the button below:<br></br><br></br>
+
 											<a href="https://docs.google.com/forms/d/e/1FAIpQLSfrLZsGugSQvWOiViaOD9NufRGCCNjOFoBzQmbaISwnYsl3Lw/viewform?usp=sf_link" class="btn btn-info btn-membership" role="button">Registration Form</a>
-											</div>
+
 										</Tab.Pane>
 										<Tab.Pane eventKey="second">
 											<h2><span className="highlight-text"><b><i>ACM Membership</i></b></span> ❖ REGULAR TIER</h2>
@@ -339,7 +152,7 @@ class Membership extends React.Component {
 											- Access to Mini-Hackathon.<br></br>
 											- Access to tutoring.<br></br>
 											- Access to Mentorship program.<br></br>
-											- Access to Mentorship program (Mentor/Mentee).<br></br>
+											{/*- Access to Mentorship program (Mentor/Mentee).<br></br>*/}
 											<h2>How to become a member?</h2>
 											The steps below are: "Payment" and "Sign-up". Please note that there are <span className="highlight-text">NO REFUNDS</span> and that
 						        	membership <span className="highlight-text">DOES NOT</span> guarantee project space.
@@ -396,7 +209,7 @@ class Membership extends React.Component {
 											<h2><span className="highlight-text"><b><i>ACM Membership</i></b></span> ❖ FACULTY/ALUMNI TIER</h2>
 											<h2>Benefits</h2>
 											- Receive weekly newsletters.<br></br>
-											- Access to Mentorship program (Only as a Mentor).<br></br>
+											{/*- Access to Mentorship program (Only as a Mentor).<br></br>*/}
 											<h2>How to become a member?</h2>
 											The steps below are: "Payment" and "Sign-up". Please note that there are <span className="highlight-text">NO REFUNDS</span>.
 						        <br></br>
@@ -449,8 +262,7 @@ class Membership extends React.Component {
 									</Tab.Content>
 								</Col>
 							</Row>
-						</Tab.Container> */}
-						<br></br>
+						</Tab.Container><br></br>
 					</div>
 					<div class="quote-style-2 membership-footer-text">
 						<span

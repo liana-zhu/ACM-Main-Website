@@ -126,12 +126,12 @@ end of code
 	width: auto;
 	height: auto;
 	background-color:#1f1f1f !important;
-	/* padding: 20px;
-	margin: 20px; */
+	padding: 20px;
+	margin: 20px;
 }
 
 a{
-	color: black !important;
+	color: white !important;
 }
 
 .nav-item{
@@ -148,7 +148,7 @@ a{
 }
 
 .t-shirts{
-	width: 150px;
+	width: 200px;
 }
 
 .membership-footer-text{
@@ -170,18 +170,4 @@ a{
 }
 h2{
 	padding-top: 10px;
-}
-
-.email{
-	text-decoration: underline;
-	text-decoration-color: #ffffff !important;
-	color: white !important;
-}
-
-.accordion-background{
-	background-color: #161616;
-}
-
-.text-info{
-	color: white !important;
 }
