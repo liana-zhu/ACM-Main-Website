@@ -21,7 +21,7 @@ class Programs extends React.Component {
                 <div class="quote-style-1 quote-bg">
                     <div class="quote-block" style={{'margin-left': '15%', 'margin-right': '15%'}}>
                     <br></br>
-                    Get involved!<br></br> Participate in our <span className="highlight-text"><i><b>programs!</b></i></span>
+                    Get involved!<br></br> Participate in our <span className="highlight-text"><i><b>mentorship!</b></i></span>
                     <br></br>
                     <br></br>
                     </div>
@@ -43,7 +43,7 @@ class Programs extends React.Component {
                                 <Tab.Content className="programs-tab-content">
                                 
                                     <h3><b>Disclaimers!</b></h3>
-                                    <span class="disclaimer"><b>1. You must be a member of ACM to participate in the programs!</b> If you are not a member, 
+                                    <span class="disclaimer"><b>1. You must be a member of ACM to participate in the mentorship!</b> If you are not a member, 
                                     <b><i><span class="highlight-text"> you will not be allowed in.</span></i></b></span><br></br>
                                     <span class="disclaimer"><b>2. Deadline to apply for the Spring 2020 mentorship program is <span class="highlight-text">
                                     Tuesday, February 4, 2020 at 5:00 PM.</span></b></span><br></br>
