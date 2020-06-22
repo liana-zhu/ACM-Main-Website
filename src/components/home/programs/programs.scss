@@ -1,6 +1,10 @@
-.Projects-tease {
+.Programs-tease {
+    background-image: url('../programs/images/programs.jpg');
     width: 100%;
     height: 30rem;
+    background-size: 100%;
+    background-position-y: 30%;
+    background-repeat: no-repeat;
     color: white;
 
     justify-content: center;
@@ -10,22 +14,27 @@
     .right {
 
         width: 50%;
-        height: 100%;
+    }
+
+    .left {
+
+        width: 50%;
         display: table;
-        
+        height: 100%;
+                
         .content {
 
-            width: 51rem;
-            padding: 8rem;
+            padding: 4rem;
             padding-top: 8rem;
+            text-align: left;
             vertical-align: middle;
             display: table-cell;
-            
+            height: 100%;
 
             .subTitle {
                 font-size: 2rem;
-                font-weight: lighter;
                 line-height: 1;
+                font-weight: lighter;
             }
 
             .title{
@@ -51,28 +60,27 @@
             }
         }
     }
-
-    .left{
-
-        background-image: url('../projects/images/20190316_132807.jpg');
-        background-size: 100%;
-        background-position-y: 90%;
-        width: 50%;
-        height: 100%;
-    }
 }
 
 @media screen and (max-width: 1200px) {
 
-    .Projects-tease {
+    .Programs-tease {
 
-        .right {
+        background-size: 300%;
+        background-position-x: 25%;
+        background-position-y: 40%;
+        text-align: left !important;
 
-            padding: 1rem;
+        .left {
+
+            padding: inherit;
             width: 100%;
+            padding: 2rem;
+
             .content {
-                width: 100%;
+                text-align: left;
                 padding: inherit;
+                width: 100%;
 
                 .title {
                     font-size: 3rem;
@@ -80,7 +88,7 @@
             }
         }
 
-        .left{
+        .right {
             display: none;
         }
 

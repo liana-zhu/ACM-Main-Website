@@ -44,8 +44,8 @@
             font-size: 2rem;
         }
         
-        a {
-            color: blue;
+        a:link {
+            background-color: yellow;
             text-decoration: underline;
         }
     }

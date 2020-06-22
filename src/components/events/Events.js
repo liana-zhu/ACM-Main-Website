@@ -107,7 +107,7 @@ class Events extends React.Component {
                 <div className="events-main">
                     <div className="events-main-text">
                         <p>Never miss an <span className="emphasis">Event</span></p>
-                        <p>Stay in the loop</p>
+                        
                     </div>
                     {/* The class name "events-main-background" doesn't work. Changing the class name makes the code work */}
                     <div className="background-image"></div>

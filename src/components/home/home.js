@@ -4,6 +4,7 @@ import Carousel from '../headercarousel/HeaderCarousel';
 import ImpAnnouncement from './impAnnouncements/impAnnouncements';
 import AboutUs from './aboutus/aboutus';
 import Project from './projects/projects';
+import Programs from './programs/programs';
 import News from './news/news';
 import Membership from './membership/membership'
 
@@ -15,6 +16,7 @@ class Home extends Component {
                 <ImpAnnouncement/>
                 <AboutUs/>
                 <Project/>
+                <Programs/>
                 <News/>
                 <Membership/>
             </section>
