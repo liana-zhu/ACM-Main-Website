@@ -1,5 +1,5 @@
 import React from 'react'
-import {Tabs,Row,Col,Tab,Nav,Container,Button} from 'react-bootstrap'
+import {Tabs,Row,Col,Tab,Nav,Container,Button,Jumbotron} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
 import "./Projects.css"
 import LegacyProject from './LegacyProject'
@@ -30,7 +30,7 @@ class Projects extends React.Component {
                     </div>
                     <div className="project-title-card"></div>
                 </div>
-
+                <Jumbotron>
                 <div>
                     <h3 class="disclaimer_header"><b>Disclaimer!</b></h3>
                     <span class="disclaimer"><b>1. You must be a member of ACM to participate in the projects!</b> If you are not a member, 
@@ -42,20 +42,25 @@ class Projects extends React.Component {
                     Sunday, February 9th, 2020 at 6:00 PM.</span></i></b></span><br></br>
                     <br></br><br></br>
                 </div>
+                
+                
 
                 <div class="card project-card">
-                    <Tab.Container id="left-tabs-example" defaultActiveKey="spring2020projects">
+                    <Tab.Container id="left-tabs-example" defaultActiveKey="fall2020projects">
                         <Row>
                             <Col sm={2}>
                                 <Nav variant="pills" className="flex-column">
                                 <Nav.Item>
+                                    <Nav.Link className="project-nav-link anchor-white" eventKey="fall2020projects">Fall 2020</Nav.Link>
+                                </Nav.Item>
+                                <Nav.Item>
                                     <Nav.Link className="project-nav-link anchor-white" eventKey="spring2020projects">Spring 2020</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link className="project-nav-link anchor-white" eventKey="first">Fall 2019</Nav.Link>
+                                    <Nav.Link className="project-nav-link anchor-white" eventKey="fall2019projects">Fall 2019</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link className="project-nav-link anchor-white" eventKey="second">Spring 2019</Nav.Link>
+                                    <Nav.Link className="project-nav-link anchor-white" eventKey="spring2019projects">Spring 2019</Nav.Link>
                                 </Nav.Item>
                                 </Nav>
                             </Col>
@@ -71,19 +76,18 @@ class Projects extends React.Component {
                                     <span class="disclaimer"><b>3. The deadline to apply to the Spring 2020 projects is <i><span class="highlight-text">
                                     Sunday, February 9th, 2020 at 6:00 PM.</span></i></b></span><br></br>
                                     <br></br><br></br> */}
-
-                                    <Tab.Pane eventKey="spring2020projects">
-                                        <Tab.Container defaultActiveKey="S2020beginner">                                            
+                                    <Tab.Pane eventKey="fall2020projects">
+                                        <Tab.Container defaultActiveKey="F2020beginner">                                            
                                             <Nav variant="pills">
                                                 <Nav.Item>
-                                                    <Nav.Link className="project-nav-link anchor-blue" eventKey="S2020beginner">Beginner Project</Nav.Link>
+                                                    <Nav.Link className="project-nav-link anchor-blue" eventKey="F2020beginner">Beginner Project</Nav.Link>
                                                 </Nav.Item>
                                                 <Nav.Item>
-                                                    <Nav.Link className="project-nav-link anchor-blue" eventKey="S2020advanced">Advanced Project</Nav.Link>
+                                                    <Nav.Link className="project-nav-link anchor-blue" eventKey="F2020advanced">Advanced Project</Nav.Link>
                                                 </Nav.Item>
                                             </Nav>
                                             <Tab.Content className="project-tab-content">
-                                                <Tab.Pane eventKey="S2020beginner">
+                                                <Tab.Pane eventKey="F2020beginner">
                                                     <NewProject
                                                         opener="Want to learn how to advertise your skillset in a tech-savvy way?"
                                                         //Description is long, but put on a single line to avoid word spacing issues
@@ -100,7 +104,7 @@ class Projects extends React.Component {
                                                         projectLeaders={["Srivats Venkataraman", "Giovanni Castellanos", "Kevin Flores"]}
                                                         />
                                                 </Tab.Pane>
-                                                <Tab.Pane eventKey="S2020advanced">
+                                                <Tab.Pane eventKey="F2020advanced">
                                                     <NewProject
                                                         opener="Space Invaders, but with extra steps!"
                                                         //Description is long, but put on a single line to avoid word spacing issues
@@ -120,20 +124,65 @@ class Projects extends React.Component {
                                             </Tab.Content>
                                         </Tab.Container>
                                     </Tab.Pane>
-
-                                    <Tab.Pane eventKey="first">
-                                        <Tab.Container defaultActiveKey="low1920">
+                                    <Tab.Pane eventKey="spring2020projects">
+                                        <Tab.Container defaultActiveKey="S2020beginner">                                            
                                             <Nav variant="pills">
                                                 <Nav.Item>
-                                                    <Nav.Link className="project-nav-link anchor-blue" eventKey="low1920">Beginner Project</Nav.Link>
+                                                    <Nav.Link className="project-nav-link anchor-blue" eventKey="S2020beginner">Beginner Project</Nav.Link>
                                                 </Nav.Item>
                                                 <Nav.Item>
-                                                    <Nav.Link className="project-nav-link anchor-blue" eventKey="hi1920">Intermediate Project</Nav.Link>
+                                                    <Nav.Link className="project-nav-link anchor-blue" eventKey="S2020advanced">Advanced Project</Nav.Link>
+                                                </Nav.Item>
+                                            </Nav>
+                                            <Tab.Content className="project-tab-content">
+                                                <Tab.Pane eventKey="S2020beginner">
+                                                    <LegacyProject
+                                                        opener="Want to learn how to advertise your skillset in a tech-savvy way?"
+                                                        //Description is long, but put on a single line to avoid word spacing issues
+                                                        description="Personal Website is a beginner’s project that requires little to no programming experience. If you have no coding experience or you are just interested in coding, then this is the perfect project for you. In this project, you will create your own personal website. This project is an excellent way to create a portfolio to showcase your art or promote yourself. You can even create your own blog and design the website however you like. The technologies that you will learn will include: HTML, CSS, JavaScript, and Bootstrap."
+                                                        technologies={["HTML", "CSS", "JavaScript", "Bootstrap"]}
+                                                        poster="./spring2020/Personal Website.png"
+                                                        projectImages={[
+                                                            './spring2020/space1.jpg',
+                                                            './spring2020/space2.jpg',
+                                                            './spring2020/space3.jpg'
+                                                             ]}
+                                                        projectLeadersImages={["./leaders/Srivats V.png", "./leaders/Giovanni C.png", "./leaders/Kevin F.JPG"]}
+                                                        projectLeaders={["Srivats Venkataraman", "Giovanni Castellanos", "Kevin Flores"]}
+                                                        />
+                                                </Tab.Pane>
+                                                <Tab.Pane eventKey="S2020advanced">
+                                                    <LegacyProject
+                                                        opener="Space Invaders, but with extra steps!"
+                                                        //Description is long, but put on a single line to avoid word spacing issues
+                                                        description="Space Invaders Part II is a game development project, which is a continuation of last semester's project. New features include new bosses, level progressions, and special abilities. This project will contain a lot of object-oriented programming along with some data structures. This project is meant for more experienced programmers who would like a challenge and for those who participated in last semester’s Space Invaders Part I. The technologies and language used will be Python and Pycharm."
+                                                        technologies={["Python", "PyCharm"]}
+                                                        poster="./spring2020/Space Invaders 2.0.png"
+                                                        projectImages={[
+                                                            './spring2020/web1.jpg',
+                                                            './spring2020/web2.jpg'
+                                                             ]}
+                                                        projectLeadersImages={["./leaders/Andrew G.png", "./leaders/Elton M.png", "./leaders/Grover.JPG", "./leaders/Luis.JPG"]}
+                                                        projectLeaders={["Andrew Gonzalez", "Elton Lin", "John Grover", "Luis Gonzalez"]}
+                                                        />
+                                                </Tab.Pane>
+                                            </Tab.Content>
+                                        </Tab.Container>
+                                    </Tab.Pane>
+
+                                    <Tab.Pane eventKey="fall2019projects">
+                                        <Tab.Container defaultActiveKey="F2019beginner">
+                                            <Nav variant="pills">
+                                                <Nav.Item>
+                                                    <Nav.Link className="project-nav-link anchor-blue" eventKey="F2019beginner">Beginner Project</Nav.Link>
+                                                </Nav.Item>
+                                                <Nav.Item>
+                                                    <Nav.Link className="project-nav-link anchor-blue" eventKey="F2019advanced">Advanced Project</Nav.Link>
                                                 </Nav.Item>
                                             </Nav>
                                             <Tab.Content className="project-tab-content">
 
-                                                <Tab.Pane eventKey="low1920">
+                                                <Tab.Pane eventKey="F2019beginner">
                                                     <LegacyProject
                                                         opener="Who doesn't enjoy games even a little?"
                                                         //Description is long, but put on a single line to avoid word spacing issues
@@ -152,7 +201,7 @@ class Projects extends React.Component {
                                                         />
                                                 </Tab.Pane>
 
-                                                <Tab.Pane eventKey="hi1920">
+                                                <Tab.Pane eventKey="F2019advanced">
                                                     <LegacyProject 
                                                         opener='Looking for a bit of a challenge?'
                                                         //Description is long, but put on a single line to avoid word spacing issues
@@ -173,19 +222,19 @@ class Projects extends React.Component {
                                         </Tab.Container>
                                     </Tab.Pane>
 
-                                    <Tab.Pane eventKey="second">
-                                        <Tab.Container defaultActiveKey="low1819">
+                                    <Tab.Pane eventKey="spring2019projects">
+                                        <Tab.Container defaultActiveKey="S2019beginner">
                                             <Nav variant="pills">
                                                 <Nav.Item>
-                                                    <Nav.Link className="project-nav-link anchor-white" eventKey="low1819">Beginner Project</Nav.Link>
+                                                    <Nav.Link className="project-nav-link anchor-white" eventKey="S2019beginner">Beginner Project</Nav.Link>
                                                 </Nav.Item>
                                                 <Nav.Item>
-                                                    <Nav.Link className="project-nav-link anchor-white" eventKey="hi1819">Advanced Project</Nav.Link>
+                                                    <Nav.Link className="project-nav-link anchor-white" eventKey="S2019advanced">Advanced Project</Nav.Link>
                                                 </Nav.Item>
                                             </Nav>
                                             <Tab.Content className="project-tab-content">
                                                 
-                                                <Tab.Pane eventKey="low1819">
+                                                <Tab.Pane eventKey="S2019beginner">
                                                     <LegacyProject
                                                         opener=''
                                                         //Description is long, but put on a single line to avoid word spacing issues
@@ -198,7 +247,7 @@ class Projects extends React.Component {
                                                         />
                                                 </Tab.Pane>
 
-                                                <Tab.Pane eventKey="hi1819">
+                                                <Tab.Pane eventKey="S2019advanced">
                                                     <LegacyProject
                                                         opener=''
                                                         //Description is long, but put on a single line to avoid word spacing issues
@@ -219,6 +268,7 @@ class Projects extends React.Component {
                         </Row>
 					</Tab.Container><br></br>
                 </div>
+                </Jumbotron>
             </div>
         );
     }
