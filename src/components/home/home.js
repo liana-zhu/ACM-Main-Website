@@ -2,6 +2,7 @@ import React, {Component} from "react";
 
 import Carousel from '../headercarousel/HeaderCarousel';
 import ImpAnnouncement from './impAnnouncements/impAnnouncements';
+import Slideshow from './slideshow/slideshow'
 import AboutUs from './aboutus/aboutus';
 import Project from './projects/projects';
 import Programs from './programs/programs';
@@ -14,6 +15,7 @@ class Home extends Component {
             <section className="homeWrapper">
                 <Carousel/>
                 <ImpAnnouncement/>
+                <Slideshow/>
                 <AboutUs/>
                 <Project/>
                 <Programs/>

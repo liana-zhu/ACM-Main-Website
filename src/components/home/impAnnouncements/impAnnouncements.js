@@ -10,7 +10,6 @@ class ImpAnnouncements extends Component {
                 <div className="content">
                     <div className="title">Fall 2020</div>
                     <br></br>
-                    <Image src={require('./images/videoicon.JPG')} fluid /><br></br><br></br>
                     <Image src={require('./images/videoicon.JPG')} fluid />
                     <div className="description">
                         <ul>
