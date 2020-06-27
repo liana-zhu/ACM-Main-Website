@@ -1,6 +1,6 @@
 import React from 'react'
 import "./contactus.css"
-import {Tabs,Row,Col,Tab,Nav,Container,Button,Card} from 'react-bootstrap'
+import {Tabs,Row,Col,Tab,Nav,Container,Button,Card,Image} from 'react-bootstrap'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faInstagram, faFacebookF, faDiscord} from "@fortawesome/free-brands-svg-icons"
 import logo from './acmlogo1.png';
@@ -11,7 +11,7 @@ import discord_logo from './discord_logo.png'
 class ContactUs extends React.Component {
 	render() {
 		return (
-			<div>
+			<div class="contact-us-page">
 				<div class="contact-us-card">
 					<Card className="text-center">
 						<img
@@ -24,10 +24,10 @@ class ContactUs extends React.Component {
 							<a href="mailto:acm.calstatela@gmail.com" target="_top">acm.calstatela@gmail.com</a>
 						</p>
 						<p>
-							<b>Office Hours:</b> Thursdays, 3 - 4 pm @ET C-245
+							<b>Office Hours:</b> Thursdays, 3-4 pm @ET C-245
 						</p>
 						<p> 
-							For any appointments, email us on the email provided.
+							<b>UPDATE:</b> Office hours will be online. Contact us for more information.
 						</p>
 					</Card>
 				</div>
@@ -35,13 +35,12 @@ class ContactUs extends React.Component {
 				<div class="contact-us-card">
 					<Card className="text-center">
 					<div>
-						<p>SOCIAL MEDIA</p>
-						
+						<h2>Social Media</h2>
 							<a href="https://www.instagram.com/calstatela_acm/?hl=en">
 								{/* <FontAwesnomeIcon className="iconBrand" size="2x" icon={faInstagram}></FontAwesomeIcon> */}
 								<img
 								src={ig_logo}
-								class="contact-us-logo"
+								class="contact-us-logo-2"
 								alt="IG Logo"
 								/>
 							</a>

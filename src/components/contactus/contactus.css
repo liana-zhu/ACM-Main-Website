@@ -40,6 +40,10 @@
     font-weight: 200;
 } */
 
+.contact-us-page {
+    padding-top: 60px;
+}
+
 .txtb{
     border: 1px solid gray;
     margin: 8px 0;
@@ -79,7 +83,8 @@
 	width: auto;
 	height: auto;
     background-color:black !important;
-    padding: 5px 150px 5px 150px;
+    /* padding: 5px 150px 5px 150px; */
+    padding: 10px;
 }
 
 .label {
@@ -99,9 +104,9 @@
 }
 
 .contact-us-logo-2 {
-    max-height: 100px;
-    max-width: 100px;
+    max-height: 75px;
+    max-width: 75px;
     display: flexbox;
     margin-left: auto;
-    margin-right: 50px;
+    margin-right: 15px;
 }
