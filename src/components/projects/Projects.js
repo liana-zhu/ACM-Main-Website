@@ -143,9 +143,9 @@ class Projects extends React.Component {
                                                         technologies={["HTML", "CSS", "JavaScript", "Bootstrap"]}
                                                         poster="./spring2020/Personal Website.png"
                                                         projectImages={[
-                                                            './spring2020/space1.jpg',
-                                                            './spring2020/space2.jpg',
-                                                            './spring2020/space3.jpg'
+                                                            './spring2020/web1.jpg',
+                                                            './spring2020/web2.jpg',
+                                                            './spring2020/web3.jpg'
                                                              ]}
                                                         projectLeadersImages={["./leaders/Srivats V.png", "./leaders/Giovanni C.png", "./leaders/Kevin F.JPG"]}
                                                         projectLeaders={["Srivats Venkataraman", "Giovanni Castellanos", "Kevin Flores"]}
@@ -159,8 +159,9 @@ class Projects extends React.Component {
                                                         technologies={["Python", "PyCharm"]}
                                                         poster="./spring2020/Space Invaders 2.0.png"
                                                         projectImages={[
-                                                            './spring2020/web1.jpg',
-                                                            './spring2020/web2.jpg'
+                                                            './spring2020/space1.jpg',
+                                                            './spring2020/space2.jpg',
+                                                            './spring2020/space3.jpg'
                                                              ]}
                                                         projectLeadersImages={["./leaders/Andrew G.png", "./leaders/Elton M.png", "./leaders/Grover.JPG", "./leaders/Luis.JPG"]}
                                                         projectLeaders={["Andrew Gonzalez", "Elton Lin", "John Grover", "Luis Gonzalez"]}
