@@ -21,7 +21,8 @@ class ContactUs extends React.Component {
 						/>
 						<p>
 							<b>Reach us at: </b>
-							<a href="mailto:acm.calstatela@gmail.com" target="_top">acm.calstatela@gmail.com</a>
+							{/* <a href="mailto:acm.calstatela@gmail.com" target="_top">acm.calstatela@gmail.com</a> */}
+							acm.calstatela@gmail.com
 						</p>
 						<p>
 							<b>Office Hours:</b> Thursdays, 3-4 pm @ET C-245
