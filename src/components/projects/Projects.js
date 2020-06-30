@@ -285,9 +285,9 @@ class Projects extends React.Component {
                                                         opener=''
                                                         //Description is long, but put on a single line to avoid word spacing issues
                                                         description='In the Arduino Car Project, students will design and build their own remote controlled car. Students will learn to use Arduinos and various types of sensors. They will work with software and hardware. '
-                                                        technologies={['C', 'C++', 'Arduino', 'Bootstrap']}
+                                                        technologies={['C++', 'Arduino']}
                                                         poster='./fall2018/fall_2018_flyer.png'
-                                                        projectImages={['./fall2018/arduino1.jpg', './fall2018/arduino2.jpg', './fall2018/arduino3.jpg', './fall2018/arduino4.jpg', './fall2018/arduino5.jpg', './fall2018/arduino6.jpg', './fall2018/arduino7.jpg']}
+                                                        projectImages={['./fall2018/arduino1.jpg', './fall2018/arduino2.jpg', './fall2018/arduino3.jpg', './fall2018/arduino4.jpg', './fall2018/arduino5.jpg', './fall2018/arduino6.jpg']}
                                                         projectLeadersImages={['./leaders/Brian.jpg', './leaders/Gio G.jpg']}
                                                         projectLeaders={['Brian Hernandez', 'Giovanni Garcia']}
                                                         />
@@ -300,7 +300,7 @@ class Projects extends React.Component {
                                                         description="In the Social Media Project, students will collaborate on GitHub to build a social media platform. They will learn to work in teams and be exposed to new technologies. View the project: https://github.com/PranilDahal/Eagle-Post"
                                                         technologies={['Java', 'JavaScript', 'MySQL', 'Vue.js', 'Maven wrapper', 'Git/GitHub version control']}
                                                         poster='./fall2018/fall_2018_flyer.png'
-                                                        projectImages={['./fall2018/social1.jpg', './fall2018/social2.jpg', './fall2018/social3.jpg', './fall2018/social4.jpg']}
+                                                        projectImages={['./fall2018/social1.jpg', './fall2018/social2.jpg', './fall2018/social3.jpg']}
                                                         projectLeadersImages={['./leaders/Pranil.jpg']}
                                                         projectLeaders={['Pranil Dahal']}
                                                         />
