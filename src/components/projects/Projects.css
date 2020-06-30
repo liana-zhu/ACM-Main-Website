@@ -4,7 +4,7 @@
     linear-gradient(
     rgba(0, 0, 0, 0.55), 
     rgba(0, 0, 0, 0.55)),
-    url("./Space Invaders/space1.jpg");
+    url("./fall2019/space1.jpg");
     background-size: cover !important;
     align-self: center;
     font-size: 4.4rem;
@@ -58,7 +58,7 @@
 }
 
 .quote-bg {
-    background: url('pictures/56775641_2321879274713318_1528259817590751232_n.jpg');
+    background: url('spring2019/56775641_2321879274713318_1528259817590751232_n.jpg');
     background-size: cover;  
     background-attachment: fixed;
     background-blend-mode: darken;
