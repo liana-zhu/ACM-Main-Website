@@ -62,6 +62,9 @@ class Projects extends React.Component {
                                 <Nav.Item>
                                     <Nav.Link className="project-nav-link anchor-white" eventKey="spring2019projects">Spring 2019</Nav.Link>
                                 </Nav.Item>
+                                <Nav.Item>
+                                    <Nav.Link className="project-nav-link anchor-white" eventKey="fall2018projects">Fall 2018</Nav.Link>
+                                </Nav.Item>
                                 </Nav>
                             </Col>
                             <Col sm={10}>                                
@@ -189,13 +192,13 @@ class Projects extends React.Component {
                                                         //Description is long, but put on a single line to avoid word spacing issues
                                                         description="The instant gratification, the flashy lights, the addictive player-application feedback. In this workshop, we recreated a classic arcade game from the late 70's, Space Invaders, using Python, a high-level programming language that is not only extremely easy to learn but also widely used."
                                                         technologies={['Python', 'PyGame', 'Python', 'Git/Github', 'Did I mention Python...?']}
-                                                        poster='./pictures/beginner.png'
+                                                        poster='./fall2019/beginner.png'
                                                         projectImages={[
-                                                            './Space Invaders/space1.jpg',
-                                                            './Space Invaders/space2.jpg',
-                                                            './Space Invaders/space3.jpg',
-                                                            './Space Invaders/space4.jpg',
-                                                            './Space Invaders/space5.jpg'
+                                                            './fall2019/space1.jpg',
+                                                            './fall2019/space2.jpg',
+                                                            './fall2019/space3.jpg',
+                                                            './fall2019/space4.jpg',
+                                                            './fall2019/space5.jpg'
                                                              ]}
                                                         projectLeadersImages={['./leaders/Andrew G.png','./leaders/Cristian C.png', './leaders/Elton M.png']}
                                                         projectLeaders={['Andrew Gonzalez', 'Cristian Corrales', 'Elton Lin']}
@@ -208,12 +211,12 @@ class Projects extends React.Component {
                                                         //Description is long, but put on a single line to avoid word spacing issues
                                                         description='In this workshop, we created a chat application (a chapplication) using React, a JavaScript web framework that everybody and their grandmas use. Learning how to use React could score you major brownie points to potential recruiters.'
                                                         technologies={['React.js', 'Git/Github', 'Firebase', 'Node.js', 'HTML', 'CSS']}
-                                                        poster='./pictures/intermediate.png'
+                                                        poster='./fall2019/intermediate.png'
                                                         projectImages={[
-                                                            './Accord/accord1.jpg', 
-                                                            './Accord/accord2.jpg', 
-                                                            './Accord/accord3.jpg', 
-                                                            './Accord/accord4.jpg'
+                                                            './fall2019/accord1.jpg', 
+                                                            './fall2019/accord2.jpg', 
+                                                            './fall2019/accord3.jpg', 
+                                                            './fall2019/accord4.jpg'
                                                         ]}
                                                         projectLeadersImages={['./leaders/Emily P.png', './leaders/Ingelbert F.png', './leaders/Srivats V.png', './leaders/Deric K.png']}
                                                         projectLeaders={['Emily Pascua', 'Ingelbert Figueroa', 'Srivats Venkataraman', 'Deric Kwok']}
@@ -241,10 +244,10 @@ class Projects extends React.Component {
                                                         //Description is long, but put on a single line to avoid word spacing issues
                                                         description='Past attendees of the workshops for this project learned how to create their own website. There are people who make their own websites to advertise themselves, so learning how to make your own website could give you an advantage in the job-hunting scene. Since HTML and CSS, the two technologies that make up many websites, are both fairly easy to learn, these workshops were geared towards beginners. '
                                                         technologies={['HTML5', 'CSS', 'JavaScript', 'Bootstrap']}
-                                                        poster='./pictures/webDev.jpg'
-                                                        projectImages={['./pictures/web1.jpg', './pictures/web2.jpg', './pictures/web3.jpg']}
-                                                        projectLeadersImages={['./leaders/Deric K.png']}
-                                                        projectLeaders={['Deric Kwok']}
+                                                        poster='./spring2019/webDev.jpg'
+                                                        projectImages={['./spring2019/web1.jpg', './spring2019/web2.jpg', './spring2019/web3.jpg', './spring2019/web4.jpg', './spring2019/web5.jpg', './spring2019/web6.jpg']}
+                                                        projectLeadersImages={['./leaders/Deric K.png', './leaders/Brian.jpg']}
+                                                        projectLeaders={['Deric Kwok', 'Brian Hernandez']}
                                                         />
                                                 </Tab.Pane>
 
@@ -254,8 +257,8 @@ class Projects extends React.Component {
                                                         //Description is long, but put on a single line to avoid word spacing issues
                                                         description="The workshops for this project focused on teaching its attendees how to use Android Studio to design and build an Android app. Using Android Studio, past attendees ported ACM's website to an app format. Although creative freedom was limited compared to the beginner's project of this year, workshop attendees had the creative freedom to design the app in any way they wanted. Due to the skills required to operate Android Studio, the workshops were geared towards advanced programmers who already knew the fundamentals of programming with Java."
                                                         technologies={['Android Studio', 'Java']}
-                                                        poster='./pictures/androidDev.jpg'
-                                                        projectImages={['./pictures/android1.jpg', './pictures/android2.jpg', './pictures/android3.jpg']}
+                                                        poster='./spring2019/androidDev.jpg'
+                                                        projectImages={['./spring2019/android1.jpg', './spring2019/android2.jpg', './spring2019/android3.jpg', './spring2019/android4.jpg', './spring2019/android5.jpg', './spring2019/android6.jpg']}
                                                         projectLeadersImages={['./leaders/Ingelbert F.png', './leaders/Emily P.png', './leaders/Srivats V.png']}
                                                         projectLeaders={['Ingelbert Figueroa', 'Emily Pascua', 'Srivats Venkataraman']}
                                                         />
@@ -263,7 +266,49 @@ class Projects extends React.Component {
 
                                             </Tab.Content>
                                         </Tab.Container>                                        
-                                    </Tab.Pane>                            
+                                    </Tab.Pane>
+
+                                    <Tab.Pane eventKey="fall2018projects">
+                                        <Tab.Container defaultActiveKey="F2018beginner">
+                                            <Nav variant="pills">
+                                                <Nav.Item>
+                                                    <Nav.Link className="project-nav-link anchor-white" eventKey="F2018beginner">Beginner Project</Nav.Link>
+                                                </Nav.Item>
+                                                <Nav.Item>
+                                                    <Nav.Link className="project-nav-link anchor-white" eventKey="F2018advanced">Advanced Project</Nav.Link>
+                                                </Nav.Item>
+                                            </Nav>
+                                            <Tab.Content className="project-tab-content">
+                                                
+                                                <Tab.Pane eventKey="F2018beginner">
+                                                    <LegacyProject
+                                                        opener=''
+                                                        //Description is long, but put on a single line to avoid word spacing issues
+                                                        description='In the Arduino Car Project, students will design and build their own remote controlled car. Students will learn to use Arduinos and various types of sensors. They will work with software and hardware. '
+                                                        technologies={['C', 'C++', 'Arduino', 'Bootstrap']}
+                                                        poster='./fall2018/fall_2018_flyer.png'
+                                                        projectImages={['./fall2018/arduino1.jpg', './fall2018/arduino2.jpg', './fall2018/arduino3.jpg', './fall2018/arduino4.jpg', './fall2018/arduino5.jpg', './fall2018/arduino6.jpg', './fall2018/arduino7.jpg']}
+                                                        projectLeadersImages={['./leaders/Brian.jpg', './leaders/Gio G.jpg']}
+                                                        projectLeaders={['Brian Hernandez', 'Giovanni Garcia']}
+                                                        />
+                                                </Tab.Pane>
+
+                                                <Tab.Pane eventKey="F2018advanced">
+                                                    <LegacyProject
+                                                        opener=''
+                                                        //Description is long, but put on a single line to avoid word spacing issues
+                                                        description="In the Social Media Project, students will collaborate on GitHub to build a social media platform. They will learn to work in teams and be exposed to new technologies. View the project: https://github.com/PranilDahal/Eagle-Post"
+                                                        technologies={['Java', 'JavaScript', 'MySQL', 'Vue.js', 'Maven wrapper', 'Git/GitHub version control']}
+                                                        poster='./fall2018/fall_2018_flyer.png'
+                                                        projectImages={['./fall2018/social1.jpg', './fall2018/social2.jpg', './fall2018/social3.jpg', './fall2018/social4.jpg']}
+                                                        projectLeadersImages={['./leaders/Pranil.jpg']}
+                                                        projectLeaders={['Pranil Dahal']}
+                                                        />
+                                                </Tab.Pane>
+
+                                            </Tab.Content>
+                                        </Tab.Container>                                        
+                                    </Tab.Pane>                                        
                                 </Tab.Content>
                             </Col>
                         </Row>
