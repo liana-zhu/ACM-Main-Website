@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import Andrew2019 from "./2019-2020-leaders/Andrew G.png";
 import Ayush from "./2019-2020-leaders/Ayush.png";
 import Cristian from "./2019-2020-leaders/Cristian C.png";
-import DavidT from "./2019-2020-leaders/David.png";
+import DavidT from "./2019-2020-leaders/David.jpg";
 import Deric2019 from "./2019-2020-leaders/Deric K.png";
 import Diego2019 from "./2019-2020-leaders/Diego F.png";
 import Elton from "./2019-2020-leaders/Elton M.png";
