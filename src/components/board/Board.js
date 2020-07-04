@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 
+import Cristian2020 from "./2020-2021-leaders/Cristian.jpg";
 import Srivats2020 from "./2020-2021-leaders/Srivats.jpg";
 import Nidhi from "./2020-2021-leaders/Nidhi.jpg";
 import Elton2020 from "./2020-2021-leaders/Elton.jpg";
@@ -8,12 +9,10 @@ import Rita from "./2020-2021-leaders/Rita.jpg";
 import Grover2020 from "./2020-2021-leaders/Grover.jpg";
 import Luis2020 from "./2020-2021-leaders/Luis.jpg";
 import David2020 from "./2020-2021-leaders/David.jpg";
-
 import Grace from "./2020-2021-leaders/Grace.jpg";
 import Alvin from "./2020-2021-leaders/Alvin.jpg";
 import Jorge from "./2020-2021-leaders/Jorge.jpg";
 import Anthony from "./2020-2021-leaders/Anthony.jpg";
-
 import Adrian from "./2020-2021-leaders/Adrian.jpg";
 import DavidM from "./2020-2021-leaders/DavidM.jpg";
 import Gregory from "./2020-2021-leaders/Gregory.jpg";
@@ -99,7 +98,7 @@ class Board extends React.Component {
                       {/* Fixed format (alignment) of leaders by adding "centered-leader" to class name of each row*/}
                       <div className="row-leaders centered-leader">
                         <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Vacant}></img>
+                          <img className="image-cropper profile-pic " src={Cristian2020}></img>
                           <div className="officer-info">
                             <h2>Cristian<br/>Corrales</h2>President
                             </div>
