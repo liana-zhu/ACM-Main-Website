@@ -231,7 +231,7 @@ class Board extends React.Component {
                         <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={Lillian}></img>
                           <div className="officer-info">
-                            <h2>Lillian<br/></h2>Project Committee
+                            <h2>Lillian<br/>Leung</h2>Project Committee
                             </div>
                         </div>
 
@@ -240,13 +240,13 @@ class Board extends React.Component {
                         <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={Omar}></img>
                           <div className="officer-info">
-                            <h2>Omar<br/></h2>Project Committee
+                            <h2>Omar<br/>Eclicerio</h2>Project Committee
                             </div>
                         </div>
                         <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={Robert}></img>
                           <div className="officer-info">
-                            <h2>Robert<br/></h2>Project Committee
+                            <h2>Robert<br/>De La Costa</h2>Project Committee
                             </div>
                         </div>
                       </div>
@@ -254,13 +254,13 @@ class Board extends React.Component {
                         <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={Sameen}></img>
                           <div className="officer-info">
-                            <h2>Sameen<br/></h2>Project Committee
+                            <h2>Sameen<br/>Khan</h2>Project Committee
                             </div>
                         </div>
                         <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={Adrian}></img>
                           <div className="officer-info">
-                            <h2>Adrian<br/></h2>Project Committee
+                            <h2>Adrian<br/>Salgado</h2>Project Committee
                             </div>
                         </div>
                       </div>
