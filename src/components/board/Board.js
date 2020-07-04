@@ -99,15 +99,15 @@ class Board extends React.Component {
                       {/* Fixed format (alignment) of leaders by adding "centered-leader" to class name of each row*/}
                       <div className="row-leaders centered-leader">
                         <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Kalvin2019}></img>
+                          <img className="image-cropper profile-pic " src={Vacant}></img>
                           <div className="officer-info">
-                            <h2>Kalvin<br/>Mateo</h2>President
+                            <h2>Cristian<br/>Corrales</h2>President
                             </div>
                         </div>
                         <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={Srivats2020}></img>
                           <div className="officer-info">
-                            <h2>Cristian<br/>Corrales</h2>Vice President
+                            <h2>Srivats<br/>Venkataraman</h2>Vice President
                             </div>
                         </div>
                       </div>
@@ -118,13 +118,13 @@ class Board extends React.Component {
                             src={Nidhi}
                           ></img>
                           <div className="officer-info">
-                            <h2>Geovanny<br/>Huerta</h2>Treasurer
+                            <h2>Nidhi<br/>Lakshmanan</h2>Treasurer
                             </div>
                         </div>
                         <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={Elton2020}></img>
                           <div className="officer-info">
-                            <h2 className="name">Srivats<br/>Venkataraman</h2>Secretary
+                            <h2 className="name">Elton<br/>Lin</h2>Secretary
                           </div>
                         </div>
                       </div>
@@ -135,13 +135,13 @@ class Board extends React.Component {
                             src={Rita}
                           ></img>
                           <div className="officer-info">
-                            <h2>Giovanni<br/>Castellanos</h2>VP of Internal Affairs
+                            <h2>Rita<br/>Sanchez</h2>VP of Internal Affairs
                             </div>
                         </div>
                         <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={Grover2020}></img>
                           <div className="officer-info">
-                            <h2>Vacant </h2>VP of External Affairs
+                            <h2>John<br/>Grover</h2>VP of External Affairs
                             </div>
                         </div>
                       </div>
@@ -149,13 +149,13 @@ class Board extends React.Component {
                         <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={Luis2020}></img>
                           <div className="officer-info">
-                            <h2>Andrew<br/>Gonzalez</h2>Project Manager
+                            <h2>Luis<br/>Gonzalez</h2>Project Manager
                             </div>
                         </div>
                         <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={David2020}></img>
                           <div className="officer-info">
-                            <h2>Vacant</h2>Webmaster
+                            <h2>David<br/>Tang</h2>Webmaster
                             </div>
                         </div>
                       </div>
@@ -168,27 +168,35 @@ class Board extends React.Component {
                         <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={Grace}></img>
                           <div className="officer-info">
-                            <h2>Elton<br/>Lin</h2>Administrative Officer
+                            <h2>Grace<br/>Lin</h2>Executive Officer
                             </div>
                         </div>
                         <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Alvin}></img>
+                          <img className="image-cropper profile-pic " src={Vacant}></img>
                           <div className="officer-info">
-                            <h2>Diego<br/>Flores</h2>Finance Officer
+                            <h2>Julio<br/>Santamaria</h2>Digital Media Officer
                             </div>
                         </div>
                       </div>
                       <div className="row-leaders centered-leader">
                         <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Jorge}></img>
+                          <img className="image-cropper profile-pic " src={Alvin}></img>
                           <div className="officer-info">
-                            <h2>Elton<br/>Lin</h2>Administrative Officer
+                            <h2>Alvin<br/>Lew</h2>Project Officer
                             </div>
                         </div>
                         <div className="col-leaders">
+                          <img className="image-cropper profile-pic " src={Jorge}></img>
+                          <div className="officer-info">
+                            <h2>Jorge<br/>Mata</h2>Project Officer
+                            </div>
+                        </div>
+                      </div>
+                      <div className="row-leaders centered-leader">
+                        <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={Anthony}></img>
                           <div className="officer-info">
-                            <h2>Diego<br/>Flores</h2>Finance Officer
+                            <h2>Anthony<br/>Viramontes</h2>Web Officer
                             </div>
                         </div>
                       </div>
@@ -198,10 +206,10 @@ class Board extends React.Component {
                         <h2 className="h2-leaders">COMMITTEE</h2>
                       </div>
                       <div className="row-leaders centered-leader">
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Adrian}></img>
+                      <div className="col-leaders">
+                          <img className="image-cropper profile-pic " src={Tracy}></img>
                           <div className="officer-info">
-                            <h2>Deric<br/>Kwok</h2>General Committee
+                            <h2>Tracy<br/>Troung</h2>Design Committee
                             </div>
                         </div>
                         <div className="col-leaders">
@@ -210,7 +218,7 @@ class Board extends React.Component {
                             src={DavidM}
                           ></img>
                           <div className="officer-info">
-                            <h2>Ayush<br/>Singh</h2>Outreach Committee
+                            <h2>David<br/>Melendez</h2>Project Committee
                             </div>
                         </div>
                       </div>
@@ -218,12 +226,12 @@ class Board extends React.Component {
                         <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={Gregory}></img>
                           <div className="officer-info">
-                            <h2>Kevin<br/>Flores</h2>Outreach Committee</div>
+                            <h2>Gregory<br/>Celestino</h2>Project Committee</div>
                         </div>
                         <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={Lillian}></img>
                           <div className="officer-info">
-                            <h2>John<br/>Grover</h2>Project Committee
+                            <h2>Lillian<br/></h2>Project Committee
                             </div>
                         </div>
 
@@ -232,13 +240,13 @@ class Board extends React.Component {
                         <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={Omar}></img>
                           <div className="officer-info">
-                            <h2>Luis<br/>Gonzalez</h2>Project Committee
+                            <h2>Omar<br/></h2>Project Committee
                             </div>
                         </div>
                         <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={Robert}></img>
                           <div className="officer-info">
-                            <h2>George<br/>Chan</h2>Web Committee
+                            <h2>Robert<br/></h2>Project Committee
                             </div>
                         </div>
                       </div>
@@ -246,17 +254,23 @@ class Board extends React.Component {
                         <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={Sameen}></img>
                           <div className="officer-info">
-                            <h2>Luis<br/>Gonzalez</h2>Project Committee
+                            <h2>Sameen<br/></h2>Project Committee
                             </div>
                         </div>
                         <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Tracy}></img>
+                          <img className="image-cropper profile-pic " src={Adrian}></img>
                           <div className="officer-info">
-                            <h2>George<br/>Chan</h2>Web Committee
+                            <h2>Adrian<br/></h2>Project Committee
                             </div>
                         </div>
                       </div>
                       <div className="row-leaders centered-leader">
+                        <div className="col-leaders">
+                          <img className="image-cropper profile-pic " src={Vacant}></img>
+                          <div className="officer-info">
+                            <h2>Daniel<br/>Ramirez</h2>Project Committee
+                            </div>
+                        </div>
                         <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={Ralph2020}></img>
                           <div className="officer-info">
@@ -271,7 +285,7 @@ class Board extends React.Component {
                         <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={Randy}></img>
                           <div className="officer-info">
-                            <h2>Randal<br/>Moss</h2>Advisor
+                            <h2>Randal<br/>Moss</h2>Faculty Advisor
                             </div>
                         </div>
                         <div className="col-leaders">
@@ -285,7 +299,7 @@ class Board extends React.Component {
                         <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={Kalvin2019}></img>
                           <div className="officer-info">
-                            <h2>Ralph<br/>Belleca</h2>Web Committee
+                            <h2>Kalvin<br/>Mateo</h2>Advisor
                             </div>
                         </div>
                       </div>
