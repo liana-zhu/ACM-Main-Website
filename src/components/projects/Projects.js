@@ -103,8 +103,8 @@ class Projects extends React.Component {
                                                         opentime="14:59:59"
                                                         deadlineDate="02/09/2020"
                                                         deadlineTime="17:59:59"
-                                                        projectLeadersImages={["./leaders/Srivats V.png", "./leaders/Giovanni C.png", "./leaders/Kevin F.JPG"]}
-                                                        projectLeaders={["Srivats Venkataraman", "Giovanni Castellanos", "Kevin Flores"]}
+                                                        projectLeadersImages={["./leaders/Jorge.jpg", "./leaders/Lillian.jpg", "./leaders/Omar.jpg", "./leaders/Sameen.jpg"]}
+                                                        projectLeaders={["Jorge Mata", "Lillian Leung", "Omar Eclicerio", "Sameen Khan"]}
                                                         />
                                                 </Tab.Pane>
                                                 <Tab.Pane eventKey="F2020advanced">
@@ -120,8 +120,8 @@ class Projects extends React.Component {
                                                         opentime="14:59:59"
                                                         deadlineDate="02/09/2020"
                                                         deadlineTime="17:59:59"
-                                                        projectLeadersImages={["./leaders/Andrew G.png", "./leaders/Elton M.png", "./leaders/Grover.JPG", "./leaders/Luis.JPG"]}
-                                                        projectLeaders={["Andrew Gonzalez", "Elton Lin", "John Grover", "Luis Gonzalez"]}
+                                                        projectLeadersImages={["./leaders/Alvin.jpg", "./leaders/Adrian.jpg", "./leaders/Vacant.png", "./leaders/Robert.jpg"]}
+                                                        projectLeaders={["Alvin Lew", "Adrian Salgado", "David Melendez", "Robert De La Costa"]}
                                                         />
                                                 </Tab.Pane>
                                             </Tab.Content>
