@@ -1,5 +1,5 @@
 import React from 'react'
-import { Tabs, Row, Col, Tab, Nav, Container, Button, Jumbotron } from 'react-bootstrap'
+import { Tabs, Row, Col, Tab, Nav, Container, Button, Image, Card } from 'react-bootstrap'
 import ModalImage from './ModalImage'
 import 'bootstrap/dist/css/bootstrap.css'
 import "./Programs.css"
@@ -81,7 +81,12 @@ class Programs extends React.Component {
                                                     Students in the mentorship program will gain professional and academic skills. They will learn to manage their time and tackle intimidating assignments. They will have opportunities to improve their public speaking skills, which will help them gain confidence.
                                                     They will be provided tips on internship hunting and resume/interview preparation. When students start earning money, they must manage their finances. As a result, it will be important for them to learn
                                                     about financial responsibility and investing tips.<br></br><br></br>
-                                                    <img src={require("./pictures/Spring 2020 Mentorship Flyer.png")} class="img-fluid programs-poster"></img>
+                                                    {/* <img src={require("./pictures/Spring 2020 Mentorship Flyer.png")} class="img-fluid programs-poster"></img> */}
+                                                    <Row>
+                                                        <Col sm={4}>
+                                                            <Image src={require("./pictures/Spring 2020 Mentorship Flyer.png")} rounded />
+                                                        </Col>
+                                                    </Row><br></br><br></br>
                                                 </Tab.Pane>
                                             </Tab.Content>
                                         </Tab.Container>
@@ -104,8 +109,14 @@ class Programs extends React.Component {
                                                     <h2><span class="highlight-text">Program Description</span></h2>
                                                     Students in the mentorship program will gain professional and academic skills. They will learn to manage their time,
                                                     stay organized, and tackle intimidating assignments. They will also gain confidence, stay motivated, and learn to give advice.<br></br><br></br>
-                                                    <img src={require("./pictures/Fall 2019 Mentorship Flyer.png")} class="img-fluid programs-poster"></img>
-                                                    <h2><span class="highlight-text">Mentors and Mentees | Winners of Mentorship Competition</span></h2>
+                                                    {/* <img src={require("./pictures/Fall 2019 Mentorship Flyer.png")} class="img-fluid programs-poster"></img> */}
+                                                    <Row>
+                                                        <Col sm={4}>
+                                                            <Image src={require("./pictures/Fall 2019 Mentorship Flyer.png")} rounded />
+                                                        </Col>
+                                                    </Row>
+                                                    <br></br>
+                                                    <h2><span class="highlight-text">Mentors and Mentees &amp; Winners of Mentorship Competition</span></h2>
 
                                                     <Container>
                                                         <img src={require('./pictures/fall2019_mentors_mentees.jpg')} onClick={() => this.setState({ showMentorship1: true })} class="img-fluid programs-images"></img>
