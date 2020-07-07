@@ -31,14 +31,15 @@
 }
 
 .programs-images {
-    min-width: 2in;
+    min-width: 3in;
     max-width: 20vw;
     margin: 5px;
 }
 
 .programs-poster {
-    min-width: 200px;
-    max-width: 20vw;
+    min-width: 250px;
+    max-width: 25vw;
+    padding: 10px;
 }
 
 .programs-body {
