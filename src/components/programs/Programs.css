@@ -8,10 +8,24 @@
     margin: auto;
     text-align: left;
     color: white;
+    padding-left: 20px;
 }
 
 .programs-nav-link {
     color: white;
+}
+
+.disclaimer-body {
+    padding-left: 20px;
+    text-align: left;
+}
+
+.disclaimer_header{
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #fff;
+    color: red;
 }
 
 .quote-block {    
@@ -31,18 +45,20 @@
 }
 
 .programs-images {
-    min-width: 2in;
+    min-width: 3in;
     max-width: 20vw;
     margin: 5px;
 }
 
 .programs-poster {
-    min-width: 200px;
-    max-width: 20vw;
+    min-width: 250px;
+    max-width: 25vw;
+    padding: 10px;
 }
 
 .programs-body {
-    color: white
+    color: white;
+    
 }
 
 .mentorship-body {
