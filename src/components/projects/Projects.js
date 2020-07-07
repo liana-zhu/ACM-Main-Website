@@ -30,8 +30,7 @@ class Projects extends React.Component {
                     </div>
                     <div className="project-title-card"></div>
                 </div>
-                <Jumbotron>
-                <div>
+                <div class="disclaimer-body">
                     <h3 class="disclaimer_header"><b>Disclaimer!</b></h3>
                     <span class="disclaimer"><b>1. You must be a member of ACM to participate in the projects!</b> If you are not a member, 
                     <b><i><span class="highlight-text"> you will not be allowed in.</span></i></b></span><br></br>
@@ -66,6 +65,7 @@ class Projects extends React.Component {
                                     <Nav.Link className="project-nav-link anchor-white" eventKey="fall2018projects">Fall 2018</Nav.Link>
                                 </Nav.Item>
                                 </Nav>
+                                <br></br>
                             </Col>
                             <Col sm={10}>                                
                                 <Tab.Content className="project-tab-content">
@@ -314,7 +314,6 @@ class Projects extends React.Component {
                         </Row>
 					</Tab.Container><br></br>
                 </div>
-                </Jumbotron>
             </div>
         );
     }

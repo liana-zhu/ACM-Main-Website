@@ -46,6 +46,7 @@
     margin: auto;
     text-align: left;
     color: white;
+    padding-left: 20px;
 }
 
 .project-nav-link {
@@ -92,6 +93,11 @@
     padding-left: 10vw;
     padding-bottom: 8vh;
     padding-right: 10vw;
+    text-align: left;
+}
+
+.disclaimer-body {
+    padding-left: 20px;
     text-align: left;
 }
 
