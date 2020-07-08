@@ -38,7 +38,7 @@ class Projects extends React.Component {
                     </span></b> Space is limited in these projects, so you are advised to attend the First General Meeting to secure 
                     yourself a spot in the project of your choosing.</span><br></br>
                     <span class="disclaimer"><b>3. The deadline to apply to the Fall 2020 projects is <i><span class="highlight-text">
-                    Saturday, September 5, 2020 at 6:00 PM.</span></i></b></span><br></br>
+                    Saturday, September 5, 2020 at 11:59 PM.</span></i></b></span><br></br>
                     <br></br><br></br>
                 </div>
                 
