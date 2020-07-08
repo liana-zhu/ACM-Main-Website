@@ -31,7 +31,7 @@ class Programs extends React.Component {
                     <span class="disclaimer"><b>1. You must be a member of ACM to participate in the mentorship!</b> If you are not a member,
                     <b><i><span class="highlight-text"> you will not be allowed in.</span></i></b></span><br></br>
                     <span class="disclaimer"><b>2. Deadline to apply for the Fall 2020 mentorship program is <span class="highlight-text">
-                        Thursday, September 1, 2020 at 11:59pm.</span></b></span><br></br>
+                        Tuesday, September 1, 2020 at 11:59pm.</span></b></span><br></br>
                 </div>
                 <br></br>
                 <div class="card programs-card">
