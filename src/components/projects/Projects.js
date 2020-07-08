@@ -65,7 +65,6 @@ class Projects extends React.Component {
                                     <Nav.Link className="project-nav-link anchor-white" eventKey="fall2018projects">Fall 2018</Nav.Link>
                                 </Nav.Item>
                                 </Nav>
-                                <br></br>
                             </Col>
                             <Col sm={10}>                                
                                 <Tab.Content className="project-tab-content">

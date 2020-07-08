@@ -48,7 +48,7 @@ class Programs extends React.Component {
                                     <Nav.Item>
                                         <Nav.Link className="programs-nav-link anchor-white" eventKey="third">Fall 2019</Nav.Link>
                                     </Nav.Item>
-                                </Nav><br></br>
+                                </Nav>
                             </Col>
                             <Col sm={10}>
                                 <Tab.Content className="programs-tab-content">

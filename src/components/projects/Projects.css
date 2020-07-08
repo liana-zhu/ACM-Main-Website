@@ -139,4 +139,7 @@
     .disclaimer-body {
         padding-right: 5px;
     }
+    .flex-column {
+        padding-bottom: 35px;
+    }
   }
