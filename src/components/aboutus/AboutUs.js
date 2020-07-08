@@ -27,10 +27,11 @@ class AboutUs extends React.Component {
 				</div>
 			<div className="about-us-card"></div>
 				
-			<Container fluid>
+			{/* <Container fluid>
 				<Row>
-					<Col>
-						<div className="mission-statement-card">
+					<Col> */}
+					<Jumbotron>
+						{/* <div className="mission-statement-card"> */}
 							<div className="mission-statement-text">
 								<p><center>Our Mission</center></p>
 								<div className="mission-statement-points">
@@ -65,31 +66,32 @@ class AboutUs extends React.Component {
 								</ul>
 								</div>
 							</div>	
-						</div>
-					</Col>
+						{/* </div> */}
+						</Jumbotron>
+					{/* </Col>
 				</Row>
-			</Container>
+			</Container> */}
 
 
 
-			<Container>
-
+			{/* <Container> */}
+			<div class="bottom-section">
 				<Tab.Container id="top-tabs-example" defaultActiveKey="whoarewe">   
-					<div  className="button-row">                   
+					{/* <div className="button-row">                    */}
                            	<Nav variant="tabs" >
                                 <Nav.Item>
-                                   	<Nav.Link className="project-nav-link anchor-blue" eventKey="whoarewe">Who are we?</Nav.Link>
+                                   	<Nav.Link className="project-nav-link anchor-blue" eventKey="whoarewe">ACM</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                   	<Nav.Link className="project-nav-link anchor-blue" eventKey="whatdoweoffer">What do we offer?</Nav.Link>
+                                   	<Nav.Link className="project-nav-link anchor-blue" eventKey="whatdoweoffer">Offer</Nav.Link>
                                 </Nav.Item>
 								<Nav.Item>
-	                               	<Nav.Link className="project-nav-link anchor-blue" eventKey="howtojoinacm">How to join ACM?</Nav.Link>
+	                               	<Nav.Link className="project-nav-link anchor-blue" eventKey="howtojoinacm">Join</Nav.Link>
     	                        </Nav.Item>
         	                </Nav>
-					</div>
+					{/* </div> */}
 
-					<Tab.Content className="project-tab-content">
+					<Tab.Content>
 						<Tab.Pane eventKey="whoarewe">
 							<Row className="first-row">
 								<Col className="about-text">
@@ -100,6 +102,7 @@ class AboutUs extends React.Component {
 					ACM provides the computing field's premier Digital Library and serves its members and the computing profession with leading-edge publications,
             		conferences, and career resources.</p>
 									</Col>
+									{/* adjust col? */}
 								<Col lg={true}><Image style={{ height: '25rem', width: '35rem' }} src={require('./images/group.jpg')} fluid /></Col>
 							</Row>
 						</Tab.Pane>
@@ -132,7 +135,8 @@ class AboutUs extends React.Component {
 
 					</Tab.Content>
 				</Tab.Container>
-			</Container>
+				</div>
+			{/* </Container> */}
 		</div>
 		);
 	}

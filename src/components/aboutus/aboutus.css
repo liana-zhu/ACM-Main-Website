@@ -40,19 +40,19 @@
 }
 
 .mission-statement-text {
-  position: absolute;
+  /* position: absolute; */
   font-family: Roboto;
   font-size: 2.5rem;
   color: white;
   font-weight: bold;
 
   /*padding for "OurMision"*/
-  padding-top: 3vh;
+  /* padding-top: 3vh;
   padding-left:4rem;
   padding-right:3rem;
   padding-bottom: 5vh;
   margin-top: 3rem;
-  margin-right: 3rem;
+  margin-right: 3rem; */
 }
 
 .mission-statement-points {
@@ -69,23 +69,26 @@
   margin-bottom: 30px;
 }
 
-.first-row {
+/* .first-row {
   margin-top: 60px;
-  }
+  } */
 
 .about-text {
   text-align: left;
-  margin-left: 60px;
+  /* margin-left: 60px; */
+  color: white;
 }
 
 .offer-text {
   text-align: left;
-  margin-left: 60px;
+  /* margin-left: 60px; */
+  color: white;
 }
 
 .join-text {
   text-align: left;
-  margin-left: 60px;
+  /* margin-left: 60px; */
+  color: white;
 }
 
 .first-row {
@@ -98,4 +101,23 @@
 
 .third-row {
   margin-bottom: 30px;
+}
+
+.bottom-section {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .bottom-section {
+    
+    margin-left: 10px;
+  }
+
+  .about-image {
+    height: auto;
+    width: auto;
+  }
 }
