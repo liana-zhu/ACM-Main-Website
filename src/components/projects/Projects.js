@@ -92,10 +92,10 @@ class Projects extends React.Component {
                                             <Tab.Content className="project-tab-content">
                                                 <Tab.Pane eventKey="F2020beginner">
                                                     <NewProject
-                                                        opener="Want to learn how to advertise your skillset in a tech-savvy way?"
+                                                        opener="Come and explore the world of modding with Minecraft!"
                                                         //Description is long, but put on a single line to avoid word spacing issues
-                                                        description="Personal Website is a beginner’s project that requires little to no programming experience. If you have no coding experience or you are just interested in coding, then this is the perfect project for you. In this project, you will create your own personal website. This project is an excellent way to create a portfolio to showcase your art or promote yourself. You can even create your own blog and design the website however you like. The technologies that you will learn will include: HTML, CSS, JavaScript, and Bootstrap."
-                                                        technologies={["HTML", "CSS", "JavaScript", "Bootstrap"]}
+                                                        description="Learn how to code your own blocks, items, and craftables! Make those beautiful 16x16 pixel images come to life in this blocky, pixelated, and skittle-filled world of Minecraft!"
+                                                        technologies={["Java", "Forge", "IntelliJ IDEA", "Gradle", "Git", "JSON"]}
                                                         poster="./spring2020/Personal Website.png"
                                                         linkToSignUp="https://docs.google.com/forms/d/e/1FAIpQLSePO_VbTGlI838nY0oXqDpQDGC6GZ6guEMwJqrHHp32gR3-ag/viewform"
                                                         //Use '/' not '-' for dates to prevent issues on Firefox.
@@ -109,10 +109,10 @@ class Projects extends React.Component {
                                                 </Tab.Pane>
                                                 <Tab.Pane eventKey="F2020advanced">
                                                     <NewProject
-                                                        opener="Space Invaders, but with extra steps!"
+                                                        opener="Ever wanted to make your own weird commands on Discord?"
                                                         //Description is long, but put on a single line to avoid word spacing issues
-                                                        description="Space Invaders Part II is a game development project, which is a continuation of last semester's project. New features include new bosses, level progressions, and special abilities. This project will contain a lot of object-oriented programming along with some data structures. This project is meant for more experienced programmers who would like a challenge and for those who participated in last semester’s Space Invaders Part I. The technologies and language used will be Python and Pycharm."
-                                                        technologies={["Python", "PyCharm"]}
+                                                        description="Well, now is your chance to learn how to make your own Discord bot using JavaScript! We will also go through a few API's as the ultimate pièce de résistance."
+                                                        technologies={["JavaScript", "SQL", "Visual Studio Code", "JSON", "API calls", "Node.js"]}
                                                         poster="./spring2020/Space Invaders 2.0.png"
                                                         linkToSignUp="https://docs.google.com/forms/d/e/1FAIpQLSeZ9Pdvj0luRQgZ7B7JWM8eRA3-xq0Mn9VYH_K59MeKz7ehNw/viewform"
                                                         //Use '/' not '-' for dates to prevent issues on Firefox.
@@ -142,7 +142,7 @@ class Projects extends React.Component {
                                                     <LegacyProject
                                                         opener="Want to learn how to advertise your skillset in a tech-savvy way?"
                                                         //Description is long, but put on a single line to avoid word spacing issues
-                                                        description="Personal Website is a beginner’s project that requires little to no programming experience. If you have no coding experience or you are just interested in coding, then this is the perfect project for you. In this project, you will create your own personal website. This project is an excellent way to create a portfolio to showcase your art or promote yourself. You can even create your own blog and design the website however you like. The technologies that you will learn will include: HTML, CSS, JavaScript, and Bootstrap."
+                                                        description="Personal Website is a beginner’s project that requires little to no programming experience. If you have no coding experience or you are just interested in coding, then this is the perfect project for you. In this project, you will create your own personal website. This project will be an excellent way to create a portfolio to showcase your art or promote yourself. You will be able to create your own blog and design the website in any way you like. The technologies that you will learn will include: HTML, CSS, JavaScript, and Bootstrap."
                                                         technologies={["HTML", "CSS", "JavaScript", "Bootstrap"]}
                                                         poster="./spring2020/Personal Website.png"
                                                         projectImages={[
@@ -158,7 +158,7 @@ class Projects extends React.Component {
                                                     <LegacyProject
                                                         opener="Space Invaders, but with extra steps!"
                                                         //Description is long, but put on a single line to avoid word spacing issues
-                                                        description="Space Invaders Part II is a game development project, which is a continuation of last semester's project. New features include new bosses, level progressions, and special abilities. This project will contain a lot of object-oriented programming along with some data structures. This project is meant for more experienced programmers who would like a challenge and for those who participated in last semester’s Space Invaders Part I. The technologies and language used will be Python and Pycharm."
+                                                        description="Space Invaders Part II is a game development project, which is a continuation of last semester's project. New features include new bosses, level progressions, and special abilities. This project will contain a lot of object-oriented programming along with some data structures. This project will be for more experienced programmers who would like a challenge and for those who participated in Fall 2019’s Space Invaders Part I. The technologies and language used will be Python and Pycharm."
                                                         technologies={["Python", "PyCharm"]}
                                                         poster="./spring2020/Space Invaders 2.0.png"
                                                         projectImages={[
@@ -188,10 +188,10 @@ class Projects extends React.Component {
 
                                                 <Tab.Pane eventKey="F2019beginner">
                                                     <LegacyProject
-                                                        opener="Who doesn't enjoy games even a little?"
+                                                        opener="Who doesn't enjoy games, even a little?"
                                                         //Description is long, but put on a single line to avoid word spacing issues
-                                                        description="The instant gratification, the flashy lights, the addictive player-application feedback. In this workshop, we recreated a classic arcade game from the late 70's, Space Invaders, using Python, a high-level programming language that is not only extremely easy to learn but also widely used."
-                                                        technologies={['Python', 'PyGame', 'Python', 'Git/Github', 'Did I mention Python...?']}
+                                                        description="There are things like the instant gratification, the flashy lights, and the addictive player-application feedback. In this workshop, students will recreate a classic arcade game from the late 70's, Space Invaders. Python will be used, which is a high-level programming language that is not only easy to learn, but also commonly used."
+                                                        technologies={['Python', 'PyGame', 'Git/GitHub']}
                                                         poster='./fall2019/beginner.png'
                                                         projectImages={[
                                                             './fall2019/space1.jpg',
@@ -209,8 +209,8 @@ class Projects extends React.Component {
                                                     <LegacyProject 
                                                         opener='Looking for a bit of a challenge?'
                                                         //Description is long, but put on a single line to avoid word spacing issues
-                                                        description='In this workshop, we created a chat application (a chapplication) using React, a JavaScript web framework that everybody and their grandmas use. Learning how to use React could score you major brownie points to potential recruiters.'
-                                                        technologies={['React.js', 'Git/Github', 'Firebase', 'Node.js', 'HTML', 'CSS']}
+                                                        description='In this workshop, students will create a chat application (a chapplication). It will use React, a JavaScript web framework that everybody and their grandmas use. Learning how to use React will score you major brownie points to potential recruiters.'
+                                                        technologies={['React.js', 'Git/GitHub', 'Firebase', 'Node.js', 'HTML', 'CSS']}
                                                         poster='./fall2019/intermediate.png'
                                                         projectImages={[
                                                             './fall2019/accord1.jpg', 
@@ -242,7 +242,7 @@ class Projects extends React.Component {
                                                     <LegacyProject
                                                         opener=''
                                                         //Description is long, but put on a single line to avoid word spacing issues
-                                                        description='Past attendees of the workshops for this project learned how to create their own website. There are people who make their own websites to advertise themselves, so learning how to make your own website could give you an advantage in the job-hunting scene. Since HTML and CSS, the two technologies that make up many websites, are both fairly easy to learn, these workshops were geared towards beginners. '
+                                                        description='Students will learn to create their own website. There are people who make their own websites to advertise themselves, so learning how to make your own website will give you an advantage in the job-hunting scene. Since HTML and CSS, the two technologies that make up many websites, are easy to learn, these workshops will be for beginners. '
                                                         technologies={['HTML5', 'CSS', 'JavaScript', 'Bootstrap']}
                                                         poster='./spring2019/webDev.jpg'
                                                         projectImages={['./spring2019/web1.jpg', './spring2019/web2.jpg', './spring2019/web3.jpg', './spring2019/web4.jpg', './spring2019/web5.jpg', './spring2019/web6.jpg']}
@@ -255,7 +255,7 @@ class Projects extends React.Component {
                                                     <LegacyProject
                                                         opener=''
                                                         //Description is long, but put on a single line to avoid word spacing issues
-                                                        description="The workshops for this project focused on teaching its attendees how to use Android Studio to design and build an Android app. Using Android Studio, past attendees ported ACM's website to an app format. Although creative freedom was limited compared to the beginner's project of this year, workshop attendees had the creative freedom to design the app in any way they wanted. Due to the skills required to operate Android Studio, the workshops were geared towards advanced programmers who already knew the fundamentals of programming with Java."
+                                                        description="We will teach students how to use Android Studio to design and build an Android app. Using Android Studio, students will port ACM's website to an app format. Students will have the freedom to design the app in any way they want. Students will be expected to be familar with Java because of the technical skills required to operate Android Studio."
                                                         technologies={['Android Studio', 'Java']}
                                                         poster='./spring2019/androidDev.jpg'
                                                         projectImages={['./spring2019/android1.jpg', './spring2019/android2.jpg', './spring2019/android3.jpg', './spring2019/android4.jpg', './spring2019/android5.jpg', './spring2019/android6.jpg']}
