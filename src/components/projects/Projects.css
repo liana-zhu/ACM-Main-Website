@@ -107,6 +107,7 @@
     text-decoration: underline;
     text-decoration-color: #fff;
     color: red;
+    padding-top: 10px;
 }
 
 .disclaimer {
@@ -133,3 +134,12 @@
     max-height: 50rem;
     max-width: 25rem;
 }
+
+@media only screen and (max-width: 600px) {
+    .disclaimer-body {
+        padding-right: 5px;
+    }
+    .flex-column {
+        padding-bottom: 35px;
+    }
+  }
