@@ -1,7 +1,8 @@
 .quote-style-1 {
     text-align: center;
-    padding-top: 75px;
-    padding-left: 75px;
+    font-size: 2.25rem;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 
 .programs-card {
@@ -32,6 +33,7 @@
 .quote-block {    
     border-radius: 15px;
     background-color:#1f1f1f !important;
+    width: 900px;
 }
 
 .quote-bg {

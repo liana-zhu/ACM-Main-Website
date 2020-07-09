@@ -1,5 +1,5 @@
 import React from 'react'
-import { Row, Col, Tab, Nav, Container, Image} from 'react-bootstrap'
+import { Row, Col, Tab, Nav, Container, Image } from 'react-bootstrap'
 import ModalImage from './ModalImage'
 import 'bootstrap/dist/css/bootstrap.css'
 import "./Programs.css"
@@ -19,11 +19,13 @@ class Programs extends React.Component {
         return (
             <div class="programs-body">
                 <div class="quote-style-1 quote-bg">
-                    <div class="quote-block" style={{ 'margin-left': '15%', 'margin-right': '15%' }}>
-                        <br></br>
-                    Get involved!<br></br> Participate in our <span className="highlight-text"><i><b>mentorship!</b></i></span>
-                        <br></br>
-                        <br></br>
+                    <div class="d-flex justify-content-center">
+                        <div class="quote-block" style={{ 'margin-left': '15%', 'margin-right': '15%' }}>
+                            <br></br>
+                            Get involved!<br></br> Participate in our <span className="highlight-text"><i><b>mentorship!</b></i></span>
+                            <br></br>
+                            <br></br>
+                        </div>
                     </div>
                 </div>
                 <div class="disclaimer-body">

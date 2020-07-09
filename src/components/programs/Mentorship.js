@@ -27,7 +27,7 @@ class Mentorship extends React.Component {
                             <Nav.Link className="anchor-blue" eventKey="mentorRole">Mentor</Nav.Link>
                         </Nav.Item>*/}
                     </Nav>
-                    <Tab.Content className="project-tab-content">
+                    <Tab.Content className="programs-tab-content">
                         {/*<Tab.Pane eventKey="mentorRole"><br></br>
 
                             <img src={require('./pictures/leader.png')} class="img-fluid mentorship-images"></img>
