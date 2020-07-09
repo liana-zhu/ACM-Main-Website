@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import './membership.scss';
-import { Link } from 'react-router-dom';
 
 class Membership extends Component {
     render() {

@@ -1,9 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 
-import Jumbotron from "react-bootstrap/Jumbotron";
-import Calendar from "../calendar/Calendar.js";
-import FooterCarousel from "../footercarousel/FooterCarousel.js";
 import NewsHome from "../news/newshome/NewsHome.js";
 import HeaderCarousel from "../headercarousel/HeaderCarousel.js";
 import "./body.css";

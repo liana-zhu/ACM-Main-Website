@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import './projects.scss';
-import { Link } from 'react-router-dom';
 
 class Projects extends Component {
     render() {

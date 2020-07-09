@@ -1,5 +1,5 @@
 import React from 'react'
-import {Tabs,Row,Col,Tab,Nav,Container,Button,Jumbotron} from 'react-bootstrap'
+import {Row,Col,Tab,Nav} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
 import "./Projects.css"
 import LegacyProject from './LegacyProject'

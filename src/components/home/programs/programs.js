@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import './programs.scss';
-import { Link } from 'react-router-dom';
 
 class News extends Component {
     render() {

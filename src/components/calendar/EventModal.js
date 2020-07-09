@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Button, Modal, Image, Card} from 'react-bootstrap';
+import {Button, Modal, Image} from 'react-bootstrap';
 import './EventModal.css';
 let description = '';
 
