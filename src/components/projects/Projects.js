@@ -119,7 +119,7 @@ class Projects extends React.Component {
                                                         opentime="14:59:59"
                                                         deadlineDate="02/09/2020"
                                                         deadlineTime="17:59:59"
-                                                        projectLeadersImages={["./leaders/Alvin.jpg", "./leaders/Adrian.jpg", "./leaders/Vacant.png", "./leaders/Robert.jpg"]}
+                                                        projectLeadersImages={["./leaders/Alvin.jpg", "./leaders/Adrian.jpg", "./leaders/DavidM.jpg", "./leaders/Robert.jpg"]}
                                                         projectLeaders={["Alvin Lew", "Adrian Salgado", "David Melendez", "Robert De La Costa"]}
                                                         />
                                                 </Tab.Pane>
