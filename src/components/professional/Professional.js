@@ -1,8 +1,6 @@
 import React from 'react';
 import './professional.css';
-import CurrentEventsModal from './CurrentEventsModal';
-import CardImageModal from './CardImageModal';
-import { Card, Button, Jumbotron, Container, Row, Col, Image } from 'react-bootstrap';
+import {Container, Row, Image } from 'react-bootstrap';
 
 /*
 To install, go to project directory and run this on command line:

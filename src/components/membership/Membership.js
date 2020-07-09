@@ -1,9 +1,8 @@
 import React from 'react'
 import "./membership.css"
 import VenmoQr from './assets/venmo-qr.jpg'
-import { Tabs, Row, Col, Tab, Nav, Button, Card, Jumbotron, Container, Image, Accordion } from 'react-bootstrap'
+import { Card, Container, Image, Accordion } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
-import Modal from 'react-awesome-modal';
 
 /*
 To install, go to project directory and run this on command line:

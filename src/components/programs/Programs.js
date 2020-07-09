@@ -1,5 +1,5 @@
 import React from 'react'
-import { Tabs, Row, Col, Tab, Nav, Container, Button, Image, Card } from 'react-bootstrap'
+import { Row, Col, Tab, Nav, Container, Image } from 'react-bootstrap'
 import ModalImage from './ModalImage'
 import 'bootstrap/dist/css/bootstrap.css'
 import "./Programs.css"
@@ -19,11 +19,13 @@ class Programs extends React.Component {
         return (
             <div class="programs-body">
                 <div class="quote-style-1 quote-bg">
-                    <div class="quote-block" style={{ 'margin-left': '15%', 'margin-right': '15%' }}>
-                        <br></br>
-                    Get involved!<br></br> Participate in our <span className="highlight-text"><i><b>mentorship!</b></i></span>
-                        <br></br>
-                        <br></br>
+                    <div class="d-flex justify-content-center">
+                        <div class="quote-block" style={{ 'margin-left': '15%', 'margin-right': '15%' }}>
+                            <br></br>
+                            Get involved!<br></br> Participate in our <span className="highlight-text"><i><b>mentorship!</b></i></span>
+                            <br></br>
+                            <br></br>
+                        </div>
                     </div>
                 </div>
                 <div class="disclaimer-body">
@@ -119,8 +121,8 @@ class Programs extends React.Component {
                                                     <h2><span class="highlight-text">Mentors and Mentees &amp; Winners of Mentorship Competition</span></h2>
 
                                                     <Container>
-                                                        <img src={require('./pictures/fall2019_mentors_mentees.jpg')} onClick={() => this.setState({ showMentorship1: true })} class="img-fluid programs-images"></img>
-                                                        <img src={require('./pictures/fall2019_best_mentors_mentees.jpg')} onClick={() => this.setState({ showMentorship2: true })} class="img-fluid programs-images"></img>
+                                                        <img src={require('./pictures/fall2019_mentors_mentees.jpg')} alt="Mentors and Mentees" onClick={() => this.setState({ showMentorship1: true })} class="img-fluid programs-images"></img>
+                                                        <img src={require('./pictures/fall2019_best_mentors_mentees.jpg')} alt="Best Mentors and Mentees" onClick={() => this.setState({ showMentorship2: true })} class="img-fluid programs-images"></img>
                                                         <ModalImage image='./pictures/fall2019_mentors_mentees.jpg' show={this.state.showMentorship1} onHide={() => this.setState({ showMentorship1: false })} />
                                                         <ModalImage image='./pictures/fall2019_best_mentors_mentees.jpg' show={this.state.showMentorship2} onHide={() => this.setState({ showMentorship2: false })} />
                                                     </Container>
@@ -138,7 +140,7 @@ class Programs extends React.Component {
                                                     <h2><span class="highlight-text">Tutoring</span></h2>
 
                                                     <Container>
-                                                        <img src={require('./pictures/tutoring.PNG')} onClick={() => this.setState({ showTutoring: true })} class="programs-images"></img>
+                                                        <img src={require('./pictures/tutoring.PNG')} alt="tutoring 2018" onClick={() => this.setState({ showTutoring: true })} class="programs-images"></img>
                                                         <ModalImage image='./pictures/tutoring.PNG' show={this.state.showTutoring} onHide={() => this.setState({ showTutoring: false })} />
                                                     </Container>
 

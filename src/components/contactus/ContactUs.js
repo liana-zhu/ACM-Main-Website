@@ -1,8 +1,6 @@
 import React from 'react'
 import "./contactus.css"
-import {Tabs,Row,Col,Tab,Nav,Container,Button,Card,Image} from 'react-bootstrap'
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
-import {faInstagram, faFacebookF, faDiscord} from "@fortawesome/free-brands-svg-icons"
+import {Card} from 'react-bootstrap'
 import logo from './acmlogo1.png';
 import ig_logo from './ig_logo.png'
 import fb_logo from './fb_logo.png'

@@ -1,8 +1,6 @@
 import React from 'react';
 import './events.css';
-import CurrentEventsModal from './CurrentEventsModal';
-import CardImageModal from './CardImageModal';
-import { Card, Button, Jumbotron, Container, Row, Col, Carousel, Image } from 'react-bootstrap';
+import { Card, Button, Jumbotron, Container} from 'react-bootstrap';
 import Calendar from "../calendar/Calendar.js";
 
 // This component won't hold a state for not but decided 

@@ -1,6 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
-import {BrowserRouter,Route,Redirect} from 'react-router-dom'
+import {BrowserRouter,Route} from 'react-router-dom'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -17,8 +16,6 @@ import Projects from './components/projects/Projects'
 import Professional from './components/professional/Professional';
 import Board from './components/board/Board';
 import Programs from './components/programs/Programs';
-import HeaderCarousel from './components/headercarousel/HeaderCarousel.js';
-import Body from './components/body/Body.js';
 import FooterCarousel from './components/footercarousel/FooterCarousel.js';
 
 class App extends React.Component {

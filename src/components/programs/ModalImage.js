@@ -1,5 +1,5 @@
 import React from 'react'
-import {Tabs,Row,Col,Tab,Nav,Modal,Button} from 'react-bootstrap'
+import {Modal,Button} from 'react-bootstrap'
 
 class ModalImage extends React.Component {
     constructor(props){

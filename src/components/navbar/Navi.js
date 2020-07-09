@@ -1,11 +1,8 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-
 import './navi.scss'
 import 'bootstrap/dist/css/bootstrap.css';
 import logo from './acmlogo1.png';
-
-import { Navbar, NavDropdown, Nav, Form, FormControl, Button } from 'react-bootstrap'
+import { Navbar, NavDropdown, Nav, Button } from 'react-bootstrap'
 
 //import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 //import { faInstagram, faFacebookF, faSnapchatGhost } from "@fortawesome/free-brands-svg-icons"
@@ -17,7 +14,7 @@ class Navi extends React.Component {
     let querytHomePage = document.querySelector('#homepage');
     let findHomepage = document.getElementById('homepage');
 
-    if (querytHomePage.href == window.location.href) {
+    if (querytHomePage.href === window.location.href) {
       findHomepage.classList.add("disappear");
     }
 

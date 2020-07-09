@@ -1,6 +1,5 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
-import Carousel from 'react-bootstrap/Carousel'
 import './headercarousel.scss'
 import Typed from 'react-typed';
 import logo from './acmlogo1.png';
@@ -14,7 +13,7 @@ class HeaderCarousel extends React.Component {
             <div className="parallax">
                 <div className="middler">
                     <div id="introduction">
-                        <img id="logoImage" src={logo}/>
+                        <img id="logoImage" src={logo} alt="logo"/>
                         <div className="d-none d-md-block">
                             <span id="codeText">
                                 .creates('<Typed className="typed"
