@@ -6,11 +6,6 @@ import Calendar from "../calendar/Calendar.js";
 // This component won't hold a state for not but decided 
 // to make it into a Class component for now
 class Events extends React.Component {
-
-    constructor(props) {
-        super(props);
-    }
-
     test() {
         alert('Show Modal!');
     }

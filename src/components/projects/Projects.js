@@ -6,10 +6,6 @@ import LegacyProject from './LegacyProject'
 import NewProject from './NewProject'
 
 class Projects extends React.Component {
-    constructor(props){
-        super(props)
-    }
-
     render() {
 
         return (

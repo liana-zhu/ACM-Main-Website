@@ -2,10 +2,6 @@ import React from 'react'
 import {Modal,Button} from 'react-bootstrap'
 
 class ModalImage extends React.Component {
-    constructor(props){
-        super(props)
-    }
-
     render(){
         return (
             <Modal
@@ -15,7 +11,7 @@ class ModalImage extends React.Component {
             aria-labelledby="contained-modal-title-vcenter"
             centered>
                 <Modal.Body>
-                    <img src={require("" + this.props.image)} class="img-fluid"></img>
+                    <img src={require("" + this.props.image)} class="img-fluid" alt="modal"></img>
                 </Modal.Body>
                 <Modal.Footer>
                     <Button onClick={this.props.onHide}>Close</Button>

@@ -6,10 +6,6 @@ import {Button} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
 
 class NewProject extends React.Component {
-    constructor(props){
-        super(props)
-    }
-
     render() {
 
         let button
@@ -37,7 +33,7 @@ class NewProject extends React.Component {
                     })}
                 </ul>
 
-                <img src={require('' + this.props.poster)} class="img-fluid project-poster"></img>     
+                <img src={require('' + this.props.poster)} class="img-fluid project-poster" alt="project poster"></img>     
 
                 <br></br><br></br>                   
 
@@ -46,7 +42,7 @@ class NewProject extends React.Component {
                 <Carousel infiniteLoop>
                     {this.props.projectLeadersImages.map((value, index) => {
                         return <div>
-                            <img className='carousel-leader-image' src={require('' + value)} />
+                            <img className='carousel-leader-image' src={require('' + value)} alt="leader" />
                             <p className="legend">{this.props.projectLeaders[index]}</p>
                         </div>
                     })}
