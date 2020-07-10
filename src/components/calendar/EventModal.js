@@ -84,7 +84,8 @@ function getWhen(props) {
                 endDay = parseInt(endDay);
                 
                 let startDate = new Date(startYear, startMonth, startDay, 0, 0, 0);
-                
+                // let endDate = new Date(endYear, endMonth, endDay, 0, 0, 0);
+
                 let day = days[startDate.getDay()];
 
                 let when = day + ", " + months[startMonth] + " " + startDay + ", " + startYear;
