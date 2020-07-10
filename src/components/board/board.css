@@ -111,7 +111,7 @@ a:hover{
 }
 
 .leaders-div{
-clip-path: polygon(0 0, 100% 7%, 100% 100%, 0% 100%);
+/* clip-path: polygon(0 0, 100% 7%, 100% 100%, 0% 100%); */
 padding-top: 150px !important;
 }
 
@@ -139,3 +139,21 @@ h2{
 	flex-wrap: wrap;
 	word-wrap: normal;
 }
+
+@media only screen and (max-width: 600px) {
+	h2{
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 4vw;
+	}
+	
+	.h2-leaders{
+		font-size: 4vw;
+	}
+
+	.officer-info{
+		display: inline-block;
+		text-align: left;
+		font-size: 3.5vw;
+	}
+  }
