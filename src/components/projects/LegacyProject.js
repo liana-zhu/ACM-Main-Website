@@ -4,11 +4,7 @@ import { Carousel } from 'react-responsive-carousel';
 import 'bootstrap/dist/css/bootstrap.css'
 import "./Projects.css"
 
-class LegacyProject extends React.Component {
-    constructor(props){
-        super(props)
-    }
-    
+class LegacyProject extends React.Component {    
     render() {
         return (
             <div>
@@ -22,7 +18,7 @@ class LegacyProject extends React.Component {
                     })}
                 </ul>
 
-                <img src={require('' + this.props.poster)} class="img-fluid project-poster"></img>
+                <img src={require('' + this.props.poster)} class="img-fluid project-poster" alt="project poster"></img>
                 <br></br><br></br><br></br>
                 
                 <h2>❖ <span class="highlight-text">Images:</span></h2>
@@ -30,7 +26,7 @@ class LegacyProject extends React.Component {
                 <Carousel infiniteLoop showIndicators={false}>
                     {this.props.projectImages.map((value, index) => {
                         return <div>
-                            <img className='carousel-image' src={require('' + value)} />
+                            <img className='carousel-image' src={require('' + value)} alt="project slide"/>
                         </div>
                     })}
                 </Carousel>                
@@ -41,7 +37,7 @@ class LegacyProject extends React.Component {
                 <Carousel infiniteLoop>
                     {this.props.projectLeadersImages.map((value, index) => {
                         return <div>
-                            <img className='carousel-leader-image' src={require('' + value)} />
+                            <img className='carousel-leader-image' src={require('' + value)} alt="project leader"/>
                             <p className="legend">{this.props.projectLeaders[index]}</p>
                         </div>
                     })}

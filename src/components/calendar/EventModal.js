@@ -33,8 +33,6 @@ function getWhen(props) {
         let startDateString = '';
         let endDateString = '';
 
-        let when = '';
-
         if(typeof(props.event.start) !== "undefined") {
             // Only checking for "start" because this will means "end" will
             // be in the same format.
@@ -69,8 +67,11 @@ function getWhen(props) {
                 let startMonth =startDateString.slice(5, 7);
                 let startDay = startDateString.slice(8, 10);
 
+                // eslint-disable-next-line
                 let endYear = endDateString.slice(0, 4);
+                // eslint-disable-next-line
                 let endMonth = endDateString.slice(5, 7);
+                // eslint-disable-next-line
                 let endDay = endDateString.slice(8, 10);
 
                 // Subtracting 1 since index starts at 0
@@ -83,8 +84,7 @@ function getWhen(props) {
                 endDay = parseInt(endDay);
                 
                 let startDate = new Date(startYear, startMonth, startDay, 0, 0, 0);
-                let endDate = new Date(endYear, endMonth, endDay, 0, 0, 0);
-
+                
                 let day = days[startDate.getDay()];
 
                 let when = day + ", " + months[startMonth] + " " + startDay + ", " + startYear;
