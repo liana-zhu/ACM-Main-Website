@@ -22,11 +22,11 @@ class ContactUs extends React.Component {
 							{/* <a href="mailto:acm.calstatela@gmail.com" target="_top">acm.calstatela@gmail.com</a> */}
 							acm.calstatela@gmail.com
 						</p>
-						<p>
+						{/* <p>
 							<b>Office Hours:</b> Thursdays, 3-4 pm @ET C-245
-						</p>
+						</p> */}
 						<p> 
-							<b>UPDATE:</b> Office hours will be online. Contact us for more information.
+							There will not be office hours.
 						</p>
 					</Card>
 				</div>
