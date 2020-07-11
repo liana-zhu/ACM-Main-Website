@@ -16,12 +16,14 @@ import DavidT2020 from "./2020-2021-leaders/David.jpg";
 import Grace2020 from "./2020-2021-leaders/Grace.jpg";
 import Alvin2020 from "./2020-2021-leaders/Alvin.jpg";
 import Jorge2020 from "./2020-2021-leaders/Jorge.jpg";
+import Julio2020 from "./2020-2021-leaders/Julio.jpg";
 import Anthony2020 from "./2020-2021-leaders/Anthony.jpg";
 import Adrian2020 from "./2020-2021-leaders/Adrian.jpg";
 import DavidM2020 from "./2020-2021-leaders/DavidM.jpg";
 import Gregory2020 from "./2020-2021-leaders/Gregory.jpg";
 import Lillian2020 from "./2020-2021-leaders/Lillian.jpg";
 import Omar2020 from "./2020-2021-leaders/Omar.jpg";
+import Daniel2020 from "./2020-2021-leaders/Daniel.jpg";
 import Ralph2020 from "./2020-2021-leaders/Ralph.jpg";
 import Robert2020 from "./2020-2021-leaders/Robert.jpg";
 import Sameen2020 from "./2020-2021-leaders/Sameen.jpg";
@@ -169,7 +171,7 @@ class Board extends React.Component {
                             </div>
                         </div>
                         <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Vacant} alt="Julio 2020"></img>
+                          <img className="image-cropper profile-pic " src={Julio2020} alt="Julio 2020"></img>
                           <div className="officer-info">
                             <h2>Julio<br/>Santamaria</h2>Digital Media Officer
                             </div>
@@ -260,7 +262,7 @@ class Board extends React.Component {
                       </div>
                       <div className="row-leaders centered-leader">
                         <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Vacant} alt="Daniel 2020"></img>
+                          <img className="image-cropper profile-pic " src={Daniel2020} alt="Daniel 2020"></img>
                           <div className="officer-info">
                             <h2>Daniel<br/>Ramirez</h2>Project Committee
                             </div>
