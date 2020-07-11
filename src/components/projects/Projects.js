@@ -10,14 +10,6 @@ class Projects extends React.Component {
 
         return (
             <div class="project-body">
-                {/* <div class="quote-style-1 quote-bg">
-                    <div class="quote-block" style={{'margin-left': '15%', 'margin-right': '15%'}}>
-                    <br></br>
-                    Looking for experience?<br></br> Participate in our <span className="highlight-text"><i><b>projects and programs!</b></i></span>
-                    <br></br>
-                    <br></br>
-                    </div>
-                </div> */}
                 <div>
                     <div className="project-title-text">
                     <p></p>
@@ -30,16 +22,15 @@ class Projects extends React.Component {
                     <h3 class="disclaimer_header"><b>Disclaimer!</b></h3>
                     <span class="disclaimer"><b>1. You must be a member of ACM to participate in the projects!</b> If you are not a member, 
                     <b><i><span class="highlight-text"> you will not be allowed in.</span></i></b></span><br></br>
-                    <span class="disclaimer"><b>2. Admittance to these projects are <span class="highlight-text">first come, first served.
-                    </span></b> Space is limited in these projects, so you are advised to attend the First General Meeting to secure 
-                    yourself a spot in the project of your choosing.</span><br></br>
-                    <span class="disclaimer"><b>3. The deadline to apply to the Fall 2020 projects is <i><span class="highlight-text">
+                    <span class="disclaimer"><b>2. Space is limited, so admittance to these projects are <span class="highlight-text">first come, first served.
+                    </span></b></span><br></br>
+                    <span class="disclaimer"><b>3. Project sign-ups will open during our First General Meeting on <i><span class="highlight-text">
+                    Tuesday, September 1, 2020.</span></i></b></span><br></br>
+                    <span class="disclaimer"><b>4. Sign-up deadline for the Fall 2020 projects is <i><span class="highlight-text">
                     Saturday, September 5, 2020 at 11:59 PM.</span></i></b></span><br></br>
                     <br></br><br></br>
                 </div>
                 
-                
-
                 <div class="card project-card">
                     <Tab.Container id="left-tabs-example" defaultActiveKey="fall2020projects">
                         <Row>
@@ -92,12 +83,13 @@ class Projects extends React.Component {
                                                         description="Learn how to code your own blocks, items, and craftables! Make those beautiful 16x16 pixel images come to life in this blocky, pixelated, and skittle-filled world of Minecraft!"
                                                         technologies={["Java", "Forge", "IntelliJ IDEA", "Gradle", "Git", "JSON"]}
                                                         poster="./spring2020/Personal Website.png"
-                                                        linkToSignUp="https://docs.google.com/forms/d/e/1FAIpQLSePO_VbTGlI838nY0oXqDpQDGC6GZ6guEMwJqrHHp32gR3-ag/viewform"
-                                                        //Use '/' not '-' for dates to prevent issues on Firefox.
-                                                        openDate="01/28/2020"
-                                                        opentime="14:59:59"
-                                                        deadlineDate="02/09/2020"
-                                                        deadlineTime="17:59:59"
+                                                        linkToSignUp="https://docs.google.com/forms/d/e/1FAIpQLSfZ_4dJlVGAadGbhej6UeJiSx3k6ubnmWCR2O-qp0Jt55FZcQ/closedform"
+                                                        // Dynamic button
+                                                        // Use '/' not '-' for dates to prevent issues on Firefox.
+                                                        // openDate="01/28/2020"
+                                                        // opentime="14:59:59"
+                                                        // deadlineDate="02/09/2020"
+                                                        // deadlineTime="17:59:59"
                                                         projectLeadersImages={["./leaders/Jorge.jpg", "./leaders/Lillian.jpg", "./leaders/Omar.jpg", "./leaders/Sameen.jpg"]}
                                                         projectLeaders={["Jorge Mata", "Lillian Leung", "Omar Eclicerio", "Sameen Khan"]}
                                                         />
@@ -110,11 +102,12 @@ class Projects extends React.Component {
                                                         technologies={["JavaScript", "SQL", "Visual Studio Code", "JSON", "API calls", "Node.js"]}
                                                         poster="./spring2020/Space Invaders 2.0.png"
                                                         linkToSignUp="https://docs.google.com/forms/d/e/1FAIpQLSeZ9Pdvj0luRQgZ7B7JWM8eRA3-xq0Mn9VYH_K59MeKz7ehNw/viewform"
+                                                        // Dynamic button
                                                         //Use '/' not '-' for dates to prevent issues on Firefox.
-                                                        openDate="01/28/2020"
-                                                        opentime="14:59:59"
-                                                        deadlineDate="02/09/2020"
-                                                        deadlineTime="17:59:59"
+                                                        // openDate="01/28/2020"
+                                                        // opentime="14:59:59"
+                                                        // deadlineDate="02/09/2020"
+                                                        // deadlineTime="17:59:59"
                                                         projectLeadersImages={["./leaders/Alvin.jpg", "./leaders/Adrian.jpg", "./leaders/DavidM.jpg", "./leaders/Robert.jpg"]}
                                                         projectLeaders={["Alvin Lew", "Adrian Salgado", "David Melendez", "Robert De La Costa"]}
                                                         />

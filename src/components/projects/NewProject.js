@@ -7,17 +7,18 @@ import 'bootstrap/dist/css/bootstrap.css'
 
 class NewProject extends React.Component {
     render() {
-
-        let button
-        const today = new Date()
-        const deadline = new Date(this.props.deadlineDate + " " + this.props.deadlineTime)
+        let button = <Button variant="success" href={this.props.linkToSignUp}>Sign-up</Button>
+        // Dynamic button automatically disables, but will have to deploy website to enable it.
+        // let button
+        // const today = new Date()
+        // const deadline = new Date(this.props.deadlineDate + " " + this.props.deadlineTime)
         
-        if (today >= deadline) {
-            button = <Button variant="secondary" disabled>The deadline to sign up has passed. Sorry!</Button>
-        }
-        else {
-            button = <Button variant="success" href={this.props.linkToSignUp}>Click here to Sign Up!</Button>
-        }
+        // if (today >= deadline) {
+        //     button = <Button variant="secondary" disabled>The deadline to sign up has passed. Sorry!</Button>
+        // }
+        // else {
+            // button = <Button variant="success" href={this.props.linkToSignUp}>Click here to Sign Up!</Button>
+        // }
 
         return (
             <div>
@@ -25,8 +26,8 @@ class NewProject extends React.Component {
                 <b>{this.props.opener} </b>{this.props.description}<br></br><br></br>
                 
                 {button}<br></br><br></br>
-
-                <h2>❖ <span class="highlight-text">Expected Technologies in this Project:</span></h2><br></br>
+                
+                <h2>❖ <span class="highlight-text">What you will learn:</span></h2><br></br>
                 <ul>
                     {this.props.technologies.map((value, index) => {
                         return <li>{value}</li>

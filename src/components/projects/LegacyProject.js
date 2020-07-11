@@ -11,7 +11,7 @@ class LegacyProject extends React.Component {
                 <br></br>
                 <b>{this.props.opener} </b>{this.props.description}<br></br><br></br>
 
-                <h2>❖ <span class="highlight-text">Expected Technologies in this Project:</span></h2><br></br>
+                <h2>❖ <span class="highlight-text">What you will learn:</span></h2><br></br>
                 <ul>
                     {this.props.technologies.map((value, index) => {
                         return <li>{value}</li>
