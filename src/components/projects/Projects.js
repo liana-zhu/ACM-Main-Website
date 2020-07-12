@@ -82,7 +82,7 @@ class Projects extends React.Component {
                                                         //Description is long, but put on a single line to avoid word spacing issues
                                                         description="Learn how to code your own blocks, items, and craftables! Make those beautiful 16x16 pixel images come to life in this blocky, pixelated, and skittle-filled world of Minecraft!"
                                                         technologies={["Java", "Forge", "IntelliJ IDEA", "Gradle", "Git", "JSON"]}
-                                                        poster="./spring2020/Personal Website.png"
+                                                        poster="./spring2020/personal-website.png"
                                                         linkToSignUp="https://docs.google.com/forms/d/e/1FAIpQLSfZ_4dJlVGAadGbhej6UeJiSx3k6ubnmWCR2O-qp0Jt55FZcQ/closedform"
                                                         // Dynamic button
                                                         // Use '/' not '-' for dates to prevent issues on Firefox.
@@ -100,7 +100,7 @@ class Projects extends React.Component {
                                                         //Description is long, but put on a single line to avoid word spacing issues
                                                         description="Well, now is your chance to learn how to make your own Discord bot using JavaScript! We will also go through a few API's as the ultimate pièce de résistance."
                                                         technologies={["JavaScript", "SQL", "Visual Studio Code", "JSON", "API calls", "Node.js"]}
-                                                        poster="./spring2020/Space Invaders 2.0.png"
+                                                        poster="./spring2020/space-invaders2.png"
                                                         linkToSignUp="https://docs.google.com/forms/d/e/1FAIpQLSeZ9Pdvj0luRQgZ7B7JWM8eRA3-xq0Mn9VYH_K59MeKz7ehNw/viewform"
                                                         // Dynamic button
                                                         //Use '/' not '-' for dates to prevent issues on Firefox.
@@ -132,7 +132,7 @@ class Projects extends React.Component {
                                                         //Description is long, but put on a single line to avoid word spacing issues
                                                         description="Personal Website is a beginner’s project that requires little to no programming experience. If you have no coding experience or you are just interested in coding, then this is the perfect project for you. In this project, you will create your own personal website. This project will be an excellent way to create a portfolio to showcase your art or promote yourself. You will be able to create your own blog and design the website in any way you like. The technologies that you will learn will include: HTML, CSS, JavaScript, and Bootstrap."
                                                         technologies={["HTML", "CSS", "JavaScript", "Bootstrap"]}
-                                                        poster="./spring2020/Personal Website.png"
+                                                        poster="./spring2020/personal-website.png"
                                                         projectImages={[
                                                             './spring2020/web1.jpg',
                                                             './spring2020/web2.jpg',
@@ -148,7 +148,7 @@ class Projects extends React.Component {
                                                         //Description is long, but put on a single line to avoid word spacing issues
                                                         description="Space Invaders Part II is a game development project, which is a continuation of last semester's project. New features include new bosses, level progressions, and special abilities. This project will contain a lot of object-oriented programming along with some data structures. This project will be for more experienced programmers who would like a challenge and for those who participated in Fall 2019’s Space Invaders Part I. The technologies and language used will be Python and Pycharm."
                                                         technologies={["Python", "PyCharm"]}
-                                                        poster="./spring2020/Space Invaders 2.0.png"
+                                                        poster="./spring2020/space-invaders2.png"
                                                         projectImages={[
                                                             './spring2020/space1.jpg',
                                                             './spring2020/space2.jpg',
@@ -232,7 +232,7 @@ class Projects extends React.Component {
                                                         //Description is long, but put on a single line to avoid word spacing issues
                                                         description='Students will learn to create their own website. There are people who make their own websites to advertise themselves, so learning how to make your own website will give you an advantage in the job-hunting scene. Since HTML and CSS, the two technologies that make up many websites, are easy to learn, these workshops will be for beginners. '
                                                         technologies={['HTML5', 'CSS', 'JavaScript', 'Bootstrap']}
-                                                        poster='./spring2019/webDev.jpg'
+                                                        poster='./spring2019/web-flyer.jpg'
                                                         projectImages={['./spring2019/web1.jpg', './spring2019/web2.jpg', './spring2019/web3.jpg', './spring2019/web4.jpg', './spring2019/web5.jpg', './spring2019/web6.jpg']}
                                                         projectLeadersImages={['./leaders/Deric K.png', './leaders/Brian.jpg']}
                                                         projectLeaders={['Deric Kwok', 'Brian Hernandez']}
@@ -245,7 +245,7 @@ class Projects extends React.Component {
                                                         //Description is long, but put on a single line to avoid word spacing issues
                                                         description="We will teach students how to use Android Studio to design and build an Android app. Using Android Studio, students will port ACM's website to an app format. Students will have the freedom to design the app in any way they want. Students will be expected to be familar with Java because of the technical skills required to operate Android Studio."
                                                         technologies={['Android Studio', 'Java']}
-                                                        poster='./spring2019/androidDev.jpg'
+                                                        poster='./spring2019/android-flyer.jpg'
                                                         projectImages={['./spring2019/android1.jpg', './spring2019/android2.jpg', './spring2019/android3.jpg', './spring2019/android4.jpg', './spring2019/android5.jpg', './spring2019/android6.jpg']}
                                                         projectLeadersImages={['./leaders/Ingelbert F.png', './leaders/Emily P.png', './leaders/Srivats V.png']}
                                                         projectLeaders={['Ingelbert Figueroa', 'Emily Pascua', 'Srivats Venkataraman']}
@@ -274,7 +274,7 @@ class Projects extends React.Component {
                                                         //Description is long, but put on a single line to avoid word spacing issues
                                                         description='In the Arduino Car Project, students will design and build their own remote controlled car. Students will learn to use Arduinos and various types of sensors. They will work with software and hardware. '
                                                         technologies={['C++', 'Arduino']}
-                                                        poster='./fall2018/fall_2018_flyer.png'
+                                                        poster='./fall2018/fall-2018-flyer.png'
                                                         projectImages={['./fall2018/arduino1.jpg', './fall2018/arduino2.jpg', './fall2018/arduino3.jpg', './fall2018/arduino4.jpg', './fall2018/arduino5.jpg', './fall2018/arduino6.jpg']}
                                                         projectLeadersImages={['./leaders/Brian.jpg', './leaders/Gio G.jpg']}
                                                         projectLeaders={['Brian Hernandez', 'Giovanni Garcia']}
@@ -287,7 +287,7 @@ class Projects extends React.Component {
                                                         //Description is long, but put on a single line to avoid word spacing issues
                                                         description="In the Social Media Project, students will collaborate on GitHub to build a social media platform. They will learn to work in teams and be exposed to new technologies. View the project: https://github.com/PranilDahal/Eagle-Post"
                                                         technologies={['Java', 'JavaScript', 'MySQL', 'Vue.js', 'Maven wrapper', 'Git/GitHub version control']}
-                                                        poster='./fall2018/fall_2018_flyer.png'
+                                                        poster='./fall2018/fall-2018-flyer.png'
                                                         projectImages={['./fall2018/social1.jpg', './fall2018/social2.jpg', './fall2018/social3.jpg']}
                                                         projectLeadersImages={['./leaders/Pranil.jpg']}
                                                         projectLeaders={['Pranil Dahal']}

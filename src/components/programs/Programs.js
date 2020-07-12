@@ -86,7 +86,7 @@ class Programs extends React.Component {
                                                     {/* <img src={require("./pictures/Spring 2020 Mentorship Flyer.png")} className="img-fluid programs-poster"></img> */}
                                                     <Row>
                                                         <Col sm={4}>
-                                                            <Image src={require("./pictures/Spring 2020 Mentorship Flyer.png")} rounded />
+                                                            <Image src={require("./pictures/spring2020-mentorship-flyer.png")} rounded />
                                                         </Col>
                                                     </Row><br></br><br></br>
                                                 </Tab.Pane>
@@ -111,20 +111,20 @@ class Programs extends React.Component {
                                                     <h2><span className="highlight-text">Program Description</span></h2>
                                                     Students in the mentorship program will gain professional and academic skills. They will learn to manage their time,
                                                     stay organized, and tackle intimidating assignments. They will also gain confidence, stay motivated, and learn to give advice.<br></br><br></br>
-                                                    {/* <img src={require("./pictures/Fall 2019 Mentorship Flyer.png")} className="img-fluid programs-poster"></img> */}
+                                                    {/* <img src={require("./pictures/fall2019-mentorship-flyer.png")} className="img-fluid programs-poster"></img> */}
                                                     <Row>
                                                         <Col sm={4}>
-                                                            <Image src={require("./pictures/Fall 2019 Mentorship Flyer.png")} rounded />
+                                                            <Image src={require("./pictures/fall2019-mentorship-flyer.png")} rounded />
                                                         </Col>
                                                     </Row>
                                                     <br></br>
                                                     <h2><span className="highlight-text">Mentors and Mentees &amp; Winners of Mentorship Competition</span></h2>
 
                                                     <Container>
-                                                        <img src={require('./pictures/fall2019_mentors_mentees.jpg')} alt="Mentors and Mentees" onClick={() => this.setState({ showMentorship1: true })} className="img-fluid programs-images"></img>
-                                                        <img src={require('./pictures/fall2019_best_mentors_mentees.jpg')} alt="Best Mentors and Mentees" onClick={() => this.setState({ showMentorship2: true })} className="img-fluid programs-images"></img>
-                                                        <ModalImage image='./pictures/fall2019_mentors_mentees.jpg' show={this.state.showMentorship1} onHide={() => this.setState({ showMentorship1: false })} />
-                                                        <ModalImage image='./pictures/fall2019_best_mentors_mentees.jpg' show={this.state.showMentorship2} onHide={() => this.setState({ showMentorship2: false })} />
+                                                        <img src={require('./pictures/fall2019-mentors-mentees.jpg')} alt="Mentors and Mentees" onClick={() => this.setState({ showMentorship1: true })} className="img-fluid programs-images"></img>
+                                                        <img src={require('./pictures/fall2019-best-mentors-mentees.jpg')} alt="Best Mentors and Mentees" onClick={() => this.setState({ showMentorship2: true })} className="img-fluid programs-images"></img>
+                                                        <ModalImage image='./pictures/fall2019-mentors-mentees.jpg' show={this.state.showMentorship1} onHide={() => this.setState({ showMentorship1: false })} />
+                                                        <ModalImage image='./pictures/fall2019-best-mentors-mentees.jpg' show={this.state.showMentorship2} onHide={() => this.setState({ showMentorship2: false })} />
                                                     </Container>
 
                                                 </Tab.Pane>
