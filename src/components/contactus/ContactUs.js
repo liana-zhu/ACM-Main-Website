@@ -9,12 +9,12 @@ import discord_logo from './discord_logo.png'
 class ContactUs extends React.Component {
 	render() {
 		return (
-			<div class="contact-us-page">
-				<div class="contact-us-card">
+			<div className="contact-us-page">
+				<div className="contact-us-card">
 					<Card className="text-center">
 						<img
 							src={logo}
-							class="contact-us-logo"
+							className="contact-us-logo"
 							alt="ACM logo"
 						/>
 						<p>
@@ -31,7 +31,7 @@ class ContactUs extends React.Component {
 					</Card>
 				</div>
 
-				<div class="contact-us-card">
+				<div className="contact-us-card">
 					<Card className="text-center">
 					<div>
 						<h2>Social Media</h2>
@@ -39,7 +39,7 @@ class ContactUs extends React.Component {
 								{/* <FontAwesnomeIcon className="iconBrand" size="2x" icon={faInstagram}></FontAwesomeIcon> */}
 								<img
 								src={ig_logo}
-								class="contact-us-logo-2"
+								className="contact-us-logo-2"
 								alt="IG Logo"
 								/>
 							</a>
@@ -47,7 +47,7 @@ class ContactUs extends React.Component {
 							{/* <FontAwesomeIcon  className="iconBrand" size="2x" icon={faFacebookF}></FontAwesomeIcon> */}
 								<img
 								src={fb_logo}
-								class="contact-us-logo-2"
+								className="contact-us-logo-2"
 								alt="IG Logo"
 								/>
 							</a>
@@ -55,7 +55,7 @@ class ContactUs extends React.Component {
 								{/* <FontAwesomeIcon  className="iconBrand" size="2x" icon={faDiscord}></FontAwesomeIcon> */}
 								<img
 								src={discord_logo}
-								class="contact-us-logo-2"
+								className="contact-us-logo-2"
 								alt="IG Logo"
 								/>
 							</a>
@@ -63,28 +63,28 @@ class ContactUs extends React.Component {
 					</Card>
 				</div>
 
-				<div class="contact-us-card">
+				<div className="contact-us-card">
 					<Card className="text-center" text="white">
 						<h1>Contact Us</h1>
 						<form action="mailto:acm.calstatela@gmail.com?Subject=Contacting%20You%20From%20Website" method="POST" enctype="text/plain">
-							<div class="txtb">
-								<label for="name" class="card-bg">Full Name :</label>
-								<input type="text" id="name" name="name" class="card-bg" placeholder="Enter Your Name" />
+							<div className="txtb">
+								<label for="name" className="card-bg">Full Name :</label>
+								<input type="text" id="name" name="name" className="card-bg" placeholder="Enter Your Name" />
 							</div>
 
-							<div class="txtb">
-								<label for="email" class="card-bg">Email: </label>
-								<input type="text" id="email" name="email" class="card-bg" placeholder="Enter Your Email" />
+							<div className="txtb">
+								<label for="email" className="card-bg">Email: </label>
+								<input type="text" id="email" name="email" className="card-bg" placeholder="Enter Your Email" />
 							</div>
 
-							<div class="txtb">
-								<label for="phoneNo" class="card-bg">Phone Number :</label>
-								<input type="text" id="phoneNo" name="phoneNo" class="card-bg" placeholder="Enter Your Phone Number" />
+							<div className="txtb">
+								<label for="phoneNo" className="card-bg">Phone Number :</label>
+								<input type="text" id="phoneNo" name="phoneNo" className="card-bg" placeholder="Enter Your Phone Number" />
 							</div>
 
-							<div class="txtb">
-								<label for="message" class="card-bg">Message: </label>
-							<textarea id="body" name="message" class="card-bg"></textarea>
+							<div className="txtb">
+								<label for="message" className="card-bg">Message: </label>
+							<textarea id="body" name="message" className="card-bg"></textarea>
 							</div>
 							<input type="submit" value="Send" id="btn-form" />
 						</form>

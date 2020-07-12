@@ -17,10 +17,10 @@ class Programs extends React.Component {
 
     render() {
         return (
-            <div class="programs-body">
-                <div class="quote-style-1 quote-bg">
-                    <div class="d-flex justify-content-center">
-                        <div class="quote-block" style={{ 'margin-left': '15%', 'margin-right': '15%' }}>
+            <div className="programs-body">
+                <div className="quote-style-1 quote-bg">
+                    <div className="d-flex justify-content-center">
+                        <div className="quote-block" style={{ 'margin-left': '15%', 'margin-right': '15%' }}>
                             <br></br>
                             Get involved!<br></br> Participate in our <span className="highlight-text"><i><b>mentorship!</b></i></span>
                             <br></br>
@@ -28,15 +28,15 @@ class Programs extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div class="disclaimer-body">
-                    <h3 class="disclaimer_header"><b>Disclaimer!</b></h3>
-                    <span class="disclaimer"><b>1. You must be a member of ACM to participate in the mentorship!</b> If you are not a member,
-                    <b><i><span class="highlight-text"> you will not be allowed in.</span></i></b></span><br></br>
-                    <span class="disclaimer"><b>2. Deadline to apply for the Fall 2020 mentorship program is <span class="highlight-text">
+                <div className="disclaimer-body">
+                    <h3 className="disclaimer_header"><b>Disclaimer!</b></h3>
+                    <span className="disclaimer"><b>1. You must be a member of ACM to participate in the mentorship!</b> If you are not a member,
+                    <b><i><span className="highlight-text"> you will not be allowed in.</span></i></b></span><br></br>
+                    <span className="disclaimer"><b>2. Deadline to apply for the Fall 2020 mentorship program is <span className="highlight-text">
                         Tuesday, September 1, 2020 at 11:59pm.</span></b></span><br></br>
                 </div>
                 <br></br>
-                <div class="card programs-card">
+                <div className="card programs-card">
                     <Tab.Container id="left-tabs-example" defaultActiveKey="first">
                         <Row>
                             <Col sm={2}>
@@ -79,11 +79,11 @@ class Programs extends React.Component {
 
                                                 <Tab.Pane eventKey="S2020mentorship">
                                                     <br></br>
-                                                    <h2><span class="highlight-text">Program Description</span></h2>
+                                                    <h2><span className="highlight-text">Program Description</span></h2>
                                                     Students in the mentorship program will gain professional and academic skills. They will learn to manage their time and tackle intimidating assignments. They will have opportunities to improve their public speaking skills, which will help them gain confidence.
                                                     They will be provided tips on internship hunting and resume/interview preparation. When students start earning money, they must manage their finances. As a result, it will be important for them to learn
                                                     about financial responsibility and investing tips.<br></br><br></br>
-                                                    {/* <img src={require("./pictures/Spring 2020 Mentorship Flyer.png")} class="img-fluid programs-poster"></img> */}
+                                                    {/* <img src={require("./pictures/Spring 2020 Mentorship Flyer.png")} className="img-fluid programs-poster"></img> */}
                                                     <Row>
                                                         <Col sm={4}>
                                                             <Image src={require("./pictures/Spring 2020 Mentorship Flyer.png")} rounded />
@@ -108,21 +108,21 @@ class Programs extends React.Component {
 
                                                 <Tab.Pane eventKey="F2019mentorship">
                                                     <br></br>
-                                                    <h2><span class="highlight-text">Program Description</span></h2>
+                                                    <h2><span className="highlight-text">Program Description</span></h2>
                                                     Students in the mentorship program will gain professional and academic skills. They will learn to manage their time,
                                                     stay organized, and tackle intimidating assignments. They will also gain confidence, stay motivated, and learn to give advice.<br></br><br></br>
-                                                    {/* <img src={require("./pictures/Fall 2019 Mentorship Flyer.png")} class="img-fluid programs-poster"></img> */}
+                                                    {/* <img src={require("./pictures/Fall 2019 Mentorship Flyer.png")} className="img-fluid programs-poster"></img> */}
                                                     <Row>
                                                         <Col sm={4}>
                                                             <Image src={require("./pictures/Fall 2019 Mentorship Flyer.png")} rounded />
                                                         </Col>
                                                     </Row>
                                                     <br></br>
-                                                    <h2><span class="highlight-text">Mentors and Mentees &amp; Winners of Mentorship Competition</span></h2>
+                                                    <h2><span className="highlight-text">Mentors and Mentees &amp; Winners of Mentorship Competition</span></h2>
 
                                                     <Container>
-                                                        <img src={require('./pictures/fall2019_mentors_mentees.jpg')} alt="Mentors and Mentees" onClick={() => this.setState({ showMentorship1: true })} class="img-fluid programs-images"></img>
-                                                        <img src={require('./pictures/fall2019_best_mentors_mentees.jpg')} alt="Best Mentors and Mentees" onClick={() => this.setState({ showMentorship2: true })} class="img-fluid programs-images"></img>
+                                                        <img src={require('./pictures/fall2019_mentors_mentees.jpg')} alt="Mentors and Mentees" onClick={() => this.setState({ showMentorship1: true })} className="img-fluid programs-images"></img>
+                                                        <img src={require('./pictures/fall2019_best_mentors_mentees.jpg')} alt="Best Mentors and Mentees" onClick={() => this.setState({ showMentorship2: true })} className="img-fluid programs-images"></img>
                                                         <ModalImage image='./pictures/fall2019_mentors_mentees.jpg' show={this.state.showMentorship1} onHide={() => this.setState({ showMentorship1: false })} />
                                                         <ModalImage image='./pictures/fall2019_best_mentors_mentees.jpg' show={this.state.showMentorship2} onHide={() => this.setState({ showMentorship2: false })} />
                                                     </Container>
@@ -133,14 +133,14 @@ class Programs extends React.Component {
 
                                                 <Tab.Pane eventKey="F2019tutoring">
                                                     <br></br>
-                                                    <h2><span class="highlight-text">Program Description</span></h2>
+                                                    <h2><span className="highlight-text">Program Description</span></h2>
                                                     Tutors assist students in their introductory computer science and math classes. We provide additional insight on concepts that students are learning in their classes and
                                                     helpful tips on assignments. Academic success is very important!<br></br><br></br>
 
-                                                    <h2><span class="highlight-text">Tutoring</span></h2>
+                                                    <h2><span className="highlight-text">Tutoring</span></h2>
 
                                                     <Container>
-                                                        <img src={require('./pictures/tutoring.PNG')} alt="tutoring 2018" onClick={() => this.setState({ showTutoring: true })} class="programs-images"></img>
+                                                        <img src={require('./pictures/tutoring.PNG')} alt="tutoring 2018" onClick={() => this.setState({ showTutoring: true })} className="programs-images"></img>
                                                         <ModalImage image='./pictures/tutoring.PNG' show={this.state.showTutoring} onHide={() => this.setState({ showTutoring: false })} />
                                                     </Container>
 
