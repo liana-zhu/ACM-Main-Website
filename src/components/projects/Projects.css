@@ -1,5 +1,5 @@
 .project-title-card {
-    height: 110vh;
+    height: 70vh;
     background: 
     linear-gradient(
     rgba(0, 0, 0, 0.55), 
@@ -25,8 +25,7 @@
     font-weight: bold;
     line-height: 1.2;
     text-align: left;
-    padding-top: 40vh;
-
+    padding-top: 25vh;
     /* display: grid; */
     grid-template-rows: 1fr 1.4fr;
     padding-left: 3rem;
@@ -34,12 +33,6 @@
 
 .emphasis {
     color: #029CD7;
-}
-
-.quote-style-2 {
-    text-align: left;
-    padding-top: 75px;
-    padding-left: 75px;
 }
 
 .project-card {
@@ -51,18 +44,6 @@
 
 .project-nav-link {
     color: white;
-}
-
-.quote-block {    
-    border-radius: 15px;
-    background-color:#1f1f1f !important;
-}
-
-.quote-bg {
-    background: url('spring2019/56775641_2321879274713318_1528259817590751232_n.jpg');
-    background-size: cover;  
-    background-attachment: fixed;
-    background-blend-mode: darken;
 }
 
 .project-tab-content {
@@ -88,14 +69,6 @@
     color: white
 }
 
-.mentorship-body {
-    padding-top: 10vh;
-    padding-left: 10vw;
-    padding-bottom: 8vh;
-    padding-right: 10vw;
-    text-align: left;
-}
-
 .disclaimer-body {
     padding-left: 20px;
     text-align: left;
@@ -118,13 +91,6 @@
     color: #029CD7 !important;
 }
 
-.mentorship-images {
-    float: right;
-    min-width: 1.75in;
-    max-width: 20vw;
-    margin: 15px;
-}
-
 .carousel-image {
     max-height: 75rem;
     max-width: 50rem;
@@ -141,5 +107,8 @@
     }
     .flex-column {
         padding-bottom: 35px;
+    }
+    .project-title-text {
+        padding-top: 10vh;
     }
   }

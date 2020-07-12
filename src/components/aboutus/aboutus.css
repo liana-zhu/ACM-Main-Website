@@ -1,5 +1,5 @@
 .about-us-card {
-  height: 110vh;
+  height: 60vh;
   background: 
   linear-gradient(
     0deg, rgba(0, 0, 0, 0.55), 
@@ -27,7 +27,7 @@
   font-weight: bold;
   line-height: 1.2;
   text-align: left;
-  padding-top: 45vh;
+  padding-top: 30vh;
 
   /* display: grid; */
   grid-template-rows: 1fr 1.4fr;
