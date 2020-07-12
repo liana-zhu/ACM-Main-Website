@@ -2,9 +2,9 @@ import React from 'react'
 import "./contactus.css"
 import {Card} from 'react-bootstrap'
 import logo from './acmlogo1.png';
-import ig_logo from './ig_logo.png'
-import fb_logo from './fb_logo.png'
-import discord_logo from './discord_logo.png'
+import instagram from './ig-logo.png'
+import facebook from './fb-logo.png'
+import discord from './discord-logo.png'
 
 class ContactUs extends React.Component {
 	render() {
@@ -38,25 +38,25 @@ class ContactUs extends React.Component {
 							<a href="https://www.instagram.com/calstatela_acm/?hl=en">
 								{/* <FontAwesnomeIcon className="iconBrand" size="2x" icon={faInstagram}></FontAwesomeIcon> */}
 								<img
-								src={ig_logo}
+								src={instagram}
 								className="contact-us-logo-2"
-								alt="IG Logo"
+								alt="Instagram"
 								/>
 							</a>
 							<a href="https://www.facebook.com/calstatela.acm"> 
 							{/* <FontAwesomeIcon  className="iconBrand" size="2x" icon={faFacebookF}></FontAwesomeIcon> */}
 								<img
-								src={fb_logo}
+								src={facebook}
 								className="contact-us-logo-2"
-								alt="IG Logo"
+								alt="Facebook"
 								/>
 							</a>
 							<a href="https://discordapp.com/invite/wX58JRv">
 								{/* <FontAwesomeIcon  className="iconBrand" size="2x" icon={faDiscord}></FontAwesomeIcon> */}
 								<img
-								src={discord_logo}
+								src={discord}
 								className="contact-us-logo-2"
-								alt="IG Logo"
+								alt="Discord"
 								/>
 							</a>
 						</div>

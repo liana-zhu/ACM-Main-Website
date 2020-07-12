@@ -12,7 +12,7 @@ class Mentorship extends React.Component {
                     <h2><b>The <span className="highlight-text">mentorship program</span> is a life-changing experience that will help you in school and prepare you for your future career.</b></h2><br></br>
                     <Row>
                         <Col sm={4}>
-                        <Image src={require("./pictures/Spring 2020 Mentorship Flyer.png")} rounded />
+                        <Image src={require("./pictures/spring2020-mentorship-flyer.png")} rounded />
                         </Col>
                     </Row>
                     

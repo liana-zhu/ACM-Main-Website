@@ -103,7 +103,7 @@ class AboutUs extends React.Component {
             							to network with each other and destress from classes. </p>
 										<p>We know that learning takes more than just attending classes, so we have project workshops for students to gain hands-on experience.</p>
 									</Col>
-									<Col lg={5}><Image src={require('./images/android_workshop.png')} fluid /></Col>
+									<Col lg={5}><Image src={require('./images/android-workshop.png')} fluid /></Col>
 								</Row>
 							</Tab.Pane>
 
@@ -116,7 +116,7 @@ class AboutUs extends React.Component {
             							about the ACM member exclusive benefits, click the button below:</p><br></br>
 										<Button href="/membership">Membership</Button><br></br><br></br>
 									</Col>
-									<Col lg={5}><Image src={require('./images/fall_2019_general_meeting.jpg')} fluid /></Col>
+									<Col lg={5}><Image src={require('./images/fall-2019-general-meeting.jpg')} fluid /></Col>
 								</Row>
 							</Tab.Pane>
 

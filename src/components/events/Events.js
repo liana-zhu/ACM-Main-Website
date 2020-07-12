@@ -31,7 +31,7 @@ class Events extends React.Component {
                             <center>
                                 <h1 className="jumbo-text">Upcoming Events</h1>
                                 <Card style={{ width: '19rem' }}>
-                                    <Card.Img variant="top" src={require("./images/General Meeting.png")} />
+                                    <Card.Img variant="top" src={require("./images/general-meeting.png")} />
                                     <Card.Body>
                                         <Card.Title>Spring First General Meeting</Card.Title>
                                         <Card.Text>

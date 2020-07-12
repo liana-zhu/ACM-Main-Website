@@ -72,11 +72,13 @@
     padding-left: inherit;
 
     #logoImage {
+      padding-top: 10vh;
       width: 100%;
     }
 
     #introduction {
       padding: 6rem;
+      min-height: 60vh;
     }
 
   }

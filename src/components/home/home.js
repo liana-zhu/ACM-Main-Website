@@ -5,7 +5,7 @@ import ImpAnnouncement from './impAnnouncements/impAnnouncements';
 import Slideshow from './slideshow/slideshow'
 import AboutUs from './aboutus/aboutus';
 import Project from './projects/projects';
-import Programs from './programs/programs';
+import Mentorship from './mentorship/mentorship';
 import News from './news/news';
 import Membership from './membership/membership'
 
@@ -18,7 +18,7 @@ class Home extends Component {
                 <Slideshow/>
                 <AboutUs/>
                 <Project/>
-                <Programs/>
+                <Mentorship/>
                 <News/>
                 <Membership/>
             </section>
