@@ -1,6 +1,6 @@
 import React from 'react';
 import './events.css';
-import { Card, Button, Jumbotron, Container} from 'react-bootstrap';
+import { Card, Button, Jumbotron, Container } from 'react-bootstrap';
 import Calendar from "../calendar/Calendar.js";
 
 // This component won't hold a state for not but decided 
@@ -98,8 +98,8 @@ class Events extends React.Component {
                 <Calendar /> */}
 
                 <div>
-                    {/* Something wrong events-main-text */}
-                    <div className="events-main-text">
+                    {/* The class name "events-main-text" doesn't work. Changing the class name makes the code work */}
+                    <div className="events-text">
                         <p>Never miss an <span className="emphasis">Event</span></p>
                     </div>
                     {/* The class name "events-main-background" doesn't work. Changing the class name makes the code work */}
@@ -109,15 +109,10 @@ class Events extends React.Component {
 
                 {important_upcoming_events}
 
-                <Container className="current-events-container">
-                    {/* Calendar is floats left*/}
-                    {/*<div className="events-calendar-center">
-                         <Calendar/>
-                    </div>*/}
-                    <div className="row justify-content-center">
-                        <div className="events-calendar-center">
-                            <Calendar />
-                        </div>
+                {/* Using fluid="sm" keeps calendar centered */}
+                <Container fluid="sm">
+                    <div className="events-calendar-center">
+                        <Calendar />
                     </div>
                 </Container>
             </div>
