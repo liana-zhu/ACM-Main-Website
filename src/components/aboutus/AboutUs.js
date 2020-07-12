@@ -62,7 +62,7 @@ class AboutUs extends React.Component {
 
 
 				{/* <Container> */}
-				<div class="bottom-section">
+				<div className="bottom-section">
 					<Tab.Container id="top-tabs-example" defaultActiveKey="whoarewe">
 						{/* <div className="button-row">                    */}
 						<Nav variant="tabs" >

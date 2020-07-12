@@ -9,7 +9,7 @@ class Projects extends React.Component {
     render() {
 
         return (
-            <div class="project-body">
+            <div className="project-body">
                 <div>
                     <div className="project-title-text">
                     <p></p>
@@ -18,20 +18,20 @@ class Projects extends React.Component {
                     </div>
                     <div className="project-title-card"></div>
                 </div>
-                <div class="disclaimer-body">
-                    <h3 class="disclaimer_header"><b>Disclaimer!</b></h3>
-                    <span class="disclaimer"><b>1. You must be a member of ACM to participate in the projects!</b> If you are not a member, 
-                    <b><i><span class="highlight-text"> you will not be allowed in.</span></i></b></span><br></br>
-                    <span class="disclaimer"><b>2. Space is limited, so admittance to these projects are <span class="highlight-text">first come, first served.
+                <div className="disclaimer-body">
+                    <h3 className="disclaimer_header"><b>Disclaimer!</b></h3>
+                    <span className="disclaimer"><b>1. You must be a member of ACM to participate in the projects!</b> If you are not a member, 
+                    <b><i><span className="highlight-text"> you will not be allowed in.</span></i></b></span><br></br>
+                    <span className="disclaimer"><b>2. Space is limited, so admittance to these projects are <span className="highlight-text">first come, first served.
                     </span></b></span><br></br>
-                    <span class="disclaimer"><b>3. Project sign-ups will open during our First General Meeting on <i><span class="highlight-text">
+                    <span className="disclaimer"><b>3. Project sign-ups will open during our First General Meeting on <i><span className="highlight-text">
                     Tuesday, September 1, 2020.</span></i></b></span><br></br>
-                    <span class="disclaimer"><b>4. Sign-up deadline for the Fall 2020 projects is <i><span class="highlight-text">
+                    <span className="disclaimer"><b>4. Sign-up deadline for the Fall 2020 projects is <i><span className="highlight-text">
                     Saturday, September 5, 2020 at 11:59 PM.</span></i></b></span><br></br>
                     <br></br><br></br>
                 </div>
                 
-                <div class="card project-card">
+                <div className="card project-card">
                     <Tab.Container id="left-tabs-example" defaultActiveKey="fall2020projects">
                         <Row>
                             <Col sm={2}>
@@ -57,12 +57,12 @@ class Projects extends React.Component {
                                 <Tab.Content className="project-tab-content">
                                 
                                 {/* <h3><b>Disclaimer!</b></h3>
-                                    <span class="disclaimer"><b>1. You must be a member of ACM to participate in the projects!</b> If you are not a member, 
-                                    <b><i><span class="highlight-text"> you will not be allowed in.</span></i></b></span><br></br>
-                                    <span class="disclaimer"><b>2. Admittance to these projects are <span class="highlight-text">first come, first served.
+                                    <span className="disclaimer"><b>1. You must be a member of ACM to participate in the projects!</b> If you are not a member, 
+                                    <b><i><span className="highlight-text"> you will not be allowed in.</span></i></b></span><br></br>
+                                    <span className="disclaimer"><b>2. Admittance to these projects are <span className="highlight-text">first come, first served.
                                     </span></b> Space is limited in these projects, so you are advised to attend the First General Meeting to secure 
                                     yourself a spot in the project of your choosing.</span><br></br>
-                                    <span class="disclaimer"><b>3. The deadline to apply to the Spring 2020 projects is <i><span class="highlight-text">
+                                    <span className="disclaimer"><b>3. The deadline to apply to the Spring 2020 projects is <i><span className="highlight-text">
                                     Sunday, February 9th, 2020 at 6:00 PM.</span></i></b></span><br></br>
                                     <br></br><br></br> */}
                                     <Tab.Pane eventKey="fall2020projects">

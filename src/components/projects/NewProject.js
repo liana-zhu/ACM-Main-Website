@@ -27,19 +27,19 @@ class NewProject extends React.Component {
                 
                 {button}<br></br><br></br>
                 
-                <h2>❖ <span class="highlight-text">What you will learn:</span></h2><br></br>
+                <h2>❖ <span className="highlight-text">What you will learn:</span></h2><br></br>
                 <ul>
                     {this.props.technologies.map((value, index) => {
                         return <li>{value}</li>
                     })}
                 </ul>
 
-                <img src={require('' + this.props.poster)} class="img-fluid project-poster" alt="project poster"></img>     
+                <img src={require('' + this.props.poster)} className="img-fluid project-poster" alt="project poster"></img>     
 
                 <br></br><br></br>                   
 
-                <h2>❖ <span class="highlight-text">Project Leaders:</span></h2>
-                <div class="carousel">
+                <h2>❖ <span className="highlight-text">Project Leaders:</span></h2>
+                <div className="carousel">
                 <Carousel infiniteLoop>
                     {this.props.projectLeadersImages.map((value, index) => {
                         return <div>
