@@ -138,7 +138,7 @@ class Projects extends React.Component {
                                                             './spring2020/web2.jpg',
                                                             './spring2020/web3.jpg'
                                                              ]}
-                                                        projectLeadersImages={["./leaders/Srivats V.png", "./leaders/Giovanni C.png", "./leaders/Kevin F.JPG"]}
+                                                        projectLeadersImages={["./leaders/Srivats.JPG", "./leaders/GiovanniC.JPG", "./leaders/Kevin.JPG"]}
                                                         projectLeaders={["Srivats Venkataraman", "Giovanni Castellanos", "Kevin Flores"]}
                                                         />
                                                 </Tab.Pane>
@@ -154,7 +154,7 @@ class Projects extends React.Component {
                                                             './spring2020/space2.jpg',
                                                             './spring2020/space3.jpg'
                                                              ]}
-                                                        projectLeadersImages={["./leaders/Andrew G.png", "./leaders/Elton M.png", "./leaders/Grover.JPG", "./leaders/Luis.JPG"]}
+                                                        projectLeadersImages={["./leaders/Andrew.JPG", "./leaders/Elton.JPG", "./leaders/Grover.JPG", "./leaders/Luis.JPG"]}
                                                         projectLeaders={["Andrew Gonzalez", "Elton Lin", "John Grover", "Luis Gonzalez"]}
                                                         />
                                                 </Tab.Pane>
@@ -188,7 +188,7 @@ class Projects extends React.Component {
                                                             './fall2019/space4.jpg',
                                                             './fall2019/space5.jpg'
                                                              ]}
-                                                        projectLeadersImages={['./leaders/Andrew G.png','./leaders/Cristian C.png', './leaders/Elton M.png']}
+                                                        projectLeadersImages={['./leaders/Andrew.JPG','./leaders/Cristian.JPG', './leaders/Elton.JPG']}
                                                         projectLeaders={['Andrew Gonzalez', 'Cristian Corrales', 'Elton Lin']}
                                                         />
                                                 </Tab.Pane>
@@ -206,7 +206,7 @@ class Projects extends React.Component {
                                                             './fall2019/accord3.jpg', 
                                                             './fall2019/accord4.jpg'
                                                         ]}
-                                                        projectLeadersImages={['./leaders/Emily P.png', './leaders/Ingelbert F.png', './leaders/Srivats V.png', './leaders/Deric K.png']}
+                                                        projectLeadersImages={['./leaders/Emily.JPG', './leaders/Ingelbert.JPG', './leaders/Srivats.JPG', './leaders/Deric.JPG']}
                                                         projectLeaders={['Emily Pascua', 'Ingelbert Figueroa', 'Srivats Venkataraman', 'Deric Kwok']}
                                                         />
                                                 </Tab.Pane>
@@ -234,7 +234,7 @@ class Projects extends React.Component {
                                                         technologies={['HTML5', 'CSS', 'JavaScript', 'Bootstrap']}
                                                         poster='./spring2019/web-flyer.jpg'
                                                         projectImages={['./spring2019/web1.jpg', './spring2019/web2.jpg', './spring2019/web3.jpg', './spring2019/web4.jpg', './spring2019/web5.jpg', './spring2019/web6.jpg']}
-                                                        projectLeadersImages={['./leaders/Deric K.png', './leaders/Brian.jpg']}
+                                                        projectLeadersImages={['./leaders/Deric.JPG', './leaders/Brian.jpg']}
                                                         projectLeaders={['Deric Kwok', 'Brian Hernandez']}
                                                         />
                                                 </Tab.Pane>
@@ -247,7 +247,7 @@ class Projects extends React.Component {
                                                         technologies={['Android Studio', 'Java']}
                                                         poster='./spring2019/android-flyer.jpg'
                                                         projectImages={['./spring2019/android1.jpg', './spring2019/android2.jpg', './spring2019/android3.jpg', './spring2019/android4.jpg', './spring2019/android5.jpg', './spring2019/android6.jpg']}
-                                                        projectLeadersImages={['./leaders/Ingelbert F.png', './leaders/Emily P.png', './leaders/Srivats V.png']}
+                                                        projectLeadersImages={['./leaders/Ingelbert.JPG', './leaders/Emily.JPG', './leaders/Srivats.JPG']}
                                                         projectLeaders={['Ingelbert Figueroa', 'Emily Pascua', 'Srivats Venkataraman']}
                                                         />
                                                 </Tab.Pane>
