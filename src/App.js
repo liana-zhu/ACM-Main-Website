@@ -18,6 +18,7 @@ import Board from './components/board/Board';
 import Programs from './components/programs/Programs';
 import FooterCarousel from './components/footercarousel/FooterCarousel.js';
 
+
 class App extends React.Component {
 
 
@@ -68,6 +69,7 @@ class App extends React.Component {
           <Route path='/professional' component={Professional}/>
           <Route path='/board' component={Board}/>
           <Route path='/programs' component={Programs}/>
+          <Route path='/discord' component={() => { window.location = 'https://discord.com/invite/wX58JRv'; return null;} }/>
         </BrowserRouter>
         <FooterCarousel/>
       </div>
