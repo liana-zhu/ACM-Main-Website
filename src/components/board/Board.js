@@ -28,28 +28,28 @@ import Ralph2020 from "./2020-2021-leaders/Ralph.jpg";
 import Robert2020 from "./2020-2021-leaders/Robert.jpg";
 import Sameen2020 from "./2020-2021-leaders/Sameen.jpg";
 import Tracy2020 from "./2020-2021-leaders/Tracy.jpg";
-import Randy2020 from "./2020-2021-leaders/Randy Moss Advisor-2.jpg";
+import Randy2020 from "./2020-2021-leaders/Randal-Moss-Advisor.JPG";
 import Wilson2020 from "./2020-2021-leaders/wilson.jpg"
-import Kalvin2020 from "./2020-2021-leaders/Kalvin M.png";
+import Kalvin2020 from "./2020-2021-leaders/Kalvin.JPG";
 
 // 2019-20 leaders
-import Andrew2019 from "./2019-2020-leaders/Andrew G.png";
-import Ayush2019 from "./2019-2020-leaders/Ayush.png";
-import Cristian2019 from "./2019-2020-leaders/Cristian C.png";
+import Andrew2019 from "./2019-2020-leaders/Andrew.JPG";
+import Ayush2019 from "./2019-2020-leaders/Ayush.JPG";
+import Cristian2019 from "./2019-2020-leaders/Cristian.JPG";
 import DavidT2019 from "./2019-2020-leaders/David.jpg";
-import Deric2019 from "./2019-2020-leaders/Deric K.png";
-import Diego2019 from "./2019-2020-leaders/Diego F.png";
-import Elton2019 from "./2019-2020-leaders/Elton M.png";
-import George2019 from "./2019-2020-leaders/George C.png";
-import GeovannyH2019 from "./2019-2020-leaders/Geovanny H.png";
-import GioC2019 from "./2019-2020-leaders/Giovanni C.png";
-import Kalvin2019 from "./2019-2020-leaders/Kalvin M.png";
-import Srivats2019 from "./2019-2020-leaders/Srivats V.png";
-import Grover2019 from "./2019-2020-leaders/Grover.JPG";
+import Deric2019 from "./2019-2020-leaders/Deric.JPG";
+import Diego2019 from "./2019-2020-leaders/Diego.JPG";
+import Elton2019 from "./2019-2020-leaders/Elton.JPG";
+import George2019 from "./2019-2020-leaders/George.JPG";
+import GeovannyH2019 from "./2019-2020-leaders/GeovannyH.JPG";
+import GioC2019 from "./2019-2020-leaders/GiovanniC.JPG";
+import Kalvin2019 from "./2019-2020-leaders/Kalvin.JPG";
+import Srivats2019 from "./2019-2020-leaders/Srivats.JPG";
+import Grover2019 from "./2019-2020-leaders/Grover.jpg";
 import Luis2019 from "./2019-2020-leaders/Luis.JPG";
 import Ralph2019 from "./2019-2020-leaders/Ralph.jpg";
-import Kevin2019 from "./2019-2020-leaders/Kevin F.JPG";
-import Randy2019 from "./2019-2020-leaders/Randy Moss Advisor-2.jpg";
+import Kevin2019 from "./2019-2020-leaders/Kevin.JPG";
+import Randy2019 from "./2019-2020-leaders/Randal-Moss-Advisor.JPG";
 import Wilson2019 from "./2019-2020-leaders/wilson.jpg";
 import Vacant from "./2019-2020-leaders/Vacant.png";
 
