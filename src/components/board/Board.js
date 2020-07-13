@@ -45,7 +45,7 @@ import GeovannyH2019 from "./2019-2020-leaders/GeovannyH.JPG";
 import GioC2019 from "./2019-2020-leaders/GiovanniC.JPG";
 import Kalvin2019 from "./2019-2020-leaders/Kalvin.JPG";
 import Srivats2019 from "./2019-2020-leaders/Srivats.JPG";
-import Grover2019 from "./2019-2020-leaders/Grover.jpg";
+import Grover2019 from "./2019-2020-leaders/Grover.JPG";
 import Luis2019 from "./2019-2020-leaders/Luis.JPG";
 import Ralph2019 from "./2019-2020-leaders/Ralph.jpg";
 import Kevin2019 from "./2019-2020-leaders/Kevin.JPG";
