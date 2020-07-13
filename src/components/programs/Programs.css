@@ -54,8 +54,8 @@
 }
 
 .programs-poster {
-    min-width: 250px;
-    max-width: 25vw;
+    min-width: 300px;
+    max-width: 30vw;
     padding: 10px;
 }
 
@@ -95,5 +95,10 @@
     }
     .flex-column {
         padding-bottom: 35px;
+    }
+    .programs-poster {
+        min-width: 90vw;
+        padding-left: 0px;
+        padding-right: 0px;
     }
   }

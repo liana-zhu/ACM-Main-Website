@@ -57,8 +57,8 @@
 }
 
 .project-poster {
-    min-width: 200px;
-    max-width: 20vw;
+    min-width: 300px;
+    max-width: 30vw;
 }
 
 .project-carousel {
@@ -110,5 +110,10 @@
     }
     .project-title-text {
         padding-top: 10vh;
+    }
+    .project-poster {
+        min-width: 90vw;
+        padding-left: 0px;
+        padding-right: 0px;
     }
   }
