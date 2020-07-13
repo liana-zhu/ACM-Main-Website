@@ -140,8 +140,8 @@ class Programs extends React.Component {
                                                     <h2><span className="highlight-text">Tutoring</span></h2>
 
                                                     <Container>
-                                                        <img src={require('./pictures/tutoring.PNG')} alt="tutoring 2018" onClick={() => this.setState({ showTutoring: true })} className="programs-images"></img>
-                                                        <ModalImage image='./pictures/tutoring.PNG' show={this.state.showTutoring} onHide={() => this.setState({ showTutoring: false })} />
+                                                        <img src={require('./pictures/tutoring.jpg')} alt="tutoring 2018" onClick={() => this.setState({ showTutoring: true })} className="programs-images"></img>
+                                                        <ModalImage image='./pictures/tutoring.jpg' show={this.state.showTutoring} onHide={() => this.setState({ showTutoring: false })} />
                                                     </Container>
 
                                                 </Tab.Pane>
