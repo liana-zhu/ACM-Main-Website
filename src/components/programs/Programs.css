@@ -1,8 +1,8 @@
 .quote-style-1 {
     text-align: center;
     font-size: 2.25rem;
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 100px;
+    padding-bottom: 25px;
 }
 
 .programs-card {
@@ -87,6 +87,9 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .quote-style-1 {
+        padding-top: 30px;
+    }
     .programs-body {
         padding-top: 75px;
     }
