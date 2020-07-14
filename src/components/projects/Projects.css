@@ -1,5 +1,6 @@
 .project-title-card {
-    height: 60vh;
+    /* When the height is less than 70vh, the beginner and advanced tabs are not be clickable */
+    height: 70vh;
     background: 
     linear-gradient(
     rgba(0, 0, 0, 0.55), 
