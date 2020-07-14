@@ -9,25 +9,21 @@ class Mentorship extends React.Component {
             <div>
                 <Tab.Container defaultActiveKey="menteeRole">
                     <br></br>
-                    <h2><b>The <span className="highlight-text">mentorship program</span> is a life-changing experience that will help you in school and prepare you for your future career.</b></h2><br></br>
-                    {/* <Row>
-                        <Col sm={4}>
-                        <Image src={require("./pictures/spring2020-mentorship-flyer.png")} rounded />
-                        </Col>
-                    </Row> */}
-                    
-                    <img src={require("./pictures/spring2020-mentorship-flyer.png")} className="img-fluid programs-poster"></img>
+                    <h2><b>The <span className="highlight-text">mentorship program</span> is a life-changing experience that will help you in school and prepare you for your future career.</b></h2><br></br>                   
+                    <img src={require("./pictures/fall2020-mentorship-flyer.png")} className="img-fluid programs-poster"></img>
                     <br></br><br></br>
                     
                     <Nav variant="tabs">
                         <Nav.Item>
                             <Nav.Link className="anchor-blue" eventKey="menteeRole">Mentee</Nav.Link>
                         </Nav.Item>
+                        {/* Mentor sign up */}
                         {/*<Nav.Item>
                             <Nav.Link className="anchor-blue" eventKey="mentorRole">Mentor</Nav.Link>
                         </Nav.Item>*/}
                     </Nav>
                     <Tab.Content className="programs-tab-content">
+                        {/* Mentor sign up */}
                         {/*<Tab.Pane eventKey="mentorRole"><br></br>
 
                             <img src={require('./pictures/leader.png')} className="img-fluid mentorship-images"></img>
@@ -51,14 +47,11 @@ class Mentorship extends React.Component {
                                     ❖ Be learning by teaching<br></br>
                                     ❖ Gain a sense of accomplishment by knowing they positively influenced others<br></br><br></br>
                                 </b>
-
                             </p>
 
                         </Tab.Pane>*/}
                         <Tab.Pane eventKey="menteeRole"><br></br>
-                            {/* Paragraph below looks messy on mobile view, when using a small screen /*}
                             {/*<img src={require('./pictures/mentee.png')} className="img-fluid mentorship-images" style={{'float': 'left'}}></img>*/}
-
                             <p>
                                 In this world, it could be a bit difficult to find some footing for a stable, independent life. Thankfully, if you are one 
                                 of these people, <i><span className="highlight-text">you are not alone.</span></i> If you become a mentee in this program, a mentor can show you the ropes to
@@ -79,7 +72,7 @@ class Mentorship extends React.Component {
                     </Tab.Content>
                     <br></br><b>The deadline to apply is <span className="highlight-text">Tuesday, September 1, 2020 at 11:59pm.</span> Join our <span className="highlight-text">mentorship program</span> today before it's too late!</b><br></br><br></br>
                 
-                    <Button variant="success" size="lg" href="https://docs.google.com/forms/d/e/1FAIpQLSfZ_4dJlVGAadGbhej6UeJiSx3k6ubnmWCR2O-qp0Jt55FZcQ/viewform">Join Now!</Button>
+                    <Button variant="success" size="lg" href="https://shorturl.at/morwD">Join Now!</Button>
                 </Tab.Container>
             </div>
         )

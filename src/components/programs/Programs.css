@@ -100,6 +100,7 @@
         padding-bottom: 35px;
     }
     .programs-poster {
+        /* min-width can be used to change poster size on mobile view */
         min-width: 90vw;
         padding-left: 0px;
         padding-right: 0px;

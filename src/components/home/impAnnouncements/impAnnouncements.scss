@@ -14,6 +14,13 @@
     .img {
         filter: grayscale(100%);
     }
+    // Source: https://www.itsupportguides.com/knowledge-base/website-tips/how-to-make-embed-youtube-iframe-mobile-responsive/
+    iframe[src*=youtube] {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        padding-bottom: 10px;
+    }
 
     .content {
 
