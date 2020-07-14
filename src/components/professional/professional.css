@@ -40,7 +40,7 @@
 
 
 .events-main-background {
-    height: 100vh;
+    height: 60vh;
     background: url("images/acm_events_background.jpg") no-repeat center !important;
     background-size: cover !important;
     align-self: center;
@@ -307,6 +307,11 @@ carousel without affecting others that other devs might use*/
     justify-content: center;
 }
 
+.imageSize{
+    height: 200px;
+    width: 150px;
+}
+
 @media only screen and (max-width: 1004px){
 
     .events-card-row {
@@ -335,6 +340,11 @@ carousel without affecting others that other devs might use*/
         margin-left: 0 !important;
         font-size: 4rem;
         text-align: center;
+    }
+
+    .imageSize {
+        height: 200px;
+        width: 150px;
     }
 }
 
@@ -366,5 +376,10 @@ carousel without affecting others that other devs might use*/
 
     .jumbo {
         padding-left: 1rem !important;
+    }
+
+    .imageSize {
+        height: 200px;
+        width: 200px;
     }
 }

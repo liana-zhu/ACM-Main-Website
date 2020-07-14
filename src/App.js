@@ -20,6 +20,7 @@ import Programs from './components/programs/Programs';
 import HeaderCarousel from './components/headercarousel/HeaderCarousel.js';
 import Body from './components/body/Body.js';
 import FooterCarousel from './components/footercarousel/FooterCarousel.js';
+import Success from './components/membership/CeckoutComponents/Success.js';
 
 class App extends React.Component {
 
@@ -56,6 +57,9 @@ class App extends React.Component {
       )
   }
   render(){
+    const SuccessPage = () => (
+      <Route path='/Success' component={Success}/>
+    )
     return (
       <div>
         <BrowserRouter>
@@ -71,6 +75,7 @@ class App extends React.Component {
           <Route path='/professional' component={Professional}/>
           <Route path='/board' component={Board}/>
           <Route path='/programs' component={Programs}/>
+          <Route path='/Success' component={SuccessPage}/>
         </BrowserRouter>
         <FooterCarousel/>
       </div>

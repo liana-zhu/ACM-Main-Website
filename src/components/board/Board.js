@@ -157,7 +157,7 @@ class Board extends React.Component {
                           <img className="image-cropper profile-pic " src={DavidT}></img>
                           <div className="officer-info">
                             <h2>David<br/>Tang</h2>Web Officer
-                            </div>
+                          </div>
                         </div>
                       </div>
                       <br></br>

@@ -33,14 +33,16 @@ class Projects extends React.Component {
 
                 <div>
                     <h3 class="disclaimer_header"><b>Disclaimer!</b></h3>
-                    <span class="disclaimer"><b>1. You must be a member of ACM to participate in the projects!</b> If you are not a member, 
-                    <b><i><span class="highlight-text"> you will not be allowed in.</span></i></b></span><br></br>
-                    <span class="disclaimer"><b>2. Admittance to these projects are <span class="highlight-text">first come, first served.
-                    </span></b> Space is limited in these projects, so you are advised to attend the First General Meeting to secure 
-                    yourself a spot in the project of your choosing.</span><br></br>
-                    <span class="disclaimer"><b>3. The deadline to apply to the Spring 2020 projects is <i><span class="highlight-text">
-                    Sunday, February 9th, 2020 at 6:00 PM.</span></i></b></span><br></br>
-                    <br></br><br></br>
+                    <div className="disclamier_info">
+                        <span class="disclaimer"><b>1. You must be a member of ACM to participate in the projects!</b> If you are not a member, 
+                        <b><i><span class="highlight-text"> you will not be allowed in.</span></i></b></span><br></br>
+                        <span class="disclaimer"><b>2. Admittance to these projects are <span class="highlight-text">first come, first served.
+                        </span></b> Space is limited in these projects, so you are advised to attend the First General Meeting to secure 
+                        yourself a spot in the project of your choosing.</span><br></br>
+                        <span class="disclaimer"><b>3. The deadline to apply to the Spring 2020 projects is <i><span class="highlight-text">
+                        Sunday, February 9th, 2020 at 6:00 PM.</span></i></b></span><br></br>
+                        <br></br><br></br>
+                    </div>
                 </div>
 
                 <div class="card project-card">
@@ -76,15 +78,16 @@ class Projects extends React.Component {
                                         <Tab.Container defaultActiveKey="S2020beginner">                                            
                                             <Nav variant="pills">
                                                 <Nav.Item>
-                                                    <Nav.Link className="project-nav-link anchor-blue" eventKey="S2020beginner">Beginner Project</Nav.Link>
+                                                    <Nav.Link className="project-nav-link anchor-white" eventKey="S2020beginner">Beginner Project</Nav.Link>
                                                 </Nav.Item>
                                                 <Nav.Item>
-                                                    <Nav.Link className="project-nav-link anchor-blue" eventKey="S2020advanced">Advanced Project</Nav.Link>
+                                                    <Nav.Link className="project-nav-link anchor-white" eventKey="S2020advanced">Advanced Project</Nav.Link>
                                                 </Nav.Item>
                                             </Nav>
                                             <Tab.Content className="project-tab-content">
                                                 <Tab.Pane eventKey="S2020beginner">
-                                                    <NewProject
+                                                    <div className="project_info">
+                                                    <NewProject class="project_info"
                                                         opener="Want to learn how to advertise your skillset in a tech-savvy way?"
                                                         //Description is long, but put on a single line to avoid word spacing issues
                                                         description="Personal Website is a beginner’s project that requires little to no programming experience. If you have no coding experience or you are just interested in coding, then this is the perfect project for you. In this project, you will create your own personal website. This project is an excellent way to create a portfolio to showcase your art or promote yourself. You can even create your own blog and design the website however you like. The technologies that you will learn will include: HTML, CSS, JavaScript, and Bootstrap."
@@ -99,8 +102,10 @@ class Projects extends React.Component {
                                                         projectLeadersImages={["./leaders/Srivats V.png", "./leaders/Giovanni C.png", "./leaders/Kevin F.JPG"]}
                                                         projectLeaders={["Srivats Venkataraman", "Giovanni Castellanos", "Kevin Flores"]}
                                                         />
+                                                    </div>
                                                 </Tab.Pane>
                                                 <Tab.Pane eventKey="S2020advanced">
+                                                    <div className="project_info">
                                                     <NewProject
                                                         opener="Space Invaders, but with extra steps!"
                                                         //Description is long, but put on a single line to avoid word spacing issues
@@ -116,6 +121,7 @@ class Projects extends React.Component {
                                                         projectLeadersImages={["./leaders/Andrew G.png", "./leaders/Elton M.png", "./leaders/Grover.JPG", "./leaders/Luis.JPG"]}
                                                         projectLeaders={["Andrew Gonzalez", "Elton Lin", "John Grover", "Luis Gonzalez"]}
                                                         />
+                                                    </div>
                                                 </Tab.Pane>
                                             </Tab.Content>
                                         </Tab.Container>
@@ -125,10 +131,10 @@ class Projects extends React.Component {
                                         <Tab.Container defaultActiveKey="low1920">
                                             <Nav variant="pills">
                                                 <Nav.Item>
-                                                    <Nav.Link className="project-nav-link anchor-blue" eventKey="low1920">Beginner Project</Nav.Link>
+                                                    <Nav.Link className="project-nav-link anchor-white" eventKey="low1920">Beginner Project</Nav.Link>
                                                 </Nav.Item>
                                                 <Nav.Item>
-                                                    <Nav.Link className="project-nav-link anchor-blue" eventKey="hi1920">Intermediate Project</Nav.Link>
+                                                    <Nav.Link className="project-nav-link anchor-white" eventKey="hi1920">Intermediate Project</Nav.Link>
                                                 </Nav.Item>
                                             </Nav>
                                             <Tab.Content className="project-tab-content">

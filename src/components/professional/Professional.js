@@ -1,8 +1,9 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './professional.css';
+import firebase from './firebaseConfig.js'
 import CurrentEventsModal from './CurrentEventsModal';
 import CardImageModal from './CardImageModal';
-import { Card, Button, Jumbotron, Container, Row, Col, Image } from 'react-bootstrap';
+import { Card, CardGroup, Button, Jumbotron, Container, Row, Col, Image } from 'react-bootstrap';
 
 /*
 To install, go to project directory and run this on command line:
@@ -15,10 +16,35 @@ import "react-multi-carousel/lib/styles.css";
 // This component won't hold a state for not but decided
 // to make it into a Class component for now
 class Professional extends React.Component {
-
-    constructor(props) {
-        super(props);
+    state = {
+        currentEvent: null ,
+        upcomingEvent: null,
     }
+
+    componentDidMount(){
+        firebase.firestore().collection("events").get()
+        .then(snapshot => {
+            const events = []
+            snapshot.forEach(doc => {
+                const data = doc.data()
+                events.push(data)
+            })
+            this.setState({ currentEvent: events })
+        })
+        .catch(error => console.log(error));
+
+        firebase.firestore().collection("upcomingEvents").get()
+        .then(snapshot => {
+            const comingUpEvent = []
+            snapshot.forEach(doc => {
+                const data = doc.data()
+                comingUpEvent.push(data)
+            })
+            this.setState({upcomingEvent: comingUpEvent})
+        })
+        .catch(error => console.log(error))
+    }
+
 
     test() {
         alert('Show Modal!');
@@ -57,31 +83,63 @@ class Professional extends React.Component {
                     <div className="events-main-background">
                     </div>
                 </div>
-                {/* Today's event should not be here. Events for this week should not be here and should be on home page */}
-                {/*<Container className="todays-events-container">
-                    <Row className="justify-content-md-center">
-                        <p className="todays-events-header">Today's Event</p>
-                    </Row>
-                    <Row className="justify-content-md-center">
-                        <Image style={{ height: '30rem', marginRight: '1rem' }} src={require('./images/General Meeting.png')} thumbnail />
-                    </Row>
-                </Container>
-                <div className="gray-line"></div>
-                <Container className="current-events-container">
-                    <Row className="justify-content-md-center">
-                        <p className="current-events-header">Events for this week</p>
-                    </Row>
-                    <Row className="justify-content-md-center">
-                        <Image style={{ height: '30rem', marginRight: '1rem' }} src={require('./images/General Meeting.png')} thumbnail />
-                    </Row>
-                    {/*<Row className="current-events-images">
-                        <Col sm><Image style={{ height: '30rem' }} src={require('./images/General Meeting.png')} thumbnail /></Col>
-                        <Col sm><Image style={{ height: '30rem' }} src={require('./images/Space Invaders.png')} thumbnail /></Col>
-                        <Col sm><Image style={{ height: '30rem' }} src={require('./images/Personal Website.png')} thumbnail /></Col>
-                    </Row>
-                </Container>
-            <div className="gray-line"></div>*/}
-                <Container>
+            <Row className="justify-content-md-center">
+                <p className="past-events-header" style={{fontSize: '30px'}}>Up Coming Events</p>
+            </Row>
+            <center>
+            {
+                    this.state.upcomingEvent &&
+                    this.state.upcomingEvent.map(i => {
+                        return(
+                            <Container>
+                                <center>
+                                    <img style={{height: '20rem'}} src={i.imgUrl}/>
+                                </center>
+                                <br></br>
+                                <center>
+                                    <Button href={i.link}>RSVP</Button>
+                                </center>
+                            </Container>
+                        )
+                    })
+                }
+            </center>
+            <hr  style={{
+                color: '#ffffff',
+                backgroundColor: '#ffffff',
+                height: .5,
+                borderColor : '#ffffff',
+                marginLeft: '10px',
+                marginRight: '10px'
+            }}/>
+            <Container>
+            <Row className="justify-content-md-center">
+            <p className="past-events-header" style={{fontSize: '30px'}}>Fall 2020 Events</p>
+            </Row>
+                <Row className="justify-content-md-center">
+                {
+                    this.state.currentEvent &&
+                    this.state.currentEvent.map( currentEvents => {
+                        return (
+                            <Card style={{width: '30rem', padding: '10px'}}>
+                                <center>
+                                    <img style={{height: '30rem', padding: '10px'}} src={currentEvents.imgUrl} />
+                                </center>
+                            </Card>
+                        )
+                    })
+                }
+                </Row>
+            </Container>
+            <hr  style={{
+                color: '#ffffff',
+                backgroundColor: '#ffffff',
+                height: .5,
+                borderColor : '#ffffff',
+                marginLeft: '10px',
+                marginRight: '10px'
+            }}/>
+            <Container>
                     <Row className="justify-content-md-center">
                         <p className="past-events-header">Past Events</p>
                     </Row>
