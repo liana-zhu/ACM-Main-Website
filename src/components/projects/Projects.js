@@ -82,8 +82,8 @@ class Projects extends React.Component {
                                                         //Description is long, but put on a single line to avoid word spacing issues
                                                         description="Learn how to code your own blocks, items, and craftables! Make those beautiful 16x16 pixel images come to life in this blocky, pixelated, and skittle-filled world of Minecraft!"
                                                         technologies={["Java", "Forge", "IntelliJ IDEA", "Gradle", "Git", "JSON"]}
-                                                        poster="./spring2020/personal-website.png"
-                                                        linkToSignUp="https://docs.google.com/forms/d/e/1FAIpQLSfZ_4dJlVGAadGbhej6UeJiSx3k6ubnmWCR2O-qp0Jt55FZcQ/closedform"
+                                                        poster="./fall2020/minecraft-mod.png"
+                                                        linkToSignUp="https://shorturl.at/alEYZ"
                                                         // Dynamic button
                                                         // Use '/' not '-' for dates to prevent issues on Firefox.
                                                         // openDate="01/28/2020"
@@ -100,8 +100,8 @@ class Projects extends React.Component {
                                                         //Description is long, but put on a single line to avoid word spacing issues
                                                         description="Well, now is your chance to learn how to make your own Discord bot using JavaScript! We will also go through a few API's as the ultimate pièce de résistance."
                                                         technologies={["JavaScript", "SQL", "Visual Studio Code", "JSON", "API calls", "Node.js"]}
-                                                        poster="./spring2020/space-invaders2.png"
-                                                        linkToSignUp="https://docs.google.com/forms/d/e/1FAIpQLSeZ9Pdvj0luRQgZ7B7JWM8eRA3-xq0Mn9VYH_K59MeKz7ehNw/viewform"
+                                                        poster="./fall2020/discord-bot.png"
+                                                        linkToSignUp="https://shorturl.at/cyMRV"
                                                         // Dynamic button
                                                         //Use '/' not '-' for dates to prevent issues on Firefox.
                                                         // openDate="01/28/2020"
