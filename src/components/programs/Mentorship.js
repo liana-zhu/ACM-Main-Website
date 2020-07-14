@@ -17,6 +17,10 @@ class Mentorship extends React.Component {
                         <Nav.Item>
                             <Nav.Link className="anchor-blue" eventKey="menteeRole">Mentee</Nav.Link>
                         </Nav.Item>
+                        {/* Mentor sign up */}
+                        {/*<Nav.Item>
+                            <Nav.Link className="anchor-blue" eventKey="mentorRole">Mentor</Nav.Link>
+                        </Nav.Item>*/}
                     </Nav>
                     <Tab.Content className="programs-tab-content">
                         {/* Mentor sign up */}
