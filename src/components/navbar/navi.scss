@@ -1,7 +1,14 @@
 .navbar {
+    // Not fixed navbar, with transparency
+    // position: absolute;
+    // background-color: transparent !important;
+    
+    // Fixed navbar with a solid color
+    position: fixed;
+    background-color: #1c1c1e !important;
+    top: 0;
+
     width: 100vw;
-    position: absolute;
-    background-color: transparent !important;
     border-radius: 0 !important;
     letter-spacing: 2px;
     border: none !important;
@@ -12,7 +19,6 @@
     -webkit-transition: all 0.3s ease-in-out 0s;
     text-align: left;
     vertical-align: center;
-
 }
 
 .brandlogos{

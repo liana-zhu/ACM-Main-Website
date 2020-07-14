@@ -12,7 +12,7 @@
   display: flex;
   align-items: center;
   min-height: 100vh;
-  padding-top: 100px; 
+  padding-top: 100px;
 }
 
 .iconBrand{
@@ -63,6 +63,7 @@
 @media screen and (max-width: 1138px) {
   #introduction {
     display: block;
+    min-height: 60vh;
   }
 } 
 
@@ -78,7 +79,6 @@
 
     #introduction {
       padding: 6rem;
-      min-height: 60vh;
     }
 
   }
