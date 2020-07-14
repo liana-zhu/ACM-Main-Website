@@ -1,5 +1,5 @@
 .project-title-card {
-    height: 70vh;
+    height: 60vh;
     background: 
     linear-gradient(
     rgba(0, 0, 0, 0.55), 
@@ -23,9 +23,9 @@
     font-size: 3.0rem;
     color: white;
     font-weight: bold;
-    line-height: 1.2;
+    line-height: 0.9;
     text-align: left;
-    padding-top: 25vh;
+    padding-top: 23vh;
     /* display: grid; */
     grid-template-rows: 1fr 1.4fr;
     padding-left: 3rem;
@@ -109,7 +109,7 @@
         padding-bottom: 35px;
     }
     .project-title-text {
-        padding-top: 10vh;
+        padding-top: 15vh;
     }
     .project-poster {
         min-width: 90vw;

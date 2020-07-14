@@ -12,11 +12,7 @@ class ContactUs extends React.Component {
 			<div className="contact-us-page">
 				<div className="contact-us-card">
 					<Card className="text-center">
-						<img
-							src={logo}
-							className="contact-us-logo"
-							alt="ACM logo"
-						/>
+						<img src={logo} className="contact-us-logo" alt="ACM logo"/>
 						<p>
 							<b>Reach us at: </b>
 							{/* <a href="mailto:acm.calstatela@gmail.com" target="_top">acm.calstatela@gmail.com</a> */}
@@ -26,7 +22,7 @@ class ContactUs extends React.Component {
 							<b>Office Hours:</b> Thursdays, 3-4 pm @ET C-245
 						</p> */}
 						<p> 
-							There will not be office hours.
+							There will be no office hours.
 						</p>
 					</Card>
 				</div>
@@ -37,27 +33,15 @@ class ContactUs extends React.Component {
 						<h2>Social Media</h2>
 							<a href="https://www.instagram.com/calstatela_acm/?hl=en">
 								{/* <FontAwesnomeIcon className="iconBrand" size="2x" icon={faInstagram}></FontAwesomeIcon> */}
-								<img
-								src={instagram}
-								className="contact-us-logo-2"
-								alt="Instagram"
-								/>
+								<img src={instagram} className="contact-us-logo-2" alt="Instagram"/>
 							</a>
 							<a href="https://www.facebook.com/calstatela.acm"> 
 							{/* <FontAwesomeIcon  className="iconBrand" size="2x" icon={faFacebookF}></FontAwesomeIcon> */}
-								<img
-								src={facebook}
-								className="contact-us-logo-2"
-								alt="Facebook"
-								/>
+								<img src={facebook} className="contact-us-logo-2" alt="Facebook"/>
 							</a>
 							<a href="https://discordapp.com/invite/wX58JRv">
 								{/* <FontAwesomeIcon  className="iconBrand" size="2x" icon={faDiscord}></FontAwesomeIcon> */}
-								<img
-								src={discord}
-								className="contact-us-logo-2"
-								alt="Discord"
-								/>
+								<img src={discord} className="contact-us-logo-2" alt="Discord"/>
 							</a>
 						</div>
 					</Card>
