@@ -1,5 +1,5 @@
 import React from 'react'
-import {Tab,Nav,Button,Row,Col,Image} from 'react-bootstrap'
+import {Tab,Nav,Button} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
 import "./Programs.css"
 
@@ -10,7 +10,7 @@ class Mentorship extends React.Component {
                 <Tab.Container defaultActiveKey="menteeRole">
                     <br></br>
                     <h2><b>The <span className="highlight-text">mentorship program</span> is a life-changing experience that will help you in school and prepare you for your future career.</b></h2><br></br>                   
-                    <img src={require("./pictures/fall2020-mentorship-flyer.png")} className="img-fluid programs-poster"></img>
+                    <img src={require("./pictures/fall2020-mentorship-flyer.png")} className="img-fluid programs-poster" alt="mentorship flyer"></img>
                     <br></br><br></br>
                     
                     <Nav variant="tabs">
