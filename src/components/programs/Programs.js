@@ -1,5 +1,5 @@
 import React from 'react'
-import { Row, Col, Tab, Nav, Container, Image } from 'react-bootstrap'
+import { Row, Col, Tab, Nav, Container} from 'react-bootstrap'
 import ModalImage from './ModalImage'
 import 'bootstrap/dist/css/bootstrap.css'
 import "./Programs.css"
@@ -83,7 +83,7 @@ class Programs extends React.Component {
                                                     Students in the mentorship program will gain professional and academic skills. They will learn to manage their time and tackle intimidating assignments. They will have opportunities to improve their public speaking skills, which will help them gain confidence.
                                                     They will be provided tips on internship hunting and resume/interview preparation. When students start earning money, they must manage their finances. As a result, it will be important for them to learn
                                                     about financial responsibility and investing tips.<br></br><br></br>
-                                                    <img src={require("./pictures/spring2020-mentorship-flyer.png")} className="programs-poster"></img>
+                                                    <img src={require("./pictures/spring2020-mentorship-flyer.png")} className="programs-poster" alt="mentorship flyer"></img>
                                                     {/* <Row>
                                                         <Col sm={4}>
                                                             <Image src={require("./pictures/spring2020-mentorship-flyer.png")} rounded />
@@ -111,7 +111,7 @@ class Programs extends React.Component {
                                                     <h2><span className="highlight-text">Program Description</span></h2>
                                                     Students in the mentorship program will gain professional and academic skills. They will learn to manage their time,
                                                     stay organized, and tackle intimidating assignments. They will also gain confidence, stay motivated, and learn to give advice.<br></br><br></br>
-                                                    <img src={require("./pictures/fall2019-mentorship-flyer.png")} className="img-fluid programs-poster"></img>
+                                                    <img src={require("./pictures/fall2019-mentorship-flyer.png")} className="img-fluid programs-poster" alt="mentorship flyer"></img>
                                                     {/* <Row>
                                                         <Col sm={4}>
                                                             <Image src={require("./pictures/fall2019-mentorship-flyer.png")} rounded />
