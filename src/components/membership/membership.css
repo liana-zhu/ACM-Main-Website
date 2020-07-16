@@ -9,6 +9,27 @@
   margin-right: 10px;
 }
 
+.carousel_container{
+	width: 800px;
+	height: 400px;
+}
+
+@media (max-width: 600px){
+	.carousel_container{
+		width: 100%;
+		height: 400px;
+	}
+
+	.membership_form{
+		width: auto
+	}
+}
+
+.image{
+	/* height: 50px; */
+	width: 100px;
+}
+
 .slide{
 	width: 100vw;
 	background-attachment: fixed;
@@ -130,6 +151,10 @@ end of code
 	margin: 20px; */
 }
 
+.form_card{
+	background-color: teal !important;
+}
+
 a{
 	color: black !important;
 }
@@ -184,4 +209,8 @@ h2{
 
 .text-info{
 	color: white !important;
+}
+
+.success_message{
+	margin-top: 100px;
 }
