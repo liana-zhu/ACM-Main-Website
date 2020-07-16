@@ -7,7 +7,7 @@
     display: flex;
     flex-wrap: wrap;
 
-    .left {
+    .right {
 
         width: 50%;
         height: 100%;
@@ -52,9 +52,9 @@
         }
     }
 
-    .right{
+    .left{
 
-        background-image: url('../projects/images/20190316_132807.jpg');
+        background-image: url('../projects/images/projects.jpg');
         background-size: 100%;
         background-position-y: 90%;
         width: 50%;
@@ -66,7 +66,7 @@
 
     .Projects-tease {
 
-        .left {
+        .right {
 
             padding: 1rem;
             width: 100%;
@@ -80,7 +80,7 @@
             }
         }
 
-        .right{
+        .left{
             display: none;
         }
 

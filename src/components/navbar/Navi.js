@@ -1,11 +1,8 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-
 import './navi.scss'
 import 'bootstrap/dist/css/bootstrap.css';
 import logo from './acmlogo1.png';
-
-import { Navbar, NavDropdown, Nav, Form, FormControl, Button } from 'react-bootstrap'
+import { Navbar, NavDropdown, Nav, Button } from 'react-bootstrap'
 
 //import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 //import { faInstagram, faFacebookF, faSnapchatGhost } from "@fortawesome/free-brands-svg-icons"
@@ -17,7 +14,7 @@ class Navi extends React.Component {
     let querytHomePage = document.querySelector('#homepage');
     let findHomepage = document.getElementById('homepage');
 
-    if (querytHomePage.href == window.location.href) {
+    if (querytHomePage.href === window.location.href) {
       findHomepage.classList.add("disappear");
     }
 
@@ -61,9 +58,9 @@ class Navi extends React.Component {
               <NavDropdown.Item href="/board"><div className="nav-dropdown-text">our board</div></NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="programs" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="/projects"><div className="nav-dropdown-text">Project Workshops</div></NavDropdown.Item>
-              <NavDropdown.Item href="/programs"><div className="nav-dropdown-text">Programs</div></NavDropdown.Item>
-              <NavDropdown.Item href="/professional"><div className="nav-dropdown-text">Professional Workshops</div></NavDropdown.Item>
+              <NavDropdown.Item href="/projects"><div className="nav-dropdown-text">project workshops</div></NavDropdown.Item>
+              <NavDropdown.Item href="/programs"><div className="nav-dropdown-text">mentorship</div></NavDropdown.Item>
+              <NavDropdown.Item href="/professional"><div className="nav-dropdown-text">professional workshops</div></NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="/events">calendar</Nav.Link>
             <Nav.Link href="/contactus">contact us</Nav.Link>

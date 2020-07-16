@@ -13,28 +13,32 @@
 }
 
 /* Text is blocking (covering) the calendar. Bug? */
-.events-main-text {
-    height: 100%;
+/* The class name "events-main-text" doesn't work. Changing the class name makes the code work */
+.events-text {
+    /* When height: 100%, the calendar buttons do not work. Changing it to use "vh" works.*/
+    /* Background-image height and events-text height affect each other when one of them changed */
+    height: 60vh;
     width: 100%;
     position: absolute;
     z-index: 2;
-    font-size: 4.4rem;
+    font-size: 4.0rem;
     color: white;
     font-weight: bold;
-    line-height: 1.2;
+    line-height: 1;
 
     display: grid;
     grid-template-rows: 1fr 1.4fr;
     padding-left: 3rem;
+    padding-top: 140px;
 }
-
-.events-main-text p:first-of-type {
+/* The class name "events-main-text" doesn't work. Changing the class name makes the code work */
+.events-text p:first-of-type {
     grid-column: 1/2;
     grid-row:1/2;
     align-self: end;
 }
-
-.events-main-text p:nth-of-type(2) {
+/* The class name "events-main-text" doesn't work. Changing the class name makes the code work */
+.events-text p:nth-of-type(2) {
     grid-row:2/3;
     grid-column: 1/2;
     align-self: start;
@@ -44,8 +48,9 @@
 /* When the class name is "events-main-background" and the CSS properties are changed, the background image size doesn't change at all. 
    Maybe a bug? However, after changing the class name, the changes will show. */
 .background-image {
-    height: 110vh;
-    background: url("images/acm_events_background.jpg") no-repeat center !important;
+    /* Background-image height and events-text height affect each other when one of them is changed */
+    height: 60vh;
+    background: url("images/events-background.jpg") no-repeat center !important;
     background-size: cover !important;
     align-self: center;
     font-size: 4.4rem;
@@ -55,8 +60,6 @@
     grid-row: 1/2;
     grid-column: 2/3;
 }
-
-
 
 .blue-line {
     width: 100%;
@@ -70,268 +73,19 @@
     min-width: 100%; */
 }
 
-.jumbotron {
-    color: white;
-    padding-left: 3rem;
-    margin-bottom: 0 !important;
-    background-color: #1F1F1F !important;
-}
-
-.calendar-button {
-    padding: .4rem !important;
-    background-color:#029CD7 !important;
-    border-color:#029CD7 !important;
-}
-
-.calendar-button:hover {
-    background-color:rgb(2, 137, 191) !important;
-    border-color:rgb(2, 137, 191) !important;
-}
-
-.calendar-button:active {
-    background-color:rgb(0, 105, 147) !important;
-    border-color:rgb(0, 105, 147) !important;
-}
-
-.calendar-frame {
-    background-color:#1F1F1F;
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-}
-
-
-/* Current Events section */
-
-.current-events-header {
-    font-size: 4.6rem;
-    font-weight: bold;
-    margin-top: 2rem;
-    margin-left: 2.6rem;
-    line-height: 1;
-}
-
-.current-card-header {
-    background-color: rgb(45, 45, 45);
-}
-
-
-.current-events-card {
-    padding: 0 !important;
-    width: 32rem !important;
-}
-
-.current-events-card:hover {
-    background-color: white;
-}
-
-
-.event-image:hover {
-    cursor: pointer;
-    background-color: rgb(21, 21, 21);
-}
-
-.rsvp-button {
-    text-align: center;
-    color: white !important;
-    background-color: rgb(53, 53, 53);
-    border: 1px solid rgb(53, 53, 53);
-    padding: .5rem 1.2rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: 0.25rem;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-
-.rsvp-container {
-    height: 10rem;
-    padding-top: 7rem;
-}
-
-.rsvp-button:hover {
-    text-decoration: none;
-    color: white !important;
-    background-color: rgb(41, 41, 41);
-    border: 1px solid rgb(41, 41, 41);
-}
-
-.no-rsvp {
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: white !important;
-}
-
-.more-details {
-    color: #029CD7;
-    font-weight: 500;
-    font-size: 1.2rem;
-}
-
-
-
-/* Current Events section (end)*/
-.upcoming{
-    background-color: black;
-    height: 100%;
-    min-width: 100%;
-
-    display: grid;
-    grid-template-rows: 1fr 3fr;
-    grid-template-columns: 1fr 10fr 1fr;
-}
-
-.upcoming-main {
-    width: 100%;
-    font-size: 4.6rem;
-    margin-top: 1rem;
-    margin-left: 3rem;
-    color: white;
-    font-weight: bold;
-}
-
-.upcoming-cards {
-    align-self: start;
-    grid-column: 2/3;
-    grid-row: 2/3;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-
-
-.img-border {
-    border: 1px solid #6c757d;
-}
-
-
-.events-card {
-    height: 85%;
-    margin-bottom: 1rem !important;
-    padding: 0 !important;
-    /* margin: 0 !important; */
-    color: white !important;
-    border: 2px solid #1F1F1F !important;
-    background-color: #1F1F1F !important;
-}
-
-.card-sub {
-    display: grid;
-    grid-template-rows: 2fr 1fr;
-    grid-template-columns: 1fr;
-}
-
-.card-sub-description {
-    grid-row: 1/2;
-    grid-column: 1/2;
-}
-
-
-.card-sub-button {
-    grid-row: 2/3;
-    grid-column: 1/2;
-}
-
-.card-date {
-    margin-left: .3rem;
-    font-size: 1.1rem;
-    color: #6c757d;
-}
-
-.joker-purchase {
-    text-align: center;
-    color: white !important;
-    background-color:#029CD7 !important;
-    border-color:#029CD7 !important;
-    padding: .5rem 1.2rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: 0.25rem;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-
-.joker-purchase:hover {
-    color: white !important;
-    text-decoration: none;
-    background-color:rgb(2, 137, 191) !important;
-    border-color:rgb(2, 137, 191) !important;
-}
-
-.joker-purchase:active {
-    background-color:rgb(0, 105, 147) !important;
-    border-color:rgb(0, 105, 147) !important;
-}
-
-
-/* Past Events  */
-
-
-.past-events-header {
-    font-size: 4.6rem;
-    margin-top: 1rem;
-    margin-left: 3rem;
-    color: white;
-    font-weight: bold;
-}
-
-.past-container {
-    display: grid;
-    width: 100%;
-    justify-content: center;
-}
-
-
-
-.past-events-carousel {
-    height: 35rem !important;
-    width: 35rem !important;
-}
-
-/* class "carousel-inner" is giving me a lot of issues so we need
-to use pseudo-selector to make sure we change the height of our 
-carousel without affecting others that other devs might use*/
-.past-events-carousel div:first-of-type{
-    height: 30rem !important;
-}
-
-.carousel-image {
-    display: grid;
-    justify-content: center;
-}
-
 @media only screen and (max-width: 1004px){
-
-    .events-card-row {
-        display: grid;
-        justify-content: center;
-    }
-
     .jumbo-text{
         font-size: 2.1rem;
     }
-
-    .events-main-text {
-        padding-left: 1rem;
+    /* The class name "events-main-text" doesn't work. Changing the class name makes the code work */
+    .events-text {
+        padding-top: 30vh;
+        padding-left: 0.5rem;
         font-size: 3.4rem;
-    }
-
-
-    .events-col {
-        display: grid;
-        justify-content: center;
-        flex-grow: 0 !important;
-    }
-
-    .upcoming-main {
-        margin-top: 1rem;
-        margin-left: 0 !important;
-        font-size: 4rem;
-        text-align: center;
     }
 }
 
 @media only screen and (max-width: 420px){
-
     .current-events-header {
         width: 100%;
         font-size: 3.3rem;

@@ -8,6 +8,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import Gold from './CeckoutComponents/GoldCheckout.js'
 import Regular from './CeckoutComponents/RegularCheckout.js'
 import Faculty_Alumni from './CeckoutComponents/FacultyCheckout.js'
+
 /*
 To install, go to project directory and run this on command line:
 $ npm install react-multi-carousel --save
