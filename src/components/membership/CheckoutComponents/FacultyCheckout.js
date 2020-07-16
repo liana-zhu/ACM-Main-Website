@@ -1,10 +1,8 @@
 import React, { useReducer, useState } from 'react';
 import { loadStripe } from '@stripe/stripe-js';
-import Membership from '../Membership.js';
 import "../membership.css"
 import Form from 'react-bootstrap/Form';
-import { Tabs, Row, Col, Tab, Nav, Button, Card, Jumbotron, Container, Image, Accordion } from 'react-bootstrap'
-import Success from './Success.js';
+import { Col } from 'react-bootstrap'
 
 const stripePromise = loadStripe(	
   "pk_live_51H0yOZEr4ylg7vlAnEDF4YfjfRe1VAEKjRMuW2Lh7zlMG9Lh68k4LZmuTm0RtR5MeNLJzkxUT0p53pdnQKgeIY1800N4Sipf5y");
@@ -63,8 +61,8 @@ const Regular = () => {
 		};
 
   const handleClick = async (event) => {
-    if(formData.fName == undefined || formData.lName == undefined || formData.cin == undefined || formData.email == undefined ||
-      formData.phoneNumber == undefined || formData.gender == undefined || formData.enrollment == undefined || formData.status == undefined){
+    if(formData.fName === undefined || formData.lName === undefined || formData.cin === undefined || formData.email === undefined ||
+      formData.phoneNumber === undefined || formData.gender === undefined || formData.enrollment === undefined || formData.status === undefined){
         window.alert("Form is not completed");
     }
     else{
@@ -112,7 +110,7 @@ const Regular = () => {
                 <h2><span className="highlight-text"><b><i>ACM Membership</i></b></span> ❖ FACULTY ALUMNI TIER</h2>
 				<h2 className="text-info">Benefits</h2>
 				<div className="text-info">
-				- Recieve weekly newsletters<br></br>
+				- Receive weekly newsletters<br></br>
 				</div>
 				<h2 className="text-info">How to become a member?</h2>
 				<h2 className="text-info">Fill Out The Form Below</h2>

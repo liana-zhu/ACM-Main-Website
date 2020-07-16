@@ -1,13 +1,10 @@
 import React from 'react'
 import "./membership.css"
-import VenmoQr from './assets/venmo-qr.jpg'
-import { Tabs, Row, Col, Tab, Nav, Button, Card, Jumbotron, Container, Image, Accordion } from 'react-bootstrap'
+import {Card, Accordion } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css';
-import Modal from 'react-awesome-modal';
 import Carousel from 'react-bootstrap/Carousel';
-import Gold from './CeckoutComponents/GoldCheckout.js'
-import Regular from './CeckoutComponents/RegularCheckout.js'
-import Faculty_Alumni from './CeckoutComponents/FacultyCheckout.js'
+import Regular from './CheckoutComponents/RegularCheckout.js'
+import Faculty_Alumni from './CheckoutComponents/FacultyCheckout.js'
 
 /*
 To install, go to project directory and run this on command line:
@@ -34,24 +31,6 @@ class Membership extends React.Component {
 	//   }
 
 	render() {
-		//const responsive is used for multi carousel
-		const responsive = {
-			desktop: {
-				breakpoint: { max: 3000, min: 1024 },
-				items: 2,
-				slidesToSlide: 2, // optional, default to 1.
-			},
-			tablet: {
-				breakpoint: { max: 1024, min: 464 },
-				items: 1,
-				slidesToSlide: 1, // optional, default to 1.
-			},
-			mobile: {
-				breakpoint: { max: 464, min: 0 },
-				items: 1,
-				slidesToSlide: 1, // optional, default to 1.
-			},
-		};
 		return (
 			<div id="membership-body">
 				<div className="default-padding-top" >

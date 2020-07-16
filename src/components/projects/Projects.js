@@ -141,7 +141,6 @@ class Projects extends React.Component {
                                                         projectLeadersImages={["./leaders/Srivats.JPG", "./leaders/GiovanniC.JPG", "./leaders/Kevin.JPG"]}
                                                         projectLeaders={["Srivats Venkataraman", "Giovanni Castellanos", "Kevin Flores"]}
                                                         />
-                                                    </div>
                                                 </Tab.Pane>
                                                 <Tab.Pane eventKey="S2020advanced">
                                                     <LegacyProject
@@ -158,7 +157,6 @@ class Projects extends React.Component {
                                                         projectLeadersImages={["./leaders/Andrew.JPG", "./leaders/Elton.JPG", "./leaders/Grover.JPG", "./leaders/Luis.JPG"]}
                                                         projectLeaders={["Andrew Gonzalez", "Elton Lin", "John Grover", "Luis Gonzalez"]}
                                                         />
-                                                    </div>
                                                 </Tab.Pane>
                                             </Tab.Content>
                                         </Tab.Container>

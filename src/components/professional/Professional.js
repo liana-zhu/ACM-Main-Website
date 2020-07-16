@@ -1,9 +1,7 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './professional.css';
 import firebase from './firebaseConfig.js'
-import CurrentEventsModal from './CurrentEventsModal';
-import CardImageModal from './CardImageModal';
-import { Card, CardGroup, Button, Jumbotron, Container, Row, Col, Image } from 'react-bootstrap';
+import { Card, Button, Container, Row, Image } from 'react-bootstrap';
 
 /*
 To install, go to project directory and run this on command line:
@@ -84,7 +82,7 @@ class Professional extends React.Component {
                     </div>
                 </div>
             <Row className="justify-content-md-center">
-                <p className="past-events-header" style={{fontSize: '30px'}}>Up Coming Events</p>
+                <p className="past-events-header" style={{fontSize: '30px'}}>Upcoming Events</p>
             </Row>
             <center>
             {
@@ -93,7 +91,7 @@ class Professional extends React.Component {
                         return(
                             <Container>
                                 <center>
-                                    <img style={{height: '20rem'}} src={i.imgUrl}/>
+                                    <img style={{height: '20rem'}} src={i.imgUrl} alt="Upcoming event"/>
                                 </center>
                                 <br></br>
                                 <center>
@@ -123,7 +121,7 @@ class Professional extends React.Component {
                         return (
                             <Card style={{width: '30rem', padding: '10px'}}>
                                 <center>
-                                    <img style={{height: '30rem', padding: '10px'}} src={currentEvents.imgUrl} />
+                                    <img style={{height: '30rem', padding: '10px'}} src={currentEvents.imgUrl} alt="Current event"/>
                                 </center>
                             </Card>
                         )
