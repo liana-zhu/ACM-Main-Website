@@ -159,14 +159,14 @@ class Professional extends React.Component {
                                 deviceType={this.props.deviceType}
                                 dotListClass="custom-dot-list-style"
                                 itemClass="carousel-item-padding-40-px">
-                                <div><Image style={{ height: '30rem'}} src={require('./images/eduardo_almeida_google.png')} thumbnail /></div>
-                                <div><Image style={{ height: '30rem' }} src={require('./images/github_workshop.PNG')} thumbnail /></div>
-                                <div><Image style={{ height: '30rem' }} src={require('./images/mwd_jpl_spring_2019.png')} thumbnail /></div>
-                                <div><Image style={{ height: '30rem' }} src={require('./images/spring_2019_resume_workshop.png')} thumbnail /></div>
-                                <div><Image style={{ height: '30rem' }} src={require('./images/richard_fung_2018_google.png')} thumbnail /></div>
+                                <div><Image style={{ height: '30rem'}} src={require('./images/eduardo-almeida-google.png')} thumbnail /></div>
+                                <div><Image style={{ height: '30rem' }} src={require('./images/github-workshop.PNG')} thumbnail /></div>
+                                <div><Image style={{ height: '30rem' }} src={require('./images/mwd-jpl-spring-2019.png')} thumbnail /></div>
+                                <div><Image style={{ height: '30rem' }} src={require('./images/spring-2019-resume-workshop.png')} thumbnail /></div>
+                                <div><Image style={{ height: '30rem' }} src={require('./images/richard-fung-2018-google.png')} thumbnail /></div>
                                 <div><Image style={{ height: '30rem' }} src={require('./images/internship.png')} thumbnail /></div>
-                                <div><Image style={{ height: '30rem' }} src={require('./images/manny_sanchez_lockheed_spring_2019.png')} thumbnail /></div>
-                                <div><Image style={{ height: '30rem' }} src={require('./images/linkedin_handshake_workshop.png')} thumbnail /></div>
+                                <div><Image style={{ height: '30rem' }} src={require('./images/manny-sanchez-lockheed-spring-2019.png')} thumbnail /></div>
+                                <div><Image style={{ height: '30rem' }} src={require('./images/linkedin-handshake-workshop.png')} thumbnail /></div>
                             </Carousel><p id="semicolon" /* Semicolon is required for Carousel*/>;</p>
 
                         </div>

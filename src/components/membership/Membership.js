@@ -42,7 +42,7 @@ class Membership extends React.Component {
 									<img
 									// className="d-block image"
 									className="image"
-									src={require('./images/jpl_tour.png')} fluid
+									src={require('./images/jpl-tour.png')} fluid
 									alt="ACM Cal State LA members touring JPL"
 									/>
 								</Carousel.Item>
@@ -58,7 +58,7 @@ class Membership extends React.Component {
 								<img
 								// className="d-block image"
 								className="image"
-								src={require('./images/space_invaders.png')} fluid
+								src={require('./images/space-invaders.png')} fluid
 								alt="ACM Cal State LA Space Invaders Workshop"
 								/>
 							</Carousel.Item>
@@ -66,7 +66,7 @@ class Membership extends React.Component {
 								<img
 								// className="d-block image"
 								className="image"
-								src={require('./images/accord_workshop.png')} fluid
+								src={require('./images/accord-workshop.png')} fluid
 								alt="ACM Cal State LA Accord Workshop"
 								/>
 							</Carousel.Item>
@@ -74,7 +74,7 @@ class Membership extends React.Component {
 								<img
 								// className="d-block image"
 								className="image"
-								src={require('./images/hackathon_spring_2019.png')} fluid
+								src={require('./images/hackathon.png')} fluid
 								alt="ACM Cal State LA Hackathon"
 								/>
 							</Carousel.Item>
@@ -82,7 +82,7 @@ class Membership extends React.Component {
 								<img
 								// className="d-block image"
 								className="image"
-								src={require('./images/movie_fundraiser.png')} fluid
+								src={require('./images/movie-fundraiser.png')} fluid
 								alt="ACM Cal State LA Movie Fundraiser"
 								/>
 							</Carousel.Item>
