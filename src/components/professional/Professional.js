@@ -83,27 +83,27 @@ class Professional extends React.Component {
                     <div className="events-main-background">
                     </div>
                 </div>
+                <Container>
             <Row className="justify-content-md-center">
-                <p className="past-events-header" style={{fontSize: '30px'}}>Up Coming Events</p>
+            <p className="past-events-header" style={{fontSize: '30px'}}>Upcoming Events</p>
             </Row>
-            <center>
-            {
+                <Row className="justify-content-md-center">
+                {
                     this.state.upcomingEvent &&
-                    this.state.upcomingEvent.map(i => {
-                        return(
-                            <Container>
+                    this.state.upcomingEvent.map( upcomingEvents => {
+                        return (
+                            <Card style={{width: '30rem', padding: '10px'}}>
                                 <center>
-                                    <img style={{height: '20rem'}} src={i.imgUrl}/>
+                                    <img style={{height: '30rem', padding: '10px'}} src={upcomingEvents.imgUrl} />
+                                    <p>Sign up starts: {upcomingEvents.signUpStart}</p>
+                                    <Button href={upcomingEvents.link}>RSVP</Button>
                                 </center>
-                                <br></br>
-                                <center>
-                                    <Button href={i.link}>RSVP</Button>
-                                </center>
-                            </Container>
+                            </Card>
                         )
                     })
                 }
-            </center>
+                </Row>
+            </Container>
             <hr  style={{
                 color: '#ffffff',
                 backgroundColor: '#ffffff',
