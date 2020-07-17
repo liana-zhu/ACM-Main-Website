@@ -83,7 +83,7 @@ class Projects extends React.Component {
                                                         description="Learn how to code your own blocks, items, and craftables! Make those beautiful 16x16 pixel images come to life in this blocky, pixelated, and skittle-filled world of Minecraft!"
                                                         technologies={["Java", "Forge", "IntelliJ IDEA", "Gradle", "Git", "JSON"]}
                                                         poster="./fall2020/minecraft-mod.png"
-                                                        linkToSignUp="https://shorturl.at/alEYZ"
+                                                        linkToSignUp="https://forms.office.com/Pages/ResponsePage.aspx?id=AiCKzo9EWE-Csdhvc-Ov3Z5F1F8bCtlFj7IWFte9H9dUODJCNFo5TUhWRDVJQUNaVUk5WjYwUERPRi4u"
                                                         // Dynamic button
                                                         // Use '/' not '-' for dates to prevent issues on Firefox.
                                                         // openDate="01/28/2020"
@@ -101,7 +101,7 @@ class Projects extends React.Component {
                                                         description="Well, now is your chance to learn how to make your own Discord bot using JavaScript! We will also go through a few API's as the ultimate pièce de résistance."
                                                         technologies={["JavaScript", "SQL", "Visual Studio Code", "JSON", "API calls", "Node.js"]}
                                                         poster="./fall2020/discord-bot.png"
-                                                        linkToSignUp="https://shorturl.at/cyMRV"
+                                                        linkToSignUp="https://forms.office.com/Pages/ResponsePage.aspx?id=AiCKzo9EWE-Csdhvc-Ov3Z5F1F8bCtlFj7IWFte9H9dUN1FQTUVKUk5GU081MEQ1NkFKTEc4MFJLNC4u"
                                                         // Dynamic button
                                                         //Use '/' not '-' for dates to prevent issues on Firefox.
                                                         // openDate="01/28/2020"
