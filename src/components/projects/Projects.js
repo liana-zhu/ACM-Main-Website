@@ -161,7 +161,7 @@ class Projects extends React.Component {
                                             </Tab.Content>
                                         </Tab.Container>
                                     </Tab.Pane>
-
+          
                                     <Tab.Pane eventKey="fall2019projects">
                                         <Tab.Container defaultActiveKey="F2019beginner">
                                             <Nav variant="tabs">
@@ -213,7 +213,7 @@ class Projects extends React.Component {
                                             </Tab.Content>
                                         </Tab.Container>
                                     </Tab.Pane>
-
+          
                                     <Tab.Pane eventKey="spring2019projects">
                                         <Tab.Container defaultActiveKey="S2019beginner">
                                             <Nav variant="tabs">
