@@ -50,7 +50,7 @@
 .background-image {
     /* Background-image height and events-text height affect each other when one of them is changed */
     height: 60vh;
-    background: url("images/events-background.jpg") no-repeat center !important;
+    background: url("./images/events-background.jpg") no-repeat center !important;
     background-size: cover !important;
     align-self: center;
     font-size: 4.4rem;

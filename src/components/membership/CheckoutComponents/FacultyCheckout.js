@@ -4,7 +4,7 @@ import "../membership.css"
 import Form from 'react-bootstrap/Form';
 import { Col } from 'react-bootstrap'
 
-const stripePromise = loadStripe(	
+const stripePromise = loadStripe(
   "pk_live_51H0yOZEr4ylg7vlAnEDF4YfjfRe1VAEKjRMuW2Lh7zlMG9Lh68k4LZmuTm0RtR5MeNLJzkxUT0p53pdnQKgeIY1800N4Sipf5y");
 
 const formatPrice = ({ amount, currency, quantity }) => {
@@ -52,20 +52,21 @@ const Regular = () => {
   });
 
   const [formData, setFormData] = useState({});
-		const [message, setMessage] = useState("");
+  // eslint-disable-next-line
+  const [message, setMessage] = useState("");
 
-		const handleInput = e => {
-			const copyFormData = { ...formData };
-			copyFormData[e.target.name] = e.target.value;
-			setFormData(copyFormData);
-		};
+  const handleInput = e => {
+    const copyFormData = { ...formData };
+    copyFormData[e.target.name] = e.target.value;
+    setFormData(copyFormData);
+  };
 
   const handleClick = async (event) => {
-    if(formData.fName === undefined || formData.lName === undefined || formData.cin === undefined || formData.email === undefined ||
-      formData.phoneNumber === undefined || formData.gender === undefined || formData.enrollment === undefined || formData.status === undefined){
-        window.alert("Form is not completed");
+    if (formData.fName === undefined || formData.lName === undefined || formData.cin === undefined || formData.email === undefined ||
+      formData.phoneNumber === undefined || formData.gender === undefined || formData.enrollment === undefined || formData.status === undefined) {
+      window.alert("Form is not completed");
     }
-    else{
+    else {
       window.alert("Proceding to checkout");
       try {
         const response = await fetch(
@@ -107,81 +108,81 @@ const Regular = () => {
 
   return (
     <div className="text-info">
-                <h2><span className="highlight-text"><b><i>ACM Membership</i></b></span> ❖ FACULTY ALUMNI TIER</h2>
-				<h2 className="text-info">Benefits</h2>
-				<div className="text-info">
-				- Receive weekly newsletters<br></br>
-				</div>
-				<h2 className="text-info">How to become a member?</h2>
-				<h2 className="text-info">Fill Out The Form Below</h2>
-        <Form onSubmit={handleClick}>
-						<Form.Row>
-              <Form.Group as={Col}>
-                <Form.Label>First Name</Form.Label>
-                <Form.Control onChange={handleInput} type="name" name="fName" placeholder="First Name" />
-                </Form.Group>
+      <h2><span className="highlight-text"><b><i>ACM Membership</i></b></span> ❖ FACULTY ALUMNI TIER</h2>
+      <h2 className="text-info">Benefits</h2>
+      <div className="text-info">
+        - Receive weekly newsletters<br></br>
+      </div>
+      <h2 className="text-info">How to become a member?</h2>
+      <h2 className="text-info">Fill Out The Form Below</h2>
+      <Form onSubmit={handleClick}>
+        <Form.Row>
+          <Form.Group as={Col}>
+            <Form.Label>First Name</Form.Label>
+            <Form.Control onChange={handleInput} type="name" name="fName" placeholder="First Name" />
+          </Form.Group>
 
-                <Form.Group as={Col}>
-                <Form.Label>Last Name</Form.Label>
-                <Form.Control onChange={handleInput} type="name" name="lName" placeholder="Last Name"/>
-              </Form.Group>
-            </Form.Row>
-						<Form.Row>
-              <Form.Group as={Col}>
-                <Form.Label>CIN</Form.Label>
-                <Form.Control onChange={handleInput} type="number" name="cin" placeholder="CIN" />
-                </Form.Group>
+          <Form.Group as={Col}>
+            <Form.Label>Last Name</Form.Label>
+            <Form.Control onChange={handleInput} type="name" name="lName" placeholder="Last Name" />
+          </Form.Group>
+        </Form.Row>
+        <Form.Row>
+          <Form.Group as={Col}>
+            <Form.Label>CIN</Form.Label>
+            <Form.Control onChange={handleInput} type="number" name="cin" placeholder="CIN" />
+          </Form.Group>
 
-                <Form.Group as={Col}>
-                <Form.Label>Email</Form.Label>
-                <Form.Control onChange={handleInput} type="email" name="email" placeholder="Most Used Email"/>
-              </Form.Group>
-            </Form.Row>
-						<Form.Row>
-            <Form.Group as={Col}>
-							<Form.Label>Phone Number</Form.Label>
-							<Form.Control onChange={handleInput} type="number" name="phoneNumber" placeholder="Phone Number" />
-							</Form.Group>
+          <Form.Group as={Col}>
+            <Form.Label>Email</Form.Label>
+            <Form.Control onChange={handleInput} type="email" name="email" placeholder="Most Used Email" />
+          </Form.Group>
+        </Form.Row>
+        <Form.Row>
+          <Form.Group as={Col}>
+            <Form.Label>Phone Number</Form.Label>
+            <Form.Control onChange={handleInput} type="number" name="phoneNumber" placeholder="Phone Number" />
+          </Form.Group>
 
-							<Form.Group as={Col}>
-							<Form.Label>Gender</Form.Label>
-							<Form.Control onChange={handleInput} as="select" defaultValue="Choose..." name="gender">
-								<option name="gender">Choose</option>
-								<option name="gender">Female</option>
-								<option name="gender">Male</option>
-								<option name="gender">Prefer Not To Say</option>
-							</Form.Control>
-						</Form.Group>
-            </Form.Row>
-						<Form.Row>
-            <Form.Group as={Col}>
-							<Form.Label>Enrollment Status</Form.Label>
-							<Form.Control onChange={handleInput} as="select" defaultValue="Choose" name="enrollment">
-								<option name="enrollment">Choose</option>
-								<option name="enrollment">Enrolled Student</option>
-								<option name="enrollment">Alumni</option>
-								<option name="enrollment">Faculty</option>
-							</Form.Control>
-						</Form.Group>
-						<Form.Group as={Col}>
-							<Form.Label>Membership Status</Form.Label>
-							<Form.Control onChange={handleInput} as="select" defaultValue="Choose" name="status">
-								<option name="status">Choose</option>
-								<option name="status">New Member</option>
-								<option name="status">Returning Member</option>
-							</Form.Control>
-						</Form.Group>
-            </Form.Row>
-            </Form>
-            <center>
-            <h1>No Refunds</h1>
-            <h6>*ADDITIONAL 50 CENTS PROCESSING FEE*</h6>
-            <button className="btn btn-info btn-membership" role="link" onClick={handleClick} disabled={state.loading}>
-              {state.loading || !state.price
-                ? `Loading...`
-                : `Buy for $5`}
-            </button>
-            </center>
+          <Form.Group as={Col}>
+            <Form.Label>Gender</Form.Label>
+            <Form.Control onChange={handleInput} as="select" defaultValue="Choose..." name="gender">
+              <option name="gender">Choose</option>
+              <option name="gender">Female</option>
+              <option name="gender">Male</option>
+              <option name="gender">Prefer Not To Say</option>
+            </Form.Control>
+          </Form.Group>
+        </Form.Row>
+        <Form.Row>
+          <Form.Group as={Col}>
+            <Form.Label>Enrollment Status</Form.Label>
+            <Form.Control onChange={handleInput} as="select" defaultValue="Choose" name="enrollment">
+              <option name="enrollment">Choose</option>
+              <option name="enrollment">Enrolled Student</option>
+              <option name="enrollment">Alumni</option>
+              <option name="enrollment">Faculty</option>
+            </Form.Control>
+          </Form.Group>
+          <Form.Group as={Col}>
+            <Form.Label>Membership Status</Form.Label>
+            <Form.Control onChange={handleInput} as="select" defaultValue="Choose" name="status">
+              <option name="status">Choose</option>
+              <option name="status">New Member</option>
+              <option name="status">Returning Member</option>
+            </Form.Control>
+          </Form.Group>
+        </Form.Row>
+      </Form>
+      <center>
+        <h1>No Refunds</h1>
+        <h6>*ADDITIONAL 50 CENTS PROCESSING FEE*</h6>
+        <button className="btn btn-info btn-membership" role="link" onClick={handleClick} disabled={state.loading}>
+          {state.loading || !state.price
+            ? `Loading...`
+            : `Buy for $5`}
+        </button>
+      </center>
     </div>
   );
 };

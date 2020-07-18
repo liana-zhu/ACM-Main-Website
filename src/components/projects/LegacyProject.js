@@ -49,4 +49,4 @@ class LegacyProject extends React.Component {
     }
 }
 
-export default LegacyProject
+export default LegacyProject;

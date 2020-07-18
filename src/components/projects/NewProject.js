@@ -54,4 +54,4 @@ class NewProject extends React.Component {
     }
 }
 
-export default NewProject
+export default NewProject;

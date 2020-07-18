@@ -79,4 +79,4 @@ class Mentorship extends React.Component {
     }
 }
 
-export default Mentorship
+export default Mentorship;

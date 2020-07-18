@@ -21,4 +21,4 @@ class ModalImage extends React.Component {
     }
 }
 
-export default ModalImage
+export default ModalImage;

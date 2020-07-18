@@ -43,6 +43,9 @@
   /* position: absolute; */
   text-align: center;
   color: white;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
 
   /*padding for "OurMision"*/
   /* padding-top: 3vh;
@@ -104,7 +107,7 @@
 }
 
 .bottom-section {
-  margin-left: 40px;
+  margin-left: 20px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -115,5 +118,14 @@
   .about-image {
     height: auto;
     width: auto;
+  }
+
+  .mission-statement-text {
+    /* position: absolute; */
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    padding-left: 0px;
+    padding-right: 10px;
   }
 }

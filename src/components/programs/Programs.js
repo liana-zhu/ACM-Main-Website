@@ -158,4 +158,4 @@ class Programs extends React.Component {
     }
 }
 
-export default Programs
+export default Programs;
