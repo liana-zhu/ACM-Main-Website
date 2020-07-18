@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import './news.scss';
-import { Link } from 'react-router-dom';
 
 class News extends Component {
     render() {
@@ -26,4 +25,4 @@ class News extends Component {
     }
 }
 
-export default News
+export default News;

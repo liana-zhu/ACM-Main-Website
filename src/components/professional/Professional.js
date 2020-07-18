@@ -1,8 +1,7 @@
 import React from 'react';
 import './professional.css';
-import CurrentEventsModal from './CurrentEventsModal';
-import CardImageModal from './CardImageModal';
-import { Card, Button, Jumbotron, Container, Row, Col, Image } from 'react-bootstrap';
+import firebase from './firebaseConfig.js'
+import { Card, Button, Container, Row, Image } from 'react-bootstrap';
 
 /*
 To install, go to project directory and run this on command line:
@@ -15,10 +14,35 @@ import "react-multi-carousel/lib/styles.css";
 // This component won't hold a state for not but decided
 // to make it into a Class component for now
 class Professional extends React.Component {
-
-    constructor(props) {
-        super(props);
+    state = {
+        currentEvent: null ,
+        upcomingEvent: null,
     }
+
+    componentDidMount(){
+        firebase.firestore().collection("events").get()
+        .then(snapshot => {
+            const events = []
+            snapshot.forEach(doc => {
+                const data = doc.data()
+                events.push(data)
+            })
+            this.setState({ currentEvent: events })
+        })
+        .catch(error => console.log(error));
+
+        firebase.firestore().collection("upcomingEvents").get()
+        .then(snapshot => {
+            const comingUpEvent = []
+            snapshot.forEach(doc => {
+                const data = doc.data()
+                comingUpEvent.push(data)
+            })
+            this.setState({upcomingEvent: comingUpEvent})
+        })
+        .catch(error => console.log(error))
+    }
+
 
     test() {
         alert('Show Modal!');
@@ -57,36 +81,68 @@ class Professional extends React.Component {
                     <div className="events-main-background">
                     </div>
                 </div>
-                {/* Today's event should not be here. Events for this week should not be here and should be on home page */}
-                {/*<Container className="todays-events-container">
-                    <Row className="justify-content-md-center">
-                        <p className="todays-events-header">Today's Event</p>
-                    </Row>
-                    <Row className="justify-content-md-center">
-                        <Image style={{ height: '30rem', marginRight: '1rem' }} src={require('./images/General Meeting.png')} thumbnail />
-                    </Row>
-                </Container>
-                <div className="gray-line"></div>
-                <Container className="current-events-container">
-                    <Row className="justify-content-md-center">
-                        <p className="current-events-header">Events for this week</p>
-                    </Row>
-                    <Row className="justify-content-md-center">
-                        <Image style={{ height: '30rem', marginRight: '1rem' }} src={require('./images/General Meeting.png')} thumbnail />
-                    </Row>
-                    {/*<Row className="current-events-images">
-                        <Col sm><Image style={{ height: '30rem' }} src={require('./images/General Meeting.png')} thumbnail /></Col>
-                        <Col sm><Image style={{ height: '30rem' }} src={require('./images/Space Invaders.png')} thumbnail /></Col>
-                        <Col sm><Image style={{ height: '30rem' }} src={require('./images/Personal Website.png')} thumbnail /></Col>
-                    </Row>
-                </Container>
-            <div className="gray-line"></div>*/}
                 <Container>
+            <Row className="justify-content-md-center">
+            <p className="events-header" style={{fontSize: '30px'}}>Upcoming Events</p>
+            </Row>
+                <Row className="justify-content-md-center">
+                {
+                    this.state.upcomingEvent &&
+                    this.state.upcomingEvent.map( upcomingEvents => {
+                        return (
+                            <Card style={{width: '30rem', padding: '10px'}}>
+                                <center>
+                                    <img style={{height: '30rem', padding: '10px'}} src={upcomingEvents.imgUrl} alt="Upcoming event"/>
+                                    <p>Sign up starts: {upcomingEvents.signUpStart}</p>
+                                    <Button href={upcomingEvents.link}>RSVP</Button>
+                                </center>
+                            </Card>
+                        )
+                    })
+                }
+                </Row>
+            </Container>
+            <hr  style={{
+                color: '#ffffff',
+                backgroundColor: '#ffffff',
+                height: .5,
+                borderColor : '#ffffff',
+                marginLeft: '10px',
+                marginRight: '10px'
+            }}/>
+            <Container>
+            <Row className="justify-content-md-center">
+            <p className="events-header" style={{fontSize: '30px'}}>Fall 2020 Events</p>
+            </Row>
+                <Row className="justify-content-md-center">
+                {
+                    this.state.currentEvent &&
+                    this.state.currentEvent.map( currentEvents => {
+                        return (
+                            <Card style={{width: '30rem', padding: '10px'}}>
+                                <center>
+                                    <img style={{height: '30rem', padding: '10px'}} src={currentEvents.imgUrl} alt="Current event"/>
+                                </center>
+                            </Card>
+                        )
+                    })
+                }
+                </Row>
+            </Container>
+            <hr  style={{
+                color: '#ffffff',
+                backgroundColor: '#ffffff',
+                height: .5,
+                borderColor : '#ffffff',
+                marginLeft: '10px',
+                marginRight: '10px'
+            }}/>
+            <Container>
                     <Row className="justify-content-md-center">
-                        <p className="past-events-header">Past Events</p>
+                        <p className="events-header">Past Events</p>
                     </Row>
                     <Row className="justify-content-md-center">
-                        <div className="past-container">
+                        <div className="events-container">
                             <Carousel
                                 swipeable={false}
                                 draggable={false}
@@ -103,14 +159,14 @@ class Professional extends React.Component {
                                 deviceType={this.props.deviceType}
                                 dotListClass="custom-dot-list-style"
                                 itemClass="carousel-item-padding-40-px">
-                                <div><Image style={{ height: '30rem'}} src={require('./images/eduardo_almeida_google.png')} thumbnail /></div>
-                                <div><Image style={{ height: '30rem' }} src={require('./images/github_workshop.PNG')} thumbnail /></div>
-                                <div><Image style={{ height: '30rem' }} src={require('./images/mwd_jpl_spring_2019.png')} thumbnail /></div>
-                                <div><Image style={{ height: '30rem' }} src={require('./images/spring_2019_resume_workshop.png')} thumbnail /></div>
-                                <div><Image style={{ height: '30rem' }} src={require('./images/richard_fung_2018_google.png')} thumbnail /></div>
+                                <div><Image style={{ height: '30rem'}} src={require('./images/eduardo-almeida-google.png')} thumbnail /></div>
+                                <div><Image style={{ height: '30rem' }} src={require('./images/github-workshop.PNG')} thumbnail /></div>
+                                <div><Image style={{ height: '30rem' }} src={require('./images/mwd-jpl-spring-2019.png')} thumbnail /></div>
+                                <div><Image style={{ height: '30rem' }} src={require('./images/spring-2019-resume-workshop.png')} thumbnail /></div>
+                                <div><Image style={{ height: '30rem' }} src={require('./images/richard-fung-2018-google.png')} thumbnail /></div>
                                 <div><Image style={{ height: '30rem' }} src={require('./images/internship.png')} thumbnail /></div>
-                                <div><Image style={{ height: '30rem' }} src={require('./images/manny_sanchez_lockheed_spring_2019.png')} thumbnail /></div>
-                                <div><Image style={{ height: '30rem' }} src={require('./images/linkedin_handshake_workshop.png')} thumbnail /></div>
+                                <div><Image style={{ height: '30rem' }} src={require('./images/manny-sanchez-lockheed-spring-2019.png')} thumbnail /></div>
+                                <div><Image style={{ height: '30rem' }} src={require('./images/linkedin-handshake-workshop.png')} thumbnail /></div>
                             </Carousel><p id="semicolon" /* Semicolon is required for Carousel*/>;</p>
 
                         </div>

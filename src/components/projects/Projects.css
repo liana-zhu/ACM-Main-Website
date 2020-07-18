@@ -1,10 +1,11 @@
 .project-title-card {
-    height: 110vh;
+    /* When the height is less than 70vh, the beginner and advanced tabs are not be clickable */
+    height: 70vh;
     background: 
     linear-gradient(
     rgba(0, 0, 0, 0.55), 
     rgba(0, 0, 0, 0.55)),
-    url("./Space Invaders/space1.jpg");
+    url("./fall2019/space0.jpg");
     background-size: cover !important;
     align-self: center;
     font-size: 4.4rem;
@@ -23,10 +24,9 @@
     font-size: 3.0rem;
     color: white;
     font-weight: bold;
-    line-height: 1.2;
+    line-height: 0.9;
     text-align: left;
-    padding-top: 40vh;
-
+    padding-top: 23vh;
     /* display: grid; */
     grid-template-rows: 1fr 1.4fr;
     padding-left: 3rem;
@@ -36,32 +36,15 @@
     color: #029CD7;
 }
 
-.quote-style-2 {
-    text-align: left;
-    padding-top: 75px;
-    padding-left: 75px;
-}
-
 .project-card {
     margin: auto;
     text-align: left;
     color: white;
+    padding-left: 20px;
 }
 
 .project-nav-link {
     color: white;
-}
-
-.quote-block {    
-    border-radius: 15px;
-    background-color:#1f1f1f !important;
-}
-
-.quote-bg {
-    background: url('pictures/56775641_2321879274713318_1528259817590751232_n.jpg');
-    background-size: cover;  
-    background-attachment: fixed;
-    background-blend-mode: darken;
 }
 
 .project-tab-content {
@@ -75,8 +58,8 @@
 }
 
 .project-poster {
-    min-width: 200px;
-    max-width: 20vw;
+    min-width: 300px;
+    max-width: 30vw;
 }
 
 .project-carousel {
@@ -87,12 +70,30 @@
     color: white
 }
 
-.mentorship-body {
-    padding-top: 10vh;
-    padding-left: 10vw;
-    padding-bottom: 8vh;
-    padding-right: 10vw;
+.disclaimer-body {
+    padding-left: 20px;
     text-align: left;
+}
+
+.disclaimer_header{
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #fff;
+    color: red;
+    padding-top: 10px;
+}
+
+.disclamier_info{
+    /* padding-left: 20px;
+    padding-right: 20px; */
+    padding: 20px;
+}
+
+@media only screen and(max-width){
+    .project_info{
+        padding: 20px;
+    }
 }
 
 .disclaimer {
@@ -101,13 +102,6 @@
 
 .anchor-blue {
     color: #029CD7 !important;
-}
-
-.mentorship-images {
-    float: right;
-    min-width: 1.75in;
-    max-width: 20vw;
-    margin: 15px;
 }
 
 .carousel-image {
@@ -119,3 +113,20 @@
     max-height: 50rem;
     max-width: 25rem;
 }
+
+@media only screen and (max-width: 600px) {
+    .disclaimer-body {
+        padding-right: 5px;
+    }
+    .flex-column {
+        padding-bottom: 35px;
+    }
+    .project-title-text {
+        padding-top: 15vh;
+    }
+    .project-poster {
+        min-width: 90vw;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+  }

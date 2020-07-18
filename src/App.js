@@ -1,6 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
-import {BrowserRouter,Route,Redirect} from 'react-router-dom'
+import {BrowserRouter,Route} from 'react-router-dom'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -17,9 +16,9 @@ import Projects from './components/projects/Projects'
 import Professional from './components/professional/Professional';
 import Board from './components/board/Board';
 import Programs from './components/programs/Programs';
-import HeaderCarousel from './components/headercarousel/HeaderCarousel.js';
-import Body from './components/body/Body.js';
 import FooterCarousel from './components/footercarousel/FooterCarousel.js';
+import Success from './components/membership/CheckoutComponents/Success.js';
+
 
 class App extends React.Component {
 
@@ -56,6 +55,9 @@ class App extends React.Component {
       )
   }
   render(){
+    const SuccessPage = () => (
+      <Route path='/Success' component={Success}/>
+    )
     return (
       <div>
         <BrowserRouter>
@@ -71,6 +73,8 @@ class App extends React.Component {
           <Route path='/professional' component={Professional}/>
           <Route path='/board' component={Board}/>
           <Route path='/programs' component={Programs}/>
+          <Route path='/Success' component={SuccessPage}/>
+          <Route path='/discord' component={() => { window.location = 'https://discord.com/invite/wX58JRv'; return null;} }/>
         </BrowserRouter>
         <FooterCarousel/>
       </div>

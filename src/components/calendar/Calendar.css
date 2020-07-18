@@ -72,6 +72,7 @@
 .calendar-header {
     display: flex;
     font-weight: 500;
+    padding-bottom: 10px;
 }
 
 .calendar-header button {
@@ -85,12 +86,6 @@
 
     border: 1px solid rgb(119, 118, 118);
     border-radius: 4px;
-}
-
-.prev-button {
-}
-
-.next-button {
 }
 
 .month-header {
@@ -125,5 +120,10 @@
 
     .test2 {
         display: inline;
+    }
+
+    .month-header {
+        font-size: 1.25rem;
+        font-weight: 400;
     }
 }

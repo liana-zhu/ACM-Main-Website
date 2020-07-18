@@ -1,26 +1,43 @@
 .quote-style-1 {
     text-align: center;
-    padding-top: 75px;
-    padding-left: 75px;
+    font-size: 2.25rem;
+    padding-top: 100px;
+    padding-bottom: 25px;
 }
 
 .programs-card {
     margin: auto;
     text-align: left;
     color: white;
+    padding-left: 20px;
 }
 
 .programs-nav-link {
     color: white;
 }
 
+.disclaimer-body {
+    padding-left: 20px;
+    text-align: left;
+}
+
+.disclaimer_header{
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #fff;
+    color: red;
+    padding-top: 10px;
+}
+
 .quote-block {    
     border-radius: 15px;
     background-color:#1f1f1f !important;
+    width: 900px;
 }
 
 .quote-bg {
-    background: url('pictures/56775641_2321879274713318_1528259817590751232_n.jpg');
+    background: url('pictures/programs-background.jpg');
     background-size: cover;  
     background-attachment: fixed;
     background-blend-mode: darken;
@@ -31,18 +48,19 @@
 }
 
 .programs-images {
-    min-width: 2in;
-    max-width: 20vw;
+    min-width: 3in;
+    max-width: 30vw;
     margin: 5px;
 }
 
 .programs-poster {
-    min-width: 200px;
-    max-width: 20vw;
+    min-width: 300px;
+    max-width: 30vw;
+    padding: 10px;
 }
 
 .programs-body {
-    color: white
+    color: white;
 }
 
 .mentorship-body {
@@ -67,3 +85,24 @@
     max-width: 20vw;
     margin: 15px;
 }
+
+@media only screen and (max-width: 600px) {
+    .quote-style-1 {
+        padding-top: 30px;
+    }
+    .programs-body {
+        padding-top: 75px;
+    }
+    .disclaimer-body {
+        padding-right: 5px;
+    }
+    .flex-column {
+        padding-bottom: 35px;
+    }
+    .programs-poster {
+        /* min-width can be used to change poster size on mobile view */
+        min-width: 90vw;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+  }

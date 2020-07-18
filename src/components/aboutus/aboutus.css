@@ -1,12 +1,13 @@
 .about-us-card {
-  height: 110vh;
+  height: 60vh;
   background: 
   linear-gradient(
-  rgba(0, 0, 0, 0.55), 
-  rgba(0, 0, 0, 0.55)),
+    0deg, rgba(0, 0, 0, 0.55), 
+    rgba(0, 0, 0, 0.55)),
   url("./images/classroom.png");
   background-size: cover !important;
   align-self: center;
+  filter: blur(1px);
   font-size: 4.4rem;
   color: white;
   opacity: .6;
@@ -16,49 +17,110 @@
 }
 
 .about-us-text {
-  height: 100%;
+  height: 30vh;
   width: 100%;
   position: absolute;
   z-index: 2;
-  font-size: 3.0rem;
+  font-family: Roboto;
+  font-size: 3.5rem;
   color: white;
   font-weight: bold;
   line-height: 1.2;
   text-align: left;
-  padding-top: 40vh;
+  padding-top: 30vh;
 
   /* display: grid; */
   grid-template-rows: 1fr 1.4fr;
   padding-left: 3rem;
 }
 
-.first-row {
+/* Don't delete: .jumbotron affects all Jumbotrons */
+.jumbotron {
+  color: white;
+  padding-left: 3rem;
+  margin-bottom: 0 !important;
+  background-color: #1F1F1F !important;
+}
+
+.mission-statement-card {
+  height: 86vh;
+  background: #2B2727 no-repeat fixed;
+}
+
+.mission-statement-text {
+  /* position: absolute; */
+  text-align: center;
+  color: white;
+  /*padding for "OurMision"*/
+  /* padding-top: 3vh;
+  padding-left:4rem;
+  padding-right:3rem;
+  padding-bottom: 5vh;
+  margin-top: 3rem;
+  margin-right: 3rem; */
+}
+
+.mission-statement-points {
+  text-align: left;
+  /* font-family: Roboto; */
+  font-size: 1.25rem;
+  color: white;
+}
+
+.button-row {
+  width: 83.5%;
   margin-top: 60px;
+  margin-left: 60px;
+  margin-bottom: 30px;
 }
 
 .about-text {
   text-align: left;
-  margin-left: 60px;
+  font-size: 1.25rem;
+  /* margin-left: 60px; */
+  color: white;
 }
 
 .offer-text {
   text-align: left;
-  margin-left: 60px;
+  font-size: 1.25rem;
+  /* margin-left: 60px; */
+  color: white;
 }
 
 .join-text {
   text-align: left;
-  margin-left: 60px;
+  font-size: 1.25rem;
+  /* margin-left: 60px; */
+  color: white;
 }
 
 .first-row {
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .second-row {
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .third-row {
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.bottom-section {
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .bottom-section {
+    margin-left: 15px;
+  }
+
+  .about-image {
+    height: auto;
+    width: auto;
+  }
 }
