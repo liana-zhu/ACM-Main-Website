@@ -80,8 +80,8 @@
 	width: auto;
 	height: auto;
 	background-color:#1f1f1f !important;
-	padding: 20px;
-	margin: 20px;
+	/* padding: 20px;
+	margin: 20px; */
 }
 
 .form_card{
@@ -89,7 +89,7 @@
 }
 
 a{
-	color: white !important;
+	color: black !important;
 }
 
 .nav-item{
@@ -106,7 +106,7 @@ a{
 }
 
 .t-shirts{
-	width: 200px;
+	width: 150px;
 }
 
 .membership-footer-text{
