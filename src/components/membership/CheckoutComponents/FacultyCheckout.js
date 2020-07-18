@@ -38,7 +38,7 @@ function reducer(state, action) {
 
 const Regular = () => {
   const [state, dispatch] = useReducer(reducer, {
-    priceId: "price_1H2joqEr4ylg7vlA3dXyHFqh",
+    priceId: "price_1H5yVcEr4ylg7vlAD4RcgNtW",
     basePrice: "5.50",
     currency: "USD",
     quantity: 1,
