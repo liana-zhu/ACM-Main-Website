@@ -307,4 +307,4 @@ class Projects extends React.Component {
     }
 }
 
-export default Projects
+export default Projects;

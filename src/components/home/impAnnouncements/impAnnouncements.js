@@ -23,4 +23,4 @@ class ImpAnnouncements extends Component {
     }
 }
 
-export default ImpAnnouncements
+export default ImpAnnouncements;

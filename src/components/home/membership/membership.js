@@ -26,4 +26,4 @@ class Membership extends Component {
     }
 }
 
-export default Membership
+export default Membership;

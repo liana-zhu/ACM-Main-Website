@@ -17,18 +17,17 @@ class AboutUs extends React.Component {
 				{/* <Container fluid>
 				<Row>
 					<Col> */}
-				<Jumbotron>
 					{/* <div className="mission-statement-card"> */}
 					<div className="mission-statement-text">
 						<h1>Our Mission</h1>
 						<div className="mission-statement-points">
 							<ul type="circle">
 								<li>
-									Insight and knowledge regarding the CS programs and general advice for college
+									Provide insight and knowledge regarding the CS programs and general advice for college
 									students to guarantee academic progress.
 									</li>
 								<li>
-									A means to communicate experiences, concerns, and challenges in the field
+									Provide a means to communicate experiences, concerns, and challenges in the field
 									with like-minded individuals and ACM leaders to promote self-improvement.
 									</li>
 								<li>
@@ -47,14 +46,14 @@ class AboutUs extends React.Component {
 									Social activities, events, and competitions that promote involvement outside of campus.
 									</li>
 								<li>
-									Ultimately serve students at Cal State LA and those interested in the betterment of
+									Ultimately, serve students at Cal State LA and those interested in the betterment of
 									our Los Angeles community.
 									</li>
 							</ul>
 						</div>
 					</div>
 					{/* </div> */}
-				</Jumbotron>
+				
 				{/* </Col>
 				</Row>
 			</Container> */}
