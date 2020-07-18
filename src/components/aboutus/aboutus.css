@@ -17,7 +17,7 @@
 }
 
 .about-us-text {
-  height: 100%;
+  height: 30vh;
   width: 100%;
   position: absolute;
   z-index: 2;
@@ -34,6 +34,14 @@
   padding-left: 3rem;
 }
 
+/* Don't delete: .jumbotron affects all Jumbotrons */
+.jumbotron {
+  color: white;
+  padding-left: 3rem;
+  margin-bottom: 0 !important;
+  background-color: #1F1F1F !important;
+}
+
 .mission-statement-card {
   height: 86vh;
   background: #2B2727 no-repeat fixed;
@@ -43,10 +51,6 @@
   /* position: absolute; */
   text-align: center;
   color: white;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-bottom: 10px;
-
   /*padding for "OurMision"*/
   /* padding-top: 3vh;
   padding-left:4rem;
@@ -118,14 +122,5 @@
   .about-image {
     height: auto;
     width: auto;
-  }
-
-  .mission-statement-text {
-    /* position: absolute; */
-    text-align: center;
-    color: white;
-    padding-top: 10px;
-    padding-left: 0px;
-    padding-right: 10px;
   }
 }

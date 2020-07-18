@@ -35,6 +35,14 @@
     margin-bottom: 4rem;
 }
 
+/* Don't delete: .jumbotron affects all Jumbotrons */
+.jumbotron {
+    color: white;
+    padding-left: 3rem;
+    margin-bottom: 0 !important;
+    background-color: #1F1F1F !important;
+}
+
 .events-main-background {
     height: 60vh;
     background: url("./images/events-background.jpg") no-repeat center !important;
