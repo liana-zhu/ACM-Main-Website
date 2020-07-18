@@ -17,7 +17,7 @@ import Professional from './components/professional/Professional';
 import Board from './components/board/Board';
 import Programs from './components/programs/Programs';
 import FooterCarousel from './components/footercarousel/FooterCarousel.js';
-import Success from './components/membership/CeckoutComponents/Success.js';
+import Success from './components/membership/CheckoutComponents/Success.js';
 
 
 class App extends React.Component {

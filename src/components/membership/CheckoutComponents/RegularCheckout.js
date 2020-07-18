@@ -1,10 +1,8 @@
 import React, { useReducer, useState } from 'react';
 import { loadStripe } from '@stripe/stripe-js';
-import Membership from '../Membership.js';
 import "../membership.css"
 import Form from 'react-bootstrap/Form';
-import { Tabs, Row, Col, Tab, Nav, Button, Card, Jumbotron, Container, Image, Accordion } from 'react-bootstrap'
-import Success from './Success.js';
+import { Col } from 'react-bootstrap'
 
 const stripePromise = loadStripe(	
 	"pk_live_51H0yOZEr4ylg7vlAnEDF4YfjfRe1VAEKjRMuW2Lh7zlMG9Lh68k4LZmuTm0RtR5MeNLJzkxUT0p53pdnQKgeIY1800N4Sipf5y");
@@ -64,10 +62,10 @@ const Regular = () => {
 		};
 
   const handleClick = async (event) => {
-	  if(formData.fName == undefined || formData.lName == undefined || formData.cin == undefined|| formData.email == undefined||
-		formData.phoneNumber == undefined|| formData.gender == undefined|| formData.enrollment == undefined||
-		formData.standing == undefined|| formData.major == undefined|| formData.minor == undefined|| formData.status == undefined|| formData.project == undefined|| formData.hear == undefined||
-		formData.gain == undefined){
+	  if(formData.fName === undefined || formData.lName === undefined || formData.cin === undefined|| formData.email === undefined||
+		formData.phoneNumber === undefined|| formData.gender === undefined|| formData.enrollment === undefined||
+		formData.standing === undefined|| formData.major === undefined|| formData.minor === undefined|| formData.status === undefined|| formData.project === undefined|| formData.hear === undefined||
+		formData.gain === undefined){
 		  console.log(formData.gender);
 		  window.alert("Some of the fields are empty");
 		  event.preventDefault();
@@ -123,12 +121,12 @@ const Regular = () => {
 				<h2 className="text-info">Benefits</h2>
 				<div className="text-info">
 				- Receive weekly newsletters.<br></br>
-				- Access to project workshops (upper/lower classmen).<br></br>
+				- Access to project workshops (Beginner/Advanced).<br></br>
 				- Access to professional development workshops.<br></br>
 				- Access to Mentorship program.<br></br>
 				</div>
 				<p><b>*You will have to make a $5 payment*</b></p>
-				<p><b>*There will be a seperate signup for Project and Mentorship*</b></p>
+				<p><b>*There will be a separate signup for the Project and Mentorship*</b></p>
 				<h2 className="text-info">How to become a member?</h2>
 				<h2 className="text-info">Fill Out The Form Below</h2>
         <Form noValidate validated={validated} onSubmit={handleClick}>
@@ -203,12 +201,12 @@ const Regular = () => {
 							<Form.Label>Major *</Form.Label>
 							<Form.Control onChange={handleInput} as="select" defaultValue="Choose" name="major">
 								<option name="major">Choose</option>
-								<option name="major">Pre - Computer Science</option>
+								<option name="major">Pre-Computer Science</option>
 								<option name="major">Computer Science</option>
 								<option name="major">Mechanical Engineering</option>
 								<option name="major">Civil Engineering</option>
 								<option name="major">Electrical Engineering</option>
-								<option name="major">Techology</option>
+								<option name="major">Technology</option>
 								<option name="major">Other</option>
 							</Form.Control>
 							<Form.Control.Feedback type="invalid">Major is required</Form.Control.Feedback>
@@ -232,7 +230,7 @@ const Regular = () => {
 							<Form.Label>Which Program are you interested in? *</Form.Label>
 							<Form.Control onChange={handleInput} as="select" name="project">
 								<option name="project">Choose</option>
-								<option name="project">Minecraft Mod (Beginners)</option>
+								<option name="project">Minecraft Mod (Beginner)</option>
 								<option name="project">Discord Bot (Advanced)</option>
 								<option name="project">Mentorship</option>
 							</Form.Control>
@@ -241,13 +239,13 @@ const Regular = () => {
 						</Form.Row>
 						<Form.Row>
 						<Form.Group as={Col}>
-							<Form.Label>How Did You Hear About ACM? *</Form.Label>
-							<Form.Control onChange={handleInput} as="textarea" rows="3" type="text" name="hear" placeholder="How Did you hear about ACM" />
+							<Form.Label>How did you hear about ACM? *</Form.Label>
+							<Form.Control onChange={handleInput} as="textarea" rows="3" type="text" name="hear" placeholder="How did you hear about ACM?" />
 							<Form.Control.Feedback type="invalid">Required</Form.Control.Feedback>
 						</Form.Group>
 						<Form.Group as={Col}>
-							<Form.Label>What Do you wish to gain from ACM? *</Form.Label>
-							<Form.Control onChange={handleInput} as="textarea" rows="3" type="text" name="gain" placeholder="What Do you wish to gain from ACM" />
+							<Form.Label>What do you wish to gain from ACM? *</Form.Label>
+							<Form.Control onChange={handleInput} as="textarea" rows="3" type="text" name="gain" placeholder="What do you wish to gain from ACM?" />
 							<Form.Control.Feedback type="invalid">Required</Form.Control.Feedback>
 						</Form.Group>
 						</Form.Row>

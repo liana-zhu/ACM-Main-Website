@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 
 class NewProject extends React.Component {
     render() {
-        let button = <Button variant="success" href={this.props.linkToSignUp}>Sign-up</Button>
+        let button = <Button variant="success" size="lg" href={this.props.linkToSignUp}>Join Now!</Button>
         // Dynamic button automatically disables, but will have to deploy website to enable it.
         // let button
         // const today = new Date()
