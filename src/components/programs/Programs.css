@@ -16,6 +16,10 @@
     color: white;
 }
 
+.programs-nav-link-tab {
+    outline: 1px solid #029CD7;
+}
+
 .disclaimer-body {
     padding-left: 20px;
     text-align: left;
@@ -104,5 +108,8 @@
         min-width: 90vw;
         padding-left: 0px;
         padding-right: 0px;
+    }
+    .programs-tab-label {
+        font-size: 0.85rem;
     }
   }

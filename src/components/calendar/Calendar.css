@@ -109,6 +109,9 @@
 }
 
 @media only screen and (max-width: 420px){
+    .cell {
+        width: 7.5vh;
+    }
 
     .day-header {
         font-size: 1rem;
@@ -123,7 +126,7 @@
     }
 
     .month-header {
-        font-size: 1.25rem;
+        font-size: 1rem;
         font-weight: 400;
     }
 }
