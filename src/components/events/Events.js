@@ -110,7 +110,7 @@ class Events extends React.Component {
                 {important_upcoming_events}
 
                 {/* Using fluid="sm" keeps calendar centered */}
-                <Container fluid="sm">
+                <Container fluid="sm" className="x">
                     <div className="events-calendar-center">
                         <Calendar />
                     </div>
