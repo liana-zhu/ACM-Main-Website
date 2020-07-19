@@ -56,9 +56,9 @@ class Programs extends React.Component {
                                 <Tab.Content className="programs-tab-content">
                                     <Tab.Pane eventKey="first">
                                         <Tab.Container defaultActiveKey="F2020mentorship">
-                                            <Nav variant="tabs">
+                                            <Nav className="programs-tab-label" variant="tabs">
                                                 <Nav.Item>
-                                                    <Nav.Link className="programs-nav-link anchor-blue" eventKey="F2020mentorship">Mentorship</Nav.Link>
+                                                    <Nav.Link className="programs-nav-link-tab anchor-blue" eventKey="F2020mentorship">Mentorship</Nav.Link>
                                                 </Nav.Item>
                                             </Nav>
                                             <Tab.Content className="programs-tab-content">
@@ -70,9 +70,9 @@ class Programs extends React.Component {
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="second">
                                         <Tab.Container defaultActiveKey="S2020mentorship">
-                                            <Nav variant="tabs">
+                                            <Nav className="programs-tab-label" variant="tabs">
                                                 <Nav.Item>
-                                                    <Nav.Link className="programs-nav-link anchor-blue" eventKey="S2020mentorship">Mentorship</Nav.Link>
+                                                    <Nav.Link className="programs-nav-link-tab anchor-blue" eventKey="S2020mentorship">Mentorship</Nav.Link>
                                                 </Nav.Item>
                                             </Nav>
                                             <Tab.Content className="programs-tab-content">
@@ -96,12 +96,12 @@ class Programs extends React.Component {
 
                                     <Tab.Pane eventKey="third">
                                         <Tab.Container defaultActiveKey="F2019mentorship">
-                                            <Nav variant="tabs">
+                                            <Nav className="programs-tab-label"variant="tabs">
                                                 <Nav.Item>
-                                                    <Nav.Link className="programs-nav-link anchor-blue" eventKey="F2019mentorship">Mentorship</Nav.Link>
+                                                    <Nav.Link className="programs-nav-link-tab anchor-blue" eventKey="F2019mentorship">Mentorship</Nav.Link>
                                                 </Nav.Item>
                                                 <Nav.Item>
-                                                    <Nav.Link className="programs-nav-link anchor-blue" eventKey="F2019tutoring">Tutoring</Nav.Link>
+                                                    <Nav.Link className="programs-nav-link-tab anchor-blue" eventKey="F2019tutoring">Tutoring</Nav.Link>
                                                 </Nav.Item>
                                             </Nav>
                                             <Tab.Content className="programs-tab-content">

@@ -81,13 +81,13 @@ class Board extends React.Component {
               <Col sm={3}>
                 <Nav variant="pills" className="flex-column">
                   <Nav.Item>
-                    <Nav.Link className="project-nav-link anchor-white" eventKey="first">2020-2021</Nav.Link>
+                    <Nav.Link className="nav-link anchor-white" eventKey="first">2020-2021</Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
-                    <Nav.Link className="project-nav-link anchor-white" eventKey="second">2019-2020</Nav.Link>
+                    <Nav.Link className="nav-link anchor-white" eventKey="second">2019-2020</Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
-                    <Nav.Link className="project-nav-link anchor-white" eventKey="third">2018-2019</Nav.Link>
+                    <Nav.Link className="nav-link anchor-white" eventKey="third">2018-2019</Nav.Link>
                   </Nav.Item>
                 </Nav>
               </Col>
