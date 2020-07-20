@@ -234,7 +234,7 @@ class Projects extends React.Component {
                                                         technologies={['HTML5', 'CSS', 'JavaScript', 'Bootstrap']}
                                                         poster='./spring2019/web-flyer.jpg'
                                                         projectImages={['./spring2019/web1.jpg', './spring2019/web2.jpg', './spring2019/web3.jpg', './spring2019/web4.jpg', './spring2019/web5.jpg', './spring2019/web6.jpg']}
-                                                        projectLeadersImages={['./leaders/Deric.JPG', './leaders/Brian.jpg']}
+                                                        projectLeadersImages={['./leaders/Deric.JPG', './leaders/BrianH.JPG']}
                                                         projectLeaders={['Deric Kwok', 'Brian Hernandez']}
                                                         />
                                                 </Tab.Pane>
@@ -276,8 +276,8 @@ class Projects extends React.Component {
                                                         technologies={['C++', 'Arduino']}
                                                         poster='./fall2018/fall-2018-flyer.png'
                                                         projectImages={['./fall2018/arduino1.jpg', './fall2018/arduino2.jpg', './fall2018/arduino3.jpg', './fall2018/arduino4.jpg', './fall2018/arduino5.jpg', './fall2018/arduino6.jpg']}
-                                                        projectLeadersImages={['./leaders/Brian.jpg', './leaders/Gio G.jpg']}
-                                                        projectLeaders={['Brian Hernandez', 'Giovanni Garcia']}
+                                                        projectLeadersImages={['./leaders/Gio G.jpg', './leaders/BrianH.JPG']}
+                                                        projectLeaders={['Giovanni Garcia', 'Brian Hernandez']}
                                                         />
                                                 </Tab.Pane>
 
@@ -289,7 +289,7 @@ class Projects extends React.Component {
                                                         technologies={['Java', 'JavaScript', 'MySQL', 'Vue.js', 'Maven wrapper', 'Git/GitHub version control']}
                                                         poster='./fall2018/fall-2018-flyer.png'
                                                         projectImages={['./fall2018/social1.jpg', './fall2018/social2.jpg', './fall2018/social3.jpg']}
-                                                        projectLeadersImages={['./leaders/Pranil.jpg']}
+                                                        projectLeadersImages={['./leaders/PranilD.JPG']}
                                                         projectLeaders={['Pranil Dahal']}
                                                         />
                                                 </Tab.Pane>
