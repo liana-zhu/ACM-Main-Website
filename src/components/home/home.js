@@ -15,12 +15,12 @@ class Home extends Component {
             <section className="homeWrapper">
                 <Carousel/>
                 <ImpAnnouncement/>
-                <Slideshow/>
                 <AboutUs/>
                 <Project/>
                 <Mentorship/>
                 <News/>
                 <Membership/>
+                <Slideshow/>
             </section>
         )
     }
