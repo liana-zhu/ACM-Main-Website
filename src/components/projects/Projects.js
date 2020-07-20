@@ -67,12 +67,12 @@ class Projects extends React.Component {
                                     <br></br><br></br> */}
                                     <Tab.Pane eventKey="fall2020projects">
                                         <Tab.Container defaultActiveKey="F2020beginner">                                            
-                                            <Nav className="project-tab-label" variant="tabs">
+                                            <Nav className="project-tab-label" variant="pills">
                                                 <Nav.Item>
-                                                    <Nav.Link className="project-nav-link-tab anchor-blue" eventKey="F2020beginner">Beginner</Nav.Link>
+                                                    <Nav.Link className="project-nav-link-tab anchor-white" eventKey="F2020beginner">Beginner</Nav.Link>
                                                 </Nav.Item>
                                                 <Nav.Item>
-                                                    <Nav.Link className="project-nav-link-tab anchor-blue" eventKey="F2020advanced">Advanced</Nav.Link>
+                                                    <Nav.Link className="project-nav-link-tab anchor-white" eventKey="F2020advanced">Advanced</Nav.Link>
                                                 </Nav.Item>
                                             </Nav>
                                             <Tab.Content className="project-tab-content">
@@ -117,12 +117,12 @@ class Projects extends React.Component {
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="spring2020projects">
                                         <Tab.Container defaultActiveKey="S2020beginner">                                            
-                                            <Nav className="project-tab-label" variant="tabs">
+                                            <Nav className="project-tab-label" variant="pills">
                                                 <Nav.Item>
-                                                    <Nav.Link className="project-nav-link-tab anchor-blue" eventKey="S2020beginner">Beginner</Nav.Link>
+                                                    <Nav.Link className="project-nav-link-tab anchor-white" eventKey="S2020beginner">Beginner</Nav.Link>
                                                 </Nav.Item>
                                                 <Nav.Item>
-                                                    <Nav.Link className="project-nav-link-tab anchor-blue" eventKey="S2020advanced">Advanced</Nav.Link>
+                                                    <Nav.Link className="project-nav-link-tab anchor-white" eventKey="S2020advanced">Advanced</Nav.Link>
                                                 </Nav.Item>
                                             </Nav>
                                             <Tab.Content className="project-tab-content">
@@ -164,12 +164,12 @@ class Projects extends React.Component {
           
                                     <Tab.Pane eventKey="fall2019projects">
                                         <Tab.Container defaultActiveKey="F2019beginner">
-                                            <Nav className="project-tab-label" variant="tabs">
+                                            <Nav className="project-tab-label" variant="pills">
                                                 <Nav.Item>
-                                                    <Nav.Link className="project-nav-link-tab anchor-blue" eventKey="F2019beginner">Beginner</Nav.Link>
+                                                    <Nav.Link className="project-nav-link-tab anchor-white" eventKey="F2019beginner">Beginner</Nav.Link>
                                                 </Nav.Item>
                                                 <Nav.Item>
-                                                    <Nav.Link className="project-nav-link-tab anchor-blue" eventKey="F2019advanced">Advanced</Nav.Link>
+                                                    <Nav.Link className="project-nav-link-tab anchor-white" eventKey="F2019advanced">Advanced</Nav.Link>
                                                 </Nav.Item>
                                             </Nav>
                                             <Tab.Content className="project-tab-content">
@@ -216,12 +216,12 @@ class Projects extends React.Component {
           
                                     <Tab.Pane eventKey="spring2019projects">
                                         <Tab.Container defaultActiveKey="S2019beginner">
-                                            <Nav className="project-tab-label" variant="tabs">
+                                            <Nav className="project-tab-label" variant="pills">
                                                 <Nav.Item>
-                                                    <Nav.Link className="project-nav-link-tab anchor-blue" eventKey="S2019beginner">Beginner</Nav.Link>
+                                                    <Nav.Link className="project-nav-link-tab anchor-white" eventKey="S2019beginner">Beginner</Nav.Link>
                                                 </Nav.Item>
                                                 <Nav.Item>
-                                                    <Nav.Link className="project-nav-link-tab anchor-blue" eventKey="S2019advanced">Advanced</Nav.Link>
+                                                    <Nav.Link className="project-nav-link-tab anchor-white" eventKey="S2019advanced">Advanced</Nav.Link>
                                                 </Nav.Item>
                                             </Nav>
                                             <Tab.Content className="project-tab-content">
@@ -258,12 +258,12 @@ class Projects extends React.Component {
 
                                     <Tab.Pane eventKey="fall2018projects">
                                         <Tab.Container defaultActiveKey="F2018beginner">
-                                            <Nav className="project-tab-label" variant="tabs">
+                                            <Nav className="project-tab-label" variant="pills">
                                                 <Nav.Item>
-                                                    <Nav.Link className="project-nav-link-tab anchor-blue" eventKey="F2018beginner">Beginner</Nav.Link>
+                                                    <Nav.Link className="project-nav-link-tab anchor-white" eventKey="F2018beginner">Beginner</Nav.Link>
                                                 </Nav.Item>
                                                 <Nav.Item>
-                                                    <Nav.Link className="project-nav-link-tab anchor-blue" eventKey="F2018advanced">Advanced</Nav.Link>
+                                                    <Nav.Link className="project-nav-link-tab anchor-white" eventKey="F2018advanced">Advanced</Nav.Link>
                                                 </Nav.Item>
                                             </Nav>
                                             <Tab.Content className="project-tab-content">
