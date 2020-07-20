@@ -13,24 +13,26 @@ class ContactUs extends React.Component {
 				<div className="contact-us-card">
 					<Card className="text-center">
 						<img src={logo} className="contact-us-logo" alt="ACM logo" />
-						<p>
-							<b>Reach us at: </b>
-							{/* <a href="mailto:acm.calstatela@gmail.com" target="_top">acm.calstatela@gmail.com</a> */}
-							acm.calstatela@gmail.com
+						<div className="contact-info">
+							<p>
+								<b>Contact: </b>
+								{/* <a href="mailto:acm.calstatela@gmail.com" target="_top">acm.calstatela@gmail.com</a> */}
+								acm.calstatela@gmail.com
 						</p>
-						{/* <p>
+							{/* <p>
 							<b>Office Hours:</b> Thursdays, 3-4 pm @ET C-245
 						</p> */}
-						<p>
-							There will be no office hours.
+							<p>
+								There will be no office hours
 						</p>
+						</div>
 					</Card>
 				</div>
 
 				<div className="contact-us-card">
 					<Card className="text-center">
 						<div>
-							<h2>Social Media</h2>
+							<h1>Social Media</h1>
 							<a href="https://www.instagram.com/calstatela_acm/?hl=en">
 								{/* <FontAwesnomeIcon className="iconBrand" size="2x" icon={faInstagram}></FontAwesomeIcon> */}
 								<img src={instagram} className="contact-us-logo-2" alt="Instagram" />
