@@ -109,10 +109,6 @@
 }
 
 @media only screen and (max-width: 420px){
-    .cell {
-        width: 7.5vh;
-    }
-
     .day-header {
         font-size: 1rem;
     }
