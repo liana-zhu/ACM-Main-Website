@@ -94,4 +94,11 @@
 
     }
 
-  } 
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .News-tease {
+        height: 100%;
+        background-size: cover;
+  }
+}
