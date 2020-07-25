@@ -173,7 +173,7 @@ class Board extends React.Component {
                         <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={Julio2020} alt="Julio 2020"></img>
                           <div className="officer-info">
-                            <h2>Julio<br/>Santamaria</h2>Digital Media Officer
+                            <h2>Julio<br/>Santamaria</h2>Social Media Officer
                             </div>
                         </div>
                       </div>
@@ -267,6 +267,14 @@ class Board extends React.Component {
                             <h2>Daniel<br/>Ramirez</h2>Project Committee
                             </div>
                         </div>
+                        <div className="col-leaders">
+                          <img className="image-cropper profile-pic " src={Vacant} alt="Erica 2020"></img>
+                          <div className="officer-info">
+                            <h2>Erica<br/>Santos</h2>Project Committee
+                            </div>
+                        </div>
+                      </div>
+                      <div className="row-leaders centered-leader">
                         <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={Ralph2020} alt="Ralph 2020"></img>
                           <div className="officer-info">
