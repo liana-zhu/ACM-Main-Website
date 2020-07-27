@@ -24,6 +24,7 @@ import Gregory2020 from "./2020-2021-leaders/Gregory.jpg";
 import Lillian2020 from "./2020-2021-leaders/Lillian.jpg";
 import Omar2020 from "./2020-2021-leaders/Omar.jpg";
 import Daniel2020 from "./2020-2021-leaders/Daniel.jpg";
+import Erica2020 from "./2020-2021-leaders/Erica.png";
 import Ralph2020 from "./2020-2021-leaders/Ralph.jpg";
 import Robert2020 from "./2020-2021-leaders/Robert.jpg";
 import Sameen2020 from "./2020-2021-leaders/Sameen.jpg";
@@ -268,7 +269,7 @@ class Board extends React.Component {
                             </div>
                         </div>
                         <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Vacant} alt="Erica 2020"></img>
+                          <img className="image-cropper profile-pic " src={Erica2020} alt="Erica 2020"></img>
                           <div className="officer-info">
                             <h2>Erica<br/>Santos</h2>Project Committee
                             </div>

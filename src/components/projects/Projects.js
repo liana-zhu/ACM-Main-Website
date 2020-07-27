@@ -90,8 +90,8 @@ class Projects extends React.Component {
                                                         // opentime="14:59:59"
                                                         // deadlineDate="02/09/2020"
                                                         // deadlineTime="17:59:59"
-                                                        projectLeadersImages={["./leaders/Jorge.jpg", "./leaders/Lillian.jpg", "./leaders/Omar.jpg", "./leaders/Sameen.jpg"]}
-                                                        projectLeaders={["Jorge Mata", "Lillian Leung", "Omar Eclicerio", "Sameen Khan"]}
+                                                        projectLeadersImages={["./leaders/Jorge.jpg", "./leaders/Julio.jpg", "./leaders/Lillian.jpg", "./leaders/Erica.png", "./leaders/Omar.jpg", "./leaders/Sameen.jpg"]}
+                                                        projectLeaders={["Jorge Mata", "Julio Santamaria", "Lillian Leung", "Erica Santos", "Omar Eclicerio", "Sameen Khan"]}
                                                         />
                                                 </Tab.Pane>
                                                 <Tab.Pane eventKey="F2020advanced">
