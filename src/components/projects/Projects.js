@@ -90,8 +90,8 @@ class Projects extends React.Component {
                                                         // opentime="14:59:59"
                                                         // deadlineDate="02/09/2020"
                                                         // deadlineTime="17:59:59"
-                                                        projectLeadersImages={["./leaders/Jorge.jpg", "./leaders/Julio.jpg", "./leaders/Lillian.jpg", "./leaders/Erica.png", "./leaders/Omar.jpg", "./leaders/Sameen.jpg"]}
-                                                        projectLeaders={["Jorge Mata", "Julio Santamaria", "Lillian Leung", "Erica Santos", "Omar Eclicerio", "Sameen Khan"]}
+                                                        projectLeadersImages={["./leaders/Jorge.jpg", "./leaders/Omar.jpg", "./leaders/Sameen.jpg", "./leaders/Daniel.jpg", "./leaders/Erica.png", "./leaders/Julio.jpg"]}
+                                                        projectLeaders={["Jorge Mata", "Omar Eclicerio", "Sameen Khan", "Daniel Ramirez", "Erica Santos", "Julio Santamaria"]}
                                                         />
                                                 </Tab.Pane>
                                                 <Tab.Pane eventKey="F2020advanced">
@@ -108,8 +108,8 @@ class Projects extends React.Component {
                                                         // opentime="14:59:59"
                                                         // deadlineDate="02/09/2020"
                                                         // deadlineTime="17:59:59"
-                                                        projectLeadersImages={["./leaders/Alvin.jpg", "./leaders/Adrian.jpg", "./leaders/DavidM.jpg", "./leaders/Robert.jpg"]}
-                                                        projectLeaders={["Alvin Lew", "Adrian Salgado", "David Melendez", "Robert De La Costa"]}
+                                                        projectLeadersImages={["./leaders/Alvin.jpg", "./leaders/Gregory.jpg", "./leaders/Robert.jpg", "./leaders/DavidM.jpg", "./leaders/Adrian.jpg", "./leaders/Lillian.jpg"]}
+                                                        projectLeaders={["Alvin Lew", "Gregory Celestino", "Robert de la Costa", "David Melendez", "Adrian Lopez", "Lillian Leung"]}
                                                         />
                                                 </Tab.Pane>
                                             </Tab.Content>
