@@ -49,6 +49,8 @@
 
 @media only screen and (max-width: 420px){
     .event-modal-paragraph {
-        font-size: .7rem;
+        /* font-size: .7rem; */
+        /* Decreased font size to fit text into cell */
+        font-size: 3vw;
     }
 }
