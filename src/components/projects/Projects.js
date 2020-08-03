@@ -1,5 +1,5 @@
 import React from 'react'
-import {Row,Col,Tab,Nav} from 'react-bootstrap'
+import { Row, Col, Tab, Nav } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
 import "./Projects.css"
 import LegacyProject from './LegacyProject'
@@ -12,7 +12,7 @@ class Projects extends React.Component {
             <div className="project-body">
                 <div>
                     <div className="project-title-text">
-                    <p></p>
+                        <p></p>
                         <p>Looking for experience?</p>
                         <p>Participate in our <span className="emphasis">projects</span>!</p>
                     </div>
@@ -20,43 +20,43 @@ class Projects extends React.Component {
                 </div>
                 <div className="disclaimer-body">
                     <h3 className="disclaimer_header"><b>Disclaimer!</b></h3>
-                    <span className="disclaimer"><b>1. You must be a member of ACM to participate in the projects!</b> If you are not a member, 
+                    <span className="disclaimer"><b>1. You must be a member of ACM to participate in the projects!</b> If you are not a member,
                     <b><i><span className="highlight-text"> you will not be allowed in.</span></i></b></span><br></br>
                     <span className="disclaimer"><b>2. Space is limited, so admittance to these projects are <span className="highlight-text">first come, first served.
                     </span></b></span><br></br>
                     <span className="disclaimer"><b>3. Project signups will open during our First General Meeting on <i><span className="highlight-text">
-                    Tuesday, September 1, 2020.</span></i></b></span><br></br>
+                        Tuesday, September 1, 2020.</span></i></b></span><br></br>
                     <span className="disclaimer"><b>4. Signup deadline for the Fall 2020 projects is <i><span className="highlight-text">
-                    Saturday, September 5, 2020 at 11:59 PM.</span></i></b></span><br></br>
+                        Saturday, September 5, 2020 at 11:59 PM.</span></i></b></span><br></br>
                     <br></br><br></br>
                 </div>
-                
+
                 <div className="card project-card">
                     <Tab.Container id="left-tabs-example" defaultActiveKey="fall2020projects">
                         <Row>
                             <Col sm={2}>
                                 <Nav variant="pills" className="flex-column">
-                                <Nav.Item>
-                                    <Nav.Link className="project-nav-link anchor-white" eventKey="fall2020projects">Fall 2020</Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item>
-                                    <Nav.Link className="project-nav-link anchor-white" eventKey="spring2020projects">Spring 2020</Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item>
-                                    <Nav.Link className="project-nav-link anchor-white" eventKey="fall2019projects">Fall 2019</Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item>
-                                    <Nav.Link className="project-nav-link anchor-white" eventKey="spring2019projects">Spring 2019</Nav.Link>
-                                </Nav.Item>
-                                <Nav.Item>
-                                    <Nav.Link className="project-nav-link anchor-white" eventKey="fall2018projects">Fall 2018</Nav.Link>
-                                </Nav.Item>
+                                    <Nav.Item>
+                                        <Nav.Link className="project-nav-link anchor-white" eventKey="fall2020projects">Fall 2020</Nav.Link>
+                                    </Nav.Item>
+                                    <Nav.Item>
+                                        <Nav.Link className="project-nav-link anchor-white" eventKey="spring2020projects">Spring 2020</Nav.Link>
+                                    </Nav.Item>
+                                    <Nav.Item>
+                                        <Nav.Link className="project-nav-link anchor-white" eventKey="fall2019projects">Fall 2019</Nav.Link>
+                                    </Nav.Item>
+                                    <Nav.Item>
+                                        <Nav.Link className="project-nav-link anchor-white" eventKey="spring2019projects">Spring 2019</Nav.Link>
+                                    </Nav.Item>
+                                    <Nav.Item>
+                                        <Nav.Link className="project-nav-link anchor-white" eventKey="fall2018projects">Fall 2018</Nav.Link>
+                                    </Nav.Item>
                                 </Nav>
                             </Col>
-                            <Col sm={10}>                                
+                            <Col sm={10}>
                                 <Tab.Content className="project-tab-content">
-                                
-                                {/* <h3><b>Disclaimer!</b></h3>
+
+                                    {/* <h3><b>Disclaimer!</b></h3>
                                     <span className="disclaimer"><b>1. You must be a member of ACM to participate in the projects!</b> If you are not a member, 
                                     <b><i><span className="highlight-text"> you will not be allowed in.</span></i></b></span><br></br>
                                     <span className="disclaimer"><b>2. Admittance to these projects are <span className="highlight-text">first come, first served.
@@ -66,7 +66,7 @@ class Projects extends React.Component {
                                     Sunday, February 9th, 2020 at 6:00 PM.</span></i></b></span><br></br>
                                     <br></br><br></br> */}
                                     <Tab.Pane eventKey="fall2020projects">
-                                        <Tab.Container defaultActiveKey="F2020beginner">                                            
+                                        <Tab.Container defaultActiveKey="F2020beginner">
                                             <Nav className="project-tab-label" variant="pills">
                                                 <Nav.Item>
                                                     <Nav.Link className="project-nav-link-tab anchor-white" eventKey="F2020beginner">Beginner</Nav.Link>
@@ -76,6 +76,9 @@ class Projects extends React.Component {
                                                 </Nav.Item>
                                             </Nav>
                                             <Tab.Content className="project-tab-content">
+                                                <br></br><br></br>
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/SG_SBCu_65c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                <br></br>
                                                 <Tab.Pane eventKey="F2020beginner">
                                                     <NewProject
                                                         opener="Come and explore the world of modding with Minecraft!"
@@ -92,7 +95,7 @@ class Projects extends React.Component {
                                                         // deadlineTime="17:59:59"
                                                         projectLeadersImages={["./leaders/Jorge.jpg", "./leaders/Omar.jpg", "./leaders/Sameen.jpg", "./leaders/Daniel.jpg", "./leaders/Erica.png", "./leaders/Julio.jpg"]}
                                                         projectLeaders={["Jorge Mata", "Omar Eclicerio", "Sameen Khan", "Daniel Ramirez", "Erica Santos", "Julio Santamaria"]}
-                                                        />
+                                                    />
                                                 </Tab.Pane>
                                                 <Tab.Pane eventKey="F2020advanced">
                                                     <NewProject
@@ -110,13 +113,13 @@ class Projects extends React.Component {
                                                         // deadlineTime="17:59:59"
                                                         projectLeadersImages={["./leaders/Alvin.jpg", "./leaders/Gregory.jpg", "./leaders/Robert.jpg", "./leaders/DavidM.jpg", "./leaders/Adrian.jpg", "./leaders/Lillian.jpg"]}
                                                         projectLeaders={["Alvin Lew", "Gregory Celestino", "Robert de la Costa", "David Melendez", "Adrian Lopez", "Lillian Leung"]}
-                                                        />
+                                                    />
                                                 </Tab.Pane>
                                             </Tab.Content>
                                         </Tab.Container>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="spring2020projects">
-                                        <Tab.Container defaultActiveKey="S2020beginner">                                            
+                                        <Tab.Container defaultActiveKey="S2020beginner">
                                             <Nav className="project-tab-label" variant="pills">
                                                 <Nav.Item>
                                                     <Nav.Link className="project-nav-link-tab anchor-white" eventKey="S2020beginner">Beginner</Nav.Link>
@@ -137,10 +140,10 @@ class Projects extends React.Component {
                                                             './spring2020/web1.jpg',
                                                             './spring2020/web2.jpg',
                                                             './spring2020/web3.jpg'
-                                                             ]}
+                                                        ]}
                                                         projectLeadersImages={["./leaders/Srivats.JPG", "./leaders/GiovanniC.JPG", "./leaders/Kevin.JPG"]}
                                                         projectLeaders={["Srivats Venkataraman", "Giovanni Castellanos", "Kevin Flores"]}
-                                                        />
+                                                    />
                                                 </Tab.Pane>
                                                 <Tab.Pane eventKey="S2020advanced">
                                                     <LegacyProject
@@ -153,15 +156,15 @@ class Projects extends React.Component {
                                                             './spring2020/space1.jpg',
                                                             './spring2020/space2.jpg',
                                                             './spring2020/space3.jpg'
-                                                             ]}
+                                                        ]}
                                                         projectLeadersImages={["./leaders/Andrew.JPG", "./leaders/Elton.JPG", "./leaders/Grover.JPG", "./leaders/Luis.JPG"]}
                                                         projectLeaders={["Andrew Gonzalez", "Elton Lin", "John Grover", "Luis Gonzalez"]}
-                                                        />
+                                                    />
                                                 </Tab.Pane>
                                             </Tab.Content>
                                         </Tab.Container>
                                     </Tab.Pane>
-          
+
                                     <Tab.Pane eventKey="fall2019projects">
                                         <Tab.Container defaultActiveKey="F2019beginner">
                                             <Nav className="project-tab-label" variant="pills">
@@ -187,33 +190,33 @@ class Projects extends React.Component {
                                                             './fall2019/space3.jpg',
                                                             './fall2019/space4.jpg',
                                                             './fall2019/space5.jpg'
-                                                             ]}
-                                                        projectLeadersImages={['./leaders/Andrew.JPG','./leaders/Cristian.JPG', './leaders/Elton.JPG']}
+                                                        ]}
+                                                        projectLeadersImages={['./leaders/Andrew.JPG', './leaders/Cristian.JPG', './leaders/Elton.JPG']}
                                                         projectLeaders={['Andrew Gonzalez', 'Cristian Corrales', 'Elton Lin']}
-                                                        />
+                                                    />
                                                 </Tab.Pane>
 
                                                 <Tab.Pane eventKey="F2019advanced">
-                                                    <LegacyProject 
+                                                    <LegacyProject
                                                         opener='Looking for a bit of a challenge?'
                                                         //Description is long, but put on a single line to avoid word spacing issues
                                                         description='In this workshop, students will create a chat application (a chapplication). It will use React, a JavaScript web framework that everybody and their grandmas use. Learning how to use React will score you major brownie points to potential recruiters.'
                                                         technologies={['React.js', 'Git/GitHub', 'Firebase', 'Node.js', 'HTML', 'CSS']}
                                                         poster='./fall2019/intermediate.png'
                                                         projectImages={[
-                                                            './fall2019/accord1.jpg', 
-                                                            './fall2019/accord2.jpg', 
-                                                            './fall2019/accord3.jpg', 
+                                                            './fall2019/accord1.jpg',
+                                                            './fall2019/accord2.jpg',
+                                                            './fall2019/accord3.jpg',
                                                             './fall2019/accord4.jpg'
                                                         ]}
                                                         projectLeadersImages={['./leaders/Emily.JPG', './leaders/Ingelbert.JPG', './leaders/Srivats.JPG', './leaders/Deric.JPG']}
                                                         projectLeaders={['Emily Pascua', 'Ingelbert Figueroa', 'Srivats Venkataraman', 'Deric Kwok']}
-                                                        />
+                                                    />
                                                 </Tab.Pane>
                                             </Tab.Content>
                                         </Tab.Container>
                                     </Tab.Pane>
-          
+
                                     <Tab.Pane eventKey="spring2019projects">
                                         <Tab.Container defaultActiveKey="S2019beginner">
                                             <Nav className="project-tab-label" variant="pills">
@@ -225,7 +228,7 @@ class Projects extends React.Component {
                                                 </Nav.Item>
                                             </Nav>
                                             <Tab.Content className="project-tab-content">
-                                                
+
                                                 <Tab.Pane eventKey="S2019beginner">
                                                     <LegacyProject
                                                         opener=''
@@ -236,7 +239,7 @@ class Projects extends React.Component {
                                                         projectImages={['./spring2019/web1.jpg', './spring2019/web2.jpg', './spring2019/web3.jpg', './spring2019/web4.jpg', './spring2019/web5.jpg', './spring2019/web6.jpg']}
                                                         projectLeadersImages={['./leaders/Deric.JPG', './leaders/BrianH.JPG']}
                                                         projectLeaders={['Deric Kwok', 'Brian Hernandez']}
-                                                        />
+                                                    />
                                                 </Tab.Pane>
 
                                                 <Tab.Pane eventKey="S2019advanced">
@@ -249,11 +252,11 @@ class Projects extends React.Component {
                                                         projectImages={['./spring2019/android1.jpg', './spring2019/android2.jpg', './spring2019/android3.jpg', './spring2019/android4.jpg', './spring2019/android5.jpg', './spring2019/android6.jpg']}
                                                         projectLeadersImages={['./leaders/Ingelbert.JPG', './leaders/Emily.JPG', './leaders/Srivats.JPG']}
                                                         projectLeaders={['Ingelbert Figueroa', 'Emily Pascua', 'Srivats Venkataraman']}
-                                                        />
+                                                    />
                                                 </Tab.Pane>
 
                                             </Tab.Content>
-                                        </Tab.Container>                                        
+                                        </Tab.Container>
                                     </Tab.Pane>
 
                                     <Tab.Pane eventKey="fall2018projects">
@@ -267,7 +270,7 @@ class Projects extends React.Component {
                                                 </Nav.Item>
                                             </Nav>
                                             <Tab.Content className="project-tab-content">
-                                                
+
                                                 <Tab.Pane eventKey="F2018beginner">
                                                     <LegacyProject
                                                         opener=''
@@ -278,7 +281,7 @@ class Projects extends React.Component {
                                                         projectImages={['./fall2018/arduino1.jpg', './fall2018/arduino2.jpg', './fall2018/arduino3.jpg', './fall2018/arduino4.jpg', './fall2018/arduino5.jpg', './fall2018/arduino6.jpg']}
                                                         projectLeadersImages={['./leaders/Gio G.jpg', './leaders/BrianH.JPG']}
                                                         projectLeaders={['Giovanni Garcia', 'Brian Hernandez']}
-                                                        />
+                                                    />
                                                 </Tab.Pane>
 
                                                 <Tab.Pane eventKey="F2018advanced">
@@ -291,16 +294,16 @@ class Projects extends React.Component {
                                                         projectImages={['./fall2018/social1.jpg', './fall2018/social2.jpg', './fall2018/social3.jpg']}
                                                         projectLeadersImages={['./leaders/PranilD.JPG']}
                                                         projectLeaders={['Pranil Dahal']}
-                                                        />
+                                                    />
                                                 </Tab.Pane>
 
                                             </Tab.Content>
-                                        </Tab.Container>                                        
-                                    </Tab.Pane>                                        
+                                        </Tab.Container>
+                                    </Tab.Pane>
                                 </Tab.Content>
                             </Col>
                         </Row>
-					</Tab.Container><br></br>
+                    </Tab.Container><br></br>
                 </div>
             </div>
         );

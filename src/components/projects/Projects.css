@@ -97,6 +97,13 @@
     padding: 20px;
 }
 
+/* Source: https://www.itsupportguides.com/knowledge-base/website-tips/how-to-make-embed-youtube-iframe-mobile-responsive/ */
+iframe[src*=youtube] {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
 @media only screen and(max-width){
     .project_info{
         padding: 20px;
@@ -138,5 +145,8 @@
     }
     .project-tab-label {
         font-size: 0.85rem;
+    }
+    iframe[src*=youtube] {
+        min-width: 90vw;
     }
   }
