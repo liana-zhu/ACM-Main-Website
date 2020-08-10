@@ -77,7 +77,7 @@ class Projects extends React.Component {
                                             </Nav>
                                             <Tab.Content className="project-tab-content">
                                                 <br></br><br></br>
-                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/SG_SBCu_65c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                <iframe title="project-ad-video" width="560" height="315" src="https://www.youtube.com/embed/SG_SBCu_65c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                                 <br></br>
                                                 <Tab.Pane eventKey="F2020beginner">
                                                     <NewProject
