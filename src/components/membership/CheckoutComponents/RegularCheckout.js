@@ -63,59 +63,59 @@ const Regular = () => {
 		setFormData(copyFormData);
 	};
 
-	const handleClick = async (event) => {
-		if (formData.fName === undefined || formData.lName === undefined || formData.cin === undefined || formData.email === undefined ||
-			formData.phoneNumber === undefined || formData.gender === undefined || formData.enrollment === undefined ||
-			formData.standing === undefined || formData.major === undefined || formData.minor === undefined || formData.status === undefined || formData.project === undefined || formData.hear === undefined ||
-			formData.gain === undefined) {
-			console.log(formData.gender);
-			window.alert("Some of the fields are empty");
-			event.preventDefault();
-			//   event.stopPropagation();
-		}
-		else {
-			window.alert("Proceeding to checkout")
-			try {
-				const response = await fetch(
-					"https://v1.nocodeapi.com/acmcalstatela/google_sheets/VtBjglLwilQYLjMK?tabId=Regular",
-					{
-						method: "post",
-						body: JSON.stringify([[formData.fName, formData.lName, formData.cin, formData.email,
-						formData.phoneNumber, formData.gender, formData.enrollment,
-						formData.standing, formData.major, formData.minor, formData.status, formData.project, formData.hear,
-						formData.gain]]),
-						headers: {
-							"Content-Type": "application/json"
-						}
-					}
-				);
-				const json = await response.json();
-				console.log("Success:", JSON.stringify(json));
-				//   setMessage(json.message);
-			} catch (error) {
-				console.error("Error:", error);
-				setMessage("Error");
-			}
-			window.alert('You Will Be Redirected from this page to complete the payment');
-			// Call your backend to create the Checkout session.
-			dispatch({ type: 'setLoading', payload: { loading: true } });
-			// When the customer clicks on the button, redirect them to Checkout.
-			const stripe = await stripePromise;
-			const { error } = await stripe.redirectToCheckout({
-				mode: 'payment',
-				lineItems: [{ price: state.priceId, quantity: state.quantity }],
-				successUrl: `${window.location.origin}/Success`,
-				cancelUrl: `${window.location.origin}/Membership`,
-			});
-			// If `redirectToCheckout` fails due to a browser or network
-			// error, display the localized error message to your customer
-			// using `error.message`.
-			if (error) {
-				dispatch({ type: 'setError', payload: { error } });
-				dispatch({ type: 'setLoading', payload: { loading: false } });
-			}
-		}
-	};
+  const handleClick = async (event) => {
+	  if(formData.fName === undefined || formData.lName === undefined || formData.cin === undefined|| formData.email === undefined||
+		formData.phoneNumber === undefined|| formData.gender === undefined|| formData.enrollment === undefined||
+		formData.standing === undefined|| formData.major === undefined|| formData.status === undefined|| formData.project === undefined|| formData.hear === undefined||
+		formData.gain === undefined){
+		  console.log(formData.gender);
+		  window.alert("Some of the fields are empty");
+		  event.preventDefault();
+		//   event.stopPropagation();
+	  }
+	  else{
+		  window.alert("Proceeding to checkout")
+		try {
+			const response = await fetch(
+			  "https://v1.nocodeapi.com/acmcalstatela/google_sheets/VtBjglLwilQYLjMK?tabId=Regular",
+			  {
+				method: "post",
+				body: JSON.stringify([[formData.fName, formData.lName, formData.cin, formData.email,
+				formData.phoneNumber, formData.gender, formData.enrollment,
+				formData.standing, formData.major, formData.minor, formData.status, formData.project, formData.hear,
+				formData.gain]]),
+				headers: {
+				  "Content-Type": "application/json"
+				}
+			  }
+			);
+			const json = await response.json();
+			console.log("Success:", JSON.stringify(json));
+		  //   setMessage(json.message);
+		  } catch (error) {
+			console.error("Error:", error);
+			setMessage("Error");
+		  }
+		  window.alert('You Will Be Redirected from this page to complete the payment');
+		  // Call your backend to create the Checkout session.
+		  dispatch({ type: 'setLoading', payload: { loading: true } });
+		  // When the customer clicks on the button, redirect them to Checkout.
+		  const stripe = await stripePromise;
+		  const { error } = await stripe.redirectToCheckout({
+			mode: 'payment',
+			lineItems: [{ price: state.priceId, quantity: state.quantity }],
+			successUrl: `${window.location.origin}/Success`,
+			cancelUrl: `${window.location.origin}/Membership`,
+		  });
+		  // If `redirectToCheckout` fails due to a browser or network
+		  // error, display the localized error message to your customer
+		  // using `error.message`.
+		  if (error) {
+			dispatch({ type: 'setError', payload: { error } });
+			dispatch({ type: 'setLoading', payload: { loading: false } });
+		  }
+	  }
+  };
 
 	return (
 		<div className="text-info">
@@ -163,106 +163,121 @@ const Regular = () => {
 						<Form.Control.Feedback type="invalid">Phone Number Is Required</Form.Control.Feedback>
 					</Form.Group>
 
-					<Form.Group as={Col}>
-						<Form.Label>Gender *</Form.Label>
-						<Form.Control required onChange={handleInput} as="select" name="gender">
-							<option name="gender">Choose</option>
-							<option name="gender">Female</option>
-							<option name="gender">Male</option>
-							<option name="gender">Prefer Not To Say</option>
-						</Form.Control>
-						<Form.Control.Feedback type="invalid">Choose A Gender</Form.Control.Feedback>
-					</Form.Group>
-				</Form.Row>
-				<Form.Row>
-					<Form.Group as={Col}>
-						<Form.Label>Enrollment Status *</Form.Label>
-						<Form.Control onChange={handleInput} as="select" defaultValue="Choose" name="enrollment">
-							<option name="enrollment">Choose</option>
-							<option name="enrollment">Enrolled Student</option>
-							<option name="enrollment">Alumni</option>
-							<option name="enrollment">Faculty</option>
-						</Form.Control>
-						<Form.Control.Feedback type="invalid">Enrollment Status Is Required</Form.Control.Feedback>
-					</Form.Group>
-					<Form.Group as={Col}>
-						<Form.Label>Class Standing *</Form.Label>
-						<Form.Control onChange={handleInput} as="select" defaultValue="Choose" name="standing">
-							<option name="standing">Choose</option>
-							<option name="standing">Freshman</option>
-							<option name="standing">Sophomore</option>
-							<option name="standing">Junior</option>
-							<option name="standing">Senior</option>
-							<option name="standing">Other</option>
-						</Form.Control>
-						<Form.Control.Feedback type="invalid">Class Standing Is Required</Form.Control.Feedback>
-					</Form.Group>
-				</Form.Row>
-				<Form.Row>
-					<Form.Group as={Col}>
-						<Form.Label>Major *</Form.Label>
-						<Form.Control onChange={handleInput} as="select" defaultValue="Choose" name="major">
-							<option name="major">Choose</option>
-							<option name="major">Pre-Computer Science</option>
-							<option name="major">Computer Science</option>
-							<option name="major">Mechanical Engineering</option>
-							<option name="major">Civil Engineering</option>
-							<option name="major">Electrical Engineering</option>
-							<option name="major">Technology</option>
-							<option name="major">Other</option>
-						</Form.Control>
-						<Form.Control.Feedback type="invalid">Major is required</Form.Control.Feedback>
-					</Form.Group>
-					<Form.Group as={Col}>
-						<Form.Label>Minor</Form.Label>
-						<Form.Control onChange={handleInput} type="text" name="minor" placeholder="Minor (Optional)" />
-					</Form.Group>
-				</Form.Row>
-				<Form.Row>
-					<Form.Group as={Col}>
-						<Form.Label>Membership Status? *</Form.Label>
-						<Form.Control onChange={handleInput} as="select" defaultValue="Choose" name="status">
-							<option name="status">Choose</option>
-							<option name="status">New Member</option>
-							<option name="status">Returning Member</option>
-						</Form.Control>
-						<Form.Control.Feedback type="invalid">Membership Status Is Required</Form.Control.Feedback>
-					</Form.Group>
-					<Form.Group as={Col}>
-						<Form.Label>Which Program are you interested in? *</Form.Label>
-						<Form.Control onChange={handleInput} as="select" name="project">
-							<option name="project">Choose</option>
-							<option name="project">Minecraft Mod (Beginner)</option>
-							<option name="project">Discord Bot (Advanced)</option>
-							<option name="project">Mentorship</option>
-						</Form.Control>
-						<Form.Control.Feedback type="invalid">Project Choice Is Required</Form.Control.Feedback>
-					</Form.Group>
-				</Form.Row>
-				<Form.Row>
-					<Form.Group as={Col}>
-						<Form.Label>How did you hear about ACM? *</Form.Label>
-						<Form.Control onChange={handleInput} as="textarea" rows="3" type="text" name="hear" placeholder="How did you hear about ACM?" />
-						<Form.Control.Feedback type="invalid">Required</Form.Control.Feedback>
-					</Form.Group>
-					<Form.Group as={Col}>
-						<Form.Label>What do you wish to gain from ACM? *</Form.Label>
-						<Form.Control onChange={handleInput} as="textarea" rows="3" type="text" name="gain" placeholder="What do you wish to gain from ACM?" />
-						<Form.Control.Feedback type="invalid">Required</Form.Control.Feedback>
-					</Form.Group>
-				</Form.Row>
-			</Form>
-			<center>
-				<h1>No Refunds</h1>
-				<h6>*ADDITIONAL 50 CENTS PROCESSING FEE*</h6>
-				<button className="btn btn-info btn-membership" role="link" onClick={handleClick} disabled={state.loading}>
-					{state.loading || !state.price
-						? `Loading...`
-						: `Buy for $5`}
-				</button>
-			</center>
-		</div>
-	);
+							<Form.Group as={Col}>
+							<Form.Label>Gender *</Form.Label>
+							<Form.Control required onChange={handleInput} as="select" name="gender">
+								<option name="gender">Choose</option>
+								<option name="gender">Female</option>
+								<option name="gender">Male</option>
+								<option name="gender">Prefer Not To Say</option>
+							</Form.Control>
+							<Form.Control.Feedback type="invalid">Choose A Gender</Form.Control.Feedback>
+						</Form.Group>
+						</Form.Row>
+						<Form.Row>
+						<Form.Group as={Col}>
+							<Form.Label>Enrollment Status *</Form.Label>
+							<Form.Control onChange={handleInput} as="select" defaultValue="Choose" name="enrollment">
+								<option name="enrollment">Choose</option>
+								<option name="enrollment">Enrolled Student</option>
+								<option name="enrollment">New Student</option>
+							</Form.Control>
+							<Form.Control.Feedback type="invalid">Enrollment Status Is Required</Form.Control.Feedback>
+						</Form.Group>
+						<Form.Group as={Col}>
+							<Form.Label>Class Standing *</Form.Label>
+							<Form.Control onChange={handleInput} as="select" defaultValue="Choose" name="standing">
+								<option name="standing">Choose</option>
+								<option name="standing">Freshman</option>
+								<option name="standing">Sophomore</option>
+								<option name="standing">Junior</option>
+								<option name="standing">Senior</option>
+								<option name="standing">Other</option>
+							</Form.Control>
+							<Form.Control.Feedback type="invalid">Class Standing Is Required</Form.Control.Feedback>
+						</Form.Group>
+						</Form.Row>
+						<Form.Row>
+						<Form.Group as={Col}>
+							<Form.Label>Major *</Form.Label>
+							<Form.Control onChange={handleInput} as="select" defaultValue="Choose" name="major">
+								<option name="major">Choose</option>
+								<option name="major">Pre-Computer Science</option>
+								<option name="major">Computer Science</option>
+								<option name="major">Mechanical Engineering</option>
+								<option name="major">Civil Engineering</option>
+								<option name="major">Electrical Engineering</option>
+								<option name="major">Technology</option>
+								<option name="major">Other</option>
+							</Form.Control>
+							<Form.Control.Feedback type="invalid">Major is required</Form.Control.Feedback>
+						</Form.Group>
+						<Form.Group as={Col}>
+							<Form.Label>Minor</Form.Label>
+							<Form.Control onChange={handleInput} type="text" name="minor" placeholder="Minor (Optional)" />
+						</Form.Group>
+						</Form.Row>
+						<Form.Row>
+							<Form.Group as={Col}>
+								<Form.Label>Membership Status? *</Form.Label>
+								<Form.Control onChange={handleInput} as="select" defaultValue="Choose" name="status">
+									<option name="status">Choose</option>
+									<option name="status">New Member</option>
+									<option name="status">Returning Member</option>
+								</Form.Control>
+								<Form.Control.Feedback type="invalid">Membership Status Is Required</Form.Control.Feedback>
+							</Form.Group>
+							<Form.Group as={Col}>
+							<Form.Label>Which Program are you interested in? *</Form.Label>
+							<Form.Control onChange={handleInput} as="select" name="project">
+								<option name="project">Choose</option>
+								<option name="project">Minecraft Mod (Beginner)</option>
+								<option name="project">Discord Bot (Advanced)</option>
+								<option name="project">Mentorship</option>
+							</Form.Control>
+							<Form.Control.Feedback type="invalid">Project Choice Is Required</Form.Control.Feedback>
+						</Form.Group>
+						</Form.Row>
+						<Form.Row>
+						<Form.Group as={Col}>
+							<Form.Label>How Did You Hear About ACM? *</Form.Label>
+							<Form.Control onChange={handleInput} as="select" defaultValue="Choose" name="hear">
+								<option name="hear">Choose</option>
+								<option name="hear">ACM Website</option>
+								<option name="hear">Social Media</option>
+								<option name="hear">Flyer</option>
+								<option name="hear">Recruitment Event</option>
+								<option name="hear">ENGR 1540 Recruitment</option>
+								<option name="hear">CS 1010 Recruitment</option>
+								<option name="hear">ACM Leader/Member</option>
+								<option name="hear">Other</option>
+							</Form.Control>
+						</Form.Group>
+						<Form.Group as={Col}>
+							<Form.Label>What Do you wish to gain from ACM? *</Form.Label>
+							<Form.Control onChange={handleInput} as="select" defaultValue="Choose" name="gain">
+								<option name="hear">Choose</option>
+								<option name="hear">Networking Opportunities with professionals</option>
+								<option name="hear">Leadership Development</option>
+								<option name="hear">Project experience</option>
+								<option name="hear">Internship Opportunities</option>
+								<option name="hear">Scholarship Opportunities</option>
+								<option name="hear">Other</option>
+							</Form.Control>
+						</Form.Group>
+						</Form.Row>
+            </Form>
+            <center>
+            <h1>No Refunds</h1>
+			<h6>*ADDITIONAL 50 CENTS PROCESSING FEE*</h6>
+            <button className="btn btn-info btn-membership" role="link" onClick={handleClick} disabled={state.loading}>
+              {state.loading || !state.price
+                ? `Loading...`
+                : `Buy for $5`}
+            </button>
+            </center>
+    </div>
+  );
 };
 
 export default Regular;
