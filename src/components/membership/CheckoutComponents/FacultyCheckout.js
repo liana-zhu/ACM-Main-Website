@@ -74,7 +74,7 @@ const Regular = () => {
           {
             method: "post",
             body: JSON.stringify([[formData.fName, formData.lName, formData.cin, formData.email,
-            formData.phoneNumber, formData.gender, formData.birthday, formData.enrollment, formData.status]]),
+            formData.phoneNumber, formData.gender, formData.enrollment, formData.status]]),
             headers: {
               "Content-Type": "application/json"
             }
@@ -144,45 +144,44 @@ const Regular = () => {
             <Form.Control onChange={handleInput} type="number" name="phoneNumber" placeholder="Phone Number" />
           </Form.Group>
 
-          <Form.Group as={Col}>
-            <Form.Label>Gender</Form.Label>
-            <Form.Control onChange={handleInput} as="select" defaultValue="Choose..." name="gender">
-              <option name="gender">Choose</option>
-              <option name="gender">Female</option>
-              <option name="gender">Male</option>
-              <option name="gender">Prefer Not To Say</option>
-            </Form.Control>
-          </Form.Group>
-        </Form.Row>
-        <Form.Row>
-          <Form.Group as={Col}>
-            <Form.Label>Enrollment Status</Form.Label>
-            <Form.Control onChange={handleInput} as="select" defaultValue="Choose" name="enrollment">
-              <option name="enrollment">Choose</option>
-              <option name="enrollment">Enrolled Student</option>
-              <option name="enrollment">Alumni</option>
-              <option name="enrollment">Faculty</option>
-            </Form.Control>
-          </Form.Group>
-          <Form.Group as={Col}>
-            <Form.Label>Membership Status</Form.Label>
-            <Form.Control onChange={handleInput} as="select" defaultValue="Choose" name="status">
-              <option name="status">Choose</option>
-              <option name="status">New Member</option>
-              <option name="status">Returning Member</option>
-            </Form.Control>
-          </Form.Group>
-        </Form.Row>
-      </Form>
-      <center>
-        <h1>No Refunds</h1>
-        <h6>*ADDITIONAL 50 CENTS PROCESSING FEE*</h6>
-        <button className="btn btn-info btn-membership" role="link" onClick={handleClick} disabled={state.loading}>
-          {state.loading || !state.price
-            ? `Loading...`
-            : `Buy for $5`}
-        </button>
-      </center>
+							<Form.Group as={Col}>
+							<Form.Label>Gender</Form.Label>
+							<Form.Control onChange={handleInput} as="select" defaultValue="Choose..." name="gender">
+								<option name="gender">Choose</option>
+								<option name="gender">Female</option>
+								<option name="gender">Male</option>
+								<option name="gender">Prefer Not To Say</option>
+							</Form.Control>
+						</Form.Group>
+            </Form.Row>
+						<Form.Row>
+            <Form.Group as={Col}>
+							<Form.Label>Enrollment Status</Form.Label>
+							<Form.Control onChange={handleInput} as="select" defaultValue="Choose" name="enrollment">
+								<option name="enrollment">Choose</option>
+								<option name="enrollment">Alumni</option>
+								<option name="enrollment">Faculty</option>
+							</Form.Control>
+						</Form.Group>
+						<Form.Group as={Col}>
+							<Form.Label>Membership Status</Form.Label>
+							<Form.Control onChange={handleInput} as="select" defaultValue="Choose" name="status">
+								<option name="status">Choose</option>
+								<option name="status">New Member</option>
+								<option name="status">Returning Member</option>
+							</Form.Control>
+						</Form.Group>
+            </Form.Row>
+            </Form>
+            <center>
+            <h1>No Refunds</h1>
+            <h6>*ADDITIONAL 50 CENTS PROCESSING FEE*</h6>
+            <button className="btn btn-info btn-membership" role="link" onClick={handleClick} disabled={state.loading}>
+              {state.loading || !state.price
+                ? `Loading...`
+                : `Buy for $5`}
+            </button>
+            </center>
     </div>
   );
 };
