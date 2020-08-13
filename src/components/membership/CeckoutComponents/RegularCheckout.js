@@ -66,7 +66,7 @@ const Regular = () => {
   const handleClick = async (event) => {
 	  if(formData.fName == undefined || formData.lName == undefined || formData.cin == undefined|| formData.email == undefined||
 		formData.phoneNumber == undefined|| formData.gender == undefined|| formData.enrollment == undefined||
-		formData.standing == undefined|| formData.major == undefined|| formData.minor == undefined|| formData.status == undefined|| formData.project == undefined|| formData.hear == undefined||
+		formData.standing == undefined|| formData.major == undefined|| formData.status == undefined|| formData.project == undefined|| formData.hear == undefined||
 		formData.gain == undefined){
 		  console.log(formData.gender);
 		  window.alert("Some of the fields are empty");
@@ -180,8 +180,7 @@ const Regular = () => {
 							<Form.Control onChange={handleInput} as="select" defaultValue="Choose" name="enrollment">
 								<option name="enrollment">Choose</option>
 								<option name="enrollment">Enrolled Student</option>
-								<option name="enrollment">Alumni</option>
-								<option name="enrollment">Faculty</option>
+								<option name="enrollment">New Student</option>
 							</Form.Control>
 							<Form.Control.Feedback type="invalid">Enrollment Status Is Required</Form.Control.Feedback>
 						</Form.Group>
@@ -242,13 +241,29 @@ const Regular = () => {
 						<Form.Row>
 						<Form.Group as={Col}>
 							<Form.Label>How Did You Hear About ACM? *</Form.Label>
-							<Form.Control onChange={handleInput} as="textarea" rows="3" type="text" name="hear" placeholder="How Did you hear about ACM" />
-							<Form.Control.Feedback type="invalid">Required</Form.Control.Feedback>
+							<Form.Control onChange={handleInput} as="select" defaultValue="Choose" name="hear">
+								<option name="hear">Choose</option>
+								<option name="hear">ACM Website</option>
+								<option name="hear">Social Media</option>
+								<option name="hear">Flyer</option>
+								<option name="hear">Recruitment Event</option>
+								<option name="hear">ENGR 1540 Recruitment</option>
+								<option name="hear">CS 1010 Recruitment</option>
+								<option name="hear">ACM Leader/Member</option>
+								<option name="hear">Other</option>
+							</Form.Control>
 						</Form.Group>
 						<Form.Group as={Col}>
 							<Form.Label>What Do you wish to gain from ACM? *</Form.Label>
-							<Form.Control onChange={handleInput} as="textarea" rows="3" type="text" name="gain" placeholder="What Do you wish to gain from ACM" />
-							<Form.Control.Feedback type="invalid">Required</Form.Control.Feedback>
+							<Form.Control onChange={handleInput} as="select" defaultValue="Choose" name="gain">
+								<option name="hear">Choose</option>
+								<option name="hear">Networking Opportunities with professionals</option>
+								<option name="hear">Leadership Development</option>
+								<option name="hear">Project experience</option>
+								<option name="hear">Internship Opportunities</option>
+								<option name="hear">Scholarship Opportunities</option>
+								<option name="hear">Other</option>
+							</Form.Control>
 						</Form.Group>
 						</Form.Row>
             </Form>
