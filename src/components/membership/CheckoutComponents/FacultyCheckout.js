@@ -73,7 +73,7 @@ const Regular = () => {
           {
             method: "post",
             body: JSON.stringify([[formData.fName, formData.lName, formData.cin, formData.email,
-            formData.phoneNumber, formData.gender, formData.birthday, formData.enrollment, formData.status]]),
+            formData.phoneNumber, formData.gender, formData.enrollment, formData.status]]),
             headers: {
               "Content-Type": "application/json"
             }
@@ -158,7 +158,6 @@ const Regular = () => {
 							<Form.Label>Enrollment Status</Form.Label>
 							<Form.Control onChange={handleInput} as="select" defaultValue="Choose" name="enrollment">
 								<option name="enrollment">Choose</option>
-								<option name="enrollment">Enrolled Student</option>
 								<option name="enrollment">Alumni</option>
 								<option name="enrollment">Faculty</option>
 							</Form.Control>
