@@ -4,68 +4,70 @@ import "../membership.css"
 import Form from 'react-bootstrap/Form';
 import { Col } from 'react-bootstrap'
 
-const stripePromise = loadStripe(	
+const stripePromise = loadStripe(
 	"pk_live_51H0yOZEr4ylg7vlAnEDF4YfjfRe1VAEKjRMuW2Lh7zlMG9Lh68k4LZmuTm0RtR5MeNLJzkxUT0p53pdnQKgeIY1800N4Sipf5y");
 
 const formatPrice = ({ amount, currency, quantity }) => {
-  const numberFormat = new Intl.NumberFormat('en-US', {
-    style: 'currency',
-    currency: "USD",
-    currencyDisplay: 'symbol',
-  });
-  const parts = numberFormat.formatToParts(amount);
-  let zeroDecimalCurrency = true;
-  for (let part of parts) {
-    if (part.type === 'decimal') {
-      zeroDecimalCurrency = false;
-    }
-  }
-  amount = zeroDecimalCurrency ? amount : amount / 100;
-  const total = (quantity * amount).toFixed(2);
-  return numberFormat.format(total);
+	const numberFormat = new Intl.NumberFormat('en-US', {
+		style: 'currency',
+		currency: "USD",
+		currencyDisplay: 'symbol',
+	});
+	const parts = numberFormat.formatToParts(amount);
+	let zeroDecimalCurrency = true;
+	for (let part of parts) {
+		if (part.type === 'decimal') {
+			zeroDecimalCurrency = false;
+		}
+	}
+	amount = zeroDecimalCurrency ? amount : amount / 100;
+	const total = (quantity * amount).toFixed(2);
+	return numberFormat.format(total);
 };
 
 function reducer(state, action) {
-  switch (action.type) {
-    case 'setLoading':
-      return { ...state, loading: action.payload.loading };
-    case 'setError':
-      return { ...state, error: action.payload.error };
-    default:
-      throw new Error();
-  }
+	switch (action.type) {
+		case 'setLoading':
+			return { ...state, loading: action.payload.loading };
+		case 'setError':
+			return { ...state, error: action.payload.error };
+		default:
+			throw new Error();
+	}
 }
 
 const Regular = () => {
-  const [state, dispatch] = useReducer(reducer, {
-    priceId: "price_1H5yVcEr4ylg7vlAD4RcgNtW",
-    basePrice: "5.50",
-    currency: "USD",
-    quantity: 1,
-    price: formatPrice({
-      amount: "5.50",
-      currency: "USD",
-      quantity: 1,
-    }),
-    loading: false,
-    error: null,
-  });
+	const [state, dispatch] = useReducer(reducer, {
+		priceId: "price_1H5yVcEr4ylg7vlAD4RcgNtW",
+		basePrice: "5.50",
+		currency: "USD",
+		quantity: 1,
+		price: formatPrice({
+			amount: "5.50",
+			currency: "USD",
+			quantity: 1,
+		}),
+		loading: false,
+		error: null,
+	});
 
-  const [formData, setFormData] = useState({});
-		const [message, setMessage] = useState("");
-		const [validated, setValidated] = useState(false);
+	const [formData, setFormData] = useState({});
+	// eslint-disable-next-line
+	const [message, setMessage] = useState("");
+	// eslint-disable-next-line
+	const [validated, setValidated] = useState(false);
 
-		const handleInput = e => {
-			const copyFormData = { ...formData };
-			copyFormData[e.target.name] = e.target.value;
-			setFormData(copyFormData);
-		};
+	const handleInput = e => {
+		const copyFormData = { ...formData };
+		copyFormData[e.target.name] = e.target.value;
+		setFormData(copyFormData);
+	};
 
   const handleClick = async (event) => {
-	  if(formData.fName == undefined || formData.lName == undefined || formData.cin == undefined|| formData.email == undefined||
-		formData.phoneNumber == undefined|| formData.gender == undefined|| formData.enrollment == undefined||
-		formData.standing == undefined|| formData.major == undefined|| formData.status == undefined|| formData.project == undefined|| formData.hear == undefined||
-		formData.gain == undefined){
+	  if(formData.fName === undefined || formData.lName === undefined || formData.cin === undefined|| formData.email === undefined||
+		formData.phoneNumber === undefined|| formData.gender === undefined|| formData.enrollment === undefined||
+		formData.standing === undefined|| formData.major === undefined|| formData.status === undefined|| formData.project === undefined|| formData.hear === undefined||
+		formData.gain === undefined){
 		  console.log(formData.gender);
 		  window.alert("Some of the fields are empty");
 		  event.preventDefault();
@@ -115,51 +117,51 @@ const Regular = () => {
 	  }
   };
 
-  return (
-    <div className="text-info">
-                <h2><span className="highlight-text"><b><i>ACM Membership</i></b></span> ❖ REGULAR TIER</h2>
-				<h2 className="text-info">Benefits</h2>
-				<div className="text-info">
+	return (
+		<div className="text-info">
+			<h2><span className="highlight-text"><b><i>ACM Membership</i></b></span> ❖ REGULAR TIER</h2>
+			<h2 className="text-info">Benefits</h2>
+			<div className="text-info">
 				- Receive weekly newsletters.<br></br>
 				- Access to project workshops (Beginner/Advanced).<br></br>
 				- Access to professional development workshops.<br></br>
 				- Access to Mentorship program.<br></br>
-				</div>
-				<p><b>*You will have to make a $5 payment*</b></p>
-				<p><b>*There will be a separate signup for the Project and Mentorship*</b></p>
-				<h2 className="text-info">How to become a member?</h2>
-				<h2 className="text-info">Fill Out The Form Below</h2>
-        <Form noValidate validated={validated} onSubmit={handleClick}>
-						<Form.Row>
-						<Form.Group as={Col}>
-							<Form.Label>First Name *</Form.Label>
-							<Form.Control onChange={handleInput} type="name" name="fName" placeholder="First Name" required/>
-							<Form.Control.Feedback type="invalid">First Name Required</Form.Control.Feedback>
-							</Form.Group>
-							<Form.Group as={Col}>
-							<Form.Label>Last Name *</Form.Label>
-							<Form.Control onChange={handleInput} type="name" name="lName" placeholder="Last Name"/>
-							<Form.Control.Feedback type="invalid">Last Name Required</Form.Control.Feedback>
-						</Form.Group>
-						</Form.Row>
-						<Form.Row>
-						<Form.Group as={Col}>
-							<Form.Label>CIN *</Form.Label>
-							<Form.Control onChange={handleInput} type="number" name="cin" placeholder="CIN" />
-							<Form.Control.Feedback type="invalid">CIN Is Required</Form.Control.Feedback>
-							</Form.Group>
-							<Form.Group as={Col}>
-							<Form.Label>Email *</Form.Label>
-							<Form.Control onChange={handleInput} type="email" name="email" placeholder="Most Used Email"/>
-							<Form.Control.Feedback type="invalid">Email Is Required</Form.Control.Feedback>
-						</Form.Group>
-						</Form.Row>
-						<Form.Row>
-						<Form.Group as={Col}>
-							<Form.Label>Phone Number *</Form.Label>
-							<Form.Control onChange={handleInput} type="number" name="phoneNumber" placeholder="Phone Number" />
-							<Form.Control.Feedback type="invalid">Phone Number Is Required</Form.Control.Feedback>
-						</Form.Group>
+			</div>
+			<p><b>*You will have to make a $5 payment*</b></p>
+			<p><b>*There will be a separate signup for the Project and Mentorship*</b></p>
+			<h2 className="text-info">How to become a member?</h2>
+			<h2 className="text-info">Fill Out The Form Below</h2>
+			<Form noValidate validated={validated} onSubmit={handleClick}>
+				<Form.Row>
+					<Form.Group as={Col}>
+						<Form.Label>First Name *</Form.Label>
+						<Form.Control onChange={handleInput} type="name" name="fName" placeholder="First Name" required />
+						<Form.Control.Feedback type="invalid">First Name Required</Form.Control.Feedback>
+					</Form.Group>
+					<Form.Group as={Col}>
+						<Form.Label>Last Name *</Form.Label>
+						<Form.Control onChange={handleInput} type="name" name="lName" placeholder="Last Name" />
+						<Form.Control.Feedback type="invalid">Last Name Required</Form.Control.Feedback>
+					</Form.Group>
+				</Form.Row>
+				<Form.Row>
+					<Form.Group as={Col}>
+						<Form.Label>CIN *</Form.Label>
+						<Form.Control onChange={handleInput} type="number" name="cin" placeholder="CIN" />
+						<Form.Control.Feedback type="invalid">CIN Is Required</Form.Control.Feedback>
+					</Form.Group>
+					<Form.Group as={Col}>
+						<Form.Label>Email *</Form.Label>
+						<Form.Control onChange={handleInput} type="email" name="email" placeholder="Most Used Email" />
+						<Form.Control.Feedback type="invalid">Email Is Required</Form.Control.Feedback>
+					</Form.Group>
+				</Form.Row>
+				<Form.Row>
+					<Form.Group as={Col}>
+						<Form.Label>Phone Number *</Form.Label>
+						<Form.Control onChange={handleInput} type="number" name="phoneNumber" placeholder="Phone Number" />
+						<Form.Control.Feedback type="invalid">Phone Number Is Required</Form.Control.Feedback>
+					</Form.Group>
 
 							<Form.Group as={Col}>
 							<Form.Label>Gender *</Form.Label>

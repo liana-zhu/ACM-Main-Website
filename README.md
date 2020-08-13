@@ -11,7 +11,7 @@ On Git, run: <br>
 ## How do I run the project after cloning?
 Using the command line (not Git), go to the project directory and run:
 
-### `npm clean-install`
+### `npm install`
 
 ### `npm start`
 

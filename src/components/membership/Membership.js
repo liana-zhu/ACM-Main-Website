@@ -4,15 +4,7 @@ import {Card, Accordion } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css';
 import Carousel from 'react-bootstrap/Carousel';
 import Regular from './CheckoutComponents/RegularCheckout.js'
-import Faculty_Alumni from './CheckoutComponents/FacultyCheckout.js'
-
-/*
-To install, go to project directory and run this on command line:
-$ npm install react-multi-carousel --save
-*/
-//Imports for multi carousel
-// import Carousel from "react-multi-carousel";
-// import "react-multi-carousel/lib/styles.css";
+import FACULTY_ALUMNI from './CheckoutComponents/FacultyCheckout.js'
 
 class Membership extends React.Component {
 
@@ -125,7 +117,7 @@ class Membership extends React.Component {
 							</Card.Header>
 							<Accordion.Collapse eventKey="faculty/alumni">
 							<Card.Body  style={{backgroundColor: "#424242"}}>
-								<Faculty_Alumni/>
+								<FACULTY_ALUMNI/>
 							</Card.Body>
 							</Accordion.Collapse>
 						</Card>
@@ -146,4 +138,4 @@ class Membership extends React.Component {
 	}
 }
 
-export default Membership
+export default Membership;

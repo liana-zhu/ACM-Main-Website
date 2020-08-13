@@ -14,4 +14,4 @@ class Slideshow extends Component {
     }
 }
 
-export default Slideshow
+export default Slideshow;

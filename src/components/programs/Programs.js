@@ -32,7 +32,7 @@ class Programs extends React.Component {
                     <h3 className="disclaimer_header"><b>Disclaimer!</b></h3>
                     <span className="disclaimer"><b>1. You must be a member of ACM to participate in the mentorship!</b> If you are not a member,
                     <b><i><span className="highlight-text"> you will not be allowed in.</span></i></b></span><br></br>
-                    <span className="disclaimer"><b>2. Deadline to apply for the Fall 2020 mentorship program is <span className="highlight-text">
+                    <span className="disclaimer"><b>2. Deadline to apply for the mentorship program is <span className="highlight-text">
                         Tuesday, September 1, 2020 at 11:59pm.</span></b></span><br></br>
                 </div>
                 <br></br>
@@ -56,9 +56,9 @@ class Programs extends React.Component {
                                 <Tab.Content className="programs-tab-content">
                                     <Tab.Pane eventKey="first">
                                         <Tab.Container defaultActiveKey="F2020mentorship">
-                                            <Nav variant="tabs">
+                                            <Nav className="programs-tab-label" variant="pills">
                                                 <Nav.Item>
-                                                    <Nav.Link className="programs-nav-link anchor-blue" eventKey="F2020mentorship">Mentorship</Nav.Link>
+                                                    <Nav.Link className="programs-nav-link-tab anchor-white" eventKey="F2020mentorship">Mentorship</Nav.Link>
                                                 </Nav.Item>
                                             </Nav>
                                             <Tab.Content className="programs-tab-content">
@@ -70,9 +70,9 @@ class Programs extends React.Component {
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="second">
                                         <Tab.Container defaultActiveKey="S2020mentorship">
-                                            <Nav variant="tabs">
+                                            <Nav className="programs-tab-label" variant="pills">
                                                 <Nav.Item>
-                                                    <Nav.Link className="programs-nav-link anchor-blue" eventKey="S2020mentorship">Mentorship</Nav.Link>
+                                                    <Nav.Link className="programs-nav-link-tab anchor-white" eventKey="S2020mentorship">Mentorship</Nav.Link>
                                                 </Nav.Item>
                                             </Nav>
                                             <Tab.Content className="programs-tab-content">
@@ -96,12 +96,12 @@ class Programs extends React.Component {
 
                                     <Tab.Pane eventKey="third">
                                         <Tab.Container defaultActiveKey="F2019mentorship">
-                                            <Nav variant="tabs">
+                                            <Nav className="programs-tab-label"variant="pills">
                                                 <Nav.Item>
-                                                    <Nav.Link className="programs-nav-link anchor-blue" eventKey="F2019mentorship">Mentorship</Nav.Link>
+                                                    <Nav.Link className="programs-nav-link-tab anchor-white" eventKey="F2019mentorship">Mentorship</Nav.Link>
                                                 </Nav.Item>
                                                 <Nav.Item>
-                                                    <Nav.Link className="programs-nav-link anchor-blue" eventKey="F2019tutoring">Tutoring</Nav.Link>
+                                                    <Nav.Link className="programs-nav-link-tab anchor-white" eventKey="F2019tutoring">Tutoring</Nav.Link>
                                                 </Nav.Item>
                                             </Nav>
                                             <Tab.Content className="programs-tab-content">
@@ -158,4 +158,4 @@ class Programs extends React.Component {
     }
 }
 
-export default Programs
+export default Programs;

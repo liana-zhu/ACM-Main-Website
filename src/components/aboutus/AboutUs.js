@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 
-import { Tab, Nav, Row, Col, Image, Button } from 'react-bootstrap'
+import { Tab, Nav, Row, Col, Image, Button} from 'react-bootstrap'
 import Jumbotron from "react-bootstrap/Jumbotron";
 import "./aboutus.css";
 
@@ -17,23 +17,23 @@ class AboutUs extends React.Component {
 				{/* <Container fluid>
 				<Row>
 					<Col> */}
-				<Jumbotron>
 					{/* <div className="mission-statement-card"> */}
+					<Jumbotron>
 					<div className="mission-statement-text">
 						<h1>Our Mission</h1>
 						<div className="mission-statement-points">
 							<ul type="circle">
 								<li>
-									Insight and knowledge regarding the CS programs and general advice for college
+									Provide insight and knowledge regarding the CS programs and general advice for college
 									students to guarantee academic progress.
 									</li>
 								<li>
-									A means to communicate experiences, concerns, and challenges in the field
+									Provide a means to communicate experiences, concerns, and challenges in the field
 									with like-minded individuals and ACM leaders to promote self-improvement.
 									</li>
 								<li>
 									Coding workshops that teach new technologies and common software engineering
-									pracices not taught in courses offered in the CS program.
+									practices not taught in courses offered in the CS program.
 									</li>
 								<li>
 									Professional development workshops tailored to help members prepare for the
@@ -47,14 +47,15 @@ class AboutUs extends React.Component {
 									Social activities, events, and competitions that promote involvement outside of campus.
 									</li>
 								<li>
-									Ultimately serve students at Cal State LA and those interested in the betterment of
+									Ultimately, serve students at Cal State LA and those interested in the betterment of
 									our Los Angeles community.
 									</li>
 							</ul>
 						</div>
 					</div>
+					</Jumbotron>
 					{/* </div> */}
-				</Jumbotron>
+				
 				{/* </Col>
 				</Row>
 			</Container> */}
@@ -99,7 +100,7 @@ class AboutUs extends React.Component {
 									<Col lg={6} className="offer-text">
 										<h1>What do we offer?</h1>
 										<p>We provide professional development workshops, Mini-Hackathons, and tech tours. We also invite guest speakers from Google, Lockheed Martin, JPL, and other companies. </p>
-										<p>We have excellent leadership opportunities and tutoring for students. We have social events, including hiking, game night, movie night, for students
+										<p>We have excellent leadership opportunities and tutoring for students. We have social events, including hiking, game night, and movie night, for students
             							to network with each other and destress from classes. </p>
 										<p>We know that learning takes more than just attending classes, so we have project workshops for students to gain hands-on experience.</p>
 									</Col>

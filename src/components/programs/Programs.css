@@ -10,10 +10,15 @@
     text-align: left;
     color: white;
     padding-left: 20px;
+    padding-top: 30px;
 }
 
 .programs-nav-link {
     color: white;
+}
+
+.programs-nav-link-tab {
+    outline: 1px solid white;
 }
 
 .disclaimer-body {
@@ -104,5 +109,8 @@
         min-width: 90vw;
         padding-left: 0px;
         padding-right: 0px;
+    }
+    .programs-tab-label {
+        font-size: 0.85rem;
     }
   }

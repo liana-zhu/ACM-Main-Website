@@ -2,7 +2,7 @@ import React from 'react'
 import "./Projects.css"
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-import {Button} from 'react-bootstrap'
+import {Button, Container} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
 
 class NewProject extends React.Component {
@@ -23,6 +23,7 @@ class NewProject extends React.Component {
         return (
             <div>
                 <br></br>
+                <Container fluid>
                 <b>{this.props.opener} </b>{this.props.description}<br></br><br></br>
                 
                 {button}<br></br><br></br>
@@ -33,7 +34,7 @@ class NewProject extends React.Component {
                         return <li>{value}</li>
                     })}
                 </ul>
-
+                </Container>
                 <img src={require('' + this.props.poster)} className="img-fluid project-poster" alt="project poster"></img>     
 
                 <br></br><br></br>                   
@@ -54,4 +55,4 @@ class NewProject extends React.Component {
     }
 }
 
-export default NewProject
+export default NewProject;

@@ -13,13 +13,13 @@ class Mentorship extends React.Component {
                     <img src={require("./pictures/fall2020-mentorship-flyer.png")} className="img-fluid programs-poster" alt="mentorship flyer"></img>
                     <br></br><br></br>
                     
-                    <Nav variant="tabs">
+                    <Nav variant="pills">
                         <Nav.Item>
-                            <Nav.Link className="anchor-blue" eventKey="menteeRole">Mentee</Nav.Link>
+                            <Nav.Link className="programs-nav-link-tab anchor-white" eventKey="menteeRole">Mentee</Nav.Link>
                         </Nav.Item>
                         {/* Mentor sign up */}
                         {/*<Nav.Item>
-                            <Nav.Link className="anchor-blue" eventKey="mentorRole">Mentor</Nav.Link>
+                            <Nav.Link className="programs-nav-link-tab anchor-white" eventKey="mentorRole">Mentor</Nav.Link>
                         </Nav.Item>*/}
                     </Nav>
                     <Tab.Content className="programs-tab-content">
@@ -79,4 +79,4 @@ class Mentorship extends React.Component {
     }
 }
 
-export default Mentorship
+export default Mentorship;

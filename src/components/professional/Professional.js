@@ -83,7 +83,7 @@ class Professional extends React.Component {
                 </div>
                 <Container>
             <Row className="justify-content-md-center">
-            <p className="past-events-header" style={{fontSize: '30px'}}>Upcoming Events</p>
+            <p className="events-header" style={{fontSize: '30px'}}>Upcoming Events</p>
             </Row>
                 <Row className="justify-content-md-center">
                 {
@@ -92,7 +92,7 @@ class Professional extends React.Component {
                         return (
                             <Card style={{width: '30rem', padding: '10px'}}>
                                 <center>
-                                    <img style={{height: '30rem', padding: '10px'}} src={upcomingEvents.imgUrl} />
+                                    <img style={{height: '30rem', padding: '10px'}} src={upcomingEvents.imgUrl} alt="Upcoming event"/>
                                     <p>Sign up starts: {upcomingEvents.signUpStart}</p>
                                     <Button href={upcomingEvents.link}>RSVP</Button>
                                 </center>
@@ -112,7 +112,7 @@ class Professional extends React.Component {
             }}/>
             <Container>
             <Row className="justify-content-md-center">
-            <p className="past-events-header" style={{fontSize: '30px'}}>Fall 2020 Events</p>
+            <p className="events-header" style={{fontSize: '30px'}}>Fall 2020 Events</p>
             </Row>
                 <Row className="justify-content-md-center">
                 {
@@ -139,10 +139,10 @@ class Professional extends React.Component {
             }}/>
             <Container>
                     <Row className="justify-content-md-center">
-                        <p className="past-events-header">Past Events</p>
+                        <p className="events-header">Past Events</p>
                     </Row>
                     <Row className="justify-content-md-center">
-                        <div className="past-container">
+                        <div className="events-container">
                             <Carousel
                                 swipeable={false}
                                 draggable={false}
