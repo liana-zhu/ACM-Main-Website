@@ -91,6 +91,12 @@
     margin: 15px;
 }
 
+iframe[src*=youtube] {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
 @media only screen and (max-width: 600px) {
     .quote-style-1 {
         padding-top: 30px;
@@ -112,5 +118,8 @@
     }
     .programs-tab-label {
         font-size: 0.85rem;
+    }
+    iframe[src*=youtube] {
+        min-width: 90vw;
     }
   }
