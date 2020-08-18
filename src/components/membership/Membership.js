@@ -97,7 +97,7 @@ class Membership extends React.Component {
 						</Card> */}
 						<Card>
 							<Card.Header style={{backgroundColor: "#000000"}}>
-							<Accordion.Toggle as={Card.Header} variant="link" eventKey="regular" style={{fontSize: "30px"}}
+							<Accordion.Toggle as={Card.Header} variant="link" eventKey="regular" style={{fontSize: "27px"}}
 							className="highlight-text">
 							Regular
 							</Accordion.Toggle>
@@ -110,7 +110,7 @@ class Membership extends React.Component {
 						</Card>
 						<Card>
 							<Card.Header style={{backgroundColor: "#000000"}}>
-							<Accordion.Toggle as={Card.Header} variant="link" eventKey="faculty/alumni" style={{fontSize: "30px"}}
+							<Accordion.Toggle as={Card.Header} variant="link" eventKey="faculty/alumni" style={{fontSize: "27px"}}
 							className="highlight-text">
 							Faculty/Alumni
 							</Accordion.Toggle>
