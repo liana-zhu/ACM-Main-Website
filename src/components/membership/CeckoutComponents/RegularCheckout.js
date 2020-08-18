@@ -234,6 +234,8 @@ const Regular = () => {
 								<option name="project">Minecraft Mod (Beginners)</option>
 								<option name="project">Discord Bot (Advanced)</option>
 								<option name="project">Mentorship</option>
+								<option name="project">Minecraft Mod + Mentorship</option>
+								<option name="project">Discord Bot + Mentorship</option>
 							</Form.Control>
 							<Form.Control.Feedback type="invalid">Project Choice Is Required</Form.Control.Feedback>
 						</Form.Group>
@@ -249,8 +251,9 @@ const Regular = () => {
 								<option name="hear">Recruitment Event</option>
 								<option name="hear">ENGR 1540 Recruitment</option>
 								<option name="hear">CS 1010 Recruitment</option>
+								<option name="hear">CS Presentation</option>
 								<option name="hear">ACM Leader/Member</option>
-								<option name="hear">Other</option>
+								<option name="hear">Friend</option>
 							</Form.Control>
 						</Form.Group>
 						<Form.Group as={Col}>
@@ -262,7 +265,7 @@ const Regular = () => {
 								<option name="hear">Project experience</option>
 								<option name="hear">Internship Opportunities</option>
 								<option name="hear">Scholarship Opportunities</option>
-								<option name="hear">Other</option>
+								<option name="hear">All of the above</option>
 							</Form.Control>
 						</Form.Group>
 						</Form.Row>

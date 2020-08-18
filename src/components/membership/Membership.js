@@ -110,7 +110,7 @@ class Membership extends React.Component {
 							</Carousel>
 						</div>
 						</center>
-						<Accordion defaultActiveKey="regular">
+						<Accordion>
 						{/* <Card>
 							<Card.Header style={{backgroundColor: "#000000"}}>
 							<Accordion.Toggle as={Card.Header} variant="link" eventKey="gold" style={{fontSize: "30px"}}
