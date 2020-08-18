@@ -64,7 +64,7 @@ class Programs extends React.Component {
                                             <Tab.Content className="programs-tab-content">
                                                 <Tab.Pane eventKey="F2020mentorship">
                                                     <br></br><br></br>
-                                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/zIB8AygK-TA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                    <iframe title="mentorship video" width="560" height="315" src="https://www.youtube.com/embed/zIB8AygK-TA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                                     <br></br>
                                                     <Mentorship />
                                                 </Tab.Pane>
