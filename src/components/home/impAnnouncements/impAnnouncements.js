@@ -1,6 +1,6 @@
 import React, { Component} from 'react';
 import firebase from '../../professional/firebaseConfig.js';
-import { Card, Button, Container, Row, Image } from 'react-bootstrap';
+import { Card, Button, Row } from 'react-bootstrap';
 
 import './impAnnouncements.scss';
 
