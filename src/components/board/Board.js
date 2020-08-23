@@ -99,7 +99,7 @@ class Board extends React.Component {
                       <div className="row">
                         <div className="god-saver d-lg-none"></div>
                         <h2 className="h2-leaders centered-leader">
-                          ACM 2019-2020 BOARD
+                          ACM 2020-2021 BOARD
                           </h2>
                       </div>
                       {/* Fixed format (alignment) of leaders by adding "centered-leader" to class name of each row*/}
