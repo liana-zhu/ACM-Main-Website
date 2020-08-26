@@ -91,7 +91,7 @@ const Regular = () => {
       <h2 className="text-info">How to become a member?</h2>
       <h2 className="text-info">How to become a member?</h2>
 			<h2 className="text-info">Step 1 - Click the buy for $5 Button</h2>
-			<h2 className="text-info">Step 1 - After the payment is successful, you will be redirected to a
+			<h2 className="text-info">Step 2 - After the payment is successful, you will be redirected to a
 			Google Form.</h2>
 			<h2 className="text-info">Note: If the form is not complete, we cannot verify your membership</h2>
             <center>
