@@ -62,30 +62,6 @@ const Regular = () => {
   };
 
   const handleClick = async (event) => {
-    if (formData.fName === undefined || formData.lName === undefined || formData.cin === undefined || formData.email === undefined ||
-      formData.phoneNumber === undefined || formData.gender === undefined || formData.enrollment === undefined || formData.status === undefined) {
-      window.alert("Form is not completed");
-    }
-    else {
-      window.alert("Proceding to checkout");
-      try {
-        const response = await fetch(
-          "https://v1.nocodeapi.com/acmcalstatela/google_sheets/VtBjglLwilQYLjMK?tabId=Faculty/Alumni",
-          {
-            method: "post",
-            body: JSON.stringify([[formData.fName, formData.lName, formData.cin, formData.email,
-            formData.phoneNumber, formData.gender, formData.enrollment, formData.status]]),
-            headers: {
-              "Content-Type": "application/json"
-            }
-          }
-        );
-        const json = await response.json();
-        console.log("Success:", JSON.stringify(json));
-      } catch (error) {
-        console.error("Error:", error);
-        setMessage("Error");
-      }
       // Call your backend to create the Checkout session.
       dispatch({ type: 'setLoading', payload: { loading: true } });
       // When the customer clicks on the button, redirect them to Checkout.
@@ -93,7 +69,7 @@ const Regular = () => {
       const { error } = await stripe.redirectToCheckout({
         mode: 'payment',
         lineItems: [{ price: state.priceId, quantity: state.quantity }],
-        successUrl: `${window.location.origin}/Success`,
+        successUrl: `https://docs.google.com/forms/d/e/1FAIpQLSfIwIPOHao5SAWaJNWymD9uTH-S7VaOxOMrxYt3IQjtzx8Vbg/viewform?usp=sf_link`,
         cancelUrl: `${window.location.origin}/Membership`,
       });
       // If `redirectToCheckout` fails due to a browser or network
@@ -103,7 +79,6 @@ const Regular = () => {
         dispatch({ type: 'setError', payload: { error } });
         dispatch({ type: 'setLoading', payload: { loading: false } });
       }
-    }
   };
 
   return (
@@ -114,65 +89,11 @@ const Regular = () => {
         - Receive weekly newsletters<br></br>
       </div>
       <h2 className="text-info">How to become a member?</h2>
-      <h2 className="text-info">Fill Out The Form Below</h2>
-      <Form onSubmit={handleClick}>
-        <Form.Row>
-          <Form.Group as={Col}>
-            <Form.Label>First Name</Form.Label>
-            <Form.Control onChange={handleInput} type="name" name="fName" placeholder="First Name" />
-          </Form.Group>
-
-          <Form.Group as={Col}>
-            <Form.Label>Last Name</Form.Label>
-            <Form.Control onChange={handleInput} type="name" name="lName" placeholder="Last Name" />
-          </Form.Group>
-        </Form.Row>
-        <Form.Row>
-          <Form.Group as={Col}>
-            <Form.Label>CIN</Form.Label>
-            <Form.Control onChange={handleInput} type="number" name="cin" placeholder="CIN" />
-          </Form.Group>
-
-          <Form.Group as={Col}>
-            <Form.Label>Email</Form.Label>
-            <Form.Control onChange={handleInput} type="email" name="email" placeholder="Most Used Email" />
-          </Form.Group>
-        </Form.Row>
-        <Form.Row>
-          <Form.Group as={Col}>
-            <Form.Label>Phone Number</Form.Label>
-            <Form.Control onChange={handleInput} type="number" name="phoneNumber" placeholder="Phone Number" />
-          </Form.Group>
-
-							<Form.Group as={Col}>
-							<Form.Label>Gender</Form.Label>
-							<Form.Control onChange={handleInput} as="select" defaultValue="Choose..." name="gender">
-								<option name="gender">Choose</option>
-								<option name="gender">Female</option>
-								<option name="gender">Male</option>
-								<option name="gender">Prefer Not To Say</option>
-							</Form.Control>
-						</Form.Group>
-            </Form.Row>
-						<Form.Row>
-            <Form.Group as={Col}>
-							<Form.Label>Enrollment Status</Form.Label>
-							<Form.Control onChange={handleInput} as="select" defaultValue="Choose" name="enrollment">
-								<option name="enrollment">Choose</option>
-								<option name="enrollment">Alumni</option>
-								<option name="enrollment">Faculty</option>
-							</Form.Control>
-						</Form.Group>
-						<Form.Group as={Col}>
-							<Form.Label>Membership Status</Form.Label>
-							<Form.Control onChange={handleInput} as="select" defaultValue="Choose" name="status">
-								<option name="status">Choose</option>
-								<option name="status">New Member</option>
-								<option name="status">Returning Member</option>
-							</Form.Control>
-						</Form.Group>
-            </Form.Row>
-            </Form>
+      <h2 className="text-info">How to become a member?</h2>
+			<h2 className="text-info">Step 1 - Click the buy for $5 Button</h2>
+			<h2 className="text-info">Step 2 - After the payment is successful, you will be redirected to a
+			Google Form.</h2>
+			<h2 className="text-info">Note: If the form is not complete, we cannot verify your membership</h2>
             <center>
             <h1>No Refunds</h1>
             <h6>*ADDITIONAL 50 CENTS PROCESSING FEE*</h6>
