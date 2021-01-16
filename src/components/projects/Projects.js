@@ -32,7 +32,7 @@ class Projects extends React.Component {
                 </div>
 
                 <div className="card project-card">
-                    <Tab.Container id="left-tabs-example" defaultActiveKey="fall2020projects">
+                    <Tab.Container id="left-tabs-example" defaultActiveKey="spring2021projects">
                         <Row>
                             <Col sm={2}>
                                 <Nav variant="pills" className="flex-column">
@@ -84,9 +84,9 @@ class Projects extends React.Component {
                                                 <br></br>
                                                 <Tab.Pane eventKey="S2021beginner">
                                                     <NewProject
-                                                        opener="Introducing the classic Flappy Bird game-but with a twist!"
+                                                        opener="Introducing the classic Flappy Bird game, but with a twist!"
                                                         //Description is long, but put on a single line to avoid word spacing issues
-                                                        description="Have a chance to learn about game design and how to create a user interface with the Pygame Library"
+                                                        description="Have a chance to learn about game design and how to create a user interface with the Pygame Library!"
                                                         technologies={["Python", "PyGame", "NEAT"]}
                                                         poster="./spring2021/FlappyBird Flyer.png"
                                                         linkToSignUp="https://forms.office.com/Pages/ResponsePage.aspx?id=AiCKzo9EWE-Csdhvc-Ov3Z5F1F8bCtlFj7IWFte9H9dUODJCNFo5TUhWRDVJQUNaVUk5WjYwUERPRi4u"
@@ -102,7 +102,7 @@ class Projects extends React.Component {
                                                 </Tab.Pane>
                                                 <Tab.Pane eventKey="S2021advanced">
                                                     <NewProject
-                                                        opener="Learn Flutter App Development using teh Android Studio IDE!"
+                                                        opener="Learn Flutter App Development using the Android Studio IDE!"
                                                         //Description is long, but put on a single line to avoid word spacing issues
                                                         description="Ever wanted to learn app development? Well, here is your chance to learn by using Flutter."
                                                         technologies={["Android Studio", "Dart", "Flutter", "Pub"]}
