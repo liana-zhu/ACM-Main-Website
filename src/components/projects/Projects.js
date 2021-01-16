@@ -37,6 +37,9 @@ class Projects extends React.Component {
                             <Col sm={2}>
                                 <Nav variant="pills" className="flex-column">
                                     <Nav.Item>
+                                        <Nav.Link className="project-nav-link anchor-white" eventKey="spring2021projects">Spring 2021</Nav.Link>
+                                    </Nav.Item>
+                                    <Nav.Item>
                                         <Nav.Link className="project-nav-link anchor-white" eventKey="fall2020projects">Fall 2020</Nav.Link>
                                     </Nav.Item>
                                     <Nav.Item>
@@ -65,6 +68,60 @@ class Projects extends React.Component {
                                     <span className="disclaimer"><b>3. The deadline to apply to the Spring 2020 projects is <i><span className="highlight-text">
                                     Sunday, February 9th, 2020 at 6:00 PM.</span></i></b></span><br></br>
                                     <br></br><br></br> */}
+
+                                    <Tab.Pane eventKey="spring2021projects">
+                                        <Tab.Container defaultActiveKey="S2021beginner">
+                                            <Nav className="project-tab-label" variant="pills">
+                                                <Nav.Item>
+                                                    <Nav.Link className="project-nav-link-tab anchor-white" eventKey="S2021beginner">Beginner</Nav.Link>
+                                                </Nav.Item>
+                                                <Nav.Item>
+                                                    <Nav.Link className="project-nav-link-tab anchor-white" eventKey="S2021advanced">Advanced</Nav.Link>
+                                                </Nav.Item>
+                                            </Nav>
+                                            <Tab.Content className="project-tab-content">
+                                                <br></br><br></br>
+                                                <br></br>
+                                                <Tab.Pane eventKey="S2021beginner">
+                                                    <NewProject
+                                                        opener="Introducing the classic Flappy Bird game-but with a twist!"
+                                                        //Description is long, but put on a single line to avoid word spacing issues
+                                                        description="Have a chance to learn about game design and how to create a user interface with the Pygame Library"
+                                                        technologies={["Python", "PyGame", "NEAT"]}
+                                                        poster="./spring2021/FlappyBird Flyer.png"
+                                                        linkToSignUp="https://forms.office.com/Pages/ResponsePage.aspx?id=AiCKzo9EWE-Csdhvc-Ov3Z5F1F8bCtlFj7IWFte9H9dUODJCNFo5TUhWRDVJQUNaVUk5WjYwUERPRi4u"
+                                                        // Dynamic button
+                                                        // Use '/' not '-' for dates to prevent issues on Firefox.
+                                                        // openDate="01/28/2020"
+                                                        // opentime="14:59:59"
+                                                        // deadlineDate="02/09/2020"
+                                                        // deadlineTime="17:59:59"
+                                                        projectLeadersImages={["./leaders/Jorge.jpg", "./leaders/Omar.jpg", "./leaders/Sameen.jpg", "./leaders/Daniel.jpg", "./leaders/Erica.png", "./leaders/Julio.jpg"]}
+                                                        projectLeaders={["Jorge Mata", "Omar Eclicerio", "Sameen Khan", "Daniel Ramirez", "Erica Santos", "Julio Santamaria"]}
+                                                    />
+                                                </Tab.Pane>
+                                                <Tab.Pane eventKey="S2021advanced">
+                                                    <NewProject
+                                                        opener="Learn Flutter App Development using teh Android Studio IDE!"
+                                                        //Description is long, but put on a single line to avoid word spacing issues
+                                                        description="Ever wanted to learn app development? Well, here is your chance to learn by using Flutter."
+                                                        technologies={["Android Studio", "Dart", "Flutter", "Pub"]}
+                                                        poster="./spring2021/Flutter_Flyer.png"
+                                                        linkToSignUp="https://forms.office.com/Pages/ResponsePage.aspx?id=AiCKzo9EWE-Csdhvc-Ov3Z5F1F8bCtlFj7IWFte9H9dUN1FQTUVKUk5GU081MEQ1NkFKTEc4MFJLNC4u"
+                                                        // Dynamic button
+                                                        //Use '/' not '-' for dates to prevent issues on Firefox.
+                                                        // openDate="01/28/2020"
+                                                        // opentime="14:59:59"
+                                                        // deadlineDate="02/09/2020"
+                                                        // deadlineTime="17:59:59"
+                                                        projectLeadersImages={["./leaders/Alvin.jpg", "./leaders/Gregory.jpg", "./leaders/Robert.jpg", "./leaders/DavidM.jpg", "./leaders/Adrian.jpg", "./leaders/Lillian.jpg"]}
+                                                        projectLeaders={["Alvin Lew", "Gregory Celestino", "Robert de la Costa", "David Melendez", "Adrian Lopez", "Lillian Leung"]}
+                                                    />
+                                                </Tab.Pane>
+                                            </Tab.Content>
+                                        </Tab.Container>
+                                    </Tab.Pane>
+
                                     <Tab.Pane eventKey="fall2020projects">
                                         <Tab.Container defaultActiveKey="F2020beginner">
                                             <Nav className="project-tab-label" variant="pills">
