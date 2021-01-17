@@ -88,16 +88,16 @@ class Projects extends React.Component {
                                                         //Description is long, but put on a single line to avoid word spacing issues
                                                         description="Have a chance to learn about game design and how to create a user interface with the Pygame Library!"
                                                         technologies={["Python", "PyGame", "NEAT"]}
-                                                        poster="./spring2021/FlappyBird Flyer.png"
-                                                        linkToSignUp="https://forms.office.com/Pages/ResponsePage.aspx?id=AiCKzo9EWE-Csdhvc-Ov3Z5F1F8bCtlFj7IWFte9H9dUODJCNFo5TUhWRDVJQUNaVUk5WjYwUERPRi4u"
+                                                        poster="./spring2021/FlappyBird Project.png"
+                                                        linkToSignUp="https://forms.gle/L8CWwrYDKVRaWQjo7"
                                                         // Dynamic button
                                                         // Use '/' not '-' for dates to prevent issues on Firefox.
                                                         // openDate="01/28/2020"
                                                         // opentime="14:59:59"
                                                         // deadlineDate="02/09/2020"
                                                         // deadlineTime="17:59:59"
-                                                        projectLeadersImages={["./leaders/Jorge.jpg", "./leaders/Omar.jpg", "./leaders/Sameen.jpg", "./leaders/Daniel.jpg", "./leaders/Erica.png", "./leaders/Julio.jpg"]}
-                                                        projectLeaders={["Jorge Mata", "Omar Eclicerio", "Sameen Khan", "Daniel Ramirez", "Erica Santos", "Julio Santamaria"]}
+                                                        projectLeadersImages={["./leaders/Alvin.jpg", "./leaders/Lillian.jpg", "./leaders/Gregory.jpg", "./leaders/Sean.jpg"]}
+                                                        projectLeaders={["Alvin Lew", "Lillian Leung", "Gregory Celestino", "Sean Chung"]}
                                                     />
                                                 </Tab.Pane>
                                                 <Tab.Pane eventKey="S2021advanced">
@@ -106,16 +106,16 @@ class Projects extends React.Component {
                                                         //Description is long, but put on a single line to avoid word spacing issues
                                                         description="Ever wanted to learn app development? Well, here is your chance to learn by using Flutter."
                                                         technologies={["Android Studio", "Dart", "Flutter", "Pub"]}
-                                                        poster="./spring2021/Flutter_Flyer.png"
-                                                        linkToSignUp="https://forms.office.com/Pages/ResponsePage.aspx?id=AiCKzo9EWE-Csdhvc-Ov3Z5F1F8bCtlFj7IWFte9H9dUN1FQTUVKUk5GU081MEQ1NkFKTEc4MFJLNC4u"
+                                                        poster="./spring2021/Flutter Project.png"
+                                                        linkToSignUp="https://forms.gle/GACmPqv39hLoRRqt7"
                                                         // Dynamic button
                                                         //Use '/' not '-' for dates to prevent issues on Firefox.
                                                         // openDate="01/28/2020"
                                                         // opentime="14:59:59"
                                                         // deadlineDate="02/09/2020"
                                                         // deadlineTime="17:59:59"
-                                                        projectLeadersImages={["./leaders/Alvin.jpg", "./leaders/Gregory.jpg", "./leaders/Robert.jpg", "./leaders/DavidM.jpg", "./leaders/Adrian.jpg", "./leaders/Lillian.jpg"]}
-                                                        projectLeaders={["Alvin Lew", "Gregory Celestino", "Robert de la Costa", "David Melendez", "Adrian Lopez", "Lillian Leung"]}
+                                                        projectLeadersImages={["./leaders/Jorge.jpg", "./leaders/Julio.jpg", "./leaders/Erica.png", "./leaders/Daniel.jpg", "./leaders/Robert.jpg", "./leaders/Adrian.jpg"]}
+                                                        projectLeaders={["Jorge Mata", "Julio Santamaria", "Erica Santos", "Daniel Ramirez", "Robert De La Costa", "Adrian Salgado Lopez"]}
                                                     />
                                                 </Tab.Pane>
                                             </Tab.Content>

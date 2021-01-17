@@ -33,7 +33,7 @@ class Programs extends React.Component {
                     <span className="disclaimer"><b>1. You must be a member of ACM to participate in the mentorship!</b> If you are not a member,
                     <b><i><span className="highlight-text"> you will not be allowed in.</span></i></b></span><br></br>
                     <span className="disclaimer"><b>2. Deadline to apply for the mentorship program is <span className="highlight-text">
-                        Tuesday, September 1, 2020 at 11:59pm.</span></b></span><br></br>
+                        Sunday, Feb 7, 2021 at 11:59pm.</span></b></span><br></br>
                 </div>
                 <br></br>
                 <div className="card programs-card">
@@ -41,31 +41,34 @@ class Programs extends React.Component {
                         <Row>
                             <Col sm={2}>
                                 <Nav variant="pills" className="flex-column">
-                                    <Nav.Item>
-                                        <Nav.Link className="programs-nav-link anchor-white" eventKey="first">Fall 2020</Nav.Link>
+                                <Nav.Item>
+                                        <Nav.Link className="programs-nav-link anchor-white" eventKey="first">Spring 2021</Nav.Link>
                                     </Nav.Item>
                                     <Nav.Item>
-                                        <Nav.Link className="programs-nav-link anchor-white" eventKey="second">Spring 2020</Nav.Link>
+                                        <Nav.Link className="programs-nav-link anchor-white" eventKey="second">Fall 2020</Nav.Link>
                                     </Nav.Item>
                                     <Nav.Item>
-                                        <Nav.Link className="programs-nav-link anchor-white" eventKey="third">Fall 2019</Nav.Link>
+                                        <Nav.Link className="programs-nav-link anchor-white" eventKey="third">Spring 2020</Nav.Link>
+                                    </Nav.Item>
+                                    <Nav.Item>
+                                        <Nav.Link className="programs-nav-link anchor-white" eventKey="fourth">Fall 2019</Nav.Link>
                                     </Nav.Item>
                                 </Nav>
                             </Col>
                             <Col sm={10}>
                                 <Tab.Content className="programs-tab-content">
                                     <Tab.Pane eventKey="first">
-                                        <Tab.Container defaultActiveKey="F2020mentorship">
+                                        <Tab.Container defaultActiveKey="F2021mentorship">
                                             <Nav className="programs-tab-label" variant="pills">
                                                 <Nav.Item>
-                                                    <Nav.Link className="programs-nav-link-tab anchor-white" eventKey="F2020mentorship">Mentorship</Nav.Link>
+                                                    <Nav.Link className="programs-nav-link-tab anchor-white" eventKey="F2021mentorship">Mentorship</Nav.Link>
                                                 </Nav.Item>
                                             </Nav>
                                             <Tab.Content className="programs-tab-content">
-                                                <Tab.Pane eventKey="F2020mentorship">
+                                                <Tab.Pane eventKey="F2021mentorship">
                                                     <br></br><br></br>
-                                                    <iframe title="mentorship video" width="560" height="315" src="https://www.youtube.com/embed/zIB8AygK-TA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                                    <br></br>
+                                                    {/* <iframe title="mentorship video" width="560" height="315" src="https://www.youtube.com/embed/zIB8AygK-TA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
+                                                    {/* <br></br> */}
                                                     <Mentorship />
                                                 </Tab.Pane>
                                             </Tab.Content>

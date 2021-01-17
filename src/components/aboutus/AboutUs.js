@@ -76,6 +76,9 @@ class AboutUs extends React.Component {
 							<Nav.Item>
 								<Nav.Link className="project-nav-link anchor-blue" eventKey="howtojoinacm">Join</Nav.Link>
 							</Nav.Item>
+							<Nav.Item>
+								<Nav.Link className="project-nav-link anchor-blue" eventKey="constitution">Our Constitution</Nav.Link>
+							</Nav.Item>
 						</Nav>
 						{/* </div> */}
 
@@ -118,6 +121,18 @@ class AboutUs extends React.Component {
 										<Button href="/membership">Membership</Button><br></br><br></br>
 									</Col>
 									<Col lg={5}><Image src={require('./images/fall-2019-general-meeting.jpg')} fluid /></Col>
+								</Row>
+							</Tab.Pane>
+
+							<Tab.Pane eventKey="constitution">
+								<Row className="third-row">
+									<Col lg={6} className="join-text">
+										<h1>Our Constitution</h1>
+										<p>Intrested in learning about what governs our club</p>
+										<p>We are making our constitution public for everyone to see.</p><br></br>
+										<Button href="https://drive.google.com/file/d/1Eop_ll-w1BNkqHk4QP1mzVbHZ7-TsgV9/view?usp=sharing" target="_blank">Constitution</Button><br></br><br></br>
+									</Col>
+									<Col lg={5}><Image src={require('./images/logo.png')} fluid /></Col>
 								</Row>
 							</Tab.Pane>
 
