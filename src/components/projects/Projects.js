@@ -24,10 +24,10 @@ class Projects extends React.Component {
                     <b><i><span className="highlight-text"> you will not be allowed in.</span></i></b></span><br></br>
                     <span className="disclaimer"><b>2. Space is limited, so admittance to these projects are <span className="highlight-text">first come, first served.
                     </span></b></span><br></br>
-                    <span className="disclaimer"><b>3. Project signups will open during our First General Meeting on <i><span className="highlight-text">
-                        Tuesday, September 1, 2020.</span></i></b></span><br></br>
+                    <span className="disclaimer"><b>3. Project signups will open on <i><span className="highlight-text">
+                        Monday, January 18, 2021.</span></i></b></span><br></br>
                     <span className="disclaimer"><b>4. Signup deadline for the projects is <i><span className="highlight-text">
-                        Saturday, September 5, 2020 at 11:59 PM.</span></i></b></span><br></br>
+                        Saturday, February 6, 2021 at 11:59 PM.</span></i></b></span><br></br>
                     <br></br><br></br>
                 </div>
 
