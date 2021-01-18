@@ -28,6 +28,7 @@ import Ralph2020 from "./2020-2021-leaders/Ralph.jpg";
 import Robert2020 from "./2020-2021-leaders/Robert.jpg";
 import Sameen2020 from "./2020-2021-leaders/Sameen.jpg";
 import Tracy2020 from "./2020-2021-leaders/Tracy.jpg";
+import Sean2020 from "./2020-2021-leaders/Sean.jpg";
 import Randy2020 from "./2020-2021-leaders/Randal-Moss-Advisor.JPG";
 import Wilson2020 from "./2020-2021-leaders/wilson.jpg"
 import Kalvin2020 from "./2020-2021-leaders/Kalvin.JPG";
@@ -269,9 +270,29 @@ class Board extends React.Component {
                       </div>
                       <div className="row-leaders centered-leader">
                         <div className="col-leaders">
+                          <img className="image-cropper profile-pic " src={Sean2020} alt="Sean 2020"></img>
+                          <div className="officer-info">
+                            <h2>Sean<br/>Chung</h2>Project Committee
+                            </div>
+                        </div>
+                        <div className="col-leaders">
                           <img className="image-cropper profile-pic " src={Ralph2020} alt="Ralph 2020"></img>
                           <div className="officer-info">
                             <h2>Ralph<br/>Belleca</h2>Web Committee
+                            </div>
+                        </div>
+                      </div>
+                      <div className="row-leaders centered-leader">
+                        <div className="col-leaders">
+                          <img className="image-cropper profile-pic " src={Vacant} alt="Kenny 2020"></img>
+                          <div className="officer-info">
+                            <h2>Kenny<br/>Luong</h2>Web Committee
+                            </div>
+                        </div>
+                        <div className="col-leaders">
+                          <img className="image-cropper profile-pic " src={Vacant} alt="Patrick 2020"></img>
+                          <div className="officer-info">
+                            <h2>Patrick<br/>Sangalang</h2>Web Committee
                             </div>
                         </div>
                       </div>
