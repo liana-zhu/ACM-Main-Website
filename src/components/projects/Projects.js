@@ -18,6 +18,11 @@ class Projects extends React.Component {
                     </div>
                     <div className="project-title-card"></div>
                 </div>
+                {/* 
+                Remember to update dates in the disclaimer:
+                1. Project signups open 
+                2. Signup deadline 
+                */}
                 <div className="disclaimer-body">
                     <h3 className="disclaimer_header"><b>Disclaimer!</b></h3>
                     <span className="disclaimer"><b>1. You must be a member of ACM to participate in the projects!</b> If you are not a member,
@@ -58,17 +63,14 @@ class Projects extends React.Component {
                             </Col>
                             <Col sm={10}>
                                 <Tab.Content className="project-tab-content">
-
-                                    {/* <h3><b>Disclaimer!</b></h3>
-                                    <span className="disclaimer"><b>1. You must be a member of ACM to participate in the projects!</b> If you are not a member, 
-                                    <b><i><span className="highlight-text"> you will not be allowed in.</span></i></b></span><br></br>
-                                    <span className="disclaimer"><b>2. Admittance to these projects are <span className="highlight-text">first come, first served.
-                                    </span></b> Space is limited in these projects, so you are advised to attend the First General Meeting to secure 
-                                    yourself a spot in the project of your choosing.</span><br></br>
-                                    <span className="disclaimer"><b>3. The deadline to apply to the Spring 2020 projects is <i><span className="highlight-text">
-                                    Sunday, February 9th, 2020 at 6:00 PM.</span></i></b></span><br></br>
-                                    <br></br><br></br> */}
-
+                                    {/* 
+                                    New projects go under this block of comment
+                                    Steps:
+                                    1. Copy the <Tab.Pane> under this block of comment.
+                                    2. Read and follow the block of comment under this block of comment.
+                                    3. After following the steps above, then update the page with new project information.
+                                    4. Remember to update dates in the disclaimer above.
+                                    */}
                                     <Tab.Pane eventKey="spring2021projects">
                                         <Tab.Container defaultActiveKey="S2021beginner">
                                             <Nav className="project-tab-label" variant="pills">
@@ -121,6 +123,16 @@ class Projects extends React.Component {
                                             </Tab.Content>
                                         </Tab.Container>
                                     </Tab.Pane>
+                                    {/* 
+                                    Most recent projects go under this block of comment. 
+                                    Steps: 
+                                    1. Copy the <Tab.Pane> above for the most recent projects*
+                                    2. Paste it beneath this block of comment
+                                    3. Modify it by changing it from NewProject to LegacyProject
+                                    4. Remove linkToSignUp and dynamic button. Replace it with projectImages
+                                    5. Add images to the projectImages
+                                    6. If you did everything correctly, there should be no "Join Now" button for the past projects.
+                                    */}
                                     <Tab.Pane eventKey="fall2020projects">
                                         <Tab.Container defaultActiveKey="F2020beginner">
                                             <Nav className="project-tab-label" variant="pills">
