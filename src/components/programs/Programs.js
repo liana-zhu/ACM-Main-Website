@@ -33,7 +33,7 @@ class Programs extends React.Component {
                     <span className="disclaimer"><b>1. You must be a member of ACM to participate in the mentorship!</b> If you are not a member,
                     <b><i><span className="highlight-text"> you will not be allowed in.</span></i></b></span><br></br>
                     <span className="disclaimer"><b>2. Deadline to apply for the mentorship program is <span className="highlight-text">
-                        Sunday, Feb 7, 2021 at 11:59pm.</span></b></span><br></br>
+                        Sunday, February 7, 2021 at 11:59pm.</span></b></span><br></br>
                 </div>
                 <br></br>
                 <div className="card programs-card">
@@ -58,14 +58,14 @@ class Programs extends React.Component {
                             <Col sm={10}>
                                 <Tab.Content className="programs-tab-content">
                                     <Tab.Pane eventKey="first">
-                                        <Tab.Container defaultActiveKey="F2021mentorship">
+                                        <Tab.Container defaultActiveKey="S2021mentorship">
                                             <Nav className="programs-tab-label" variant="pills">
                                                 <Nav.Item>
-                                                    <Nav.Link className="programs-nav-link-tab anchor-white" eventKey="F2021mentorship">Mentorship</Nav.Link>
+                                                    <Nav.Link className="programs-nav-link-tab anchor-white" eventKey="S2021mentorship">Mentorship</Nav.Link>
                                                 </Nav.Item>
                                             </Nav>
                                             <Tab.Content className="programs-tab-content">
-                                                <Tab.Pane eventKey="F2021mentorship">
+                                                <Tab.Pane eventKey="S2021mentorship">
                                                     <br></br><br></br>
                                                     {/* <iframe title="mentorship video" width="560" height="315" src="https://www.youtube.com/embed/zIB8AygK-TA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
                                                     {/* <br></br> */}
@@ -75,6 +75,31 @@ class Programs extends React.Component {
                                         </Tab.Container>
                                     </Tab.Pane>
                                     <Tab.Pane eventKey="second">
+                                        <Tab.Container defaultActiveKey="F2020mentorship">
+                                            <Nav className="programs-tab-label" variant="pills">
+                                                <Nav.Item>
+                                                    <Nav.Link className="programs-nav-link-tab anchor-white" eventKey="F2020mentorship">Mentorship</Nav.Link>
+                                                </Nav.Item>
+                                            </Nav>
+                                            <Tab.Content className="programs-tab-content">
+
+                                                <Tab.Pane eventKey="F2020mentorship">
+                                                    <br></br>
+                                                    <h2><span className="highlight-text">Program Description</span></h2>
+                                                    Students in the mentorship program will gain professional and academic skills. They will learn to manage their time and tackle intimidating assignments. They will have opportunities to improve their public speaking skills, which will help them gain confidence.
+                                                    They will be provided tips on internship hunting and resume/interview preparation. When students start earning money, they must manage their finances. As a result, it will be important for them to learn
+                                                    about financial responsibility and investing tips.<br></br><br></br>
+                                                    <img src={require("./pictures/fall2020-mentorship-flyer.png")} className="programs-poster" alt="mentorship flyer"></img>
+                                                    {/* <Row>
+                                                        <Col sm={4}>
+                                                            <Image src={require("./pictures/spring2020-mentorship-flyer.png")} rounded />
+                                                        </Col>
+                                                    </Row><br></br><br></br> */}
+                                                </Tab.Pane>
+                                            </Tab.Content>
+                                        </Tab.Container>
+                                    </Tab.Pane>
+                                    <Tab.Pane eventKey="third">
                                         <Tab.Container defaultActiveKey="S2020mentorship">
                                             <Nav className="programs-tab-label" variant="pills">
                                                 <Nav.Item>
@@ -100,7 +125,7 @@ class Programs extends React.Component {
                                         </Tab.Container>
                                     </Tab.Pane>
 
-                                    <Tab.Pane eventKey="third">
+                                    <Tab.Pane eventKey="fourth">
                                         <Tab.Container defaultActiveKey="F2019mentorship">
                                             <Nav className="programs-tab-label"variant="pills">
                                                 <Nav.Item>
