@@ -7,6 +7,13 @@ class Mentorship extends React.Component {
     render() {
         return (
             <div>
+                {/* Updating the mentorship page 
+                Steps:
+                1. Place the most recent mentorship flyer on a new page in the Programs.js file
+                   (Follow the block of comment with steps in the Programs.js file)
+                2. Then update Mentorship.js with the new mentorship information
+                3. Remember to update the dates in the disclaimer in the Programs.js file
+                */}
                 <Tab.Container defaultActiveKey="menteeRole">
                     <br></br>
                     <h2><b>The <span className="highlight-text">mentorship program</span> is a life-changing experience that will help you in school and prepare you for your future career.</b></h2><br></br>                   

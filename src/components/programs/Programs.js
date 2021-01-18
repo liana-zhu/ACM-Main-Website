@@ -28,6 +28,11 @@ class Programs extends React.Component {
                         </div>
                     </div>
                 </div>
+                {/* 
+                Remember to update dates in the disclaimer: 
+                1. Mentorship program signups open
+                2. Signup deadline 
+                */}
                 <div className="disclaimer-body">
                     <h3 className="disclaimer_header"><b>Disclaimer!</b></h3>
                     <span className="disclaimer"><b>1. You must be a member of ACM to participate in the mentorship!</b> If you are not a member,
@@ -74,6 +79,13 @@ class Programs extends React.Component {
                                             </Tab.Content>
                                         </Tab.Container>
                                     </Tab.Pane>
+                                    {/* Most recent mentorship program goes under this block of comment
+                                    Steps:
+                                    1. Copy a <Tab.Pane> from under this block of comment.
+                                    2. Paste it beneath this block of comment.
+                                    3. Modify it with the most recent mentorship program flyer and other information 
+                                    (You can find it from the Mentorship.js file)
+                                    */}
                                     <Tab.Pane eventKey="second">
                                         <Tab.Container defaultActiveKey="F2020mentorship">
                                             <Nav className="programs-tab-label" variant="pills">
@@ -85,6 +97,8 @@ class Programs extends React.Component {
 
                                                 <Tab.Pane eventKey="F2020mentorship">
                                                     <br></br>
+                                                    {/* <iframe title="mentorship video" width="560" height="315" src="https://www.youtube.com/embed/zIB8AygK-TA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
+                                                    {/* <br></br> */}
                                                     <h2><span className="highlight-text">Program Description</span></h2>
                                                     Students in the mentorship program will gain professional and academic skills. They will learn to manage their time and tackle intimidating assignments. They will have opportunities to improve their public speaking skills, which will help them gain confidence.
                                                     They will be provided tips on internship hunting and resume/interview preparation. When students start earning money, they must manage their finances. As a result, it will be important for them to learn
