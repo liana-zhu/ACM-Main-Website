@@ -128,7 +128,7 @@ class AboutUs extends React.Component {
 								<Row className="third-row">
 									<Col lg={6} className="join-text">
 										<h1>Our Constitution</h1>
-										<p>Intrested in learning about what governs our club</p>
+										<p>Interested in learning about what governs our club?</p>
 										<p>We are making our constitution public for everyone to see.</p><br></br>
 										<Button href="https://drive.google.com/file/d/1Eop_ll-w1BNkqHk4QP1mzVbHZ7-TsgV9/view?usp=sharing" target="_blank">Constitution</Button><br></br><br></br>
 									</Col>
