@@ -26,7 +26,7 @@ class ImpAnnouncements extends Component {
         return (
             <section className="impAnnouncements-tease">
                 <div className="content">
-                    <div className="title">Fall 2020</div>
+                    <div className="title">Academic Year 2020-2021</div>
                     <br></br>
                     <iframe title="intro video" width="560" height="315" src="https://www.youtube.com/embed/yfbfm_L74Do" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div className="description">

@@ -27,7 +27,7 @@ class Projects extends React.Component {
                     <span className="disclaimer"><b>3. Project signups will open on <i><span className="highlight-text">
                         Monday, January 18, 2021.</span></i></b></span><br></br>
                     <span className="disclaimer"><b>4. Signup deadline for the projects is <i><span className="highlight-text">
-                        Saturday, February 6, 2021 at 11:59 PM.</span></i></b></span><br></br>
+                        Saturday, February 6, 2021.</span></i></b></span><br></br>
                     <br></br><br></br>
                 </div>
 
@@ -121,7 +121,6 @@ class Projects extends React.Component {
                                             </Tab.Content>
                                         </Tab.Container>
                                     </Tab.Pane>
-
                                     <Tab.Pane eventKey="fall2020projects">
                                         <Tab.Container defaultActiveKey="F2020beginner">
                                             <Nav className="project-tab-label" variant="pills">

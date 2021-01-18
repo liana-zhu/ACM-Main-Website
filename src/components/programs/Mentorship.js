@@ -10,7 +10,7 @@ class Mentorship extends React.Component {
                 <Tab.Container defaultActiveKey="menteeRole">
                     <br></br>
                     <h2><b>The <span className="highlight-text">mentorship program</span> is a life-changing experience that will help you in school and prepare you for your future career.</b></h2><br></br>                   
-                    <img src={require("./pictures/Mentorship Program 2021.png")} className="img-fluid programs-poster" alt="mentorship flyer"></img>
+                    <img src={require("./pictures/spring2021-mentorship-flyer.png")} className="img-fluid programs-poster" alt="mentorship flyer"></img>
                     <br></br><br></br>
                     
                     <Nav variant="pills">
@@ -72,7 +72,7 @@ class Mentorship extends React.Component {
 
                         </Tab.Pane>
                     </Tab.Content>
-                    <br></br><b>The deadline to apply is <span className="highlight-text">Sunday, February 7, 2021 at 11:59pm.</span> Join our <span className="highlight-text">mentorship program</span> today before it's too late!</b><br></br><br></br>
+                    <br></br><b>The deadline to apply is <span className="highlight-text">Sunday, February 7, 2021.</span> Join our <span className="highlight-text">mentorship program</span> today before it's too late!</b><br></br><br></br>
                 
                     <Button variant="success" size="lg" href="https://forms.gle/CSdU5xJUDAPV1oEt6">Join Now!</Button>
                 </Tab.Container>
