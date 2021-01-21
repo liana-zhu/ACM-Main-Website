@@ -296,6 +296,20 @@ class Board extends React.Component {
                             </div>
                         </div>
                       </div>
+                      <div className="row-leaders centered-leader">
+                        <div className="col-leaders">
+                          <img className="image-cropper profile-pic " src={Vacant} alt="Kenny 2020"></img>
+                          <div className="officer-info">
+                            <h2>Sebastian<br/>Luna</h2>General Committee
+                            </div>
+                        </div>
+                        <div className="col-leaders">
+                          <img className="image-cropper profile-pic " src={Vacant} alt="Patrick 2020"></img>
+                          <div className="officer-info">
+                            <h2>Ashley<br/>Tran</h2>Finance Committee
+                            </div>
+                        </div>
+                      </div>
                       <div className="row">
                         <h2 className="h2-leaders">ADVISORS</h2>
                       </div>
