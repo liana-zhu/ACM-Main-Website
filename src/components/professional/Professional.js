@@ -112,7 +112,7 @@ class Professional extends React.Component {
             }}/>
             <Container>
             <Row className="justify-content-md-center">
-            <p className="events-header" style={{fontSize: '30px'}}>Fall 2020 Events</p>
+            <p className="events-header" style={{fontSize: '30px'}}>Semester Events</p>
             </Row>
                 <Row className="justify-content-md-center">
                 {
