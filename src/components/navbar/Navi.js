@@ -64,9 +64,10 @@ class Navi extends React.Component {
             </NavDropdown>
             <Nav.Link href="/events">calendar</Nav.Link>
             <Nav.Link href="/contactus">contact us</Nav.Link>
+            {/* <Nav.Link href="/portal">ACM portal</Nav.Link> */}
           </Nav>
           <Nav.Link href="/membership"><Button variant="light">Membership</Button></Nav.Link>
-          <Nav.Link href="https://calstatelaacm-portal.web.app/#/"><Button variant="light">ACM Portal</Button></Nav.Link>
+          <Nav.Link href="/portal"><Button variant="light">ACM Portal</Button></Nav.Link>
         </Navbar.Collapse>
       </Navbar>
     );
