@@ -18,6 +18,7 @@ import Board from './components/board/Board';
 import Programs from './components/programs/Programs';
 import FooterCarousel from './components/footercarousel/FooterCarousel.js';
 import Success from './components/membership/CheckoutComponents/Success.js';
+import Portal from './components/portal/Portal.js'
 
 
 class App extends React.Component {
@@ -73,6 +74,7 @@ class App extends React.Component {
           <Route path='/professional' component={Professional}/>
           <Route path='/board' component={Board}/>
           <Route path='/programs' component={Programs}/>
+          <Route path='/portal' component={Portal}/>
           <Route path='/Success' component={SuccessPage}/>
           <Route path='/discord' component={() => { window.location = 'https://discord.com/invite/wX58JRv'; return null;} }/>
         </BrowserRouter>
