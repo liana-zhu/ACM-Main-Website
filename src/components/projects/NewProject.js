@@ -12,7 +12,7 @@ class NewProject extends React.Component {
         // let button
         // const today = new Date()
         // const deadline = new Date(this.props.deadlineDate + " " + this.props.deadlineTime)
-        
+
         // if (today >= deadline) {
         //     button = <Button variant="secondary" disabled>The deadline to sign up has passed. Sorry!</Button>
         // }
@@ -24,20 +24,20 @@ class NewProject extends React.Component {
             <div>
                 <br></br>
                 <Container fluid>
-                <b>{this.props.opener} </b>{this.props.description}<br></br><br></br>
-                
+                <b>{this.props.opener} </b> <b>{this.props.description}</b><br></br><br></br>
+
                 {button}<br></br><br></br>
-                
+
                 <h2>❖ <span className="highlight-text">What you will learn:</span></h2><br></br>
-                <ul>
+                <b><ul>
                     {this.props.technologies.map((value, index) => {
                         return <li>{value}</li>
                     })}
-                </ul>
+                </ul></b>
                 </Container>
-                <img src={require('' + this.props.poster)} className="img-fluid project-poster" alt="project poster"></img>     
+                <img src={require('' + this.props.poster)} className="img-fluid project-poster" alt="project poster"></img>
 
-                <br></br><br></br>                   
+                <br></br><br></br>
 
                 <h2>❖ <span className="highlight-text">Project Leaders:</span></h2>
                 <div className="carousel">

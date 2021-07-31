@@ -18,21 +18,21 @@ class Projects extends React.Component {
                     </div>
                     <div className="project-title-card"></div>
                 </div>
-                {/* 
+                {/*
                 Remember to update dates in the disclaimer:
-                1. Project signups open 
-                2. Signup deadline 
+                1. Project signups open
+                2. Signup deadline
                 */}
                 <div className="disclaimer-body">
                     <h3 className="disclaimer_header"><b>Disclaimer!</b></h3>
-                    <span className="disclaimer"><b>1. You must be a member of ACM to participate in the projects!</b> If you are not a member,
-                    <b><i><span className="highlight-text"> you will not be allowed in.</span></i></b></span><br></br>
-                    <span className="disclaimer"><b>2. Space is limited, so admittance to these projects are <span className="highlight-text">first come, first served.
-                    </span></b></span><br></br>
-                    <span className="disclaimer"><b>3. Project signups will open on <i><span className="highlight-text">
-                        Monday, January 18, 2021.</span></i></b></span><br></br>
-                    <span className="disclaimer"><b>4. Signup deadline for the projects is <i><span className="highlight-text">
-                        Saturday, February 6, 2021.</span></i></b></span><br></br>
+                    <span className="disclaimer"><b>1. You must be a member of ACM to participate in the projects! If you are not a member,</b>
+                    <b><i> you will not be allowed in.</i></b></span><br></br>
+                    <span className="disclaimer"><b>2. Space is limited, so admittance to these projects are first come, first served.
+                    </b></span><br></br>
+                    <span className="disclaimer"><b>3. Project signups will open on <i>
+                        Monday, January 18, 2021.</i></b></span><br></br>
+                    <span className="disclaimer"><b>4. Signup deadline for the projects is <i>
+                        Saturday, February 6, 2021.</i></b></span><br></br>
                     <br></br><br></br>
                 </div>
 
@@ -63,7 +63,7 @@ class Projects extends React.Component {
                             </Col>
                             <Col sm={10}>
                                 <Tab.Content className="project-tab-content">
-                                    {/* 
+                                    {/*
                                     New projects go under this block of comment
                                     Steps:
                                     1. Copy the <Tab.Pane> under this block of comment.
@@ -82,8 +82,6 @@ class Projects extends React.Component {
                                                 </Nav.Item>
                                             </Nav>
                                             <Tab.Content className="project-tab-content">
-                                                <br></br><br></br>
-                                                <br></br>
                                                 <Tab.Pane eventKey="S2021beginner">
                                                     <NewProject
                                                         opener="Introducing the classic Flappy Bird game, but with a twist!"
@@ -123,9 +121,9 @@ class Projects extends React.Component {
                                             </Tab.Content>
                                         </Tab.Container>
                                     </Tab.Pane>
-                                    {/* 
-                                    Most recent projects go under this block of comment. 
-                                    Steps: 
+                                    {/*
+                                    Most recent projects go under this block of comment.
+                                    Steps:
                                     1. Copy the <Tab.Pane> above for the most recent projects*
                                     2. Paste it beneath this block of comment
                                     3. Modify it by changing it from NewProject to LegacyProject
