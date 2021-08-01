@@ -15,20 +15,40 @@ class Mentorship extends React.Component {
                 3. Remember to update the dates in the disclaimer in the Programs.js file
                 */}
                 <Tab.Container defaultActiveKey="menteeRole">
-                    <br></br>
-                    <h2><b>The <span className="highlight-text">mentorship program</span> is a life-changing experience that will help you in school and prepare you for your future career.</b></h2><br></br>                   
+                {/* <h2><span className="highlight-text">Program Description</span></h2><h2><b> */}
+                        <p className="program-description"><b>
+                            <h2><span className="program-description-header"><b>Program Description</b></span></h2>
+
+                            In this world, it could be a bit difficult to find some footing for a stable, independent life. Thankfully, if you are one 
+                            of these people, you are not alone. If you become a mentee in this program, a mentor can show you the ropes to
+                            not only help you on your way to landing that six-figure job, but also help you navigate the pothole-filled road called life.<br></br><br></br>
+
+                            In this program, mentees will:<br></br><br></br>
+
+                            ❖<span className="highlight-text"><b>Time Management</b></span><br/>
+                            ❖<span className="highlight-text"><b>Building your Resume, Cover Letter, Thank You Letter</b></span><br/>
+                            ❖<span className="highlight-text"><b>Behavioral and Technical Interviews</b></span><br/>
+                            ❖<span className="highlight-text"><b>Creating professional social media accounts (Handshake, LinkedIn)</b></span><br/>
+                            ❖<span className="highlight-text"><b>Technical Practices in the CS field (Agile, Waterfall)</b></span><br/>
+                            ❖<span className="highlight-text"><b>Conferences</b></span><br/>
+                            ❖<span className="highlight-text"><b>Finances</b></span><br/>
+  
+                            <br></br>The deadline to apply is Sunday, February 7, 2021. Join our mentorship program today before it's too late!<br></br>
+                        </b></p>    
+                    {/* </b></h2>                                                          */}
+                    
                     <img src={require("./pictures/spring2021-mentorship-flyer.png")} className="img-fluid programs-poster" alt="mentorship flyer"></img>
                     <br></br><br></br>
                     
-                    <Nav variant="pills">
+                    {/* <Nav variant="pills">
                         <Nav.Item>
-                            <Nav.Link className="programs-nav-link-tab anchor-white" eventKey="menteeRole">Mentee</Nav.Link>
-                        </Nav.Item>
+                            <Nav.Link className="programs-nav-link-tab anchor-white" eventKey="menteeRole">Menteer</Nav.Link>
+                        </Nav.Item> */}
                         {/* Mentor sign up */}
                         {/*<Nav.Item>
                             <Nav.Link className="programs-nav-link-tab anchor-white" eventKey="mentorRole">Mentor</Nav.Link>
                         </Nav.Item>*/}
-                    </Nav>
+                    {/* </Nav> */}
                     <Tab.Content className="programs-tab-content">
                         {/* Mentor sign up */}
                         {/*<Tab.Pane eventKey="mentorRole"><br></br>
@@ -57,31 +77,13 @@ class Mentorship extends React.Component {
                             </p>
 
                         </Tab.Pane>*/}
-                        <Tab.Pane eventKey="menteeRole"><br></br>
+                        <Tab.Pane eventKey="menteeRole">
                             {/*<img src={require('./pictures/mentee.png')} className="img-fluid mentorship-images" style={{'float': 'left'}}></img>*/}
-                            <p>
-                                In this world, it could be a bit difficult to find some footing for a stable, independent life. Thankfully, if you are one 
-                                of these people, <i><span className="highlight-text">you are not alone.</span></i> If you become a mentee in this program, a mentor can show you the ropes to
-                                not only help you on your way to landing that six-figure job, but also help you navigate the pothole-filled road called life.<br></br><br></br>
-
-                                In this program, mentees will:<br></br><br></br>
-
-                                <b className="highlight-text">
-                                    ❖ Time management<br/>
-                                    ❖ Building your Resume, Cover Letter, Thank You Letter<br/>
-                                    ❖ Behavioral and Technical Interviews<br/>
-                                    ❖ Creating professional social media accounts (Handshake, LinkedIn)<br/>
-                                    ❖ Technical Practices in the CS field (Agile, Waterfall)<br/>
-                                    ❖ Conferences<br/>
-                                    ❖ Finances<br/>
-                                </b>                                                                
-                            </p>
-
+                        
                         </Tab.Pane>
                     </Tab.Content>
-                    <br></br><b>The deadline to apply is <span className="highlight-text">Sunday, February 7, 2021.</span> Join our <span className="highlight-text">mentorship program</span> today before it's too late!</b><br></br><br></br>
                 
-                    <Button variant="success" size="lg" href="https://forms.gle/CSdU5xJUDAPV1oEt6">Join Now!</Button>
+                    <Button variant="success" size="lg" href="https://forms.gle/CSdU5xJUDAPV1oEt6">Join Now!</Button><br/>
                 </Tab.Container>
             </div>
         )

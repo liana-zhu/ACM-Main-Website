@@ -20,9 +20,9 @@ class Programs extends React.Component {
             <div className="programs-body">
                 <div className="quote-style-1 quote-bg">
                     <div className="d-flex justify-content-center">
-                        <div className="quote-block" style={{ 'margin-left': '15%', 'margin-right': '15%' }}>
+                        <div className="quote-style-1">
                             <br></br>
-                            Get involved!<br></br> Participate in our <span className="highlight-text"><i><b>mentorship!</b></i></span>
+                            <b>Get involved!<br></br> Participate in our mentorship!</b>
                             <br></br>
                             <br></br>
                         </div>
@@ -35,10 +35,8 @@ class Programs extends React.Component {
                 */}
                 <div className="disclaimer-body">
                     <h3 className="disclaimer_header"><b>Disclaimer!</b></h3>
-                    <span className="disclaimer"><b>1. You must be a member of ACM to participate in the mentorship!</b> If you are not a member,
-                    <b><i><span className="highlight-text"> you will not be allowed in.</span></i></b></span><br></br>
-                    <span className="disclaimer"><b>2. Deadline to apply for the mentorship program is <span className="highlight-text">
-                        Sunday, February 7, 2021.</span></b></span><br></br>
+                    <span className="disclaimer"><b>1. You must be a member of ACM to participate in the mentorship! If you are not a member, you will not be allowed in.</b></span><br></br>
+                    <span className="disclaimer"><b>2. Deadline to apply for the mentorship program is Sunday, February 7, 2021.</b></span><br></br>
                 </div>
                 <br></br>
                 <div className="card programs-card">
@@ -64,11 +62,12 @@ class Programs extends React.Component {
                                 <Tab.Content className="programs-tab-content">
                                     <Tab.Pane eventKey="first">
                                         <Tab.Container defaultActiveKey="S2021mentorship">
-                                            <Nav className="programs-tab-label" variant="pills">
+                                            {/* deletes the Mentorship button */}
+                                            {/* <Nav className="programs-tab-label" variant="pills">
                                                 <Nav.Item>
                                                     <Nav.Link className="programs-nav-link-tab anchor-white" eventKey="S2021mentorship">Mentorship</Nav.Link>
                                                 </Nav.Item>
-                                            </Nav>
+                                            </Nav> */}
                                             <Tab.Content className="programs-tab-content">
                                                 <Tab.Pane eventKey="S2021mentorship">
                                                     <br></br><br></br>
