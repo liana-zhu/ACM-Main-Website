@@ -6,6 +6,13 @@
     width: 100%;
 }
 
+.justify-content-md-center{
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 50px 30px ;
+  margin-bottom: 3rem;
+  margin-left: auto;
+}
+
 .events-main-text {
     height: 100%;
     width: 100%;
@@ -68,7 +75,7 @@
     display: grid;
     width: 100%;
     justify-content: center;
-} */
+}
 
 /* Semicolon at </Carousel>; is required. We must hide it */
 #semicolon {

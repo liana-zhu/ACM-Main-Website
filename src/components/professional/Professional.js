@@ -49,24 +49,6 @@ class Professional extends React.Component {
     }
 
     render() {
-        //const responsive is used for multi carousel
-        const responsive = {
-            desktop: {
-                breakpoint: { max: 3000, min: 1024 },
-                items: 4,
-                slidesToSlide: 4, // optional, default to 1.
-            },
-            tablet: {
-                breakpoint: { max: 1024, min: 464 },
-                items: 2,
-                slidesToSlide: 2, // optional, default to 1.
-            },
-            mobile: {
-                breakpoint: { max: 464, min: 0 },
-                items: 1,
-                slidesToSlide: 1, // optional, default to 1.
-            },
-        };
         return (
             <div className="events-container">
                 {/* <div><br/></div>
@@ -83,7 +65,7 @@ class Professional extends React.Component {
                 </div>
                 <Container>
             <Row className="justify-content-md-center">
-            <p className="events-header" style={{fontSize: '30px'}}>Upcoming Events</p>
+            <p className="events-header" >Upcoming Events</p>
             </Row>
                 <Row className="justify-content-md-center">
                 {
@@ -112,7 +94,7 @@ class Professional extends React.Component {
             }}/>
             <Container>
             <Row className="justify-content-md-center">
-            <p className="events-header" style={{fontSize: '30px'}}>Semester Events</p>
+            <p className="events-header">Semester Events</p>
             </Row>
                 <Row className="justify-content-md-center">
                 {
@@ -142,35 +124,16 @@ class Professional extends React.Component {
                         <p className="events-header">Past Events</p>
                     </Row>
                     <Row className="justify-content-md-center">
-                        <div className="events-container">
-                            <Carousel
-                                swipeable={false}
-                                draggable={false}
-                                //showDots={true}
-                                responsive={responsive}
-                                ssr={true} // means to render carousel on server-side.
-                                infinite={true}
-                                //autoPlay={this.props.deviceType !== "mobile" ? true : false}
-                                //autoPlaySpeed={5000}
-                                keyBoardControl={true}
-                                customTransition="all .5"
-                                transitionDuration={500}
-                                containerClass="carousel-container"
-                                deviceType={this.props.deviceType}
-                                dotListClass="custom-dot-list-style"
-                                itemClass="carousel-item-padding-40-px">
-                                <div><Image style={{ height: '30rem'}} src={require('./images/eduardo-almeida-google.png')} thumbnail /></div>
-                                <div><Image style={{ height: '30rem' }} src={require('./images/github-workshop.PNG')} thumbnail /></div>
-                                <div><Image style={{ height: '30rem' }} src={require('./images/mwd-jpl-spring-2019.png')} thumbnail /></div>
-                                <div><Image style={{ height: '30rem' }} src={require('./images/spring-2019-resume-workshop.png')} thumbnail /></div>
-                                <div><Image style={{ height: '30rem' }} src={require('./images/richard-fung-2018-google.png')} thumbnail /></div>
-                                <div><Image style={{ height: '30rem' }} src={require('./images/internship.png')} thumbnail /></div>
-                                <div><Image style={{ height: '30rem' }} src={require('./images/manny-sanchez-lockheed-spring-2019.png')} thumbnail /></div>
-                                <div><Image style={{ height: '30rem' }} src={require('./images/linkedin-handshake-workshop.png')} thumbnail /></div>
-                            </Carousel><p id="semicolon" /* Semicolon is required for Carousel*/>;</p>
-
-                        </div>
+                        <div><Image style={{ width: '375px', height: '30rem' }} src={require('./images/eduardo-almeida-google.png')} thumbnail /></div>
+                        <div><Image style={{ width: '375px', height: '30rem' }} src={require('./images/github-workshop.PNG')} thumbnail /></div>
+                        <div><Image style={{ width: '375px', height: '30rem' }} src={require('./images/mwd-jpl-spring-2019.png')} thumbnail /></div>
+                        <div><Image style={{ width: '375px', height: '30rem' }} src={require('./images/spring-2019-resume-workshop.png')} thumbnail /></div>
+                        <div><Image style={{ width: '375px', height: '30rem' }} src={require('./images/richard-fung-2018-google.png')} thumbnail /></div>
+                        <div><Image style={{ width: '375px', height: '30rem' }} src={require('./images/internship.png')} thumbnail /></div>
+                        <div><Image style={{ width: '375px', height: '30rem' }} src={require('./images/manny-sanchez-lockheed-spring-2019.png')} thumbnail /></div>
+                        <div><Image style={{ width: '375px', height: '30rem' }} src={require('./images/linkedin-handshake-workshop.png')} thumbnail /></div>
                     </Row>
+
                 </Container>
 
             </div>
