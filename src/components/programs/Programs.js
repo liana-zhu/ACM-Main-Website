@@ -1,5 +1,5 @@
 import React from 'react'
-import { Row, Col, Tab, Nav, Container} from 'react-bootstrap'
+import { Row, Col, Tab, Nav, Container } from 'react-bootstrap'
 import ModalImage from './ModalImage'
 import 'bootstrap/dist/css/bootstrap.css'
 import "./Programs.css"
@@ -17,22 +17,24 @@ class Programs extends React.Component {
 
     render() {
         return (
+
             <div className="programs-body">
+                
                 <div className="quote-style-1 quote-bg">
                     <div className="d-flex justify-content-center">
                         <div className="quote-style-1">
-                            <br></br>
-                            <b>Get involved!<br></br> Participate in our mentorship!</b>
-                            <br></br>
-                            <br></br>
+                            <b>Get involved!<br></br> 
+                            Participate in our mentorship!</b>
                         </div>
                     </div>
                 </div>
+
                 {/* 
                 Remember to update dates in the disclaimer: 
                 1. Mentorship program signups open
                 2. Signup deadline 
                 */}
+
                 <div className="disclaimer-body">
                     <h3 className="disclaimer_header"><b>Disclaimer!</b></h3>
                     <span className="disclaimer"><b>1. You must be a member of ACM to participate in the mentorship! If you are not a member, you will not be allowed in.</b></span><br></br>
@@ -44,7 +46,7 @@ class Programs extends React.Component {
                         <Row>
                             <Col sm={2}>
                                 <Nav variant="pills" className="flex-column">
-                                <Nav.Item>
+                                    <Nav.Item>
                                         <Nav.Link className="programs-nav-link anchor-white" eventKey="first">Spring 2021</Nav.Link>
                                     </Nav.Item>
                                     <Nav.Item>
@@ -140,7 +142,7 @@ class Programs extends React.Component {
 
                                     <Tab.Pane eventKey="fourth">
                                         <Tab.Container defaultActiveKey="F2019mentorship">
-                                            <Nav className="programs-tab-label"variant="pills">
+                                            <Nav className="programs-tab-label" variant="pills">
                                                 <Nav.Item>
                                                     <Nav.Link className="programs-nav-link-tab anchor-white" eventKey="F2019mentorship">Mentorship</Nav.Link>
                                                 </Nav.Item>

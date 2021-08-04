@@ -2,7 +2,8 @@
     height: 30vh;
     width: 100%;
     z-index: 2;
-    font-size: 2.5rem;
+    font-family: Roboto;
+    font-size: 3.5rem;
     color: white;
     font-weight: bold;
     line-height: 1;
@@ -11,7 +12,6 @@
     /* display: grid; */
     grid-template-rows: 1fr 1.4fr;
     padding-left: 2rem;
-    
 }
 
 .programs-card {
@@ -79,11 +79,6 @@
 
 .programs-body {
     color: white;
-}
-
-.program-description-header{
-    font-size: 20px;
-    color: #029CD7;
 }
 
 .program-description{
