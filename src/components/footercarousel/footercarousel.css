@@ -35,3 +35,15 @@
 .footer-catchy-text{
   font-size: 30px;
 }
+
+.iconHover{
+  display: inline-table;
+  cursor: pointer;
+}
+
+.iconHover:hover{
+  background: #029CD7; 
+  width: 4%;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}

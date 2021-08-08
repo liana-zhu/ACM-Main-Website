@@ -2,6 +2,7 @@ import React from 'react'
 import './footercarousel.css'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faInstagram, faFacebookF, faDiscord} from "@fortawesome/free-brands-svg-icons"
+import { Tab, Nav, Row, Col, Image, Button, Container} from 'react-bootstrap'
 
 import 'bootstrap/dist/css/bootstrap.css';
 class FooterCarousel extends React.Component {
@@ -11,10 +12,26 @@ class FooterCarousel extends React.Component {
             <div className="row bottom-container">
             <div className="col-sm footer-text">
               <div className="col-sm footer-text">
-               <a href="https://www.instagram.com/calstatela_acm/?hl=en"> <FontAwesomeIcon className="iconBrand" size="2x" icon={faInstagram}></FontAwesomeIcon></a>
-                                  <a href="https://www.facebook.com/calstatela.acm"> <FontAwesomeIcon  className="iconBrand" size="2x" icon={faFacebookF}></FontAwesomeIcon></a>
-                                  <a href="https://discordapp.com/invite/wX58JRv"><FontAwesomeIcon  className="iconBrand" size="2x" icon={faDiscord}></FontAwesomeIcon></a>
-                  <br></br><br></br>
+                <div>
+                  <div class="icons">
+                    <div class="iconHover" onclick="location.href='#'">
+                       <div class="inner">
+                          <a href="https://www.instagram.com/calstatela_acm/?hl=en"><FontAwesomeIcon className="iconBrand" size="3x" icon={faInstagram}></FontAwesomeIcon></a>
+                        </div>
+                    </div>
+                     <div class="iconHover" onclick="location.href='#'">
+                        <div class="inner">
+                          <a href="https://www.facebook.com/calstatela.acm"><FontAwesomeIcon  className="iconBrand" size="3x" icon={faFacebookF}></FontAwesomeIcon></a>
+                        </div>
+                      </div>
+                        <div class="iconHover" onclick="location.href='#'">
+                          <div class="inner">
+                            <a href="https://discordapp.com/invite/wX58JRv"><FontAwesomeIcon  className="iconBrand" size="3x" icon={faDiscord}></FontAwesomeIcon></a>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <br></br>
                   Contact us: <b>acm.calstatela@gmail.com</b><br></br>
                                 {/* Office hours: E&T C-245 3PM-4PM every <b>Thursday</b> */}
                                 There will be no office hours
