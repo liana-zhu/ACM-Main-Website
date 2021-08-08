@@ -23,23 +23,25 @@ class NewProject extends React.Component {
         return (
             <div>
                 <br></br>
-                <Container fluid>
-                <b>{this.props.opener} </b> <b>{this.props.description}</b><br></br><br></br>
-
-                {button}<br></br><br></br>
-
-                <h2>❖ <span className="highlight-text">What you will learn:</span></h2><br></br>
-                <b><ul>
-                    {this.props.technologies.map((value, index) => {
-                        return <li>{value}</li>
-                    })}
-                </ul></b>
-                </Container>
-                <img src={require('' + this.props.poster)} className="img-fluid project-poster" alt="project poster"></img>
-
+                <div class="column">
+                  <img src={require('' + this.props.poster)} className="img-fluid project-poster" alt="project poster"></img>
+                </div>
+                <div class="column2">
+                  <Container fluid>
+                  <b>{this.props.opener} </b> <b>{this.props.description}</b><br></br><br></br>
+                  <h2>❖ <span className="highlight-text">What you will learn:</span></h2>
+                  <b><ul>
+                      {this.props.technologies.map((value, index) => {
+                          return <li>{value}</li>
+                      })}
+                  </ul></b>
+                  {button}<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+                  </Container>
+                </div>
                 <br></br><br></br>
 
                 <h2>❖ <span className="highlight-text">Project Leaders:</span></h2>
+
                 <div className="carousel">
                 <Carousel infiniteLoop>
                     {this.props.projectLeadersImages.map((value, index) => {
