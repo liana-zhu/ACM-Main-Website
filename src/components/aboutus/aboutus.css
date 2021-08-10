@@ -1,5 +1,5 @@
 .about-us-card {
-  height: 60vh;
+  height: 80vh;
   background: 
   linear-gradient(
     0deg, rgba(0, 0, 0, 0.55), 
@@ -15,7 +15,6 @@
   grid-row: 1/2;
   grid-column: 2/3;
 }
-
 .about-us-text {
   height: 30vh;
   width: 100%;
@@ -27,13 +26,11 @@
   font-weight: bold;
   line-height: 1.2;
   text-align: left;
-  padding-top: 30vh;
-
+  padding-top: 32vh;
   /* display: grid; */
   grid-template-rows: 1fr 1.4fr;
   padding-left: 3rem;
 }
-
 /* Don't delete: .jumbotron affects all Jumbotrons */
 .jumbotron {
   color: white;
@@ -41,32 +38,21 @@
   margin-bottom: 0 !important;
   background-color: #1F1F1F !important;
 }
-
 .mission-statement-card {
   height: 86vh;
   background: #2B2727 no-repeat fixed;
 }
 
 .mission-statement-text {
-  /* position: absolute; */
   text-align: center;
   color: white;
-  /*padding for "OurMision"*/
-  /* padding-top: 3vh;
-  padding-left:4rem;
-  padding-right:3rem;
-  padding-bottom: 5vh;
-  margin-top: 3rem;
-  margin-right: 3rem; */
 }
 
 .mission-statement-points {
   text-align: left;
-  /* font-family: Roboto; */
   font-size: 1.25rem;
   color: white;
 }
-
 .button-row {
   width: 83.5%;
   margin-top: 60px;
@@ -81,11 +67,25 @@
   color: white;
 }
 
+
+.info-row {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.info-row .about-text li {
+  margin-bottom: 1.5rem;
+}
+
 .offer-text {
   text-align: left;
   font-size: 1.25rem;
   /* margin-left: 60px; */
   color: white;
+}
+
+.info-row .offer-text li {
+  margin-bottom: 1.5rem;
 }
 
 .join-text {
@@ -95,19 +95,11 @@
   color: white;
 }
 
-.first-row {
-  margin-top: 20px;
-  margin-bottom: 20px;
+.info-row .join-text li {
+  margin-bottom: 1.5rem;
 }
-
-.second-row {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.third-row {
-  margin-top: 20px;
-  margin-bottom: 20px;
+.info-row .join-text p {
+  margin-bottom: 1.5rem;
 }
 
 .bottom-section {
