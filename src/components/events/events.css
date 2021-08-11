@@ -17,19 +17,19 @@
 .events-text {
     /* When height: 100%, the calendar buttons do not work. Changing it to use "vh" works.*/
     /* Background-image height and events-text height affect each other when one of them changed */
-    height: 60vh;
+    height: 30vh;
     width: 100%;
     position: absolute;
     z-index: 2;
-    font-size: 4.0rem;
+    font-family: Roboto;
+    font-size: 3.5rem;
     color: white;
     font-weight: bold;
-    line-height: 1;
-
-    display: grid;
+    line-height: 1.2;
+    text-align: left;
+    padding-top: 32vh;
     grid-template-rows: 1fr 1.4fr;
     padding-left: 3rem;
-    padding-top: 140px;
 }
 /* The class name "events-main-text" doesn't work. Changing the class name makes the code work */
 .events-text p:first-of-type {
@@ -49,10 +49,15 @@
    Maybe a bug? However, after changing the class name, the changes will show. */
 .background-image {
     /* Background-image height and events-text height affect each other when one of them is changed */
-    height: 60vh;
-    background: url("./images/events-background.jpg") no-repeat center !important;
+    height: 80vh;
+    background: 
+    linear-gradient(
+    0deg, rgba(0, 0, 0, 0.55), 
+    rgba(0, 0, 0, 0.55)),
+    url("./images/events-background.jpg") no-repeat center !important;
     background-size: cover !important;
     align-self: center;
+    filter: blur(1px);
     font-size: 4.4rem;
     color: white;
     opacity: .6;

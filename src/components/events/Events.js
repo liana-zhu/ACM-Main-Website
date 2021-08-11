@@ -100,7 +100,7 @@ class Events extends React.Component {
                 <div>
                     {/* The class name "events-main-text" doesn't work. Changing the class name makes the code work */}
                     <div className="events-text">
-                        <p>Never miss an <span className="emphasis">Event</span></p>
+                        <p>Never miss an Event</p>
                     </div>
                     {/* The class name "events-main-background" doesn't work. Changing the class name makes the code work */}
                     <div className="background-image"></div>
