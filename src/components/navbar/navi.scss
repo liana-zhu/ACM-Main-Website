@@ -1,9 +1,4 @@
 .navbar {
-    // Not fixed navbar, with transparency
-    // position: absolute;
-    // background-color: transparent !important;
-    
-    // Fixed navbar with a solid color
     position: fixed;
     background-color: #1c1c1e !important;
     top: 0;
@@ -73,6 +68,10 @@
 
 .mr-auto{
     justify-content: center !important;
+}
+
+.space{
+    margin-right: 10px;
 }
 
 #logo{
