@@ -1,3 +1,42 @@
+.membership-card {
+	height: 80vh;
+	width: 100%;
+	background: 
+	linear-gradient(
+	  0deg, rgba(0, 0, 0, 0.55), 
+	  rgba(0, 0, 0, 0.55)),
+	url("../aboutus/images/fall-2019-general-meeting.jpg");
+	background-size: cover !important;
+	align-self: center;
+	filter: blur(1px);
+	font-size: 4.4rem;
+	color: white;
+	opacity: .6;
+	font-weight: bold;
+	grid-row: 1/2;
+	grid-column: 2/3;
+}
+.membership-text {
+	height: 30vh;
+	width: 100%;
+	position: absolute;
+	z-index: 2;
+	font-family: Roboto;
+	font-size: 3.5rem;
+	color: white;
+	font-weight: bold;
+	line-height: 1.2;
+	text-align: left;
+	padding-top: 32vh;
+  
+	/* display: grid; */
+	grid-template-rows: 1fr 1.4fr;
+	padding-left: 3rem;
+}
+
+.default-padding-top {
+	background-color:#1f1f1f !important;
+}
 .headerLogo{
 	width: 500px;
 }
@@ -10,8 +49,10 @@
 }
 
 .carousel_container{
-	width: 800px;
+	width: 700px;
 	height: 400px;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 }
 
 @media (max-width: 600px){
@@ -126,6 +167,7 @@ a{
 	width: 14rem;
 	height: 22rem;
 }
+
 h2{
 	padding-top: 10px;
 }
