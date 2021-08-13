@@ -21,7 +21,7 @@
     width: 100%;
     position: absolute;
     z-index: 2;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     color: white;
     font-weight: bold;
     line-height: 0.9;
@@ -85,7 +85,6 @@
 .disclaimer_header{
     font-size: 30px;
     text-align: center;
-    text-decoration: underline;
     text-decoration-color: #fff;
     color: red;
     padding-top: 10px;
@@ -95,6 +94,15 @@
     /* padding-left: 20px;
     padding-right: 20px; */
     padding: 20px;
+}
+
+.videoWrapper {
+    position:relative;
+    padding-bottom: 20px;
+    padding-left: 30%;
+    padding-right: 30%;
+    /*max-width: 90%;*/
+
 }
 
 /* Source: https://www.itsupportguides.com/knowledge-base/website-tips/how-to-make-embed-youtube-iframe-mobile-responsive/ */
@@ -128,6 +136,10 @@ iframe[src*=youtube] {
     max-width: 25rem;
 }
 
+.project-description {
+    margin-top: 1rem;
+}
+
 @media only screen and (max-width: 600px) {
     .disclaimer-body {
         padding-right: 5px;
@@ -145,6 +157,12 @@ iframe[src*=youtube] {
     }
     .project-tab-label {
         font-size: 0.85rem;
+    }
+    .videoWrapper {
+        position:relative;
+        padding-left: 10%;
+        padding-right: 10%;
+    
     }
     iframe[src*=youtube] {
         min-width: 90vw;
