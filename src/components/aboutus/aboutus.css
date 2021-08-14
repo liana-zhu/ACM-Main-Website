@@ -74,7 +74,7 @@
 }
 
 .info-row .about-text li {
-  margin-bottom: 1.5rem;
+  margin-bottom: .75rem;
 }
 
 .offer-text {
@@ -85,7 +85,7 @@
 }
 
 .info-row .offer-text li {
-  margin-bottom: 1.5rem;
+  margin-bottom: .75rem;
 }
 
 .join-text {
@@ -96,10 +96,10 @@
 }
 
 .info-row .join-text li {
-  margin-bottom: 1.5rem;
+  margin-bottom: .75rem;
 }
 .info-row .join-text p {
-  margin-bottom: 1.5rem;
+  margin-bottom: .75rem;
 }
 
 .bottom-section {

@@ -76,9 +76,6 @@ class AboutUs extends React.Component {
 											We bring together students with common passions and devotions into the field of computing.
 										</li>
 										<li>
-											We bring together students with common passions and devotions into the field of computing.
-										</li>
-										<li>
 											ACM is the world's largest educational and scientific computing society, delivering resources that advance computing as a science and a profession.
 										</li>
 										<li>
@@ -98,9 +95,6 @@ class AboutUs extends React.Component {
 										</li>
 										<li>
 											We also invite guest speakers from Google, Lockheed Martin, JPL, and other companies.
-										</li>
-										<li>
-											We have excellent leadership opportunities and tutoring for students.
 										</li>
 										<li>
 											We have social events, including hiking, game night, and movie night, for students
