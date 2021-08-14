@@ -1,4 +1,23 @@
 const IMAGES = {
+    // 2021-22 leaders
+    Daniel2021: require('./2020-2021-leaders/Daniel.jpg'),
+    Omar2021: require('./2020-2021-leaders/Omar.jpg'),
+    Lillian2021: require('./2020-2021-leaders/Lillian.jpg'),
+    Robert2021: require('../projects/leaders/Robert.jpg'),
+    Sean2021: require('./2020-2021-leaders/Sean.jpg'),
+    Nshan2021: require('../projects/leaders/Nshan.jpg'),
+    Srivats2021: require('./2020-2021-leaders/Srivats.jpg'),
+    Wilson2021: require('./2020-2021-leaders/wilson.jpg'),
+    Kalvin2021: require('./2020-2021-leaders/Kalvin.JPG'),
+    Elton2021: require('./2020-2021-leaders/Elton.jpg'),
+    Tracy2021: require('./2020-2021-leaders/Tracy.jpg'),
+    Jorge2021: require('../projects/leaders/Jorge.jpg'),
+    Anthony2021: require('../projects/leaders/Anthony.jpg'),
+    Gregory2021: require('./2020-2021-leaders/Gregory.jpg'),
+    Alvin2021: require('../projects/leaders/Alvin.jpg'),
+    Randy2021: require('./2020-2021-leaders/Randal-Moss-Advisor.JPG'),
+    Cristian2021: require('./2020-2021-leaders/Cristian.jpg'),
+
     // 2020-21 leaders
     Srivats2020: require('./2020-2021-leaders/Srivats.jpg'),
     Grace2020: require('./2020-2021-leaders/Grace.jpg'),
