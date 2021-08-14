@@ -1,8 +1,6 @@
-import React, { useReducer, useState } from 'react';
+import React, { useReducer } from 'react';
 import { loadStripe } from '@stripe/stripe-js';
 import "../membership.css"
-import Form from 'react-bootstrap/Form';
-import { Col } from 'react-bootstrap'
 
 const stripePromise = loadStripe(
 	"pk_live_51H0yOZEr4ylg7vlAnEDF4YfjfRe1VAEKjRMuW2Lh7zlMG9Lh68k4LZmuTm0RtR5MeNLJzkxUT0p53pdnQKgeIY1800N4Sipf5y");
@@ -50,18 +48,6 @@ const Regular = () => {
 		loading: false,
 		error: null,
 	});
-
-	const [formData, setFormData] = useState({});
-	// eslint-disable-next-line
-	const [message, setMessage] = useState("");
-	// eslint-disable-next-line
-	const [validated, setValidated] = useState(false);
-
-	const handleInput = e => {
-		const copyFormData = { ...formData };
-		copyFormData[e.target.name] = e.target.value;
-		setFormData(copyFormData);
-	};
 
   const handleClick = async (event) => {
 		  // Call your backend to create the Checkout session.

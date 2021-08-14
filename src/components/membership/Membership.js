@@ -33,14 +33,6 @@ class Membership extends React.Component {
 										alt="ACM Cal State LA members touring JPL"
 									/>
 								</Carousel.Item>
-								{/* <Carousel.Item>
-									<img
-									// className="d-block image"
-									className="image"
-									src={require('./images/trophy.png')} fluid
-									alt="Trophy award to ACM Cal State LA for best Student Organization Of the Year"
-									/>
-								</Carousel.Item> */}
 								<Carousel.Item>
 									<img
 										// className="d-block image"
