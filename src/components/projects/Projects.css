@@ -96,6 +96,10 @@
     padding: 20px;
 }
 
+.space {
+    margin-top: 1.5rem;
+}
+
 .videoWrapper {
     position:relative;
     padding-bottom: 20px;

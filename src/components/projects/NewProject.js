@@ -2,8 +2,7 @@ import React from 'react'
 import "./Projects.css"
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-import { Button, Container, Col } from 'react-bootstrap'
-import Jumbotron from "react-bootstrap/Jumbotron";
+import { Button, Container } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
 
 class NewProject extends React.Component {
@@ -19,14 +18,19 @@ class NewProject extends React.Component {
         // }
         // else {
         // button = <Button variant="success" href={this.props.linkToSignUp}>Click here to Sign Up!</Button>
-        // }
+        // }<img src={require('' + this.props.poster)} className="img-fluid project-poster" alt="project poster"></img>
 
         return (
             <div className="project-description">
                 <Container>
                     <div class="row justify-content-start space">
                         <div class="col-sm-1 col-md-4">
+
+
+
                             <img src={require('' + this.props.poster)} className="img-fluid project-poster" alt="project poster"></img>
+
+                            
                         </div>
                         <div class="col-sm-1 col-md-5">
                             <b>{this.props.opener} </b> <b>{this.props.description}</b><br></br><br></br>
@@ -46,9 +50,6 @@ class NewProject extends React.Component {
                         </div>
                     </div>
                 </Container>
-
-
-
                 <br></br>
 
                 <h2>❖ <span className="highlight-text">Project Leaders:</span></h2>
