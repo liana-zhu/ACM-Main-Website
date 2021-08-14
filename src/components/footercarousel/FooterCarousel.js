@@ -2,7 +2,6 @@ import React from 'react'
 import './footercarousel.css'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faInstagram, faFacebookF, faDiscord} from "@fortawesome/free-brands-svg-icons"
-import { Tab, Nav, Row, Col, Image, Button, Container} from 'react-bootstrap'
 
 import 'bootstrap/dist/css/bootstrap.css';
 class FooterCarousel extends React.Component {
