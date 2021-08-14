@@ -121,6 +121,7 @@ a:hover{
 .image-cropper {
     width: 100px;
     height: 100px;
+	object-fit: cover;
     position: relative;
     overflow: hidden;
     border-radius: 50%;
