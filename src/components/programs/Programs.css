@@ -110,6 +110,18 @@ iframe[src*=youtube] {
     max-width: 100%;
 }
 
+.point {
+    margin-left: 1rem;
+}
+
+.programs-tab-content .program-description {
+    margin-top: 2.5em;
+}
+
+.programs-tab-content .poster {
+    margin-top: 1rem;
+}
+
 @media only screen and (max-width: 600px) {
     .quote-style-1 {
         padding-top: 30px;

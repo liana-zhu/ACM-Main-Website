@@ -1,5 +1,6 @@
 import React from 'react'
-import { Row, Col, Tab, Nav, Container } from 'react-bootstrap'
+import firebase from '../professional/firebaseConfig.js';
+import { Row, Col, Tab, Nav, Container, Button } from 'react-bootstrap'
 import ModalImage from './ModalImage'
 import 'bootstrap/dist/css/bootstrap.css'
 import "./Programs.css"
@@ -14,6 +15,22 @@ class Programs extends React.Component {
             showMentorship2: false,
             showTutoring: false
         }
+    }
+    state = {
+        mentorship: null,
+    }
+
+    componentDidMount() {
+        firebase.firestore().collection("mentorship").get()
+            .then(snapshot => {
+                const events = []
+                snapshot.forEach(doc => {
+                    const data = doc.data()
+                    events.push(data)
+                })
+                this.setState({ mentorship: events })
+            })
+            .catch(error => console.log(error));
     }
 
     render() {
@@ -36,8 +53,8 @@ class Programs extends React.Component {
 
                 <div className="disclaimer-body">
                     <h3 className="disclaimer_header"><b>Disclaimer!</b></h3>
-                    <span className="disclaimer"><b>1. You must be a member of ACM to participate in the mentorship! If you are not a member, you will not be allowed in.</b></span><br></br>
-                    <span className="disclaimer"><b>2. Deadline to apply for the mentorship program is Sunday, February 7, 2021.</b></span><br></br>
+                    <p><span className="disclaimer"><b>1. You must be a member of ACM to participate in the mentorship! If you are not a member, you will not be allowed in.</b></span></p>
+                    <p><span className="disclaimer"><b>2. Deadline to apply for the mentorship program is Sunday, February 7, 2021.</b></span></p>
                 </div>
                 <br></br>
                 <div className="card programs-card">
@@ -64,6 +81,8 @@ class Programs extends React.Component {
                             </Col>
                             <Col sm={10}>
                                 <Tab.Content className="programs-tab-content">
+
+
                                     <Tab.Pane eventKey="first">
                                         <Tab.Container defaultActiveKey="F2021mentorship">
                                             {/* deletes the Mentorship button */}
@@ -72,27 +91,60 @@ class Programs extends React.Component {
                                                     <Nav.Link className="programs-nav-link-tab anchor-white" eventKey="S2021mentorship">Mentorship</Nav.Link>
                                                 </Nav.Item>
                                             </Nav> */}
+
                                             <Tab.Content className="programs-tab-content">
+
                                                 <Tab.Pane eventKey="F2021mentorship">
-                                                    {/* <iframe title="mentorship video" width="560" height="315" src="https://www.youtube.com/embed/zIB8AygK-TA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
-                                                    {/* <br></br> */}
-                                                    <Mentorship flyer={flyerS2021} />
+                                                    <div>
+                                                        <Tab.Container defaultActiveKey="menteeRole">
+                                                            <p>
+                                                                <h2><span className="highlight-text"><b>Program Description</b></span></h2>
+                                                                <p>
+                                                                    In this world, it could be a bit difficult to find some footing for a stable, independent life. Thankfully, if you are one
+                                                                    of these people, you are not alone. If you become a mentee in this program, a mentor can show you the ropes to
+                                                                    not only help you on your way to landing that six-figure job, but also help you navigate the pothole-filled road called life.
+                                                                </p>
+                                                                <p className="program-description">
+                                                                    In this program, mentees will:
+                                                                </p>
+                                                                <p className=""> ❖<span className="highlight-text point"><b>Time Management</b></span><br />
+                                                                    ❖<span className="highlight-text point"><b>Building your Resume, Cover Letter, Thank You Letter</b></span><br />
+                                                                    ❖<span className="highlight-text point"><b>Behavioral and Technical Interviews</b></span><br />
+                                                                    ❖<span className="highlight-text point"><b>Creating professional social media accounts (Handshake, LinkedIn)</b></span><br />
+                                                                    ❖<span className="highlight-text point"><b>Technical Practices in the CS field (Agile, Waterfall)</b></span><br />
+                                                                    ❖<span className="highlight-text point"><b>Conferences</b></span><br />
+                                                                    ❖<span className="highlight-text point"><b>Finances</b></span><br />
+                                                                </p>
+
+
+                                                                <p className="program-description">The deadline to apply is Sunday, February 7, 2021. Join our mentorship program today before it's too late!</p>
+                                                            </p>
+                                                            {
+                                                                this.state.mentorship &&
+                                                                this.state.mentorship.map(mentorship => {
+                                                                    return (
+                                                                        <img src={mentorship.imgUrl} className="img-fluid programs-poster" alt="mentorship flyer"></img>
+                                                                    )
+                                                                })
+                                                            }
+                                                            <Tab.Content className="programs-tab-content poster">
+                                                                <Tab.Pane eventKey="menteeRole">
+                                                                </Tab.Pane>
+                                                            </Tab.Content>
+                                                            <Button variant="success" size="lg" href="https://forms.gle/CSdU5xJUDAPV1oEt6">Join Now!</Button><br />
+                                                        </Tab.Container>
+                                                    </div>
                                                 </Tab.Pane>
                                             </Tab.Content>
                                         </Tab.Container>
                                     </Tab.Pane>
+
+
                                     <Tab.Pane eventKey="second">
                                         <Tab.Container defaultActiveKey="S2021mentorship">
-                                            {/* deletes the Mentorship button */}
-                                            {/* <Nav className="programs-tab-label" variant="pills">
-                                                <Nav.Item>
-                                                    <Nav.Link className="programs-nav-link-tab anchor-white" eventKey="S2021mentorship">Mentorship</Nav.Link>
-                                                </Nav.Item>
-                                            </Nav> */}
+
                                             <Tab.Content className="programs-tab-content">
                                                 <Tab.Pane eventKey="S2021mentorship">
-                                                    {/* <iframe title="mentorship video" width="560" height="315" src="https://www.youtube.com/embed/zIB8AygK-TA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
-                                                    {/* <br></br> */}
                                                     <Mentorship flyer={flyerS2021} />
                                                 </Tab.Pane>
                                             </Tab.Content>
