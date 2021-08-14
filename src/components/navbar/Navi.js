@@ -4,7 +4,12 @@ import 'bootstrap/dist/css/bootstrap.css';
 import logo from './acmlogo1.png';
 import { Navbar, NavDropdown, Nav, Button } from 'react-bootstrap'
 
+//import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+//import { faInstagram, faFacebookF, faSnapchatGhost } from "@fortawesome/free-brands-svg-icons"
+
+
 class Navi extends React.Component {
+
   render() {
     return (
       <Navbar collapseOnSelect fixed="top" id="navb" expand="lg" variant="dark">
@@ -29,12 +34,11 @@ class Navi extends React.Component {
               <NavDropdown.Item href="/programs"><div className="nav-dropdown-text">mentorship</div></NavDropdown.Item>
               <NavDropdown.Item href="/professional"><div className="nav-dropdown-text">professional workshops</div></NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="/events" className="space">calendar</Nav.Link>
+            <Nav.Link href="/events">calendar</Nav.Link>
             <Nav.Link href="/contactus">contact us</Nav.Link>
-            {/* <Nav.Link href="/portal">ACM portal</Nav.Link> */}
           </Nav>
           <Nav.Link href="/membership"><Button variant="light">Membership</Button></Nav.Link>
-          <Nav.Link href="/portal"><Button variant="light">ACM Portal</Button></Nav.Link>
+          <Nav.Link href="https://calstatelaacm-portal.web.app/#/"><Button variant="light">ACM Portal</Button></Nav.Link>
         </Navbar.Collapse>
       </Navbar>
     );
