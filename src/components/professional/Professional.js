@@ -8,7 +8,6 @@ To install, go to project directory and run this on command line:
 $ npm install react-multi-carousel --save
 */
 //Imports for multi carousel
-import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 // This component won't hold a state for not but decided
@@ -42,6 +41,8 @@ class Professional extends React.Component {
         })
         .catch(error => console.log(error))
     }
+
+    
 
 
     test() {
