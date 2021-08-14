@@ -1,12 +1,50 @@
 import React from 'react'
-import { Row, Col, Tab, Nav } from 'react-bootstrap'
+import firebase from '../professional/firebaseConfig.js';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
+import { Row, Col, Tab, Nav, Button, Container } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
 import "./Projects.css"
 import LegacyProject from './LegacyProject'
 import NewProject from './NewProject'
 
 class Projects extends React.Component {
+    state = {
+        beginnerProject: null,
+    }
+
+    componentDidMount() {
+        firebase.firestore().collection("beginnerProject").get()
+            .then(snapshot => {
+                const project = []
+                snapshot.forEach(doc => {
+                    const data = doc.data()
+                    project.push(data)
+                })
+                this.setState({ beginnerProject: project })
+            })
+            .catch(error => console.log(error));
+
+        firebase.firestore().collection("advanceProject").get()
+            .then(snapshot => {
+                const project = []
+                snapshot.forEach(doc => {
+                    const data = doc.data()
+                    project.push(data)
+                })
+                this.setState({ advanceProject: project })
+            })
+            .catch(error => console.log(error));
+    }
+
     render() {
+        let buttonB = <Button variant="success" size="lg" href="https://forms.gle/bu8YRaxLFfTDXppN7">Join Now!</Button>
+        let projectLeaderImageB = ["./leaders/Sean.jpg", "./leaders/Robert.jpg", "./leaders/Lillian.jpg", "./leaders/Nshan.jpg"]
+        let projectLeaderNameB = ["Sean", "Robert De La Costa", "Lillian", "Nshan Kazaryan"]
+
+        let buttonA = <Button variant="success" size="lg" href="https://forms.gle/egU7m8ra9XXh5NJ59">Join Now!</Button>
+        let projectLeaderImageA = ["./leaders/Elton.JPG", "./leaders/Omar.jpg"]
+        let projectLeaderNameA = ["Elton Lin", " Omar Eclicerio"]
 
         return (
 
@@ -37,8 +75,8 @@ class Projects extends React.Component {
                 </div>
 
                 <div className="videoWrapper">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item"
+                    <div className="embed-responsive embed-responsive-16by9">
+                        <iframe className="embed-responsive-item"
                             src="https://www.youtube.com/embed/yfbfm_L74Do"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
@@ -96,42 +134,110 @@ class Projects extends React.Component {
                                             </Nav>
                                             <Tab.Content className="project-tab-content">
                                                 <Tab.Pane eventKey="F2021beginner">
-                                                    <NewProject
-                                                        opener="Learn how to create a website of your own from scratch!"
-                                                        //Description is long, but put on a single line to avoid word spacing issues
-                                                        description="Concepts such as Website Design, Structure, Functionality, Animated and Dynamic objects will be enfored throughout each workshop!"
-                                                        technologies={["Visual Studio Code", "HTML", "CSS"]}
-                                                        poster="./spring2021/FlappyBird Project.png"
-                                                        linkToSignUp="https://forms.gle/L8CWwrYDKVRaWQjo7"
-                                                        projectDeadline="Signup deadline for the Fall 2021 projects is Saturday, September 11, 2021"
-                                                        // Dynamic button
-                                                        // Use '/' not '-' for dates to prevent issues on Firefox.
-                                                        // openDate="01/28/2020"
-                                                        // opentime="14:59:59"
-                                                        // deadlineDate="02/09/2020"
-                                                        // deadlineTime="17:59:59"
-                                                        projectLeadersImages={["./leaders/Alvin.jpg", "./leaders/Lillian.jpg", "./leaders/Gregory.jpg", "./leaders/Sean.jpg"]}
-                                                        projectLeaders={["Alvin Lew", "Lillian Leung", "Gregory Celestino", "Sean Chung"]}
-                                                    />
+
+
+
+                                                    <div className="project-description">
+                                                        <Container>
+                                                            <div class="row justify-content-start space">
+                                                                <div class="col-sm-1 col-md-4">
+
+                                                                    {
+                                                                        this.state.beginnerProject &&
+                                                                        this.state.beginnerProject.map(beginnerProject => {
+                                                                            return (
+                                                                                <img src={beginnerProject.imgUrl} className="img-fluid programs-poster" alt="project poster"></img>
+                                                                            )
+                                                                        })
+                                                                    }
+
+                                                                </div>
+                                                                <div class="col-sm-1 col-md-5">
+                                                                    <b><p>Learn how to create a website of your own from scratch!</p> </b> <b><p>Concepts such as Website Design, Structure, Functionality, Animated and Dynamic objects will be enfored throughout each workshop!</p></b><br></br><br></br>
+
+                                                                    <b><p>Signup deadline for the Fall 2021 projects is Saturday, September 11, 2021</p></b> <br></br><br></br>
+
+                                                                    {buttonB}<br></br><br></br>
+
+                                                                    <h2>❖ <span className="highlight-text">What you will learn:</span></h2>
+
+                                                                    <b><ul>
+                                                                        <li>Visual Studio Code</li>
+                                                                        <li>HTML</li>
+                                                                        <li>CSS</li>
+
+
+                                                                    </ul></b>
+                                                                </div>
+                                                            </div>
+                                                        </Container>
+                                                        <br></br>
+
+                                                        <h2>❖ <span className="highlight-text">Project Leaders:</span></h2>
+                                                        <br></br>
+                                                        <div className="carousel">
+                                                            <Carousel infiniteLoop>
+                                                                {projectLeaderImageB.map((value, index) => {
+                                                                    return <div>
+                                                                        <img className='carousel-leader-image' src={require('' + value)} alt="leader" />
+                                                                        <p className="legend">{projectLeaderNameB[index]}</p>
+                                                                    </div>
+                                                                })}
+                                                            </Carousel>
+                                                        </div>
+                                                    </div>
                                                 </Tab.Pane>
                                                 <Tab.Pane eventKey="F2021advanced">
-                                                    <NewProject
-                                                        opener="Learn Video Game Development using the Unity game engine and the Visual Studio IDE!"
-                                                        //Description is long, but put on a single line to avoid word spacing issues
-                                                        description="Code and build your own desktop version of Pacman. Learn to create a beloved arcade video game from scratch!"
-                                                        technologies={["Unity", "Visual", "C#"]}
-                                                        poster="./spring2021/Flutter Project.png"
-                                                        linkToSignUp="https://forms.gle/GACmPqv39hLoRRqt7"
-                                                        projectDeadline="Signup deadline for the Fall 2021 projects is Saturday, September 11, 2021"
-                                                        // Dynamic button
-                                                        //Use '/' not '-' for dates to prevent issues on Firefox.
-                                                        // openDate="01/28/2020"
-                                                        // opentime="14:59:59"
-                                                        // deadlineDate="02/09/2020"
-                                                        // deadlineTime="17:59:59"
-                                                        projectLeadersImages={["./leaders/Jorge.jpg", "./leaders/Julio.jpg", "./leaders/Erica.png", "./leaders/Daniel.jpg", "./leaders/Robert.jpg", "./leaders/Adrian.jpg"]}
-                                                        projectLeaders={["Jorge Mata", "Julio Santamaria", "Erica Santos", "Daniel Ramirez", "Robert De La Costa", "Adrian Salgado Lopez"]}
-                                                    />
+                                                    <div className="project-description">
+                                                        <Container>
+                                                            <div class="row justify-content-start space">
+                                                                <div class="col-sm-1 col-md-4">
+
+                                                                    {
+                                                                        this.state.advanceProject &&
+                                                                        this.state.advanceProject.map(advanceProject => {
+                                                                            return (
+                                                                                <img src={advanceProject.imgUrl} className="img-fluid programs-poster" alt="project poster"></img>
+                                                                            )
+                                                                        })
+                                                                    }
+
+                                                                </div>
+                                                                <div class="col-sm-1 col-md-5">
+                                                                    <b><p>Learn Video Game Development using the Unity game engine and the Visual Studio IDE!</p> </b> <b><p>Code and build your own desktop version of Pacman. Learn to create a beloved arcade video game from scratch!</p></b><br></br><br></br>
+
+                                                                    <b><p>Signup deadline for the Fall 2021 projects is Saturday, September 11, 2021</p></b> <br></br><br></br>
+
+                                                                    {buttonA}<br></br><br></br>
+
+                                                                    <h2>❖ <span className="highlight-text">What you will learn:</span></h2>
+
+                                                                    <b><ul>
+                                                                        <li>Unity</li>
+                                                                        <li>Visual</li>
+                                                                        <li>C#</li>
+
+
+                                                                    </ul></b>
+                                                                </div>
+                                                            </div>
+                                                        </Container>
+                                                        <br></br>
+
+                                                        <h2>❖ <span className="highlight-text">Project Leaders:</span></h2>
+                                                        <br></br>
+                                                        <div className="carousel">
+                                                            <Carousel infiniteLoop>
+                                                                {projectLeaderImageA.map((value, index) => {
+                                                                    return <div>
+                                                                        <img className='carousel-leader-image' src={require('' + value)} alt="leader" />
+                                                                        <p className="legend">{projectLeaderNameA[index]}</p>
+                                                                    </div>
+                                                                })}
+                                                            </Carousel>
+                                                        </div>
+                                                    </div>
+                                                    
                                                 </Tab.Pane>
                                             </Tab.Content>
                                         </Tab.Container>
