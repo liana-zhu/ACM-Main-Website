@@ -47,7 +47,6 @@ class Projects extends React.Component {
         let projectLeaderNameA = ["Elton Lin", " Omar Eclicerio"]
 
         return (
-
             <div className="project-body">
                 <div>
                     <div className="project-title-text">
@@ -69,9 +68,9 @@ class Projects extends React.Component {
                     <span className="disclaimer"><b>2. Space is limited, so admittance to these projects are first come, first served.
                     </b></span><br></br>
                     <span className="disclaimer"><b>3. Project signups will open on <i>
-                        Monday, August 18, 2021.</i></b></span><br></br>
+                        Friday, August 27, 2021.</i></b></span><br></br>
                     <span className="disclaimer"><b>4. Signup deadline for the projects is <i>
-                        Friday, September 3, 2021.</i></b></span><br></br>
+                        Saturday, September 4, 2021.</i></b></span><br></br>
                 </div>
 
                 <div className="videoWrapper">
@@ -140,7 +139,9 @@ class Projects extends React.Component {
                                                     <div className="project-description">
                                                         <Container>
                                                             <div class="row justify-content-start space">
-                                                                <div class="col-sm-1 col-md-4">
+
+
+                                                                <div class="col-xs-1 col-sm-6 col-md-5 col-lg-4">
 
                                                                     {
                                                                         this.state.beginnerProject &&
@@ -152,7 +153,9 @@ class Projects extends React.Component {
                                                                     }
 
                                                                 </div>
-                                                                <div class="col-sm-1 col-md-5">
+
+
+                                                                <div class="col-xs-1 col-sm-3 col-md-4 col-lg-5">
                                                                     <b><p>Learn how to create a website of your own from scratch!</p> </b> <b><p>Concepts such as Website Design, Structure, Functionality, Animated and Dynamic objects will be enfored throughout each workshop!</p></b><br></br><br></br>
 
                                                                     <b><p>Signup deadline for the Fall 2021 projects is Saturday, September 11, 2021</p></b> <br></br><br></br>

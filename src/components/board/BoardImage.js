@@ -12,13 +12,13 @@ const IMAGES = {
     Elton2021: require('./2020-2021-leaders/Elton.jpg'),
     Tracy2021: require('./2020-2021-leaders/Tracy.jpg'),
     Jorge2021: require('../projects/leaders/Jorge.jpg'),
-    Anthony2021: require('../projects/leaders/Anthony.jpg'),
     Gregory2021: require('./2020-2021-leaders/Gregory.jpg'),
     Alvin2021: require('../projects/leaders/Alvin.jpg'),
     Randy2021: require('./2020-2021-leaders/Randal-Moss-Advisor.JPG'),
     Cristian2021: require('./2020-2021-leaders/Cristian.jpg'),
     Patrick2021: require('./2020-2021-leaders/Patrick.jpg'),
     Ashley2021: require('./2020-2021-leaders/Ashley.jpg'),
+    Nidhi2021: require('./2020-2021-leaders/Nidhi.jpg'),
 
     // 2020-21 leaders
     Srivats2020: require('./2020-2021-leaders/Srivats.jpg'),

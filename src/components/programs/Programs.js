@@ -54,7 +54,7 @@ class Programs extends React.Component {
                 <div className="disclaimer-body">
                     <h3 className="disclaimer_header"><b>Disclaimer!</b></h3>
                     <p><span className="disclaimer"><b>1. You must be a member of ACM to participate in the mentorship! If you are not a member, you will not be allowed in.</b></span></p>
-                    <p><span className="disclaimer"><b>2. Deadline to apply for the mentorship program is Wednesday, September 1, 2021.</b></span></p>
+                    <p><span className="disclaimer"><b>2. Deadline to apply for the mentorship program is Tuesday, August 31, 2021.</b></span></p>
                 </div>
                 <br></br>
                 <div className="card programs-card">
@@ -85,13 +85,13 @@ class Programs extends React.Component {
 
                                     <Tab.Pane eventKey="first">
                                         <Tab.Container defaultActiveKey="F2021mentorship">
-                                            {/* deletes the Mentorship button */}
-                                            {/* <Nav className="programs-tab-label" variant="pills">
-                                                <Nav.Item>
-                                                    <Nav.Link className="programs-nav-link-tab anchor-white" eventKey="S2021mentorship">Mentorship</Nav.Link>
-                                                </Nav.Item>
-                                            </Nav> */}
-
+                                            {/* Most recent mentorship program goes under this block of comment
+                                    Steps:
+                                    1. Copy a <Tab.Pane> from under this block of comment.
+                                    2. Paste it beneath this block of comment.
+                                    3. Modify it with the most recent mentorship program flyer and other information 
+                                    (You can find it from the Mentorship.js file)
+                                    */}
                                             <Tab.Content className="programs-tab-content">
 
                                                 <Tab.Pane eventKey="F2021mentorship">
@@ -107,7 +107,8 @@ class Programs extends React.Component {
                                                                 <p className="program-description">
                                                                     In this program, mentees will:
                                                                 </p>
-                                                                <p className=""> ❖<span className="highlight-text point"><b>Time Management</b></span><br />
+                                                                <p>
+                                                                    ❖<span className="highlight-text point"><b>Time Management</b></span><br />
                                                                     ❖<span className="highlight-text point"><b>Building your Resume, Cover Letter, Thank You Letter</b></span><br />
                                                                     ❖<span className="highlight-text point"><b>Behavioral and Technical Interviews</b></span><br />
                                                                     ❖<span className="highlight-text point"><b>Creating professional social media accounts (Handshake, LinkedIn)</b></span><br />
@@ -117,7 +118,7 @@ class Programs extends React.Component {
                                                                 </p>
 
 
-                                                                <p className="program-description">The deadline to apply is Saturday, September 4, 2021. Join our mentorship program today before it's too late!</p>
+                                                                <p className="program-description">The deadline to apply is Tuesday, August 31, 2021. Join our mentorship program today before it's too late!</p>
                                                             </p>
                                                             {
                                                                 this.state.mentorship &&
@@ -131,7 +132,7 @@ class Programs extends React.Component {
                                                                 <Tab.Pane eventKey="menteeRole">
                                                                 </Tab.Pane>
                                                             </Tab.Content>
-                                                            <Button variant="success" size="lg" href="https://forms.gle/CSdU5xJUDAPV1oEt6">Join Now!</Button><br />
+                                                            <Button variant="success" size="lg" href="https://forms.gle/E4PMfBcA4WjPDZBeA ">Join Now!</Button><br />
                                                         </Tab.Container>
                                                     </div>
                                                 </Tab.Pane>
@@ -150,13 +151,6 @@ class Programs extends React.Component {
                                             </Tab.Content>
                                         </Tab.Container>
                                     </Tab.Pane>
-                                    {/* Most recent mentorship program goes under this block of comment
-                                    Steps:
-                                    1. Copy a <Tab.Pane> from under this block of comment.
-                                    2. Paste it beneath this block of comment.
-                                    3. Modify it with the most recent mentorship program flyer and other information 
-                                    (You can find it from the Mentorship.js file)
-                                    */}
                                     <Tab.Pane eventKey="third">
                                         <Tab.Container defaultActiveKey="F2020mentorship">
                                             <Nav className="programs-tab-label" variant="pills">
