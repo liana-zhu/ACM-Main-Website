@@ -69,9 +69,9 @@ class Projects extends React.Component {
                     <span className="disclaimer"><b>2. Space is limited, so admittance to these projects are first come, first served.
                     </b></span><br></br>
                     <span className="disclaimer"><b>3. Project signups will open on <i>
-                        Monday, January 18, 2021.</i></b></span><br></br>
+                        Monday, August 18, 2021.</i></b></span><br></br>
                     <span className="disclaimer"><b>4. Signup deadline for the projects is <i>
-                        Saturday, February 6, 2021.</i></b></span><br></br>
+                        Friday, September 3, 2021.</i></b></span><br></br>
                 </div>
 
                 <div className="videoWrapper">

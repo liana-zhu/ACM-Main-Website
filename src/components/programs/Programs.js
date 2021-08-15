@@ -54,7 +54,7 @@ class Programs extends React.Component {
                 <div className="disclaimer-body">
                     <h3 className="disclaimer_header"><b>Disclaimer!</b></h3>
                     <p><span className="disclaimer"><b>1. You must be a member of ACM to participate in the mentorship! If you are not a member, you will not be allowed in.</b></span></p>
-                    <p><span className="disclaimer"><b>2. Deadline to apply for the mentorship program is Saturday, September 4, 2021.</b></span></p>
+                    <p><span className="disclaimer"><b>2. Deadline to apply for the mentorship program is Wednesday, September 1, 2021.</b></span></p>
                 </div>
                 <br></br>
                 <div className="card programs-card">
