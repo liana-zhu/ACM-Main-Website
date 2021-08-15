@@ -44,6 +44,7 @@ class ImpAnnouncements extends Component {
                                         <center>
                                             <img style={{height: '30rem', padding: '10px'}} src={upcomingEvents.imgUrl} alt="Upcoming event"/>
                                             <p>Sign up starts: {upcomingEvents.signUpStart}</p>
+                                            <p>Sign up Deadline: {upcomingEvents.deadline}</p>
                                             <Button href={upcomingEvents.link} style={{backgroundColor: '#0A84FF'}}>RSVP</Button>
                                         </center>
                                     </Card>

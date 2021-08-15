@@ -72,6 +72,7 @@ class Professional extends React.Component {
                                 <center>
                                     <img style={{height: '30rem', padding: '10px'}} src={upcomingEvents.imgUrl} alt="Upcoming event"/>
                                     <p>Sign up starts: {upcomingEvents.signUpStart}</p>
+                                    <p>Sign up Deadline: {upcomingEvents.deadline}</p>
                                     <Button href={upcomingEvents.link}>RSVP</Button>
                                 </center>
                             </Card>

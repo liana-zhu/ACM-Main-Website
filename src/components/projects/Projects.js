@@ -39,12 +39,12 @@ class Projects extends React.Component {
 
     render() {
         let buttonB = <Button variant="success" size="lg" href="https://forms.gle/bu8YRaxLFfTDXppN7">Join Now!</Button>
-        let projectLeaderImageB = ["./leaders/Sean.jpg", "./leaders/Robert.jpg", "./leaders/Lillian.jpg", "./leaders/Nshan.jpg"]
-        let projectLeaderNameB = ["Sean", "Robert De La Costa", "Lillian", "Nshan Kazaryan"]
+        let projectLeaderImageB = ["./leaders/Sean.jpg", "./leaders/Robert.jpg", "./leaders/Lillian.jpg", "./leaders/Nshan.jpg", "./leaders/Jorge.jpg"]
+        let projectLeaderNameB = ["Sean", "Robert De La Costa", "Lillian", "Nshan Kazaryan", "Jorge Mata"]
 
         let buttonA = <Button variant="success" size="lg" href="https://forms.gle/egU7m8ra9XXh5NJ59">Join Now!</Button>
-        let projectLeaderImageA = ["./leaders/Elton.JPG", "./leaders/Omar.jpg"]
-        let projectLeaderNameA = ["Elton Lin", " Omar Eclicerio"]
+        let projectLeaderImageA = ["./leaders/Omar.jpg", "./leaders/Jorge.jpg"]
+        let projectLeaderNameA = ["Omar Eclicerio", "Jorge Mata"]
 
         return (
             <div className="project-body">
@@ -158,7 +158,7 @@ class Projects extends React.Component {
                                                                 <div class="col-xs-1 col-sm-3 col-md-4 col-lg-5">
                                                                     <b><p>Learn how to create a website of your own from scratch!</p> </b> <b><p>Concepts such as Website Design, Structure, Functionality, Animated and Dynamic objects will be enfored throughout each workshop!</p></b><br></br><br></br>
 
-                                                                    <b><p>Signup deadline for the Fall 2021 projects is Saturday, September 11, 2021</p></b> <br></br><br></br>
+                                                                    <b><p>Signup deadline for the Fall 2021 projects is Saturday, September 4, 2021</p></b> <br></br><br></br>
 
                                                                     {buttonB}<br></br><br></br>
 
@@ -209,7 +209,7 @@ class Projects extends React.Component {
                                                                 <div class="col-sm-1 col-md-5">
                                                                     <b><p>Learn Video Game Development using the Unity game engine and the Visual Studio IDE!</p> </b> <b><p>Code and build your own desktop version of Pacman. Learn to create a beloved arcade video game from scratch!</p></b><br></br><br></br>
 
-                                                                    <b><p>Signup deadline for the Fall 2021 projects is Saturday, September 11, 2021</p></b> <br></br><br></br>
+                                                                    <b><p>Signup deadline for the Fall 2021 projects is Saturday, September 4, 2021</p></b> <br></br><br></br>
 
                                                                     {buttonA}<br></br><br></br>
 
