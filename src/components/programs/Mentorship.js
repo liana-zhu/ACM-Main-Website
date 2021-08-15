@@ -22,13 +22,13 @@ class Mentorship extends React.Component {
                         not only help you on your way to landing that six-figure job, but also help you navigate the pothole-filled road called life.<br></br><br></br>
                         In this program, mentees will:<br></br><br></br>
 
-                        ❖<span className="highlight-text"><b>Time Management</b></span>
-                        ❖<span className="highlight-text"><b>Building your Resume, Cover Letter, Thank You Letter</b></span>
+                        ❖<span className="highlight-text"><b>Time Management</b></span><br/>
+                        ❖<span className="highlight-text"><b>Building your Resume, Cover Letter, Thank You Letter</b></span><br/>
                         ❖<span className="highlight-text"><b>Behavioral and Technical Interviews</b></span><br />
-                        ❖<span className="highlight-text"><b>Creating professional social media accounts (Handshake, LinkedIn)</b></span>
-                        ❖<span className="highlight-text"><b>Technical Practices in the CS field (Agile, Waterfall)</b></span>
-                        ❖<span className="highlight-text"><b>Conferences</b></span>
-                        ❖<span className="highlight-text"><b>Finances</b></span>
+                        ❖<span className="highlight-text"><b>Creating professional social media accounts (Handshake, LinkedIn)</b></span><br/>
+                        ❖<span className="highlight-text"><b>Technical Practices in the CS field (Agile, Waterfall)</b></span><br/>
+                        ❖<span className="highlight-text"><b>Conferences</b></span><br/>
+                        ❖<span className="highlight-text"><b>Finances</b></span><br/>
 
                         <br></br>The deadline to apply is Sunday, February 7, 2021. Join our mentorship program today before it's too late!<br></br>
                     </p>
