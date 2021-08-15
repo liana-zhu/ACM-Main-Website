@@ -1,46 +1,97 @@
 import React from 'react'
-import { Row, Col, Tab, Nav } from 'react-bootstrap'
+import firebase from '../professional/firebaseConfig.js';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
+import { Row, Col, Tab, Nav, Button, Container } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
 import "./Projects.css"
 import LegacyProject from './LegacyProject'
 import NewProject from './NewProject'
 
 class Projects extends React.Component {
+    state = {
+        beginnerProject: null,
+    }
+
+    componentDidMount() {
+        firebase.firestore().collection("beginnerProject").get()
+            .then(snapshot => {
+                const project = []
+                snapshot.forEach(doc => {
+                    const data = doc.data()
+                    project.push(data)
+                })
+                this.setState({ beginnerProject: project })
+            })
+            .catch(error => console.log(error));
+
+        firebase.firestore().collection("advanceProject").get()
+            .then(snapshot => {
+                const project = []
+                snapshot.forEach(doc => {
+                    const data = doc.data()
+                    project.push(data)
+                })
+                this.setState({ advanceProject: project })
+            })
+            .catch(error => console.log(error));
+    }
+
     render() {
+        let buttonB = <Button variant="success" size="lg" href="https://forms.gle/bu8YRaxLFfTDXppN7">Join Now!</Button>
+        let projectLeaderImageB = ["./leaders/Sean.jpg", "./leaders/Robert.jpg", "./leaders/Lillian.jpg", "./leaders/Nshan.jpg"]
+        let projectLeaderNameB = ["Sean", "Robert De La Costa", "Lillian", "Nshan Kazaryan"]
+
+        let buttonA = <Button variant="success" size="lg" href="https://forms.gle/egU7m8ra9XXh5NJ59">Join Now!</Button>
+        let projectLeaderImageA = ["./leaders/Elton.JPG", "./leaders/Omar.jpg"]
+        let projectLeaderNameA = ["Elton Lin", " Omar Eclicerio"]
 
         return (
+
             <div className="project-body">
                 <div>
                     <div className="project-title-text">
                         <p></p>
                         <p>Looking for experience?</p>
-                        <p>Participate in our <span className="emphasis">projects</span>!</p>
+                        <p>Participate in our projects!</p>
                     </div>
                     <div className="project-title-card"></div>
                 </div>
-                {/* 
+                {/*
                 Remember to update dates in the disclaimer:
-                1. Project signups open 
-                2. Signup deadline 
+                1. Project signups open
+                2. Signup deadline
                 */}
                 <div className="disclaimer-body">
                     <h3 className="disclaimer_header"><b>Disclaimer!</b></h3>
-                    <span className="disclaimer"><b>1. You must be a member of ACM to participate in the projects!</b> If you are not a member,
-                    <b><i><span className="highlight-text"> you will not be allowed in.</span></i></b></span><br></br>
-                    <span className="disclaimer"><b>2. Space is limited, so admittance to these projects are <span className="highlight-text">first come, first served.
-                    </span></b></span><br></br>
-                    <span className="disclaimer"><b>3. Project signups will open on <i><span className="highlight-text">
-                        Monday, January 18, 2021.</span></i></b></span><br></br>
-                    <span className="disclaimer"><b>4. Signup deadline for the projects is <i><span className="highlight-text">
-                        Saturday, February 6, 2021.</span></i></b></span><br></br>
-                    <br></br><br></br>
+                    <span className="disclaimer"><b>1. You must be a member of ACM to participate in the projects! If you are not a member,</b>
+                        <b><i> you will not be allowed in.</i></b></span><br></br>
+                    <span className="disclaimer"><b>2. Space is limited, so admittance to these projects are first come, first served.
+                    </b></span><br></br>
+                    <span className="disclaimer"><b>3. Project signups will open on <i>
+                        Monday, January 18, 2021.</i></b></span><br></br>
+                    <span className="disclaimer"><b>4. Signup deadline for the projects is <i>
+                        Saturday, February 6, 2021.</i></b></span><br></br>
+                </div>
+
+                <div className="videoWrapper">
+                    <div className="embed-responsive embed-responsive-16by9">
+                        <iframe className="embed-responsive-item"
+                            src="https://www.youtube.com/embed/yfbfm_L74Do"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+                    </div>
                 </div>
 
                 <div className="card project-card">
-                    <Tab.Container id="left-tabs-example" defaultActiveKey="spring2021projects">
+                    <Tab.Container id="left-tabs-example" defaultActiveKey="fall2021projects">
                         <Row>
                             <Col sm={2}>
                                 <Nav variant="pills" className="flex-column">
+                                    <Nav.Item>
+                                        <Nav.Link className="project-nav-link anchor-white" eventKey="fall2021projects">Fall 2021</Nav.Link>
+                                    </Nav.Item>
                                     <Nav.Item>
                                         <Nav.Link className="project-nav-link anchor-white" eventKey="spring2021projects">Spring 2021</Nav.Link>
                                     </Nav.Item>
@@ -63,7 +114,7 @@ class Projects extends React.Component {
                             </Col>
                             <Col sm={10}>
                                 <Tab.Content className="project-tab-content">
-                                    {/* 
+                                    {/*
                                     New projects go under this block of comment
                                     Steps:
                                     1. Copy the <Tab.Pane> under this block of comment.
@@ -71,6 +122,126 @@ class Projects extends React.Component {
                                     3. After following the steps above, then update the page with new project information.
                                     4. Remember to update dates in the disclaimer above.
                                     */}
+                                    <Tab.Pane eventKey="fall2021projects">
+                                        <Tab.Container defaultActiveKey="F2021beginner">
+                                            <Nav className="project-tab-label" variant="pills">
+                                                <Nav.Item>
+                                                    <Nav.Link className="project-nav-link-tab anchor-white" eventKey="F2021beginner">Beginner</Nav.Link>
+                                                </Nav.Item>
+                                                <Nav.Item>
+                                                    <Nav.Link className="project-nav-link-tab anchor-white" eventKey="F2021advanced">Advanced</Nav.Link>
+                                                </Nav.Item>
+                                            </Nav>
+                                            <Tab.Content className="project-tab-content">
+                                                <Tab.Pane eventKey="F2021beginner">
+
+
+
+                                                    <div className="project-description">
+                                                        <Container>
+                                                            <div class="row justify-content-start space">
+                                                                <div class="col-sm-1 col-md-4">
+
+                                                                    {
+                                                                        this.state.beginnerProject &&
+                                                                        this.state.beginnerProject.map(beginnerProject => {
+                                                                            return (
+                                                                                <img src={beginnerProject.imgUrl} className="img-fluid programs-poster" alt="project poster"></img>
+                                                                            )
+                                                                        })
+                                                                    }
+
+                                                                </div>
+                                                                <div class="col-sm-1 col-md-5">
+                                                                    <b><p>Learn how to create a website of your own from scratch!</p> </b> <b><p>Concepts such as Website Design, Structure, Functionality, Animated and Dynamic objects will be enfored throughout each workshop!</p></b><br></br><br></br>
+
+                                                                    <b><p>Signup deadline for the Fall 2021 projects is Saturday, September 11, 2021</p></b> <br></br><br></br>
+
+                                                                    {buttonB}<br></br><br></br>
+
+                                                                    <h2>❖ <span className="highlight-text">What you will learn:</span></h2>
+
+                                                                    <b><ul>
+                                                                        <li>Visual Studio Code</li>
+                                                                        <li>HTML</li>
+                                                                        <li>CSS</li>
+
+
+                                                                    </ul></b>
+                                                                </div>
+                                                            </div>
+                                                        </Container>
+                                                        <br></br>
+
+                                                        <h2>❖ <span className="highlight-text">Project Leaders:</span></h2>
+                                                        <br></br>
+                                                        <div className="carousel">
+                                                            <Carousel infiniteLoop>
+                                                                {projectLeaderImageB.map((value, index) => {
+                                                                    return <div>
+                                                                        <img className='carousel-leader-image' src={require('' + value)} alt="leader" />
+                                                                        <p className="legend">{projectLeaderNameB[index]}</p>
+                                                                    </div>
+                                                                })}
+                                                            </Carousel>
+                                                        </div>
+                                                    </div>
+                                                </Tab.Pane>
+                                                <Tab.Pane eventKey="F2021advanced">
+                                                    <div className="project-description">
+                                                        <Container>
+                                                            <div class="row justify-content-start space">
+                                                                <div class="col-sm-1 col-md-4">
+
+                                                                    {
+                                                                        this.state.advanceProject &&
+                                                                        this.state.advanceProject.map(advanceProject => {
+                                                                            return (
+                                                                                <img src={advanceProject.imgUrl} className="img-fluid programs-poster" alt="project poster"></img>
+                                                                            )
+                                                                        })
+                                                                    }
+
+                                                                </div>
+                                                                <div class="col-sm-1 col-md-5">
+                                                                    <b><p>Learn Video Game Development using the Unity game engine and the Visual Studio IDE!</p> </b> <b><p>Code and build your own desktop version of Pacman. Learn to create a beloved arcade video game from scratch!</p></b><br></br><br></br>
+
+                                                                    <b><p>Signup deadline for the Fall 2021 projects is Saturday, September 11, 2021</p></b> <br></br><br></br>
+
+                                                                    {buttonA}<br></br><br></br>
+
+                                                                    <h2>❖ <span className="highlight-text">What you will learn:</span></h2>
+
+                                                                    <b><ul>
+                                                                        <li>Unity</li>
+                                                                        <li>Visual</li>
+                                                                        <li>C#</li>
+
+
+                                                                    </ul></b>
+                                                                </div>
+                                                            </div>
+                                                        </Container>
+                                                        <br></br>
+
+                                                        <h2>❖ <span className="highlight-text">Project Leaders:</span></h2>
+                                                        <br></br>
+                                                        <div className="carousel">
+                                                            <Carousel infiniteLoop>
+                                                                {projectLeaderImageA.map((value, index) => {
+                                                                    return <div>
+                                                                        <img className='carousel-leader-image' src={require('' + value)} alt="leader" />
+                                                                        <p className="legend">{projectLeaderNameA[index]}</p>
+                                                                    </div>
+                                                                })}
+                                                            </Carousel>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </Tab.Pane>
+                                            </Tab.Content>
+                                        </Tab.Container>
+                                    </Tab.Pane>
                                     <Tab.Pane eventKey="spring2021projects">
                                         <Tab.Container defaultActiveKey="S2021beginner">
                                             <Nav className="project-tab-label" variant="pills">
@@ -82,8 +253,6 @@ class Projects extends React.Component {
                                                 </Nav.Item>
                                             </Nav>
                                             <Tab.Content className="project-tab-content">
-                                                <br></br><br></br>
-                                                <br></br>
                                                 <Tab.Pane eventKey="S2021beginner">
                                                     <NewProject
                                                         opener="Introducing the classic Flappy Bird game, but with a twist!"
@@ -123,9 +292,9 @@ class Projects extends React.Component {
                                             </Tab.Content>
                                         </Tab.Container>
                                     </Tab.Pane>
-                                    {/* 
-                                    Most recent projects go under this block of comment. 
-                                    Steps: 
+                                    {/*
+                                    Most recent projects go under this block of comment.
+                                    Steps:
                                     1. Copy the <Tab.Pane> above for the most recent projects*
                                     2. Paste it beneath this block of comment
                                     3. Modify it by changing it from NewProject to LegacyProject
@@ -144,9 +313,6 @@ class Projects extends React.Component {
                                                 </Nav.Item>
                                             </Nav>
                                             <Tab.Content className="project-tab-content">
-                                                <br></br><br></br>
-                                                <iframe title="project-ad-video" width="560" height="315" src="https://www.youtube.com/embed/SG_SBCu_65c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                                <br></br>
                                                 <Tab.Pane eventKey="F2020beginner">
                                                     <LegacyProject
                                                         opener="Come and explore the world of modding with Minecraft!"

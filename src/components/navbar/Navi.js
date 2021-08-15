@@ -9,34 +9,6 @@ import { Navbar, NavDropdown, Nav, Button } from 'react-bootstrap'
 
 
 class Navi extends React.Component {
-  componentDidMount() {
-
-    let querytHomePage = document.querySelector('#homepage');
-    let findHomepage = document.getElementById('homepage');
-
-    if (querytHomePage.href === window.location.href) {
-      findHomepage.classList.add("disappear");
-    }
-
-    //https://stackoverflow.com/questions/4326845/how-can-i-determine-the-direction-of-a-jquery-scroll-event
-
-    /*
-    window.addEventListener('scroll', function () {
-      //console.log('scrolling');
-      let y = window.scrollY;
-      const navbar = document.getElementById('navb');
-
-      if (y > 400) {
-        //console.log(y)
-        navbar.classList.add("disappear")
-      } else {
-        navbar.classList.remove("disappear");
-      }
-      
-    });
-    */
-    // TODO: Add class once the page is refreshed
-  }
 
   render() {
     return (
@@ -64,10 +36,9 @@ class Navi extends React.Component {
             </NavDropdown>
             <Nav.Link href="/events">calendar</Nav.Link>
             <Nav.Link href="/contactus">contact us</Nav.Link>
-            {/* <Nav.Link href="/portal">ACM portal</Nav.Link> */}
           </Nav>
           <Nav.Link href="/membership"><Button variant="light">Membership</Button></Nav.Link>
-          <Nav.Link href="/portal"><Button variant="light">ACM Portal</Button></Nav.Link>
+          <Nav.Link href="https://calstatelaacm-portal.web.app/#/"><Button variant="light">ACM Portal</Button></Nav.Link>
         </Navbar.Collapse>
       </Navbar>
     );

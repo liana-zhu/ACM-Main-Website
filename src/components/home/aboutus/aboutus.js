@@ -4,7 +4,7 @@ import './aboutus.scss';
 
 class AboutUs extends Component {
     render() {
-        return(
+        return (
             <section className="AboutUs-tease">
                 <div className="left">
                     <div className="content">

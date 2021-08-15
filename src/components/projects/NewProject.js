@@ -2,7 +2,7 @@ import React from 'react'
 import "./Projects.css"
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-import {Button, Container} from 'react-bootstrap'
+import { Button, Container } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
 
 class NewProject extends React.Component {
@@ -12,43 +12,57 @@ class NewProject extends React.Component {
         // let button
         // const today = new Date()
         // const deadline = new Date(this.props.deadlineDate + " " + this.props.deadlineTime)
-        
+
         // if (today >= deadline) {
         //     button = <Button variant="secondary" disabled>The deadline to sign up has passed. Sorry!</Button>
         // }
         // else {
-            // button = <Button variant="success" href={this.props.linkToSignUp}>Click here to Sign Up!</Button>
-        // }
+        // button = <Button variant="success" href={this.props.linkToSignUp}>Click here to Sign Up!</Button>
+        // }<img src={require('' + this.props.poster)} className="img-fluid project-poster" alt="project poster"></img>
 
         return (
-            <div>
-                <br></br>
-                <Container fluid>
-                <b>{this.props.opener} </b>{this.props.description}<br></br><br></br>
-                
-                {button}<br></br><br></br>
-                
-                <h2>❖ <span className="highlight-text">What you will learn:</span></h2><br></br>
-                <ul>
-                    {this.props.technologies.map((value, index) => {
-                        return <li>{value}</li>
-                    })}
-                </ul>
-                </Container>
-                <img src={require('' + this.props.poster)} className="img-fluid project-poster" alt="project poster"></img>     
+            <div className="project-description">
+                <Container>
+                    <div class="row justify-content-start space">
+                        <div class="col-sm-1 col-md-4">
 
-                <br></br><br></br>                   
+
+
+                            <img src={require('' + this.props.poster)} className="img-fluid project-poster" alt="project poster"></img>
+
+                            
+                        </div>
+                        <div class="col-sm-1 col-md-5">
+                            <b>{this.props.opener} </b> <b>{this.props.description}</b><br></br><br></br>
+
+                            <b>{this.props.projectDeadline}</b> <br></br><br></br>
+
+                            {button}<br></br><br></br>
+
+                            <h2>❖ <span className="highlight-text">What you will learn:</span></h2>
+
+                            <b><ul>
+
+                                {this.props.technologies.map((value, index) => {
+                                    return <li>{value}</li>
+                                })}
+                            </ul></b>
+                        </div>
+                    </div>
+                </Container>
+                <br></br>
 
                 <h2>❖ <span className="highlight-text">Project Leaders:</span></h2>
+                <br></br>
                 <div className="carousel">
-                <Carousel infiniteLoop>
-                    {this.props.projectLeadersImages.map((value, index) => {
-                        return <div>
-                            <img className='carousel-leader-image' src={require('' + value)} alt="leader" />
-                            <p className="legend">{this.props.projectLeaders[index]}</p>
-                        </div>
-                    })}
-                </Carousel>
+                    <Carousel infiniteLoop>
+                        {this.props.projectLeadersImages.map((value, index) => {
+                            return <div>
+                                <img className='carousel-leader-image' src={require('' + value)} alt="leader" />
+                                <p className="legend">{this.props.projectLeaders[index]}</p>
+                            </div>
+                        })}
+                    </Carousel>
                 </div>
             </div>
         )

@@ -1,7 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
-
-import { Tab, Nav, Row, Col, Image, Button} from 'react-bootstrap'
+import {Tab, Nav, Row, Col, Image, Button} from 'react-bootstrap'
 import Jumbotron from "react-bootstrap/Jumbotron";
 import "./aboutus.css";
 
@@ -9,63 +8,44 @@ class AboutUs extends React.Component {
 	render() {
 		return (
 			<div>
-				<div className="about-us-text">
-					<p>About Us</p>
+				<div>
+					<div className="about-us-text">
+						<p>About Us</p>
+					</div>
+					<div className="about-us-card"></div>
 				</div>
-				<div className="about-us-card"></div>
-
-				{/* <Container fluid>
-				<Row>
-					<Col> */}
-					{/* <div className="mission-statement-card"> */}
-					<Jumbotron>
+				<Jumbotron>
 					<div className="mission-statement-text">
 						<h1>Our Mission</h1>
 						<div className="mission-statement-points">
 							<ul type="circle">
 								<li>
-									Provide insight and knowledge regarding the CS programs and general advice for college
-									students to guarantee academic progress.
-									</li>
+									Provide insight and knowledge regarding the CS programs to guarantee academic progress.
+								</li>
 								<li>
-									Provide a means to communicate experiences, concerns, and challenges in the field
-									with like-minded individuals and ACM leaders to promote self-improvement.
-									</li>
+									Communicate experiences and challenges in the field	with ACM leaders to promote self-improvement.
+								</li>
 								<li>
-									Coding workshops that teach new technologies and common software engineering
-									practices not taught in courses offered in the CS program.
-									</li>
+									Coding workshops that teach new technologies and common software not taught in courses offered in the CS program.
+								</li>
 								<li>
-									Professional development workshops tailored to help members prepare for the
-									workforce.
-									</li>
+									Professional development workshops tailored to help members prepare for the	workforce.
+								</li>
 								<li>
-									A 1-1 Mentorship Program where one of our mentors will offer their knowledge and
-									insight in the field to participating mentees.
-									</li>
+									A Mentorship Program where our mentors will offer their knowledge in the field to participating mentees.
+								</li>
 								<li>
 									Social activities, events, and competitions that promote involvement outside of campus.
-									</li>
+								</li>
 								<li>
-									Ultimately, serve students at Cal State LA and those interested in the betterment of
-									our Los Angeles community.
-									</li>
+									Ultimately, serve students at Cal State LA and those interested in the betterment of our Los Angeles community.
+								</li>
 							</ul>
 						</div>
 					</div>
-					</Jumbotron>
-					{/* </div> */}
-				
-				{/* </Col>
-				</Row>
-			</Container> */}
-
-
-
-				{/* <Container> */}
+				</Jumbotron>
 				<div className="bottom-section">
 					<Tab.Container id="top-tabs-example" defaultActiveKey="whoarewe">
-						{/* <div className="button-row">                    */}
 						<Nav variant="tabs" >
 							<Nav.Item>
 								<Nav.Link className="project-nav-link anchor-blue" eventKey="whoarewe">ACM</Nav.Link>
@@ -80,66 +60,89 @@ class AboutUs extends React.Component {
 								<Nav.Link className="project-nav-link anchor-blue" eventKey="constitution">Our Constitution</Nav.Link>
 							</Nav.Item>
 						</Nav>
-						{/* </div> */}
-
 						<Tab.Content>
 							<Tab.Pane eventKey="whoarewe">
-								<Row className="first-row">
+								<Row className="info-row">
 									<Col lg={6} className="about-text">
 										<h1>Who are we?</h1>
-										<p>We are a chapter of the Association for Computing Machinery (ACM) at California State University, Los Angeles (CSULA). We are CSULA's largest computer
-            							science student organization. We bring together students with common passions and devotions into the field of computing. </p>
-										<p>ACM is the world's largest educational and scientific computing society, delivering resources that advance computing as a science and a profession.
-										ACM provides the computing field's premier Digital Library and serves its members and the computing profession with leading-edge publications,
-            							conferences, and career resources.</p>
+										<li>
+											We are a chapter of the Association for Computing Machinery (ACM) at California State University, Los Angeles (CSULA).
+										</li>
+										<li>
+											We are CSULA's largest computer
+											science student organization.
+										</li>
+										<li>
+											We bring together students with common passions and devotions into the field of computing.
+										</li>
+										<li>
+											ACM is the world's largest educational and scientific computing society, delivering resources that advance computing as a science and a profession.
+										</li>
+										<li>
+											ACM provides the computing field's premier Digital Library and serves its members and the computing profession with leading-edge publications,
+											conferences, and career resources.
+										</li>
 									</Col>
-									{/* adjust col? */}
 									<Col lg={5}><Image src={require('./images/group.jpg')} fluid /></Col>
 								</Row>
 							</Tab.Pane>
-
 							<Tab.Pane eventKey="whatdoweoffer">
-								<Row className="second-row">
+								<Row className="info-row">
 									<Col lg={6} className="offer-text">
 										<h1>What do we offer?</h1>
-										<p>We provide professional development workshops, Mini-Hackathons, and tech tours. We also invite guest speakers from Google, Lockheed Martin, JPL, and other companies. </p>
-										<p>We have excellent leadership opportunities and tutoring for students. We have social events, including hiking, game night, and movie night, for students
-            							to network with each other and destress from classes. </p>
-										<p>We know that learning takes more than just attending classes, so we have project workshops for students to gain hands-on experience.</p>
+										<li>
+											We provide professional development workshops, Mini-Hackathons, and tech tours.
+										</li>
+										<li>
+											We also invite guest speakers from Google, Lockheed Martin, JPL, and other companies.
+										</li>
+										<li>
+											We have social events, including hiking, game night, and movie night, for students
+											to network with each other and destress from classes.
+										</li>
+										<li>
+											We know that learning takes more than just attending classes, so we have project workshops for students to gain hands-on experience.
+										</li>
 									</Col>
 									<Col lg={5}><Image src={require('./images/android-workshop.png')} fluid /></Col>
 								</Row>
 							</Tab.Pane>
-
 							<Tab.Pane eventKey="howtojoinacm">
-								<Row className="third-row">
+								<Row className="info-row">
 									<Col lg={6} className="join-text">
 										<h1>How to join ACM?</h1>
-										<p>Even though we are a computer science organization, students of all majors are welcomed. Faculty and alumni are also welcomed to join ACM.</p>
-										<p>At the beginning of each semester, we have a general meeting to provide people with information about current projects, programs, and events. To learn
-            							about the ACM member exclusive benefits, click the button below:</p><br></br>
-										<Button href="/membership">Membership</Button><br></br><br></br>
+										<li>
+											Even though we are a computer science organization, students of all majors are welcomed.
+										</li>
+										<li>
+											Faculty and alumni are also welcomed to join ACM.
+										</li>
+										<li>
+											At the beginning of each semester, we have a general meeting to provide people with information about current projects, programs, and events.
+										</li>
+										<li>
+											To learn
+											about the ACM member exclusive benefits, click the button below:
+										</li>
+										<Button href="/membership">Membership</Button>
 									</Col>
 									<Col lg={5}><Image src={require('./images/fall-2019-general-meeting.jpg')} fluid /></Col>
 								</Row>
 							</Tab.Pane>
-
 							<Tab.Pane eventKey="constitution">
-								<Row className="third-row">
+								<Row className="info-row">
 									<Col lg={6} className="join-text">
 										<h1>Our Constitution</h1>
 										<p>Interested in learning about what governs our club?</p>
-										<p>We are making our constitution public for everyone to see.</p><br></br>
-										<Button href="https://drive.google.com/file/d/1Eop_ll-w1BNkqHk4QP1mzVbHZ7-TsgV9/view?usp=sharing" target="_blank">Constitution</Button><br></br><br></br>
+										<p>We are making our constitution public for everyone to see.</p>
+										<Button href="https://drive.google.com/file/d/1Eop_ll-w1BNkqHk4QP1mzVbHZ7-TsgV9/view?usp=sharing" target="_blank">Constitution</Button>
 									</Col>
-									<Col lg={5}><Image src={require('./images/logo.png')} fluid /></Col>
+									<Col lg={4}><Image src={require('./images/logo.png')} fluid /></Col>
 								</Row>
 							</Tab.Pane>
-
 						</Tab.Content>
 					</Tab.Container>
 				</div>
-				{/* </Container> */}
 			</div>
 		);
 	}

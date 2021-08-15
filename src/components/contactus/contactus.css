@@ -1,57 +1,18 @@
-/* .header{
-    width:85%;
-    max-width: 600px;
-    background: #000000;
-    position: absolute;
-    transform: translate(110%, 50%);
-    padding: 30px 40px;
-    box-sizing: border-box;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 0 20px #000000b3;
-    font-family: "Monteserrat", "san-serif";
-}
-
-.headertxt{
-    margin: 8px 0px;
-    padding: 12px 18px;
-    text-align: left;
-    font-size: 16px;
-} */
-/* 
-.contact-form{
-    width:85%;
-    max-width: 600px;
-    background: #f1f1f1;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 30px 40px;
-    box-sizing: border-box;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 0 20px #000000b3;
-    font-family: "Monteserrat", "san-serif";
-} */
-
-/* .contact-form h1{
-    margin-top: 0;
-    font-weight: 200;
-} */
-
 .contact-us-page {
     padding-top: 70px;
 }
 
-.txtb{
+.txtb {
     border: 1px solid gray;
-    margin: 8px 0;
+    /*margin: 8px 0;*/
+    margin-top: 8px;
+    margin-left: 5%;
+    margin-right: 5%;
     padding: 12px 18px;
     border-radius: 8px;
 }
 
-.txtb label{
+.txtb label {
     display: block;
     text-align: left;
     color: #333;
@@ -59,7 +20,7 @@
     font-size: 14px;
 }
 
-.txtb input, .txtb textarea{
+.txtb input, .txtb textarea {
     width: 100%;
     border: none;
     background: none;
@@ -68,15 +29,17 @@
     margin-top: 6px;
 }
 
-#btn-form{
+#btn-form {
     display: block;
     background: #2898cc;
-    padding: 10px 0;
+    padding: 15px 0;
     color: white;
     text-transform: uppercase;
     cursor: pointer;
-    margin-top: 8px;
-    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 81%;
 }
 
 .contact-us-card {    
@@ -84,14 +47,23 @@
 	height: auto;
     background-color:black !important;
     /* padding: 5px 150px 5px 150px; */
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10%;
+    padding-left: 10%;    
+}
+
+.contact-us-block {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
 }
 
 .label {
     color: white
 }
 
-.card-bg{
+.card-bg {
     color: white !important
 }
 

@@ -4,23 +4,29 @@ import { Carousel } from 'react-responsive-carousel';
 import 'bootstrap/dist/css/bootstrap.css'
 import "./Projects.css"
 
-class LegacyProject extends React.Component {    
+class LegacyProject extends React.Component {
     render() {
         return (
             <div>
+
                 <br></br>
-                <b>{this.props.opener} </b>{this.props.description}<br></br><br></br>
+
+
+                <b>{this.props.opener} </b> <b>{this.props.description}</b><br></br><br></br>
 
                 <h2>❖ <span className="highlight-text">What you will learn:</span></h2><br></br>
-                <ul>
+
+
+
+                <b><ul>
                     {this.props.technologies.map((value, index) => {
                         return <li>{value}</li>
                     })}
-                </ul>
+                </ul></b>
 
                 <img src={require('' + this.props.poster)} className="img-fluid project-poster" alt="project poster"></img>
                 <br></br><br></br><br></br>
-                
+
                 <h2>❖ <span className="highlight-text">Images:</span></h2>
                 <div className="carousel">
                 <Carousel infiniteLoop showIndicators={false}>
@@ -29,7 +35,7 @@ class LegacyProject extends React.Component {
                             <img className='carousel-image' src={require('' + value)} alt="project slide"/>
                         </div>
                     })}
-                </Carousel>                
+                </Carousel>
                 </div>
 
                 <h2>❖ <span className="highlight-text">Project Leaders:</span></h2>
@@ -43,8 +49,8 @@ class LegacyProject extends React.Component {
                     })}
                 </Carousel>
                 </div>
-                
-            </div>            
+
+            </div>
         )
     }
 }

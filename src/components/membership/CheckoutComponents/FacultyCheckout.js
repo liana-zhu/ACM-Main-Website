@@ -1,8 +1,6 @@
-import React, { useReducer, useState } from 'react';
+import React, { useReducer } from 'react';
 import { loadStripe } from '@stripe/stripe-js';
 import "../membership.css"
-import Form from 'react-bootstrap/Form';
-import { Col } from 'react-bootstrap'
 
 const stripePromise = loadStripe(
   "pk_live_51H0yOZEr4ylg7vlAnEDF4YfjfRe1VAEKjRMuW2Lh7zlMG9Lh68k4LZmuTm0RtR5MeNLJzkxUT0p53pdnQKgeIY1800N4Sipf5y");
@@ -51,16 +49,6 @@ const Regular = () => {
     error: null,
   });
 
-  const [formData, setFormData] = useState({});
-  // eslint-disable-next-line
-  const [message, setMessage] = useState("");
-
-  const handleInput = e => {
-    const copyFormData = { ...formData };
-    copyFormData[e.target.name] = e.target.value;
-    setFormData(copyFormData);
-  };
-
   const handleClick = async (event) => {
       // Call your backend to create the Checkout session.
       dispatch({ type: 'setLoading', payload: { loading: true } });
@@ -69,7 +57,7 @@ const Regular = () => {
       const { error } = await stripe.redirectToCheckout({
         mode: 'payment',
         lineItems: [{ price: state.priceId, quantity: state.quantity }],
-        successUrl: `https://docs.google.com/forms/d/e/1FAIpQLSfIwIPOHao5SAWaJNWymD9uTH-S7VaOxOMrxYt3IQjtzx8Vbg/viewform?usp=sf_link`,
+        successUrl: `https://forms.gle/sPxSYHHEipVxppx47`,
         cancelUrl: `${window.location.origin}/Membership`,
       });
       // If `redirectToCheckout` fails due to a browser or network
