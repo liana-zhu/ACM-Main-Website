@@ -104,10 +104,16 @@ class Board extends React.Component {
                           <BoardLeaders photo={IMAGES.Randy2021} firstName="Randal" lastName="Moss" year="2020" position="Faculty Advisor" />
                           <BoardLeaders photo={IMAGES.Wilson2021} firstName="Wilson" lastName="Thomas" year="2020" position="Advisor" />
                         </div>
-                        <div className="row-leaders centered-leader">
-                          <BoardLeaders photo={IMAGES.Kalvin2021} firstName="Kalvin" lastName="Mateo" year="2020" position="Advisor" />
-                          <BoardLeaders photo={IMAGES.Cristian2021} firstName="Cristain" lastName="Corrales" year="2020" position="Advisor" />
-                        </div>
+                      </div>
+                      <div className="row">
+                        <h2 className="h2-leaders all-row-leaders"> STUDENT ADVISORS</h2>
+                      </div>
+                      <div className="row-leaders centered-leader">
+                        <BoardLeaders photo={IMAGES.Nidhi2021} firstName="Kalvin" lastName="Mateo" year="2020" position="Student Advisor" />
+                        <BoardLeaders photo={IMAGES.Srivats2021} firstName="Cristain" lastName="Corrales" year="2020" position="Student Advisor" />
+                      </div>
+                      <div className="row-leaders centered-leader">
+                        <BoardLeaders photo={IMAGES.Kalvin2021} firstName="Kalvin" lastName="Mateo" year="2020" position="Student Advisor" />
                       </div>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
@@ -192,18 +198,11 @@ class Board extends React.Component {
                           <BoardLeaders photo={IMAGES.Randy2020} firstName="Randal" lastName="Moss" year="2020" position="Faculty Advisor" />
                           <BoardLeaders photo={IMAGES.Wilson2020} firstName="Wilson" lastName="Thomas" year="2020" position="Advisor" />
                         </div>
+                        <div className="row-leaders centered-leader">
+                          <BoardLeaders photo={IMAGES.Kalvin2020} firstName="Kalvin" lastName="Mateo" year="2020" position="Advisor" />
+                          <BoardLeaders photo={IMAGES.Cristian2020} firstName="Cristain" lastName="Corrales" year="2020" position="Advisor" />
+                        </div>
                       </div>
-                      <div className="row">
-                        <h2 className="h2-leaders all-row-leaders"> STUDENT ADVISORS</h2>
-                      </div>
-                      <div className="row-leaders centered-leader">
-                        <BoardLeaders photo={IMAGES.Nidhi2021} firstName="Kalvin" lastName="Mateo" year="2020" position="Student Advisor" />
-                        <BoardLeaders photo={IMAGES.Srivats2021} firstName="Cristain" lastName="Corrales" year="2020" position="Student Advisor" />
-                      </div>
-                      <div className="row-leaders centered-leader">
-                        <BoardLeaders photo={IMAGES.Kalvin2021} firstName="Kalvin" lastName="Mateo" year="2020" position="Student Advisor" />
-                      </div>
-
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
                       <div className="row">
