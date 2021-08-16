@@ -39,12 +39,12 @@ class Projects extends React.Component {
 
     render() {
         let buttonB = <Button variant="success" size="lg" href="https://forms.gle/bu8YRaxLFfTDXppN7">Join Now!</Button>
-        let projectLeaderImageB = ["./leaders/Sean.jpg", "./leaders/Robert.jpg", "./leaders/Lillian.jpg", "./leaders/Nshan.jpg", "./leaders/Jorge.jpg"]
-        let projectLeaderNameB = ["Sean", "Robert De La Costa", "Lillian", "Nshan Kazaryan", "Jorge Mata"]
+        let projectLeaderImageA = ["./leaders/Sean.jpg", "./leaders/Robert.jpg", "./leaders/Lillian.jpg", "./leaders/Nshan.jpg", "./leaders/Jorge.jpg"]
+        let projectLeaderNameA = ["Sean", "Robert De La Costa", "Lillian", "Nshan Kazaryan", "Jorge Mata"]
 
         let buttonA = <Button variant="success" size="lg" href="https://forms.gle/egU7m8ra9XXh5NJ59">Join Now!</Button>
-        let projectLeaderImageA = ["./leaders/Omar.jpg", "./leaders/Jorge.jpg"]
-        let projectLeaderNameA = ["Omar Eclicerio", "Jorge Mata"]
+        let projectLeaderImageB = ["./leaders/Omar.jpg", "./leaders/Jorge.jpg"]
+        let projectLeaderNameB = ["Omar Eclicerio", "Jorge Mata"]
 
         return (
             <div className="project-body">
