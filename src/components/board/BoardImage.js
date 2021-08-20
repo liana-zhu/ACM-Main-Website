@@ -5,7 +5,7 @@ const IMAGES = {
     Lillian2021: require('./2020-2021-leaders/Lillian.jpg'),
     Robert2021: require('../projects/leaders/Robert.jpg'),
     Sean2021: require('./2020-2021-leaders/Sean.jpg'),
-    Nshan2021: require('../projects/leaders/Nshan.jpg'),
+    Nshan2021: require('./2020-2021-leaders/Nshan.jpg'),
     Srivats2021: require('./2020-2021-leaders/Srivats.jpg'),
     Wilson2021: require('./2020-2021-leaders/wilson.jpg'),
     Kalvin2021: require('./2020-2021-leaders/Kalvin.JPG'),
@@ -19,6 +19,8 @@ const IMAGES = {
     Patrick2021: require('./2020-2021-leaders/Patrick.jpg'),
     Ashley2021: require('./2020-2021-leaders/Ashley.jpg'),
     Nidhi2021: require('./2020-2021-leaders/Nidhi.jpg'),
+    Kenny2021: require('./2020-2021-leaders/Kenny.jpg'),
+    Sebastian2021: require('./2020-2021-leaders/Sebastian.jpg'),
 
     // 2020-21 leaders
     Srivats2020: require('./2020-2021-leaders/Srivats.jpg'),
