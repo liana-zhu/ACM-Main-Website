@@ -20,6 +20,8 @@ const IMAGES = {
     Patrick2021: require('./2020-2021-leaders/Patrick.jpg'),
     Ashley2021: require('./2020-2021-leaders/Ashley.jpg'),
     Nidhi2021: require('./2020-2021-leaders/Nidhi.jpg'),
+    Sebastian2021: require('./2020-2021-leaders/Sebastian.jpg'),
+
 
     // 2020-21 leaders
     Srivats2020: require('./2020-2021-leaders/Srivats.jpg'),
