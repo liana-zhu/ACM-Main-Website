@@ -1,95 +1,38 @@
 import React from "react";
 import { Row, Col, Tab, Nav } from 'react-bootstrap'
 import Jumbotron from "react-bootstrap/Jumbotron";
-import "./board.css";
 import "bootstrap/dist/css/bootstrap.css";
+import "./board.css";
 
-// 2020-21 leaders
-import Srivats2020 from "./2020-2021-leaders/Srivats.jpg";
-import Grace2020 from "./2020-2021-leaders/Grace.jpg";
-import Nidhi2020 from "./2020-2021-leaders/Nidhi.jpg";
-import Elton2020 from "./2020-2021-leaders/Elton.jpg";
-import Rita2020 from "./2020-2021-leaders/Rita.jpg";
-import Grover2020 from "./2020-2021-leaders/Grover.jpg";
-import Luis2020 from "./2020-2021-leaders/Luis.jpg";
-import DavidT2020 from "./2020-2021-leaders/David.jpg";
-import Alvin2020 from "./2020-2021-leaders/Alvin.jpg";
-import Jorge2020 from "./2020-2021-leaders/Jorge.jpg";
-import Julio2020 from "./2020-2021-leaders/Julio.jpg";
-import Anthony2020 from "./2020-2021-leaders/Anthony.jpg";
-import Adrian2020 from "./2020-2021-leaders/Adrian.jpg";
-import DavidM2020 from "./2020-2021-leaders/DavidM.jpg";
-import Gregory2020 from "./2020-2021-leaders/Gregory.jpg";
-import Lillian2020 from "./2020-2021-leaders/Lillian.jpg";
-import Omar2020 from "./2020-2021-leaders/Omar.jpg";
-import Daniel2020 from "./2020-2021-leaders/Daniel.jpg";
-import Erica2020 from "./2020-2021-leaders/Erica.png";
-import Ralph2020 from "./2020-2021-leaders/Ralph.jpg";
-import Robert2020 from "./2020-2021-leaders/Robert.jpg";
-import Sameen2020 from "./2020-2021-leaders/Sameen.jpg";
-import Tracy2020 from "./2020-2021-leaders/Tracy.jpg";
-import Sean2020 from "./2020-2021-leaders/Sean.jpg";
-import Randy2020 from "./2020-2021-leaders/Randal-Moss-Advisor.JPG";
-import Wilson2020 from "./2020-2021-leaders/wilson.jpg"
-import Kalvin2020 from "./2020-2021-leaders/Kalvin.JPG";
-import Cristian2020 from "./2020-2021-leaders/Cristian.jpg";
-
-// 2019-20 leaders
-import Andrew2019 from "./2019-2020-leaders/Andrew.JPG";
-import Ayush2019 from "./2019-2020-leaders/Ayush.JPG";
-import Cristian2019 from "./2019-2020-leaders/Cristian.JPG";
-import DavidT2019 from "./2019-2020-leaders/David.jpg";
-import Deric2019 from "./2019-2020-leaders/Deric.JPG";
-import Diego2019 from "./2019-2020-leaders/Diego.JPG";
-import Elton2019 from "./2019-2020-leaders/Elton.JPG";
-import George2019 from "./2019-2020-leaders/George.JPG";
-import GeovannyH2019 from "./2019-2020-leaders/GeovannyH.JPG";
-import GioC2019 from "./2019-2020-leaders/GiovanniC.JPG";
-import Kalvin2019 from "./2019-2020-leaders/Kalvin.JPG";
-import Srivats2019 from "./2019-2020-leaders/Srivats.JPG";
-import Grover2019 from "./2019-2020-leaders/Grover.JPG";
-import Luis2019 from "./2019-2020-leaders/Luis.JPG";
-import Ralph2019 from "./2019-2020-leaders/Ralph.jpg";
-import Kevin2019 from "./2019-2020-leaders/Kevin.JPG";
-import Randy2019 from "./2019-2020-leaders/Randal-Moss-Advisor.JPG";
-import Wilson2019 from "./2019-2020-leaders/wilson.jpg";
-import Vacant from "./2019-2020-leaders/Vacant.png";
-
-// 2018-19 leaders
-import Erving2018 from "./2018-2019-leaders/erving.jpg"
-import Andrew2018 from "./2018-2019-leaders/andrew.jpg"
-import Brian2018 from "./2018-2019-leaders/BrianH.JPG"
-import DavidS2018 from "./2018-2019-leaders/david.jpg"
-import Deric2018 from "./2018-2019-leaders/deric.jpg"
-import Diego2018 from "./2018-2019-leaders/diego.jpg"
-import Emily2018 from "./2018-2019-leaders/emily.jpg"
-import GioG2018 from "./2018-2019-leaders/gio.jpg"
-import GioC2018 from "./2018-2019-leaders/Giovanni.jpg"
-import Ingelbert2018 from "./2018-2019-leaders/ingelbert.jpg"
-import Kalvin2018 from "./2018-2019-leaders/kalvin.jpg"
-import GeovannyH2018 from "./2018-2019-leaders/LittleGeo.jpg"
-import Pranil2018 from "./2018-2019-leaders/PranilD.JPG"
-import Ryan2018 from "./2018-2019-leaders/ryan.jpg"
-import Srivats2018 from "./2018-2019-leaders/srivats.jpg"
-import Wilson2018 from "./2018-2019-leaders/wilson.jpg"
+import BoardLeaders from './BoardLeaders'
+import IMAGES from './BoardImage.js'
 
 class Board extends React.Component {
   render() {
     return (
       <div>
+        <div>
+          <div className="board-text">
+            <p>Our Board</p>
+          </div>
+          <div className="board-card"></div>
+        </div>
         <div className="body container">
           <Jumbotron className="row leaders-div">
             <Tab.Container id="left-tabs-example" defaultActiveKey="first">
               <Col sm={3}>
                 <Nav variant="pills" className="flex-column">
                   <Nav.Item>
-                    <Nav.Link className="nav-link anchor-white" eventKey="first">2020-2021</Nav.Link>
+                    <Nav.Link className="nav-link anchor-white" eventKey="first">2021-2022</Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
-                    <Nav.Link className="nav-link anchor-white" eventKey="second">2019-2020</Nav.Link>
+                    <Nav.Link className="nav-link anchor-white" eventKey="second">2020-2021</Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
-                    <Nav.Link className="nav-link anchor-white" eventKey="third">2018-2019</Nav.Link>
+                    <Nav.Link className="nav-link anchor-white" eventKey="third">2019-2020</Nav.Link>
+                  </Nav.Item>
+                  <Nav.Item>
+                    <Nav.Link className="nav-link anchor-white" eventKey="fourth">2018-2019</Nav.Link>
                   </Nav.Item>
                 </Nav>
               </Col>
@@ -99,477 +42,190 @@ class Board extends React.Component {
                     <Tab.Pane eventKey="first">
                       <div className="row">
                         <div className="god-saver d-lg-none"></div>
-                        <h2 className="h2-leaders centered-leader">
-                          ACM 2020-2021 BOARD
-                          </h2>
+                        <h2 className="h2-leaders centered-leader all-row-leaders">
+                          ACM 2021-2022 BOARD
+                        </h2>
                       </div>
                       {/* Fixed format (alignment) of leaders by adding "centered-leader" to class name of each row*/}
-                      <div className="row-leaders centered-leader">
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Srivats2020} alt="Srivats 2020"></img>
-                          <div className="officer-info">
-                            <h2>Srivats<br/>Venkataraman</h2>President
-                            </div>
+                      <div className="all-row-leaders">
+                        <div className="row-leaders centered-leader">
+                          <BoardLeaders photo={IMAGES.Alvin2021} firstName="Alvin" lastName="Lew" year="2021" position="President" />
+                          <BoardLeaders photo={IMAGES.Jorge2021} firstName="Jorge" lastName="Mata" year="2021" position="Vice President" />
                         </div>
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Grace2020} alt="Grace 2020"></img>
-                          <div className="officer-info">
-                            <h2>Grace<br/>Lin</h2>Vice President
-                            </div>
+                        <div className="row-leaders centered-leader">
+                          <BoardLeaders photo={IMAGES.Elton2021} firstName="Elton" lastName="Lin" year="2021" position="Treasurer" />
+                          <BoardLeaders photo={IMAGES.Vacant} firstName="Sebastian" lastName="Luna" year="2021" position="Secretary" />
                         </div>
-                      </div>
-                      <div className="row-leaders centered-leader">
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic" src={Nidhi2020} alt="Nidhi 2020"></img>
-                          <div className="officer-info">
-                            <h2>Nidhi<br/>Lakshmanan</h2>Treasurer
-                            </div>
+                        <div className="row-leaders centered-leader">
+                          <BoardLeaders photo={IMAGES.Tracy2021} firstName="Tracy" lastName="Truong" year="2021" position="VP of Internal Affairs" />
+                          <BoardLeaders photo={IMAGES.Lillian2021} firstName="Lillian" lastName="Leung" year="2021" position="VP of External Affairs" />
                         </div>
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic" src={Elton2020} alt="Elton 2020"></img>
-                          <div className="officer-info">
-                            <h2 className="name">Elton<br/>Lin</h2>Secretary
-                          </div>
+                        <div className="row-leaders centered-leader">
+                          <BoardLeaders photo={IMAGES.Vacant} firstName="Vacant" lastName="" year="2021" position="Project Manager" />
+                          <BoardLeaders photo={IMAGES.Anthony2020} firstName="Anthony" lastName="Viramontes" year="2021" position="Webmaster" />
                         </div>
                       </div>
-                      <div className="row-leaders centered-leader">
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Rita2020} alt="Rita 2020"></img>
-                          <div className="officer-info">
-                            <h2>Rita<br/>Sanchez</h2>VP of Internal Affairs
-                            </div>
-                        </div>
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Grover2020} alt="Grover 2020"></img>
-                          <div className="officer-info">
-                            <h2>John<br/>Grover</h2>VP of External Affairs
-                            </div>
-                        </div>
-                      </div>
-                      <div className="row-leaders centered-leader">
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Luis2020} alt="Luis 2020"></img>
-                          <div className="officer-info">
-                            <h2>Luis<br/>Gonzalez</h2>Project Manager
-                            </div>
-                        </div>
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={DavidT2020} alt="David T 2020"></img>
-                          <div className="officer-info">
-                            <h2>David<br/>Tang</h2>Webmaster
-                            </div>
-                        </div>
-                      </div>
-                      <br></br>
-                      <br></br>
                       <div className="row">
-                        <h2 className="h2-leaders">OFFICERS</h2>
+                        <h2 className="h2-leaders all-row-leaders">OFFICERS</h2>
                       </div>
                       <div className="row-leaders centered-leader">
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Julio2020} alt="Julio 2020"></img>
-                          <div className="officer-info">
-                            <h2>Julio<br/>Santamaria</h2>Social Media Officer
-                            </div>
-                        </div>
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Anthony2020} alt="Anthony 2020"></img>
-                          <div className="officer-info">
-                            <h2>Anthony<br/>Viramontes</h2>Web Officer
-                            </div>
-                        </div>
+                        <BoardLeaders photo={IMAGES.Ashley2021} firstName="Ashley" lastName="Tran" year="2021" position="Executive Officer" />
+                        <BoardLeaders photo={IMAGES.Daniel2020} firstName="Daniel" lastName="Ramirez" year="2021" position="Administrative Officer" />
                       </div>
                       <div className="row-leaders centered-leader">
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Alvin2020} alt="Alvin 2020"></img>
-                          <div className="officer-info">
-                            <h2>Alvin<br/>Lew</h2>Project Officer
-                            </div>
-                        </div>
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Jorge2020} alt="Jorge 2020"></img>
-                          <div className="officer-info">
-                            <h2>Jorge<br/>Mata</h2>Project Officer
-                            </div>
-                        </div>
+                        <BoardLeaders photo={IMAGES.Kenny2021} firstName="Kenny" lastName="Luong" year="2021" position="Web Officer" />
+                        {/* <BoardLeaders photo={IMAGES.Vacant} firstName="Vacant" lastName="" year="2021" position="Project Officer" /> */}
                       </div>
-                      <br></br>
-                      <br></br>
                       <div className="row">
                         <h2 className="h2-leaders">COMMITTEE</h2>
                       </div>
-                      <div className="row-leaders centered-leader">
-                      <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Tracy2020} alt="Tracy 2020"></img>
-                          <div className="officer-info">
-                            <h2>Tracy<br/>Truong</h2>Design Committee
-                            </div>
+                      <div className="all-row-leaders">
+                        <div className="row-leaders centered-leader">
+                          <BoardLeaders photo={IMAGES.Patrick2021} firstName="Patrick" lastName="Sangalang" year="2020" position="Web Committee" />
+                          <BoardLeaders photo={IMAGES.Sean2021} firstName="Sean" lastName="Chung" year="2020" position="Project Committee" />
                         </div>
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={DavidM2020} alt="David M 2020"></img>
-                          <div className="officer-info">
-                            <h2>David<br/>Melendez</h2>Project Committee
-                            </div>
+                        <div className="row-leaders centered-leader">
+                          <BoardLeaders photo={IMAGES.Nshan2021} firstName="Nshan" lastName="Kazaryan" year="2020" position="Project Committee" />
+                          <BoardLeaders photo={IMAGES.Robert2021} firstName="Robert" lastName="de la Costa" year="2020" position="Project Committee" />
                         </div>
-                      </div>
-                      <div className="row-leaders centered-leader">
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Gregory2020} alt="Gregory 2020"></img>
-                          <div className="officer-info">
-                            <h2>Gregory<br/>Celestino</h2>Project Committee</div>
+                        <div className="row-leaders centered-leader">
+                          <BoardLeaders photo={IMAGES.Omar2021} firstName="Omar" lastName="Eclicerio" year="2020" position="Project Committee" />
+                          <BoardLeaders photo={IMAGES.Vacant} firstName="Salman" lastName="Sheikh" year="2020" position="Project Committee" />
                         </div>
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Lillian2020} alt="Lillian 2020"></img>
-                          <div className="officer-info">
-                            <h2>Lillian<br/>Leung</h2>Project Committee
-                            </div>
-                        </div>
-
-                      </div>
-                      <div className="row-leaders centered-leader">
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Omar2020} alt="Omar 2020"></img>
-                          <div className="officer-info">
-                            <h2>Omar<br/>Eclicerio</h2>Project Committee
-                            </div>
-                        </div>
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Robert2020} alt="Robert 2020"></img>
-                          <div className="officer-info">
-                            <h2>Robert<br/>de la Costa</h2>Project Committee
-                            </div>
-                        </div>
-                      </div>
-                      <div className="row-leaders centered-leader">
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Sameen2020} alt="Sameen 2020"></img>
-                          <div className="officer-info">
-                            <h2>Sameen<br/>Khan</h2>Project Committee
-                            </div>
-                        </div>
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Adrian2020} alt="Adrian 2020"></img>
-                          <div className="officer-info">
-                            <h2>Adrian<br/>Lopez</h2>Project Committee
-                            </div>
-                        </div>
-                      </div>
-                      <div className="row-leaders centered-leader">
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Daniel2020} alt="Daniel 2020"></img>
-                          <div className="officer-info">
-                            <h2>Daniel<br/>Ramirez</h2>Project Committee
-                            </div>
-                        </div>
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Erica2020} alt="Erica 2020"></img>
-                          <div className="officer-info">
-                            <h2>Erica<br/>Santos</h2>Project Committee
-                            </div>
-                        </div>
-                      </div>
-                      <div className="row-leaders centered-leader">
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Sean2020} alt="Sean 2020"></img>
-                          <div className="officer-info">
-                            <h2>Sean<br/>Chung</h2>Project Committee
-                            </div>
-                        </div>
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Ralph2020} alt="Ralph 2020"></img>
-                          <div className="officer-info">
-                            <h2>Ralph<br/>Belleca</h2>Web Committee
-                            </div>
-                        </div>
-                      </div>
-                      <div className="row-leaders centered-leader">
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Vacant} alt="Kenny 2020"></img>
-                          <div className="officer-info">
-                            <h2>Kenny<br/>Luong</h2>Web Committee
-                            </div>
-                        </div>
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Vacant} alt="Patrick 2020"></img>
-                          <div className="officer-info">
-                            <h2>Patrick<br/>Sangalang</h2>Web Committee
-                            </div>
-                        </div>
-                      </div>
-                      <div className="row-leaders centered-leader">
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Vacant} alt="Kenny 2020"></img>
-                          <div className="officer-info">
-                            <h2>Sebastian<br/>Luna</h2>General Committee
-                            </div>
-                        </div>
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Vacant} alt="Patrick 2020"></img>
-                          <div className="officer-info">
-                            <h2>Ashley<br/>Tran</h2>Finance Committee
-                            </div>
+                        <div className="row-leaders centered-leader">
                         </div>
                       </div>
                       <div className="row">
-                        <h2 className="h2-leaders">ADVISORS</h2>
+                        <h2 className="h2-leaders all-row-leaders">ADVISORS</h2>
+                      </div>
+                      <div className="all-row-leaders">
+                        <div className="row-leaders centered-leader">
+                          <BoardLeaders photo={IMAGES.Randy2021} firstName="Randal" lastName="Moss" year="2020" position="Faculty Advisor" />
+                          <BoardLeaders photo={IMAGES.Wilson2021} firstName="Wilson" lastName="Thomas" year="2020" position="Advisor" />
+                        </div>
+                      </div>
+                      <div className="row">
+                        <h2 className="h2-leaders all-row-leaders"> STUDENT ADVISORS</h2>
                       </div>
                       <div className="row-leaders centered-leader">
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Randy2020} alt="Randy 2020"></img>
-                          <div className="officer-info">
-                            <h2>Randal<br/>Moss</h2>Faculty Advisor
-                            </div>
-                        </div>
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Wilson2020} alt="Wilson 2020"></img>
-                          <div className="officer-info">
-                            <h2>Wilson<br/>Thomas</h2>Advisor
-                            </div>
-                        </div>
+                        <BoardLeaders photo={IMAGES.Nidhi2021} firstName="Nidhi" lastName="Lakshmanan" year="2020" position="Student Advisor" />
+                        <BoardLeaders photo={IMAGES.Srivats2021} firstName="Srivats" lastName="Venkataraman" year="2020" position="Student Advisor" />
                       </div>
                       <div className="row-leaders centered-leader">
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Kalvin2020} alt="Kalvin 2020"></img>
-                          <div className="officer-info">
-                            <h2>Kalvin<br/>Mateo</h2>Advisor
-                            </div>
-                        </div>
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Cristian2020} alt="Cristian 2020"></img>
-                          <div className="officer-info">
-                            <h2>Cristian<br/>Corrales</h2>Advisor
-                            </div>
-                        </div>
+                        <BoardLeaders photo={IMAGES.Kalvin2021} firstName="Kalvin" lastName="Mateo" year="2020" position="Student Advisor" />
                       </div>
-                      <div className="space"></div>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
                       <div className="row">
                         <div className="god-saver d-lg-none"></div>
-                        <h2 className="h2-leaders centered-leader">
-                          ACM 2019-2020 BOARD
-                          </h2>
+                        <h2 className="h2-leaders centered-leader all-row-leaders">
+                          ACM 2020-2021 BOARD
+                        </h2>
                       </div>
                       {/* Fixed format (alignment) of leaders by adding "centered-leader" to class name of each row*/}
-                      <div className="row-leaders centered-leader">
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Kalvin2019} alt="Kalvin 2019"></img>
-                          <div className="officer-info">
-                            <h2>Kalvin <br/>Mateo</h2>President
-                            </div>
+                      <div className="all-row-leaders">
+                        <div className="row-leaders centered-leader">
+                          <BoardLeaders photo={IMAGES.Srivats2020} firstName="Srivats" lastName="Venkataraman" year="2020" position="President" />
+                          <BoardLeaders photo={IMAGES.Grace2020} firstName="Grace" lastName="Lin" year="2020" position="Vice President" />
                         </div>
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Cristian2019} alt="Cristian 2019"></img>
-                          <div className="officer-info">
-                            <h2>Cristian <br/>Corrales</h2>Vice President
-                            </div>
+                        <div className="row-leaders centered-leader">
+                          <BoardLeaders photo={IMAGES.Nidhi2020} firstName="Nidhi" lastName="Lakshmanan" year="2020" position="Treasurer" />
+                          <BoardLeaders photo={IMAGES.Elton2020} firstName="Elton" lastName="Lin" year="2020" position="Secretary" />
                         </div>
-                      </div>
-                      <div className="row-leaders centered-leader">
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={GeovannyH2019} alt="Geovanny 2019"></img>
-                          <div className="officer-info">
-                            <h2>Geovanny <br/>Huerta</h2>Treasurer
-                            </div>
+                        <div className="row-leaders centered-leader">
+                          <BoardLeaders photo={IMAGES.Rita2020} firstName="Rita" lastName="Sanchez" year="2020" position="VP of Internal Affairs" />
+                          <BoardLeaders photo={IMAGES.Grover2020} firstName="John" lastName="Grover" year="2020" position="VP of External Affairs" />
                         </div>
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Srivats2019} alt="Srivats 2019"></img>
-                          <div className="officer-info">
-                            <h2>Srivats <br/>Venkataraman</h2>Secretary
-                            </div>
+                        <div className="row-leaders centered-leader">
+                          <BoardLeaders photo={IMAGES.Luis2020} firstName="Luis" lastName="Gonzalez" year="2020" position="Project Manager" />
+                          <BoardLeaders photo={IMAGES.DavidT2020} firstName="David" lastName="Tang" year="2020" position="Webmaster" />
                         </div>
                       </div>
-                      <div className="row-leaders centered-leader">
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={GioC2019} alt="Gio C 2019"></img>
-                          <div className="officer-info">
-                            <h2>Giovanni <br/>Castellanos</h2>VP of Internal Affairs
-                            </div>
-                        </div>
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Vacant} alt="Vacant"></img>
-                          <div className="officer-info">
-                            <h2>Vacant <br/></h2>VP of External Affairs
-                            </div>
-                        </div>
-                      </div>
-                      <div className="row-leaders centered-leader">
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Andrew2019} alt="Andrew 2019"></img>
-                          <div className="officer-info">
-                            <h2>Andrew <br/>Gonzalez</h2>Project Manager
-                            </div>
-                        </div>
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Vacant} alt="Vacant"></img>
-                          <div className="officer-info">
-                            <h2>Vacant<br/></h2>Webmaster
-                            </div>
-                        </div>
-                      </div>
-                      <br></br>
-                      <br></br>
                       <div className="row">
-                        <h2 className="h2-leaders">OFFICERS</h2>
+                        <h2 className="h2-leaders all-row-leaders">OFFICERS</h2>
                       </div>
                       <div className="row-leaders centered-leader">
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Elton2019} alt="Elton 2019"></img>
-                          <div className="officer-info">
-                            <h2>Elton <br/>Lin</h2>Administrative Officer
-                            </div>
-                        </div>
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Diego2019} alt="Diego 2019"></img>
-                          <div className="officer-info">
-                            <h2>Diego <br/>Flores</h2>Finance Officer
-                            </div>
-                        </div>
+                        <BoardLeaders photo={IMAGES.Julio2020} firstName="Julio" lastName="Santamaria" year="2020" position="Social Media Officer" />
+                        <BoardLeaders photo={IMAGES.Anthony2020} firstName="Anthony" lastName="Viramontes" year="2020" position="Web Officer" />
                       </div>
                       <div className="row-leaders centered-leader">
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={DavidT2019} alt="David T 2019"></img>
-                          <div className="officer-info">
-                            <h2>David<br/>Tang</h2>Web Officer
-                          </div>
-                        </div>
+                        <BoardLeaders photo={IMAGES.Alvin2020} firstName="Alvin" lastName="Lew" year="2020" position="Project Officer" />
+                        <BoardLeaders photo={IMAGES.Jorge2020} firstName="Jorge" lastName="Mata" year="2020" position="Project Officer" />
                       </div>
-                      <br></br>
-                      <br></br>
                       <div className="row">
                         <h2 className="h2-leaders">COMMITTEE</h2>
                       </div>
-                      <div className="row-leaders centered-leader">
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Deric2019} alt="Deric 2019"></img>
-                          <div className="officer-info">
-                            <h2>Deric <br/>Kwok</h2>General Committee
-                            </div>
+                      <div className="all-row-leaders">
+                        <div className="row-leaders centered-leader">
+                          <BoardLeaders photo={IMAGES.Tracy2020} firstName="Tracy" lastName="Truong" year="2020" position="Design Committee" />
+                          <BoardLeaders photo={IMAGES.DavidM2020} firstName="David" lastName="Melendez" year="2020" position="Project Committee" />
                         </div>
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Ayush2019} alt="Ayush 2019"></img>
-                          <div className="officer-info">
-                            <h2>Ayush <br/>Singh</h2>Outreach Committee
-                            </div>
+                        <div className="row-leaders centered-leader">
+                          <BoardLeaders photo={IMAGES.Gregory2020} firstName="Gregory" lastName="Celestino" year="2020" position="Project Committee" />
+                          <BoardLeaders photo={IMAGES.Lillian2020} firstName="Lillian" lastName="Leung" year="2020" position="Project Committee" />
                         </div>
-                      </div>
-                      <div className="row-leaders centered-leader">
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Kevin2019} alt="Kevin 2019"></img>
-                          <div className="officer-info">
-                            <h2>Kevin <br/>Flores</h2>Outreach Committee</div>
+                        <div className="row-leaders centered-leader">
+                          <BoardLeaders photo={IMAGES.Omar2020} firstName="Omar" lastName="Eclicerio" year="2020" position="Project Committee" />
+                          <BoardLeaders photo={IMAGES.Robert2020} firstName="Robert" lastName="de la Costa" year="2020" position="Project Committee" />
                         </div>
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Grover2019} alt="Grover 2019"></img>
-                          <div className="officer-info">
-                            <h2>John <br/>Grover</h2>Project Committee
-                            </div>
+                        <div className="row-leaders centered-leader">
+                          <BoardLeaders photo={IMAGES.Sameen2020} firstName="Sameen" lastName="Khan" year="2020" position="Project Committee" />
+                          <BoardLeaders photo={IMAGES.Adrian2020} firstName="Adrian" lastName="Lopez" year="2020" position="Project Committee" />
                         </div>
-
-                      </div>
-                      <div className="row-leaders centered-leader">
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Luis2019} alt="Luis 2019"></img>
-                          <div className="officer-info">
-                            <h2>Luis <br/>Gonzalez</h2>Project Committee
-                            </div>
+                        <div className="row-leaders centered-leader">
+                          <BoardLeaders photo={IMAGES.Daniel2020} firstName="Daniel" lastName="Ramirez" year="2020" position="Project Committee" />
+                          <BoardLeaders photo={IMAGES.Erica2020} firstName="Erica" lastName="Santos" year="2020" position="Project Committee" />
                         </div>
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={George2019} alt="George 2019"></img>
-                          <div className="officer-info">
-                            <h2>George <br/>Chan</h2>Web Committee
-                            </div>
+                        <div className="row-leaders centered-leader">
+                          <BoardLeaders photo={IMAGES.Sean2020} firstName="Sean" lastName="Chung" year="2020" position="Project Committee" />
+                          <BoardLeaders photo={IMAGES.Ralph2020} firstName="Ralph" lastName="Belleca" year="2020" position="Web Committee" />
                         </div>
-                      </div>
-                      <div className="row-leaders centered-leader">
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Ralph2019} alt="Ralph 2019"></img>
-                          <div className="officer-info">
-                            <h2>Ralph <br/>Belleca</h2>Web Committee
-                            </div>
+                        <div className="row-leaders centered-leader">
+                          <BoardLeaders photo={IMAGES.Kenny2021} firstName="Kenny" lastName="Luong" year="2020" position="Web Comittee" />
+                          <BoardLeaders photo={IMAGES.Patrick2021} firstName="Patrick" lastName="Sangalang" year="2020" position="Web Comittee" />
+                        </div>
+                        <div className="row-leaders centered-leader">
+                          <BoardLeaders photo={IMAGES.Vacant} firstName="Sebastian" lastName="Luna" year="2020" position="General Committee" />
+                          <BoardLeaders photo={IMAGES.Vacant} firstName="Ashley" lastName="Tran" year="2020" position="Finance Committee" />
                         </div>
                       </div>
                       <div className="row">
-                        <h2 className="h2-leaders">ADVISORS</h2>
+                        <h2 className="h2-leaders all-row-leaders">ADVISORS</h2>
                       </div>
-                      <div className="row-leaders centered-leader">
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Randy2019} alt="Randy 2019"></img>
-                          <div className="officer-info">
-                            <h2>Randal <br/>Moss</h2>Advisor
-                            </div>
+                      <div className="all-row-leaders">
+                        <div className="row-leaders centered-leader">
+                          <BoardLeaders photo={IMAGES.Randy2020} firstName="Randal" lastName="Moss" year="2020" position="Faculty Advisor" />
+                          <BoardLeaders photo={IMAGES.Wilson2020} firstName="Wilson" lastName="Thomas" year="2020" position="Advisor" />
                         </div>
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Wilson2019} alt="Wilson 2019"></img>
-                          <div className="officer-info">
-                            <h2>Wilson <br/>Thomas</h2>Advisor
-                            </div>
+                        <div className="row-leaders centered-leader">
+                          <BoardLeaders photo={IMAGES.Kalvin2020} firstName="Kalvin" lastName="Mateo" year="2020" position="Advisor" />
+                          <BoardLeaders photo={IMAGES.Cristian2020} firstName="Cristain" lastName="Corrales" year="2020" position="Advisor" />
                         </div>
                       </div>
-                      <div className="space"></div>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
                       <div className="row">
                         <div className="god-saver d-lg-none"></div>
                         <h2 className="h2-leaders centered-leader">
-                          ACM 2018-2019 BOARD
-                          </h2>
+                          ACM 2019-2020 BOARD
+                        </h2>
+                      </div>
+                      {/* Fixed format (alignment) of leaders by adding "centered-leader" to class name of each row*/}
+                      <div className="row-leaders centered-leader">
+                        <BoardLeaders photo={IMAGES.Kalvin2019} firstName="Kalvin" lastName="Mateo" year="2019" position="President" />
+                        <BoardLeaders photo={IMAGES.Cristian2019} firstName="Cristian" lastName="Corrales" year="2019" position="Vice President" />
                       </div>
                       <div className="row-leaders centered-leader">
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Wilson2018} alt="Wilson 2018"></img>
-                          <div className="officer-info">
-                            <h2>Wilson <br/>Thomas</h2>President
-                            </div>
-                        </div>
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Pranil2018} alt="Pranil 2018"></img>
-                          <div className="officer-info">
-                            <h2>Pranil <br/>Dahal</h2>Vice President
-                            </div>
-                        </div>
+                        <BoardLeaders photo={IMAGES.GeovannyH2019} firstName="Geovanny" lastName="Huerta" year="2019" position="Treasurer" />
+                        <BoardLeaders photo={IMAGES.Srivats2019} firstName="Srivats" lastName="Venkataraman" year="2019" position="Secretary" />
                       </div>
                       <div className="row-leaders centered-leader">
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={DavidS2018} alt="David S 2018"></img>
-                          <div className="officer-info">
-                            <h2>David <br/>San</h2>Treasurer
-                            </div>
-                        </div>
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={GeovannyH2018} alt="Geovanny H 2018"></img>
-                          <div className="officer-info">
-                            <h2>Geovanny <br/>Huerta</h2>Secretary
-                            </div>
-                        </div>
+                        <BoardLeaders photo={IMAGES.GioC2019} firstName="Giovanni" lastName="Castellanos" year="2019" position="VP of Internal Affairs" />
+                        <BoardLeaders photo={IMAGES.Vacant} firstName="Vacant" lastName="" year="2019" position="VP of External Affairs" />
                       </div>
                       <div className="row-leaders centered-leader">
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={GioG2018} alt="Gio G 2018"></img>
-                          <div className="officer-info">
-                            <h2>Giovanni <br/>Garcia</h2>VP of Internal Affairs
-                            </div>
-                        </div>
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Vacant} alt="Vacant"></img>
-                          <div className="officer-info">
-                            <h2>Vacant<br/></h2>VP of External Affairs
-                            </div>
-                        </div>
-                      </div>
-                      <div className="row-leaders centered-leader">
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Brian2018} alt="Brian 2018"></img>
-                          <div className="officer-info">
-                            <h2>Brian <br/>Hernandez</h2>Project Manager
-                            </div>
-                        </div>
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Vacant} alt="Vacant"></img>
-                          <div className="officer-info">
-                            <h2>Vacant<br/></h2>Webmaster
-                            </div>
-                        </div>
+                        <BoardLeaders photo={IMAGES.Andrew2019} firstName="Andrew" lastName="Gonzalez" year="2019" position="Project Manager" />
+                        <BoardLeaders photo={IMAGES.Vacant} firstName="Vacant" lastName="" year="2019" position="Webmaster" />
                       </div>
                       <br></br>
                       <br></br>
@@ -577,40 +233,11 @@ class Board extends React.Component {
                         <h2 className="h2-leaders">OFFICERS</h2>
                       </div>
                       <div className="row-leaders centered-leader">
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Kalvin2018} alt="Kalvin 2018"></img>
-                          <div className="officer-info">
-                            <h2>Kalvin <br/>Mateo</h2>Administrative Officer
-                            </div>
-                        </div>
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Diego2018} alt="Diego 2018"></img>
-                          <div className="officer-info">
-                            <h2>Diego <br/>Flores</h2>Finance Officer
-                            </div>
-                        </div>
+                        <BoardLeaders photo={IMAGES.Elton2019} firstName="Elton" lastName="Lin" year="2019" position="Administative Officer" />
+                        <BoardLeaders photo={IMAGES.Diego2019} firstName="Diego" lastName="Flores" year="2019" position="Finance Officer" />
                       </div>
                       <div className="row-leaders centered-leader">
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={GioC2018} alt="Gio C 2018"></img>
-                          <div className="officer-info">
-                            <h2>Giovanni <br/>Castellanos</h2>Digital Media Officer
-                            </div>
-                        </div>
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Deric2018} alt="Deric 2018"></img>
-                          <div className="officer-info">
-                            <h2>Deric <br/>Kwok</h2>Project Officer
-                            </div>
-                        </div>
-                      </div>
-                      <div className="row-leaders centered-leader">
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Ryan2018} alt="Ryan 2018"></img>
-                          <div className="officer-info">
-                            <h2>Ryan <br/>Dunning</h2>Web/Networking Officer
-                            </div>
-                        </div>
+                        <BoardLeaders photo={IMAGES.DavidT2019} firstName="David" lastName="Tang" year="2019" position="Web Officer" />
                       </div>
                       <br></br>
                       <br></br>
@@ -618,40 +245,85 @@ class Board extends React.Component {
                         <h2 className="h2-leaders">COMMITTEE</h2>
                       </div>
                       <div className="row-leaders centered-leader">
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Emily2018} alt="Emily 2018"></img>
-                          <div className="officer-info">
-                            <h2>Emily <br/>Pascua</h2>Web/Project Committee
-                            </div>
-                        </div>
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Srivats2018} alt="Srivats 2018"></img>
-                          <div className="officer-info">
-                            <h2>Srivats <br/>Venkataraman</h2>Web/Project Committee
-                            </div>
-                        </div>
+                        <BoardLeaders photo={IMAGES.Deric2019} firstName="Deric" lastName="Kwok" year="2019" position="General Committee" />
+                        <BoardLeaders photo={IMAGES.Ayush2019} firstName="Ayush" lastName="Singh" year="2019" position="Outreach Committee" />
                       </div>
                       <div className="row-leaders centered-leader">
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Ingelbert2018} alt="Ingelbert 2018"></img>
-                          <div className="officer-info">
-                            <h2>Ingelbert <br/>Figueroa</h2>Project Committee
-                            </div>
-                        </div>
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Andrew2018} alt="Andrew 2018"></img>
-                          <div className="officer-info">
-                            <h2>Andrew <br/>Gonzalez</h2>Project Committee
-                            </div>
-                        </div>
+                        <BoardLeaders photo={IMAGES.Kevin2019} firstName="Kevin" lastName="Flores" year="2019" position="Outreach Committee" />
+                        <BoardLeaders photo={IMAGES.Grover2019} firstName="John" lastName="Grover" year="2019" position="Project Committee" />
                       </div>
                       <div className="row-leaders centered-leader">
-                        <div className="col-leaders">
-                          <img className="image-cropper profile-pic " src={Erving2018} alt="Erving 2018"></img>
-                          <div className="officer-info">
-                            <h2>Erving <br/>Lopez</h2>Project Committee
-                            </div>
-                        </div>
+                        <BoardLeaders photo={IMAGES.Luis2019} firstName="Luis" lastName="Gonzalez" year="2019" position="Project Committee" />
+                        <BoardLeaders photo={IMAGES.George2019} firstName="George" lastName="Chan" year="2019" position="Web Committee" />
+                      </div>
+                      <div className="row-leaders centered-leader">
+                        <BoardLeaders photo={IMAGES.Ralph2019} firstName="Ralph" lastName="Belleca" year="2019" position="Web Committee" />
+                      </div>
+                      <br></br>
+                      <br></br>
+                      <div className="row">
+                        <h2 className="h2-leaders">ADVISORS</h2>
+                      </div>
+                      <div className="row-leaders centered-leader">
+                        <BoardLeaders photo={IMAGES.Randy2019} firstName="Randal" lastName="Moss" year="2019" position="Advisor" />
+                        <BoardLeaders photo={IMAGES.Wilson2019} firstName="Wilson" lastName="Thomas" year="2019" position="Advisor" />
+                      </div>
+                      <div className="space"></div>
+                    </Tab.Pane>
+                    <Tab.Pane eventKey="fourth">
+                      <div className="row">
+                        <div className="god-saver d-lg-none"></div>
+                        <h2 className="h2-leaders centered-leader">
+                          ACM 2018-2019 BOARD
+                        </h2>
+                      </div>
+                      <div className="row-leaders centered-leader">
+                        <BoardLeaders photo={IMAGES.Wilson2018} firstName="Wilson" lastName="Thomas" year="2019" position="President" />
+                        <BoardLeaders photo={IMAGES.Pranil2018} firstName="Pranil" lastName="Dahal" year="2019" position="Vice President" />
+                      </div>
+                      <div className="row-leaders centered-leader">
+                        <BoardLeaders photo={IMAGES.DavidS2018} firstName="David" lastName="San" year="2019" position="Treasurer" />
+                        <BoardLeaders photo={IMAGES.GeovannyH2018} firstName="Geovanny" lastName="Huerta" year="2019" position="Secretary" />
+                      </div>
+                      <div className="row-leaders centered-leader">
+                        <BoardLeaders photo={IMAGES.GioG2018} firstName="Giovanni" lastName="Garcia" year="2019" position="VP of Internal Affairs" />
+                        <BoardLeaders photo={IMAGES.Vacant} firstName="Vacant" lastName="" year="2019" position="VP of External Affairs" />
+                      </div>
+                      <div className="row-leaders centered-leader">
+                        <BoardLeaders photo={IMAGES.Brian2018} firstName="Brian" lastName="Hernandez" year="2019" position="Project Manager" />
+                        <BoardLeaders photo={IMAGES.Vacant} firstName="Vacant" lastName="" year="2019" position="Webmaster" />
+                      </div>
+                      <br></br>
+                      <br></br>
+                      <div className="row">
+                        <h2 className="h2-leaders">OFFICERS</h2>
+                      </div>
+                      <div className="row-leaders centered-leader">
+                        <BoardLeaders photo={IMAGES.Kalvin2018} firstName="Kalvin" lastName="Mateo" year="2019" position="Administrative Officer" />
+                        <BoardLeaders photo={IMAGES.Diego2018} firstName="Diego" lastName="Flores" year="2019" position="Finance Officer" />
+                      </div>
+                      <div className="row-leaders centered-leader">
+                        <BoardLeaders photo={IMAGES.GioC2018} firstName="Giovanni" lastName="Castellanos" year="2019" position="Digital Media Officer" />
+                        <BoardLeaders photo={IMAGES.Deric2018} firstName="Deric" lastName="Kwok" year="2019" position="Project Officer" />
+                      </div>
+                      <div className="row-leaders centered-leader">
+                        <BoardLeaders photo={IMAGES.Ryan2018} firstName="Ryan" lastName="Dunning" year="2019" position="Web/Networking Officer" />
+                      </div>
+                      <br></br>
+                      <br></br>
+                      <div className="row">
+                        <h2 className="h2-leaders">COMMITTEE</h2>
+                      </div>
+                      <div className="row-leaders centered-leader">
+                        <BoardLeaders photo={IMAGES.Emily2018} firstName="Emily" lastName="Pascua" year="2019" position="Web/Project Committee" />
+                        <BoardLeaders photo={IMAGES.Srivats2018} firstName="Srivats" lastName="Venkataraman" year="2019" position="Web/Project Committee" />
+                      </div>
+                      <div className="row-leaders centered-leader">
+                        <BoardLeaders photo={IMAGES.Ingelbert2018} firstName="Ingelbert" lastName="Figueroa" year="2019" position="Project Committee" />
+                        <BoardLeaders photo={IMAGES.Andrew2018} firstName="Andrew" lastName="Gonzalez" year="2019" position="Project Committee" />
+                      </div>
+                      <div className="row-leaders centered-leader">
+                        <BoardLeaders photo={IMAGES.Erving2018} firstName="Erving" lastName="Lopez" year="2019" position="Project Committee" />
                       </div>
                       <div className="space"></div>
                     </Tab.Pane>
@@ -659,7 +331,6 @@ class Board extends React.Component {
                 </Col>
               </Row>
             </Tab.Container>
-
           </Jumbotron>
         </div>
       </div>
