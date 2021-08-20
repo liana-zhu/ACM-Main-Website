@@ -15,7 +15,8 @@
 	font-weight: bold;
 	grid-row: 1/2;
 	grid-column: 2/3;
-}
+  }
+
 .membership-text {
 	height: 30vh;
 	width: 100%;
@@ -34,9 +35,6 @@
 	padding-left: 3rem;
 }
 
-.default-padding-top {
-	background-color:#1f1f1f !important;
-}
 .headerLogo{
 	width: 500px;
 }
@@ -49,7 +47,7 @@
 }
 
 .carousel_container{
-	width: 700px;
+	width: 800px;
 	height: 400px;
 	margin-top: 2rem;
 	margin-bottom: 2rem;
@@ -82,10 +80,6 @@
 #logoImage{
 	width: 300px;
 
-}
-
-.membership-text{
-	font-size:16px;
 }
 
 .membership-shirt{
@@ -154,7 +148,11 @@ a{
  text-align: center !important;
 }
 
-
+.done {
+	color: white;
+	font-size: 1.2rem;
+	padding: 7px;
+}
 .venmo-container {
 	display: flex;
 	width: 100%;
