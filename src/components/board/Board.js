@@ -11,12 +11,14 @@ class Board extends React.Component {
   render() {
     return (
       <div>
+
         <div>
           <div className="board-text">
             <p>Our Board</p>
           </div>
           <div className="board-card"></div>
         </div>
+
         <div className="body container">
           <Jumbotron className="row leaders-div">
             <Tab.Container id="left-tabs-example" defaultActiveKey="first">
@@ -54,7 +56,7 @@ class Board extends React.Component {
                         </div>
                         <div className="row-leaders centered-leader">
                           <BoardLeaders photo={IMAGES.Elton2021} firstName="Elton" lastName="Lin" year="2021" position="Treasurer" />
-                          <BoardLeaders photo={IMAGES.Vacant} firstName="Sebastian" lastName="Luna" year="2021" position="Secretary" />
+                          <BoardLeaders photo={IMAGES.Sebastian2021} firstName="Sebastian" lastName="Luna" year="2021" position="Secretary" />
                         </div>
                         <div className="row-leaders centered-leader">
                           <BoardLeaders photo={IMAGES.Tracy2021} firstName="Tracy" lastName="Truong" year="2021" position="VP of Internal Affairs" />
@@ -70,10 +72,10 @@ class Board extends React.Component {
                       </div>
                       <div className="row-leaders centered-leader">
                         <BoardLeaders photo={IMAGES.Ashley2021} firstName="Ashley" lastName="Tran" year="2021" position="Executive Officer" />
-                        <BoardLeaders photo={IMAGES.Daniel2020} firstName="Daniel" lastName="Ramirez" year="2021" position="Administrative Officer" />
+                        <BoardLeaders photo={IMAGES.Daniel2021} firstName="Daniel" lastName="Ramirez" year="2021" position="Administrative Officer" />
                       </div>
                       <div className="row-leaders centered-leader">
-                        <BoardLeaders photo={IMAGES.Vacant} firstName="Kenny" lastName="Luong" year="2021" position="Web Officer" />
+                        <BoardLeaders photo={IMAGES.Kenny2021} firstName="Kenny" lastName="Luong" year="2021" position="Web Officer" />
                         {/* <BoardLeaders photo={IMAGES.Vacant} firstName="Vacant" lastName="" year="2021" position="Project Officer" /> */}
                       </div>
                       <div className="row">

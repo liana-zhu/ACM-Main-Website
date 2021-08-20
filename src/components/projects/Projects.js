@@ -76,7 +76,7 @@ class Projects extends React.Component {
                 <div className="videoWrapper">
                     <div className="embed-responsive embed-responsive-16by9">
                         <iframe className="embed-responsive-item"
-                            src="https://www.youtube.com/embed/yfbfm_L74Do"
+                            src="https://www.youtube.com/embed/AjZGlE6PiG8"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                         </iframe>
@@ -156,7 +156,7 @@ class Projects extends React.Component {
 
 
                                                                 <div class="col-xs-1 col-sm-3 col-md-4 col-lg-5">
-                                                                    <b><p>Learn how to create a website of your own from scratch!</p> </b> <b><p>Concepts such as Website Design, Structure, Functionality, Animated and Dynamic objects will be enfored throughout each workshop!</p></b><br></br>
+                                                                    <b><p>Learn how to create a website of your own from scratch!</p> </b> <b><p>Concepts such as Website Design, Structure, Functionality, Animated and Dynamic objects will be enforced throughout each workshop!</p></b><br></br>
 
                                                                     <b><p>Signup deadline for the Fall 2021 projects is Saturday, September 4, 2021</p></b> <br></br>
 

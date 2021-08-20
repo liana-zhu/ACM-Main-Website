@@ -16,7 +16,7 @@ class Membership extends React.Component {
 		return (
 			<div id="membership-body">
 				<div>
-					<div className="board-text">
+					<div className="membership-text">
 						<p>Join our club!</p>
 					</div>
 					<div className="membership-card"></div>
@@ -102,9 +102,10 @@ class Membership extends React.Component {
 					<span
 						className="highlight-text"><i>Thank you for your support!</i></span>
 					<br></br>
-					<div className="membership-text">
+					<span className="done">
 						You're done! Expect to hear from us!
-					</div><br></br>
+					</span>
+					<br></br>
 				</div>
 			</div>
 		)
