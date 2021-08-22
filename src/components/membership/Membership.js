@@ -100,12 +100,8 @@ class Membership extends React.Component {
 				</div>
 				<div class="quote-style-2 membership-footer-text">
 					<span
-						className="highlight-text"><i>Thank you for your support!</i></span>
-					<br></br>
-					<span className="done">
-						You're done! Expect to hear from us!
+						className="highlight-text"><i>Thank you for your support!</i>
 					</span>
-					<br></br>
 				</div>
 			</div>
 		)

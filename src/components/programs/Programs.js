@@ -91,8 +91,6 @@ class Programs extends React.Component {
                                     2. Paste it beneath this block of comment.
                                     3. Modify it with the most recent mentorship program flyer and other information 
                                     (You can find it from the Mentorship.js file)
-https://www.youtube.com/embed/zIB8AygK-TA
-https://www.youtube.com/embed/QD__JkLepQk
 
                                     */}
                                             <Tab.Content className="programs-tab-content">

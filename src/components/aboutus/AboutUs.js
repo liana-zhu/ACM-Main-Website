@@ -135,7 +135,7 @@ class AboutUs extends React.Component {
 										<h1>Our Constitution</h1>
 										<p>Interested in learning about what governs our club?</p>
 										<p>We are making our constitution public for everyone to see.</p>
-										<Button href="https://drive.google.com/file/d/1Eop_ll-w1BNkqHk4QP1mzVbHZ7-TsgV9/view?usp=sharing" target="_blank">Constitution</Button>
+										<Button href="https://drive.google.com/file/d/1bl3REXemVBPAyFhuoCCKbdyWLjXaoOjl/view?usp=sharing" target="_blank">Constitution</Button>
 									</Col>
 									<Col lg={4}><Image src={require('./images/logo.png')} fluid /></Col>
 								</Row>
