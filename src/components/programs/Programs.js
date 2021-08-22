@@ -91,49 +91,69 @@ class Programs extends React.Component {
                                     2. Paste it beneath this block of comment.
                                     3. Modify it with the most recent mentorship program flyer and other information 
                                     (You can find it from the Mentorship.js file)
+https://www.youtube.com/embed/zIB8AygK-TA
+https://www.youtube.com/embed/QD__JkLepQk
+
                                     */}
                                             <Tab.Content className="programs-tab-content">
 
                                                 <Tab.Pane eventKey="F2021mentorship">
                                                     <div>
-                                                        <Tab.Container defaultActiveKey="menteeRole">
+
+                                                        <Container>
+                                                            <div class="row justify-content-start space">
+
+
+                                                                <div class="col-xs-1 col-sm-6 col-md-5 col-lg-4">
+                                                                    <iframe title="intro video" width="560" height="315" src="https://www.youtube.com/embed/zIB8AygK-TA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                                </div>
+
+
+                                                                <div class="col-xs-1 col-sm-3 col-md-4 col-lg-5">
+                                                                    <iframe title="intro video" width="560" height="315" src="https://www.youtube.com/embed/QD__JkLepQk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                                                </div>
+                                                            </div>
+                                                        </Container>
+
+
+
+                                                        <p>
+                                                            <h2><span className="highlight-text"><b>Program Description</b></span></h2>
                                                             <p>
-                                                                <h2><span className="highlight-text"><b>Program Description</b></span></h2>
-                                                                <p>
-                                                                    In this world, it could be a bit difficult to find some footing for a stable, independent life. Thankfully, if you are one
-                                                                    of these people, you are not alone. If you become a mentee in this program, a mentor can show you the ropes to
-                                                                    not only help you on your way to landing that six-figure job, but also help you navigate the pothole-filled road called life.
-                                                                </p>
-                                                                <p className="program-description">
-                                                                    In this program, mentees will:
-                                                                </p>
-                                                                <p>
-                                                                    ❖<span className="highlight-text point"><b>Time Management</b></span><br />
-                                                                    ❖<span className="highlight-text point"><b>Building your Resume, Cover Letter, Thank You Letter</b></span><br />
-                                                                    ❖<span className="highlight-text point"><b>Behavioral and Technical Interviews</b></span><br />
-                                                                    ❖<span className="highlight-text point"><b>Creating professional social media accounts (Handshake, LinkedIn)</b></span><br />
-                                                                    ❖<span className="highlight-text point"><b>Technical Practices in the CS field (Agile, Waterfall)</b></span><br />
-                                                                    ❖<span className="highlight-text point"><b>Conferences</b></span><br />
-                                                                    ❖<span className="highlight-text point"><b>Finances</b></span><br />
-                                                                </p>
-
-
-                                                                <p className="program-description">The deadline to apply is Tuesday, August 31, 2021. Join our mentorship program today before it's too late!</p>
+                                                                In this world, it could be a bit difficult to find some footing for a stable, independent life. Thankfully, if you are one
+                                                                of these people, you are not alone. If you become a mentee in this program, a mentor can show you the ropes to
+                                                                not only help you on your way to landing that six-figure job, but also help you navigate the pothole-filled road called life.
                                                             </p>
-                                                            {
-                                                                this.state.mentorship &&
-                                                                this.state.mentorship.map(mentorship => {
-                                                                    return (
-                                                                        <img src={mentorship.imgUrl} className="img-fluid programs-poster" alt="mentorship flyer"></img>
-                                                                    )
-                                                                })
-                                                            }
-                                                            <Tab.Content className="programs-tab-content poster">
-                                                                <Tab.Pane eventKey="menteeRole">
-                                                                </Tab.Pane>
-                                                            </Tab.Content>
-                                                            <Button variant="success" size="lg" href="https://forms.gle/E4PMfBcA4WjPDZBeA ">Join Now!</Button><br />
-                                                        </Tab.Container>
+                                                            <p className="program-description">
+                                                                In this program, mentees will:
+                                                            </p>
+                                                            <p>
+                                                                ❖<span className="highlight-text point"><b>Time Management</b></span><br />
+                                                                ❖<span className="highlight-text point"><b>Building your Resume, Cover Letter, Thank You Letter</b></span><br />
+                                                                ❖<span className="highlight-text point"><b>Behavioral and Technical Interviews</b></span><br />
+                                                                ❖<span className="highlight-text point"><b>Creating professional social media accounts (Handshake, LinkedIn)</b></span><br />
+                                                                ❖<span className="highlight-text point"><b>Technical Practices in the CS field (Agile, Waterfall)</b></span><br />
+                                                                ❖<span className="highlight-text point"><b>Conferences</b></span><br />
+                                                                ❖<span className="highlight-text point"><b>Finances</b></span><br />
+                                                            </p>
+
+
+                                                            <p className="program-description">The deadline to apply is Tuesday, August 31, 2021. Join our mentorship program today before it's too late!</p>
+                                                        </p>
+                                                        {
+                                                            this.state.mentorship &&
+                                                            this.state.mentorship.map(mentorship => {
+                                                                return (
+                                                                    <img src={mentorship.imgUrl} className="img-fluid programs-poster" alt="mentorship flyer"></img>
+                                                                )
+                                                            })
+                                                        }
+                                                        <Tab.Content className="programs-tab-content poster">
+                                                            <Tab.Pane eventKey="menteeRole">
+                                                            </Tab.Pane>
+                                                        </Tab.Content>
+                                                        <Button variant="success" size="lg" href="https://forms.gle/E4PMfBcA4WjPDZBeA ">Join Now!</Button><br />
                                                     </div>
                                                 </Tab.Pane>
                                             </Tab.Content>

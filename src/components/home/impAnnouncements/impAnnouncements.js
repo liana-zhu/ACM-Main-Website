@@ -27,6 +27,9 @@ class ImpAnnouncements extends Component {
             <section className="impAnnouncements-tease">
                 <div className="content">
                     <div className="title">Academic Year 2020-2021</div>
+
+                    <iframe title="intro video" width="560" height="315" src="https://www.youtube.com/embed/AjZGlE6PiG8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
                     <div className="description">
                         <ul>
                             <li>Due to COVID-19, all in-person meetings have been cancelled</li>

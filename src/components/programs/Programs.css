@@ -104,9 +104,10 @@
     margin: 15px;
 }
 
+
 iframe[src*=youtube] {
     display: block;
-    margin: 0 auto;
+    margin: 1rem auto;
     max-width: 100%;
 }
 
