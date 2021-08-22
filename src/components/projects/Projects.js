@@ -62,15 +62,11 @@ class Projects extends React.Component {
                 2. Signup deadline
                 */}
                 <div className="disclaimer-body">
-                    <h3 className="disclaimer_header"><b>Disclaimer!</b></h3>
-                    <span className="disclaimer"><b>1. You must be a member of ACM to participate in the projects! If you are not a member,</b>
-                        <b><i> you will not be allowed in.</i></b></span><br></br>
+                    <h3 className="disclaimer_header"><b>Disclaimers</b></h3>
+                    <span className="disclaimer"><b>1. You must be a member of ACM to participate in the projects! If you are not a member, you will not be allowed in.</b></span><br></br>
                     <span className="disclaimer"><b>2. Space is limited, so admittance to these projects are first come, first served.
                     </b></span><br></br>
-                    <span className="disclaimer"><b>3. Project signups will open on <i>
-                        Friday, August 27, 2021.</i></b></span><br></br>
-                    <span className="disclaimer"><b>4. Signup deadline for the projects is <i>
-                        Saturday, September 4, 2021.</i></b></span><br></br>
+                    <span className="disclaimer"><b>3. Project signups will be from Friday, 8/27/2021 until Saturday, 9/4/2021</b></span>
                 </div>
 
                 <div className="videoWrapper">
@@ -217,7 +213,7 @@ class Projects extends React.Component {
 
                                                                     <b><ul>
                                                                         <li>Unity</li>
-                                                                        <li>Visual</li>
+                                                                        <li>Visual Studio</li>
                                                                         <li>C#</li>
 
 

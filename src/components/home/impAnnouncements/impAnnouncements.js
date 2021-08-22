@@ -32,9 +32,10 @@ class ImpAnnouncements extends Component {
                         <ul>
                             <li>Due to COVID-19, most events will be hosted virtually</li>
                             <li>Projects, mentorship sessions, and workshops are online</li>
-                            <li>All communications will be done via email</li>
+                            <li>Communications will be done via email, Discord, and social media</li>
                         </ul>
                     </div>
+                    <br></br>
                     <Row className="justify-content-md-center title">upcoming Events</Row>
                     <Row className="justify-content-md-center">
                         {
