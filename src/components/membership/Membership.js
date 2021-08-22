@@ -102,9 +102,9 @@ class Membership extends React.Component {
 					<span
 						className="highlight-text"><i>Thank you for your support!</i></span>
 					<br></br>
-					<span className="done">
+					{/* <span className="done">
 						You're done! Expect to hear from us!
-					</span>
+					</span> */}
 					<br></br>
 				</div>
 			</div>
