@@ -182,3 +182,15 @@ h2{
 .success_message{
 	margin-top: 100px;
 }
+
+.join-card:hover {
+	cursor: pointer;
+}
+
+.join-card-header {
+	background-color: black;
+}
+
+.join-card-header:hover {
+	background-color: #4d4d4d;
+}

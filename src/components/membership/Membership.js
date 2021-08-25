@@ -2,7 +2,7 @@ import React from 'react'
 import "./membership.css"
 import { Card, Accordion } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css';
-import Carousel from 'react-bootstrap/Carousel';
+//import Carousel from 'react-bootstrap/Carousel';
 import Regular from './CheckoutComponents/RegularCheckout.js'
 import FACULTY_ALUMNI from './CheckoutComponents/FacultyCheckout.js'
 
@@ -22,7 +22,7 @@ class Membership extends React.Component {
 					<div className="membership-card"></div>
 				</div>
 				<div className="card">
-					<center>
+					{/* <center>
 						<div className="carousel_container" style={{ display: 'flex', justifyContent: 'center' }}>
 							<Carousel>
 								<Carousel.Item>
@@ -67,10 +67,10 @@ class Membership extends React.Component {
 								</Carousel.Item>
 							</Carousel>
 						</div>
-					</center>
+					</center> */}
 					<Accordion>
-						<Card>
-							<Card.Header style={{ backgroundColor: "#000000" }}>
+						<Card className="join-card">
+							<Card.Header className="join-card-header">
 								<Accordion.Toggle as={Card.Header} variant="link" eventKey="regular" style={{ fontSize: "27px" }}
 									className="highlight-text">
 									Regular
@@ -82,8 +82,8 @@ class Membership extends React.Component {
 								</Card.Body>
 							</Accordion.Collapse>
 						</Card>
-						<Card>
-							<Card.Header style={{ backgroundColor: "#000000" }}>
+						<Card className="join-card">
+							<Card.Header className="join-card-header">
 								<Accordion.Toggle as={Card.Header} variant="link" eventKey="faculty/alumni" style={{ fontSize: "27px" }}
 									className="highlight-text">
 									Faculty/Alumni
