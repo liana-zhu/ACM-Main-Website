@@ -11,7 +11,6 @@ class Board extends React.Component {
   render() {
     return (
       <div>
-
         <div>
           <div className="board-text">
             <p>Our Board</p>
@@ -42,12 +41,16 @@ class Board extends React.Component {
                 <Col sm={9}>
                   <Tab.Content>
                     <Tab.Pane eventKey="first">
-                      <div className="row">
-                        <div className="god-saver d-lg-none"></div>
+
+
+
+                      <div className="row leaders-div">
+                        <div className="board d-lg-none"></div>
                         <h2 className="h2-leaders centered-leader all-row-leaders">
                           ACM 2021-2022 BOARD
                         </h2>
                       </div>
+
                       {/* Fixed format (alignment) of leaders by adding "centered-leader" to class name of each row*/}
                       <div className="all-row-leaders">
                         <div className="row-leaders centered-leader">
@@ -78,7 +81,7 @@ class Board extends React.Component {
                         <BoardLeaders photo={IMAGES.Kenny2021} firstName="Kenny" lastName="Luong" year="2021" position="Web Officer" />
                         <BoardLeaders photo={IMAGES.Nshan2021} firstName="Nshan" lastName="Kazaryan" year="2021" position="Project Officer" />
                       </div>
-                      <div className = "row-leaders centered-leader">
+                      <div className="row-leaders centered-leader">
                         <BoardLeaders photo={IMAGES.Robert2021} firstName="Robert" lastName="de la Costa" year="2021" position="Project Officer" />
                       </div>
                       <div className="row">
@@ -91,7 +94,7 @@ class Board extends React.Component {
                         </div>
                         <div className="row-leaders centered-leader">
                           <BoardLeaders photo={IMAGES.Omar2021} firstName="Omar" lastName="Eclicerio" year="2020" position="Project Committee" />
-                          <BoardLeaders photo={IMAGES.Vacant} firstName="Salman" lastName="Sheikh" year="2020" position="Project Committee" />
+                          <BoardLeaders photo={IMAGES.Salman2021} firstName="Salman" lastName="Sheikh" year="2020" position="Project Committee" />
                         </div>
                         <div className="row-leaders centered-leader">
                         </div>
@@ -118,7 +121,7 @@ class Board extends React.Component {
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
                       <div className="row">
-                        <div className="god-saver d-lg-none"></div>
+                        <div className="board d-lg-none"></div>
                         <h2 className="h2-leaders centered-leader all-row-leaders">
                           ACM 2020-2021 BOARD
                         </h2>
@@ -206,7 +209,7 @@ class Board extends React.Component {
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
                       <div className="row">
-                        <div className="god-saver d-lg-none"></div>
+                        <div className="board d-lg-none"></div>
                         <h2 className="h2-leaders centered-leader">
                           ACM 2019-2020 BOARD
                         </h2>
@@ -273,7 +276,7 @@ class Board extends React.Component {
                     </Tab.Pane>
                     <Tab.Pane eventKey="fourth">
                       <div className="row">
-                        <div className="god-saver d-lg-none"></div>
+                        <div className="board d-lg-none"></div>
                         <h2 className="h2-leaders centered-leader">
                           ACM 2018-2019 BOARD
                         </h2>

@@ -57,7 +57,7 @@ const Regular = () => {
 		  const { error } = await stripe.redirectToCheckout({
 			mode: 'payment',
 			lineItems: [{ price: state.priceId, quantity: state.quantity }],
-			successUrl: `https://forms.gle/78uzwhNeJDaZGN319`,
+			successUrl: `https://forms.gle/A9eA5rnK4cmpZLw37`,
 			cancelUrl: `${window.location.origin}/Membership`,
 		  });
 		  // If `redirectToCheckout` fails due to a browser or network
@@ -71,7 +71,6 @@ const Regular = () => {
 
 	return (
 		<div className="text-info">
-			<h2><span className="highlight-text"><b><i>ACM Membership</i></b></span> ❖ REGULAR TIER</h2>
 			<h2 className="text-info">Benefits</h2>
 			<div className="text-info">
 				- Receive weekly newsletters.<br></br>

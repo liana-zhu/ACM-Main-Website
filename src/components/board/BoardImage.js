@@ -21,6 +21,7 @@ const IMAGES = {
     Nidhi2021: require('./2020-2021-leaders/Nidhi.jpg'),
     Kenny2021: require('./2020-2021-leaders/Kenny.jpg'),
     Sebastian2021: require('./2020-2021-leaders/Sebastian.jpg'),
+    Salman2021: require('./2020-2021-leaders/Salman.jpg'),
 
     // 2020-21 leaders
     Srivats2020: require('./2020-2021-leaders/Srivats.jpg'),

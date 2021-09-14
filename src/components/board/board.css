@@ -29,7 +29,6 @@
 	line-height: 1.2;
 	text-align: left;
 	padding-top: 32vh;
-  
 	/* display: grid; */
 	grid-template-rows: 1fr 1.4fr;
 	padding-left: 3rem;
@@ -108,12 +107,6 @@ a:hover{
 	padding-bottom: 25px;
 }
 
-.god-saver{
-	width: auto;
-	height: 150px;
-
-}
-
 .leaders-div{
 	background-color: #121212 !important;
 }
@@ -173,6 +166,10 @@ h2{
 .name{
 	flex-wrap: wrap;
 	word-wrap: normal;
+}
+.board{
+	width: auto;
+	height: 150px;
 }
 
 @media only screen and (max-width: 600px) {
