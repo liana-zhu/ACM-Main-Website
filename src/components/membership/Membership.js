@@ -68,34 +68,14 @@ class Membership extends React.Component {
 							</Carousel>
 						</div>
 					</center> */}
-					<Accordion>
-						<Card className="join-card">
-							<Card.Header className="join-card-header">
-								<Accordion.Toggle as={Card.Header} variant="link" eventKey="regular" style={{ fontSize: "27px" }}
-									className="highlight-text">
-									Regular
-								</Accordion.Toggle>
-							</Card.Header>
-							<Accordion.Collapse eventKey="regular">
-								<Card.Body style={{ backgroundColor: "#424242" }}>
-									<Regular />
-								</Card.Body>
-							</Accordion.Collapse>
-						</Card>
-						<Card className="join-card">
-							<Card.Header className="join-card-header">
-								<Accordion.Toggle as={Card.Header} variant="link" eventKey="faculty/alumni" style={{ fontSize: "27px" }}
-									className="highlight-text">
-									Faculty/Alumni
-								</Accordion.Toggle>
-							</Card.Header>
-							<Accordion.Collapse eventKey="faculty/alumni">
-								<Card.Body style={{ backgroundColor: "#424242" }}>
-									<FACULTY_ALUMNI />
-								</Card.Body>
-							</Accordion.Collapse>
-						</Card>
-					</Accordion>
+					<Card className="join-card">
+						<Card.Header className="join-card-header text-center">
+							<h2><span className="highlight-text"><b><i>ACM Membership</i></b></span></h2>
+						</Card.Header>
+						<Card.Body style={{ backgroundColor: "#424242" }}>
+							<Regular />
+						</Card.Body>
+					</Card>
 					<br></br>
 				</div>
 				<div class="quote-style-2 membership-footer-text">

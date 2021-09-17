@@ -49,53 +49,50 @@ const Regular = () => {
 		error: null,
 	});
 
-  const handleClick = async (event) => {
-		  // Call your backend to create the Checkout session.
-		  dispatch({ type: 'setLoading', payload: { loading: true } });
-		  // When the customer clicks on the button, redirect them to Checkout.
-		  const stripe = await stripePromise;
-		  const { error } = await stripe.redirectToCheckout({
+	const handleClick = async (event) => {
+		// Call your backend to create the Checkout session.
+		dispatch({ type: 'setLoading', payload: { loading: true } });
+		// When the customer clicks on the button, redirect them to Checkout.
+		const stripe = await stripePromise;
+		const { error } = await stripe.redirectToCheckout({
 			mode: 'payment',
 			lineItems: [{ price: state.priceId, quantity: state.quantity }],
-			successUrl: `https://forms.gle/78uzwhNeJDaZGN319`,
+			successUrl: `https://forms.gle/A9eA5rnK4cmpZLw37`,
 			cancelUrl: `${window.location.origin}/Membership`,
-		  });
-		  // If `redirectToCheckout` fails due to a browser or network
-		  // error, display the localized error message to your customer
-		  // using `error.message`.
-		  if (error) {
+		});
+		// If `redirectToCheckout` fails due to a browser or network
+		// error, display the localized error message to your customer
+		// using `error.message`.
+		if (error) {
 			dispatch({ type: 'setError', payload: { error } });
 			dispatch({ type: 'setLoading', payload: { loading: false } });
-		  }
-  };
+		}
+	};
 
 	return (
 		<div className="text-info">
-			<h2><span className="highlight-text"><b><i>ACM Membership</i></b></span> ❖ REGULAR TIER</h2>
-			<h2 className="text-info">Benefits</h2>
-			<div className="text-info">
-				- Receive weekly newsletters.<br></br>
-				- Access to project workshops (Beginner/Advanced).<br></br>
-				- Access to professional development workshops.<br></br>
-				- Access to Mentorship program.<br></br>
-			</div>
-			<p><b>*You will have to make a $5 payment*</b></p>
-			<p><b>*There will be a separate signup for the Project and Mentorship*</b></p>
-			<h2 className="text-info">How to become a member?</h2>
-			<h2 className="text-info">Step 1 - Click the buy for $5 Button</h2>
-			<h2 className="text-info">Step 2 - After the payment is successful, you will be redirected to a
-			Google Form.</h2>
-			<h2 className="text-info">Note: If the form is not complete, we cannot verify your membership</h2>
-            <center>
-            <h1>No Refunds</h1>
+			<h2 className="member-description">Benefits</h2>
+			<ul class="list-group list-group">
+				<li class="list-group-item list-group-item-success">Receive weekly newsletters.</li>
+				<li class="list-group-item list-group-item-success">Access to project workshops (Beginner/Advanced).</li>
+				<li class="list-group-item list-group-item-success">Access to professional development workshops.</li>
+				<li class="list-group-item list-group-item-success">Access to Mentorship program.</li>
+			</ul>
+			<h2 className="member-description">How to become a member?</h2>
+			<ul class="list-group list-group">
+				<li class="list-group-item list-group-item-secondary">Step 1 - Click the buy for $5 Button</li>
+				<li class="list-group-item list-group-item-secondary">Step 2 - After the payment is successful, you will be redirected to a
+					Google Form.</li>
+			</ul>
+			<h2 className="member-description-points">Note: If the form is not complete, we cannot verify your membership</h2>
+			<h1 className="refund">No Refunds</h1>
 			<h6>*ADDITIONAL 50 CENTS PROCESSING FEE*</h6>
-            <button className="btn btn-info btn-membership" role="link" onClick={handleClick} disabled={state.loading}>
-              {state.loading || !state.price
-                ? `Loading...`
-                : `Buy for $5`}
-            </button>
-            </center>
-    </div>
+			<button className="btn btn-lg btn-info btn-membership" role="link" onClick={handleClick} disabled={state.loading}>
+				{state.loading || !state.price
+					? `Loading...`
+					: `Buy for $5`}
+			</button>
+    </div >
   );
 };
 
