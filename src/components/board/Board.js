@@ -17,7 +17,6 @@ class Board extends React.Component {
           </div>
           <div className="board-card"></div>
         </div>
-
         <div className="body container">
           <Jumbotron className="row leaders-div">
             <Tab.Container id="left-tabs-example" defaultActiveKey="first">
@@ -41,16 +40,12 @@ class Board extends React.Component {
                 <Col sm={9}>
                   <Tab.Content>
                     <Tab.Pane eventKey="first">
-
-
-
                       <div className="row leaders-div">
                         <div className="board d-lg-none"></div>
                         <h2 className="h2-leaders centered-leader all-row-leaders">
                           ACM 2021-2022 BOARD
                         </h2>
                       </div>
-
                       {/* Fixed format (alignment) of leaders by adding "centered-leader" to class name of each row*/}
                       <div className="all-row-leaders">
                         <div className="row-leaders centered-leader">

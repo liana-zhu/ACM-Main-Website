@@ -69,7 +69,7 @@ class Membership extends React.Component {
 						</div>
 					</center> */}
 						<Card className="join-card">
-							<Card.Header className="join-card-header">
+							<Card.Header className="join-card-header text-center">
 									<h2><span className="highlight-text"><b><i>ACM Membership</i></b></span></h2>
 							</Card.Header>
 							<Card.Body style={{ backgroundColor: "#424242" }}>

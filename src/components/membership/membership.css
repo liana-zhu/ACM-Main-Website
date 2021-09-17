@@ -177,6 +177,31 @@ h2{
 
 .text-info{
 	color: white !important;
+	text-align: center;
+}
+
+.member-description{
+	font-size: 3.7rem;
+}
+
+.member-description-points{
+	font-size: 1.5rem;
+}
+
+.list-group{
+	margin-bottom: 1.5rem;
+}
+.list-group-item{
+	font-family: Roboto;
+	color: black;
+	font-size: 1.5rem;
+	width: 48vw;
+	margin: auto;
+	border-radius: 3px;
+}
+
+.refund{
+	color: red;
 }
 
 .success_message{
