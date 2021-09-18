@@ -181,7 +181,8 @@ h2{
 }
 
 .member-description{
-	font-size: 3.7rem;
+	font-size: 2.4rem;
+	padding: 5px;
 }
 
 .member-description-points{
@@ -194,7 +195,7 @@ h2{
 .list-group-item{
 	font-family: Roboto;
 	color: black;
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	width: 48vw;
 	margin: auto;
 	border-radius: 3px;
