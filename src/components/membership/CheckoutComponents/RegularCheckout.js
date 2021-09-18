@@ -75,18 +75,17 @@ const Regular = () => {
 
 			<ul class="list-group list-group">
 				<li class="list-group-item list-group-item-success">Receive weekly newsletters.</li>
-				<li class="list-group-item list-group-item-success">Access to project workshops (Beginner/Advanced).</li>
-				<li class="list-group-item list-group-item-success">Access to professional development workshops.</li>
-				<li class="list-group-item list-group-item-success">Access to Mentorship program.</li>
+				<li class="list-group-item list-group-item-success">Access to project workshops (Beginner, Advanced, and asynchronous).</li>
+				<li class="list-group-item list-group-item-success">Access to our exclusive 10-week Mentorship program.</li>
+				<li class="list-group-item list-group-item-success">Access to professional development workshops, guest speakers, and other events.</li>
+				<li class="list-group-item list-group-item-success">Become part of the community!</li>
 			</ul>
 			<h2 className="member-description">How to become a member?</h2>
 
 
-
 			<ul class="list-group list-group">
-				<li class="list-group-item list-group-item-secondary">Step 1 - Click the buy for $5 Button</li>
-				<li class="list-group-item list-group-item-secondary">Step 2 - After the payment is successful, you will be redirected to a
-					Google Form.</li>
+				<li class="list-group-item list-group-item-secondary">Step 1 - Click the "Buy for $5" Button</li>
+				<li class="list-group-item list-group-item-secondary">Step 2 - Fill out a Google form (redirect will happen after successful payment)</li>
 			</ul>
 
 			<h2 className="member-description-points">Note: If the form is not complete, we cannot verify your membership</h2>
