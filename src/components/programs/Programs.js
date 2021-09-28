@@ -123,13 +123,13 @@ class Programs extends React.Component {
                                                                 In this program, mentees will:
                                                             </p>
                                                             <p>
-                                                                <span className="highlight-text point"><b>Time Management</b></span>
-                                                                <span className="highlight-text point"><b>Building your Resume, Cover Letter, Thank You Letter</b></span>
-                                                                <span className="highlight-text point"><b>Behavioral and Technical Interviews</b></span>
-                                                                <span className="highlight-text point"><b>Creating professional social media accounts (Handshake, LinkedIn)</b></span>
-                                                                <span className="highlight-text point"><b>Technical Practices in the CS field (Agile, Waterfall)</b></span>
-                                                                <span className="highlight-text point"><b>Conferences</b></span>
-                                                                <span className="highlight-text point"><b>Finances</b></span>
+                                                                <p>❖<span className="highlight-text point"><b>Time Management</b></span></p>
+                                                                <p>❖<span className="highlight-text point"><b>Building your Resume, Cover Letter, Thank You Letter</b></span></p>
+                                                                <p>❖<span className="highlight-text point"><b>Behavioral and Technical Interviews</b></span></p>
+                                                                <p>❖<span className="highlight-text point"><b>Creating professional social media accounts (Handshake, LinkedIn)</b></span></p>
+                                                                <p>❖<span className="highlight-text point"><b>Technical Practices in the CS field (Agile, Waterfall)</b></span></p>
+                                                                <p>❖<span className="highlight-text point"><b>Conferences</b></span></p>
+                                                                <p>❖<span className="highlight-text point"><b>Finances</b></span></p>
                                                             </p>
                                                             <p className="program-description">The deadline to apply is Tuesday, August 31, 2021. Join our mentorship program today before it's too late!</p>
                                                         </p>
@@ -187,7 +187,6 @@ class Programs extends React.Component {
                                                 </Nav.Item>
                                             </Nav>
                                             <Tab.Content className="programs-tab-content">
-
                                                 <Tab.Pane eventKey="S2020mentorship">
                                                     <h2><span className="highlight-text">Program Description</span></h2>
                                                     Students in the mentorship program will gain professional and academic skills. They will learn to manage their time and tackle intimidating assignments. They will have opportunities to improve their public speaking skills, which will help them gain confidence.
@@ -250,3 +249,4 @@ class Programs extends React.Component {
 }
 
 export default Programs;
+
