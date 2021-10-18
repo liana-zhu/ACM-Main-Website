@@ -25,12 +25,7 @@ class NewProject extends React.Component {
                 <Container>
                     <div class="row justify-content-start space">
                         <div class="col-sm-1 col-md-4">
-
-
-
                             <img src={require('' + this.props.poster)} className="img-fluid project-poster" alt="project poster"></img>
-
-                            
                         </div>
                         <div class="col-sm-1 col-md-5">
                             <b>{this.props.opener} </b> <b>{this.props.description}</b><br></br><br></br>

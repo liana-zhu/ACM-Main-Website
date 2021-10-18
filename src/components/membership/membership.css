@@ -148,11 +148,6 @@ a{
  text-align: center !important;
 }
 
-/* .done {
-	color: white;
-	font-size: 1.2rem;
-	padding: 7px;
-} */
 .venmo-container {
 	display: flex;
 	width: 100%;
@@ -182,8 +177,46 @@ h2{
 
 .text-info{
 	color: white !important;
+	text-align: center;
+}
+
+.member-description{
+	font-size: 2.4rem;
+	padding: 5px;
+}
+
+.member-description-points{
+	font-size: 1.5rem;
+}
+
+.list-group{
+	margin-bottom: 1.5rem;
+}
+.list-group-item{
+	font-family: Roboto;
+	color: black;
+	font-size: 1.3rem;
+	width: 48vw;
+	margin: auto;
+	border-radius: 3px;
+}
+
+.refund{
+	color: red;
 }
 
 .success_message{
 	margin-top: 100px;
+}
+
+.join-card:hover {
+	cursor: pointer;
+}
+
+.join-card-header {
+	background-color: black;
+}
+
+.join-card-header:hover {
+	background-color: #4d4d4d;
 }

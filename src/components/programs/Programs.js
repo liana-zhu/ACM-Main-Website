@@ -39,7 +39,7 @@ class Programs extends React.Component {
                 <div className="quote-style-1 quote-bg">
                     <div className="d-flex justify-content-center">
                         <div className="quote-style-1">
-                            <b>Get involved!<br></br>
+                            <b>Interested in learning?<br></br>
                                 Participate in our mentorship!</b>
                         </div>
                     </div>
@@ -52,7 +52,7 @@ class Programs extends React.Component {
                 */}
 
                 <div className="disclaimer-body">
-                    <h3 className="disclaimer_header"><b>Disclaimer!</b></h3>
+                    <h3 className="disclaimer_header"><b>Disclaimers</b></h3>
                     <p><span className="disclaimer"><b>1. You must be a member of ACM to participate in the mentorship! If you are not a member, you will not be allowed in.</b></span></p>
                     <p><span className="disclaimer"><b>2. Deadline to apply for the mentorship program is Tuesday, August 31, 2021.</b></span></p>
                 </div>
@@ -91,8 +91,6 @@ class Programs extends React.Component {
                                     2. Paste it beneath this block of comment.
                                     3. Modify it with the most recent mentorship program flyer and other information 
                                     (You can find it from the Mentorship.js file)
-https://www.youtube.com/embed/zIB8AygK-TA
-https://www.youtube.com/embed/QD__JkLepQk
 
                                     */}
                                             <Tab.Content className="programs-tab-content">
@@ -121,9 +119,9 @@ https://www.youtube.com/embed/QD__JkLepQk
                                                         <p>
                                                             <h2><span className="highlight-text"><b>Program Description</b></span></h2>
                                                             <p>
-                                                                In this world, it could be a bit difficult to find some footing for a stable, independent life. Thankfully, if you are one
-                                                                of these people, you are not alone. If you become a mentee in this program, a mentor can show you the ropes to
-                                                                not only help you on your way to landing that six-figure job, but also help you navigate the pothole-filled road called life.
+                                                                In this world, many people may find it difficult to transition into a stable and independent life. Thankfully, if you are one
+                                                                of these people, you're not alone. By becoming a mentee in this program, a mentor can show you the ropes to
+                                                                not only help you on your way to landing that six-figure job, but also help you navigate the pothole-filled road we call life.
                                                             </p>
                                                             <p className="program-description">
                                                                 In this program, mentees will:
