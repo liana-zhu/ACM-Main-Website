@@ -70,19 +70,14 @@ class Board extends React.Component {
                       </div>
                       <div className="row-leaders centered-leader">
                         <BoardLeaders photo={IMAGES.Ashley2021} firstName="Ashley" lastName="Tran" year="2021" position="Executive Officer" />
-                        <BoardLeaders photo={IMAGES.Alexander2021} firstName="Alexander" lastName="Vasquez" year="2021" position="Executive Officer" />
+                        <BoardLeaders photo={IMAGES.Daniel2021} firstName="Daniel" lastName="Ramirez" year="2021" position="Administrative Officer" />
                       </div>
                       <div className="row-leaders centered-leader">
-                        <BoardLeaders photo={IMAGES.Daniel2021} firstName="Daniel" lastName="Ramirez" year="2021" position="Administrative Officer" />
-                        <BoardLeaders photo={IMAGES.James2021} firstName="James" lastName="Ybarra" year="2021" position="Administrative Officer" />
-                      </div>
-                      <div className = "row-leaders centered-leader">
-                        <BoardLeaders photo={IMAGES.Nshan2021} firstName="Nshan" lastName="Kazaryan" year="2021" position="Project Officer" />
-                        <BoardLeaders photo={IMAGES.Robert2021} firstName="Robert" lastName="de la Costa" year="2021" position="Project Officer" />
-                      </div>
-                      <div className = "row-leaders centered-leader">
                         <BoardLeaders photo={IMAGES.Kenny2021} firstName="Kenny" lastName="Luong" year="2021" position="Web Officer" />
-                        <BoardLeaders photo={IMAGES.Branden2021} firstName="Branden" lastName="Zamora" year="2021" position="Finance Officer" />
+                        <BoardLeaders photo={IMAGES.Nshan2021} firstName="Nshan" lastName="Kazaryan" year="2021" position="Project Officer" />
+                      </div>
+                      <div className = "row-leaders centered-leader">
+                        <BoardLeaders photo={IMAGES.Robert2021} firstName="Robert" lastName="de la Costa" year="2021" position="Project Officer" />
                       </div>
                       <div className="row">
                         <h2 className="h2-leaders">COMMITTEE</h2>
@@ -90,18 +85,13 @@ class Board extends React.Component {
                       <div className="all-row-leaders">
                         <div className="row-leaders centered-leader">
                           <BoardLeaders photo={IMAGES.Patrick2021} firstName="Patrick" lastName="Sangalang" year="2020" position="Web Committee" />
-                          <BoardLeaders photo={IMAGES.Spiro2021} firstName="Spiro" lastName="Bogdanos" year="2021" position="Web Committee" />
-                        </div>
-                        <div className="row-leaders centered-leader">
                           <BoardLeaders photo={IMAGES.Sean2021} firstName="Sean" lastName="Chung" year="2020" position="Project Committee" />
+                        </div>
+                        <div className="row-leaders centered-leader">
                           <BoardLeaders photo={IMAGES.Omar2021} firstName="Omar" lastName="Eclicerio" year="2020" position="Project Committee" />
-                        </div>
-                        <div className="row-leaders centered-leader">
                           <BoardLeaders photo={IMAGES.Salman2021} firstName="Salman" lastName="Sheikh" year="2020" position="Project Committee" />
-                          <BoardLeaders photo={IMAGES.Jose2021} firstName="Jose" lastName="Zamora" year="2021" position="Project Committee" />
                         </div>
                         <div className="row-leaders centered-leader">
-                          <BoardLeaders photo={IMAGES.Elizabeth2021} firstName="Elizabeth" lastName="Silvestre" year="2021" position="Project Committee" />
                         </div>
                       </div>
                       <div className="row">
