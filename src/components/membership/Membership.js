@@ -1,10 +1,9 @@
 import React from 'react'
 import "./membership.css"
-import { Card, Accordion } from 'react-bootstrap'
+import { Card } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css';
 //import Carousel from 'react-bootstrap/Carousel';
 import Regular from './CheckoutComponents/RegularCheckout.js'
-import FACULTY_ALUMNI from './CheckoutComponents/FacultyCheckout.js'
 
 class Membership extends React.Component {
 
