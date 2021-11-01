@@ -174,20 +174,85 @@ h2{
 	word-wrap: normal;
 }
 
+.leader-header{
+	padding: 10px;
+	text-align: center;
+	margin-bottom: 2rem;
+	font-size: 35px;
+	border-top: 1px solid #029CD7;
+	border-bottom: 1px solid #029CD7;
+}
+
+.leader-image{
+	width: 50%;
+	padding-left: 18%;
+	margin: auto;
+	text-align: center;
+}
+
+.leader-name{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 35px;
+	text-align: center;
+}
+.leader-position {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 4rem;
+	font-size: 35px;
+	text-align: center;
+}
+
 @media only screen and (max-width: 600px) {
 	h2{
 		margin-left: auto;
 		margin-right: auto;
 		font-size: 4vw;
-	}
-	
+	}	
 	.h2-leaders{
-		font-size: 4vw;
+		font-size: 5.5vw;
 	}
-
 	.officer-info{
 		display: inline-block;
 		text-align: left;
 		font-size: 3.5vw;
+	}
+	.all-row-leaders{
+		margin-bottom: 2rem;
+	}
+	.board{
+		width: auto;
+		height: 12px;
+	}
+	.leader-header{
+		width: 91vw;
+		padding: 10px;
+		margin-left: 1.9rem;
+		text-align: center;
+		margin-bottom: 2rem;
+		font-size: 35px;
+		border-top: 1px solid #029CD7;
+		border-bottom: 1px solid #029CD7;
+	}
+	.leader-image{
+		width: 50%;
+		padding-left: 15%;
+		margin: auto;
+		text-align: center;
+	}
+	.leader-name{
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-left: 25px;
+		font-size: 35px;
+		text-align: center;
+	}.leader-position {
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-left: 30px;
+		margin-bottom: 4rem;
+		font-size: 35px;
+		text-align: center;
 	}
   }
