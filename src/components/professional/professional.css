@@ -83,6 +83,21 @@
     margin-left: 10px;
     margin-right: 10px;
 }
+.image-description{
+    width:fit-content;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    border-color: #343a40;
+    background-color: #343a40;
+    text-align: center;
+}
+.cover{
+    object-fit: cover;
+}
 
 /* .events-container {
     display: grid;
@@ -102,7 +117,7 @@
 }
 
 @media only screen and (max-width: 420px){
-    .events-header {
+    .events-header{
         text-align: center;
         width: 100%;
         margin-left: 0 !important;

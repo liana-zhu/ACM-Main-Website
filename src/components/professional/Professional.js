@@ -1,14 +1,15 @@
 import React from 'react';
 import './professional.css';
 import firebase from './firebaseConfig.js'
-import { Card, Button, Container, Row, Image } from 'react-bootstrap';
-
+import { Card, Button, Container, Row, Image} from 'react-bootstrap';
 /*
 To install, go to project directory and run this on command line:
 $ npm install react-multi-carousel --save
 */
 //Imports for multi carousel
 import "react-multi-carousel/lib/styles.css";
+import ModalHeader from 'react-bootstrap/esm/ModalHeader';
+
 
 // This component won't hold a state for not but decided
 // to make it into a Class component for now
@@ -17,6 +18,7 @@ class Professional extends React.Component {
         currentEvent: null ,
         upcomingEvent: null,
     }
+
 
     componentDidMount(){
         firebase.firestore().collection("events").get()
@@ -41,9 +43,6 @@ class Professional extends React.Component {
         })
         .catch(error => console.log(error))
     }
-
-    
-
 
     test() {
         alert('Show Modal!');
@@ -107,6 +106,49 @@ class Professional extends React.Component {
                     })
                 }
                 </Row>
+            </Container>
+            <hr  style={{
+                color: '#ffffff',
+                backgroundColor: '#ffffff',
+                height: .5,
+                borderColor : '#ffffff',
+                marginLeft: '10px',
+                marginRight: '10px'
+            }}/>
+            <Container>
+                    <Row className="justify-content-md-center">
+                        <p className="events-header">Event Gallery</p>
+                    </Row>
+                    <Row className="justify-content-md-center">
+                        <div>
+                            <div>
+                                <Image 
+                                    className='cover' 
+                                    style={{ width: '30rem', height: '30rem' }}  
+                                    src={require('./images/placeholder-1.jpg')}
+                                    onClick={()=>this.setState({setModalShow: true})}
+                                />
+                            </div>
+                            <p className="image-description">Game Night 2021</p>
+                        </div>
+                        <div>
+                            <div><Image className='cover' style={{ width: '30rem', height: '30rem' }} src={require('./images/placeholder-2.jpg')} /></div>
+                            <p className="image-description">Movie Night 2021</p>
+                        </div>
+                        <div>
+                            <div><Image className='cover' style={{ width: '30rem', height: '30rem' }} src={require('./images/placeholder-4.jpg')} /></div>
+                            <p className="image-description">Guest Speaker 2021</p>
+                        </div>
+                        <div>
+                            <div><Image className='cover' style={{ width: '30rem', height: '30rem' }} src={require('./images/placeholder-3.jpg')} /></div>
+                            <p className="image-description">Movie Night 2020</p>
+                        </div>
+                        <div>
+                            <div><Image className='cover' style={{ width: '30rem', height: '30rem' }} src={require('./images/placeholder-5.jpg')} fluid='true'/></div>
+                            <p className="image-description">Game Night 2020</p>
+                        </div>
+                        
+                    </Row>
             </Container>
             <hr  style={{
                 color: '#ffffff',
