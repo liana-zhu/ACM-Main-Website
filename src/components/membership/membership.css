@@ -181,28 +181,73 @@ h2{
 }
 
 .member-description{
-	font-size: 2.4rem;
-	padding: 5px;
+	font-size: 1.5rem;
+	font-family: 'Libre Caslon Text', serif;
+	font-style: italic;
+	padding: 8px;
+	background-color: black;
+}
+
+.content-box{
+	margin-top: 20px;
+	margin-bottom: 60px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 .member-description-points{
-	font-size: 1.5rem;
+	font-family: 'Libre Caslon Text', serif;
+	font-style: italic;
+	font-size: 16px;
+	margin: 10px;
+}
+
+.membership-description-section{
+	display: inline-block;
+	vertical-align: top;
+	/* width: 60%;
+	height: 60%; */
+	margin: 20px; 
+	background-color: #494949;
 }
 
 .list-group{
 	margin-bottom: 1.5rem;
 }
-.list-group-item{
-	font-family: Roboto;
-	color: black;
-	font-size: 1.3rem;
-	width: 48vw;
+/* .list-points{
+	font-family: 'Libre Caslon Text', serif;
+	font-style: italic;
+	background-color: #424242;
+	font-size: 0.9rem;
 	margin: auto;
-	border-radius: 3px;
+	padding: 10px;
+	height: 5%;
+	border-radius: 6px;
+} */
+
+.list-points{
+	font-family: 'Libre Caslon Text', serif;
+	font-style: italic;
+	background-color: #424242;
+	font-size: 0.9rem;
+	margin: auto;
+	padding: 20px;
+	width: 95%;
+	border-radius: 6px;
 }
 
 .refund{
 	color: red;
+	font-family: 'Libre Caslon Text', serif;
+	font-weight: 600;
+	font-size: 2.0em;
+	margin: 10px;
+}
+
+.additional-fee{
+	font-family: 'Libre Caslon Text', serif;
+	font-style: italic;
+	margin: 12px;
 }
 
 .success_message{
