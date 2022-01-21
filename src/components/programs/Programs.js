@@ -36,14 +36,12 @@ class Programs extends React.Component {
     render() {
         return (
             <div className="programs-body">
-                <div className="quote-style-1 quote-bg">
-                    <div className="d-flex justify-content-center">
-                        <div className="quote-style-1">
-                            <b>Interested in learning?<br></br>
-                                Participate in our mentorship!</b>
-                        </div>
+               
+                    <div className="mentor-title-text">
+                        <p>Interested in learning?</p>
+                        <p>Participate in our mentorship!</p>                        
                     </div>
-                </div>
+                    <div className="mentorship-title-card"></div>
 
                 {/* 
                 Remember to update dates in the disclaimer: 
@@ -53,8 +51,8 @@ class Programs extends React.Component {
 
                 <div className="disclaimer-body">
                     <h3 className="disclaimer_header"><b>Disclaimers</b></h3>
-                    <p><span className="disclaimer"><b>1. You must be a member of ACM to participate in the mentorship! If you are not a member, you will not be allowed in.</b></span></p>
-                    <p><span className="disclaimer"><b>2. Deadline to apply for the mentorship program is Tuesday, August 31, 2021.</b></span></p>
+                    <span className="disclaimer"><b>1. You must be a member of ACM to participate in the mentorship! If you are not a member, you will not be allowed in.</b></span><br></br>
+                    <span className="disclaimer"><b>2. Deadline to apply for the mentorship program is Tuesday, August 31, 2021.</b></span>
                 </div>
                 <br></br>
                 <div className="card programs-card">

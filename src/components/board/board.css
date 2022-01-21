@@ -125,7 +125,7 @@ a:hover{
     position: relative;
     overflow: hidden;
     border-radius: 50%;
-    border: solid 2px white;
+    border: solid 2px #1b1d36;
 }
 .profile-pic {
   display: inline;
@@ -180,27 +180,38 @@ h2{
 }
 
 .leader-header{
+	width: 30%;
 	padding: 10px;
 	text-align: center;
-	margin-bottom: 2rem;
-	font-size: 35px;
+	font-size: 2.5rem;
 	border-top: 1px solid #029CD7;
 	border-bottom: 1px solid #029CD7;
 }
 
-.leader-image{
-	width: 50%;
-	padding-left: 18%;
-	margin: auto;
-	text-align: center;
+
+.board-leader-winner{
+    width: 100px;
+    height: 100px;
+	top: 1rem;
+	left: 1rem;
+	object-fit: cover;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    border: solid 2px #1b1d36;
 }
 
-.leader-name{
-	margin-top: 1rem;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	font-size: 35px;
+.board-leader-profile{
+	display: inline;
+	margin: 0 auto;
+}
+.image-contain{
+	width:95vw;
+}
+
+.leader-info{
 	text-align: center;
+	font-size: 2.2rem;
 }
 .leader-position {
 	padding-top: 5px;
@@ -211,14 +222,14 @@ h2{
 }
 
 .leader-background {
-	width: 25.5rem;
-	height: 8.8rem;
-	position: relative;
+	width: 26rem;
+	height: 135px;
 	background: #31355f;
 	border: 3px solid #000000;
 	box-sizing: border-box;
 	border-radius: 20px;
   }
+
 
 @media only screen and (max-width: 600px) {
 	h2{
@@ -242,41 +253,26 @@ h2{
 		height: 12px;
 	}
 	.leader-header{
-		width: 91vw;
+		width: 90vw;
 		padding: 10px;
-		margin-left: 1.9rem;
+		margin-left: auto;
+		margin-right: auto;
 		text-align: center;
-		margin-bottom: 2rem;
-		font-size: 35px;
+		font-size: 2.2rem;
 		border-top: 1px solid #029CD7;
 		border-bottom: 1px solid #029CD7;
 	}
-	.leader-image{
-		width: 50%;
-		padding-left: 12%;
-		margin: auto;
+	.board-leader-winner{
 		text-align: center;
 	}
-	.leader-name{
-		padding-top: 5px;
-		padding-bottom: 5px;
-		padding-left: 25px;
-		font-size: 35px;
-		text-align: center;
-	}.leader-position {
-		padding-top: 5px;
-		padding-bottom: 5px;
-		padding-left: 30px;
-		margin-bottom: 4rem;
-		font-size: 35px;
+	.leader-info{
+		font-size: 2.2rem;
 		text-align: center;
 	}
 	.leader-background {
-		width: 22rem;
-		height: 8.8rem;
-		position: relative;
+		width: 95vw;
+		height: 135px;
 		background: #31355f;
-		border: 3px solid #000000;
 		box-sizing: border-box;
 		border-radius: 20px;
 	  }
