@@ -216,7 +216,7 @@ class Projects extends React.Component {
                                                     <div className="project-description">
                                                         <Container>
                                                             <div class="row justify-content-start space">
-                                                                <div class="col-sm-1 col-md-4">
+                                                                <div class="col-xs-1 col-sm-7 col-md-5 col-lg-4">
 
                                                                     {
                                                                         this.state.advanceProject &&
@@ -228,7 +228,7 @@ class Projects extends React.Component {
                                                                     }
 
                                                                 </div>
-                                                                <div class="col-sm-1 col-md-5">
+                                                                <div class="col-xs-4 col-sm-7 col-md-4 col-lg-5">
                                                                     <b><p>Learn Video Game Development using the Unity game engine and the Visual Studio IDE!</p> </b> <b><p>Code and build your own desktop version of Pacman. Learn to create a beloved arcade video game from scratch!</p></b><br></br><br></br>
 
                                                                     <b><p>Signup deadline for the Fall 2021 projects is Saturday, September 4, 2021</p></b> <br></br><br></br>
