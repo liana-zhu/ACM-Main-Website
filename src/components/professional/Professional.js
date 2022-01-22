@@ -54,7 +54,7 @@ class Professional extends React.Component {
             <div className="events-container">
                 <div className="events-main">
                     <div className="events-main-text">
-                        <p>Professional Development Workshops</p>
+                        <p>Events</p>
                     </div>
                     <div className="events-main-background">
                     </div>

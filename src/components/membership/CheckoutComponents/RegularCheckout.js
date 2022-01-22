@@ -91,7 +91,7 @@ const Regular = () => {
 						<li class="list-group-item list-points">Step 1 - Click the "Buy for $5" Button</li>
 						<li class="list-group-item list-points">Step 2 - Fill out a Google form (redirect will happen after successful payment)</li>
 					</ul>
-					<h2 className="member-description-points">Note: If the form is not complete, we cannot verify your membership</h2>
+					<h2 className="member-description-points">Send us an email if you have any questions or concerns</h2>
 					<h1 className="refund">No Refunds</h1>
 					<h6 className="additional-fee">*ADDITIONAL 50 CENTS PROCESSING FEE*</h6>
 					<button className="btn btn-lg btn-info btn-membership" role="link" onClick={handleClick} disabled={state.loading}>
