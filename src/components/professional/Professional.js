@@ -14,35 +14,35 @@ import "react-multi-carousel/lib/styles.css";
 // to make it into a Class component for now
 class Professional extends React.Component {
     state = {
-        currentEvent: null ,
+        currentEvent: null,
         upcomingEvent: null,
     }
 
-    componentDidMount(){
+    componentDidMount() {
         firebase.firestore().collection("events").get()
-        .then(snapshot => {
-            const events = []
-            snapshot.forEach(doc => {
-                const data = doc.data()
-                events.push(data)
+            .then(snapshot => {
+                const events = []
+                snapshot.forEach(doc => {
+                    const data = doc.data()
+                    events.push(data)
+                })
+                this.setState({ currentEvent: events })
             })
-            this.setState({ currentEvent: events })
-        })
-        .catch(error => console.log(error));
+            .catch(error => console.log(error));
 
         firebase.firestore().collection("upcomingEvents").get()
-        .then(snapshot => {
-            const comingUpEvent = []
-            snapshot.forEach(doc => {
-                const data = doc.data()
-                comingUpEvent.push(data)
+            .then(snapshot => {
+                const comingUpEvent = []
+                snapshot.forEach(doc => {
+                    const data = doc.data()
+                    comingUpEvent.push(data)
+                })
+                this.setState({ upcomingEvent: comingUpEvent })
             })
-            this.setState({upcomingEvent: comingUpEvent})
-        })
-        .catch(error => console.log(error))
+            .catch(error => console.log(error))
     }
 
-    
+
 
 
     test() {
@@ -52,71 +52,72 @@ class Professional extends React.Component {
     render() {
         return (
             <div className="events-container">
-                <div className="events-main">
-                    <div className="events-main-text">
-                        <p>Events</p>
-                    </div>
-                    <div className="events-main-background">
-                    </div>
-                </div>
+                <div>
+					<div className="event-text">
+						<p>Events</p>
+					</div>
+					<div className="event-card"></div>
+				</div>
+
+ 
                 <Container>
-            <Row className="justify-content-md-center">
-            <p className="events-header" >Upcoming Events</p>
-            </Row>
-                <Row className="justify-content-md-center">
-                {
-                    this.state.upcomingEvent &&
-                    this.state.upcomingEvent.map( upcomingEvents => {
-                        return (
-                            <Card style={{width: '24rem', padding: '10px'}}>
-                                <center>
-                                    <img style={{height: '30rem', padding: '10px'}} src={upcomingEvents.imgUrl} alt="Upcoming event"/>
-                                    <p>Sign up starts: {upcomingEvents.signUpStart}</p>
-                                    <p>Sign up Deadline: {upcomingEvents.deadline}</p>
-                                    <Button href={upcomingEvents.link}>RSVP</Button>
-                                </center>
-                            </Card>
-                        )
-                    })
-                }
-                </Row>
-            </Container>
-            <hr  style={{
-                color: '#ffffff',
-                backgroundColor: '#ffffff',
-                height: .5,
-                borderColor : '#ffffff',
-                marginLeft: '10px',
-                marginRight: '10px'
-            }}/>
-            <Container>
-            <Row className="justify-content-md-center">
-            <p className="events-header">Semester Events</p>
-            </Row>
-                <Row className="justify-content-md-center">
-                {
-                    this.state.currentEvent &&
-                    this.state.currentEvent.map( currentEvents => {
-                        return (
-                            <Card style={{width: '24rem', padding: '10px'}}>
-                                <center>
-                                    <img style={{height: '30rem', padding: '10px'}} src={currentEvents.imgUrl} alt="Current event"/>
-                                </center>
-                            </Card>
-                        )
-                    })
-                }
-                </Row>
-            </Container>
-            <hr  style={{
-                color: '#ffffff',
-                backgroundColor: '#ffffff',
-                height: .5,
-                borderColor : '#ffffff',
-                marginLeft: '10px',
-                marginRight: '10px'
-            }}/>
-            <Container>
+                    <Row className="justify-content-md-center">
+                        <p className="events-header" >Upcoming Events</p>
+                    </Row>
+                    <Row className="justify-content-md-center">
+                        {
+                            this.state.upcomingEvent &&
+                            this.state.upcomingEvent.map(upcomingEvents => {
+                                return (
+                                    <Card style={{ width: '24rem', padding: '10px' }}>
+                                        <center>
+                                            <img style={{ height: '30rem', padding: '10px' }} src={upcomingEvents.imgUrl} alt="Upcoming event" />
+                                            <p>Sign up starts: {upcomingEvents.signUpStart}</p>
+                                            <p>Sign up Deadline: {upcomingEvents.deadline}</p>
+                                            <Button href={upcomingEvents.link}>RSVP</Button>
+                                        </center>
+                                    </Card>
+                                )
+                            })
+                        }
+                    </Row>
+                </Container>
+                <hr style={{
+                    color: '#ffffff',
+                    backgroundColor: '#ffffff',
+                    height: .5,
+                    borderColor: '#ffffff',
+                    marginLeft: '10px',
+                    marginRight: '10px'
+                }} />
+                <Container>
+                    <Row className="justify-content-md-center">
+                        <p className="events-header">Semester Events</p>
+                    </Row>
+                    <Row className="justify-content-md-center">
+                        {
+                            this.state.currentEvent &&
+                            this.state.currentEvent.map(currentEvents => {
+                                return (
+                                    <Card style={{ width: '24rem', padding: '10px' }}>
+                                        <center>
+                                            <img style={{ height: '30rem', padding: '10px' }} src={currentEvents.imgUrl} alt="Current event" />
+                                        </center>
+                                    </Card>
+                                )
+                            })
+                        }
+                    </Row>
+                </Container>
+                <hr style={{
+                    color: '#ffffff',
+                    backgroundColor: '#ffffff',
+                    height: .5,
+                    borderColor: '#ffffff',
+                    marginLeft: '10px',
+                    marginRight: '10px'
+                }} />
+                <Container>
                     <Row className="justify-content-md-center">
                         <p className="events-header">Past Events</p>
                     </Row>

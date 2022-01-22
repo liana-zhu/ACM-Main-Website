@@ -222,7 +222,7 @@ h2{
 }
 
 .leader-background {
-	width: 26rem;
+	width: 29rem;
 	height: 135px;
 	background: #31355f;
 	border: 3px solid #000000;
@@ -270,7 +270,7 @@ h2{
 		text-align: center;
 	}
 	.leader-background {
-		width: 95vw;
+		width: 100vw;
 		height: 135px;
 		background: #31355f;
 		box-sizing: border-box;
