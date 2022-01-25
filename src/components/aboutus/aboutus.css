@@ -20,7 +20,6 @@
   width: 100%;
   position: absolute;
   z-index: 2;
-  font-family: Roboto;
   font-size: 3.5rem;
   color: white;
   font-weight: bold;
@@ -49,7 +48,7 @@
 }
 
 .mission-statement-points {
-  text-align: center;
+  text-align: left;
   font-size: 1.25rem;
   color: white;
 }
@@ -60,35 +59,11 @@
   margin-bottom: 30px;
 }
 
-.info-content-container{
-  background-color: #e0e4eb;
-  border-radius: 6px;
-  padding: 2px;
-  margin-bottom: 15px;
-  height: 135mm;
-}
-
-.info-header-container{
-  background-color: black;
-  border-radius: 6px;
-  margin-top: 1px;
-  height: 13mm;
-}
-
-.info-header{
-  color: #01a4ff;
-  margin-left: 15px;
-  font-size: 30px;
-  padding-top: 4px;
-}
-
 .about-text {
   text-align: left;
-  font-size: 1.10rem;
-  padding-top: 5px;
-  padding-left: 10px;
+  font-size: 1.25rem;
   /* margin-left: 60px; */
-  color: black;
+  color: white;
 }
 
 
@@ -103,11 +78,9 @@
 
 .offer-text {
   text-align: left;
-  font-size: 1.10rem;
-  padding-top: 5px;
-  padding-left: 10px;
+  font-size: 1.25rem;
   /* margin-left: 60px; */
-  color: black;
+  color: white;
 }
 
 .info-row .offer-text li {
@@ -116,11 +89,9 @@
 
 .join-text {
   text-align: left;
-  font-size: 1.10rem;
-  padding-top: 5px;
-  padding-left: 10px;
+  font-size: 1.25rem;
   /* margin-left: 60px; */
-  color: black;
+  color: white;
 }
 
 .info-row .join-text li {
