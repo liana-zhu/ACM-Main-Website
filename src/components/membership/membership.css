@@ -22,13 +22,12 @@
 	width: 100%;
 	position: absolute;
 	z-index: 2;
-	font-family: Roboto;
 	font-size: 3.5rem;
 	color: white;
 	font-weight: bold;
-	line-height: 1.2;
+	line-height: 0.9;
 	text-align: left;
-	padding-top: 32vh;
+	padding-top: 30vh;
   
 	/* display: grid; */
 	grid-template-rows: 1fr 1.4fr;
@@ -182,7 +181,6 @@ h2{
 
 .member-description{
 	font-size: 1.5rem;
-	font-style: italic;
 	padding: 8px;
 	background-color: black;
 }
@@ -202,6 +200,8 @@ h2{
 .membership-description-section{
 	display: inline-block;
 	vertical-align: top;
+	/* width: 60%;
+	height: 60%; */
 	margin: 20px; 
 	background-color: #494949;
 }
@@ -213,6 +213,7 @@ h2{
 .list-points{
 	background-color: #424242;
 	font-size: 0.9rem;
+	font-weight: bold;
 	margin: auto;
 	padding: 20px;
 	width: 95%;
@@ -221,12 +222,14 @@ h2{
 
 .refund{
 	color: red;
+  font-family: 'Libre Caslon Text', serif;
 	font-weight: 600;
-	font-size: 1.0em;
+	font-size: 1.3rem;
 	margin: 10px;
 }
 
-.additional-fee{	
+.additional-fee{
+	font-family: 'Libre Caslon Text', serif;
 	font-style: italic;
 	margin: 12px;
 }
@@ -243,6 +246,3 @@ h2{
 	background-color: black;
 }
 
-.join-card-header:hover {
-	background-color: #4d4d4d;
-}

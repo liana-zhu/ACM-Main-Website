@@ -8,6 +8,7 @@
     url("./fall2019/space0.jpg");
     background-size: cover !important;
     align-self: center;
+	filter: blur(1px);
     font-size: 4.4rem;
     color: white;
     opacity: .6;
@@ -143,6 +144,60 @@ iframe[src*=youtube] {
 .project-description {
     margin-top: 1rem;
 }
+
+.contain{
+    display: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.winner-circles{
+    position: static;
+    display: inline-block;
+    padding: 10px;
+}
+
+.project-winners{
+    font-size: 2.5rem;
+    background-color: #1c1c1e !important;
+    color: white;
+    padding-top: 7px;
+    padding-bottom: 10px;
+    margin-top: 1rem;
+}
+
+.project-winners-place{
+    font-size: 1.2rem;
+    color: white;
+    margin-top: 20px;
+    padding-top: 7px;
+    border-bottom: 5px solid #1e81b0;
+}
+
+.project-winners-name{
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    width: 50%;
+    margin-top: 1rem;
+}
+
+.winner1{
+    width: 200px;
+    height: 150px;
+    background-color: #e28743;
+}
+.winner2{
+    width: 200px;
+    height: 150px;
+    background-color: silver;
+}
+
+.project-winners-message{
+    font-size: 2.2rem;
+    color: white;
+}
+
 
 @media only screen and (max-width: 600px) {
     .disclaimer-body {

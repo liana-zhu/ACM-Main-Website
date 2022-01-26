@@ -41,23 +41,14 @@ class Board extends React.Component {
                   <Tab.Content>
                     <Tab.Pane eventKey="first">
                       <Tab.Container>
-                        <div className="row justify-content-center">
-                          <Row>
-                            <h2 className="leader-header">LEADER OF THE MONTH</h2>
-                          </Row>
-                          <Row>
-                            <div className="leader-image">
-                              <BoardLeaders photo={IMAGES.Ashley2021} />
-                            </div>
-                          </Row>
-                          <Row >
-                            <h2 className="leader-name">Ashley Tran</h2>
-                          </Row>
-                          <Row >
-                            <h2 className="leader-position">Executive Officer</h2>
-                          </Row>
+                        <div className="row-leaders all-row-leaders">
+                          <h2 className="leader-header">LEADER OF THE MONTH</h2>
+                          <div className="col-leaders justify-content-center image-contain">
+                            <img className="board-leader-winner board-leader-profile" src={IMAGES.Ashley2021} alt={"Leader of the Month"}></img>
+                          </div>
+                          <h2 className="leader-info">Ashley Tran</h2>
+                          <h2 className="leader-info">Executive Officer</h2>
                         </div>
-
                       </Tab.Container>
                       <div className="row">
                         <div className="board d-lg-none"></div>
@@ -69,40 +60,41 @@ class Board extends React.Component {
                       <div className="all-row-leaders">
                         <div className="row-leaders centered-leader">
                           <BoardLeaders photo={IMAGES.Alvin2021} firstName="Alvin" lastName="Lew" year="2021" position="President" />
-                          <BoardLeaders photo={IMAGES.Jorge2021} firstName="Jorge" lastName="Mata" year="2021" position="Vice President" />
+                          <BoardLeaders photo={IMAGES.Vacant} firstName="Vacant" lastName="" year="" position="Vice President" />
                         </div>
                         <div className="row-leaders centered-leader">
-                          <BoardLeaders photo={IMAGES.Elton2021} firstName="Elton" lastName="Lin" year="2021" position="Treasurer" />
+                          <BoardLeaders photo={IMAGES.Ashley2021} firstName="Ashley" lastName="Tran" year="2021" position="Treasurer" />
                           <BoardLeaders photo={IMAGES.Sebastian2021} firstName="Sebastian" lastName="Luna" year="2021" position="Secretary" />
-                        </div>
-                        <div className="row-leaders centered-leader">
-                          <BoardLeaders photo={IMAGES.Tracy2021} firstName="Tracy" lastName="Truong" year="2021" position="VP of Internal Affairs" />
-                          <BoardLeaders photo={IMAGES.Lillian2021} firstName="Lillian" lastName="Leung" year="2021" position="VP of External Affairs" />
                         </div>
                         <div className="row-leaders centered-leader">
                           <BoardLeaders photo={IMAGES.Vacant} firstName="Vacant" lastName="" year="2021" position="Project Manager" />
                           <BoardLeaders photo={IMAGES.Anthony2020} firstName="Anthony" lastName="Viramontes" year="2021" position="Webmaster" />
                         </div>
+                        <div className="row-leaders centered-leader">
+                          <BoardLeaders photo={IMAGES.Vacant} firstName="Vacant" lastName="" year="2021" position="VP of Internal Affairs" />
+                          <BoardLeaders photo={IMAGES.Vacant} firstName="Vacant" lastName="" year="2021" position="VP of External Affairs" />
+                        </div>
                       </div>
                       <div className="row">
-                        <h2 className="h2-leaders all-row-leaders">OFFICERS</h2>
+                        <div className="board d-lg-none"></div>
+                        <h2 className="h2-leaders centered-leader all-row-leaders">OFFICERS</h2>
                       </div>
                       <div className="all-row-leaders">
                         <div className="row-leaders centered-leader">
-                          <BoardLeaders photo={IMAGES.Ashley2021} firstName="Ashley" lastName="Tran" year="2021" position="Executive Officer" />
-                          <BoardLeaders photo={IMAGES.Daniel2021} firstName="Daniel" lastName="Ramirez" year="2021" position="Administrative Officer" />
+                          <BoardLeaders photo={IMAGES.Branden2021} firstName="Branden" lastName="Zamora" year="2021" position="Finance Officer" />
+                          <BoardLeaders photo={IMAGES.Alexander2021} firstName="Alexander" lastName="Vasquez" year="2021" position="Executive Officer" />
                         </div>
                         <div className="row-leaders centered-leader">
-                          <BoardLeaders photo={IMAGES.Kenny2021} firstName="Kenny" lastName="Luong" year="2021" position="Web Officer" />
+                          <BoardLeaders photo={IMAGES.Patrick2021} firstName="Patrick" lastName="Sangalang" year="2021" position="Web Officer" />
                           <BoardLeaders photo={IMAGES.Nshan2021} firstName="Nshan" lastName="Kazaryan" year="2021" position="Project Officer" />
                         </div>
                         <div className="row-leaders centered-leader">
                           <BoardLeaders photo={IMAGES.Robert2021} firstName="Robert" lastName="de la Costa" year="2021" position="Project Officer" />
-                          <BoardLeaders photo={IMAGES.Alexander2021} firstName="Alexander" lastName="Vasquez" year="2021" position="Executive Officer" />
+                          <BoardLeaders photo={IMAGES.Daniel2021} firstName="Daniel" lastName="Ramirez" year="2021" position="Administrative Officer" />
                         </div>
                         <div className="row-leaders centered-leader">
                           <BoardLeaders photo={IMAGES.James2021} firstName="James" lastName="Ybarra" year="2021" position="Administrative Officer" />
-                          <BoardLeaders photo={IMAGES.Branden2021} firstName="Branden" lastName="Zamora" year="2021" position="Finance Officer" />
+                          <BoardLeaders photo={IMAGES.Vacant} firstName="Vacant" lastName="" year="" position="Executive Officer" />
                         </div>
                       </div>
                       <div className="row">
@@ -110,24 +102,28 @@ class Board extends React.Component {
                       </div>
                       <div className="all-row-leaders">
                         <div className="row-leaders centered-leader">
-                          <BoardLeaders photo={IMAGES.Patrick2021} firstName="Patrick" lastName="Sangalang" year="2021" position="Web Committee" />
-                          <BoardLeaders photo={IMAGES.Spiro2021} firstName="Spiro" lastName="Bogdanos" year="2021" position="Web Committee" />
+                          <BoardLeaders photo={IMAGES.Tracy2021} firstName="Tracy" lastName="Truong" year="2021" position="Design Committee" />
+                          <BoardLeaders photo={IMAGES.Lillian2021} firstName="Lillian" lastName="Leung" year="2021" position="Design Committee" />
                         </div>
                         <div className="row-leaders centered-leader">
-                          <BoardLeaders photo={IMAGES.Jose2021} firstName="Jose" lastName="Zamora" year="2021" position="Project Committee" />
-                          <BoardLeaders photo={IMAGES.Salman2021} firstName="Salman" lastName="Sheikh" year="2021" position="Project Committee" />
+                          <BoardLeaders photo={IMAGES.Vacant} firstName="Fabio" lastName="Carrasco" year="2021" position="Web Committee" />
+                          <BoardLeaders photo={IMAGES.Ryan2021} firstName="Ryan" lastName="Lee" year="2021" position="Web Committee" />
+                        </div>
+                        <div className="row-leaders centered-leader">
+                          <BoardLeaders photo={IMAGES.Spiro2021} firstName="Spiro" lastName="Bogdanos" year="2021" position="Web Committee" />
+                          <BoardLeaders photo={IMAGES.Vacant} firstName="Lloyd" lastName="Castro" year="2021" position="Web Committee" />
                         </div>
                         <div className="row-leaders centered-leader">
                           <BoardLeaders photo={IMAGES.Sean2021} firstName="Sean" lastName="Chung" year="2021" position="Project Committee" />
                           <BoardLeaders photo={IMAGES.Elizabeth2021} firstName="Elizabeth" lastName="Silvestre" year="2021" position="Project Committee" />
                         </div>
                         <div className="row-leaders centered-leader">
-                          <BoardLeaders photo={IMAGES.Ryan2021} firstName="Ryan" lastName="Lee" year="2021" position="Project Committee" />
                           <BoardLeaders photo={IMAGES.Roberto2021} firstName="Roberto" lastName="Ruiz-Garcia" year="2021" position="Project Committee" />
+                          <BoardLeaders photo={IMAGES.Jose2021} firstName="Jose" lastName="Zamora" year="2021" position="Project Committee" />
                         </div>
                         <div className="row-leaders centered-leader">
+                          <BoardLeaders photo={IMAGES.Vacant} firstName="Gerardo" lastName="Ibarra" year="2021" position="Project Committee" />
                           <BoardLeaders photo={IMAGES.Vacant} firstName="Max" lastName="Guzman" year="2021" position="Project Committee" />
-                          <BoardLeaders photo={IMAGES.Vacant} firstName="Luis" lastName="Rosas" year="2021" position="Project Committee" />
                         </div>
                         <div className="row-leaders centered-leader">
                           <BoardLeaders photo={IMAGES.LuisRosas2021} firstName="Luis" lastName="Rosas" year="2021" position="Project Committee" />
@@ -147,7 +143,6 @@ class Board extends React.Component {
                         </div>
                         <div className="row-leaders centered-leader">
                           <BoardLeaders photo={IMAGES.Nidhi2021} firstName="Nidhi" lastName="Lakshmanan" year="2020" position="Student Advisor" />
-                          <BoardLeaders photo={IMAGES.Srivats2021} firstName="Srivats" lastName="Venkataraman" year="2020" position="Student Advisor" />
                         </div>
                       </div>
                     </Tab.Pane>

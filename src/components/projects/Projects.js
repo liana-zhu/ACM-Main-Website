@@ -50,7 +50,6 @@ class Projects extends React.Component {
             <div className="project-body">
                 <div>
                     <div className="project-title-text">
-                        <p></p>
                         <p>Looking for experience?</p>
                         <p>Participate in our projects!</p>
                     </div>
@@ -64,8 +63,7 @@ class Projects extends React.Component {
                 <div className="disclaimer-body">
                     <h3 className="disclaimer_header"><b>Disclaimers</b></h3>
                     <span className="disclaimer"><b>1. You must be a member of ACM to participate in the projects! If you are not a member, you will not be allowed in.</b></span><br></br>
-                    <span className="disclaimer"><b>2. Space is limited, so admittance to these projects are first come, first served.
-                    </b></span><br></br>
+                    <span className="disclaimer"><b>2. Space is limited, so admittance to these projects are first come, first served.</b></span><br></br>
                     <span className="disclaimer"><b>3. Project signups will be from Friday, 8/27/2021 until Saturday, 9/4/2021</b></span>
                 </div>
 
@@ -137,7 +135,7 @@ class Projects extends React.Component {
                                                             <div class="row justify-content-start space">
 
 
-                                                                <div class="col-xs-1 col-sm-6 col-md-5 col-lg-4">
+                                                                <div class="col-xs-1 col-sm-7 col-md-5 col-lg-4">
 
                                                                     {
                                                                         this.state.beginnerProject &&
@@ -151,7 +149,7 @@ class Projects extends React.Component {
                                                                 </div>
 
 
-                                                                <div class="col-xs-1 col-sm-3 col-md-4 col-lg-5">
+                                                                <div class="col-xs-4 col-sm-7 col-md-4 col-lg-5">
                                                                     <b><p>Learn how to create a website of your own from scratch!</p> </b> <b><p>Concepts such as Website Design, Structure, Functionality, Animated and Dynamic objects will be enforced throughout each workshop!</p></b><br></br>
 
                                                                     <b><p>Signup deadline for the Fall 2021 projects is Saturday, September 4, 2021</p></b> <br></br>
@@ -171,6 +169,34 @@ class Projects extends React.Component {
                                                             </div>
                                                         </Container>
                                                         <br></br>
+                                                        <div className="text-center project-winners">
+                                                            <div>
+                                                                Beginner Project Workshop Winners
+                                                            </div>
+
+                                                            <div className="contain">
+
+                                                                <div align="center" className="winner-circles">
+                                                                    <div className="winner1 rounded-bottom">
+                                                                        <div className="project-winners-place">Razzle Dazzle</div>
+                                                                        <div className="project-winners-name">Jose <br></br>Zamora</div>
+
+                                                                    </div>
+                                                                </div>
+
+                                                                <div align="center" className="winner-circles">
+                                                                    <div className="winner2 rounded-bottom">
+                                                                        <div className="project-winners-place">ACM'S Biggest Fan</div>
+                                                                        <div className="project-winners-name">Daniel Ramirez</div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div className="text-center project-winners-message">
+                                                                    Congratulations to the winners that went above and beyond in this workshop
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
 
                                                         <h2>❖ <span className="highlight-text">Project Leaders:</span></h2>
                                                         <br></br>
@@ -190,7 +216,7 @@ class Projects extends React.Component {
                                                     <div className="project-description">
                                                         <Container>
                                                             <div class="row justify-content-start space">
-                                                                <div class="col-sm-1 col-md-4">
+                                                                <div class="col-xs-1 col-sm-7 col-md-5 col-lg-4">
 
                                                                     {
                                                                         this.state.advanceProject &&
@@ -202,7 +228,7 @@ class Projects extends React.Component {
                                                                     }
 
                                                                 </div>
-                                                                <div class="col-sm-1 col-md-5">
+                                                                <div class="col-xs-4 col-sm-7 col-md-4 col-lg-5">
                                                                     <b><p>Learn Video Game Development using the Unity game engine and the Visual Studio IDE!</p> </b> <b><p>Code and build your own desktop version of Pacman. Learn to create a beloved arcade video game from scratch!</p></b><br></br><br></br>
 
                                                                     <b><p>Signup deadline for the Fall 2021 projects is Saturday, September 4, 2021</p></b> <br></br><br></br>
@@ -223,6 +249,32 @@ class Projects extends React.Component {
                                                         </Container>
                                                         <br></br>
 
+                                                        <div className="text-center project-winners">
+                                                            <div>
+                                                                Advance Project Workshop Winners
+                                                            </div>
+
+                                                            <div className="contain">
+
+                                                                <div align="center" className="winner-circles">
+                                                                    <div className="winner1 rounded-bottom">
+                                                                        <div className="project-winners-place">Razzle Dazzle</div>
+                                                                        <div className="project-winners-name">Luis <br></br>Cortez</div>
+
+                                                                    </div>
+                                                                </div>
+
+                                                                <div align="center" className="winner-circles">
+                                                                    <div className="winner2 rounded-bottom">
+                                                                        <div className="project-winners-place">ACM'S Biggest Fan</div>
+                                                                        <div className="project-winners-name">Fabio Carrasco</div>
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                        </div>
+
                                                         <h2>❖ <span className="highlight-text">Project Leaders:</span></h2>
                                                         <br></br>
                                                         <div className="carousel">
@@ -236,7 +288,7 @@ class Projects extends React.Component {
                                                             </Carousel>
                                                         </div>
                                                     </div>
-                                                    
+
                                                 </Tab.Pane>
                                             </Tab.Content>
                                         </Tab.Container>
