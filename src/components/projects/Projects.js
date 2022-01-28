@@ -38,13 +38,21 @@ class Projects extends React.Component {
     }
 
     render() {
-        let buttonB = <Button variant="success" size="lg" href="https://forms.gle/bu8YRaxLFfTDXppN7">Join Now!</Button>
-        let projectLeaderImageA = ["./leaders/Sean.jpg", "./leaders/Robert.jpg", "./leaders/Lillian.jpg", "./leaders/Nshan.jpg", "./leaders/Jorge.jpg"]
-        let projectLeaderNameA = ["Sean", "Robert De La Costa", "Lillian", "Nshan Kazaryan", "Jorge Mata"]
+        let buttonBSpring2022 = <Button variant="success" size="lg" href="https://forms.gle/X7rUq4hou691rvJ77">Join Now!</Button>
+        let begLeaderImageS2022 = ["./leaders/Robert.jpg", "./leaders/Luis.JPG"]
+        let begLeaderNameS2022 = ["Robert De La Costa", "Luis Rojas"]
 
-        let buttonA = <Button variant="success" size="lg" href="https://forms.gle/egU7m8ra9XXh5NJ59">Join Now!</Button>
-        let projectLeaderImageB = ["./leaders/Omar.jpg", "./leaders/Jorge.jpg"]
-        let projectLeaderNameB = ["Omar Eclicerio", "Jorge Mata"]
+        let buttonASpring2022 = <Button variant="success" size="lg" href="https://forms.gle/6eToXzMfbBDe81Tz6">Join Now!</Button>
+        let advLeaderImageS2022 = ["./leaders/Sean.jpg", "./leaders/Nshan.jpg", "./leaders/Elizabeth.jpg", "./leaders/Jose.jpg"]
+        let advLeaderNameS2022 = ["Sean", "Nshan Kazaryan", "Elizabeth Silvestre", "Jose Zamora"]
+
+        let buttonBFall2021 = <Button variant="success" size="lg" href="https://forms.gle/bu8YRaxLFfTDXppN7">Join Now!</Button>
+        let begLeaderImageF2021 = ["./leaders/Omar.jpg", "./leaders/Jorge.jpg"]
+        let begLeaderNameF2021 = ["Omar Eclicerio", "Jorge Mata"]
+
+        let buttonAFall2021 = <Button variant="success" size="lg" href="https://forms.gle/egU7m8ra9XXh5NJ59">Join Now!</Button>
+        let advLeaderImageF2021 = ["./leaders/Sean.jpg", "./leaders/Robert.jpg", "./leaders/Lillian.jpg", "./leaders/Nshan.jpg", "./leaders/Jorge.jpg"]
+        let advLeaderNameF2021 = ["Sean", "Robert De La Costa", "Lillian", "Nshan Kazaryan", "Jorge Mata"]
 
         return (
             <div className="project-body">
@@ -64,7 +72,7 @@ class Projects extends React.Component {
                     <h3 className="disclaimer_header"><b>Disclaimers</b></h3>
                     <span className="disclaimer"><b>1. You must be a member of ACM to participate in the projects! If you are not a member, you will not be allowed in.</b></span><br></br>
                     <span className="disclaimer"><b>2. Space is limited, so admittance to these projects are first come, first served.</b></span><br></br>
-                    <span className="disclaimer"><b>3. Project signups will be from Friday, 8/27/2021 until Saturday, 9/4/2021</b></span>
+                    <span className="disclaimer"><b>3. Project signups will be from Thursday, 1/27/2022 until Saturday, 2/5/2022</b></span>
                 </div>
 
                 <div className="videoWrapper">
@@ -78,10 +86,13 @@ class Projects extends React.Component {
                 </div>
 
                 <div className="card project-card">
-                    <Tab.Container id="left-tabs-example" defaultActiveKey="fall2021projects">
+                    <Tab.Container id="left-tabs-example" defaultActiveKey="spring2022projects">
                         <Row>
                             <Col sm={2}>
                                 <Nav variant="pills" className="flex-column">
+                                    <Nav.Item>
+                                        <Nav.Link className="project-nav-link anchor-white" eventKey="spring2022projects">Spring 2022</Nav.Link>
+                                    </Nav.Item>
                                     <Nav.Item>
                                         <Nav.Link className="project-nav-link anchor-white" eventKey="fall2021projects">Fall 2021</Nav.Link>
                                     </Nav.Item>
@@ -115,6 +126,183 @@ class Projects extends React.Component {
                                     3. After following the steps above, then update the page with new project information.
                                     4. Remember to update dates in the disclaimer above.
                                     */}
+                                    <Tab.Pane eventKey="spring2022projects">
+                                        <Tab.Container defaultActiveKey="S2022beginner">
+                                            <Nav className="project-tab-label" variant="pills">
+                                                <Nav.Item>
+                                                    <Nav.Link className="project-nav-link-tab anchor-white" eventKey="S2022beginner">Beginner</Nav.Link>
+                                                </Nav.Item>
+                                                <Nav.Item>
+                                                    <Nav.Link className="project-nav-link-tab anchor-white" eventKey="S2022advanced">Advanced</Nav.Link>
+                                                </Nav.Item>
+                                            </Nav>
+                                            <Tab.Content className="project-tab-content">
+                                                <Tab.Pane eventKey="S2022beginner">
+
+
+
+                                                    <div className="project-description">
+                                                        <Container>
+                                                            <div class="row justify-content-start space">
+
+
+                                                                <div class="col-xs-1 col-sm-7 col-md-5 col-lg-4">
+
+                                                                    {
+                                                                        this.state.beginnerProject &&
+                                                                        this.state.beginnerProject.map(beginnerProject => {
+                                                                            return (
+                                                                                <img src={beginnerProject.imgUrl} className="img-fluid programs-poster" alt="project poster"></img>
+                                                                            )
+                                                                        })
+                                                                    }
+
+                                                                </div>
+
+
+                                                                <div class="col-xs-4 col-sm-7 col-md-4 col-lg-5">
+                                                                    <b><p>Interested in learning about websites? What about gathering data from websites to help find products and listing? If so, our web scraper project is 
+                                                                        just for you. Here, you'll learn how to use Python and read HTML to scrape data from your favorite websites!</p> </b> 
+
+                                                                    <b><p>Signup deadline is Saturday, February 5, 2021. M      ake sure to complete this form ASAP if you're interested! </p></b> <br></br>
+
+                                                                    {buttonBSpring2022}<br></br><br></br>
+
+                                                                    <h2>❖ <span className="highlight-text">What you will learn:</span></h2>
+
+                                                                    <b><ul>
+                                                                        <li>Python</li>
+                                                                        <li>HTML</li>
+
+                                                                    </ul></b>
+                                                                </div>
+                                                            </div>
+                                                        </Container>
+                                                        <br></br>
+                                                        {/* <div className="text-center project-winners">
+                                                            <div>
+                                                                Beginner Project Workshop Winners
+                                                            </div>
+
+                                                            <div className="contain">
+
+                                                                <div align="center" className="winner-circles">
+                                                                    <div className="winner1 rounded-bottom">
+                                                                        <div className="project-winners-place">Razzle Dazzle</div>
+                                                                        <div className="project-winners-name">Jose <br></br>Zamora</div>
+
+                                                                    </div>
+                                                                </div>
+
+                                                                <div align="center" className="winner-circles">
+                                                                    <div className="winner2 rounded-bottom">
+                                                                        <div className="project-winners-place">ACM'S Biggest Fan</div>
+                                                                        <div className="project-winners-name">Daniel Ramirez</div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div className="text-center project-winners-message">
+                                                                    Congratulations to the winners that went above and beyond in this workshop
+                                                                </div>
+                                                            </div>
+                                                        </div> */}
+
+
+                                                        <h2>❖ <span className="highlight-text">Project Leaders:</span></h2>
+                                                        <br></br>
+                                                        <div className="carousel">
+                                                            <Carousel infiniteLoop>
+                                                                {begLeaderImageS2022.map((value, index) => {
+                                                                    return <div>
+                                                                        <img className='carousel-leader-image' src={require('' + value)} alt="leader" />
+                                                                        <p className="legend">{begLeaderNameS2022[index]}</p>
+                                                                    </div>
+                                                                })}
+                                                            </Carousel>
+                                                        </div>
+                                                    </div>
+                                                </Tab.Pane>
+                                                <Tab.Pane eventKey="S2022advanced">
+                                                    <div className="project-description">
+                                                        <Container>
+                                                            <div class="row justify-content-start space">
+                                                                <div class="col-xs-1 col-sm-7 col-md-5 col-lg-4">
+
+                                                                    {
+                                                                        this.state.advanceProject &&
+                                                                        this.state.advanceProject.map(advanceProject => {
+                                                                            return (
+                                                                                <img src={advanceProject.imgUrl} className="img-fluid programs-poster" alt="project poster"></img>
+                                                                            )
+                                                                        })
+                                                                    }
+
+                                                                </div>
+                                                                <div class="col-xs-4 col-sm-7 col-md-4 col-lg-5">
+                                                                    <b><p>Want to learn more about game development? Here's your chance to learn the basics of using Unity and C# to program the retro game Tetris! </p> </b>
+
+                                                                    <b><p>Signup deadline is Saturday, February 5, 2021. Make sure to complete this form ASAP if you're interested!</p></b> <br></br><br></br>
+
+                                                                    {buttonASpring2022}<br></br><br></br>
+
+                                                                    <h2>❖ <span className="highlight-text">What you will learn:</span></h2>
+
+                                                                    <b><ul>
+                                                                        <li>Unity</li>
+                                                                        <li>Visual Studio</li>
+                                                                        <li>C#</li>
+
+
+                                                                    </ul></b>
+                                                                </div>
+                                                            </div>
+                                                        </Container>
+                                                        <br></br>
+
+                                                        {/* <div className="text-center project-winners">
+                                                            <div>
+                                                                Advance Project Workshop Winners
+                                                            </div>
+
+                                                            <div className="contain">
+
+                                                                <div align="center" className="winner-circles">
+                                                                    <div className="winner1 rounded-bottom">
+                                                                        <div className="project-winners-place">Razzle Dazzle</div>
+                                                                        <div className="project-winners-name">Luis <br></br>Cortez</div>
+
+                                                                    </div>
+                                                                </div>
+
+                                                                <div align="center" className="winner-circles">
+                                                                    <div className="winner2 rounded-bottom">
+                                                                        <div className="project-winners-place">ACM'S Biggest Fan</div>
+                                                                        <div className="project-winners-name">Fabio Carrasco</div>
+                                                                    </div>
+                                                                </div>
+
+
+                                                            </div>
+                                                        </div> */}
+
+                                                        <h2>❖ <span className="highlight-text">Project Leaders:</span></h2>
+                                                        <br></br>
+                                                        <div className="carousel">
+                                                            <Carousel infiniteLoop>
+                                                                {advLeaderImageS2022.map((value, index) => {
+                                                                    return <div>
+                                                                        <img className='carousel-leader-image' src={require('' + value)} alt="leader" />
+                                                                        <p className="legend">{advLeaderNameS2022[index]}</p>
+                                                                    </div>
+                                                                })}
+                                                            </Carousel>
+                                                        </div>
+                                                    </div>
+
+                                                </Tab.Pane>
+                                            </Tab.Content>
+                                        </Tab.Container>
+                                    </Tab.Pane>
                                     <Tab.Pane eventKey="fall2021projects">
                                         <Tab.Container defaultActiveKey="F2021beginner">
                                             <Nav className="project-tab-label" variant="pills">
@@ -154,7 +342,7 @@ class Projects extends React.Component {
 
                                                                     <b><p>Signup deadline for the Fall 2021 projects is Saturday, September 4, 2021</p></b> <br></br>
 
-                                                                    {buttonB}<br></br><br></br>
+                                                                    {buttonBFall2021}<br></br><br></br>
 
                                                                     <h2>❖ <span className="highlight-text">What you will learn:</span></h2>
 
@@ -202,10 +390,10 @@ class Projects extends React.Component {
                                                         <br></br>
                                                         <div className="carousel">
                                                             <Carousel infiniteLoop>
-                                                                {projectLeaderImageB.map((value, index) => {
+                                                                {begLeaderImageF2021.map((value, index) => {
                                                                     return <div>
                                                                         <img className='carousel-leader-image' src={require('' + value)} alt="leader" />
-                                                                        <p className="legend">{projectLeaderNameB[index]}</p>
+                                                                        <p className="legend">{begLeaderNameF2021[index]}</p>
                                                                     </div>
                                                                 })}
                                                             </Carousel>
@@ -233,7 +421,7 @@ class Projects extends React.Component {
 
                                                                     <b><p>Signup deadline for the Fall 2021 projects is Saturday, September 4, 2021</p></b> <br></br><br></br>
 
-                                                                    {buttonA}<br></br><br></br>
+                                                                    {buttonAFall2021}<br></br><br></br>
 
                                                                     <h2>❖ <span className="highlight-text">What you will learn:</span></h2>
 
@@ -279,10 +467,10 @@ class Projects extends React.Component {
                                                         <br></br>
                                                         <div className="carousel">
                                                             <Carousel infiniteLoop>
-                                                                {projectLeaderImageA.map((value, index) => {
+                                                                {advLeaderImageF2021.map((value, index) => {
                                                                     return <div>
                                                                         <img className='carousel-leader-image' src={require('' + value)} alt="leader" />
-                                                                        <p className="legend">{projectLeaderNameA[index]}</p>
+                                                                        <p className="legend">{advLeaderNameF2021[index]}</p>
                                                                     </div>
                                                                 })}
                                                             </Carousel>
