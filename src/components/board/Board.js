@@ -122,7 +122,7 @@ class Board extends React.Component {
                           <BoardLeaders photo={IMAGES.Jose2021} firstName="Jose" lastName="Zamora" year="2021" position="Project Committee" />
                         </div>
                         <div className="row-leaders centered-leader">
-                          <BoardLeaders photo={IMAGES.Vacant} firstName="Gerardo" lastName="Ibarra" year="2021" position="Project Committee" />
+                          <BoardLeaders photo={IMAGES.Gerardo2021} firstName="Gerardo" lastName="Ibarra" year="2021" position="Project Committee" />
                           <BoardLeaders photo={IMAGES.Vacant} firstName="Max" lastName="Guzman" year="2021" position="Project Committee" />
                         </div>
                         <div className="row-leaders centered-leader">
