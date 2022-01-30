@@ -164,7 +164,7 @@ class Projects extends React.Component {
                                                                     <b><p>Interested in learning about websites? What about gathering data from websites to help find products and listing? If so, our web scraper project is 
                                                                         just for you. Here, you'll learn how to use Python and read HTML to scrape data from your favorite websites!</p> </b> 
 
-                                                                    <b><p>Signup deadline is Saturday, February 5, 2021. M      ake sure to complete this form ASAP if you're interested! </p></b> <br></br>
+                                                                    <b><p>Signup deadline is Saturday, February 5, 2021. Make sure to complete this form ASAP if you're interested! </p></b> <br></br>
 
                                                                     {buttonBSpring2022}<br></br><br></br>
 
