@@ -65,12 +65,12 @@ class Projects extends React.Component {
 
     render() {
         let buttonBSpring2022 = <Button variant="success" size="lg" href="https://forms.gle/X7rUq4hou691rvJ77">Join Now!</Button>
-        let begLeaderImageS2022 = ["./leaders/Robert.jpg", "./leaders/Luis.JPG", "./leaders/Gerardo.jpg"]
-        let begLeaderNameS2022 = ["Robert De La Costa", "Luis Rojas", "Gerardo Ibarra"]
+        let begLeaderImageS2022 = ["./leaders/Robert.jpg", "./leaders/Gerardo.jpg", "./leaders/Vacant.png"]
+        let begLeaderNameS2022 = ["Robert De La Costa", "Gerardo Ibarra", "Max Guzman"]
 
         let buttonASpring2022 = <Button variant="success" size="lg" href="https://forms.gle/6eToXzMfbBDe81Tz6">Join Now!</Button>
-        let advLeaderImageS2022 = ["./leaders/Sean.jpg", "./leaders/Nshan.jpg", "./leaders/Elizabeth.jpg", "./leaders/Jose.jpg"]
-        let advLeaderNameS2022 = ["Sean Chung", "Nshan Kazaryan", "Elizabeth Silvestre", "Jose Zamora"]
+        let advLeaderImageS2022 = ["./leaders/Nshan.jpg", "./leaders/Elizabeth.jpg", "./leaders/Jose.jpg", "./leaders/Sean.jpg"]
+        let advLeaderNameS2022 = ["Nshan Kazaryan", "Elizabeth Silvestre", "Jose Zamora", "Sean Chung"]
 
         let buttonBFall2021 = <Button variant="success" size="lg" href="https://forms.gle/bu8YRaxLFfTDXppN7">Join Now!</Button>
         let begLeaderImageF2021 = ["./leaders/Omar.jpg", "./leaders/Jorge.jpg"]
@@ -190,7 +190,7 @@ class Projects extends React.Component {
                                                                     <b><p>Interested in learning about websites? What about gathering data from websites to help find products and listing? If so, our web scraper project is
                                                                         just for you. Here, you'll learn how to use Python and read HTML to scrape data from your favorite websites!</p> </b>
 
-                                                                    <b><p>Signup deadline is Saturday, February 5, 2021. M      ake sure to complete this form ASAP if you're interested! </p></b> <br></br>
+                                                                    <b><p>Signup deadline is Saturday, February 5, 2021. Make sure to complete this form ASAP if you're interested! </p></b> <br></br>
 
                                                                     {buttonBSpring2022}<br></br><br></br>
 

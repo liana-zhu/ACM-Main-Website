@@ -47,6 +47,9 @@
     color: white;
 }
 
+a{
+	color: white !important;
+}
 @media only screen and (max-width: 420px){
     .event-modal-paragraph {
         /* font-size: .7rem; */
