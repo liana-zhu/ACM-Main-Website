@@ -8,9 +8,6 @@ import "./aboutus.css";
 
 class AboutUs extends React.Component {
 	render() {
-		let acmImages = ["./images/group.jpg", "./images/android-workshop.png"]
-		let acmImageCaptions = ["2019 ACM Leaders", "2019 Android Workshop"]
-
 		return (
 			<div>
 				<div>
@@ -21,7 +18,7 @@ class AboutUs extends React.Component {
 				</div>
 				<Jumbotron>
 					<div className="mission-statement-text">
-						<h1>Our Mission</h1>
+						<h1 className="our-mission-header">Our Mission</h1>
 						<div className="mission-statement-points">
 							<ul class="list-group list-group">
 								<li class="list-group-item mission-statement-item">
@@ -49,16 +46,6 @@ class AboutUs extends React.Component {
 								</li>
 							</ul>
 						</div>
-					</div>
-					<div className="carousel">
-							<Carousel infiniteLoop>
-									{acmImages.map((value, index) => {
-											return <div>
-													<img className='carousel-leader-image' src={require('' + value)} alt="leader" />
-													<p className="legend">{acmImageCaptions[index]}</p>
-											</div>
-									})}
-							</Carousel>
 					</div>
 				</Jumbotron>
 				<div className="bottom-section">

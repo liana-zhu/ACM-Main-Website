@@ -42,16 +42,27 @@
   background: #2B2727 no-repeat fixed;
 }
 
+.our-mission-header {
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+  width: 75%;
+  margin: auto;
+  background-color: black;
+  border-radius: .5rem;
+}
+
 .mission-statement-text {
   text-align: center;
   color: white;
 }
 
 .mission-statement-points {
-  text-align: left;
   text-align: center;
   font-size: 1.25rem;
   color: white;
+  width: 75%;
+  margin: auto;
 }
 
 .mission-statement-item{
@@ -146,5 +157,21 @@
   .about-image {
     height: auto;
     width: auto;
+  }
+  .mission-statement-points {
+    text-align: center;
+    font-size: 1.25rem;
+    color: white;
+    width: 90%;
+    margin: auto;
+  }
+  .our-mission-header {
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    width: 90%;
+    margin: auto;
+    background-color: black;
+    border-radius: .5rem;
   }
 }
