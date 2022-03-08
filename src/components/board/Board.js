@@ -44,10 +44,10 @@ class Board extends React.Component {
                         <div className="row-leaders all-row-leaders">
                           <h2 className="leader-header">LEADER OF THE MONTH</h2>
                           <div className="col-leaders justify-content-center image-contain">
-                            <img className="board-leader-winner board-leader-profile" src={IMAGES.Ashley2021} alt={"Leader of the Month"}></img>
+                            <img className="board-leader-winner board-leader-profile" src={IMAGES.Lloyd2021} alt={"Leader of the Month"}></img>
                           </div>
-                          <h2 className="leader-info">Ashley Tran</h2>
-                          <h2 className="leader-info">Executive Officer</h2>
+                          <h2 className="leader-info">Lloyd Castro</h2>
+                          <h2 className="leader-info">Web Committee</h2>
                         </div>
                       </Tab.Container>
                       <div className="row">
@@ -111,7 +111,7 @@ class Board extends React.Component {
                         </div>
                         <div className="row-leaders centered-leader">
                           <BoardLeaders photo={IMAGES.Spiro2021} firstName="Spiro" lastName="Bogdanos" year="2021" position="Web Committee" />
-                          <BoardLeaders photo={IMAGES.Vacant} firstName="Lloyd" lastName="Castro" year="2021" position="Web Committee" />
+                          <BoardLeaders photo={IMAGES.Lloyd2021} firstName="Lloyd" lastName="Castro" year="2021" position="Web Committee" />
                         </div>
                         <div className="row-leaders centered-leader">
                           <BoardLeaders photo={IMAGES.Sean2021} firstName="Sean" lastName="Chung" year="2021" position="Project Committee" />

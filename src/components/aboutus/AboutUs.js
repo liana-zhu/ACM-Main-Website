@@ -2,10 +2,15 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import {Tab, Nav, Row, Col, Image, Button} from 'react-bootstrap'
 import Jumbotron from "react-bootstrap/Jumbotron";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 import "./aboutus.css";
 
 class AboutUs extends React.Component {
 	render() {
+		let acmImages = ["./images/group.jpg", "./images/android-workshop.png"]
+		let acmImageCaptions = ["2019 ACM Leaders", "2019 Android Workshop"]
+
 		return (
 			<div>
 				<div>
@@ -44,6 +49,16 @@ class AboutUs extends React.Component {
 								</li>
 							</ul>
 						</div>
+					</div>
+					<div className="carousel">
+							<Carousel infiniteLoop>
+									{acmImages.map((value, index) => {
+											return <div>
+													<img className='carousel-leader-image' src={require('' + value)} alt="leader" />
+													<p className="legend">{acmImageCaptions[index]}</p>
+											</div>
+									})}
+							</Carousel>
 					</div>
 				</Jumbotron>
 				<div className="bottom-section">
