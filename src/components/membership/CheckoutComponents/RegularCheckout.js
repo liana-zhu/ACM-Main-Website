@@ -71,7 +71,6 @@ const Regular = () => {
 
 	return (
 		<div className="text-info">
-
 			<div className="membership-description-section">
 				<h2 className="member-description">Benefits</h2>
 				<div className="content-box">

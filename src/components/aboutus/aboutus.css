@@ -42,16 +42,55 @@
   background: #2B2727 no-repeat fixed;
 }
 
+.our-mission-header {
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+  width: 75%;
+  margin: auto;
+  background-color: black;
+  border-radius: .5rem;
+}
+
 .mission-statement-text {
   text-align: center;
   color: white;
 }
 
 .mission-statement-points {
-  text-align: left;
+  text-align: center;
   font-size: 1.25rem;
   color: white;
+  width: 75%;
+  margin: auto;
 }
+
+.mission-statement-item{
+  background-color: #424242;
+}
+
+.info-content-container{
+  background-color: #424242;
+  border-radius: 6px;
+  padding: 2px;
+  margin-bottom: 15px;
+  height: 135mm;
+}
+
+.info-header-container{
+  background-color: black;
+  border-radius: 6px;
+  margin-top: 1px;
+  height: 13mm;
+}
+
+.info-header{
+  color: #01a4ff;
+  margin-left: 15px;
+  font-size: 27px;
+  padding-top: 4px;
+}
+
 .button-row {
   width: 83.5%;
   margin-top: 60px;
@@ -61,8 +100,11 @@
 
 .about-text {
   text-align: left;
-  font-size: 1.25rem;
+  /* font-size: 1.25rem; */
   /* margin-left: 60px; */
+  font-size: 1.0rem;
+  padding-top: 5px;
+  padding-left: 10px;
   color: white;
 }
 
@@ -78,8 +120,9 @@
 
 .offer-text {
   text-align: left;
-  font-size: 1.25rem;
-  /* margin-left: 60px; */
+  font-size: 1.0rem;
+  padding-top: 5px;
+  padding-left: 10px;
   color: white;
 }
 
@@ -89,8 +132,9 @@
 
 .join-text {
   text-align: left;
-  font-size: 1.25rem;
-  /* margin-left: 60px; */
+  font-size: 1.0rem;
+  padding-top: 5px;
+  padding-left: 10px;
   color: white;
 }
 
@@ -113,5 +157,21 @@
   .about-image {
     height: auto;
     width: auto;
+  }
+  .mission-statement-points {
+    text-align: center;
+    font-size: 1.25rem;
+    color: white;
+    width: 90%;
+    margin: auto;
+  }
+  .our-mission-header {
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    width: 90%;
+    margin: auto;
+    background-color: black;
+    border-radius: .5rem;
   }
 }

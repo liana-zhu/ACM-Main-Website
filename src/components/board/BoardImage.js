@@ -31,6 +31,7 @@ const IMAGES = {
     Ryan2021: require('./2020-2021-leaders/Ryan.jpg'),
     Roberto2021: require('./2020-2021-leaders/Roberto.jpg'),
     LuisRosas2021: require('./2020-2021-leaders/LuisRosas.jpg'),
+    Lloyd2021: require('./2020-2021-leaders/Lloyd.jpg'),
     Gerardo2021: require('./2020-2021-leaders/Gerardo.jpg'),
 
     // 2020-21 leaders
