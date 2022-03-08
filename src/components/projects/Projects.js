@@ -11,6 +11,9 @@ import NewProject from './NewProject'
 class Projects extends React.Component {
     state = {
         beginnerProject: null,
+        advanceProject: null,
+        beginnerProjectS2022: null,
+        advanceProjectS2022: null
     }
 
     componentDidMount() {
@@ -35,16 +38,39 @@ class Projects extends React.Component {
                 this.setState({ advanceProject: project })
             })
             .catch(error => console.log(error));
+
+        firebase.firestore().collection("beginnerProjectS2022").get()
+            .then(snapshot => {
+                const project = []
+                snapshot.forEach(doc => {
+                    const data = doc.data()
+                    project.push(data)
+                })
+                this.setState({ beginnerProjectS2022: project })
+            })
+            .catch(error => console.log(error));
+
+        firebase.firestore().collection("advanceProjectS2022").get()
+            .then(snapshot => {
+                const project = []
+                snapshot.forEach(doc => {
+                    const data = doc.data()
+                    project.push(data)
+                })
+                this.setState({ advanceProjectS2022: project })
+            })
+            .catch(error => console.log(error));
+
     }
 
     render() {
         let buttonBSpring2022 = <Button variant="success" size="lg" href="https://forms.gle/X7rUq4hou691rvJ77">Join Now!</Button>
-        let begLeaderImageS2022 = ["./leaders/Robert.jpg", "./leaders/Luis.JPG"]
-        let begLeaderNameS2022 = ["Robert De La Costa", "Luis Rojas"]
+        let begLeaderImageS2022 = ["./leaders/Robert.jpg", "./leaders/Gerardo.jpg", "./leaders/Vacant.png"]
+        let begLeaderNameS2022 = ["Robert De La Costa", "Gerardo Ibarra", "Max Guzman"]
 
         let buttonASpring2022 = <Button variant="success" size="lg" href="https://forms.gle/6eToXzMfbBDe81Tz6">Join Now!</Button>
-        let advLeaderImageS2022 = ["./leaders/Sean.jpg", "./leaders/Nshan.jpg", "./leaders/Elizabeth.jpg", "./leaders/Jose.jpg"]
-        let advLeaderNameS2022 = ["Sean", "Nshan Kazaryan", "Elizabeth Silvestre", "Jose Zamora"]
+        let advLeaderImageS2022 = ["./leaders/Nshan.jpg", "./leaders/Elizabeth.jpg", "./leaders/Jose.jpg", "./leaders/Sean.jpg"]
+        let advLeaderNameS2022 = ["Nshan Kazaryan", "Elizabeth Silvestre", "Jose Zamora", "Sean Chung"]
 
         let buttonBFall2021 = <Button variant="success" size="lg" href="https://forms.gle/bu8YRaxLFfTDXppN7">Join Now!</Button>
         let begLeaderImageF2021 = ["./leaders/Omar.jpg", "./leaders/Jorge.jpg"]
@@ -149,10 +175,10 @@ class Projects extends React.Component {
                                                                 <div class="col-xs-1 col-sm-7 col-md-5 col-lg-4">
 
                                                                     {
-                                                                        this.state.beginnerProject &&
-                                                                        this.state.beginnerProject.map(beginnerProject => {
+                                                                        this.state.beginnerProjectS2022 &&
+                                                                        this.state.beginnerProjectS2022.map(beginnerProjectS2022 => {
                                                                             return (
-                                                                                <img src={beginnerProject.imgUrl} className="img-fluid programs-poster" alt="project poster"></img>
+                                                                                <img src={beginnerProjectS2022.imgUrl} className="img-fluid programs-poster" alt="project poster"></img>
                                                                             )
                                                                         })
                                                                     }
@@ -161,8 +187,8 @@ class Projects extends React.Component {
 
 
                                                                 <div class="col-xs-4 col-sm-7 col-md-4 col-lg-5">
-                                                                    <b><p>Interested in learning about websites? What about gathering data from websites to help find products and listing? If so, our web scraper project is 
-                                                                        just for you. Here, you'll learn how to use Python and read HTML to scrape data from your favorite websites!</p> </b> 
+                                                                    <b><p>Interested in learning about websites? What about gathering data from websites to help find products and listing? If so, our web scraper project is
+                                                                        just for you. Here, you'll learn how to use Python and read HTML to scrape data from your favorite websites!</p> </b>
 
                                                                     <b><p>Signup deadline is Saturday, February 5, 2021. Make sure to complete this form ASAP if you're interested! </p></b> <br></br>
 
@@ -179,35 +205,6 @@ class Projects extends React.Component {
                                                             </div>
                                                         </Container>
                                                         <br></br>
-                                                        {/* <div className="text-center project-winners">
-                                                            <div>
-                                                                Beginner Project Workshop Winners
-                                                            </div>
-
-                                                            <div className="contain">
-
-                                                                <div align="center" className="winner-circles">
-                                                                    <div className="winner1 rounded-bottom">
-                                                                        <div className="project-winners-place">Razzle Dazzle</div>
-                                                                        <div className="project-winners-name">Jose <br></br>Zamora</div>
-
-                                                                    </div>
-                                                                </div>
-
-                                                                <div align="center" className="winner-circles">
-                                                                    <div className="winner2 rounded-bottom">
-                                                                        <div className="project-winners-place">ACM'S Biggest Fan</div>
-                                                                        <div className="project-winners-name">Daniel Ramirez</div>
-                                                                    </div>
-                                                                </div>
-
-                                                                <div className="text-center project-winners-message">
-                                                                    Congratulations to the winners that went above and beyond in this workshop
-                                                                </div>
-                                                            </div>
-                                                        </div> */}
-
-
                                                         <h2>❖ <span className="highlight-text">Project Leaders:</span></h2>
                                                         <br></br>
                                                         <div className="carousel">
@@ -229,10 +226,10 @@ class Projects extends React.Component {
                                                                 <div class="col-xs-1 col-sm-7 col-md-5 col-lg-4">
 
                                                                     {
-                                                                        this.state.advanceProject &&
-                                                                        this.state.advanceProject.map(advanceProject => {
+                                                                        this.state.advanceProjectS2022 &&
+                                                                        this.state.advanceProjectS2022.map(advanceProjectS2022 => {
                                                                             return (
-                                                                                <img src={advanceProject.imgUrl} className="img-fluid programs-poster" alt="project poster"></img>
+                                                                                <img src={advanceProjectS2022.imgUrl} className="img-fluid programs-poster" alt="project poster"></img>
                                                                             )
                                                                         })
                                                                     }
@@ -251,40 +248,11 @@ class Projects extends React.Component {
                                                                         <li>Unity</li>
                                                                         <li>Visual Studio</li>
                                                                         <li>C#</li>
-
-
                                                                     </ul></b>
                                                                 </div>
                                                             </div>
                                                         </Container>
                                                         <br></br>
-
-                                                        {/* <div className="text-center project-winners">
-                                                            <div>
-                                                                Advance Project Workshop Winners
-                                                            </div>
-
-                                                            <div className="contain">
-
-                                                                <div align="center" className="winner-circles">
-                                                                    <div className="winner1 rounded-bottom">
-                                                                        <div className="project-winners-place">Razzle Dazzle</div>
-                                                                        <div className="project-winners-name">Luis <br></br>Cortez</div>
-
-                                                                    </div>
-                                                                </div>
-
-                                                                <div align="center" className="winner-circles">
-                                                                    <div className="winner2 rounded-bottom">
-                                                                        <div className="project-winners-place">ACM'S Biggest Fan</div>
-                                                                        <div className="project-winners-name">Fabio Carrasco</div>
-                                                                    </div>
-                                                                </div>
-
-
-                                                            </div>
-                                                        </div> */}
-
                                                         <h2>❖ <span className="highlight-text">Project Leaders:</span></h2>
                                                         <br></br>
                                                         <div className="carousel">
