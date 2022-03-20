@@ -8,7 +8,7 @@ class Membership extends Component {
   render() {
     return (
       <AnimationOnScroll
-        animateIn="animate__slideInLeft"
+        animateIn="animate__fadeInLeft"
         delay="1"
         animateOnce="true"
       >

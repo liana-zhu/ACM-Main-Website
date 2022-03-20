@@ -8,7 +8,7 @@ class Projects extends Component {
   render() {
     return (
       <AnimationOnScroll
-        animateIn="animate__slideInRight"
+        animateIn="animate__fadeInRight"
         delay="1"
         animateOnce="true"
       >
