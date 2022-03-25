@@ -45,7 +45,7 @@
 .our-mission-header {
   text-align: center;
   font-size: 3rem;
-  color: white;
+  color: #01a4ff;
   width: 75%;
   margin: auto;
   background-color: black;
@@ -68,6 +68,17 @@
 .mission-statement-item{
   background-color: #424242;
 }
+
+.carousel-leaders{
+  width: 75%;
+  margin: auto;
+}
+
+.carousel-leadergroup-image{
+  max-height: 75rem;
+  max-width: 50rem;
+}
+
 
 .info-content-container{
   background-color: #424242;
@@ -174,4 +185,5 @@
     background-color: black;
     border-radius: .5rem;
   }
+
 }
