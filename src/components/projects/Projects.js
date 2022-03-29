@@ -284,8 +284,7 @@ class Projects extends React.Component {
                                             <Tab.Content className="project-tab-content">
                                                 <Tab.Pane eventKey="F2021beginner">
 
-
-
+                                                    
                                                     <div className="project-description">
                                                         <Container>
                                                             <div class="row justify-content-start space">
@@ -310,7 +309,7 @@ class Projects extends React.Component {
 
                                                                     <b><p>Signup deadline for the Fall 2021 projects is Saturday, September 4, 2021</p></b> <br></br>
 
-                                                                    {buttonBFall2021}<br></br><br></br>
+                                                                    {/* {buttonBFall2021}<br></br><br></br> */}
 
                                                                     <h2>❖ <span className="highlight-text">What you will learn:</span></h2>
 
@@ -389,7 +388,7 @@ class Projects extends React.Component {
 
                                                                     <b><p>Signup deadline for the Fall 2021 projects is Saturday, September 4, 2021</p></b> <br></br><br></br>
 
-                                                                    {buttonAFall2021}<br></br><br></br>
+                                                                    {/*   */}
 
                                                                     <h2>❖ <span className="highlight-text">What you will learn:</span></h2>
 
@@ -467,7 +466,7 @@ class Projects extends React.Component {
                                                         description="Have a chance to learn about game design and how to create a user interface with the Pygame Library!"
                                                         technologies={["Python", "PyGame", "NEAT"]}
                                                         poster="./spring2021/FlappyBird Project.png"
-                                                        linkToSignUp="https://forms.gle/L8CWwrYDKVRaWQjo7"
+                                                        // linkToSignUp="https://forms.gle/L8CWwrYDKVRaWQjo7"
                                                         // Dynamic button
                                                         // Use '/' not '-' for dates to prevent issues on Firefox.
                                                         // openDate="01/28/2020"
@@ -485,7 +484,7 @@ class Projects extends React.Component {
                                                         description="Ever wanted to learn app development? Well, here is your chance to learn by using Flutter."
                                                         technologies={["Android Studio", "Dart", "Flutter", "Pub"]}
                                                         poster="./spring2021/Flutter Project.png"
-                                                        linkToSignUp="https://forms.gle/GACmPqv39hLoRRqt7"
+                                                        // linkToSignUp="https://forms.gle/GACmPqv39hLoRRqt7"
                                                         // Dynamic button
                                                         //Use '/' not '-' for dates to prevent issues on Firefox.
                                                         // openDate="01/28/2020"
