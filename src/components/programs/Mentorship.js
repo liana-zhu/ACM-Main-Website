@@ -69,7 +69,7 @@ class Mentorship extends React.Component {
                         </Tab.Pane>
                     </Tab.Content>
 
-                    <Button variant="success" size="lg" href="https://forms.gle/CSdU5xJUDAPV1oEt6">Join Now!</Button><br />
+                    {/* <Button variant="success" size="lg" href="https://forms.gle/CSdU5xJUDAPV1oEt6">Join Now!</Button><br /> */}
                 </Tab.Container>
             </div>
         )

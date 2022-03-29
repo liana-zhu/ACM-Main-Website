@@ -32,7 +32,7 @@ class NewProject extends React.Component {
 
                             <b>{this.props.projectDeadline}</b> <br></br><br></br>
 
-                            {button}<br></br><br></br>
+                            {/* {button}<br></br><br></br> */}
 
                             <h2>❖ <span className="highlight-text">What you will learn:</span></h2>
 
