@@ -1,6 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
-import {Tab, Nav, Row, Col, Image, Button} from 'react-bootstrap'
+import { Tab, Nav, Row, Col, Image, Button } from "react-bootstrap";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
@@ -26,23 +26,23 @@ class AboutUs extends React.Component {
 								<li class="list-group-item mission-statement-item">
 									Provide computer science knowledge and resources to students.
 								</li>
-								
+
 								<li class="list-group-item mission-statement-item">
 									Host programming workshops that teach projects and new technologies outside of classes at CSULA.
 								</li>
-								
+
 								<li class="list-group-item mission-statement-item">
 									Share knowledge and advice of the computing field in our mentorship program.
 								</li>
-								
+
 								<li class="list-group-item mission-statement-item">
 									Provide professional development workshops to help members prepare for the workforce.
 								</li>
-								
+
 								<li class="list-group-item mission-statement-item">
 									Build a community through our events, promoting involvement outside of campus.
 								</li>
-								
+
 								<li class="list-group-item mission-statement-item">
 									Serve students and those interested in the betterment of our Los Angeles community.
 								</li>
@@ -50,14 +50,14 @@ class AboutUs extends React.Component {
 						</div>
 					</div>
 					<div className="carousel-leaders">
-							<Carousel infiniteLoop>
-									{acmImages.map((value, index) => {
-											return <div>
-													<img className='carousel-leadergroup-image' src={require('' + value)} alt="leader" />
-													<p className="legend">{acmImageCaptions[index]}</p>
-											</div>
-									})}
-							</Carousel>
+						<Carousel infiniteLoop>
+							{acmImages.map((value, index) => {
+								return <div>
+									<img className='carousel-leadergroup-image' src={require('' + value)} alt="leader" />
+									<p className="legend">{acmImageCaptions[index]}</p>
+								</div>
+							})}
+						</Carousel>
 					</div>
 				</Jumbotron>
 				<div className="bottom-section">
@@ -80,7 +80,7 @@ class AboutUs extends React.Component {
 							<Tab.Pane eventKey="whoarewe">
 								<Row className="info-row">
 									<Col lg={6}>
-									<div className="info-content-container">
+										<div className="info-content-container">
 											<div className="info-header-container"><h1 className="info-header">Who are we?</h1></div>
 											<div className="about-text">
 												<li>
