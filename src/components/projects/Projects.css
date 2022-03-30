@@ -117,14 +117,25 @@ iframe[src*=youtube] {
     max-width: 100%;
 }
 
+.lower-margin{
+    margin-bottom: 2.7rem;
+}
+.upper-margin{
+    margin-top: 1.6rem;
+}
 @media only screen and(max-width){
     .project_info{
         padding: 20px;
     }
 }
 
+.disclaimer-spacing{
+    display: block;
+}
+
 .disclaimer {
     font-size: 20px;
+    font-family: Open Sans;
 }
 
 .anchor-blue {
@@ -197,7 +208,6 @@ iframe[src*=youtube] {
     font-size: 2.2rem;
     color: white;
 }
-
 
 @media only screen and (max-width: 600px) {
     .disclaimer-body {
