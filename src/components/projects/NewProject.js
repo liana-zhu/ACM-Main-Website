@@ -2,12 +2,12 @@ import React from 'react'
 import "./Projects.css"
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-import { Button, Container } from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.css'
 
 class NewProject extends React.Component {
     render() {
-        let button = <Button variant="success" size="lg" href={this.props.linkToSignUp}>Join Now!</Button>
+        //let button = <Button variant="success" size="lg" href={this.props.linkToSignUp}>Join Now!</Button>
         // Dynamic button automatically disables, but will have to deploy website to enable it.
         // let button
         // const today = new Date()

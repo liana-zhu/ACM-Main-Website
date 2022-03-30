@@ -1,12 +1,13 @@
-import React from 'react'
-import firebase from '../professional/firebaseConfig.js';
+import React from "react";
+import firebase from "../professional/firebaseConfig.js";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
-import { Row, Col, Tab, Nav, Button, Container } from 'react-bootstrap'
-import 'bootstrap/dist/css/bootstrap.css'
+import { Carousel } from "react-responsive-carousel";
+import { Row, Col, Tab, Nav, Button, Container } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.css";
 import "./Projects.css"
-import LegacyProject from './LegacyProject'
-import NewProject from './NewProject'
+import LegacyProject from "./LegacyProject";
+import NewProject from "./NewProject";
+
 class Projects extends React.Component {
     state = {
         beginnerProject: null,
@@ -14,6 +15,7 @@ class Projects extends React.Component {
         beginnerProjectS2022: null,
         advanceProjectS2022: null
     }
+
     componentDidMount() {
         firebase.firestore().collection("beginnerProject").get()
             .then(snapshot => {
@@ -25,6 +27,7 @@ class Projects extends React.Component {
                 this.setState({ beginnerProject: project })
             })
             .catch(error => console.log(error));
+
         firebase.firestore().collection("advanceProject").get()
             .then(snapshot => {
                 const project = []
@@ -35,6 +38,7 @@ class Projects extends React.Component {
                 this.setState({ advanceProject: project })
             })
             .catch(error => console.log(error));
+
         firebase.firestore().collection("beginnerProjectS2022").get()
             .then(snapshot => {
                 const project = []
@@ -45,6 +49,7 @@ class Projects extends React.Component {
                 this.setState({ beginnerProjectS2022: project })
             })
             .catch(error => console.log(error));
+
         firebase.firestore().collection("advanceProjectS2022").get()
             .then(snapshot => {
                 const project = []
@@ -55,20 +60,26 @@ class Projects extends React.Component {
                 this.setState({ advanceProjectS2022: project })
             })
             .catch(error => console.log(error));
+
     }
+
     render() {
         let buttonBSpring2022 = <Button variant="success" size="lg" href="https://forms.gle/X7rUq4hou691rvJ77">Join Now!</Button>
         let begLeaderImageS2022 = ["./leaders/Robert.jpg", "./leaders/Gerardo.jpg", "./leaders/Vacant.png"]
         let begLeaderNameS2022 = ["Robert De La Costa", "Gerardo Ibarra", "Max Guzman"]
+
         let buttonASpring2022 = <Button variant="success" size="lg" href="https://forms.gle/6eToXzMfbBDe81Tz6">Join Now!</Button>
         let advLeaderImageS2022 = ["./leaders/Nshan.jpg", "./leaders/Elizabeth.jpg", "./leaders/Jose.jpg", "./leaders/Sean.jpg"]
         let advLeaderNameS2022 = ["Nshan Kazaryan", "Elizabeth Silvestre", "Jose Zamora", "Sean Chung"]
-        let buttonBFall2021 = <Button variant="success" size="lg" href="https://forms.gle/bu8YRaxLFfTDXppN7">Join Now!</Button>
+
+        //let buttonBFall2021 = <Button variant="success" size="lg" href="https://forms.gle/bu8YRaxLFfTDXppN7">Join Now!</Button>
         let begLeaderImageF2021 = ["./leaders/Omar.jpg", "./leaders/Jorge.jpg"]
         let begLeaderNameF2021 = ["Omar Eclicerio", "Jorge Mata"]
-        let buttonAFall2021 = <Button variant="success" size="lg" href="https://forms.gle/egU7m8ra9XXh5NJ59">Join Now!</Button>
+
+        //let buttonAFall2021 = <Button variant="success" size="lg" href="https://forms.gle/egU7m8ra9XXh5NJ59">Join Now!</Button>
         let advLeaderImageF2021 = ["./leaders/Sean.jpg", "./leaders/Robert.jpg", "./leaders/Lillian.jpg", "./leaders/Nshan.jpg", "./leaders/Jorge.jpg"]
         let advLeaderNameF2021 = ["Sean", "Robert De La Costa", "Lillian", "Nshan Kazaryan", "Jorge Mata"]
+
         return (
             <div className="project-body">
                 <div>
@@ -85,10 +96,11 @@ class Projects extends React.Component {
                 */}
                 <div className="disclaimer-body">
                     <h3 className="disclaimer_header"><b>Disclaimers</b></h3>
-                    <span className="disclaimer disclaimer-spacing"><b>1. You must be a member of ACM to participate in the projects! If you are not a member, you will not be allowed in.</b></span>
-                    <span className="disclaimer disclaimer-spacing"><b>2. Space is limited, so admittance to these projects are first come, first served.</b></span>
-                    <span className="disclaimer disclaimer-spacing"><b>3. Project signups will be from Thursday, 1/27/2022 until Saturday, 2/5/2022</b></span>
+                    <span className="disclaimer"><b>1. You must be a member of ACM to participate in the projects! If you are not a member, you will not be allowed in.</b></span><br></br>
+                    <span className="disclaimer"><b>2. Space is limited, so admittance to these projects are first come, first served.</b></span><br></br>
+                    <span className="disclaimer"><b>3. Project signups will be from Thursday, 1/27/2022 until Saturday, 2/5/2022</b></span>
                 </div>
+
                 <div className="videoWrapper">
                     <div className="embed-responsive embed-responsive-16by9">
                         <iframe className="embed-responsive-item"
@@ -98,6 +110,7 @@ class Projects extends React.Component {
                         </iframe>
                     </div>
                 </div>
+
                 <div className="card project-card">
                     <Tab.Container id="left-tabs-example" defaultActiveKey="spring2022projects">
                         <Row>
@@ -151,10 +164,16 @@ class Projects extends React.Component {
                                             </Nav>
                                             <Tab.Content className="project-tab-content">
                                                 <Tab.Pane eventKey="S2022beginner">
+
+
+
                                                     <div className="project-description">
                                                         <Container>
                                                             <div class="row justify-content-start space">
+
+
                                                                 <div class="col-xs-1 col-sm-7 col-md-5 col-lg-4">
+
                                                                     {
                                                                         this.state.beginnerProjectS2022 &&
                                                                         this.state.beginnerProjectS2022.map(beginnerProjectS2022 => {
@@ -163,16 +182,24 @@ class Projects extends React.Component {
                                                                             )
                                                                         })
                                                                     }
+
                                                                 </div>
+
+
                                                                 <div class="col-xs-4 col-sm-7 col-md-4 col-lg-5">
                                                                     <b><p>Interested in learning about websites? What about gathering data from websites to help find products and listing? If so, our web scraper project is
-                                                                        just for you. Here, you'll learn how to use Python and read HTML to scrape data from your favorite websites!</p></b>
-                                                                    <b><p class = "lower-margin">Signup deadline is Saturday, February 5, 2021. Make sure to complete this form ASAP if you're interested! </p></b> 
-                                                                    {buttonBSpring2022}
-                                                                    <h2 class = "upper-margin">❖ <span className="highlight-text">What you will learn:</span></h2>
+                                                                        just for you. Here, you'll learn how to use Python and read HTML to scrape data from your favorite websites!</p> </b>
+
+                                                                    <b><p>Signup deadline is Saturday, February 5, 2021. Make sure to complete this form ASAP if you're interested! </p></b> <br></br>
+
+                                                                    {buttonBSpring2022}<br></br><br></br>
+
+                                                                    <h2>❖ <span className="highlight-text">What you will learn:</span></h2>
+
                                                                     <b><ul>
                                                                         <li>Python</li>
                                                                         <li>HTML</li>
+
                                                                     </ul></b>
                                                                 </div>
                                                             </div>
@@ -197,6 +224,7 @@ class Projects extends React.Component {
                                                         <Container>
                                                             <div class="row justify-content-start space">
                                                                 <div class="col-xs-1 col-sm-7 col-md-5 col-lg-4">
+
                                                                     {
                                                                         this.state.advanceProjectS2022 &&
                                                                         this.state.advanceProjectS2022.map(advanceProjectS2022 => {
@@ -205,12 +233,17 @@ class Projects extends React.Component {
                                                                             )
                                                                         })
                                                                     }
+
                                                                 </div>
                                                                 <div class="col-xs-4 col-sm-7 col-md-4 col-lg-5">
                                                                     <b><p>Want to learn more about game development? Here's your chance to learn the basics of using Unity and C# to program the retro game Tetris! </p> </b>
-                                                                    <b><p class = "lower-margin">Signup deadline is Saturday, February 5, 2021. Make sure to complete this form ASAP if you're interested!</p></b>
-                                                                    {buttonASpring2022}
-                                                                    <h2 class = "upper-margin">❖ <span className="highlight-text">What you will learn:</span></h2>
+
+                                                                    <b><p>Signup deadline is Saturday, February 5, 2021. Make sure to complete this form ASAP if you're interested!</p></b> <br></br><br></br>
+
+                                                                    {buttonASpring2022}<br></br><br></br>
+
+                                                                    <h2>❖ <span className="highlight-text">What you will learn:</span></h2>
+
                                                                     <b><ul>
                                                                         <li>Unity</li>
                                                                         <li>Visual Studio</li>
@@ -233,6 +266,7 @@ class Projects extends React.Component {
                                                             </Carousel>
                                                         </div>
                                                     </div>
+
                                                 </Tab.Pane>
                                             </Tab.Content>
                                         </Tab.Container>
@@ -249,10 +283,16 @@ class Projects extends React.Component {
                                             </Nav>
                                             <Tab.Content className="project-tab-content">
                                                 <Tab.Pane eventKey="F2021beginner">
+
+
+
                                                     <div className="project-description">
                                                         <Container>
                                                             <div class="row justify-content-start space">
+
+
                                                                 <div class="col-xs-1 col-sm-7 col-md-5 col-lg-4">
+
                                                                     {
                                                                         this.state.beginnerProject &&
                                                                         this.state.beginnerProject.map(beginnerProject => {
@@ -261,16 +301,25 @@ class Projects extends React.Component {
                                                                             )
                                                                         })
                                                                     }
+
                                                                 </div>
+
+
                                                                 <div class="col-xs-4 col-sm-7 col-md-4 col-lg-5">
-                                                                    <b><p class = "lowermargin">Learn how to create a website of your own from scratch!</p> </b> <b><p>Concepts such as Website Design, Structure, Functionality, Animated and Dynamic objects will be enforced throughout each workshop!</p></b>
-                                                                    <b><p class = "lowermargin">Signup deadline for the Fall 2021 projects is Saturday, September 4, 2021</p></b>
-                                                                    {buttonBFall2021}
-                                                                    <h2 class = "uppermargin">❖ <span className="highlight-text">What you will learn:</span></h2>
+                                                                    <b><p>Learn how to create a website of your own from scratch!</p> </b> <b><p>Concepts such as Website Design, Structure, Functionality, Animated and Dynamic objects will be enforced throughout each workshop!</p></b><br></br>
+
+                                                                    <b><p>Signup deadline for the Fall 2021 projects is Saturday, September 4, 2021</p></b> <br></br>
+
+                                                                    {/* {buttonBFall2021}<br></br><br></br> */}
+
+                                                                    <h2>❖ <span className="highlight-text">What you will learn:</span></h2>
+
                                                                     <b><ul>
                                                                         <li>Visual Studio Code</li>
                                                                         <li>HTML</li>
                                                                         <li>CSS</li>
+
+
                                                                     </ul></b>
                                                                 </div>
                                                             </div>
@@ -280,24 +329,31 @@ class Projects extends React.Component {
                                                             <div>
                                                                 Beginner Project Workshop Winners
                                                             </div>
+
                                                             <div className="contain">
+
                                                                 <div align="center" className="winner-circles">
                                                                     <div className="winner1 rounded-bottom">
                                                                         <div className="project-winners-place">Razzle Dazzle</div>
                                                                         <div className="project-winners-name">Jose <br></br>Zamora</div>
+
                                                                     </div>
                                                                 </div>
+
                                                                 <div align="center" className="winner-circles">
                                                                     <div className="winner2 rounded-bottom">
                                                                         <div className="project-winners-place">ACM'S Biggest Fan</div>
                                                                         <div className="project-winners-name">Daniel Ramirez</div>
                                                                     </div>
                                                                 </div>
+
                                                                 <div className="text-center project-winners-message">
                                                                     Congratulations to the winners that went above and beyond in this workshop
                                                                 </div>
                                                             </div>
                                                         </div>
+
+
                                                         <h2>❖ <span className="highlight-text">Project Leaders:</span></h2>
                                                         <br></br>
                                                         <div className="carousel">
@@ -317,6 +373,7 @@ class Projects extends React.Component {
                                                         <Container>
                                                             <div class="row justify-content-start space">
                                                                 <div class="col-xs-1 col-sm-7 col-md-5 col-lg-4">
+
                                                                     {
                                                                         this.state.advanceProject &&
                                                                         this.state.advanceProject.map(advanceProject => {
@@ -325,41 +382,55 @@ class Projects extends React.Component {
                                                                             )
                                                                         })
                                                                     }
+
                                                                 </div>
                                                                 <div class="col-xs-4 col-sm-7 col-md-4 col-lg-5">
-                                                                    <b><p class = "lowermargin">Learn Video Game Development using the Unity game engine and the Visual Studio IDE!</p> </b> <b><p>Code and build your own desktop version of Pacman. Learn to create a beloved arcade video game from scratch!</p></b>
-                                                                    <b><p class ="lowermargin">Signup deadline for the Fall 2021 projects is Saturday, September 4, 2021</p></b> 
-                                                                    {buttonAFall2021}
-                                                                    <h2 class = "uppermargin">❖ <span className="highlight-text">What you will learn:</span></h2>
+                                                                    <b><p>Learn Video Game Development using the Unity game engine and the Visual Studio IDE!</p> </b> <b><p>Code and build your own desktop version of Pacman. Learn to create a beloved arcade video game from scratch!</p></b><br></br><br></br>
+
+                                                                    <b><p>Signup deadline for the Fall 2021 projects is Saturday, September 4, 2021</p></b> <br></br><br></br>
+
+                                                                    {/* {buttonAFall2021}<br></br><br></br> */}
+
+                                                                    <h2>❖ <span className="highlight-text">What you will learn:</span></h2>
 
                                                                     <b><ul>
                                                                         <li>Unity</li>
                                                                         <li>Visual Studio</li>
                                                                         <li>C#</li>
+
+
                                                                     </ul></b>
                                                                 </div>
                                                             </div>
                                                         </Container>
                                                         <br></br>
+
                                                         <div className="text-center project-winners">
                                                             <div>
                                                                 Advance Project Workshop Winners
                                                             </div>
+
                                                             <div className="contain">
+
                                                                 <div align="center" className="winner-circles">
                                                                     <div className="winner1 rounded-bottom">
                                                                         <div className="project-winners-place">Razzle Dazzle</div>
                                                                         <div className="project-winners-name">Luis <br></br>Cortez</div>
+
                                                                     </div>
                                                                 </div>
+
                                                                 <div align="center" className="winner-circles">
                                                                     <div className="winner2 rounded-bottom">
                                                                         <div className="project-winners-place">ACM'S Biggest Fan</div>
                                                                         <div className="project-winners-name">Fabio Carrasco</div>
                                                                     </div>
                                                                 </div>
+
+
                                                             </div>
                                                         </div>
+
                                                         <h2>❖ <span className="highlight-text">Project Leaders:</span></h2>
                                                         <br></br>
                                                         <div className="carousel">
@@ -373,6 +444,7 @@ class Projects extends React.Component {
                                                             </Carousel>
                                                         </div>
                                                     </div>
+
                                                 </Tab.Pane>
                                             </Tab.Content>
                                         </Tab.Container>
@@ -525,6 +597,7 @@ class Projects extends React.Component {
                                             </Tab.Content>
                                         </Tab.Container>
                                     </Tab.Pane>
+
                                     <Tab.Pane eventKey="fall2019projects">
                                         <Tab.Container defaultActiveKey="F2019beginner">
                                             <Nav className="project-tab-label" variant="pills">
@@ -536,6 +609,7 @@ class Projects extends React.Component {
                                                 </Nav.Item>
                                             </Nav>
                                             <Tab.Content className="project-tab-content">
+
                                                 <Tab.Pane eventKey="F2019beginner">
                                                     <LegacyProject
                                                         opener="Who doesn't enjoy games, even a little?"
@@ -554,6 +628,7 @@ class Projects extends React.Component {
                                                         projectLeaders={['Andrew Gonzalez', 'Cristian Corrales', 'Elton Lin']}
                                                     />
                                                 </Tab.Pane>
+
                                                 <Tab.Pane eventKey="F2019advanced">
                                                     <LegacyProject
                                                         opener='Looking for a bit of a challenge?'
@@ -574,6 +649,7 @@ class Projects extends React.Component {
                                             </Tab.Content>
                                         </Tab.Container>
                                     </Tab.Pane>
+
                                     <Tab.Pane eventKey="spring2019projects">
                                         <Tab.Container defaultActiveKey="S2019beginner">
                                             <Nav className="project-tab-label" variant="pills">
@@ -585,6 +661,7 @@ class Projects extends React.Component {
                                                 </Nav.Item>
                                             </Nav>
                                             <Tab.Content className="project-tab-content">
+
                                                 <Tab.Pane eventKey="S2019beginner">
                                                     <LegacyProject
                                                         opener=''
@@ -597,6 +674,7 @@ class Projects extends React.Component {
                                                         projectLeaders={['Deric Kwok', 'Brian Hernandez']}
                                                     />
                                                 </Tab.Pane>
+
                                                 <Tab.Pane eventKey="S2019advanced">
                                                     <LegacyProject
                                                         opener=''
@@ -609,9 +687,11 @@ class Projects extends React.Component {
                                                         projectLeaders={['Ingelbert Figueroa', 'Emily Pascua', 'Srivats Venkataraman']}
                                                     />
                                                 </Tab.Pane>
+
                                             </Tab.Content>
                                         </Tab.Container>
                                     </Tab.Pane>
+
                                     <Tab.Pane eventKey="fall2018projects">
                                         <Tab.Container defaultActiveKey="F2018beginner">
                                             <Nav className="project-tab-label" variant="pills">
@@ -623,6 +703,7 @@ class Projects extends React.Component {
                                                 </Nav.Item>
                                             </Nav>
                                             <Tab.Content className="project-tab-content">
+
                                                 <Tab.Pane eventKey="F2018beginner">
                                                     <LegacyProject
                                                         opener=''
@@ -635,6 +716,7 @@ class Projects extends React.Component {
                                                         projectLeaders={['Giovanni Garcia', 'Brian Hernandez']}
                                                     />
                                                 </Tab.Pane>
+
                                                 <Tab.Pane eventKey="F2018advanced">
                                                     <LegacyProject
                                                         opener=''
@@ -647,16 +729,18 @@ class Projects extends React.Component {
                                                         projectLeaders={['Pranil Dahal']}
                                                     />
                                                 </Tab.Pane>
+
                                             </Tab.Content>
                                         </Tab.Container>
                                     </Tab.Pane>
                                 </Tab.Content>
                             </Col>
                         </Row>
-                    </Tab.Container>
+                    </Tab.Container><br></br>
                 </div>
             </div>
         );
     }
 }
+
 export default Projects;

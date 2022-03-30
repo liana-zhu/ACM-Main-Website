@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Tab, Nav } from 'react-bootstrap'
+import { Row, Col, Tab, Nav } from "react-bootstrap"
 import Jumbotron from "react-bootstrap/Jumbotron";
 import "bootstrap/dist/css/bootstrap.css";
 import "./board.css";
@@ -89,7 +89,6 @@ class Board extends React.Component {
                           <BoardLeaders photo={IMAGES.Nshan2021} firstName="Nshan" lastName="Kazaryan" year="2021" position="Project Officer" />
                         </div>
                         <div className="row-leaders centered-leader">
-                          <BoardLeaders photo={IMAGES.Robert2021} firstName="Robert" lastName="de la Costa" year="2021" position="Project Officer" />
                           <BoardLeaders photo={IMAGES.Daniel2021} firstName="Daniel" lastName="Ramirez" year="2021" position="Administrative Officer" />
                         </div>
                       </div>
@@ -111,17 +110,11 @@ class Board extends React.Component {
                         </div>
                         <div className="row-leaders centered-leader">
                           <BoardLeaders photo={IMAGES.Sean2021} firstName="Sean" lastName="Chung" year="2021" position="Project Committee" />
-                          <BoardLeaders photo={IMAGES.Elizabeth2021} firstName="Elizabeth" lastName="Silvestre" year="2021" position="Project Committee" />
+                          <BoardLeaders photo={IMAGES.Gerardo2021} firstName="Gerardo" lastName="Ibarra" year="2021" position="Project Committee" />
                         </div>
                         <div className="row-leaders centered-leader">
                           <BoardLeaders photo={IMAGES.Roberto2021} firstName="Roberto" lastName="Ruiz-Garcia" year="2021" position="Project Committee" />
                           <BoardLeaders photo={IMAGES.Jose2021} firstName="Jose" lastName="Zamora" year="2021" position="Project Committee" />
-                        </div>
-                        <div className="row-leaders centered-leader">
-                          <BoardLeaders photo={IMAGES.Gerardo2021} firstName="Gerardo" lastName="Ibarra" year="2021" position="Project Committee" />
-                        </div>
-                        <div className="row-leaders centered-leader">
-
                         </div>
                       </div>
                       <div className="row">
@@ -134,10 +127,6 @@ class Board extends React.Component {
                         </div>
                         <div className="row-leaders centered-leader">
                           <BoardLeaders photo={IMAGES.Wilson2021} firstName="Wilson" lastName="Thomas" year="2020" position="Advisor" />
-                          <BoardLeaders photo={IMAGES.Kalvin2021} firstName="Kalvin" lastName="Mateo" year="2020" position="Student Advisor" />
-                        </div>
-                        <div className="row-leaders centered-leader">
-                          <BoardLeaders photo={IMAGES.Nidhi2021} firstName="Nidhi" lastName="Lakshmanan" year="2020" position="Student Advisor" />
                         </div>
                       </div>
                     </Tab.Pane>
