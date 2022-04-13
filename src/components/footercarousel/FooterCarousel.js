@@ -13,22 +13,22 @@ class FooterCarousel extends React.Component {
               <div className="col-sm footer-text">
                 <div>
                   <div class="icons">
-                    <div class="iconHover" onclick="location.href='#'">
-                       <div class="inner">
-                          <a href="https://www.instagram.com/calstatela_acm/?hl=en"><FontAwesomeIcon className="iconBrand" size="3x" icon={faInstagram}></FontAwesomeIcon></a>
-                        </div>
+                    <div class="iconIGHover" onclick="location.href='#'">
+                      <div class="inner">
+                        <a href="https://www.instagram.com/calstatela_acm/?hl=en"><FontAwesomeIcon className="iconBrand" size="3x" icon={faInstagram}></FontAwesomeIcon></a>
+                      </div>
                     </div>
-                     <div class="iconHover" onclick="location.href='#'">
+                    <div class="iconFBHover" onclick="location.href='#'">
+                      <div class="inner">
+                        <a href="https://www.facebook.com/calstatela.acm"><FontAwesomeIcon  className="iconBrand" size="3x" icon={faFacebookF}></FontAwesomeIcon></a>
+                      </div>
+                    </div>
+                      <div class="iconDiscordHover" onclick="location.href='#'">
                         <div class="inner">
-                          <a href="https://www.facebook.com/calstatela.acm"><FontAwesomeIcon  className="iconBrand" size="3x" icon={faFacebookF}></FontAwesomeIcon></a>
+                          <a href="https://discordapp.com/invite/wX58JRv"><FontAwesomeIcon  className="iconBrand" size="3x" icon={faDiscord}></FontAwesomeIcon></a>
                         </div>
                       </div>
-                        <div class="iconHover" onclick="location.href='#'">
-                          <div class="inner">
-                            <a href="https://discordapp.com/invite/wX58JRv"><FontAwesomeIcon  className="iconBrand" size="3x" icon={faDiscord}></FontAwesomeIcon></a>
-                          </div>
-                        </div>
-                      </div>
+                    </div>
                 </div>
                 <br></br>
                   Contact us: <b>acm.calstatela@gmail.com</b><br></br>

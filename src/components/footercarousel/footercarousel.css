@@ -40,15 +40,60 @@
   margin-left: 10px;
 }
 
-.iconHover{
+.iconIGHover{
+  display: inline-table;
+  cursor: pointer;
+  border-radius: 10px;  
+  padding-top: 2px;
+  padding-bottom: 5px;
+  padding-left: 0.5px;
+  padding-right: 0.5px;
+  margin: 4px;
+}
+
+.iconIGHover:hover{
+  background-color: #01a4ff; 
+  width: 4%;
+  padding-top: 2px;
+  padding-bottom: 5px;
+  padding-left: 0.5px;
+  padding-right: 0.5px;
+  margin: 4px;
+}
+
+.iconFBHover{
+  display: inline-table;
+  cursor: pointer;
+  border-radius: 10px;  
+  font-size: 14px;
+  padding: 6px;
+  margin: 4px;
+}
+
+.iconFBHover:hover{
+  background-color: #01a4ff; 
+  width: 4%;
+  padding: 6px;
+  margin: 4px;
+}
+
+.iconDiscordHover{
   display: inline-table;
   cursor: pointer;
   border-radius: 10px;
+  font-size: 14px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 1px;
+  padding-right: 1px;
+  margin: 4px;
 }
 
-.iconHover:hover{
-  background: #636363; 
+.iconDiscordHover:hover{
+  background-color: #01a4ff; 
   width: 4%;
-  padding-top: 3px;
-  padding-bottom: 3px;
+  padding: 6px;
+  padding-left: 1px;
+  padding-right: 1px;
+  margin: 4px;
 }
