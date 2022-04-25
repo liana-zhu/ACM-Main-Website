@@ -192,7 +192,7 @@ class Projects extends React.Component {
 
                                                                     <b><p>Signup deadline is Saturday, February 5, 2021. Make sure to complete this form ASAP if you're interested! </p></b> <br></br>
 
-                                                                    {buttonBSpring2022}<br></br><br></br>
+                                                                    {/* {buttonBSpring2022}<br></br><br></br> */}
 
                                                                     <h2>❖ <span className="highlight-text">What you will learn:</span></h2>
 
@@ -240,7 +240,7 @@ class Projects extends React.Component {
 
                                                                     <b><p>Signup deadline is Saturday, February 5, 2021. Make sure to complete this form ASAP if you're interested!</p></b> <br></br><br></br>
 
-                                                                    {buttonASpring2022}<br></br><br></br>
+                                                                    {/* {buttonASpring2022}<br></br><br></br> */}
 
                                                                     <h2>❖ <span className="highlight-text">What you will learn:</span></h2>
 
