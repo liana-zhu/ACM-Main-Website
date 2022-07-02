@@ -91,8 +91,7 @@ const Regular = () => {
 						<li class="list-group-item list-points">Step 2 - Fill out a Google form (redirect will happen after successful payment)</li>
 					</ul>
 					<h2 className="member-description-points">Send us an email if you have any questions or concerns</h2>
-					<h2 className="member-description-points">Current ACM memberships will end this Spring</h2>
-					<h2 className="member-description-points">Make sure to attend any last Spring events to get full use of your membership</h2>
+					<h2 className="member-description-points">ACM Memberships are good for one school year (Fall 2022-Spring 2023)</h2>
 					<h1 className="refund">No Refunds</h1>
 					<h6 className="additional-fee">*ADDITIONAL 50 CENTS PROCESSING FEE*</h6>
 					<button className="btn btn-lg btn-info btn-membership" role="link" onClick={handleClick} disabled={state.loading}>
