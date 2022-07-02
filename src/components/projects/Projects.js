@@ -64,11 +64,11 @@ class Projects extends React.Component {
     }
 
     render() {
-        let buttonBSpring2022 = <Button variant="success" size="lg" href="https://forms.gle/X7rUq4hou691rvJ77">Join Now!</Button>
+        //let buttonBSpring2022 = <Button variant="success" size="lg" href="https://forms.gle/X7rUq4hou691rvJ77">Join Now!</Button>
         let begLeaderImageS2022 = ["./leaders/Robert.jpg", "./leaders/Gerardo.jpg", "./leaders/Vacant.png"]
         let begLeaderNameS2022 = ["Robert De La Costa", "Gerardo Ibarra", "Max Guzman"]
 
-        let buttonASpring2022 = <Button variant="success" size="lg" href="https://forms.gle/6eToXzMfbBDe81Tz6">Join Now!</Button>
+        //let buttonASpring2022 = <Button variant="success" size="lg" href="https://forms.gle/6eToXzMfbBDe81Tz6">Join Now!</Button>
         let advLeaderImageS2022 = ["./leaders/Nshan.jpg", "./leaders/Elizabeth.jpg", "./leaders/Jose.jpg", "./leaders/Sean.jpg"]
         let advLeaderNameS2022 = ["Nshan Kazaryan", "Elizabeth Silvestre", "Jose Zamora", "Sean Chung"]
 
@@ -192,7 +192,7 @@ class Projects extends React.Component {
 
                                                                     <b><p>Signup deadline is Saturday, February 5, 2021. Make sure to complete this form ASAP if you're interested! </p></b> <br></br>
 
-                                                                    {buttonBSpring2022}<br></br><br></br>
+                                                                    {/* {buttonBSpring2022}<br></br><br></br> */}
 
                                                                     <h2>❖ <span className="highlight-text">What you will learn:</span></h2>
 
@@ -240,7 +240,7 @@ class Projects extends React.Component {
 
                                                                     <b><p>Signup deadline is Saturday, February 5, 2021. Make sure to complete this form ASAP if you're interested!</p></b> <br></br><br></br>
 
-                                                                    {buttonASpring2022}<br></br><br></br>
+                                                                    {/* {buttonASpring2022}<br></br><br></br> */}
 
                                                                     <h2>❖ <span className="highlight-text">What you will learn:</span></h2>
 

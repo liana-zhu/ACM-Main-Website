@@ -57,7 +57,7 @@ const Regular = () => {
 		const { error } = await stripe.redirectToCheckout({
 			mode: 'payment',
 			lineItems: [{ price: state.priceId, quantity: state.quantity }],
-			successUrl: `https://forms.gle/A9eA5rnK4cmpZLw37`,
+			successUrl: `https://forms.gle/BHC9MmkkRAwL7Kam9`,
 			cancelUrl: `${window.location.origin}/Membership`,
 		});
 		// If `redirectToCheckout` fails due to a browser or network
