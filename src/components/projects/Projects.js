@@ -13,7 +13,9 @@ class Projects extends React.Component {
         beginnerProject: null,
         advanceProject: null,
         beginnerProjectS2022: null,
-        advanceProjectS2022: null
+        advanceProjectS2022: null,
+        beginnerProjectF2022: null,
+        advanceProjectF2022: null
     }
 
     componentDidMount() {
@@ -60,10 +62,39 @@ class Projects extends React.Component {
                 this.setState({ advanceProjectS2022: project })
             })
             .catch(error => console.log(error));
+        
+        firebase.firestore().collection("beginnerProjectF2022").get()
+            .then(snapshot => {
+                const project = []
+                snapshot.forEach(doc => {
+                    const data = doc.data()
+                    project.push(data)
+                })
+                this.setState({ beginnerProjectF2022: project })
+            })
+            .catch(error => console.log(error));
 
+        firebase.firestore().collection("advanceProjectF2022").get()
+            .then(snapshot => {
+                const project = []
+                snapshot.forEach(doc => {
+                    const data = doc.data()
+                    project.push(data)
+                })
+                this.setState({ advanceProjectF2022: project })
+            })
+            .catch(error => console.log(error));
     }
 
     render() {
+        let buttonBFall2022 = <Button variant="success" size="lg" href="https://forms.gle/6hUegfPTo2fhLBF57">Join Now!</Button>
+        let begLeaderImageF2022 = ["./leaders/Gerardo.jpg", "./leaders/Vacant.png", "./leaders/Vacant.png"]
+        let begLeaderNameF2022 = ["Gerardo Ibarra", "Jay Perez", "Charlie Dominguez"]
+
+        let buttonAFall2022 = <Button variant="success" size="lg" href="https://forms.gle/8qNqqZzt4heoFhqSA">Join Now!</Button>
+        let advLeaderImageF2022 = ["./leaders/Jose.jpg", "./leaders/Ricardo.jpg", "./leaders/Vacant.png"]
+        let advLeaderNameF2022 = ["Jose Zamora", "Ricardo Miranda", "Isabella Arreguin"]
+
         //let buttonBSpring2022 = <Button variant="success" size="lg" href="https://forms.gle/X7rUq4hou691rvJ77">Join Now!</Button>
         let begLeaderImageS2022 = ["./leaders/Robert.jpg", "./leaders/Gerardo.jpg", "./leaders/Vacant.png"]
         let begLeaderNameS2022 = ["Robert De La Costa", "Gerardo Ibarra", "Max Guzman"]
@@ -98,7 +129,7 @@ class Projects extends React.Component {
                     <h3 className="disclaimer_header"><b>Disclaimers</b></h3>
                     <span className="disclaimer"><b>1. You must be a member of ACM to participate in the projects! If you are not a member, you will not be allowed in.</b></span><br></br>
                     <span className="disclaimer"><b>2. Space is limited, so admittance to these projects are first come, first served.</b></span><br></br>
-                    <span className="disclaimer"><b>3. Project signups will be from Thursday, 1/27/2022 until Saturday, 2/5/2022</b></span>
+                    <span className="disclaimer"><b>3. Project signups open Thursday, August 25, 2022 and will close Sunday, September 4, 2022</b></span>
                 </div>
 
                 <div className="videoWrapper">
@@ -112,10 +143,13 @@ class Projects extends React.Component {
                 </div>
 
                 <div className="card project-card">
-                    <Tab.Container id="left-tabs-example" defaultActiveKey="spring2022projects">
+                    <Tab.Container id="left-tabs-example" defaultActiveKey="fall2022projects">
                         <Row>
                             <Col sm={2}>
                                 <Nav variant="pills" className="flex-column">
+                                    <Nav.Item>
+                                        <Nav.Link className="project-nav-link anchor-white" eventKey="fall2022projects">Fall 2022</Nav.Link>
+                                    </Nav.Item>
                                     <Nav.Item>
                                         <Nav.Link className="project-nav-link anchor-white" eventKey="spring2022projects">Spring 2022</Nav.Link>
                                     </Nav.Item>
@@ -152,6 +186,126 @@ class Projects extends React.Component {
                                     3. After following the steps above, then update the page with new project information.
                                     4. Remember to update dates in the disclaimer above.
                                     */}
+                                    <Tab.Pane eventKey="fall2022projects">
+                                        <Tab.Container defaultActiveKey="F2022beginner">
+                                            <Nav className="project-tab-label" variant="pills">
+                                                <Nav.Item>
+                                                    <Nav.Link className="project-nav-link-tab anchor-white" eventKey="F2022beginner">Beginner</Nav.Link>
+                                                </Nav.Item>
+                                                <Nav.Item>
+                                                    <Nav.Link className="project-nav-link-tab anchor-white" eventKey="F2022advanced">Advanced</Nav.Link>
+                                                </Nav.Item>
+                                            </Nav>
+                                            <Tab.Content className="project-tab-content">
+                                                <Tab.Pane eventKey="F2022beginner">
+
+
+
+                                                    <div className="project-description">
+                                                        <Container>
+                                                            <div class="row justify-content-start space">
+
+
+                                                                <div class="col-xs-1 col-sm-7 col-md-5 col-lg-4">
+                                                                    {/* use for now until firebase method is figured out */}
+                                                                    <img src={require("./fall2022/chess-with-ai.png")} className="img-fluid programs-poster" alt="project poster"></img>
+                                                                    {/* {
+                                                                        this.state.beginnerProjectF2022 &&
+                                                                        this.state.beginnerProjectF2022.map(beginnerProjectF2022 => {
+                                                                            return (
+                                                                                <img src={beginnerProjectF2022.imgUrl} className="img-fluid programs-poster" alt="project poster"></img>
+                                                                            )
+                                                                        })
+                                                                    } */}
+
+                                                                </div>
+
+
+                                                                <div class="col-xs-4 col-sm-7 col-md-4 col-lg-5">
+                                                                    <b><p>Interested in Chess and AI? In this project, we will use Java and JavaAWT/Swing to create the classic game of chess along with creating an AI to play against.</p> </b>
+
+                                                                    <b><p>Signup deadline is Sunday, September 4, 2022. Make sure to complete this form ASAP if you're interested! </p></b> <br></br>
+
+                                                                    {buttonBFall2022}<br></br><br></br>
+
+                                                                    <h2>❖ <span className="highlight-text">What you will learn:</span></h2>
+
+                                                                    <b><ul>
+                                                                        <li>Java</li>
+                                                                        <li>JavaAWT/Swing</li>
+                                                                        <li>Minimax</li>
+
+                                                                    </ul></b>
+                                                                </div>
+                                                            </div>
+                                                        </Container>
+                                                        <br></br>
+                                                        <h2>❖ <span className="highlight-text">Project Leaders:</span></h2>
+                                                        <br></br>
+                                                        <div className="carousel">
+                                                            <Carousel infiniteLoop>
+                                                                {begLeaderImageF2022.map((value, index) => {
+                                                                    return <div>
+                                                                        <img className='carousel-leader-image' src={require('' + value)} alt="leader" />
+                                                                        <p className="legend">{begLeaderNameF2022[index]}</p>
+                                                                    </div>
+                                                                })}
+                                                            </Carousel>
+                                                        </div>
+                                                    </div>
+                                                </Tab.Pane>
+                                                <Tab.Pane eventKey="F2022advanced">
+                                                    <div className="project-description">
+                                                        <Container>
+                                                            <div class="row justify-content-start space">
+                                                                <div class="col-xs-1 col-sm-7 col-md-5 col-lg-4">
+                                                                    {/* use for now until firebase method is figured out */}
+                                                                    <img src={require("./fall2022/tower-defense.png")} className="img-fluid programs-poster" alt="project poster"></img>
+                                                                    {/* {
+                                                                        this.state.advanceProjectF2022 &&
+                                                                        this.state.advanceProjectF2022.map(advanceProjectF2022 => {
+                                                                            return (
+                                                                                <img src={advanceProjectF2022.imgUrl} className="img-fluid programs-poster" alt="project poster"></img>
+                                                                            )
+                                                                        })
+                                                                    } */}
+
+                                                                </div>
+                                                                <div class="col-xs-4 col-sm-7 col-md-4 col-lg-5">
+                                                                    <b><p>Interested in game development? In this project, we will use Unity and C# to recreate the classic flash game Bloons Tower Defense!</p> </b>
+
+                                                                    <b><p>Signup deadline is Sunday, September 4, 2022. Make sure to complete this form ASAP if you're interested!</p></b> <br></br><br></br>
+
+                                                                    {buttonAFall2022}<br></br><br></br>
+
+                                                                    <h2>❖ <span className="highlight-text">What you will learn:</span></h2>
+
+                                                                    <b><ul>
+                                                                        <li>Unity</li>
+                                                                        <li>C#</li>
+                                                                    </ul></b>
+                                                                </div>
+                                                            </div>
+                                                        </Container>
+                                                        <br></br>
+                                                        <h2>❖ <span className="highlight-text">Project Leaders:</span></h2>
+                                                        <br></br>
+                                                        <div className="carousel">
+                                                            <Carousel infiniteLoop>
+                                                                {advLeaderImageF2022.map((value, index) => {
+                                                                    return <div>
+                                                                        <img className='carousel-leader-image' src={require('' + value)} alt="leader" />
+                                                                        <p className="legend">{advLeaderNameF2022[index]}</p>
+                                                                    </div>
+                                                                })}
+                                                            </Carousel>
+                                                        </div>
+                                                    </div>
+
+                                                </Tab.Pane>
+                                            </Tab.Content>
+                                        </Tab.Container>
+                                    </Tab.Pane>
                                     <Tab.Pane eventKey="spring2022projects">
                                         <Tab.Container defaultActiveKey="S2022beginner">
                                             <Nav className="project-tab-label" variant="pills">

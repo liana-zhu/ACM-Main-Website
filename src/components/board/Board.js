@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Tab, Nav } from "react-bootstrap"
+import { Row, Col, Tab, Nav } from 'react-bootstrap'
 import Jumbotron from "react-bootstrap/Jumbotron";
 import "bootstrap/dist/css/bootstrap.css";
 import "./board.css";
@@ -22,34 +22,114 @@ class Board extends React.Component {
             <Tab.Container id="left-tabs-example" defaultActiveKey="first">
               <Col sm={3}>
                 <Nav variant="pills" className="flex-column">
-                  <Nav.Item>
-                    <Nav.Link className="nav-link anchor-white" eventKey="first">2021-2022</Nav.Link>
+                <Nav.Item>
+                    <Nav.Link className="nav-link anchor-white" eventKey="first">2022-2023</Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
-                    <Nav.Link className="nav-link anchor-white" eventKey="second">2020-2021</Nav.Link>
+                    <Nav.Link className="nav-link anchor-white" eventKey="second">2021-2022</Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
-                    <Nav.Link className="nav-link anchor-white" eventKey="third">2019-2020</Nav.Link>
+                    <Nav.Link className="nav-link anchor-white" eventKey="third">2020-2021</Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
-                    <Nav.Link className="nav-link anchor-white" eventKey="fourth">2018-2019</Nav.Link>
+                    <Nav.Link className="nav-link anchor-white" eventKey="fourth">2019-2020</Nav.Link>
+                  </Nav.Item>
+                  <Nav.Item>
+                    <Nav.Link className="nav-link anchor-white" eventKey="fifth">2018-2019</Nav.Link>
                   </Nav.Item>
                 </Nav>
               </Col>
               <Row>
                 <Col sm={9}>
-                  <Tab.Content>
-                    <Tab.Pane eventKey="first">
+                  <Tab.Content><Tab.Pane eventKey="first">
                       <Tab.Container>
                         <div className="row-leaders all-row-leaders">
                           <h2 className="leader-header">LEADER OF THE MONTH</h2>
                           <div className="col-leaders justify-content-center image-contain">
-                            <img className="board-leader-winner board-leader-profile" src={IMAGES.Gerardo2021} alt={"Leader of the Month"}></img>
+                            <img className="board-leader-winner board-leader-profile" src={IMAGES.Vacant} alt={"Leader of the Month"}></img>
                           </div>
-                          <h2 className="leader-info">Gerardo Ibarra</h2>
-                          <h2 className="leader-info">Project Committee</h2>
+                          <h2 className="leader-info">Vacant</h2>
+                          <h2 className="leader-info"></h2>
                         </div>
                       </Tab.Container>
+                      <div className="row">
+                        <div className="board d-lg-none"></div>
+                        <h2 className="h2-leaders centered-leader all-row-leaders">
+                          ACM 2022-2023 BOARD
+                        </h2>
+                      </div>
+                      {/* Fixed format (alignment) of leaders by adding "centered-leader" to class name of each row*/}
+                      <div className="all-row-leaders">
+                        <div className="row-leaders centered-leader">
+                          <BoardLeaders photo={IMAGES.Ashley2022} firstName="Ashley" lastName="Tran" year="2022" position="President" />
+                          <BoardLeaders photo={IMAGES.Branden2022} firstName="Branden" lastName="Zamora" year="2022" position="Vice President" />
+                        </div>
+                        <div className="row-leaders centered-leader">
+                          <BoardLeaders photo={IMAGES.Alexander2022} firstName="Alexander" lastName="Vazquez" year="2022" position="Treasurer" />
+                          <BoardLeaders photo={IMAGES.Summer2022} firstName="Summer" lastName="Tran" year="2022" position="Secretary" />
+                        </div>
+                        <div className="row-leaders centered-leader">
+                          <BoardLeaders photo={IMAGES.Nshan2022} firstName="Nshan" lastName="Kazaryan" year="2022" position="Project Manager" />
+                          <BoardLeaders photo={IMAGES.Patrick2022} firstName="Patrick" lastName="Sangalang" year="2022" position="Webmaster" />
+                        </div>
+                        <div className="row-leaders centered-leader">
+                          <BoardLeaders photo={IMAGES.Deep2022} firstName="Deep" lastName="Bhakta" year="2022" position="VP of Internal Affairs" />
+                          <BoardLeaders photo={IMAGES.Vacant} firstName="Vacant" lastName="" year="2022" position="VP of External Affairs" />
+                        </div>
+                      </div>
+                      <div className="row">
+                        <div className="board d-lg-none"></div>
+                        <h2 className="h2-leaders centered-leader all-row-leaders">OFFICERS</h2>
+                      </div>
+                      <div className="all-row-leaders">
+                        <div className="row-leaders centered-leader">
+                          <BoardLeaders photo={IMAGES.Vacant} firstName="Vacant" lastName="" year="2022" position="Finance Officer" />
+                          <BoardLeaders photo={IMAGES.Daniel2022} firstName="Daniel" lastName="Ramirez" year="2022" position="Executive Officer" />
+                        </div>
+                        <div className="row-leaders centered-leader">
+                          <BoardLeaders photo={IMAGES.Vacant} firstName="Fabio" lastName="Carrasco" year="2022" position="Web Officer" />
+                          <BoardLeaders photo={IMAGES.Gerardo2022} firstName="Gerardo" lastName="Ibarra" year="2022" position="Project Officer" />
+                        </div>
+                        <div className="row-leaders centered-leader">
+                          <BoardLeaders photo={IMAGES.Jose2022} firstName="Jose" lastName="Zamora" year="2022" position="Project Officer" />
+                          <BoardLeaders photo={IMAGES.Vacant} firstName="Julian" lastName="Puas" year="2022" position="Administrative Officer" />
+                        </div>
+                      </div>
+                      <div className="row">
+                        <h2 className="h2-leaders all-row-leaders">COMMITTEE</h2>
+                      </div>
+                      <div className="all-row-leaders">
+                        <div className="row-leaders centered-leader">
+                          <BoardLeaders photo={IMAGES.Tracy2022} firstName="Tracy" lastName="Truong" year="2022" position="Design Committee" />
+                          <BoardLeaders photo={IMAGES.Vacant} firstName="Katherine" lastName="Bonomo" year="2022" position="Design Committee" />
+                        </div>
+                        <div className="row-leaders centered-leader">
+                          <BoardLeaders photo={IMAGES.Lloyd2022} firstName="Lloyd" lastName="Castro" year="2022" position="Web Committee" />
+                          <BoardLeaders photo={IMAGES.Vacant} firstName="Isabella" lastName="Arreguin" year="2022" position="Project Committee" />
+                        </div>
+                        <div className="row-leaders centered-leader">
+                          <BoardLeaders photo={IMAGES.Ricardo2022} firstName="Ricardo" lastName="Miranda" year="2022" position="Project Committee" />
+                          <BoardLeaders photo={IMAGES.Vacant} firstName="Jay" lastName="Perez" year="2022" position="Project Committee" />
+                        </div>
+                        <div className="row-leaders centered-leader">
+                          <BoardLeaders photo={IMAGES.Vacant} firstName="Charlie" lastName="Dominguez" year="2022" position="Project Committee" />
+                        </div>
+                      </div>
+                      <div className="row">
+                        <h2 className="h2-leaders all-row-leaders">ADVISORS</h2>
+                      </div>
+                      <div className="all-row-leaders">
+                        <div className="row-leaders centered-leader">
+                          <BoardLeaders photo={IMAGES.Weronika2021} firstName="Weronika" lastName="Cwir" year="2022" position="Faculty Advisor" />
+                          <BoardLeaders photo={IMAGES.Vacant} firstName="Keenan" lastName="Knaur" year="2022" position="Faculty Advisor" />
+                        </div>
+                        <div className="row-leaders centered-leader">
+                          <BoardLeaders photo={IMAGES.Wilson2021} firstName="Wilson" lastName="Thomas" year="2022" position="Advisor" />
+                          <BoardLeaders photo={IMAGES.Alvin2021} firstName="Alvin" lastName="Lew" year="2022" position="Advisor" />
+                        </div>
+                      </div>
+                    </Tab.Pane>
+                    <Tab.Pane eventKey="second">
                       <div className="row">
                         <div className="board d-lg-none"></div>
                         <h2 className="h2-leaders centered-leader all-row-leaders">
@@ -105,7 +185,7 @@ class Board extends React.Component {
                           <BoardLeaders photo={IMAGES.Ryan2021} firstName="Ryan" lastName="Lee" year="2021" position="Web Committee" />
                         </div>
                         <div className="row-leaders centered-leader">
-                          <BoardLeaders photo={IMAGES.Vacant} firstName="Lloyd" lastName="Castro" year="2021" position="Web Committee" />
+                          <BoardLeaders photo={IMAGES.Lloyd2021} firstName="Lloyd" lastName="Castro" year="2021" position="Web Committee" />
                           <BoardLeaders photo={IMAGES.Vacant} firstName="Max" lastName="Guzman" year="2021" position="Project Committee" />
                         </div>
                         <div className="row-leaders centered-leader">
@@ -115,6 +195,11 @@ class Board extends React.Component {
                         <div className="row-leaders centered-leader">
                           <BoardLeaders photo={IMAGES.Roberto2021} firstName="Roberto" lastName="Ruiz-Garcia" year="2021" position="Project Committee" />
                           <BoardLeaders photo={IMAGES.Jose2021} firstName="Jose" lastName="Zamora" year="2021" position="Project Committee" />
+                        </div>
+                        <div className="row-leaders centered-leader">
+                        </div>
+                        <div className="row-leaders centered-leader">
+
                         </div>
                       </div>
                       <div className="row">
@@ -130,7 +215,7 @@ class Board extends React.Component {
                         </div>
                       </div>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="second">
+                    <Tab.Pane eventKey="third">
                       <div className="row">
                         <div className="board d-lg-none"></div>
                         <h2 className="h2-leaders centered-leader all-row-leaders">
@@ -218,7 +303,7 @@ class Board extends React.Component {
                         </div>
                       </div>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="third">
+                    <Tab.Pane eventKey="fourth">
                       <div className="row">
                         <div className="board d-lg-none"></div>
                         <h2 className="h2-leaders centered-leader">
@@ -285,7 +370,7 @@ class Board extends React.Component {
                       </div>
                       <div className="space"></div>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="fourth">
+                    <Tab.Pane eventKey="fifth">
                       <div className="row">
                         <div className="board d-lg-none"></div>
                         <h2 className="h2-leaders centered-leader">

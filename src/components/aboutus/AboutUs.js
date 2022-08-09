@@ -153,7 +153,7 @@ class AboutUs extends React.Component {
 											<div className="join-text">
 												<p>Interested in learning more about what governs our club?</p>
 												<p>Feel free to take a look at our Constitution:</p>
-												<Button href="https://drive.google.com/file/d/1bl3REXemVBPAyFhuoCCKbdyWLjXaoOjl/view?usp=sharing" target="_blank">Constitution</Button>
+												<Button href="https://drive.google.com/file/d/1IyTQtJmeOupbVVq_zp9Fdr-0k4jyDHSa/view?usp=sharing" target="_blank">Constitution</Button>
 											</div>
 										</div>
 									</Col>
