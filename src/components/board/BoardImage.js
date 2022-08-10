@@ -8,7 +8,7 @@ const IMAGES = {
     Patrick2022: require('./2022-2023-leaders/Patrick.jpg'),
     Deep2022: require('./2022-2023-leaders/Deep.jpg'),
     Daniel2022: require('./2022-2023-leaders/Daniel.jpg'),
-    //Fabio2022: require('./2022-2023-leaders/Fabio.jpg'),
+    Fabio2022: require('./2022-2023-leaders/Fabio.jpg'),
     Gerardo2022: require('./2022-2023-leaders/Gerardo.jpg'),
     Jose2022: require('./2022-2023-leaders/Jose.jpg'),
     //Julian2022: require('./2022-2023-leaders/Julian.jpg'),
