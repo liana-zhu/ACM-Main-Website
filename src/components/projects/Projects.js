@@ -88,11 +88,11 @@ class Projects extends React.Component {
 
     render() {
         let buttonBFall2022 = <Button variant="success" size="lg" href="https://forms.gle/6hUegfPTo2fhLBF57">Join Now!</Button>
-        let begLeaderImageF2022 = ["./leaders/Gerardo.jpg", "./leaders/Vacant.png", "./leaders/Vacant.png"]
+        let begLeaderImageF2022 = ["./leaders/Gerardo.jpg", "./leaders/Jay.jpg", "./leaders/Charlie.jpg"]
         let begLeaderNameF2022 = ["Gerardo Ibarra", "Jay Perez", "Charlie Dominguez"]
 
         let buttonAFall2022 = <Button variant="success" size="lg" href="https://forms.gle/8qNqqZzt4heoFhqSA">Join Now!</Button>
-        let advLeaderImageF2022 = ["./leaders/Jose.jpg", "./leaders/Ricardo.jpg", "./leaders/Vacant.png"]
+        let advLeaderImageF2022 = ["./leaders/Jose.jpg", "./leaders/Ricardo.jpg", "./leaders/Isabella.jpg"]
         let advLeaderNameF2022 = ["Jose Zamora", "Ricardo Miranda", "Isabella Arreguin"]
 
         //let buttonBSpring2022 = <Button variant="success" size="lg" href="https://forms.gle/X7rUq4hou691rvJ77">Join Now!</Button>
