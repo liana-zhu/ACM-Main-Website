@@ -141,7 +141,7 @@ class Programs extends React.Component {
                               <Tab.Pane eventKey="menteeRole">
                               </Tab.Pane>
                             </Tab.Content>
-                            <Button variant="success" size="lg" href="https://forms.gle/m4XumDAfwPWtkAYv9">Join Now!</Button><br />
+                            <Button variant="success" size="lg" href="https://docs.google.com/forms/d/e/1FAIpQLSf6apdzV5q2jrsJZCbsfV-SGx2cZimQyU3D60N3AUvHjhW40g/viewform">Join Now!</Button><br />
                           </div>
                         </Tab.Pane>
                       </Tab.Content>
