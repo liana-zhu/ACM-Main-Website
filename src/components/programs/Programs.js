@@ -98,12 +98,12 @@ class Programs extends React.Component {
                             <Container>
                               <div class="row justify-content-start space">
                                 <div class="col-xs-1 col-sm-6 col-md-5 col-lg-4">
-                                  <iframe title="intro video" width="560" height="315" src="https://www.youtube.com/embed/zIB8AygK-TA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/gCGZ_U_9jeY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
-                                <div class="col-xs-1 col-sm-3 col-md-4 col-lg-5">
+                                {/* <div class="col-xs-1 col-sm-3 col-md-4 col-lg-5">
                                   <iframe title="intro video" width="560" height="315" src="https://www.youtube.com/embed/QD__JkLepQk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-                                </div>
+                                </div> */}
                               </div>
                             </Container>
                             <p>
