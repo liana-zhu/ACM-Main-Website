@@ -88,12 +88,12 @@ class Projects extends React.Component {
 
     render() {
         let buttonBFall2022 = <Button variant="success" size="lg" href="https://forms.gle/6hUegfPTo2fhLBF57">Join Now!</Button>
-        let begLeaderImageF2022 = ["./leaders/Gerardo.jpg", "./leaders/Jay.jpg", "./leaders/Charlie.jpg"]
-        let begLeaderNameF2022 = ["Gerardo Ibarra", "Jay Perez", "Charlie Dominguez"]
+        let begLeaderImageF2022 = ["./leaders/BeginnerTeam.jpg", "./leaders/Gerardo.jpg", "./leaders/Jay.jpg", "./leaders/Charlie.jpg"]
+        let begLeaderNameF2022 = ["Beginners Team", "Gerardo Ibarra", "Jay Perez", "Charlie Dominguez"]
 
         let buttonAFall2022 = <Button variant="success" size="lg" href="https://forms.gle/8qNqqZzt4heoFhqSA">Join Now!</Button>
-        let advLeaderImageF2022 = ["./leaders/Jose.jpg", "./leaders/Ricardo.jpg", "./leaders/Isabella.jpg"]
-        let advLeaderNameF2022 = ["Jose Zamora", "Ricardo Miranda", "Isabella Arreguin"]
+        let advLeaderImageF2022 = ["./leaders/AdvanceTeam.jpg", "./leaders/Jose.jpg", "./leaders/Ricardo.jpg", "./leaders/Isabella.jpg"]
+        let advLeaderNameF2022 = ["Advanced Team", "Jose Zamora", "Ricardo Miranda", "Isabella Arreguin"]
 
         //let buttonBSpring2022 = <Button variant="success" size="lg" href="https://forms.gle/X7rUq4hou691rvJ77">Join Now!</Button>
         let begLeaderImageS2022 = ["./leaders/Robert.jpg", "./leaders/Gerardo.jpg", "./leaders/Vacant.png"]
@@ -134,11 +134,7 @@ class Projects extends React.Component {
 
                 <div className="videoWrapper">
                     <div className="embed-responsive embed-responsive-16by9">
-                        <iframe className="embed-responsive-item"
-                            src="https://www.youtube.com/embed/AjZGlE6PiG8"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                        </iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/IfRYhpjwypc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
 

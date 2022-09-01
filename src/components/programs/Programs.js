@@ -54,6 +54,12 @@ class Programs extends React.Component {
           <span className="disclaimer"><b>1. You must be a member of ACM to participate in the projects! If you are not a member, you will not be allowed in.</b></span><br/>
           <span className="disclaimer"><b>2. Mentorship signups will open Monday, August 8, 2022 and will close Wednesday, August 31, 2022.</b></span>
         </div>
+        
+        <div className="videoWrapper">
+          <div className="embed-responsive embed-responsive-16by9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gCGZ_U_9jeY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
         <br></br>
         <div className="card programs-card">
           <Tab.Container id="left-tabs-example" defaultActiveKey="first">
@@ -95,17 +101,6 @@ class Programs extends React.Component {
                       <Tab.Content className="programs-tab-content">
                         <Tab.Pane eventKey="F2022mentorship">
                           <div>
-                            <Container>
-                              <div class="row justify-content-start space">
-                                <div class="col-xs-1 col-sm-6 col-md-5 col-lg-4">
-                                  <iframe title="intro video" width="560" height="315" src="https://www.youtube.com/embed/zIB8AygK-TA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
-                                <div class="col-xs-1 col-sm-3 col-md-4 col-lg-5">
-                                  <iframe title="intro video" width="560" height="315" src="https://www.youtube.com/embed/QD__JkLepQk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                                </div>
-                              </div>
-                            </Container>
                             <p>
                               <h2><span className="highlight-text"><b>Program Description</b></span></h2>
                               <p>
