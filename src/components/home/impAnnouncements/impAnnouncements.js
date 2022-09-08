@@ -30,8 +30,6 @@ class ImpAnnouncements extends Component {
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/GAC_c9xLg5U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <div className="description">
                         <ul>
-                            <li>Due to COVID-19, most events will be hosted virtually</li>
-                            <li>Projects, mentorship sessions, and workshops are online</li>
                             <li>Communications will be done via email, Discord, and social media</li>
                         </ul>
                     </div>
