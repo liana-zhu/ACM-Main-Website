@@ -50,14 +50,14 @@ class AboutUs extends React.Component {
 						</div>
 					</div>
 					<div className="carousel-leaders">
-						<Carousel infiniteLoop>
+						{/* <Carousel infiniteLoop>
 							{acmImages.map((value, index) => {
 								return <div>
 									<img className='carousel-leadergroup-image' src={require('' + value)} alt="leader" />
 									<p className="legend">{acmImageCaptions[index]}</p>
 								</div>
 							})}
-						</Carousel>
+						</Carousel> */}
 					</div>
 				</Jumbotron>
 				<div className="bottom-section">
@@ -98,7 +98,7 @@ class AboutUs extends React.Component {
 											</div>
 										</div>
 									</Col>
-									<Col lg={5}><Image src={require('./images/group.jpg')} fluid /></Col>
+									<Col lg={5}><Image src={require('./images/Fall2022Board.jpg')} fluid /></Col>
 								</Row>
 							</Tab.Pane>
 							<Tab.Pane eventKey="whatdoweoffer">
