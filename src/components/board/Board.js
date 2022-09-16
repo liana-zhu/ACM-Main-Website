@@ -103,18 +103,18 @@ class Board extends React.Component {
                       <div className="all-row-leaders">
                         <div className="row-leaders centered-leader">
                           <BoardLeaders photo={IMAGES.Tracy2022} firstName="Tracy" lastName="Truong" year="2022" position="Design Committee" />
-                          <BoardLeaders photo={IMAGES.Katherine2022} firstName="Katherine" lastName="Bonomo" year="2022" position="Design Committee" />
-                        </div>
-                        <div className="row-leaders centered-leader">
                           <BoardLeaders photo={IMAGES.Lloyd2022} firstName="Lloyd" lastName="Castro" year="2022" position="Web Committee" />
+                        </div>
+                        <div className="row-leaders centered-leader">
                           <BoardLeaders photo={IMAGES.Isabella2022} firstName="Isabella" lastName="Arreguin" year="2022" position="Project Committee" />
-                        </div>
-                        <div className="row-leaders centered-leader">
                           <BoardLeaders photo={IMAGES.Ricardo2022} firstName="Ricardo" lastName="Miranda" year="2022" position="Project Committee" />
-                          <BoardLeaders photo={IMAGES.Jay2022} firstName="Jay" lastName="Perez" year="2022" position="Project Committee" />
                         </div>
                         <div className="row-leaders centered-leader">
+                          <BoardLeaders photo={IMAGES.Jay2022} firstName="Jay" lastName="Perez" year="2022" position="Project Committee" />
                           <BoardLeaders photo={IMAGES.Charlie2022} firstName="Charlie" lastName="Dominguez" year="2022" position="Project Committee" />
+                        </div>
+                        <div className="row-leaders centered-leader">
+                          <BoardLeaders photo={IMAGES.Katherine2022} firstName="Katherine" lastName="Bonomo" year="2022" position="Internal/External Committee" />
                         </div>
                       </div>
                       <div className="row">
