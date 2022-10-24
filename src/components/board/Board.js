@@ -46,9 +46,9 @@ class Board extends React.Component {
                         <div className="row-leaders all-row-leaders">
                           <h2 className="leader-header">LEADER OF THE MONTH</h2>
                           <div className="col-leaders justify-content-center image-contain">
-                            <img className="board-leader-winner board-leader-profile" src={IMAGES.Vacant} alt={"Leader of the Month"}></img>
+                            <img className="board-leader-winner board-leader-profile" src={IMAGES.Summer2022} alt={"Leader of the Month"}></img>
                           </div>
-                          <h2 className="leader-info">Vacant</h2>
+                          <h2 className="leader-info">Summer Tran</h2>
                           <h2 className="leader-info"></h2>
                         </div>
                       </Tab.Container>
