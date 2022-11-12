@@ -9,6 +9,7 @@ import Config from './config';
 import Navi from './components/navbar/Navi.js';
 import AboutUs from './components/aboutus/AboutUs'
 import Calendar from './components/calendar/Calendar'
+import Sponsor from './components/sponsor/Sponsor'
 import Membership from './components/membership/Membership'
 import ContactUs from './components/contactus/ContactUs'
 import Events from './components/events/Events';
@@ -65,6 +66,7 @@ class App extends React.Component {
           <Navi/>
           <Route exact path='/' component={Home}/>
           {/*<Route exact path='/' render={() => <Body state={this.state}/>}/>*/}
+          <Route path='/sponsor' component={Sponsor}/>
           <Route path='/aboutus' component={AboutUs}/>
           <Route path='/calendar' component={Calendar}/>
           <Route path='/membership' component={Membership}/>
