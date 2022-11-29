@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import emailjs from "@emailjs/browser";
 import "./contactus.css";
 import { Card } from "react-bootstrap";
 
@@ -34,6 +35,31 @@ function ContextAwareToggle({ children, eventKey, callback }) {
     </Accordion.Toggle>
   );
 }
+
+//function to send email taken from emailjs
+//note: emailjs only provides 200 free email sends per month
+//Send email functionality doesn't count number of emails sent per month, but
+//highly unlikely that an attacker would spam our email to reach the 200 threshold
+const sendEmail = (e) => {
+  e.preventDefault();
+  emailjs
+    .sendForm(
+      "service_bn6s6cv",
+      "template_wmv971n",
+      e.target,
+      "dy_stPW0PkeIdNTfv"
+    )
+    .then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      },
+      e.target.reset()
+    );
+};
+
 class ContactUs extends React.Component {
   render() {
     return (
@@ -44,25 +70,62 @@ class ContactUs extends React.Component {
             <Accordion alwaysOpen>
               <Card className="faq-question">
                 <ContextAwareToggle eventKey="0">
-                  Why should I join ACM?
+                  Who can join ACM?
                   <span className="down-symbol font-weight-bolder">
                     &#8964;
                   </span>
                 </ContextAwareToggle>
                 <Accordion.Collapse eventKey="0">
-                  <Card.Body className="faq-ans">test</Card.Body>
+                  <Card.Body className="faq-ans">
+                    Any Cal State LA student, regardless of major or year
+                    standing, can join ACM.
+                  </Card.Body>
                 </Accordion.Collapse>
               </Card>
               <Card className="faq-question">
                 <ContextAwareToggle eventKey="1">
-                  How much is the student membership fee?
+                  Why should I join ACM?
                   <span className="down-symbol font-weight-bolder">
                     &#8964;
                   </span>
                 </ContextAwareToggle>
                 <Accordion.Collapse eventKey="1">
                   <Card.Body className="faq-ans">
-                    Student membership fee is $5 for a whole year
+                    ACM provides opportunities to connect with other students
+                    interested in Computer Science as well as professionals in
+                    the field via social events. ACM also provides ways for
+                    members to learn and develop programming skills and other
+                    technical skills through project workshops, which are open
+                    to any level of programmer, and a mentorship program.
+                  </Card.Body>
+                </Accordion.Collapse>
+              </Card>
+              <Card className="faq-question">
+                <ContextAwareToggle eventKey="2">
+                  How much is the student membership fee?
+                  <span className="down-symbol font-weight-bolder">
+                    &#8964;
+                  </span>
+                </ContextAwareToggle>
+                <Accordion.Collapse eventKey="2">
+                  <Card.Body className="faq-ans">
+                    Student membership fee is $5 for a whole school year
+                  </Card.Body>
+                </Accordion.Collapse>
+              </Card>
+              <Card className="faq-question">
+                <ContextAwareToggle eventKey="3">
+                  Can I participate in multiple workshops at once?
+                  <span className="down-symbol font-weight-bolder">
+                    &#8964;
+                  </span>
+                </ContextAwareToggle>
+                <Accordion.Collapse eventKey="3">
+                  <Card.Body className="faq-ans">
+                    Yes, all of ACM's workshops are hosted in 3 modes: in
+                    person, online via zoom, and asychronously online; hence,
+                    you can decide to take some workshops asychronously if they
+                    have conflicting schedules.
                   </Card.Body>
                 </Accordion.Collapse>
               </Card>
@@ -73,12 +136,7 @@ class ContactUs extends React.Component {
         <div className="contact-us-card">
           <div className="contact-us-block ">
             <h1 className=" text-center border-bottom pt-2 mt-2">Contact Us</h1>
-            <form
-              action="mailto:acm.calstatela@gmail.com?Subject=Contacting%20You%20From%20Website"
-              method="POST"
-              enctype="text/plain"
-              className="mt-4"
-            >
+            <form className="mt-4" onSubmit={sendEmail}>
               <div className="txtb">
                 <label for="name" className="text-white h5">
                   Full Name :
@@ -86,7 +144,7 @@ class ContactUs extends React.Component {
                 <input
                   type="text"
                   id="name"
-                  name="name"
+                  name="from_name"
                   className="card-bg text-left"
                   placeholder="Enter your name"
                 />
@@ -110,7 +168,7 @@ class ContactUs extends React.Component {
                 <input
                   type="text"
                   id="phoneNo"
-                  name="phoneNo"
+                  name="phone_number"
                   className="card-bg"
                   placeholder="Enter your phone number"
                 />
