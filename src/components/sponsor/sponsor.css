@@ -1,0 +1,118 @@
+.sponsors-card{
+    height: 80vh;
+    background: 
+    linear-gradient(
+      0deg, rgba(0, 0, 0, 0.55), 
+      rgba(0, 0, 0, 0.55)),
+    url("./images/leaders.jpg");
+    background-size: cover !important;
+    align-self: center;
+    filter: blur(1px);
+    font-size: 4.4rem;
+    color: white;
+    opacity: .6;
+    font-weight: bold;
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+  
+  .sponsors-text {
+      height: 30vh;
+      width: 100%;
+      position: absolute;
+      z-index: 2;
+      font-size: 3.5rem;
+      color: white;
+      font-weight: bold;
+      line-height: 1.2;
+      text-align: left;
+      padding-top: 32vh;
+      /* display: grid; */
+      grid-template-rows: 1fr 1.4fr;
+      padding-left: 3rem;
+  }
+  
+  .jumbotron {
+      color: white;
+      padding-left: 3rem;
+      margin-bottom: 0 !important;
+      background-color: #1F1F1F !important;
+  }
+  
+  .content-box {
+      margin-top: 20px;
+      margin-bottom: 60px;
+      padding-right: 100px;
+      padding-left: 40px;
+  }
+
+  .sponsors-body{
+      background-color: #161616;
+      text-align: left;
+  }
+  
+  .sponsors-background{
+      text-align: center;
+      font-size: 3rem;
+      color: #ffffff;
+      width: 90%;
+      margin: auto;
+      background-color: black;
+      border-radius: .2rem;
+  }
+  
+  .sponsors-header{
+      /* text-align: center;
+      color: white;
+      margin: auto;
+      /* margin-top: -5%;
+      margin-bottom: 5%; */
+       padding-bottom: 3rem;
+      /*margin-top: -1%;  */
+      font-size: 50px;
+      text-align: center;
+      color: rgb(255, 255, 255);
+      /* padding-top: 10px; */
+  }
+  
+  .sponsors-header-text{
+      font-size: 45px;
+      padding: 8px;
+      background-color: black;
+  }
+  
+  .gold-sponsor-color{
+      color: #D9DB7C;
+      text-align: left;
+      font-size: 35px;
+  }
+  
+  .silver-sponsor-color{
+      color: #AFBFC8;
+      text-align: left;
+      font-size: 35px;
+  }
+  
+  .bronze-sponsor-color{
+      color: #AD7A2C;
+      text-align: left;
+      font-size: 35px;
+  }
+  
+  .benefit{
+      text-align: left;
+      font-size: 25px;
+  }
+  
+  .text-info{
+      color: white !important;
+      text-align: center;
+  }
+  
+  .message-text{
+      font-size: 30px;
+      color: #01a4ff;
+      text-align: center;
+      /* padding-bottom: -vh; */
+      padding-top: 12px;
+  }

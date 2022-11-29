@@ -6,6 +6,7 @@
     rgba(0, 0, 0, 0.55)),
   url("./images/Fall2022FirstGeneralMeeting.jpg");
   background-size: cover !important;
+  background-attachment: fixed;
   align-self: center;
   filter: blur(1px);
   font-size: 4.4rem;
@@ -39,7 +40,6 @@
 }
 .mission-statement-card {
   height: 86vh;
-  background: #2B2727 no-repeat fixed;
 }
 
 .our-mission-header {
@@ -48,25 +48,24 @@
   color: #01a4ff;
   width: 75%;
   margin: auto;
-  background-color: black;
-  border-radius: .5rem;
 }
 
 .mission-statement-text {
   text-align: center;
-  color: white;
+  color: white;   
 }
 
 .mission-statement-points {
+  border-style: none;
   text-align: center;
   font-size: 1.25rem;
-  color: white;
+  /* color: white; */
   width: 75%;
   margin: auto;
 }
 
 .mission-statement-item{
-  background-color: #424242;
+  background-color: #1F1F1F;
 }
 
 .carousel-leaders{
@@ -81,26 +80,11 @@
 
 
 .info-content-container{
-  background-color: #424242;
-  border-radius: 6px;
-  padding: 2px;
-  margin-bottom: 15px;
-  height: 134mm;
+  align-items: center;
+  justify-content: center;
 }
 
-.info-header-container{
-  background-color: black;
-  border-radius: 6px;
-  margin-top: 1px;
-  height: 13mm;
-}
 
-.info-header{
-  color: #01a4ff;
-  margin-left: 15px;
-  font-size: 27px;
-  padding-top: 4px;
-}
 
 .button-row {
   width: 83.5%;
@@ -110,31 +94,46 @@
 }
 
 .about-text {
-  text-align: left;
+  text-align: center;
   /* font-size: 1.25rem; */
   /* margin-left: 60px; */
+  list-style: none;
   font-size: 1.0rem;
-  padding-top: 5px;
-  padding-left: 10px;
+  margin: 10vw;
   color: white;
 }
 
+.about-item {
+  margin: 2em;
+}
 
 .info-row {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  background-color: #282828;
+  margin: 0;
+  padding: 0;
 }
 
 .info-row .about-text li {
   margin-bottom: .75rem;
 }
 
+info-col {
+  padding: 0;
+  margin: auto;
+  justify-content: center;
+}
+
+
 .offer-text {
-  text-align: left;
+  list-style: none;
+  text-align: center;
   font-size: 1.0rem;
-  padding-top: 5px;
-  padding-left: 10px;
+  margin: 10vw;
   color: white;
+}
+
+.offer-item {
+  margin: 2em;
 }
 
 .info-row .offer-text li {
@@ -142,11 +141,28 @@
 }
 
 .join-text {
-  text-align: left;
+  list-style: none;
+  text-align: center;
+  vertical-align: center;
   font-size: 1.0rem;
-  padding-top: 5px;
-  padding-left: 10px;
+  margin: 11vw;
   color: white;
+}
+
+.join-item {
+  margin: 2em;
+}
+
+.constitution-text {
+  list-style: none;
+  text-align: center;
+  font-size: 1.0rem;
+  margin: 13vw;
+  color: white;
+}
+
+.constitution-item {
+  margin: 2em;
 }
 
 .info-row .join-text li {
@@ -156,8 +172,28 @@
   margin-bottom: .75rem;
 }
 
-.bottom-section {
-  margin-left: 20px;
+.about-us-image {
+  padding: 1em;
+  margin: auto;
+}
+
+.accordian-header-container {
+  width: fit-content;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.accordian-header {
+  color: white;
+  font-size: 2rem;
+  width: 10em;
+  text-align: center;
+}
+
+.accordian-header:hover{
+  color:  #01a4ff;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {
