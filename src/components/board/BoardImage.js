@@ -35,7 +35,9 @@ const IMAGES = {
     Steven2022: require('./2022-2023-leaders/Steven.jpg'),
     Keyvan2022: require('./2022-2023-leaders/Keyvan.jpg'),
     Zain2022: require('./2022-2023-leaders/Zain.jpg'),
-
+    Muhammad2022: require('./2022-2023-leaders/Muhammad.jpg'),
+    James2022: require('./2022-2023-leaders/James.jpg'),
+    Diane2022: require('./2022-2023-leaders/Diane.jpg'),
 
     // 2021-22 leaders
     Daniel2021: require('./2020-2021-leaders/Daniel.jpg'),
