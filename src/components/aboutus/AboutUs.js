@@ -1,6 +1,8 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import { Row, Col, Image, Button, Accordion, Card } from "react-bootstrap";
+import { CaretDownFill } from 'react-bootstrap-icons';
+
 import Jumbotron from "react-bootstrap/Jumbotron";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
@@ -107,7 +109,7 @@ class AboutUs extends React.Component {
 							<Card>
 								<Accordion.Toggle className="accordian-container" as={Card.Header} eventKey="0">
 									<div className="accordian-header-container">
-										<h1 className="accordian-header">Who are we? ⏷</h1>
+										<h1 className="accordian-header">Who are we? <CaretDownFill className="down-caret"/></h1>
 									</div>
 								</Accordion.Toggle>
 
@@ -140,7 +142,7 @@ class AboutUs extends React.Component {
 
 							<Card>
 								<Accordion.Toggle className="accordian-container" as={Card.Header} eventKey="1">
-								<div className="accordian-header-container"><h1 className="accordian-header">What do we offer? ⏷</h1></div>
+								<div className="accordian-header-container"><h1 className="accordian-header">What do we offer? <CaretDownFill className="down-caret"/></h1></div>
 								</Accordion.Toggle>
 
 								<Accordion.Collapse eventKey="1">
@@ -170,7 +172,7 @@ class AboutUs extends React.Component {
 
 							<Card>
 								<Accordion.Toggle className="accordian-container" as={Card.Header} eventKey="2">
-								<div className="accordian-header-container"><h1 className="accordian-header">How to join ACM ⏷</h1></div>
+								<div className="accordian-header-container"><h1 className="accordian-header">How to join ACM <CaretDownFill className="down-caret"/></h1></div>
 								</Accordion.Toggle>
 
 								<Accordion.Collapse eventKey="2">
@@ -200,7 +202,9 @@ class AboutUs extends React.Component {
 
 							<Card>
 								<Accordion.Toggle className="accordian-container" as={Card.Header} eventKey="3">
-									<div className="accordian-header-container"><h1 className="accordian-header">Our Constitution ⏷</h1></div>
+									<div className="accordian-header-container">
+										<h1 className="accordian-header">Our Constitution <CaretDownFill className="down-caret"/> </h1>
+									</div>
 								</Accordion.Toggle>
 
 								<Accordion.Collapse eventKey="3">
