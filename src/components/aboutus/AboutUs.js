@@ -107,7 +107,7 @@ class AboutUs extends React.Component {
 							<Card>
 								<Accordion.Toggle className="accordian-container" as={Card.Header} eventKey="0">
 									<div className="accordian-header-container">
-										<h1 className="accordian-header">Who are we? ⏷</h1>
+										<h1 className="accordian-header">.Who are we? ⏷</h1>
 									</div>
 								</Accordion.Toggle>
 
