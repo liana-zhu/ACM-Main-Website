@@ -1,3 +1,27 @@
+
+#gold-rectangle{
+    background-color: #c8a634;
+    width: 8em;
+    height: 20em;
+}
+
+#silver-rectangle{
+    background-color: #b6b6b6;
+    width: 8em;
+    height: 10em;
+    margin: 10em 0 0 0;
+    padding: 0 -10em 0 0;
+}
+
+#bronze-rectangle{
+    background-color: #987331;
+    width: 8em;
+    height: 4em;
+    margin: 16em 0 0 0;
+}
+
+
+
 .sponsors-card{
     height: 80vh;
     background: 
@@ -6,6 +30,7 @@
       rgba(0, 0, 0, 0.55)),
     url("./images/leaders.jpg");
     background-size: cover !important;
+    background-attachment: fixed;
     align-self: center;
     filter: blur(1px);
     font-size: 4.4rem;
