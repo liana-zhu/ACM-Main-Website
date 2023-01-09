@@ -336,14 +336,14 @@ class Board extends React.Component {
                       <div className="all-row-leaders">
                         <div className="row-leaders centered-leader">
                           <BoardLeaders
-                            photo={IMAGES.Weronika2021}
+                            photo={IMAGES.ACMLogo}
                             firstName="Weronika"
                             lastName="Cwir"
                             year="2022"
                             position="Chapter Advisor"
                           />
                           <BoardLeaders
-                            photo={IMAGES.Vacant}
+                            photo={IMAGES.ACMLogo}
                             firstName="Richard"
                             lastName="Cross"
                             year="2022"
