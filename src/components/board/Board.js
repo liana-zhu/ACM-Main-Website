@@ -79,6 +79,7 @@ class Board extends React.Component {
                             ></img>
                           </div>
                           <h2 className="leader-info">Nshan Kazaryan</h2>
+                          <h2 className="leader-info">(November 2022)</h2>
                         </div>
                       </Tab.Container>
                       <div className="row">
