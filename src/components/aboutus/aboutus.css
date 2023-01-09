@@ -78,13 +78,22 @@
   max-width: 50rem;
 }
 
+.bottom-section {
+  background-color: #282a2e;
+}
+
+#about-us-info {
+  padding: 64px 0;
+}
+
+.accordian-container {
+  background-color: #282a2e;
+}
 
 .info-content-container{
   align-items: center;
   justify-content: center;
 }
-
-
 
 .button-row {
   width: 83.5%;
@@ -108,7 +117,7 @@
 }
 
 .info-row {
-  background-color: #282828;
+  background-color: #1f1f1f;
   margin: 0;
   padding: 0;
 }
@@ -117,12 +126,11 @@
   margin-bottom: .75rem;
 }
 
-info-col {
+.info-col {
   padding: 0;
   margin: auto;
   justify-content: center;
 }
-
 
 .offer-text {
   list-style: none;
@@ -205,6 +213,7 @@ info-col {
     height: auto;
     width: auto;
   }
+
   .mission-statement-points {
     text-align: center;
     font-size: 1.25rem;
@@ -212,6 +221,7 @@ info-col {
     width: 90%;
     margin: auto;
   }
+
   .our-mission-header {
     text-align: center;
     font-size: 3rem;
