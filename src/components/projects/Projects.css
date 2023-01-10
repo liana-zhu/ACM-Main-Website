@@ -1,239 +1,237 @@
 .project-title-card {
-    /* When the height is less than 70vh, the beginner and advanced tabs are not be clickable */
-    height: 80vh;
-    background: 
-    linear-gradient(
-    rgba(0, 0, 0, 0.55), 
-    rgba(0, 0, 0, 0.55)),
+  /* When the height is less than 70vh, the beginner and advanced tabs are not be clickable */
+  height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
     url("./fall2022/BeginnerProjectSession.jpg");
-    background-size: cover !important;
-    align-self: center;
-	filter: blur(1px);
-    font-size: 4.4rem;
-    color: white;
-    opacity: .6;
-    font-weight: bold;
-    grid-row: 1/2;
-    grid-column: 2/3;
+  background-size: cover !important;
+  align-self: center;
+  filter: blur(1px);
+  font-size: 4.4rem;
+  color: white;
+
+  font-weight: bold;
+  grid-row: 1/2;
+  grid-column: 2/3;
 }
 
 .project-title-text {
-    height: 30vh;
-    width: 100%;
-    position: absolute;
-    z-index: 2;
-    font-size: 3.5rem;
-    color: white;
-    font-weight: bold;
-    line-height: 0.9;
-    text-align: left;
-    padding-top: 30vh;
-    /* display: grid; */
-    grid-template-rows: 1fr 1.4fr;
-    padding-left: 3rem;
+  height: 30vh;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  font-size: 3.5rem;
+  color: white;
+  font-weight: bold;
+  line-height: 0.9;
+  text-align: left;
+  padding-top: 30vh;
+  /* display: grid; */
+  grid-template-rows: 1fr 1.4fr;
+  padding-left: 3rem;
 }
 
 .emphasis {
-    color: #029CD7;
+  color: #029cd7;
 }
 
 .project-card {
-    margin: auto;
-    text-align: left;
-    color: white;
-    padding-left: 20px;
-    padding-top: 30px;
+  margin: auto;
+  text-align: left;
+  color: white;
+  padding-left: 20px;
+  padding-top: 30px;
 }
 
 .project-nav-link {
-    color: white;
+  color: white;
 }
 
 .project-nav-link-tab {
-    outline: 1px solid white;
+  outline: 1px solid white;
 }
 
 .project-tab-content {
-    width: 70vw
+  width: 70vw;
 }
 
 .project-images {
-    min-width: 2in;
-    max-width: 20vw;
-    margin: 5px;
+  min-width: 2in;
+  max-width: 20vw;
+  margin: 5px;
 }
 
 .project-poster {
-    min-width: 300px;
-    max-width: 30vw;
+  min-width: 300px;
+  max-width: 30vw;
 }
 
 .project-carousel {
-    max-width: 200px;
+  max-width: 200px;
 }
 
 .project-body {
-    color: white
+  color: white;
 }
 
 .disclaimer-body {
-    margin-top: 10px;
-    padding-left: 20px;
-    text-align: left;
-    padding-bottom: 20px;
+  margin-top: 10px;
+  padding-left: 20px;
+  text-align: left;
+  padding-bottom: 20px;
+  margin-bottom: 3em;
 }
 
-.disclaimer_header{
-    font-size: 30px;
-    text-align: center;
-    text-decoration-color: #fff;
-    color: red;
-    padding-top: 10px;
+.disclaimer_header {
+  font-size: 30px;
+  text-align: center;
+  text-decoration-color: #fff;
+  color: red;
+  padding-top: 10px;
 }
 
-.disclamier_info{
-    /* padding-left: 20px;
+.disclamier_info {
+  /* padding-left: 20px;
     padding-right: 20px; */
-    padding: 20px;
+  padding: 20px;
 }
 
 .space {
-    margin-top: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 .videoWrapper {
-    position:relative;
-    padding-bottom: 20px;
-    padding-left: 30%;
-    padding-right: 30%;
-    /*max-width: 90%;*/
-
+  position: relative;
+  padding-bottom: 20px;
+  padding-left: 30%;
+  padding-right: 30%;
+  /*max-width: 90%;*/
 }
 
 /* Source: https://www.itsupportguides.com/knowledge-base/website-tips/how-to-make-embed-youtube-iframe-mobile-responsive/ */
-iframe[src*=youtube] {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
+iframe[src*="youtube"] {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
 }
 
-.lower-margin{
-    margin-bottom: 2.7rem;
+.lower-margin {
+  margin-bottom: 2.7rem;
 }
-.upper-margin{
-    margin-top: 1.6rem;
+.upper-margin {
+  margin-top: 1.6rem;
 }
-@media only screen and(max-width){
-    .project_info{
-        padding: 20px;
-    }
+@media only screen and(max-width) {
+  .project_info {
+    padding: 20px;
+  }
 }
 
-.disclaimer-spacing{
-    display: block;
+.disclaimer-spacing {
+  display: block;
 }
 
 .disclaimer {
-    font-size: 20px;
-    font-family: Open Sans;
+  font-size: 1.75rem;
+  font-family: Open Sans;
+
+  text-align: left;
 }
 
 .anchor-blue {
-    color: #029CD7 !important;
+  color: #029cd7 !important;
 }
 
 .carousel-image {
-    max-height: 75rem;
-    max-width: 50rem;
+  max-height: 75rem;
+  max-width: 50rem;
 }
 
-.carousel-leader-image {    
-    max-height: 50rem;
-    max-width: 25rem;
+.carousel-leader-image {
+  max-height: 50rem;
+  max-width: 25rem;
 }
 
 .project-description {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
-.contain{
-    display: relative;
-    align-items: center;
-    justify-content: center;
+.contain {
+  display: relative;
+  align-items: center;
+  justify-content: center;
 }
 
-.winner-circles{
-    position: static;
-    display: inline-block;
-    padding: 10px;
+.winner-circles {
+  position: static;
+  display: inline-block;
+  padding: 10px;
 }
 
-.project-winners{
-    font-size: 2.5rem;
-    background-color: #1c1c1e !important;
-    color: white;
-    padding-top: 7px;
-    padding-bottom: 10px;
-    margin-top: 1rem;
+.project-winners {
+  font-size: 2.5rem;
+  background-color: #1c1c1e !important;
+  color: white;
+  padding-top: 7px;
+  padding-bottom: 10px;
+  margin-top: 1rem;
 }
 
-.project-winners-place{
-    font-size: 1.2rem;
-    color: white;
-    margin-top: 20px;
-    padding-top: 7px;
-    border-bottom: 5px solid #1e81b0;
+.project-winners-place {
+  font-size: 1.2rem;
+  color: white;
+  margin-top: 20px;
+  padding-top: 7px;
+  border-bottom: 5px solid #1e81b0;
 }
 
-.project-winners-name{
-    font-size: 20px;
-    text-align: center;
-    color: white;
-    width: 50%;
-    margin-top: 1rem;
+.project-winners-name {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  width: 50%;
+  margin-top: 1rem;
 }
 
-.winner1{
-    width: 200px;
-    height: 150px;
-    background-color: #e28743;
+.winner1 {
+  width: 200px;
+  height: 150px;
+  background-color: #e28743;
 }
-.winner2{
-    width: 200px;
-    height: 150px;
-    background-color: silver;
+.winner2 {
+  width: 200px;
+  height: 150px;
+  background-color: silver;
 }
 
-.project-winners-message{
-    font-size: 2.2rem;
-    color: white;
+.project-winners-message {
+  font-size: 2.2rem;
+  color: white;
 }
 
 @media only screen and (max-width: 600px) {
-    .disclaimer-body {
-        padding-right: 5px;
-    }
-    .flex-column {
-        padding-bottom: 35px;
-    }
-    .project-title-text {
-        padding-top: 20vh;
-    }
-    .project-poster {
-        min-width: 90vw;
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-    .project-tab-label {
-        font-size: 0.85rem;
-    }
-    .videoWrapper {
-        position:relative;
-        padding-left: 10%;
-        padding-right: 10%;
-    
-    }
-    iframe[src*=youtube] {
-        min-width: 90vw;
-    }
+  .disclaimer-body {
+    padding-right: 5px;
   }
+  .flex-column {
+    padding-bottom: 35px;
+  }
+  .project-title-text {
+    padding-top: 20vh;
+  }
+  .project-poster {
+    min-width: 90vw;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .project-tab-label {
+    font-size: 0.85rem;
+  }
+  .videoWrapper {
+    position: relative;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  iframe[src*="youtube"] {
+    min-width: 90vw;
+  }
+}
