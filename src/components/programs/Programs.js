@@ -40,8 +40,8 @@ class Programs extends React.Component {
     return (
       <div className="programs-body">
         <div className="mentor-title-text">
-          <p>Interested in learning?</p>
-          <p>Participate in our mentorship!</p>
+          <p>Interested in improving Professionally?</p>
+          <p>Participate in our PRO-DEV Workshops!</p>
         </div>
         <div className="mentorship-title-card"></div>
 
@@ -57,15 +57,15 @@ class Programs extends React.Component {
           </h3>
           <span className="disclaimer">
             <b>
-              1. You must be a member of ACM to participate in the projects! If
+              1. You must be a member of ACM to participate in the workshops! If
               you are not a member, you will not be allowed in.
             </b>
           </span>
           <br />
           <span className="disclaimer">
             <b>
-              2. Mentorship signups will open Monday, August 8, 2022 and will
-              close Wednesday, August 31, 2022.
+              2. Workshops signups will open (this date) and will
+              close (that date).
             </b>
           </span>
         </div>
@@ -94,7 +94,7 @@ class Programs extends React.Component {
                       className="programs-nav-link anchor-white"
                       eventKey="first"
                     >
-                      Fall 2022
+                      Spring 2023
                     </Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
@@ -102,7 +102,7 @@ class Programs extends React.Component {
                       className="programs-nav-link anchor-white"
                       eventKey="second"
                     >
-                      Fall 2021
+                      Fall 2022
                     </Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
@@ -110,7 +110,7 @@ class Programs extends React.Component {
                       className="programs-nav-link anchor-white"
                       eventKey="third"
                     >
-                      Spring 2021
+                      Fall 2021
                     </Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
@@ -118,7 +118,7 @@ class Programs extends React.Component {
                       className="programs-nav-link anchor-white"
                       eventKey="fourth"
                     >
-                      Fall 2020
+                      Spring 2021
                     </Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
@@ -126,13 +126,21 @@ class Programs extends React.Component {
                       className="programs-nav-link anchor-white"
                       eventKey="fifth"
                     >
+                      Fall 2020
+                    </Nav.Link>
+                  </Nav.Item>
+                  <Nav.Item>
+                    <Nav.Link
+                      className="programs-nav-link anchor-white"
+                      eventKey="sixth"
+                    >
                       Spring 2020
                     </Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
                     <Nav.Link
                       className="programs-nav-link anchor-white"
-                      eventKey="fifth"
+                      eventKey="seventh"
                     >
                       Fall 2019
                     </Nav.Link>
@@ -142,6 +150,101 @@ class Programs extends React.Component {
               <Col sm={10}>
                 <Tab.Content className="programs-tab-content">
                   <Tab.Pane eventKey="first">
+                    <Tab.Container defaultActiveKey="S2023mentorship">
+                      {/* Most recent mentorship program goes under this block of comment
+                                    Steps:
+                                    1. Copy a <Tab.Pane> from under this block of comment.
+                                    2. Paste it beneath this block of comment.
+                                    3. Modify it with the most recent mentorship program flyer and other information 
+                                    (You can find it from the Mentorship.js file)
+
+                                    */}
+                      <Tab.Content className="programs-tab-content">
+                        <Tab.Pane eventKey="S2023mentorship">
+                          <div>
+                            <p>
+                              <h2>
+                                <span className="highlight-text">
+                                  <b>Abou this program:</b>
+                                </span>
+                              </h2>
+                              <p>
+                                If you feel like lacking professional skills, then this program is perfect
+                                for you! The Professional Development (PRO-DEV) program provides a series
+                                of workshops that teaches valuable skills and knowledge that are crucial as a professional.
+                                Such topics include building a resume, applying for internships, self-management, and many more!
+                                By applying, you will have the opportunity to learn from your ACM leaders, and
+                                to benefit yourself professionally by the time you graduate.
+                                <br/>
+                                These workshops is open for all ACM members in all different levels (Freshmen, Sophomore, Junior, Seniors)
+                              </p>
+                              <p className="program-description">
+                                These are the following workshops:
+                              </p>
+                              <p>
+                                ❖
+                                <span className="highlight-text point">
+                                  <b>How to Succeed as an Undergrad</b>
+                                </span>
+                                <br />❖
+                                <span className="highlight-text point">
+                                  <b>
+                                    Internship/Job Hunting
+                                  </b>
+                                </span>
+                                <br />❖
+                                <span className="highlight-text point">
+                                  <b>Building your Resume/LinkedIn</b>
+                                </span>
+                                <br />❖
+                                <span className="highlight-text point">
+                                  <b>
+                                    Mock Interviews
+                                  </b>
+                                </span>
+                                <br />❖
+                                <span className="highlight-text point">
+                                  <b>
+                                    Financial Management
+                                  </b>
+                                </span>
+                              </p>
+                              <p className="program-description">
+                                The deadline to apply is TDB. Join our Workshops today before
+                                it's too late!
+                              </p>
+                            </p>
+                            {/* use for now to display image */}
+                            <img
+                              src={require("./pictures/comingsoon.png")}
+                              className="programs-poster"
+                              alt="mentorship flyer"
+                            ></img>
+                            {/* {
+                              this.state.mentorshipF22 &&
+                              this.state.mentorshipF22.map(mentorshipF22 => {
+                                return (
+                                  <img src={mentorshipF22.imgUrl} className="img-fluid programs-poster" alt="mentorship flyer"></img>
+                                )
+                              })
+                            } */}
+                            <Tab.Content className="programs-tab-content poster">
+                              <Tab.Pane eventKey="menteeRole"></Tab.Pane>
+                            </Tab.Content>
+                            <Button
+                              variant="success"
+                              size="lg"
+                              href="https://docs.google.com/forms/d/e/1FAIpQLSf6apdzV5q2jrsJZCbsfV-SGx2cZimQyU3D60N3AUvHjhW40g/viewform"
+                            >
+                              Join Now!
+                            </Button>
+                            <br />
+                          </div>
+                        </Tab.Pane>
+                      </Tab.Content>
+                    </Tab.Container>
+                  </Tab.Pane>
+                  <Tab.Pane eventKey="second">
                     <Tab.Container defaultActiveKey="F2022mentorship">
                       {/* Most recent mentorship program goes under this block of comment
                                     Steps:
@@ -249,7 +352,7 @@ class Programs extends React.Component {
                       </Tab.Content>
                     </Tab.Container>
                   </Tab.Pane>
-                  <Tab.Pane eventKey="second">
+                  <Tab.Pane eventKey="third">
                     <Tab.Container defaultActiveKey="F2021mentorship">
                       <Tab.Content className="programs-tab-content">
                         <Tab.Pane eventKey="F2021mentorship">
@@ -364,7 +467,7 @@ class Programs extends React.Component {
                       </Tab.Content>
                     </Tab.Container>
                   </Tab.Pane>
-                  <Tab.Pane eventKey="third">
+                  <Tab.Pane eventKey="fourth">
                     <Tab.Container defaultActiveKey="S2021mentorship">
                       <Tab.Content className="programs-tab-content">
                         <Tab.Pane eventKey="S2021mentorship">
@@ -373,7 +476,7 @@ class Programs extends React.Component {
                       </Tab.Content>
                     </Tab.Container>
                   </Tab.Pane>
-                  <Tab.Pane eventKey="fourth">
+                  <Tab.Pane eventKey="fifth">
                     <Tab.Container defaultActiveKey="F2020mentorship">
                       <Tab.Content className="programs-tab-content">
                         <Tab.Pane eventKey="F2020mentorship">
@@ -409,7 +512,7 @@ class Programs extends React.Component {
                       </Tab.Content>
                     </Tab.Container>
                   </Tab.Pane>
-                  <Tab.Pane eventKey="fifth">
+                  <Tab.Pane eventKey="sixth">
                     <Tab.Container defaultActiveKey="S2020mentorship">
                       <Tab.Content className="programs-tab-content">
                         <Tab.Pane eventKey="S2020mentorship">
@@ -443,7 +546,7 @@ class Programs extends React.Component {
                       </Tab.Content>
                     </Tab.Container>
                   </Tab.Pane>
-                  <Tab.Pane eventKey="sixth">
+                  <Tab.Pane eventKey="seventh">
                     <Tab.Container defaultActiveKey="F2019mentorship">
                       <Nav className="programs-tab-label" variant="pills">
                         <Nav.Item>
