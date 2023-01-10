@@ -101,6 +101,10 @@
   font-weight: normal;
 }
 
+.faq-question {
+  margin: 1em;
+  /* padding: 3em; */
+}
 /* .contact-us-block {
   margin-top: 10px;
   margin-bottom: 10px;

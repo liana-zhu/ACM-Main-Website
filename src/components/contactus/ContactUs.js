@@ -72,7 +72,9 @@ class ContactUs extends React.Component {
               <Card className="faq-question">
                 <ContextAwareToggle eventKey="0">
                   Who can join ACM?
-                  <CaretDownFill className="down-caret" />
+                  <span>
+                    <CaretDownFill className="down-caret" />
+                  </span>
                 </ContextAwareToggle>
                 <Accordion.Collapse eventKey="0">
                   <Card.Body className="faq-ans">
@@ -84,7 +86,9 @@ class ContactUs extends React.Component {
               <Card className="faq-question">
                 <ContextAwareToggle eventKey="1">
                   Why should I join ACM?
-                  <CaretDownFill className="down-caret" />
+                  <span>
+                    <CaretDownFill className="down-caret" />
+                  </span>
                 </ContextAwareToggle>
                 <Accordion.Collapse eventKey="1">
                   <Card.Body className="faq-ans">
@@ -100,7 +104,9 @@ class ContactUs extends React.Component {
               <Card className="faq-question">
                 <ContextAwareToggle eventKey="2">
                   How much is the student membership fee?
-                  <CaretDownFill className="down-caret" />
+                  <span>
+                    <CaretDownFill className="down-caret" />
+                  </span>
                 </ContextAwareToggle>
                 <Accordion.Collapse eventKey="2">
                   <Card.Body className="faq-ans">
@@ -111,7 +117,9 @@ class ContactUs extends React.Component {
               <Card className="faq-question">
                 <ContextAwareToggle eventKey="3">
                   Can I participate in multiple workshops at once?
-                  <CaretDownFill className="down-caret" />
+                  <span>
+                    <CaretDownFill className="down-caret" />
+                  </span>
                 </ContextAwareToggle>
                 <Accordion.Collapse eventKey="3">
                   <Card.Body className="faq-ans">
@@ -126,7 +134,9 @@ class ContactUs extends React.Component {
                 <ContextAwareToggle eventKey="4">
                   Do I need to sign up again in the Spring semester if I already
                   signed up in the previous Fall semester?
-                  <CaretDownFill className="down-caret" />
+                  <span>
+                    <CaretDownFill className="down-caret" />
+                  </span>
                 </ContextAwareToggle>
                 <Accordion.Collapse eventKey="4">
                   <Card.Body className="faq-ans">No</Card.Body>
