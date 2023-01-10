@@ -1,9 +1,10 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
-import { Card } from "react-bootstrap";
+import { Card, Row, Col } from "react-bootstrap";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 //import { Carousel } from 'react-responsive-carousel';
+import { AnimationOnScroll } from "react-animation-on-scroll";
 import "./sponsor.css";
 
 class Sponsors extends React.Component{
@@ -60,6 +61,35 @@ class Sponsors extends React.Component{
                                 </ul>
                         </div>
                     </div>
+
+                    <div className="podium-tier">
+                    <Card.Body>
+                        <AnimationOnScroll animateIn="animate__fadeInUpBig" delay="1" animateOnce="true">
+
+                            <Row className="info-row">
+                                <Col>
+                                        <div id="gold-rectangle">
+                                            GOLD
+                                        </div>
+                                    
+                                </Col>
+                                <Col>
+                                        <div id="silver-rectangle">
+                                            SILVER
+                                        </div>
+                                </Col>
+                                <Col>
+                                    <div id="bronze-rectangle">
+                                        BRONZE
+									</div>
+                                </Col>
+                            </Row>
+                            </AnimationOnScroll>
+                        </Card.Body>
+					</div>
+
+                        
+
                 </div>
                     
                 </Jumbotron>

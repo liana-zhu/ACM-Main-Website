@@ -1,6 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import { Row, Col, Image, Button, Accordion, Card } from "react-bootstrap";
+import { CaretDownFill } from 'react-bootstrap-icons';
 import Jumbotron from "react-bootstrap/Jumbotron";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
@@ -64,29 +65,6 @@ class AboutUs extends React.Component {
 										Serve students and those interested in the betterment of our Los Angeles community.
 									</li>
 								</AnimationOnScroll>
-								{/* <li class="list-group-item mission-statement-item">
-									Provide computer science knowledge and resources to students.
-								</li>
-
-								<li class="list-group-item mission-statement-item">
-									Host programming workshops that teach projects and new technologies outside of classes at CSULA.
-								</li>
-
-								<li class="list-group-item mission-statement-item">
-									Share knowledge and advice of the computing field in our mentorship program.
-								</li>
-
-								<li class="list-group-item mission-statement-item">
-									Provide professional development workshops to help members prepare for the workforce.
-								</li>
-
-								<li class="list-group-item mission-statement-item">
-									Build a community through our events, promoting involvement outside of campus.
-								</li>
-
-								<li class="list-group-item mission-statement-item">
-									Serve students and those interested in the betterment of our Los Angeles community.
-								</li>  */ }
 							</ul>
 						</div>
 					</div>
@@ -107,7 +85,7 @@ class AboutUs extends React.Component {
 							<Card>
 								<Accordion.Toggle className="accordian-container" as={Card.Header} eventKey="0">
 									<div className="accordian-header-container">
-										<h1 className="accordian-header">Who are we? ⏷</h1>
+										<h1 className="accordian-header"> ..... Who are we? <CaretDownFill className="down-caret"/></h1>
 									</div>
 								</Accordion.Toggle>
 
@@ -140,7 +118,7 @@ class AboutUs extends React.Component {
 
 							<Card>
 								<Accordion.Toggle className="accordian-container" as={Card.Header} eventKey="1">
-								<div className="accordian-header-container"><h1 className="accordian-header">What do we offer? ⏷</h1></div>
+								<div className="accordian-header-container"><h1 className="accordian-header">What do we offer? <CaretDownFill className="down-caret"/></h1></div>
 								</Accordion.Toggle>
 
 								<Accordion.Collapse eventKey="1">
@@ -170,7 +148,7 @@ class AboutUs extends React.Component {
 
 							<Card>
 								<Accordion.Toggle className="accordian-container" as={Card.Header} eventKey="2">
-								<div className="accordian-header-container"><h1 className="accordian-header">How to join ACM ⏷</h1></div>
+								<div className="accordian-header-container"><h1 className="accordian-header">How to join ACM <CaretDownFill className="down-caret"/></h1></div>
 								</Accordion.Toggle>
 
 								<Accordion.Collapse eventKey="2">
@@ -200,7 +178,7 @@ class AboutUs extends React.Component {
 
 							<Card>
 								<Accordion.Toggle className="accordian-container" as={Card.Header} eventKey="3">
-									<div className="accordian-header-container"><h1 className="accordian-header">Our Constitution ⏷</h1></div>
+									<div className="accordian-header-container"><h1 className="accordian-header">Our Constitution <CaretDownFill className="down-caret"/></h1></div>
 								</Accordion.Toggle>
 
 								<Accordion.Collapse eventKey="3">
