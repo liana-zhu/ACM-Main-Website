@@ -1,5 +1,6 @@
 const IMAGES = {
     // 2022-23 leaders
+    //test
     Alexander2022: require('./2020-2021-leaders/Alexander.jpg'),
     Ashley2022: require('./2022-2023-leaders/Ashley.jpg'),
     Branden2022: require('./2022-2023-leaders/Branden.jpg'),
@@ -40,6 +41,7 @@ const IMAGES = {
     Muhammad2022: require('./2022-2023-leaders/Muhammad.jpg'),
     James2022: require('./2022-2023-leaders/James.jpg'),
     Diane2022: require('./2022-2023-leaders/Diane.jpg'),
+    ACMLogo: require('./2022-2023-leaders/ACM_Black_Blue_Logo.png'),
 
     // 2021-22 leaders
     Daniel2021: require('./2020-2021-leaders/Daniel.jpg'),
