@@ -21,6 +21,7 @@
     "react-animation-on-scroll": "^5.0.0",
     "react-awesome-modal": "^2.0.5",
     "react-bootstrap": "^1.2.2",
+    "react-bootstrap-icons": "^1.10.2",
     "react-dom": "^16.13.1",
     "react-double-marquee": "^0.3.4",
     "react-multi-carousel": "^2.5.5",
