@@ -16,7 +16,7 @@ class AboutUs extends React.Component {
 			<div>
 				<div>
 					<div className="about-us-text">
-						<p>About Us</p>
+						<p>test 3 About Us</p>
 					</div>
 					<div className="about-us-card"></div>
 				</div>
