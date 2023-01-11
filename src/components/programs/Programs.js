@@ -1,5 +1,12 @@
 import React from "react";
 import firebase from "../professional-events/firebaseConfig.js";
+import {
+  Mortarboard,
+  Search,
+  PeopleFill,
+  FileEarmarkTextFill,
+  CashCoin,
+} from "react-bootstrap-icons";
 import { Row, Col, Tab, Nav, Container, Button } from "react-bootstrap";
 import ModalImage from "./ModalImage";
 import "bootstrap/dist/css/bootstrap.css";
@@ -40,7 +47,7 @@ class Programs extends React.Component {
     return (
       <div className="programs-body">
         <div className="mentor-title-text">
-          <p>Interested in improving Professionally?</p>
+          <p>Interested in improving?</p>
           <p>Participate in our PRO-DEV Workshops!</p>
         </div>
         <div className="mentorship-title-card"></div>
@@ -64,8 +71,8 @@ class Programs extends React.Component {
           <br />
           <span className="disclaimer">
             <b>
-              2. Workshops signups will open (this date) and will
-              close (that date).
+              2. Workshops signups will open (this date) and will close (that
+              date).
             </b>
           </span>
         </div>
@@ -86,7 +93,7 @@ class Programs extends React.Component {
         <br></br>
         <div className="card programs-card">
           <Tab.Container id="left-tabs-example" defaultActiveKey="first">
-            <Row>
+            <Col>
               <Col sm={2}>
                 <Nav variant="pills" className="flex-column">
                   <Nav.Item>
@@ -147,7 +154,7 @@ class Programs extends React.Component {
                   </Nav.Item>
                 </Nav>
               </Col>
-              <Col sm={10}>
+              <Col sm={12}>
                 <Tab.Content className="programs-tab-content">
                   <Tab.Pane eventKey="first">
                     <Tab.Container defaultActiveKey="S2023mentorship">
@@ -165,53 +172,65 @@ class Programs extends React.Component {
                             <p>
                               <h2>
                                 <span className="highlight-text">
-                                  <b>Abou this program:</b>
+                                  <b>About this program:</b>
                                 </span>
                               </h2>
                               <p>
-                                If you feel like lacking professional skills, then this program is perfect
-                                for you! The Professional Development (PRO-DEV) program provides a series
-                                of workshops that teaches valuable skills and knowledge that are crucial as a professional.
-                                Such topics include building a resume, applying for internships, self-management, and many more!
-                                By applying, you will have the opportunity to learn from your ACM leaders, and
-                                to benefit yourself professionally by the time you graduate.
-                                <br/>
-                                These workshops is open for all ACM members in all different levels (Freshmen, Sophomore, Junior, Seniors)
+                                If you feel like lacking professional skills,
+                                then this program is perfect for you! The
+                                Professional Development (PRO-DEV) program
+                                provides a series of workshops that teaches
+                                valuable skills and knowledge that are crucial
+                                as a professional. Such topics include building
+                                a resume, applying for internships,
+                                self-management, and many more! By applying, you
+                                will have the opportunity to learn from your ACM
+                                leaders, and to benefit yourself professionally
+                                by the time you graduate.
+                                <br />
+                                These workshops is open for all ACM members in
+                                all different levels (Freshmen, Sophomore,
+                                Junior, Seniors)
                               </p>
-                              <p className="program-description">
+                              <h1 className="program-description">
                                 These are the following workshops:
-                              </p>
-                              <p>
-                                ❖
-                                <span className="highlight-text point">
-                                  <b>How to Succeed as an Undergrad</b>
-                                </span>
-                                <br />❖
-                                <span className="highlight-text point">
-                                  <b>
-                                    Internship/Job Hunting
-                                  </b>
-                                </span>
-                                <br />❖
-                                <span className="highlight-text point">
-                                  <b>Building your Resume/LinkedIn</b>
-                                </span>
-                                <br />❖
-                                <span className="highlight-text point">
-                                  <b>
-                                    Mock Interviews
-                                  </b>
-                                </span>
-                                <br />❖
-                                <span className="highlight-text point">
-                                  <b>
-                                    Financial Management
-                                  </b>
-                                </span>
-                              </p>
+                              </h1>
+                              {/*LIST OF WORKSHOPS*/}
+                              <div className="row container">
+                                <div className="skill-item col-lg-4 col-md-6 col-12">
+                                  <div className="icon-box">
+                                    <Mortarboard className="icon" />
+                                    <b>How to Succeed as an Undergrad</b>
+                                  </div>
+                                </div>
+                                <div className="skill-item col-lg-4 col-md-6 col-12">
+                                  <div className="icon-box">
+                                    <Search className="icon" />
+                                    <b>Internship/Job Hunting</b>
+                                  </div>
+                                </div>
+                                <div className="skill-item col-lg-4 col-md-6 col-12">
+                                  <div className="icon-box">
+                                    <FileEarmarkTextFill className="icon" />
+                                    <b>Building your Resume/LinkedIn</b>
+                                  </div>
+                                </div>
+                                <div className="skill-item col-lg-4 col-md-6 col-12">
+                                  <div className="icon-box">
+                                    <PeopleFill className="icon" />
+                                    <b>Mock Interviews</b>
+                                  </div>
+                                </div>
+                                <div className="skill-item col-lg-4 col-md-6 col-12">
+                                  <div className="icon-box">
+                                    <CashCoin className="icon" />
+                                    <b>Financial Management</b>
+                                  </div>
+                                </div>
+                              </div>
                               <p className="program-description">
-                                The deadline to apply is TDB. Join our Workshops today before
-                                it's too late!
+                                The deadline to apply is TDB. Join our Workshops
+                                today before it's too late!
                               </p>
                             </p>
                             {/* use for now to display image */}
@@ -671,7 +690,7 @@ class Programs extends React.Component {
                   </Tab.Pane>
                 </Tab.Content>
               </Col>
-            </Row>
+            </Col>
           </Tab.Container>
           <br></br>
         </div>
