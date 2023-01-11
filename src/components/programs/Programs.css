@@ -1,3 +1,6 @@
+/*--------------------------------------------------------------
+# Main header, banner
+--------------------------------------------------------------*/
 .mentorship-title-card {
     /* When the height is less than 70vh, the beginner and advanced tabs are not be clickable */
     height: 80vh;
@@ -31,6 +34,9 @@
     grid-template-rows: 1fr 1.4fr;
     padding-left: 3rem;
 }
+/*--------------------------------------------------------------
+# end of main header
+--------------------------------------------------------------*/
 
 .quote-style-1 {
     height: 30vh;
@@ -47,13 +53,20 @@
     grid-template-rows: 1fr 1.4fr;
     padding-left: 2rem;
 }
-
+/*--------------------------------------------------------------
+# Programs
+--------------------------------------------------------------*/
+.programs-tab-container{
+    display: block;
+    max-width: 100%;
+    
+}
 .programs-card {
     margin: auto;
     text-align: left;
-    color: white;
-    padding-left: 20px;
     padding-top: 30px;
+    max-width: 100%;
+    
 }
 
 .programs-nav-link {
@@ -64,9 +77,53 @@
     outline: 1px solid white;
 }
 
+.programs-tab-content {
+    width: 100%;
+    background-color: rgb(73, 71, 71);
+    border-radius: 3rem;
+    padding: 10px;
+}
+
+.programs-images {
+    min-width: 3in;
+    max-width: 30vw;
+    margin: 5px;
+}
+.programs-body {
+    color: white;
+}
+
+.aboutprogram{
+    border-bottom: solid #333030;
+    border-width: 0.5em;
+    padding-bottom: 1rem;
+}
+.programs-tab-content .poster {
+    margin-top: 1rem;
+}
+
+.program-description {
+    
+    margin-top: 1em;
+    padding-top: 1em;
+    font-size: large;
+    text-align: center;
+}
+/*--------------------------------------------------------------
+# End of programs
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Disclaimer secion
+--------------------------------------------------------------*/
 .disclaimer-body {
     padding-left: 20px;
     text-align: left;
+}
+
+.disclaimer {
+    font-size: 20px;
 }
 
 .disclaimer_header{
@@ -75,11 +132,16 @@
     color: red;
     padding-top: 10px;
 }
+/*--------------------------------------------------------------
+# End of Disclaimer section
+--------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
-# Skills section: list of events, skills
+# list of events or skills
 --------------------------------------------------------------*/
 .container{
+    border-bottom: solid #333030;
+    border-width: 0.5em;
     display: flex;
     max-width: 100%;
     align-items: center;
@@ -104,7 +166,7 @@
 }
 
 .icon-box {
-    margin: 0 2em 1em;
+    margin: 0 10px 10px;
     text-align: center;
     padding: 65px 20px;
     transition: all ease-in-out 0.3s;
@@ -115,7 +177,6 @@
 .icon-box:hover{
     background-color: #2678c5;
 }
-
 /*--------------------------------------------------------------
 # End of skills section
 --------------------------------------------------------------*/
@@ -138,24 +199,11 @@
     grid-row: 1/2;
     grid-column: 2/3;
 }
-.programs-tab-content {
-    width: 100%
-}
 
-.programs-images {
-    min-width: 3in;
-    max-width: 30vw;
-    margin: 5px;
-}
 
-.programs-poster {
-    min-width: 300px;
-    max-width: 30vw;
-    padding: 10px;
-}
-
-.programs-body {
-    color: white;
+.signup-section{
+    display: block;
+    margin: auto;
 }
 
 .mentorship-body {
@@ -164,10 +212,6 @@
     padding-bottom: 8vh;
     padding-right: 10vw;
     text-align: left;
-}
-
-.disclaimer {
-    font-size: 20px;
 }
 
 .anchor-blue {
@@ -190,16 +234,6 @@ iframe[src*=youtube] {
 
 .point {
     margin-left: 1rem;
-}
-
-.programs-tab-content .program-description {
-    margin-top: 2.5em;
-    font-size: large;
-    text-align: center;
-}
-
-.programs-tab-content .poster {
-    margin-top: 1rem;
 }
 
 @media only screen and (max-width: 600px) {

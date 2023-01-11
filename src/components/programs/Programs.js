@@ -154,7 +154,7 @@ class Programs extends React.Component {
                   </Nav.Item>
                 </Nav>
               </Col>
-              <Col sm={12}>
+              <Col sm={12} className="programs-tab-container">
                 <Tab.Content className="programs-tab-content">
                   <Tab.Pane eventKey="first">
                     <Tab.Container defaultActiveKey="S2023mentorship">
@@ -175,7 +175,7 @@ class Programs extends React.Component {
                                   <b>About this program:</b>
                                 </span>
                               </h2>
-                              <p>
+                              <p className="aboutprogram">
                                 If you feel like lacking professional skills,
                                 then this program is perfect for you! The
                                 Professional Development (PRO-DEV) program
@@ -195,12 +195,13 @@ class Programs extends React.Component {
                               <h1 className="program-description">
                                 These are the following workshops:
                               </h1>
-                              {/*LIST OF WORKSHOPS*/}
+
+                              {/* LIST OF WORKSHOPS/EVENTS  */}
                               <div className="row container">
                                 <div className="skill-item col-lg-4 col-md-6 col-12">
                                   <div className="icon-box">
                                     <Mortarboard className="icon" />
-                                    <b>How to Succeed as an Undergrad</b>
+                                    <b>Self-Development</b>
                                   </div>
                                 </div>
                                 <div className="skill-item col-lg-4 col-md-6 col-12">
@@ -228,18 +229,20 @@ class Programs extends React.Component {
                                   </div>
                                 </div>
                               </div>
+                            </p>
+
+                            <div className="signup-section col-lg-6 col-md-9 col-12">
                               <p className="program-description">
                                 The deadline to apply is TDB. Join our Workshops
                                 today before it's too late!
                               </p>
-                            </p>
-                            {/* use for now to display image */}
-                            <img
-                              src={require("./pictures/comingsoon.png")}
-                              className="programs-poster"
-                              alt="mentorship flyer"
-                            ></img>
-                            {/* {
+                              {/* use for now to display image */}
+                              <img
+                                src={require("./pictures/comingsoon.png")}
+                                className="programs-poster rounded mx-auto d-block"
+                                alt="mentorship flyer"
+                              ></img>
+                              {/* {
                               this.state.mentorshipF22 &&
                               this.state.mentorshipF22.map(mentorshipF22 => {
                                 return (
@@ -247,16 +250,18 @@ class Programs extends React.Component {
                                 )
                               })
                             } */}
-                            <Tab.Content className="programs-tab-content poster">
-                              <Tab.Pane eventKey="menteeRole"></Tab.Pane>
-                            </Tab.Content>
-                            <Button
-                              variant="success"
-                              size="lg"
-                              href="https://docs.google.com/forms/d/e/1FAIpQLSf6apdzV5q2jrsJZCbsfV-SGx2cZimQyU3D60N3AUvHjhW40g/viewform"
-                            >
-                              Join Now!
-                            </Button>
+                              <Tab.Content className="programs-tab-content poster">
+                                <Tab.Pane eventKey="menteeRole"></Tab.Pane>
+                              </Tab.Content>
+                              <Button
+                                variant="success"
+                                size="lg"
+                                href="https://docs.google.com/forms/d/e/1FAIpQLSf6apdzV5q2jrsJZCbsfV-SGx2cZimQyU3D60N3AUvHjhW40g/viewform"
+                              >
+                                Join Now!
+                              </Button>
+                            </div>
+
                             <br />
                           </div>
                         </Tab.Pane>
