@@ -76,6 +76,50 @@
     padding-top: 10px;
 }
 
+/*--------------------------------------------------------------
+# Skills section: list of events, skills
+--------------------------------------------------------------*/
+.container{
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+}
+.skill-item{
+    text-align: center;
+    padding: 25px 20px;
+    transition: all ease-in-out 0.3s;
+    border-radius: 2rem;
+}
+
+.icon {
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s ease-out 0s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    transform-style: preserve-3d;
+}
+
+.icon-box {
+    margin: 0 2em 1em;
+    text-align: center;
+    padding: 65px 20px;
+    transition: all ease-in-out 0.3s;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 5);
+    background-color: #0f5da7;
+    border-radius: 2rem;
+  }
+.icon-box:hover{
+    background-color: #2678c5;
+}
+
+/*--------------------------------------------------------------
+# End of skills section
+--------------------------------------------------------------*/
+  
 .quote-bg {
     /* When the height is less than 70vh, the beginner and advanced tabs are not be clickable */
     height: 80vh;
@@ -94,9 +138,8 @@
     grid-row: 1/2;
     grid-column: 2/3;
 }
-
 .programs-tab-content {
-    width: 70vw
+    width: 100%
 }
 
 .programs-images {
@@ -151,6 +194,8 @@ iframe[src*=youtube] {
 
 .programs-tab-content .program-description {
     margin-top: 2.5em;
+    font-size: large;
+    text-align: center;
 }
 
 .programs-tab-content .poster {
