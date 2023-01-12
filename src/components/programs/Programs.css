@@ -53,6 +53,10 @@
     grid-template-rows: 1fr 1.4fr;
     padding-left: 2rem;
 }
+
+.dropdown-item{
+    background-color: #333030;
+}
 /*--------------------------------------------------------------
 # Programs
 --------------------------------------------------------------*/
@@ -79,7 +83,7 @@
 
 .programs-tab-content {
     width: 100%;
-    background-color: rgb(73, 71, 71);
+    background-image: linear-gradient(rgb(73, 71, 71),rgb(109, 105, 105)) ;
     border-radius: 3rem;
     padding: 10px;
 }
@@ -93,11 +97,6 @@
     color: white;
 }
 
-.aboutprogram{
-    border-bottom: solid #333030;
-    border-width: 0.5em;
-    padding-bottom: 1rem;
-}
 .programs-tab-content .poster {
     margin-top: 1rem;
 }
@@ -139,7 +138,8 @@
 /*--------------------------------------------------------------
 # list of events or skills
 --------------------------------------------------------------*/
-.container{
+.workshop-container{
+    border-top: solid #333030;
     border-bottom: solid #333030;
     border-width: 0.5em;
     display: flex;

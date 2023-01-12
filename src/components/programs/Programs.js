@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import firebase from "../professional-events/firebaseConfig.js";
 import {
   Mortarboard,
@@ -7,12 +8,41 @@ import {
   FileEarmarkTextFill,
   CashCoin,
 } from "react-bootstrap-icons";
-import { Row, Col, Tab, Nav, Container, Button } from "react-bootstrap";
+import {
+  Row,
+  Col,
+  Tab,
+  Nav,
+  Container,
+  Button,
+  Dropdown,
+  DropdownButton,
+} from "react-bootstrap";
 import ModalImage from "./ModalImage";
 import "bootstrap/dist/css/bootstrap.css";
 import "./Programs.css";
 import Mentorship from "./Mentorship";
 import flyerS2021 from "./pictures/spring2021-mentorship-flyer.png";
+
+/* Updating the Mentorship page:
+  - Update schoolYears array
+  - Add new mentorship section
+*/
+
+//These are list of semesters that has mentorship programs
+/*Step 1: If there's a new program, insert the new semester year
+  at the very top wtih this format -> ["first", *Season* *Year*]
+  Step 2: Update the following ordinals of older semesters
+*/
+const schoolYears = [
+  ["first", "Spring 2023"],
+  ["second", "Fall 2022"],
+  ["third", "Fall 2021"],
+  ["fourth", "Spring 2021"],
+  ["fifth", "Fall 2020"],
+  ["sixth", "Spring 2020"],
+  ["seventh", "Fall 2019"],
+];
 
 class Programs extends React.Component {
   constructor(props) {
@@ -21,8 +51,13 @@ class Programs extends React.Component {
       showMentorship1: false,
       showMentorship2: false,
       showTutoring: false,
+      currentSem: schoolYears[0][1],
     };
   }
+
+  changeYear = (sem) => {
+    this.setState({ currentSem: sem });
+  };
   state = {
     mentorship: null,
   };
@@ -95,64 +130,21 @@ class Programs extends React.Component {
           <Tab.Container id="left-tabs-example" defaultActiveKey="first">
             <Col>
               <Col sm={2}>
-                <Nav variant="pills" className="flex-column">
-                  <Nav.Item>
-                    <Nav.Link
-                      className="programs-nav-link anchor-white"
-                      eventKey="first"
+                <DropdownButton
+                  title={this.state.currentSem}
+                  id="dropdown-button"
+                  menuVariant="dark"
+                >
+                  {schoolYears.map((year) => (
+                    <Dropdown.Item
+                      eventKey={year[0]}
+                      onClick={(e) => this.changeYear(e.target.textContent)}
+                      className="dropdown-item"
                     >
-                      Spring 2023
-                    </Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                    <Nav.Link
-                      className="programs-nav-link anchor-white"
-                      eventKey="second"
-                    >
-                      Fall 2022
-                    </Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                    <Nav.Link
-                      className="programs-nav-link anchor-white"
-                      eventKey="third"
-                    >
-                      Fall 2021
-                    </Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                    <Nav.Link
-                      className="programs-nav-link anchor-white"
-                      eventKey="fourth"
-                    >
-                      Spring 2021
-                    </Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                    <Nav.Link
-                      className="programs-nav-link anchor-white"
-                      eventKey="fifth"
-                    >
-                      Fall 2020
-                    </Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                    <Nav.Link
-                      className="programs-nav-link anchor-white"
-                      eventKey="sixth"
-                    >
-                      Spring 2020
-                    </Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                    <Nav.Link
-                      className="programs-nav-link anchor-white"
-                      eventKey="seventh"
-                    >
-                      Fall 2019
-                    </Nav.Link>
-                  </Nav.Item>
-                </Nav>
+                      {year[1]}
+                    </Dropdown.Item>
+                  ))}
+                </DropdownButton>
               </Col>
               <Col sm={12} className="programs-tab-container">
                 <Tab.Content className="programs-tab-content">
@@ -192,12 +184,12 @@ class Programs extends React.Component {
                                 all different levels (Freshmen, Sophomore,
                                 Junior, Seniors)
                               </p>
-                              <h1 className="program-description">
-                                These are the following workshops:
-                              </h1>
 
                               {/* LIST OF WORKSHOPS/EVENTS  */}
-                              <div className="row container">
+                              <div className="row workshop-container">
+                                <h1 className="program-description col-12">
+                                  These are the following workshops:
+                                </h1>
                                 <div className="skill-item col-lg-4 col-md-6 col-12">
                                   <div className="icon-box">
                                     <Mortarboard className="icon" />
@@ -250,9 +242,12 @@ class Programs extends React.Component {
                                 )
                               })
                             } */}
+                              {/* this block is commented for now because it's emtpy
                               <Tab.Content className="programs-tab-content poster">
                                 <Tab.Pane eventKey="menteeRole"></Tab.Pane>
                               </Tab.Content>
+                              */}
+
                               <Button
                                 variant="success"
                                 size="lg"
