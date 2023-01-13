@@ -71,7 +71,7 @@ class Programs extends React.Component {
           <br />
           <span className="disclaimer">
             <b>
-              2. Workshops signups will open (this date) and will close (that
+              2. Workshop signups will be on (this date) and will close (that
               date).
             </b>
           </span>
