@@ -66,7 +66,7 @@
 
 .disclaimer-body {
     padding-left: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 .disclaimer_header{
@@ -89,11 +89,6 @@
     padding: 25px 20px;
     transition: all ease-in-out 0.3s;
     border-radius: 2rem;
-}
-
-/*changes*/
-.skill-item2 {
-    left: 15%;
 }
 
 .icon {
@@ -157,7 +152,6 @@
     min-width: 300px;
     max-width: 30vw;
     padding: 10px;
-    margin-left: 475px;
 }
 
 .programs-body {
@@ -208,9 +202,6 @@ iframe[src*=youtube] {
     margin-top: 1rem;
 }
 
-.join-button {
-    margin-left: 625px;
-}
 @media only screen and (max-width: 600px) {
     .quote-style-1 {
         padding-top: 30px;

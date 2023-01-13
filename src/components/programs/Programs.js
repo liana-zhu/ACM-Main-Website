@@ -60,7 +60,7 @@ class Programs extends React.Component {
 
         <div className="disclaimer-body">
           <h3 className="disclaimer_header">
-            <b>Disclaimers...</b>
+            <b>Disclaimers</b>
           </h3>
           <span className="disclaimer">
             <b>
@@ -215,13 +215,13 @@ class Programs extends React.Component {
                                     <b>Building your Resume/LinkedIn</b>
                                   </div>
                                 </div>
-                                <div className="skill-item2 col-lg-4 col-md-6 col-12">
+                                <div className="skill-item col-lg-4 col-md-6 col-12">
                                   <div className="icon-box">
                                     <PeopleFill className="icon" />
                                     <b>Mock Interviews</b>
                                   </div>
                                 </div>
-                                <div className="skill-item2 col-lg-4 col-md-6 col-12">
+                                <div className="skill-item col-lg-4 col-md-6 col-12">
                                   <div className="icon-box">
                                     <CashCoin className="icon" />
                                     <b>Financial Management</b>
@@ -252,7 +252,6 @@ class Programs extends React.Component {
                             </Tab.Content>
                             <Button
                               variant="success"
-                              className = "join-button"
                               size="lg"
                               href="https://docs.google.com/forms/d/e/1FAIpQLSf6apdzV5q2jrsJZCbsfV-SGx2cZimQyU3D60N3AUvHjhW40g/viewform"
                             >
@@ -359,13 +358,13 @@ class Programs extends React.Component {
                             <Tab.Content className="programs-tab-content poster">
                               <Tab.Pane eventKey="menteeRole"></Tab.Pane>
                             </Tab.Content>
-                            {/*<Button
+                            <Button
                               variant="success"
                               size="lg"
                               href="https://docs.google.com/forms/d/e/1FAIpQLSf6apdzV5q2jrsJZCbsfV-SGx2cZimQyU3D60N3AUvHjhW40g/viewform"
                             >
                               Join Now!
-                          </Button>*/}
+                            </Button>
                             <br />
                           </div>
                         </Tab.Pane>
