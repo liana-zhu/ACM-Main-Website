@@ -54,9 +54,16 @@
     padding-left: 2rem;
 }
 
-.dropdown-item{
-    background-color: #333030;
+/*Dropdown button*/
+.item-dropdown{
+    background-color: #464141;
 }
+#dropdown-button{
+    align-self: center;
+    margin-left: 2em;
+    margin-bottom: 10px;
+}
+
 /*--------------------------------------------------------------
 # Programs
 --------------------------------------------------------------*/
@@ -105,8 +112,12 @@
     
     margin-top: 1em;
     padding-top: 1em;
-    font-size: large;
+    font-size: 25px;
     text-align: center;
+}
+
+.aboutprogram{
+    font-size: 17px;
 }
 /*--------------------------------------------------------------
 # End of programs
@@ -145,6 +156,7 @@
     display: flex;
     max-width: 100%;
     align-items: center;
+    margin:auto;
 }
 .skill-item{
     text-align: center;
@@ -251,7 +263,7 @@ iframe[src*=youtube] {
     }
     .programs-poster {
         /* min-width can be used to change poster size on mobile view */
-        min-width: 90vw;
+        min-width: 70vw;
         padding-left: 0px;
         padding-right: 0px;
     }

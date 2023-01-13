@@ -129,17 +129,18 @@ class Programs extends React.Component {
         <div className="card programs-card">
           <Tab.Container id="left-tabs-example" defaultActiveKey="first">
             <Col>
-              <Col sm={2}>
+              <Col sm={12}>
                 <DropdownButton
                   title={this.state.currentSem}
                   id="dropdown-button"
                   menuVariant="dark"
+                  className="ms-2"
                 >
                   {schoolYears.map((year) => (
                     <Dropdown.Item
                       eventKey={year[0]}
                       onClick={(e) => this.changeYear(e.target.textContent)}
-                      className="dropdown-item"
+                      className="item-dropdown"
                     >
                       {year[1]}
                     </Dropdown.Item>
@@ -173,16 +174,17 @@ class Programs extends React.Component {
                                 Professional Development (PRO-DEV) program
                                 provides a series of workshops that teaches
                                 valuable skills and knowledge that are crucial
-                                as a professional. Such topics include building
-                                a resume, applying for internships,
-                                self-management, and many more! By applying, you
-                                will have the opportunity to learn from your ACM
-                                leaders, and to benefit yourself professionally
-                                by the time you graduate.
+                                as a professional. Such topics include <u>
+                                building a resume, applying for internships,
+                                self-management</u>
+                                , and many more! By applying, you will have the
+                                opportunity to learn from your ACM leaders, and
+                                to benefit yourself professionally by the time
+                                you graduate.
                                 <br />
-                                These workshops is open for all ACM members in
-                                all different levels (Freshmen, Sophomore,
-                                Junior, Seniors)
+                                These workshops is open for{" "}
+                                <u>all ACM members</u> in all different levels
+                                (Freshmen, Sophomore, Junior, Seniors)
                               </p>
 
                               {/* LIST OF WORKSHOPS/EVENTS  */}
@@ -231,7 +233,7 @@ class Programs extends React.Component {
                               {/* use for now to display image */}
                               <img
                                 src={require("./pictures/comingsoon.png")}
-                                className="programs-poster rounded mx-auto d-block"
+                                className="programs-poster rounded m-auto d-block"
                                 alt="mentorship flyer"
                               ></img>
                               {/* {
