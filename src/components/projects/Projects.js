@@ -405,7 +405,7 @@ class Projects extends React.Component {
                                   {/* use for now until firebase method is figured out */}
                                   <img
                                     src={require("./fall2022/chess-with-ai.png")}
-                                    className="img-fluid programs-poster"
+                                    className="img-fluid projects-poster"
                                     alt="project poster"
                                   ></img>
                                   {/* {
@@ -491,7 +491,7 @@ class Projects extends React.Component {
                                   {/* use for now until firebase method is figured out */}
                                   <img
                                     src={require("./fall2022/tower-defense.png")}
-                                    className="img-fluid programs-poster"
+                                    className="img-fluid projects-poster"
                                     alt="project poster"
                                   ></img>
                                   {/* {
@@ -602,7 +602,7 @@ class Projects extends React.Component {
                                         return (
                                           <img
                                             src={beginnerProjectS2022.imgUrl}
-                                            className="img-fluid programs-poster"
+                                            className="img-fluid projects-poster"
                                             alt="project poster"
                                           ></img>
                                         );
@@ -685,7 +685,7 @@ class Projects extends React.Component {
                                         return (
                                           <img
                                             src={advanceProjectS2022.imgUrl}
-                                            className="img-fluid programs-poster"
+                                            className="img-fluid projects-poster"
                                             alt="project poster"
                                           ></img>
                                         );
@@ -790,7 +790,7 @@ class Projects extends React.Component {
                                         return (
                                           <img
                                             src={beginnerProject.imgUrl}
-                                            className="img-fluid programs-poster"
+                                            className="img-fluid projects-poster"
                                             alt="project poster"
                                           ></img>
                                         );
@@ -910,7 +910,7 @@ class Projects extends React.Component {
                                         return (
                                           <img
                                             src={advanceProject.imgUrl}
-                                            className="img-fluid programs-poster"
+                                            className="img-fluid projects-poster"
                                             alt="project poster"
                                           ></img>
                                         );
