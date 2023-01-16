@@ -27,6 +27,7 @@ import flyerS2021 from "./pictures/spring2021-mentorship-flyer.png";
 /* Updating the Mentorship page:
   - Update schoolYears array
   - Add new mentorship section
+  - update the flyer image
 */
 
 //These are list of semesters that has mentorship programs
@@ -194,8 +195,8 @@ class Programs extends React.Component {
                                 </h1>
                                 <div className="skill-item col-lg-4 col-md-6 col-12">
                                   <div className="icon-box">
-                                    <Mortarboard className="icon" />
-                                    <b>Self-Development</b>
+                                    <FileEarmarkTextFill className="icon" />
+                                    <b>Building your Resume/LinkedIn</b>
                                   </div>
                                 </div>
                                 <div className="skill-item col-lg-4 col-md-6 col-12">
@@ -206,14 +207,14 @@ class Programs extends React.Component {
                                 </div>
                                 <div className="skill-item col-lg-4 col-md-6 col-12">
                                   <div className="icon-box">
-                                    <FileEarmarkTextFill className="icon" />
-                                    <b>Building your Resume/LinkedIn</b>
+                                    <PeopleFill className="icon" />
+                                    <b>Interviews</b>
                                   </div>
                                 </div>
                                 <div className="skill-item col-lg-4 col-md-6 col-12">
                                   <div className="icon-box">
-                                    <PeopleFill className="icon" />
-                                    <b>Mock Interviews</b>
+                                    <Mortarboard className="icon" />
+                                    <b>Succeeding as an Undergrad</b>
                                   </div>
                                 </div>
                                 <div className="skill-item col-lg-4 col-md-6 col-12">
@@ -227,12 +228,11 @@ class Programs extends React.Component {
 
                             <div className="signup-section col-lg-6 col-md-9 col-12">
                               <p className="program-description">
-                                The deadline to apply is TDB. Join our Workshops
-                                today before it's too late!
+                                Make sure to keep track of the dedicated dates for each workshop.
                               </p>
                               {/* use for now to display image */}
                               <img
-                                src={require("./pictures/comingsoon.png")}
+                                src={require("./pictures/spring2023-pro-dev.png")}
                                 className="programs-poster rounded m-auto d-block"
                                 alt="mentorship flyer"
                               ></img>
@@ -250,6 +250,7 @@ class Programs extends React.Component {
                               </Tab.Content>
                               */}
 
+                              {/* Join button is commented for now because PRO-DEV does not have sign ins.
                               <Button
                                 variant="success"
                                 size="lg"
@@ -257,6 +258,8 @@ class Programs extends React.Component {
                               >
                                 Join Now!
                               </Button>
+                              */}
+                              
                             </div>
 
                             <br />
