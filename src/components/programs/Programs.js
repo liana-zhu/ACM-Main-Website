@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import firebase from "../professional-events/firebaseConfig.js";
 import {
   Mortarboard,
@@ -7,12 +8,42 @@ import {
   FileEarmarkTextFill,
   CashCoin,
 } from "react-bootstrap-icons";
-import { Row, Col, Tab, Nav, Container, Button } from "react-bootstrap";
+import {
+  Row,
+  Col,
+  Tab,
+  Nav,
+  Container,
+  Button,
+  Dropdown,
+  DropdownButton,
+} from "react-bootstrap";
 import ModalImage from "./ModalImage";
 import "bootstrap/dist/css/bootstrap.css";
 import "./Programs.css";
 import Mentorship from "./Mentorship";
 import flyerS2021 from "./pictures/spring2021-mentorship-flyer.png";
+
+/* Updating the Mentorship page:
+  - Update schoolYears array
+  - Add new mentorship section
+  - update the flyer image
+*/
+
+//These are list of semesters that has mentorship programs
+/*Step 1: If there's a new program, insert the new semester year
+  at the very top wtih this format -> ["first", *Season* *Year*]
+  Step 2: Update the following ordinals of older semesters
+*/
+const schoolYears = [
+  ["first", "Spring 2023"],
+  ["second", "Fall 2022"],
+  ["third", "Fall 2021"],
+  ["fourth", "Spring 2021"],
+  ["fifth", "Fall 2020"],
+  ["sixth", "Spring 2020"],
+  ["seventh", "Fall 2019"],
+];
 
 class Programs extends React.Component {
   constructor(props) {
@@ -21,8 +52,13 @@ class Programs extends React.Component {
       showMentorship1: false,
       showMentorship2: false,
       showTutoring: false,
+      currentSem: schoolYears[0][1],
     };
   }
+
+  changeYear = (sem) => {
+    this.setState({ currentSem: sem });
+  };
   state = {
     mentorship: null,
   };
@@ -94,67 +130,25 @@ class Programs extends React.Component {
         <div className="card programs-card">
           <Tab.Container id="left-tabs-example" defaultActiveKey="first">
             <Col>
-              <Col sm={2}>
-                <Nav variant="pills" className="flex-column">
-                  <Nav.Item>
-                    <Nav.Link
-                      className="programs-nav-link anchor-white"
-                      eventKey="first"
-                    >
-                      Spring 2023
-                    </Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                    <Nav.Link
-                      className="programs-nav-link anchor-white"
-                      eventKey="second"
-                    >
-                      Fall 2022
-                    </Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                    <Nav.Link
-                      className="programs-nav-link anchor-white"
-                      eventKey="third"
-                    >
-                      Fall 2021
-                    </Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                    <Nav.Link
-                      className="programs-nav-link anchor-white"
-                      eventKey="fourth"
-                    >
-                      Spring 2021
-                    </Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                    <Nav.Link
-                      className="programs-nav-link anchor-white"
-                      eventKey="fifth"
-                    >
-                      Fall 2020
-                    </Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                    <Nav.Link
-                      className="programs-nav-link anchor-white"
-                      eventKey="sixth"
-                    >
-                      Spring 2020
-                    </Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                    <Nav.Link
-                      className="programs-nav-link anchor-white"
-                      eventKey="seventh"
-                    >
-                      Fall 2019
-                    </Nav.Link>
-                  </Nav.Item>
-                </Nav>
-              </Col>
               <Col sm={12}>
+                <DropdownButton
+                  title={this.state.currentSem}
+                  id="dropdown-button"
+                  menuVariant="dark"
+                  className="ms-2"
+                >
+                  {schoolYears.map((year) => (
+                    <Dropdown.Item
+                      eventKey={year[0]}
+                      onClick={(e) => this.changeYear(e.target.textContent)}
+                      className="item-dropdown"
+                    >
+                      {year[1]}
+                    </Dropdown.Item>
+                  ))}
+                </DropdownButton>
+              </Col>
+              <Col sm={12} className="programs-tab-container">
                 <Tab.Content className="programs-tab-content">
                   <Tab.Pane eventKey="first">
                     <Tab.Container defaultActiveKey="S2023mentorship">
@@ -168,39 +162,40 @@ class Programs extends React.Component {
                                     */}
                       <Tab.Content className="programs-tab-content">
                         <Tab.Pane eventKey="S2023mentorship">
-                          <div>
                             <p>
                               <h2>
                                 <span className="highlight-text">
                                   <b>About this program:</b>
                                 </span>
                               </h2>
-                              <p>
+                              <p className="aboutprogram">
                                 If you feel like lacking professional skills,
                                 then this program is perfect for you! The
                                 Professional Development (PRO-DEV) program
                                 provides a series of workshops that teaches
                                 valuable skills and knowledge that are crucial
-                                as a professional. Such topics include building
-                                a resume, applying for internships,
-                                self-management, and many more! By applying, you
-                                will have the opportunity to learn from your ACM
-                                leaders, and to benefit yourself professionally
-                                by the time you graduate.
+                                as a professional. Such topics include <u>
+                                building a resume, applying for internships,
+                                self-management</u>
+                                , and many more! By applying, you will have the
+                                opportunity to learn from your ACM leaders, and
+                                to benefit yourself professionally by the time
+                                you graduate.
                                 <br />
-                                These workshops is open for all ACM members in
-                                all different levels (Freshmen, Sophomore,
-                                Junior, Seniors)
+                                These workshops is open for{" "}
+                                <u>all ACM members</u> in all different levels
+                                (Freshmen, Sophomore, Junior, Seniors)
                               </p>
-                              <h1 className="program-description">
-                                These are the following workshops:
-                              </h1>
-                              {/*LIST OF WORKSHOPS*/}
-                              <div className="row container">
+
+                              {/* LIST OF WORKSHOPS/EVENTS  */}
+                              <div className="row workshop-container">
+                                <h1 className="program-description col-12">
+                                  These are the following workshops:
+                                </h1>
                                 <div className="skill-item col-lg-4 col-md-6 col-12">
                                   <div className="icon-box">
-                                    <Mortarboard className="icon" />
-                                    <b>How to Succeed as an Undergrad</b>
+                                    <FileEarmarkTextFill className="icon" />
+                                    <b>Building your Resume/LinkedIn</b>
                                   </div>
                                 </div>
                                 <div className="skill-item col-lg-4 col-md-6 col-12">
@@ -211,35 +206,36 @@ class Programs extends React.Component {
                                 </div>
                                 <div className="skill-item col-lg-4 col-md-6 col-12">
                                   <div className="icon-box">
-                                    <FileEarmarkTextFill className="icon" />
-                                    <b>Building your Resume/LinkedIn</b>
-                                  </div>
-                                </div>
-                                <div className="skill-item2 col-lg-4 col-md-6 col-12">
-                                  <div className="icon-box">
                                     <PeopleFill className="icon" />
-                                    <b>Mock Interviews</b>
+                                    <b>Interviews</b>
                                   </div>
                                 </div>
-                                <div className="skill-item2 col-lg-4 col-md-6 col-12">
+                                <div className="skill-item col-lg-4 col-md-6 col-12">
+                                  <div className="icon-box">
+                                    <Mortarboard className="icon" />
+                                    <b>Succeeding as an Undergrad</b>
+                                  </div>
+                                </div>
+                                <div className="skill-item col-lg-4 col-md-6 col-12">
                                   <div className="icon-box">
                                     <CashCoin className="icon" />
                                     <b>Financial Management</b>
                                   </div>
                                 </div>
                               </div>
-                              <p className="program-description">
-                                The deadline to apply is TDB. Join our Workshops
-                                today before it's too late!
-                              </p>
                             </p>
-                            {/* use for now to display image */}
-                            <img
-                              src={require("./pictures/comingsoon.png")}
-                              className="programs-poster"
-                              alt="mentorship flyer"
-                            ></img>
-                            {/* {
+
+                            <div className="signup-section col-lg-6 col-md-9 col-12">
+                              <p className="program-description">
+                                Make sure to keep track of the dedicated dates for each workshop.
+                              </p>
+                              {/* use for now to display image */}
+                              <img
+                                src={require("./pictures/spring2023-pro-dev.png")}
+                                className="programs-poster rounded m-auto d-block"
+                                alt="mentorship flyer"
+                              ></img>
+                              {/* {
                               this.state.mentorshipF22 &&
                               this.state.mentorshipF22.map(mentorshipF22 => {
                                 return (
@@ -247,6 +243,8 @@ class Programs extends React.Component {
                                 )
                               })
                             } */}
+
+                            {/* Commenting JOIN BUTTON because there's no PRO-DEV sign-ups
                             <Tab.Content className="programs-tab-content poster">
                               <Tab.Pane eventKey="menteeRole"></Tab.Pane>
                             </Tab.Content>
@@ -259,6 +257,8 @@ class Programs extends React.Component {
                               Join Now!
                             </Button>
                             <br />
+                            */}
+                            
                           </div>
                         </Tab.Pane>
                       </Tab.Content>
