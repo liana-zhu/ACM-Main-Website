@@ -129,7 +129,7 @@
 --------------------------------------------------------------*/
 .disclaimer-body {
     padding-left: 20px;
-    text-align: left;
+    text-align: center;
 }
 
 .disclaimer {
@@ -163,6 +163,11 @@
     padding: 25px 20px;
     transition: all ease-in-out 0.3s;
     border-radius: 2rem;
+}
+
+/*changes*/
+.skill-item2 {
+    left: 15%;
 }
 
 .icon {
@@ -213,9 +218,15 @@
 }
 
 
-.signup-section{
-    display: block;
-    margin: auto;
+.programs-poster {
+    min-width: 300px;
+    max-width: 30vw;
+    padding: 10px;
+    margin-left: 475px;
+}
+
+.programs-body {
+    color: white;
 }
 
 .mentorship-body {
@@ -248,6 +259,19 @@ iframe[src*=youtube] {
     margin-left: 1rem;
 }
 
+.programs-tab-content .program-description {
+    margin-top: 2.5em;
+    font-size: large;
+    text-align: center;
+}
+
+.programs-tab-content .poster {
+    margin-top: 1rem;
+}
+
+.join-button {
+    margin-left: 625px;
+}
 @media only screen and (max-width: 600px) {
     .quote-style-1 {
         padding-top: 30px;

@@ -211,7 +211,7 @@ class Projects extends React.Component {
                 */}
         <div className="disclaimer-body">
           <h3 className="disclaimer_header mt-4 mb-4">
-            <b>Disclaimers</b>
+            <b>Disclaimers...</b>
           </h3>
           <div className="disclaimer">
             <b>
@@ -257,6 +257,14 @@ class Projects extends React.Component {
             <Row>
               <Col sm={2}>
                 <Nav variant="pills" className="flex-column">
+                <Nav.Item>
+                    <Nav.Link
+                      className="project-nav-link anchor-white"
+                      eventKey="spring2023projects"
+                    >
+                      Spring 2023
+                    </Nav.Link>
+                  </Nav.Item>
                   <Nav.Item>
                     <Nav.Link
                       className="project-nav-link anchor-white"
@@ -341,6 +349,33 @@ class Projects extends React.Component {
                                     3. After following the steps above, then update the page with new project information.
                                     4. Remember to update dates in the disclaimer above.
                                     */}
+                  <Tab.Pane eventKey="spring2023projects">
+                    <Tab.Container defaultActiveKey="F2022beginner">
+                      <Nav className="project-tab-label" variant="pills">
+                        <Nav.Item>
+                          <Nav.Link
+                            className="project-nav-link-tab anchor-white"
+                            eventKey="F2022beginner"
+                          >
+                            Beginner
+                          </Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                          <Nav.Link
+                            className="project-nav-link-tab anchor-white"
+                            eventKey="F2022advanced"
+                          >
+                            Advanced
+                          </Nav.Link>
+                        </Nav.Item>
+                      </Nav>
+                      <img
+                                    src={require("./ComingSoon.jpg")}
+                                    className="img-fluid programs-poster"
+                                    alt="project poster"
+                                  ></img>
+                  </Tab.Container>
+                  </Tab.Pane>
                   <Tab.Pane eventKey="fall2022projects">
                     <Tab.Container defaultActiveKey="F2022beginner">
                       <Nav className="project-tab-label" variant="pills">
@@ -370,7 +405,7 @@ class Projects extends React.Component {
                                   {/* use for now until firebase method is figured out */}
                                   <img
                                     src={require("./fall2022/chess-with-ai.png")}
-                                    className="img-fluid programs-poster"
+                                    className="img-fluid projects-poster"
                                     alt="project poster"
                                   ></img>
                                   {/* {
@@ -456,7 +491,7 @@ class Projects extends React.Component {
                                   {/* use for now until firebase method is figured out */}
                                   <img
                                     src={require("./fall2022/tower-defense.png")}
-                                    className="img-fluid programs-poster"
+                                    className="img-fluid projects-poster"
                                     alt="project poster"
                                   ></img>
                                   {/* {
@@ -567,7 +602,7 @@ class Projects extends React.Component {
                                         return (
                                           <img
                                             src={beginnerProjectS2022.imgUrl}
-                                            className="img-fluid programs-poster"
+                                            className="img-fluid projects-poster"
                                             alt="project poster"
                                           ></img>
                                         );
@@ -650,7 +685,7 @@ class Projects extends React.Component {
                                         return (
                                           <img
                                             src={advanceProjectS2022.imgUrl}
-                                            className="img-fluid programs-poster"
+                                            className="img-fluid projects-poster"
                                             alt="project poster"
                                           ></img>
                                         );
@@ -755,7 +790,7 @@ class Projects extends React.Component {
                                         return (
                                           <img
                                             src={beginnerProject.imgUrl}
-                                            className="img-fluid programs-poster"
+                                            className="img-fluid projects-poster"
                                             alt="project poster"
                                           ></img>
                                         );
@@ -875,7 +910,7 @@ class Projects extends React.Component {
                                         return (
                                           <img
                                             src={advanceProject.imgUrl}
-                                            className="img-fluid programs-poster"
+                                            className="img-fluid projects-poster"
                                             alt="project poster"
                                           ></img>
                                         );

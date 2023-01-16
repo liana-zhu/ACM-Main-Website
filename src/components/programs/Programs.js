@@ -96,7 +96,7 @@ class Programs extends React.Component {
 
         <div className="disclaimer-body">
           <h3 className="disclaimer_header">
-            <b>Disclaimers</b>
+            <b>Disclaimers...</b>
           </h3>
           <span className="disclaimer">
             <b>
@@ -107,7 +107,7 @@ class Programs extends React.Component {
           <br />
           <span className="disclaimer">
             <b>
-              2. Workshops signups will open (this date) and will close (that
+              2. All Workshop signups will open on (this date) and will close (that
               date).
             </b>
           </span>
@@ -162,7 +162,6 @@ class Programs extends React.Component {
                                     */}
                       <Tab.Content className="programs-tab-content">
                         <Tab.Pane eventKey="S2023mentorship">
-                          <div>
                             <p>
                               <h2>
                                 <span className="highlight-text">
@@ -211,13 +210,13 @@ class Programs extends React.Component {
                                     <b>Interviews</b>
                                   </div>
                                 </div>
-                                <div className="skill-item col-lg-4 col-md-6 col-12">
+                                <div className="skill-item2 col-lg-4 col-md-6 col-12">
                                   <div className="icon-box">
                                     <Mortarboard className="icon" />
                                     <b>Succeeding as an Undergrad</b>
                                   </div>
                                 </div>
-                                <div className="skill-item col-lg-4 col-md-6 col-12">
+                                <div className="skill-item2 col-lg-4 col-md-6 col-12">
                                   <div className="icon-box">
                                     <CashCoin className="icon" />
                                     <b>Financial Management</b>
@@ -244,24 +243,17 @@ class Programs extends React.Component {
                                 )
                               })
                             } */}
-                              {/* this block is commented for now because it's emtpy
-                              <Tab.Content className="programs-tab-content poster">
-                                <Tab.Pane eventKey="menteeRole"></Tab.Pane>
-                              </Tab.Content>
-                              */}
-
-                              {/* Join button is commented for now because PRO-DEV does not have sign ins.
-                              <Button
-                                variant="success"
-                                size="lg"
-                                href="https://docs.google.com/forms/d/e/1FAIpQLSf6apdzV5q2jrsJZCbsfV-SGx2cZimQyU3D60N3AUvHjhW40g/viewform"
-                              >
-                                Join Now!
-                              </Button>
-                              */}
-                              
-                            </div>
-
+                            <Tab.Content className="programs-tab-content poster">
+                              <Tab.Pane eventKey="menteeRole"></Tab.Pane>
+                            </Tab.Content>
+                            <Button
+                              variant="success"
+                              className = "join-button"
+                              size="lg"
+                              href="https://docs.google.com/forms/d/e/1FAIpQLSf6apdzV5q2jrsJZCbsfV-SGx2cZimQyU3D60N3AUvHjhW40g/viewform"
+                            >
+                              Join Now!
+                            </Button>
                             <br />
                           </div>
                         </Tab.Pane>
@@ -363,13 +355,13 @@ class Programs extends React.Component {
                             <Tab.Content className="programs-tab-content poster">
                               <Tab.Pane eventKey="menteeRole"></Tab.Pane>
                             </Tab.Content>
-                            <Button
+                            {/*<Button
                               variant="success"
                               size="lg"
                               href="https://docs.google.com/forms/d/e/1FAIpQLSf6apdzV5q2jrsJZCbsfV-SGx2cZimQyU3D60N3AUvHjhW40g/viewform"
                             >
                               Join Now!
-                            </Button>
+                          </Button>*/}
                             <br />
                           </div>
                         </Tab.Pane>
