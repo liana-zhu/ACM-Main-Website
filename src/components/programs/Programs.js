@@ -210,13 +210,13 @@ class Programs extends React.Component {
                                     <b>Interviews</b>
                                   </div>
                                 </div>
-                                <div className="skill-item2 col-lg-4 col-md-6 col-12">
+                                <div className="skill-item col-lg-4 col-md-6 col-12">
                                   <div className="icon-box">
                                     <Mortarboard className="icon" />
                                     <b>Succeeding as an Undergrad</b>
                                   </div>
                                 </div>
-                                <div className="skill-item2 col-lg-4 col-md-6 col-12">
+                                <div className="skill-item col-lg-4 col-md-6 col-12">
                                   <div className="icon-box">
                                     <CashCoin className="icon" />
                                     <b>Financial Management</b>
@@ -243,6 +243,8 @@ class Programs extends React.Component {
                                 )
                               })
                             } */}
+
+                            {/* Commenting JOIN BUTTON because there's no PRO-DEV sign-ups
                             <Tab.Content className="programs-tab-content poster">
                               <Tab.Pane eventKey="menteeRole"></Tab.Pane>
                             </Tab.Content>
@@ -255,6 +257,8 @@ class Programs extends React.Component {
                               Join Now!
                             </Button>
                             <br />
+                            */}
+                            
                           </div>
                         </Tab.Pane>
                       </Tab.Content>
