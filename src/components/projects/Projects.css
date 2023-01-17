@@ -79,7 +79,7 @@
   margin-top: 10px;
   padding-left: 20px;
   text-align: left;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   margin-bottom: 3em;
   background-color: #141415;
   border-radius: 2rem;
@@ -140,6 +140,7 @@ iframe[src*="youtube"] {
   font-size: 1.75rem;
   font-family: Open Sans;
   text-align: center;
+  margin-bottom: -1em;
 }
 
 .anchor-blue {
