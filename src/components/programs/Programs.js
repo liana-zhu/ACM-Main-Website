@@ -85,7 +85,7 @@ class Programs extends React.Component {
       <div className="programs-body">
         <div className="mentor-title-text">
           <p>Interested in improving?</p>
-          <p>Participate in our PRO-DEV Workshops 2023!</p>
+          <p>Participate in our PRO-DEV Workshops for Spring 2023!</p>
         </div>
         <div className="mentorship-title-card"></div>
 
@@ -169,22 +169,17 @@ class Programs extends React.Component {
                                 </span>
                               </h2>
                               <p className="aboutprogram">
-                                If you feel like lacking professional skills,
-                                then this program is perfect for you! The
-                                Professional Development (PRO-DEV) program
-                                provides a series of workshops that teach
-                                valuable skills and resources that are crucial
-                                as a professional. Additionally, the program helps
-                                increase your opportunity in landing jobs, and improves
-                                your financial status. By applying, you will have the
-                                opportunity to learn important tips from your ACM leaders
-                                that are not taught in your typical classroom, and
-                                to benefit yourself professionally by the time
-                                you graduate. 
+                              If you feel that you are lacking professional skills, then this program is perfect for you! 
+                              The Professional Development (PRO-DEV) program provides a series of workshops that teach
+                              valuable skills and resources that are crucial for a professional. Additionally, the program 
+                              helps you to increase your opportunity in landing jobs and improves your financial status. 
+                              By applying, you will have the opportunity to learn important tips from your ACM Leaders that 
+                              are not taught in the typical classroom environment. Overall, this program will benefit you 
+                              professionally by the time you graduate.
                                 <br />
-                                These workshops is open for{" "}
-                                <u>all ACM members</u> in all different levels
-                                (Freshmen, Sophomore, Junior, Seniors)
+                                These workshops are open for{" "}
+                                <b><u>all ACM members</u></b> in all different levels
+                                (Freshmen, Sophomores, Juniors and Seniors)
                               </p>
 
                               {/* LIST OF WORKSHOPS/EVENTS  */}
@@ -210,13 +205,13 @@ class Programs extends React.Component {
                                     <b>Interviews</b>
                                   </div>
                                 </div>
-                                <div className="skill-item col-lg-4 col-md-6 col-12">
+                                <div className="skill-item2 col-lg-4 col-md-6 col-12">
                                   <div className="icon-box">
                                     <Mortarboard className="icon" />
                                     <b>Succeeding as an Undergrad</b>
                                   </div>
                                 </div>
-                                <div className="skill-item col-lg-4 col-md-6 col-12">
+                                <div className="skill-item2 col-lg-4 col-md-6 col-12">
                                   <div className="icon-box">
                                     <CashCoin className="icon" />
                                     <b>Financial Management</b>

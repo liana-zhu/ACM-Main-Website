@@ -229,8 +229,8 @@ class Projects extends React.Component {
           <br></br>
           <div className="disclaimer">
             <b>
-              3. Project signups open Thursday, August 25, 2022 and will close
-              Sunday, September 4, 2022
+              3. Project signups open Thursday, January 26, 2023 and will close
+              Saturday, February 4, 2023.
             </b>
           </div>
         </div>
@@ -351,29 +351,11 @@ class Projects extends React.Component {
                                     */}
                   <Tab.Pane eventKey="spring2023projects">
                     <Tab.Container defaultActiveKey="F2022beginner">
-                      <Nav className="project-tab-label" variant="pills">
-                        <Nav.Item>
-                          <Nav.Link
-                            className="project-nav-link-tab anchor-white"
-                            eventKey="F2022beginner"
-                          >
-                            Beginner
-                          </Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                          <Nav.Link
-                            className="project-nav-link-tab anchor-white"
-                            eventKey="F2022advanced"
-                          >
-                            Advanced
-                          </Nav.Link>
-                        </Nav.Item>
-                      </Nav>
                       <img
-                                    src={require("./ComingSoon.jpg")}
-                                    className="img-fluid programs-poster"
-                                    alt="project poster"
-                                  ></img>
+                            src={require("./ComingSoon.jpg")}
+                            className="img-fluid coming-soon"
+                            alt="project poster"
+                      ></img>
                   </Tab.Container>
                   </Tab.Pane>
                   <Tab.Pane eventKey="fall2022projects">
