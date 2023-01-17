@@ -90,6 +90,15 @@
     color: rgb(194, 194, 194);   
 }
 
+
+/****************************************************
+// Events section
+*****************************************************/
+.events-section{
+    border: solid #b4abab;
+    border-width: 2px;
+}
+
 @media only screen and (max-width: 1004px){
     .day-header {
         font-size: 1rem;
