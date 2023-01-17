@@ -32,7 +32,7 @@ import flyerS2021 from "./pictures/spring2021-mentorship-flyer.png";
 
 //These are list of semesters that has mentorship programs
 /*Step 1: If there's a new program, insert the new semester year
-  at the very top wtih this format -> ["first", *Season* *Year*]
+  as the first element with this format -> ["first", *Season* *Year*]
   Step 2: Update the following ordinals of older semesters
 */
 const schoolYears = [
@@ -56,6 +56,7 @@ class Programs extends React.Component {
     };
   }
 
+  /*This function updates the text of the dropdown button*/
   changeYear = (sem) => {
     this.setState({ currentSem: sem });
   };
@@ -84,7 +85,7 @@ class Programs extends React.Component {
       <div className="programs-body">
         <div className="mentor-title-text">
           <p>Interested in improving?</p>
-          <p>Participate in our PRO-DEV Workshops!</p>
+          <p>Participate in our PRO-DEV Workshops 2023!</p>
         </div>
         <div className="mentorship-title-card"></div>
 
@@ -96,7 +97,7 @@ class Programs extends React.Component {
 
         <div className="disclaimer-body">
           <h3 className="disclaimer_header">
-            <b>Disclaimers...</b>
+            <b>Disclaimers:</b>
           </h3>
           <span className="disclaimer">
             <b>
@@ -107,8 +108,7 @@ class Programs extends React.Component {
           <br />
           <span className="disclaimer">
             <b>
-              2. All Workshop signups will open on (this date) and will close (that
-              date).
+              2. All workshops has a dedicated date. Keep track of them, so you won't miss each workshop.
             </b>
           </span>
         </div>
@@ -172,15 +172,15 @@ class Programs extends React.Component {
                                 If you feel like lacking professional skills,
                                 then this program is perfect for you! The
                                 Professional Development (PRO-DEV) program
-                                provides a series of workshops that teaches
-                                valuable skills and knowledge that are crucial
-                                as a professional. Such topics include <u>
-                                building a resume, applying for internships,
-                                self-management</u>
-                                , and many more! By applying, you will have the
-                                opportunity to learn from your ACM leaders, and
+                                provides a series of workshops that teach
+                                valuable skills and resources that are crucial
+                                as a professional. Additionally, the program helps
+                                increase your opportunity in landing jobs, and improves
+                                your financial status. By applying, you will have the
+                                opportunity to learn important tips from your ACM leaders
+                                that are not taught in your typical classroom, and
                                 to benefit yourself professionally by the time
-                                you graduate.
+                                you graduate. 
                                 <br />
                                 These workshops is open for{" "}
                                 <u>all ACM members</u> in all different levels
@@ -227,7 +227,7 @@ class Programs extends React.Component {
 
                             <div className="signup-section col-lg-6 col-md-9 col-12">
                               <p className="program-description">
-                                Make sure to keep track of the dedicated dates for each workshop.
+                                Make the most out of it by attending all workshops!
                               </p>
                               {/* use for now to display image */}
                               <img
