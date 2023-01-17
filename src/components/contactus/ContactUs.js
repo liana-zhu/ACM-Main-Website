@@ -139,7 +139,33 @@ class ContactUs extends React.Component {
                   </span>
                 </ContextAwareToggle>
                 <Accordion.Collapse eventKey="4">
-                  <Card.Body className="faq-ans">No</Card.Body>
+                  <Card.Body className="faq-ans">No, you do not need to sign up again,
+                  since this is a yearly membership that counts for both Fall and Spring semester.</Card.Body>
+                </Accordion.Collapse>
+              </Card>
+              <Card className="faq-question">
+                <ContextAwareToggle eventKey="5">
+                 Who can I contact if I have any questions about ACM?
+                  <span>
+                    <CaretDownFill className="down-caret" />
+                  </span>
+                </ContextAwareToggle>
+                <Accordion.Collapse eventKey="5">
+                  <Card.Body className="faq-ans">You could fill out the following form below this
+                  section, from there, an ACM Leader will get back to you ASAP. </Card.Body>
+                </Accordion.Collapse>
+              </Card>
+              <Card className="faq-question">
+                <ContextAwareToggle eventKey="6">
+                 What if after joining ACM I am interested in becoming a leader?
+                  <span>
+                    <CaretDownFill className="down-caret" />
+                  </span>
+                </ContextAwareToggle>
+                <Accordion.Collapse eventKey="6">
+                  <Card.Body className="faq-ans"> After joining ACM, the board sends out forums for ACM members
+                  to fill out on which committee they'd like to join as a leader. To learn more about when the forums
+                  are released, please contact an ACM leader. </Card.Body>
                 </Accordion.Collapse>
               </Card>
             </Accordion>
