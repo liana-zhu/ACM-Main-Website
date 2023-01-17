@@ -108,7 +108,7 @@ class Programs extends React.Component {
           <br />
           <span className="disclaimer">
             <b>
-              2. All workshops has a dedicated date. Keep track of them, so you won't miss each workshop.
+              2. Each workshop has its own dedicated date. Keep track of them, so you won't miss each workshop.
             </b>
           </span>
         </div>
