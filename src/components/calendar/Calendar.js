@@ -7,6 +7,49 @@ import "bootstrap/dist/css/bootstrap.css";
 
 import EventModal from "./EventModal";
 
+const daysOfWeek = [
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+  "Sunday",
+];
+const months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+
+/*This is a simple component that displays
+  the upcoming event
+*/
+function EventContent(props) {
+  let eventTitle = props.event.summary;
+  let date = props.date;
+  let dayString = daysOfWeek[date.getDay()];
+  let monthString = months[date.getMonth()];
+  return (
+    <div>
+      <div>
+        {dayString}, {monthString}, {date.getDate()}, {date.getFullYear()}
+      </div>
+      <div>{eventTitle}</div>
+      <br />
+    </div>
+  );
+}
+
 class Calendar extends React.Component {
   constructor(props) {
     super(props);
@@ -14,7 +57,7 @@ class Calendar extends React.Component {
     this.state = {
       currentDate: new Date(),
       events: {},
-      upcomingEvents:{}
+      upcomingEvents: [],
     };
 
     this.incrementMonth = this.incrementMonth.bind(this);
@@ -84,6 +127,9 @@ class Calendar extends React.Component {
 
         this.setState({
           events: events,
+        });
+        this.setState({
+          upcomingEvents: this.getUpcomingEvents(this.state.currentDate),
         });
       });
   }
@@ -197,23 +243,53 @@ class Calendar extends React.Component {
     return listOfEventModals;
   }
 
+  /*This function adds three upcoming events after current date within 100 days*/
+  getUpcomingEvents(currentDate) {
+    let today = currentDate;
+    let upcomingEvents = [];
+    let events = this.state.events;
+
+    let daysWithin = 100;
+    let dayCount = 0;
+
+    while (upcomingEvents.length < 3 && dayCount < daysWithin) {
+      let nextDay = new Date();
+      nextDay.setDate(today.getDate() + dayCount);
+
+      let yearString = nextDay.getFullYear().toString();
+      let monthString = (nextDay.getMonth() + 1).toString();
+      let dayString = nextDay.getDate().toString();
+
+      if (monthString.length === 1) {
+        monthString = "0" + monthString;
+      }
+      if (dayString.length === 1) {
+        dayString = "0" + dayString;
+      }
+
+      const dateString = yearString + "-" + monthString + "-" + dayString;
+      const eventsInDate = events[dateString];
+
+      if (typeof eventsInDate !== "undefined") {
+        for (let i = 0; i < eventsInDate.length; i++) {
+          let summary = eventsInDate[i].summary;
+          if (summary.indexOf("Week") === -1) {
+            upcomingEvents.push(
+              <EventContent event={eventsInDate[i]} date={nextDay} />
+            );
+          }
+        }
+      }
+      dayCount++;
+    }
+    return upcomingEvents;
+  }
+
   render() {
     let calendar = [];
+    let upcomingEvents = this.state.upcomingEvents;
+    console.log(upcomingEvents);
 
-    const months = [
-      "January",
-      "February",
-      "March",
-      "April",
-      "May",
-      "June",
-      "July",
-      "August",
-      "September",
-      "October",
-      "November",
-      "December",
-    ];
     let monthIndex = this.state.currentDate.getMonth();
 
     // Full Date (Fri Sep 13 2019 16:52:45 GMT-0700 (Pacific Daylight Time))
@@ -334,11 +410,9 @@ class Calendar extends React.Component {
           </Col>
 
           {/*UPCOMING EVENTS*/}
-          <Col lg={3}className="events-container">
+          <Col lg={3} className="events-container">
             <h3>Upcoming Events</h3>
-            <div className="events-section">
-
-            </div>
+            <div className="events-section">{upcomingEvents}</div>
           </Col>
         </Row>
       </Container>
