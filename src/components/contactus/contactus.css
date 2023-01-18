@@ -21,7 +21,7 @@
   padding-bottom: 10px;
   padding-right: 1em;
   padding-left: 1em;
-  background-color: #1c1c1e;
+  background-color: #32617b;
   border-radius: 1em;
   margin: 0.5em;
   text-align: left;
@@ -29,7 +29,7 @@
 .txtb label {
   display: block;
   text-align: left;
-  color: #333;
+  color: white;
   text-transform: uppercase;
   font-size: 14px;
 }
@@ -38,57 +38,84 @@
 .txtb textarea {
   width: 100%;
   border: none;
-  background: none;
+  background-color: #32617b;
   outline: none;
   font-size: 18px;
   margin-top: 6px;
+  color: rgb(223, 221, 221);
 }
 
 #btn-form {
   display: block;
-  background: #2898cc;
+  background: #6f613a;
   padding: 15px 0;
   color: white;
   text-transform: uppercase;
   cursor: pointer;
   margin: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 2em;
+  margin-bottom: 3em;
   width: 81%;
+  border: none;
 }
 
 .contact-us-page {
-  background-color: black;
+  background-color: #131d29;
+}
+
+.contact-us-block {
+  width: 90%;
+  font-weight: bold;
+  color: white;
+  /* padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 6%;
+  padding-left: 6%; */
 }
 
 .faq-block {
-  width: auto;
+  width: 90%;
   height: auto;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-right: 10%;
-  padding-left: 10%;
+  padding-right: 6%;
+  padding-left: 6%;
+  background-color: #131d29;
+}
+
+.contact-label {
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 1px;
 }
 
 .contact-us-card {
   width: auto;
   height: auto;
-  /* padding: 5px 150px 5px 150px; */
+  /*padding: 5px 150px 5px 150px; */
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-right: 10%;
-  padding-left: 10%;
+  padding-right: 6%;
+  padding-left: 6%;
   border: none;
+  font-weight: normal;
 }
 
+.faq-question {
+  margin: 1em;
+  /* padding: 3em; */
+}
 /* .contact-us-block {
   margin-top: 10px;
   margin-bottom: 10px;
   background-color: black;
 } */
 
+.txtb:focus {
+  background-color: #026e9f;
+}
 .faq-ans {
-  background-color: #2898cc;
+  background-color: #026e9f;
 }
 
 .label {

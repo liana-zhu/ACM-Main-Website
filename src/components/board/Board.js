@@ -79,6 +79,7 @@ class Board extends React.Component {
                             ></img>
                           </div>
                           <h2 className="leader-info">Nshan Kazaryan</h2>
+                          <h2 className="leader-info">(November 2022)</h2>
                         </div>
                       </Tab.Container>
                       <div className="row">
@@ -336,14 +337,14 @@ class Board extends React.Component {
                       <div className="all-row-leaders">
                         <div className="row-leaders centered-leader">
                           <BoardLeaders
-                            photo={IMAGES.Weronika2021}
+                            photo={IMAGES.ACMLogo}
                             firstName="Weronika"
                             lastName="Cwir"
                             year="2022"
                             position="Chapter Advisor"
                           />
                           <BoardLeaders
-                            photo={IMAGES.Vacant}
+                            photo={IMAGES.ACMLogo}
                             firstName="Richard"
                             lastName="Cross"
                             year="2022"
