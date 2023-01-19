@@ -223,6 +223,22 @@ iframe[src*="youtube"] {
 }
 
 @media only screen and (max-width: 600px) {
+  .project-card {
+    margin-left: -15px;
+    text-align: left;
+    color: white;
+    padding-left: 20px;
+    padding-top: 30px;
+  }
+
+  .project-tab-content {
+    width: 100vw;
+    background-image: linear-gradient(#333030, #141415);
+    margin-top: -10px;
+    border-radius: 3rem;
+    padding-top: 15px;
+  }
+  
   .disclaimer-body {
     padding-right: 5px;
   }
