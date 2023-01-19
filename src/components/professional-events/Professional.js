@@ -78,9 +78,9 @@ class Professional extends React.Component {
                         src={upcomingEvents.imgUrl}
                         alt="Upcoming event"
                       />
-                      <p>Sign up starts: {upcomingEvents.signUpStart}</p>
+                      {/* <p>Sign up starts: {upcomingEvents.signUpStart}</p>
                       <p>Sign up Deadline: {upcomingEvents.deadline}</p>
-                      <Button href={upcomingEvents.link}>RSVP</Button>
+                      <Button href={upcomingEvents.link}>RSVP</Button> */}
                     </center>
                   </Card>
                 );
