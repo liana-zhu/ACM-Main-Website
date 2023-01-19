@@ -34,8 +34,12 @@
   color: #029cd7;
 }
 
+.semester-bar {
+  margin-bottom: 10px;
+}
+
 .project-card {
-  margin: auto;
+  margin-left: 175px;
   text-align: left;
   color: white;
   padding-left: 20px;
@@ -53,7 +57,11 @@
 }
 
 .project-tab-content {
-  width: 70vw;
+  width: 75vw;
+  background-image: linear-gradient(#333030, #141415);
+  margin-top: -10px;
+  border-radius: 3rem;
+  padding-top: 15px;
 }
 
 .project-images {
@@ -79,7 +87,7 @@
   margin-top: 10px;
   padding-left: 20px;
   text-align: left;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   margin-bottom: 3em;
   background-color: #141415;
   border-radius: 2rem;
@@ -140,6 +148,7 @@ iframe[src*="youtube"] {
   font-size: 1.75rem;
   font-family: Open Sans;
   text-align: center;
+  margin-bottom: -1em;
 }
 
 .anchor-blue {

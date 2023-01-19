@@ -2,11 +2,25 @@ import React from "react";
 import firebase from "../professional-events/firebaseConfig.js";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import { Row, Col, Tab, Nav, Button, Container } from "react-bootstrap";
+import { Row, Col, Tab, Nav, Button, Container, Dropdown, DropdownButton} from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 import "./Projects.css";
 import LegacyProject from "./LegacyProject";
 import NewProject from "./NewProject";
+
+
+const semesterYears = [
+ ["spring2023projects", "Spring 2023"],
+ ["fall2022projects", "Fall 2022"],
+ ["spring2022projects", "Spring 2022"],
+ ["fall2021projects", "Fall 2021"],
+ ["spring2021projects", "Spring 2021"],
+ ["fall2020projects", "Fall 2020"],
+ ["spring2020projects", "Spring 2020"],
+ ["fall2019projects", "Fall 2019"],
+ ["spring2019projects", "Spring 2019"],
+ ["fall2018projects", "Fall 2018"]
+];
 
 class Projects extends React.Component {
   state = {
@@ -16,7 +30,16 @@ class Projects extends React.Component {
     advanceProjectS2022: null,
     beginnerProjectF2022: null,
     advanceProjectF2022: null,
+    currentYear: semesterYears[0][1],
   };
+
+    /*This function updates the text of the dropdown button*/
+    changeYear = (sem) => {
+      this.setState({ currentYear: sem });
+    };
+    state = {
+      currentYear: semesterYears[0][1]
+    };
 
   componentDidMount() {
     firebase
@@ -229,8 +252,8 @@ class Projects extends React.Component {
           <br></br>
           <div className="disclaimer">
             <b>
-              3. Project signups open Thursday, August 25, 2022 and will close
-              Sunday, September 4, 2022
+              3. Project signups open Thursday, January 26, 2023 and will close
+              Saturday, February 4, 2023.
             </b>
           </div>
         </div>
@@ -252,95 +275,30 @@ class Projects extends React.Component {
         <div className="card project-card">
           <Tab.Container
             id="left-tabs-example"
-            defaultActiveKey="fall2022projects"
+            defaultActiveKey="spring2023projects"
           >
             <Row>
-              <Col sm={2}>
-                <Nav variant="pills" className="flex-column">
-                <Nav.Item>
-                    <Nav.Link
-                      className="project-nav-link anchor-white"
-                      eventKey="spring2023projects"
-                    >
-                      Spring 2023
-                    </Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                    <Nav.Link
-                      className="project-nav-link anchor-white"
-                      eventKey="fall2022projects"
-                    >
-                      Fall 2022
-                    </Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                    <Nav.Link
-                      className="project-nav-link anchor-white"
-                      eventKey="spring2022projects"
-                    >
-                      Spring 2022
-                    </Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                    <Nav.Link
-                      className="project-nav-link anchor-white"
-                      eventKey="fall2021projects"
-                    >
-                      Fall 2021
-                    </Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                    <Nav.Link
-                      className="project-nav-link anchor-white"
-                      eventKey="spring2021projects"
-                    >
-                      Spring 2021
-                    </Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                    <Nav.Link
-                      className="project-nav-link anchor-white"
-                      eventKey="fall2020projects"
-                    >
-                      Fall 2020
-                    </Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                    <Nav.Link
-                      className="project-nav-link anchor-white"
-                      eventKey="spring2020projects"
-                    >
-                      Spring 2020
-                    </Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                    <Nav.Link
-                      className="project-nav-link anchor-white"
-                      eventKey="fall2019projects"
-                    >
-                      Fall 2019
-                    </Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                    <Nav.Link
-                      className="project-nav-link anchor-white"
-                      eventKey="spring2019projects"
-                    >
-                      Spring 2019
-                    </Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                    <Nav.Link
-                      className="project-nav-link anchor-white"
-                      eventKey="fall2018projects"
-                    >
-                      Fall 2018
-                    </Nav.Link>
-                  </Nav.Item>
-                </Nav>
-              </Col>
               <Col sm={10}>
                 <Tab.Content className="project-tab-content">
+                <Col sm={2}>
+                  <div class = "semester-bar">
+                  <DropdownButton
+                    title={this.state.currentYear}
+                    id="dropdown-button"
+                    menuVariant="dark"
+                    className="ms-2"
+                  >
+                    {semesterYears.map((year) => (
+                      <Dropdown.Item
+                        eventKey={year[0]}
+                        onClick={(e) => this.changeYear(e.target.textContent)}
+                        className="item-dropdown"
+                      >
+                      {year[1]}
+                    </Dropdown.Item>
+                    ))}
+                  </DropdownButton></div>
+                </Col>
                   {/*
                                     New projects go under this block of comment
                                     Steps:
@@ -350,30 +308,12 @@ class Projects extends React.Component {
                                     4. Remember to update dates in the disclaimer above.
                                     */}
                   <Tab.Pane eventKey="spring2023projects">
-                    <Tab.Container defaultActiveKey="F2022beginner">
-                      <Nav className="project-tab-label" variant="pills">
-                        <Nav.Item>
-                          <Nav.Link
-                            className="project-nav-link-tab anchor-white"
-                            eventKey="F2022beginner"
-                          >
-                            Beginner
-                          </Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                          <Nav.Link
-                            className="project-nav-link-tab anchor-white"
-                            eventKey="F2022advanced"
-                          >
-                            Advanced
-                          </Nav.Link>
-                        </Nav.Item>
-                      </Nav>
+                    <Tab.Container defaultActiveKey="S2023beginner">
                       <img
-                                    src={require("./ComingSoon.jpg")}
-                                    className="img-fluid programs-poster"
-                                    alt="project poster"
-                                  ></img>
+                          src={require("./ComingSoon.jpg")}
+                          className="img-fluid projects-poster"
+                          alt="project flyer"
+                      ></img>
                   </Tab.Container>
                   </Tab.Pane>
                   <Tab.Pane eventKey="fall2022projects">
@@ -435,9 +375,6 @@ class Projects extends React.Component {
                                       if you're interested!{" "}
                                     </p>
                                   </b>{" "}
-                                  <br></br>
-                                  {buttonBFall2022}
-                                  <br></br>
                                   <br></br>
                                   <h2>
                                     ❖{" "}
@@ -519,10 +456,6 @@ class Projects extends React.Component {
                                       if you're interested!
                                     </p>
                                   </b>{" "}
-                                  <br></br>
-                                  <br></br>
-                                  {buttonAFall2022}
-                                  <br></br>
                                   <br></br>
                                   <h2>
                                     ❖{" "}

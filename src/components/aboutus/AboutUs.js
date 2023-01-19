@@ -111,24 +111,17 @@ class AboutUs extends React.Component {
 								</div>
 							})}
 						</Carousel> */}
-          </div>
-        </Jumbotron>
-        <div className="bottom-section">
-          <div id="about-us-info">
-            <Accordion>
-              <Card>
-                <Accordion.Toggle
-                  className="accordian-container"
-                  as={Card.Header}
-                  eventKey="0"
-                >
-                  <div className="accordian-header-container">
-                    <h1 className="accordian-header">
-                      {" "}
-                      Who are we? <CaretDownFill className="down-caret" />
-                    </h1>
-                  </div>
-                </Accordion.Toggle>
+					</div>
+				</Jumbotron>
+				<div className="bottom-section">
+					<div id="about-us-info">
+						<Accordion>
+							<Card>
+								<Accordion.Toggle className="accordian-container" as={Card.Header} eventKey="0">
+									<div className="accordian-header-container">
+										<h1 className="accordian-header"> Who are we? <CaretDownFill className="down-caret"/></h1>
+									</div>
+								</Accordion.Toggle>
 
                 <Accordion.Collapse eventKey="0">
                   <Card.Body>

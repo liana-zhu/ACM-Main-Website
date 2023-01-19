@@ -1,27 +1,4 @@
 
-#gold-rectangle{
-    background-color: #c8a634;
-    width: 8em;
-    height: 20em;
-}
-
-#silver-rectangle{
-    background-color: #b6b6b6;
-    width: 8em;
-    height: 10em;
-    margin: 10em 0 0 0;
-    padding: 0 -10em 0 0;
-}
-
-#bronze-rectangle{
-    background-color: #987331;
-    width: 8em;
-    height: 4em;
-    margin: 16em 0 0 0;
-}
-
-
-
 .sponsors-card{
     height: 80vh;
     background: 
@@ -59,85 +36,200 @@
   
   .jumbotron {
       color: white;
-      padding-left: 3rem;
+      padding-left: -3rem;
       margin-bottom: 0 !important;
       background-color: #1F1F1F !important;
   }
-  
-  .content-box {
-      margin-top: 20px;
-      margin-bottom: 60px;
-      padding-right: 100px;
-      padding-left: 40px;
+ 
+
+  .sponsors-header{
+    padding:0;
+    font-size: 40px;
+    text-align: center;
+    color: rgb(255, 255, 255);
   }
 
-  .sponsors-body{
-      background-color: #161616;
-      text-align: left;
+  .sponsors-subheader{
+    margin-top: -20px;
+    font-size: 25px;
+    text-align: center;
+    color: #01a3fe;
   }
-  
-  .sponsors-background{
+
+  .podium-tier{
+      padding: 30px 22vw 65px 22vw;
       text-align: center;
-      font-size: 3rem;
-      color: #ffffff;
-      width: 90%;
-      margin: auto;
-      background-color: black;
-      border-radius: .2rem;
+      margin-left:-4em;
+
+  }
+
+  #gold-rectangle{
+      background-color: #b6a15e;
+      width: 8vw;
+      min-width:62px;
+      height: 380px;
+  }
+
+  #silver-rectangle{
+      background-color: #a5a5a5;
+      width: 8vw;
+      min-width:62px;
+      height: 190px;
+      margin: 190px 0 0 -1.91em;
+  }
+
+  #bronze-rectangle{
+      background-color: #b79153;
+      width: 8vw;
+      min-width:62px;
+      height: 95px;
+      margin: 285px 0 0 -1.94em;
+  }
+
+  .benefit-group{
+    min-width: 186px;
+    list-style-type: none;
+    border-radius:1em;
+    padding:0;
   }
   
-  .sponsors-header{
-      /* text-align: center;
-      color: white;
-      margin: auto;
-      /* margin-top: -5%;
-      margin-bottom: 5%; */
-       padding-bottom: 3rem;
-      /*margin-top: -1%;  */
-      font-size: 50px;
+  .benefit-group-item{
       text-align: center;
-      color: rgb(255, 255, 255);
-      /* padding-top: 10px; */
+      font-size: 15px;
+      background-color: #494949;
+      border-color: #1F1F1F;
+      border: 2.5px solid #1F1F1F;
+      padding: 10px 0;
   }
-  
-  .sponsors-header-text{
-      font-size: 45px;
-      padding: 8px;
-      background-color: black;
+
+  .podium-body{
+    margin: auto;
+    justify-content: center;
   }
-  
-  .gold-sponsor-color{
-      color: #D9DB7C;
-      text-align: left;
-      font-size: 35px;
+
+  .bottom-section{
+    background-color: #282a2e;
+    margin: 0 -50px -80px -50px;
+    padding: 40px 0 80px 0;
   }
-  
-  .silver-sponsor-color{
-      color: #AFBFC8;
-      text-align: left;
-      font-size: 35px;
+
+  .file-header{
+    padding-bottom: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(255, 255, 255);
   }
-  
-  .bronze-sponsor-color{
-      color: #AD7A2C;
-      text-align: left;
-      font-size: 35px;
+
+  .file-container{
+   overflow: hidden;
+   width: 100%;
+   text-align: center;
   }
-  
-  .benefit{
-      text-align: left;
-      font-size: 25px;
+
+  .sponsor-file{
+    width: 720px;
+    height: 960px;
   }
-  
-  .text-info{
-      color: white !important;
-      text-align: center;
+
+  @media only screen and (max-width: 767px) {
+    .podium-tier{
+        padding: 0 10vw;
+    }
+
+    #gold-rectangle{    
+        width: 13vw;
+    }
+    
+    #silver-rectangle{
+        width: 13vw;
+        margin-left:-1.94em;
+    }
+    
+    #bronze-rectangle{
+        width: 13vw;
+        margin-left:-1.9em;
+    }
+    
   }
-  
-  .message-text{
-      font-size: 30px;
-      color: #01a4ff;
-      text-align: center;
-      /* padding-bottom: -vh; */
-      padding-top: 12px;
+
+  @media only screen and (max-width: 963px) {
+     
+    #gold-rectangle{    
+        height: 402.5px;
+    }
+    
+    #silver-rectangle{
+        height: 190px;
+        margin-top: 212.5px;
+    }
+    
+    #bronze-rectangle{
+        height: 95px;
+        margin-top: 307.5px;
+    }
+  }
+
+  @media only screen and (max-width: 575.5px) {
+    .podium-tier{
+        padding: 0 6.3vw;
+    }
+  }
+
+  @media only screen and (max-width: 468px) {
+     
+    #gold-rectangle{    
+        height: 425px;
+    }
+    
+    #silver-rectangle{
+        height: 212.5px;
+        margin-top: 212.5px;
+    }
+    
+    #bronze-rectangle{
+        height: 117.5px;
+        margin-top: 307.5px;
+    }
+  }
+
+  @media only screen and (max-width: 439px) {
+     
+    #gold-rectangle{    
+        height: 447.5px;
+    }
+    
+    #silver-rectangle{
+        height: 235px;
+        margin-top: 212.5px;
+    }
+    
+    #bronze-rectangle{
+        height: 117.5px;
+        margin-top: 330px;
+    }
+  }
+
+  @media only screen and (max-width: 436px) {
+     
+    #gold-rectangle{    
+        height: 470px;
+    }
+    
+    #silver-rectangle{
+        height: 235px;
+        margin-top: 235px;
+    }
+    
+    #bronze-rectangle{
+        height: 117.5px;
+        margin-top: 352.5px;
+    }
+
+    .podium-row{
+        justify-content: left;
+    }
+
+    .podium-tier{
+        padding: 0 30vw;
+    }
   }
