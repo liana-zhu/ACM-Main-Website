@@ -31,13 +31,21 @@ const months = [
   "December",
 ];
 
-/*This is a simple component that displays
-  the upcoming event
-*/
+/***********************************************************
+ *                EventContent Component
+ * Description: This sub-component displays the date and its
+ * event title. This is displayed at the "Upcoming Events" section
+ * besides the calendar.
+ *
+ * Parameters: props
+ * - it contains the event object
+ *
+ * Returns: a div block containing the date and the event title
+ ***********************************************************/
 function EventContent(props) {
   let eventTitle = props.event.summary;
   let date = props.date;
-  let dayString = daysOfWeek[date.getDay()];
+  let dayString = daysOfWeek[date.getDay()-1];
   let monthString = months[date.getMonth()];
   return (
     <div>
@@ -243,23 +251,40 @@ class Calendar extends React.Component {
     return listOfEventModals;
   }
 
-  /*This function adds three upcoming events after current date within 100 days*/
+  /***********************************************************
+   *          function getUpcomingEvents(currentDate)
+   * Description: This function collects three events that are
+   * closest from the current date. Events are accessed from this
+   * component's "events" state. The function finds events in the
+   * next 100 days
+   *
+   * Parameters: currentDate
+   * - it contains the today's date
+   *
+   * Returns: an "upcomingEvents" array containing three events
+   ***********************************************************/
   getUpcomingEvents(currentDate) {
+    //access current date values
     let today = currentDate;
-    let upcomingEvents = [];
-    let events = this.state.events;
+    let todate = today.getDate();
+    let todayMonth = today.getMonth();
+    let todayYear = today.getFullYear();
+    let upcomingEvents = []; //initialize empty array
+    let events = this.state.events; //access all events
 
+    //how many days after today?
     let daysWithin = 100;
-    let dayCount = 0;
 
+    let dayCount = 0; //while loop counter
     while (upcomingEvents.length < 3 && dayCount < daysWithin) {
-      let nextDay = new Date();
-      nextDay.setDate(today.getDate() + dayCount);
+      let nextDay = new Date(todayYear, todayMonth, todate);
+      nextDay.setDate(todate + dayCount); //getting the dates after today
+      
 
+      //converting int to string date values
       let yearString = nextDay.getFullYear().toString();
       let monthString = (nextDay.getMonth() + 1).toString();
       let dayString = nextDay.getDate().toString();
-
       if (monthString.length === 1) {
         monthString = "0" + monthString;
       }
@@ -267,13 +292,19 @@ class Calendar extends React.Component {
         dayString = "0" + dayString;
       }
 
+      /*this format {2XXX-XX-XX} is used for accessing
+      an event based on given date format*/
       const dateString = yearString + "-" + monthString + "-" + dayString;
       const eventsInDate = events[dateString];
 
+      //only execute this block if event in given date exists
       if (typeof eventsInDate !== "undefined") {
         for (let i = 0; i < eventsInDate.length; i++) {
           let summary = eventsInDate[i].summary;
-          if (summary.indexOf("Week") === -1) {
+
+          //exclude unimportant events
+          if ((summary.indexOf("Week") === -1) && (summary.indexOf("Spring") === -1)) {
+            //adding the upcoming event to a sub-component
             upcomingEvents.push(
               <EventContent event={eventsInDate[i]} date={nextDay} />
             );
