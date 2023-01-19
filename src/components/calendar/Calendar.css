@@ -1,5 +1,5 @@
 .calendar-container {
-    background-color: black;
+    background-color: black; 
 }
 
 .row-0{
@@ -97,7 +97,27 @@
 .events-section{
     border: solid #b4abab;
     border-width: 2px;
+    margin: 0 20px 0;
+    text-align: center;
+    font-size: larger;
 }
+.events-container{
+    padding-top: 10px;
+}
+.events-container h3{
+    text-align: center;
+}
+.event1-block{
+    margin: 1em;
+}
+.event2-block{
+    margin: 1em;
+    padding-top: 10px;
+    border-top: solid 2px;
+}
+/****************************************************
+// End of events section
+*****************************************************/
 
 @media only screen and (max-width: 1004px){
     .day-header {

@@ -1,10 +1,10 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { DiamondFill } from "react-bootstrap-icons";
 import "./Calendar.css";
 import axios from "axios";
 import config from "../../config";
 import "bootstrap/dist/css/bootstrap.css";
-
 import EventModal from "./EventModal";
 
 const daysOfWeek = [
@@ -45,17 +45,28 @@ const months = [
 function EventContent(props) {
   let eventTitle = props.event.summary;
   let date = props.date;
-  let dayString = daysOfWeek[date.getDay()-1];
+  let dayString = daysOfWeek[date.getDay() - 1];
   let monthString = months[date.getMonth()];
-  return (
-    <div>
-      <div>
-        {dayString}, {monthString}, {date.getDate()}, {date.getFullYear()}
+
+  if (props.id === 0) {
+    return (
+      <div className="event1-block">
+        <div className="event-date">
+          {dayString}, {monthString}, {date.getDate()}, {date.getFullYear()}
+        </div>
+        <div className="event-title">{eventTitle}</div>
       </div>
-      <div>{eventTitle}</div>
-      <br />
-    </div>
-  );
+    );
+  } else {
+    return (
+      <div className="event2-block">
+        <div className="event-date">
+          {dayString}, {monthString}, {date.getDate()}, {date.getFullYear()}
+        </div>
+        <div className="event-title">{eventTitle}</div>
+      </div>
+    );
+  }
 }
 
 class Calendar extends React.Component {
@@ -279,7 +290,6 @@ class Calendar extends React.Component {
     while (upcomingEvents.length < 3 && dayCount < daysWithin) {
       let nextDay = new Date(todayYear, todayMonth, todate);
       nextDay.setDate(todate + dayCount); //getting the dates after today
-      
 
       //converting int to string date values
       let yearString = nextDay.getFullYear().toString();
@@ -303,10 +313,14 @@ class Calendar extends React.Component {
           let summary = eventsInDate[i].summary;
 
           //exclude unimportant events
-          if ((summary.indexOf("Week") === -1) && (summary.indexOf("Spring") === -1)) {
+          if (
+            summary.indexOf("Week") === -1 &&
+            summary.indexOf("Spring") === -1
+          ) {
+            const index = upcomingEvents.length;
             //adding the upcoming event to a sub-component
             upcomingEvents.push(
-              <EventContent event={eventsInDate[i]} date={nextDay} />
+              <EventContent event={eventsInDate[i]} date={nextDay} id={index} />
             );
           }
         }
@@ -319,7 +333,6 @@ class Calendar extends React.Component {
   render() {
     let calendar = [];
     let upcomingEvents = this.state.upcomingEvents;
-    console.log(upcomingEvents);
 
     let monthIndex = this.state.currentDate.getMonth();
 
