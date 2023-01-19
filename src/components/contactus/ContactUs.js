@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import emailjs from "@emailjs/browser";
 import "./contactus.css";
 import { Card } from "react-bootstrap";
-import { CaretDownFill } from "react-bootstrap-icons";
+import { CaretDownFill, CaretUpFill } from "react-bootstrap-icons";
 
 import { useAccordionToggle } from "react-bootstrap/AccordionToggle";
 import AccordionContext from "react-bootstrap/AccordionContext";
@@ -11,9 +11,10 @@ import Accordion from "react-bootstrap/Accordion";
 /*function so that when one question is clicked while another is open, open question will
 close automatically. Also to change bg to blue when active/clicked
 */
+let currentEventKey;
+let eventKey;
 function ContextAwareToggle({ children, eventKey, callback }) {
-  const currentEventKey = useContext(AccordionContext);
-
+  currentEventKey = useContext(AccordionContext);
   const decoratedOnClick = useAccordionToggle(
     eventKey,
     () => callback && callback(eventKey)
@@ -21,6 +22,10 @@ function ContextAwareToggle({ children, eventKey, callback }) {
 
   const isCurrentEventKey = currentEventKey === eventKey;
 
+  let icon;
+  if (isCurrentEventKey)
+    icon = '<span><CaretUpFill className="up-caret"/></span>';
+  else icon = '<span><CaretDownFill className="down-caret"/></span>';
   return (
     <Accordion.Toggle
       className="h5 d-flex justify-content-between align-items-start"
@@ -86,10 +91,17 @@ class ContactUs extends React.Component {
               <Card className="faq-question">
                 <ContextAwareToggle eventKey="1">
                   Why should I join ACM?
-                  <span>
-                    <CaretDownFill className="down-caret" />
-                  </span>
+                  {currentEventKey === eventKey ? (
+                    <span>
+                      <CaretUpFill className="up-caret" />
+                    </span>
+                  ) : (
+                    <span>
+                      <CaretDownFill className="down-caret" />
+                    </span>
+                  )}
                 </ContextAwareToggle>
+
                 <Accordion.Collapse eventKey="1">
                   <Card.Body className="faq-ans">
                     ACM provides opportunities to connect with other students
@@ -139,33 +151,26 @@ class ContactUs extends React.Component {
                   </span>
                 </ContextAwareToggle>
                 <Accordion.Collapse eventKey="4">
-                  <Card.Body className="faq-ans">No, you do not need to sign up again,
-                  since this is a yearly membership that counts for both Fall and Spring semester.</Card.Body>
+                  <Card.Body className="faq-ans">
+                    No, you do not need to sign up again, since this is a yearly
+                    membership that counts for both fall and spring semester
+                  </Card.Body>
                 </Accordion.Collapse>
               </Card>
               <Card className="faq-question">
                 <ContextAwareToggle eventKey="5">
-                 Who can I contact if I have any questions about ACM?
+                  How do I apply for a leadership role in ACM?
                   <span>
                     <CaretDownFill className="down-caret" />
                   </span>
                 </ContextAwareToggle>
                 <Accordion.Collapse eventKey="5">
-                  <Card.Body className="faq-ans">You could fill out the following form below this
-                  section, from there, an ACM Leader will get back to you ASAP. </Card.Body>
-                </Accordion.Collapse>
-              </Card>
-              <Card className="faq-question">
-                <ContextAwareToggle eventKey="6">
-                 What if after joining ACM I am interested in becoming a leader?
-                  <span>
-                    <CaretDownFill className="down-caret" />
-                  </span>
-                </ContextAwareToggle>
-                <Accordion.Collapse eventKey="6">
-                  <Card.Body className="faq-ans"> After joining ACM, the board sends out forums for ACM members
-                  to fill out on which committee they'd like to join as a leader. To learn more about when the forums
-                  are released, please contact an ACM leader. </Card.Body>
+                  <Card.Body className="faq-ans">
+                    After joining ACM the board sends out forums for ACM members
+                    to fill out on which committee they’d like to join as a
+                    leader. To learn more about when the forums are released,
+                    please contact an ACM leader.
+                  </Card.Body>
                 </Accordion.Collapse>
               </Card>
             </Accordion>
