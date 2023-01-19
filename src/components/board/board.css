@@ -127,6 +127,11 @@ a:hover{
     border-radius: 50%;
     border: solid 2px #1b1d36;
 }
+
+.select-year-text {
+	padding-left: 40px;
+}
+
 .profile-pic {
   display: inline;
   margin: 0 auto;
@@ -239,6 +244,12 @@ h2{
 	}	
 	.h2-leaders{
 		font-size: 5.5vw;
+	}
+	.select-year-tab {
+		margin-left: 85px;
+	}
+	.select-year-text {
+		margin-left: 5px;
 	}
 	.officer-info{
 		display: inline-block;
