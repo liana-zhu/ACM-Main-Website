@@ -10,6 +10,7 @@
     rgba(0, 0, 0, 0.55)),
     url("./pictures/programs-background.jpg");
     background-size: cover !important;
+    background-attachment: fixed;
     align-self: center;
 	filter: blur(1px);
     font-size: 4.4rem;
@@ -275,6 +276,9 @@ iframe[src*=youtube] {
     margin-left: 625px;
 }
 @media only screen and (max-width: 600px) {
+    .skill-item2 {
+        left: 0.2%;
+    }
     .quote-style-1 {
         padding-top: 30px;
     }

@@ -7,6 +7,7 @@
 	  rgba(0, 0, 0, 0.55)),
 	url("../aboutus/images/fall-2019-general-meeting.jpg");
 	background-size: cover !important;
+	background-attachment: fixed;
 	align-self: center;
 	filter: blur(1px);
 	font-size: 4.4rem;

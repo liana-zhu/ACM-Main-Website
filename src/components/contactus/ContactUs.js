@@ -71,8 +71,14 @@ class ContactUs extends React.Component {
     return (
       <div className="contact-us-page">
         <div className="text-white">
+          <div>
+            <div className="header-text">
+              <p>Have a question?</p>
+            </div>
+            <div className="header"></div>
+          </div>
           <div className="faq-block mx-auto m-4 ">
-            <h1 className="text-center border-bottom mb-4 pt-4">FAQ</h1>
+            <h1 className="text-center mb-4 pt-4">FAQ</h1>
             <Accordion alwaysOpen>
               <Card className="faq-question">
                 <ContextAwareToggle eventKey="0">
@@ -179,7 +185,7 @@ class ContactUs extends React.Component {
 
         <div className="contact-us-card">
           <div className="contact-us-block mx-auto ">
-            <h1 className=" text-center border-bottom pt-2 mt-2">CONTACT US</h1>
+            <h1 className=" text-center pt-2 mt-2">CONTACT US</h1>
             <form className="mt-4" onSubmit={sendEmail}>
               <div className="txtb">
                 <label for="name" className="contact-label">
