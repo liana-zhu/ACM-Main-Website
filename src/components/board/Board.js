@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Tab, Nav } from "react-bootstrap";
+import { Row, Col, Tab, Nav, Dropdown, DropdownButton } from "react-bootstrap";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import "bootstrap/dist/css/bootstrap.css";
 import "./board.css";
@@ -7,13 +7,36 @@ import "./board.css";
 import BoardLeaders from "./BoardLeaders";
 import IMAGES from "./BoardImage.js";
 
+const boardYears = [
+  ['first', '2022-2023'],
+  ['second', '2021-2022'],
+  ['third', '2020-2021'],
+  ['fourth', '2019-2020'],
+  ['fifth', '2018-2019']
+];
+
 class Board extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      currentYear: boardYears[0][1],
+    };
+  }
+
+  /*This function updates the text of the dropdown button*/
+  changeYear = (sem) => {
+    this.setState({ currentYear: sem });
+  };
+  state = {
+    currentYear: boardYears[0][1]
+  };
+
   render() {
     return (
       <div>
         <div>
           <div className="board-text">
-            <p>Our Board</p>
+            <p>The team that makes ACM special at CSULA...<br />Meet our board!</p>
           </div>
           <div className="board-card"></div>
         </div>
@@ -21,48 +44,24 @@ class Board extends React.Component {
           <Jumbotron className="row leaders-div">
             <Tab.Container id="left-tabs-example" defaultActiveKey="first">
               <Col sm={3}>
-                <Nav variant="pills" className="flex-column">
-                  <Nav.Item>
-                    <Nav.Link
-                      className="nav-link anchor-white"
-                      eventKey="first"
+              <div class = "select-year-tab">
+              <div class = "select-year-text">Select Year:</div>
+              <DropdownButton
+                  title={this.state.currentYear}
+                  id="dropdown-button"
+                  menuVariant="dark"
+                  className="ms-2"
+                >
+                  {boardYears.map((year) => (
+                    <Dropdown.Item
+                      eventKey={year[0]}
+                      onClick={(e) => this.changeYear(e.target.textContent)}
+                      className="item-dropdown"
                     >
-                      2022-2023
-                    </Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                    <Nav.Link
-                      className="nav-link anchor-white"
-                      eventKey="second"
-                    >
-                      2021-2022
-                    </Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                    <Nav.Link
-                      className="nav-link anchor-white"
-                      eventKey="third"
-                    >
-                      2020-2021
-                    </Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                    <Nav.Link
-                      className="nav-link anchor-white"
-                      eventKey="fourth"
-                    >
-                      2019-2020
-                    </Nav.Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                    <Nav.Link
-                      className="nav-link anchor-white"
-                      eventKey="fifth"
-                    >
-                      2018-2019
-                    </Nav.Link>
-                  </Nav.Item>
-                </Nav>
+                      {year[1]}
+                    </Dropdown.Item>
+                  ))}
+                </DropdownButton></div>
               </Col>
               <Row>
                 <Col sm={9}>
@@ -323,7 +322,7 @@ class Board extends React.Component {
                             position="Innovation Committee"
                           />
                           <BoardLeaders
-                            photo={IMAGES.Vacant}
+                            photo={IMAGES.ACMLogo}
                             firstName="Veronica"
                             lastName="Barragan"
                             year="2022"
