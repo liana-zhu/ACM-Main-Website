@@ -47,6 +47,10 @@
     color: white;
 }
 
+.event-title{
+    padding-top: 10px;
+}
+
 a{
 	color: white !important;
 }

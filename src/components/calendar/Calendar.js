@@ -41,29 +41,19 @@ const months = [
  * - it contains the event object
  *
  * Returns: a div block containing the date and the event title
+ * that are pressable.
  ***********************************************************/
 function EventContent(props) {
-  let eventTitle = props.event.summary;
-  let date = props.date;
-  let dayString = daysOfWeek[date.getDay() - 1];
-  let monthString = months[date.getMonth()];
-
   if (props.id === 0) {
     return (
-      <div className="event1-block">
-        <div className="event-date">
-          {dayString}, {monthString}, {date.getDate()}, {date.getFullYear()}
-        </div>
-        <div className="event-title">{eventTitle}</div>
+      <div className="event-block event1" >
+        <EventModal event={props.event} displayType={"full"}/>
       </div>
     );
   } else {
     return (
-      <div className="event2-block">
-        <div className="event-date">
-          {dayString}, {monthString}, {date.getDate()}, {date.getFullYear()}
-        </div>
-        <div className="event-title">{eventTitle}</div>
+      <div className="event-block event2" >
+        <EventModal event={props.event} displayType={"full"}/>
       </div>
     );
   }
@@ -255,7 +245,7 @@ class Calendar extends React.Component {
     //this loop adds an EventModal component if an event exists
     if (typeof eventsInDate !== "undefined") {
       for (let i = 0; i < eventsInDate.length; i++) {
-        listOfEventModals.push(<EventModal event={eventsInDate[i]} />);
+        listOfEventModals.push(<EventModal event={eventsInDate[i]} displayType={"cell"}/>);
       }
     }
 
@@ -403,18 +393,18 @@ class Calendar extends React.Component {
       <Container>
         <Row>
           {/*CALENDAR TABLE*/}
-          <Col lg={9}>
+          <Col lg={9} md={12}>
             <div className="calendar-container col-12">
               <div className="calendar-header">
                 <button className="prev-button" onClick={this.decrementMonth}>
                   Prev
                 </button>
-                <div className="month-header" style={{ color: "white" }}>
-                  {months[monthIndex]} {this.state.currentDate.getFullYear()}
-                </div>
                 <button className="next-button" onClick={this.incrementMonth}>
                   Next
                 </button>
+                <div className="month-header" style={{ color: "white" }}>
+                  {months[monthIndex]} {this.state.currentDate.getFullYear()}
+                </div>
               </div>
 
               <div className="day-header-container">
@@ -454,7 +444,7 @@ class Calendar extends React.Component {
 
           {/*UPCOMING EVENTS*/}
           <Col lg={3} className="upcoming-container d-flex align-items-stretch">
-            <div>
+            <div className="col-md-12">
               <h3>Upcoming Events:</h3>
               <div className="events-section">{upcomingEvents}</div>
             </div>

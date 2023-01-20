@@ -98,27 +98,39 @@
 // Events section
 *****************************************************/
 .events-section{
+    display: flex;
+    flex-direction: column;
     border: solid #b4abab;
     border-width: 2px;
     margin: 20px 0 20px;
     text-align: center;
     font-size: larger;
     background-color: rgb(36, 37, 48);
+    height: 85%;
 }
 .upcoming-container{
     background-color: #2b2727;
+    max-height: fit-content;
 }
 .events-container h3{
     margin-top: 1em;
     text-align: center;
 }
-.event1-block{
-    margin: 1em;
+.event-block{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    justify-content: space-evenly;
+    padding: 1em;
+    margin: 0 1em 0;
 }
-.event2-block{
-    margin: 1em;
-    padding-top: 10px;
-    border-top: solid 2px;
+.event-block:hover {
+    color: rgb(0, 132, 255);
+    cursor: pointer;
+}
+.event2{
+    border-top: solid #b4abab;
+    border-width: 2px;
 }
 /****************************************************
 // End of events section
