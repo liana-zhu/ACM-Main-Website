@@ -181,13 +181,21 @@ class Sponsors extends React.Component {
 
           <div className="bottom-section mx-auto text-center">
             <div className="file-header">Sponsor Pamphlet</div>
-            <div className="file-container d-flex justify-content-center ">
+            <div className="file-container  ">
+              <div className="mb-4">
+                <a
+                  className="link"
+                  href="https://docs.google.com/document/d/1kZ9jKRQyyFS4OsK56ebnDO4c8diomX3fpukJ5QEaOag/edit?usp=sharing"
+                >
+                  Link to documents
+                </a>
+              </div>
               <iframe
                 className="sponsor-file"
                 src={`${sponsorPamphlet}#view=fitH`}
                 title="Sponsor Packet"
-                height="100%"
-                width="100%"
+                height="90vh"
+                width="76vw"
               ></iframe>
             </div>
           </div>
