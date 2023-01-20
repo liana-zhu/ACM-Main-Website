@@ -260,9 +260,12 @@ h2{
 	.all-row-leaders{
 		margin-bottom: 2rem;
 	}
-	.board{
+	.board {
 		width: auto;
 		height: 12px;
+	}
+	.board-text {
+		margin-top: -120px;
 	}
 	.leader-header{
 		width: 90vw;

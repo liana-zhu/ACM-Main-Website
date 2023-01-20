@@ -119,7 +119,15 @@
   width: 76vw;
   height: 90vh;
 }
+.link {
+  font-size: 1.75rem;
+  color: #01a3fe;
+  text-decoration: underline;
+}
 
+.link:hover {
+  color: white;
+}
 @media only screen and (max-width: 767px) {
   .podium-tier {
     padding: 0 10vw;
