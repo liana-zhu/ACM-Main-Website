@@ -376,7 +376,7 @@ class Calendar extends React.Component {
         } else if (i === weekCount - 1 && lastDayDate.getDay() < j) {
           // This block takes care of the empty cells after last day of month
           // Do NOT increment dayCount
-          rowCells.push(<div className="cell"></div>);
+          rowCells.push(<div className="cell empty"></div>);
         } else if (i > 0) {
           rowCells.push(
             <div
@@ -392,7 +392,7 @@ class Calendar extends React.Component {
         } else {
           // This block takes care of the empty cells before the 1st of month
           // Do NOT increment dayCount
-          rowCells.push(<div className="cell"></div>);
+          rowCells.push(<div className="cell empty"></div>);
         }
       }
       // rowCells will be created inside inner for-loop
@@ -404,18 +404,17 @@ class Calendar extends React.Component {
         <Row>
           {/*CALENDAR TABLE*/}
           <Col lg={9}>
-            <div className="calendar-container">
+            <div className="calendar-container col-12">
               <div className="calendar-header">
                 <button className="prev-button" onClick={this.decrementMonth}>
                   Prev
                 </button>
-                <button className="next-button" onClick={this.incrementMonth}>
-                  Next
-                </button>
-
                 <div className="month-header" style={{ color: "white" }}>
                   {months[monthIndex]} {this.state.currentDate.getFullYear()}
                 </div>
+                <button className="next-button" onClick={this.incrementMonth}>
+                  Next
+                </button>
               </div>
 
               <div className="day-header-container">
@@ -454,9 +453,11 @@ class Calendar extends React.Component {
           </Col>
 
           {/*UPCOMING EVENTS*/}
-          <Col lg={3} className="events-container">
-            <h3>Upcoming Events</h3>
-            <div className="events-section">{upcomingEvents}</div>
+          <Col lg={3} className="upcoming-container d-flex align-items-stretch">
+            <div>
+              <h3>Upcoming Events:</h3>
+              <div className="events-section">{upcomingEvents}</div>
+            </div>
           </Col>
         </Row>
       </Container>

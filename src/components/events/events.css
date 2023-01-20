@@ -77,9 +77,13 @@
     /* height: 100%;
     min-width: 100%; */
 }
+.large-screen-calendar{
+    background-color: #2b2727; 
+}
 
 .small-screen-calendar {
     display: none;
+    background-color: #2b2727; 
 }
 
 @media only screen and (max-width: 1004px){
