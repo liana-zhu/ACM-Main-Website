@@ -2,9 +2,7 @@
 	height: 80vh;
 	width: 100%;
 	background: 
-	linear-gradient(
-	  0deg, rgba(0, 0, 0, 0.55), 
-	  rgba(0, 0, 0, 0.55)),
+	linear-gradient(rgba(0, 0, 0, 0.40), rgb(0, 153, 255, 0.40)),
 	url("../aboutus/images/fall-2019-general-meeting.jpg");
 	background-size: cover !important;
 	background-attachment: fixed;
