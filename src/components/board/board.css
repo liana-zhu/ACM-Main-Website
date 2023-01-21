@@ -2,7 +2,7 @@
 	height: 80vh;
 	width: 100%;
 	background: 
-	linear-gradient(rgba(0, 0, 0, 0.774), rgb(0, 153, 255)),
+	linear-gradient(rgba(0, 0, 0, 0.40), rgb(0, 153, 255, 0.40)),
 	url("../aboutus/images/group.jpg");
 	background-size: cover !important;
 	background-attachment: fixed;
