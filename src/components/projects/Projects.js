@@ -137,6 +137,12 @@ class Projects extends React.Component {
         Join Now!
       </Button>
     );
+    let begProjectImageF2022 = [
+      "./fall2022/java1.jpg",
+      "./fall2022/java2.jpg",
+      "./fall2022/java3.jpg",
+      "./fall2022/java4.jpg",
+    ];
     let begLeaderImageF2022 = [
       "./leaders/BeginnerTeam.jpg",
       "./leaders/Gerardo.jpg",
@@ -159,6 +165,12 @@ class Projects extends React.Component {
         Join Now!
       </Button>
     );
+    let advProjectImageF2022 = [
+      "./fall2022/unity1.jpg",
+      "./fall2022/unity2.jpg",
+      "./fall2022/unity3.jpg",
+      "./fall2022/unity4.jpg",
+    ]
     let advLeaderImageF2022 = [
       "./leaders/AdvanceTeam.jpg",
       "./leaders/Jose.jpg",
@@ -339,6 +351,7 @@ class Projects extends React.Component {
                       <Tab.Content className="project-tab-content">
                         <Tab.Pane eventKey="F2022beginner">
                           <div className="project-description">
+                          <div class = "border-carousel"></div>
                             <Container>
                               <div class="row justify-content-start space">
                                 <div class="col-xs-1 col-sm-7 col-md-5 col-lg-4">
@@ -393,6 +406,30 @@ class Projects extends React.Component {
                               </div>
                             </Container>
                             <br></br>
+                            <div class = "border-carousel"></div>
+                            <h2>
+                              ❖{" "}
+                              <span className="highlight-text">
+                                Images:
+                              </span>
+                            </h2>
+                            <br></br>
+                            <div className="carousel">
+                              <Carousel infiniteLoop>
+                                {begProjectImageF2022.map((value, index) => {
+                                  return (
+                                    <div>
+                                      <img
+                                        className="carousel-leader-image"
+                                        src={require("" + value)}
+                                        alt="project"
+                                      />
+                                    </div>
+                                  );
+                                })}
+                              </Carousel>
+                            </div>
+                            <div class = "border-carousel"></div>
                             <h2>
                               ❖{" "}
                               <span className="highlight-text">
@@ -422,6 +459,7 @@ class Projects extends React.Component {
                         </Tab.Pane>
                         <Tab.Pane eventKey="F2022advanced">
                           <div className="project-description">
+                          <div class = "border-carousel"></div>
                             <Container>
                               <div class="row justify-content-start space">
                                 <div class="col-xs-1 col-sm-7 col-md-5 col-lg-4">
@@ -473,6 +511,30 @@ class Projects extends React.Component {
                               </div>
                             </Container>
                             <br></br>
+                            <div class = "border-carousel"></div>
+                            <h2>
+                              ❖{" "}
+                              <span className="highlight-text">
+                                Images:
+                              </span>
+                            </h2>
+                            <br></br>
+                            <div className="carousel">
+                              <Carousel infiniteLoop>
+                                {advProjectImageF2022.map((value, index) => {
+                                  return (
+                                    <div>
+                                      <img
+                                        className="carousel-leader-image"
+                                        src={require("" + value)}
+                                        alt="project"
+                                      />
+                                    </div>
+                                  );
+                                })}
+                              </Carousel>
+                            </div>
+                            <div class = "border-carousel"></div>
                             <h2>
                               ❖{" "}
                               <span className="highlight-text">

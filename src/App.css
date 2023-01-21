@@ -159,8 +159,14 @@ body:not(.keyboardUser) *:focus {
     color: #ffffff;
 }
 
+.card h2, .card ul{
+    margin-left: 15px;
+}
+
 .card p{
     color: #ffffff;
+    margin-top: 20px;
+    margin-left: 10px;
 }
 
 .card img{
