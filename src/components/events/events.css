@@ -51,7 +51,7 @@
     /* Background-image height and events-text height affect each other when one of them is changed */
     height: 80vh;
     background: 
-    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 153, 255, 0.55)),
+    linear-gradient(rgba(0, 0, 0, 0.774), rgb(0, 153, 255)),
     url("./images/events-background.jpg") no-repeat center !important;
     background-size: cover !important;
     align-self: center;
