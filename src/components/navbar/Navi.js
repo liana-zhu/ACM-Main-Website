@@ -23,7 +23,7 @@ class Navi extends React.Component {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
-            <NavDropdown title="about us" id="collasible-nav-dropdown">
+            <NavDropdown title="about us" className="collasible-nav-dropdown">
               <NavDropdown.Item href="/aboutus">
                 <div className="nav-dropdown-text">about us</div>
               </NavDropdown.Item>
@@ -34,7 +34,7 @@ class Navi extends React.Component {
                 <div className="nav-dropdown-text">faq</div>
               </NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown title="programs" id="collasible-nav-dropdown">
+            <NavDropdown title="programs" className="collasible-nav-dropdown">
               <NavDropdown.Item href="/projects">
                 <div className="nav-dropdown-text">project workshops</div>
               </NavDropdown.Item>
