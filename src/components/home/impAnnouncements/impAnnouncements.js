@@ -50,25 +50,58 @@ class ImpAnnouncements extends Component {
             {this.state.upcomingEvent &&
               this.state.upcomingEvent.map((upcomingEvents) => {
                 return (
-                  <Card style={{ width: "24rem", padding: "10px" }}>
+                  <Card
+                    style={{ width: "24rem", padding: "10px", margin: "4em" }}
+                  >
                     <center>
                       <img
-                        style={{ height: "30rem", padding: "10px" }}
+                        style={{
+                          height: "30rem",
+                          padding: "10px",
+                          // margin: "4em",
+                        }}
                         src={upcomingEvents.imgUrl}
                         alt="Upcoming event"
                       />
-                      <p>Sign up starts: {upcomingEvents.signUpStart}</p>
+                      {/* <p>Sign up starts: {upcomingEvents.signUpStart}</p>
                       <p>Sign up Deadline: {upcomingEvents.deadline}</p>
                       <Button
                         href={upcomingEvents.link}
                         style={{ backgroundColor: "#0A84FF" }}
                       >
                         RSVP
-                      </Button>
+                      </Button> */}
                     </center>
                   </Card>
                 );
               })}
+          </Row>
+          <Row className="justify-content-center title">Featured</Row>
+          <div className="description">
+            <p>This Spring 2023 semester, ACM will be offering scholarships</p>
+          </div>
+          <Row className="justify-content-center event-grid">
+            <Card style={{ width: "24rem", padding: "10px" }}>
+              <center>
+                <img
+                  style={{
+                    height: "30rem",
+                    padding: "10px",
+                    // margin: "4em",
+                  }}
+                  src={require("./images/ACM-Spring2023-Scholarships.png")}
+                  alt="featured"
+                />
+                {/* <p>Sign up starts: {upcomingEvents.signUpStart}</p>
+                      <p>Sign up Deadline: {upcomingEvents.deadline}</p>
+                      <Button
+                        href={upcomingEvents.link}
+                        style={{ backgroundColor: "#0A84FF" }}
+                      >
+                        RSVP
+                      </Button> */}
+              </center>
+            </Card>
           </Row>
         </div>
       </section>
