@@ -21,7 +21,7 @@ class Events extends React.Component {
         const testDeadline = new Date("01/28/2020 23:59:59");
         const isPastDeadline = today.getTime() > testDeadline.getTime();
         if (isPastDeadline) {
-            important_upcoming_events = <div><br></br><br></br></div>;
+            important_upcoming_events = <div></div>;
         }
         else {
             important_upcoming_events =
@@ -111,7 +111,7 @@ class Events extends React.Component {
 
                 {/* Using fluid="sm" keeps calendar centered */}
                 <div className="large-screen-calendar">
-                    <Container fluid="sm">
+                    <Container>
                         <div className="events-calendar-center">
                             <Calendar />
                         </div>
