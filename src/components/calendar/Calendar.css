@@ -111,6 +111,7 @@
 .upcoming-container{
     background-color: #2b2727;
     max-height: fit-content;
+    margin-left: -20px;
 }
 .events-container h3{
     margin-top: 1em;
