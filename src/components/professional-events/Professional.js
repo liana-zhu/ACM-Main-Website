@@ -71,7 +71,9 @@ class Professional extends React.Component {
             {this.state.upcomingEvent &&
               this.state.upcomingEvent.map((upcomingEvents) => {
                 return (
-                  <Card style={{ width: "24rem", padding: "10px" }}>
+                  <Card
+                    style={{ width: "24rem", padding: "10px", margin: "4em" }}
+                  >
                     <center>
                       <img
                         style={{ height: "30rem", padding: "10px" }}
