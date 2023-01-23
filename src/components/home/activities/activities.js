@@ -42,7 +42,7 @@ class Activities extends Component{
               <div className="activity">
                 <div className="bg-image" id="mentorshipImage"></div>
                 <div className="text-box">
-                  <a className="label" href="/programs">Mentorship Program</a>
+                  <a className="label" href="/programs">PRO-DEV</a>
                 </div>
               </div>
               <div className="activity">
