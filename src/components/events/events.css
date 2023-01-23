@@ -51,9 +51,7 @@
     /* Background-image height and events-text height affect each other when one of them is changed */
     height: 80vh;
     background: 
-    linear-gradient(
-    0deg, rgba(0, 0, 0, 0.55), 
-    rgba(0, 0, 0, 0.55)),
+    linear-gradient(rgba(0, 0, 0, 0.40), rgb(0, 153, 255, 0.40)),
     url("./images/events-background.jpg") no-repeat center !important;
     background-size: cover !important;
     align-self: center;
@@ -77,9 +75,13 @@
     /* height: 100%;
     min-width: 100%; */
 }
+.large-screen-calendar{
+    background-color: #2b2727; 
+}
 
 .small-screen-calendar {
     display: none;
+    background-color: #2b2727; 
 }
 
 @media only screen and (max-width: 1004px){

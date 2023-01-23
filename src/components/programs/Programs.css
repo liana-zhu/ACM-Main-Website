@@ -5,9 +5,7 @@
     /* When the height is less than 70vh, the beginner and advanced tabs are not be clickable */
     height: 80vh;
     background: 
-    linear-gradient(
-    rgba(0, 0, 0, 0.55), 
-    rgba(0, 0, 0, 0.55)),
+    linear-gradient(rgba(0, 0, 0, 0.40), rgb(0, 153, 255, 0.40)),
     url("./pictures/programs-background.jpg");
     background-size: cover !important;
     background-attachment: fixed;

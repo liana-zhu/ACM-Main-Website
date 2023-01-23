@@ -181,7 +181,7 @@ class Sponsors extends React.Component {
 
           <div className="bottom-section mx-auto text-center">
             <div className="file-header">Sponsor Pamphlet</div>
-            <div className="file-container  ">
+            {/* <div className="file-container  ">
               <div className="mb-4">
                 <a
                   className="link"
@@ -197,6 +197,9 @@ class Sponsors extends React.Component {
                 height="90vh"
                 width="76vw"
               ></iframe>
+            </div> */}
+            <div>
+              <img src={require("./images/ComingSoon.jpg")} className="pb-5" />
             </div>
           </div>
         </Jumbotron>

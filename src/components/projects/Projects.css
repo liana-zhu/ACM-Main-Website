@@ -1,7 +1,7 @@
 .project-title-card {
   /* When the height is less than 70vh, the beginner and advanced tabs are not be clickable */
   height: 80vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+  background: linear-gradient(rgba(0, 0, 0, 0.40), rgb(0, 153, 255, 0.40)),
     url("./fall2022/BeginnerProjectSession.jpg");
   background-size: cover !important;
   background-attachment: fixed;
@@ -39,10 +39,9 @@
 }
 
 .project-card {
-  margin-left: 175px;
+  margin-left: 135px;
   text-align: left;
   color: white;
-  padding-left: 20px;
   padding-top: 30px;
 }
 
@@ -57,11 +56,15 @@
 }
 
 .project-tab-content {
-  width: 75vw;
-  background-image: linear-gradient(#333030, #141415);
-  margin-top: -10px;
+  width: 100%;
+  background-image: linear-gradient(#333030, #141415) ;
   border-radius: 3rem;
-  padding-top: 15px;
+  padding: 10px;
+}
+
+.border-carousel {
+  border: 4px dashed rgba(0, 157, 255, 0.429);
+  border-width: 3px;
 }
 
 .project-images {
@@ -224,7 +227,7 @@ iframe[src*="youtube"] {
 
 @media only screen and (max-width: 600px) {
   .project-card {
-    margin-left: -15px;
+    margin-left: -25px;
     text-align: left;
     color: white;
     padding-left: 20px;
@@ -232,7 +235,7 @@ iframe[src*="youtube"] {
   }
 
   .project-tab-content {
-    width: 100vw;
+    width: 400px;
     background-image: linear-gradient(#333030, #141415);
     margin-top: -10px;
     border-radius: 3rem;
@@ -252,6 +255,10 @@ iframe[src*="youtube"] {
     min-width: 90vw;
     padding-left: 0px;
     padding-right: 0px;
+  }
+  .project-description {
+    margin-top: 1rem;
+    margin-left: -20px;
   }
   .project-tab-label {
     font-size: 0.85rem;
