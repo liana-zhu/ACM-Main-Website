@@ -302,3 +302,10 @@ iframe[src*=youtube] {
         min-width: 90vw;
     }
   }
+
+  /*Fixing icon misalignment*/
+  @media only screen and (max-width: 991px) {
+    .skill-item2 {
+        left: 0.1%;
+    }
+  }

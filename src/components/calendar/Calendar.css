@@ -161,3 +161,12 @@
         font-weight: 400;
     }
 }
+
+
+@media only screen and (max-width: 990px){
+    .upcoming-container{
+        background-color: #2b2727;
+        max-height: fit-content;
+        margin: 5px;
+    }
+}
