@@ -269,7 +269,8 @@ class Projects extends React.Component {
             </b>
           </div>
         </div>
-
+        
+        
         <div className="videoWrapper">
           <div className="embed-responsive embed-responsive-16by9">
             <iframe
