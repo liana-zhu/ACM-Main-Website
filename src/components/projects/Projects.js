@@ -125,9 +125,85 @@ class Projects extends React.Component {
         this.setState({ advanceProjectF2022: project });
       })
       .catch((error) => console.log(error));
+
+      firebase
+      .firestore()
+      .collection("beginnerProjectS2023")
+      .get()
+      .then((snapshot) => {
+        const project = [];
+        snapshot.forEach((doc) => {
+          const data = doc.data();
+          project.push(data);
+        });
+        this.setState({ beginnerProjectS2023: project });
+      })
+      .catch((error) => console.log(error));
+
+    firebase
+      .firestore()
+      .collection("advanceProjectS2023")
+      .get()
+      .then((snapshot) => {
+        const project = [];
+        snapshot.forEach((doc) => {
+          const data = doc.data();
+          project.push(data);
+        });
+        this.setState({ advanceProjectS2023: project });
+      })
+      .catch((error) => console.log(error));
   }
 
   render() {
+    let buttonBSpring2023 = (
+      <Button
+        variant="success"
+        className="project-submit"
+        size="lg"
+        href="https://forms.gle/xw8zgCeCFaWhRPbV9"
+      >
+        Join Now!
+      </Button>
+    );
+    let begLeaderImageS2023 = [
+      "./leaders/Jonathan.jpg",
+      "./leaders/Fabricio.jpg",
+      "./leaders/Shambhavi.jpg",
+      "./leaders/James.jpg",
+      "./leaders/Muhammad.jpg"
+    ];
+    let begLeaderNameS2023 = [
+      "Jonathan Dang",
+      "Fabricio Reyes",
+      "Shambhavi Bhandari",
+      "James Ybarra",
+      "Muhammad Islam"
+    ];
+    let buttonASpring2023 = (
+      <Button
+        variant="success"
+        className="project-submit"
+        size="lg"
+        href="https://forms.gle/xw8zgCeCFaWhRPbV9"
+      >
+        Join Now!
+      </Button>
+    );
+    let advLeaderImageS2023 = [
+      "./leaders/Isabella.jpg",
+      "./leaders/Charlie.jpg",
+      "./leaders/Steven.jpg",
+      "./leaders/Diane.jpg",
+      "./leaders/Ricardo.jpg",
+    ];
+    let advLeaderNameS2023 = [
+      "Isabella Arreguin",
+      "Charlie Dominguez",
+      "Steven Lopez",
+      "Diane Tablias",
+      "Ricardo Miranda"
+    ];
     let buttonBFall2022 = (
       <Button
         variant="success"
@@ -322,11 +398,197 @@ class Projects extends React.Component {
                                     */}
                   <Tab.Pane eventKey="spring2023projects">
                     <Tab.Container defaultActiveKey="S2023beginner">
-                      <img
-                          src={require("./ComingSoon.jpg")}
-                          className="img-fluid projects-poster"
-                          alt="project flyer"
-                      ></img>
+                    <Nav className="project-tab-label" variant="pills">
+                        <Nav.Item>
+                          <Nav.Link
+                            className="project-nav-link-tab anchor-white"
+                            eventKey="S2023beginner"
+                          >
+                            Beginner
+                          </Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                          <Nav.Link
+                            className="project-nav-link-tab anchor-white"
+                            eventKey="S2023advanced"
+                          >
+                            Advanced
+                          </Nav.Link>
+                        </Nav.Item>
+                      </Nav>
+                      <Tab.Content className="project-tab-content">
+                        <Tab.Pane eventKey="S2023beginner">
+                          <div className="project-description">
+                          <div class = "border-carousel"></div>
+                            <Container>
+                              <div class="row justify-content-start space">
+                                <div class="col-xs-1 col-sm-7 col-md-5 col-lg-4">
+                                  {/* use for now until firebase method is figured out */}
+                                  <img
+                                    src={require("./spring2023/websitebegproject.png")}
+                                    className="img-fluid projects-poster"
+                                    alt="project poster"
+                                  ></img>
+                                  {/* {
+                                                                        this.state.beginnerProjectF2022 &&
+                                                                        this.state.beginnerProjectF2022.map(beginnerProjectF2022 => {
+                                                                            return (
+                                                                                <img src={beginnerProjectF2022.imgUrl} className="img-fluid programs-poster" alt="project poster"></img>
+                                                                            )
+                                                                        })
+                                                                    } */}
+                                </div>
+
+                                <div class="col-xs-4 col-sm-7 col-md-4 col-lg-5">
+                                  <b>
+                                    <p>
+                                      Interested of making your own website portfolio?
+                                      In this workshop series, we will be using HTML and
+                                      CSS to create your very own portfolio, to which it
+                                      could be used with resumes in the workforce!
+                                    </p>{" "}
+                                  </b>
+                                  <b>
+                                    <p>
+                                      Signup deadline is Saturday, February 4,
+                                      2023. Make sure to complete this form ASAP
+                                      if you're interested!{" "}
+                                    </p>
+                                  </b>{" "}
+                                  <br></br>
+                                  {buttonBSpring2023}
+                                  <br></br>
+                                  <br></br>
+                                  <h2>
+                                    ❖{" "}
+                                    <span className="highlight-text">
+                                      What you will learn:
+                                    </span>
+                                  </h2>
+                                  <b>
+                                    <ul>
+                                      <li>HTML</li>
+                                      <li>CSS</li>
+                                    </ul>
+                                  </b>
+                                </div>
+                              </div>
+                            </Container>
+                            <br></br>
+                            <div class = "border-carousel"></div>
+                            <h2>
+                              ❖{" "}
+                              <span className="highlight-text">
+                                Project Leaders:
+                              </span>
+                            </h2>
+                            <br></br>
+                            <div className="carousel">
+                              <Carousel infiniteLoop>
+                                {begLeaderImageS2023.map((value, index) => {
+                                  return (
+                                    <div>
+                                      <img
+                                        className="carousel-leader-image"
+                                        src={require("" + value)}
+                                        alt="leader"
+                                      />
+                                      <p className="legend">
+                                        {begLeaderNameS2023[index]}
+                                      </p>
+                                    </div>
+                                  );
+                                })}
+                              </Carousel>
+                            </div>
+                          </div>
+                        </Tab.Pane>
+                        <Tab.Pane eventKey="S2023advanced">
+                          <div className="project-description">
+                          <div class = "border-carousel"></div>
+                            <Container>
+                              <div class="row justify-content-start space">
+                                <div class="col-xs-1 col-sm-7 col-md-5 col-lg-4">
+                                  {/* use for now until firebase method is figured out */}
+                                  <img
+                                    src={require("./spring2023/minecraftadvproject.png")}
+                                    className="img-fluid projects-poster"
+                                    alt="project poster"
+                                  ></img>
+                                  {/* {
+                                                                        this.state.advanceProjectF2022 &&
+                                                                        this.state.advanceProjectF2022.map(advanceProjectF2022 => {
+                                                                            return (
+                                                                                <img src={advanceProjectF2022.imgUrl} className="img-fluid programs-poster" alt="project poster"></img>
+                                                                            )
+                                                                        })
+                                                                    } */}
+                                </div>
+                                <div class="col-xs-4 col-sm-7 col-md-4 col-lg-5">
+                                  <b>
+                                    <p>
+                                      Interested in game development? In this 
+                                      workshop series, we are using Java and Forge
+                                      to create and implement a mod that will be used
+                                      in Minecraft, one of the most played games in gaming history.
+                                    </p>{" "}
+                                  </b>
+                                  <b>
+                                    <p>
+                                      Signup deadline is Saturday, February 4,
+                                      2023. Make sure to complete this form ASAP
+                                      if you're interested!
+                                    </p>
+                                  </b>{" "}
+                                  <br></br>
+                                  {buttonASpring2023}
+                                  <br></br>
+                                  <br></br>
+                                  <h2>
+                                    ❖{" "}
+                                    <span className="highlight-text">
+                                      What you will learn:
+                                    </span>
+                                  </h2>
+                                  <b>
+                                    <ul>
+                                      <li>Java</li>
+                                      <li>Forge</li>
+                                    </ul>
+                                  </b>
+                                </div>
+                              </div>
+                            </Container>
+                            <br></br>
+                            <div class = "border-carousel"></div>
+                            <h2>
+                              ❖{" "}
+                              <span className="highlight-text">
+                                Project Leaders:
+                              </span>
+                            </h2>
+                            <br></br>
+                            <div className="carousel">
+                              <Carousel infiniteLoop>
+                                {advLeaderImageS2023.map((value, index) => {
+                                  return (
+                                    <div>
+                                      <img
+                                        className="carousel-leader-image"
+                                        src={require("" + value)}
+                                        alt="leader"
+                                      />
+                                      <p className="legend">
+                                        {advLeaderNameS2023[index]}
+                                      </p>
+                                    </div>
+                                  );
+                                })}
+                              </Carousel>
+                            </div>
+                          </div>
+                        </Tab.Pane>
+                      </Tab.Content>
                   </Tab.Container>
                   </Tab.Pane>
                   <Tab.Pane eventKey="fall2022projects">

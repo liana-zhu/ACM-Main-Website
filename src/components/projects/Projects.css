@@ -73,6 +73,10 @@
   margin: 5px;
 }
 
+.project-submit {
+  margin-left: 15px;
+}
+
 .project-poster {
   min-width: 300px;
   max-width: 30vw;
