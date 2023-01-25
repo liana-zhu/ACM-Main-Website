@@ -112,7 +112,8 @@ class Programs extends React.Component {
             </b>
           </span>
         </div>
-
+        {/* Commenting videos for now because there's not yet new ones
+        
         <div className="videoWrapper">
           <div className="embed-responsive embed-responsive-16by9">
             <iframe
@@ -126,6 +127,7 @@ class Programs extends React.Component {
             ></iframe>
           </div>
         </div>
+        */}
         <br></br>
         <div className="card programs-card">
           <Tab.Container id="left-tabs-example" defaultActiveKey="first">
