@@ -33,7 +33,7 @@ class ImpAnnouncements extends Component {
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/GAC_c9xLg5U"
+            src="https://www.youtube.com/embed/6E9kewdhFvU"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
