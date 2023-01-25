@@ -2,7 +2,7 @@ import React from "react";
 import "./professional.css";
 import firebase from "./firebaseConfig.js";
 import { Card, Button, Image } from "react-bootstrap";
-import { CaretLeftFill, CaretRightFill } from "react-bootstrap-icons";
+
 /*
 To install, go to project directory and run this on command line:
 $ npm install react-multi-carousel --save
@@ -17,7 +17,6 @@ class Professional extends React.Component {
   state = {
     semesterEvent: null,
     upcomingEvent: null,
-
     seeMore: false,
   };
 
@@ -67,12 +66,12 @@ class Professional extends React.Component {
 
         <div className="upcoming-events mx-auto mb-5">
           <p className="text-center m-3 events-header">Upcoming Events</p>
-          <div className="d-flex justify-content-center m-2">
+          <div className="d-flex flex-wrap justify-content-center m-2">
             {this.state.upcomingEvent &&
               this.state.upcomingEvent.map((upcomingEvents) => {
                 return (
                   <Card
-                    style={{ width: "24rem", padding: "10px", margin: "4em" }}
+                    style={{ width: "24rem", padding: "10px", margin: "2em" }}
                   >
                     <center>
                       <img
@@ -106,13 +105,21 @@ class Professional extends React.Component {
             {this.state.semesterEvent &&
               this.state.semesterEvent.map((semesterEvents) => {
                 return (
-                  <Card style={{ width: "24rem", padding: "10px" }}>
+                  <Card
+                    style={{ width: "24rem", padding: "10px", margin: "2em" }}
+                    onLoad
+                  >
                     <center>
                       <img
                         style={{ height: "30rem", padding: "10px" }}
                         src={semesterEvents.imgUrl}
                         alt="Current event"
                       />
+                      {semesterEvents.signUpLink != null && (
+                        <Button href={semesterEvents.signUpLink}>
+                          Sign Up
+                        </Button>
+                      )}
                     </center>
                   </Card>
                 );
