@@ -415,11 +415,10 @@ class Calendar extends React.Component {
           {/*CALENDAR TABLE*/}
           <Col lg={9} md={12}>
             <div className="calendar-container col-12">
-              <div className="calendar-header">
-                <button className="prev-button" onClick={this.decrementMonth}>
-                  Prev
-                </button>
-                <div className= "month-headers">
+                <div className = "calendar-header">
+                  <button className="prev-button" onClick={this.decrementMonth}>
+                    Prev
+                  </button>
                   <div className="before-header" style={{ color: "grey" }}>
                     {months[monthIndex - 1]} {this.state.beforeDate.getFullYear()}
                   </div>
@@ -429,12 +428,10 @@ class Calendar extends React.Component {
                   <div className="after-header" style={{ color: "grey" }}>
                     {months[monthIndex + 1]} {this.state.afterDate.getFullYear()}
                   </div>
+                  <button className="next-button" onClick={this.incrementMonth}>
+                    Next
+                  </button>
                 </div>
-                <button className="next-button" onClick={this.incrementMonth}>
-                  Next
-                </button>
-              </div>
-
               <div className="day-header-container">
                 <div className="day-header">
                   <span className="test1">Sunday</span>
