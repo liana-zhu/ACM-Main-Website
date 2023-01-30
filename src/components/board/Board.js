@@ -322,6 +322,15 @@ class Board extends React.Component {
                             position="Innovation Committee"
                           />
                           <BoardLeaders
+                            photo={IMAGES.Sergio2023}
+                            firstName="Sergio"
+                            lastName="Valadez"
+                            year="2023"
+                            position="Innovation Committee"
+                          />
+                        </div>
+                        <div className="row-leaders centered-leader">
+                         <BoardLeaders
                             photo={IMAGES.ACMLogo}
                             firstName="Veronica"
                             lastName="Barragan"
