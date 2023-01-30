@@ -8,11 +8,11 @@ import BoardLeaders from "./BoardLeaders";
 import IMAGES from "./BoardImage.js";
 
 const boardYears = [
-  ['first', '2022-2023'],
-  ['second', '2021-2022'],
-  ['third', '2020-2021'],
-  ['fourth', '2019-2020'],
-  ['fifth', '2018-2019']
+  ["first", "2022-2023"],
+  ["second", "2021-2022"],
+  ["third", "2020-2021"],
+  ["fourth", "2019-2020"],
+  ["fifth", "2018-2019"],
 ];
 
 class Board extends React.Component {
@@ -28,7 +28,7 @@ class Board extends React.Component {
     this.setState({ currentYear: sem });
   };
   state = {
-    currentYear: boardYears[0][1]
+    currentYear: boardYears[0][1],
   };
 
   render() {
@@ -36,7 +36,11 @@ class Board extends React.Component {
       <div>
         <div>
           <div className="board-text">
-            <p>The team that makes ACM special at CSULA...<br />Meet our board!</p>
+            <p>
+              The team that makes ACM special at CSULA...
+              <br />
+              Meet our board!
+            </p>
           </div>
           <div className="board-card"></div>
         </div>
@@ -44,24 +48,25 @@ class Board extends React.Component {
           <Jumbotron className="row leaders-div">
             <Tab.Container id="left-tabs-example" defaultActiveKey="first">
               <Col sm={3}>
-              <div class = "select-year-tab">
-              <div class = "select-year-text">Select Year:</div>
-              <DropdownButton
-                  title={this.state.currentYear}
-                  id="dropdown-button"
-                  menuVariant="dark"
-                  className="ms-2"
-                >
-                  {boardYears.map((year) => (
-                    <Dropdown.Item
-                      eventKey={year[0]}
-                      onClick={(e) => this.changeYear(e.target.textContent)}
-                      className="item-dropdown"
-                    >
-                      {year[1]}
-                    </Dropdown.Item>
-                  ))}
-                </DropdownButton></div>
+                <div class="select-year-tab">
+                  <div class="select-year-text">Select Year:</div>
+                  <DropdownButton
+                    title={this.state.currentYear}
+                    id="dropdown-button"
+                    menuVariant="dark"
+                    className="ms-2"
+                  >
+                    {boardYears.map((year) => (
+                      <Dropdown.Item
+                        eventKey={year[0]}
+                        onClick={(e) => this.changeYear(e.target.textContent)}
+                        className="item-dropdown"
+                      >
+                        {year[1]}
+                      </Dropdown.Item>
+                    ))}
+                  </DropdownButton>
+                </div>
               </Col>
               <Row>
                 <Col sm={9}>
@@ -157,7 +162,7 @@ class Board extends React.Component {
                             year="2022"
                             position="Executive Officer"
                           />
-                         <BoardLeaders
+                          <BoardLeaders
                             photo={IMAGES.Joseph2022}
                             firstName="Joseph"
                             lastName="Acosta"
@@ -166,7 +171,7 @@ class Board extends React.Component {
                           />
                         </div>
                         <div className="row-leaders centered-leader">
-                        <BoardLeaders
+                          <BoardLeaders
                             photo={IMAGES.Keyvan2022}
                             firstName="Keyvan"
                             lastName="Kani"
@@ -212,7 +217,7 @@ class Board extends React.Component {
                           <BoardLeaders
                             photo={IMAGES.Mike2022}
                             firstName="Mike"
-                            lastName="Pacina"
+                            lastName="De Pacina"
                             year="2022"
                             position="Web Committee"
                           />
@@ -330,7 +335,15 @@ class Board extends React.Component {
                           />
                         </div>
                         <div className="row-leaders centered-leader">
-                         <BoardLeaders
+                          <BoardLeaders
+                            photo={IMAGES.Sahis2023}
+                            firstName="Sahis"
+                            lastName="Neupane"
+                            year="2023"
+                            position="Innovation Commitee"
+                          />
+
+                          <BoardLeaders
                             photo={IMAGES.ACMLogo}
                             firstName="Veronica"
                             lastName="Barragan"
