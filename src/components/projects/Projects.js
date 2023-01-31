@@ -221,12 +221,14 @@ class Projects extends React.Component {
     ];
     let begLeaderImageF2022 = [
       "./leaders/BeginnerTeam.jpg",
+      "./leaders/Ashley.jpg",
       "./leaders/Gerardo.jpg",
       "./leaders/Jay.jpg",
       "./leaders/Charlie.jpg",
     ];
     let begLeaderNameF2022 = [
       "Beginners Team",
+      "Ashley Tran",
       "Gerardo Ibarra",
       "Jay Perez",
       "Charlie Dominguez",
@@ -287,8 +289,8 @@ class Projects extends React.Component {
     ];
 
     //let buttonBFall2021 = <Button variant="success" size="lg" href="https://forms.gle/bu8YRaxLFfTDXppN7">Join Now!</Button>
-    let begLeaderImageF2021 = ["./leaders/Omar.jpg", "./leaders/Jorge.jpg"];
-    let begLeaderNameF2021 = ["Omar Eclicerio", "Jorge Mata"];
+    let begLeaderImageF2021 = ["./leaders/Ashley.jpg", "./leaders/Omar.jpg", "./leaders/Jorge.jpg"];
+    let begLeaderNameF2021 = ["Ashley Tran", "Omar Eclicerio", "Jorge Mata"];
 
     //let buttonAFall2021 = <Button variant="success" size="lg" href="https://forms.gle/egU7m8ra9XXh5NJ59">Join Now!</Button>
     let advLeaderImageF2021 = [
@@ -345,8 +347,8 @@ class Projects extends React.Component {
             </b>
           </div>
         </div>
-        
-        
+        {/* Commenting videos for now because there's not yet new ones
+
         <div className="videoWrapper">
           <div className="embed-responsive embed-responsive-16by9">
             <iframe
@@ -360,6 +362,8 @@ class Projects extends React.Component {
             ></iframe>
           </div>
         </div>
+        */}
+        
 
         <div className="card project-card">
           <Tab.Container
