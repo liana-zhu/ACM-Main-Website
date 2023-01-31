@@ -345,8 +345,8 @@ class Projects extends React.Component {
             </b>
           </div>
         </div>
-        
-        
+        {/* Commenting videos for now because there's not yet new ones
+
         <div className="videoWrapper">
           <div className="embed-responsive embed-responsive-16by9">
             <iframe
@@ -360,6 +360,8 @@ class Projects extends React.Component {
             ></iframe>
           </div>
         </div>
+        */}
+        
 
         <div className="card project-card">
           <Tab.Container
