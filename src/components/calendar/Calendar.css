@@ -62,26 +62,24 @@
 .calendar-header {
     display: flex;
     font-weight: 500;
-    padding-bottom: 10px;
-    align-items: center;
+    margin-left: 85px;
 }
 
-.calendar-header button {
+.prev-button, .next-button{
     color:white;
-    background-color: rgb(119, 118, 118);
+    background-color: rgb(7, 89, 184);
     height: 2rem;
     width: 4rem;
-
-    align-self: center;
-    margin-right: 1rem;
 
     border: 1px solid rgb(119, 118, 118);
     border-radius: 4px;
 }
 
-.month-header {
-    font-size: 2rem;
+.month-header, .before-header, .after-header {
+    font-size: 25px;
     font-weight: 400;
+    margin-left: 35px;
+    margin-right: 60px;
 }
 
 .today {
@@ -156,9 +154,17 @@
         display: inline;
     }
 
-    .month-header {
-        font-size: 1rem;
+    .month-header, .before-header, .after-header {
+        font-size: 15px;
         font-weight: 400;
+        margin-right: 5px;
+        margin-left: 20px;
+    }
+
+    .calendar-header {
+        display: flex;
+        font-weight: 500;
+        margin-left: -25px;
     }
 }
 

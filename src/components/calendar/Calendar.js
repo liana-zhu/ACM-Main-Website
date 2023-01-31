@@ -6,6 +6,7 @@ import axios from "axios";
 import config from "../../config";
 import "bootstrap/dist/css/bootstrap.css";
 import EventModal from "./EventModal";
+import { faRubleSign } from "@fortawesome/free-solid-svg-icons";
 
 const daysOfWeek = [
   "Monday",
@@ -65,6 +66,8 @@ class Calendar extends React.Component {
 
     this.state = {
       currentDate: new Date(),
+      beforeDate: new Date(),
+      afterDate: new Date(),
       events: {},
       upcomingEvents: [],
     };
@@ -193,23 +196,40 @@ class Calendar extends React.Component {
 
   incrementMonth() {
     const current = this.state.currentDate;
+    const beforeCurrent = this.state.beforeDate;
+    const afterCurrent = this.state.afterDate;
     const year = current.getFullYear();
+    const beforeYear = beforeCurrent.getFullYear();
+    const afterYear = afterCurrent.getFullYear();
     const month = current.getMonth();
+    const beforeMonth = beforeCurrent.getMonth();
+    const afterMonth = afterCurrent.getMonth();
 
     // If month is December, Javascript's Date object will
     // also update year!
     this.setState({
       currentDate: new Date(year, month + 1, 1),
+      beforeDate: new Date(beforeYear, beforeMonth + 1,  1),
+      afterDate: new Date(afterYear, afterMonth + 1 , 1),
     });
   }
 
   decrementMonth() {
     const current = this.state.currentDate;
+    const beforeCurrent = this.state.beforeDate;
+    const afterCurrent = this.state.afterDate;
     const year = current.getFullYear();
+    const beforeYear = beforeCurrent.getFullYear();
+    const afterYear = afterCurrent.getFullYear();
     const month = current.getMonth();
+    const beforeMonth = beforeCurrent.getMonth();
+    const afterMonth = afterCurrent.getMonth();
+
 
     this.setState({
       currentDate: new Date(year, month - 1, 1),
+      beforeDate: new Date(beforeYear, beforeMonth - 1,  1),
+      afterDate: new Date(afterYear, afterMonth - 1 , 1),
     });
   }
 
@@ -395,18 +415,23 @@ class Calendar extends React.Component {
           {/*CALENDAR TABLE*/}
           <Col lg={9} md={12}>
             <div className="calendar-container col-12">
-              <div className="calendar-header">
-                <button className="prev-button" onClick={this.decrementMonth}>
-                  Prev
-                </button>
-                <button className="next-button" onClick={this.incrementMonth}>
-                  Next
-                </button>
-                <div className="month-header" style={{ color: "white" }}>
-                  {months[monthIndex]} {this.state.currentDate.getFullYear()}
+                <div className = "calendar-header">
+                  <button className="prev-button" onClick={this.decrementMonth}>
+                    Prev
+                  </button>
+                  <div className="before-header" style={{ color: "grey" }}>
+                    {months[monthIndex - 1]} {this.state.beforeDate.getFullYear()}
+                  </div>
+                  <div className="month-header" style={{ color: "white" }}>
+                    {months[monthIndex]} {this.state.currentDate.getFullYear()}
+                  </div>
+                  <div className="after-header" style={{ color: "grey" }}>
+                    {months[monthIndex + 1]} {this.state.afterDate.getFullYear()}
+                  </div>
+                  <button className="next-button" onClick={this.incrementMonth}>
+                    Next
+                  </button>
                 </div>
-              </div>
-
               <div className="day-header-container">
                 <div className="day-header">
                   <span className="test1">Sunday</span>

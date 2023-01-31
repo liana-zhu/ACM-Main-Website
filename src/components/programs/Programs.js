@@ -133,6 +133,7 @@ class Programs extends React.Component {
           <Tab.Container id="left-tabs-example" defaultActiveKey="first">
             <Col>
               <Col sm={12}>
+                <div class = "year-bar">
                 <DropdownButton
                   title={this.state.currentSem}
                   id="dropdown-button"
@@ -148,9 +149,9 @@ class Programs extends React.Component {
                       {year[1]}
                     </Dropdown.Item>
                   ))}
-                </DropdownButton>
-              </Col>
+                </DropdownButton></div>
               <Col sm={12} className="programs-tab-container">
+            </Col>
                 <Tab.Content className="programs-tab-content">
                   <Tab.Pane eventKey="first">
                     <Tab.Container defaultActiveKey="S2023mentorship">
