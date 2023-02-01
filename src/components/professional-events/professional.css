@@ -1,7 +1,7 @@
 .event-card {
   height: 80vh;
   background: linear-gradient(rgba(0, 0, 0, 0.40), rgb(0, 153, 255, 0.40)),
-    url("./images/classroom-background.jpg");
+    url("./images/professional-background.jpg");
   background-size: cover !important;
   background-attachment: fixed;
   align-self: center;
