@@ -3,7 +3,7 @@
 	width: 100%;
 	background: 
 	linear-gradient(rgba(0, 0, 0, 0.40), rgb(0, 153, 255, 0.40)),
-	url("../aboutus/images/group.jpg");
+	url("../aboutus/images/board-background.jpg");
 	background-size: cover !important;
 	background-attachment: fixed;
 	align-self: center;
