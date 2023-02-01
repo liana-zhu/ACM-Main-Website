@@ -52,7 +52,7 @@
     height: 80vh;
     background: 
     linear-gradient(rgba(0, 0, 0, 0.40), rgb(0, 153, 255, 0.40)),
-    url("./images/events-background.jpg") no-repeat center !important;
+    url("./images/events-collage.jpg") no-repeat center !important;
     background-size: cover !important;
     align-self: center;
     filter: blur(1px);
