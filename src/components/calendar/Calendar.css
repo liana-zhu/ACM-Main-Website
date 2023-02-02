@@ -71,6 +71,7 @@
 
 .prev-button, .next-button {
     filter: invert(100%);
+    margin-top: 3.5px;
 }
 
 .next-button {
