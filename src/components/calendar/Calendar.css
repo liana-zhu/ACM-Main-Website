@@ -62,17 +62,19 @@
 .calendar-header {
     display: flex;
     font-weight: 500;
-    margin-left: 85px;
+    margin-left: 130px;
 }
 
-.prev-button, .next-button{
-    color:white;
-    background-color: rgb(7, 89, 184);
-    height: 2rem;
-    width: 4rem;
+.prev-button {
+    transform: scaleX(-1);
+}
 
-    border: 1px solid rgb(119, 118, 118);
-    border-radius: 4px;
+.prev-button, .next-button {
+    filter: invert(100%);
+}
+
+.next-button {
+    margin-left: -20px;
 }
 
 .month-header, .before-header, .after-header {
@@ -164,7 +166,7 @@
     .calendar-header {
         display: flex;
         font-weight: 500;
-        margin-left: -25px;
+        margin-left: -15px;
     }
 }
 

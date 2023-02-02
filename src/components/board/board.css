@@ -228,13 +228,24 @@ h2{
 .leader-background {
 	width: 29rem;
 	height: 135px;
-	background: #31355f;
+	background: rgb(50, 97, 123);
 	border: 3px solid #000000;
 	box-sizing: border-box;
 	border-radius: 20px;
   }
 
+  .linkin, .email{
+	margin-right: 5px;
+	margin-top: 7px;
+	margin-bottom: -6px;
+	filter: invert(100%);
+  }
 
+  .email {
+	margin-top: -10px;
+	margin-bottom: -1.5px;
+	margin-left: -10px;
+  }
 @media only screen and (max-width: 600px) {
 	h2{
 		margin-left: auto;

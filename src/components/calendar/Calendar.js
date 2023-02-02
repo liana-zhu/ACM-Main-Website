@@ -416,9 +416,9 @@ class Calendar extends React.Component {
           <Col lg={9} md={12}>
             <div className="calendar-container col-12">
                 <div className = "calendar-header">
-                  <button className="prev-button" onClick={this.decrementMonth}>
-                    Prev
-                  </button>
+                  <div className = "prev-button" onClick={this.decrementMonth}>
+                    <input type="image" src="https://cdn1.iconfinder.com/data/icons/glyphie-1/40/button_play_triangle_music_video_audio_arrow_next-512.png" name="submit" width="35" height="35" alt="submit"/>
+                  </div>
                   <div className="before-header" style={{ color: "grey" }}>
                     {months[monthIndex - 1]} {this.state.beforeDate.getFullYear()}
                   </div>
@@ -428,9 +428,9 @@ class Calendar extends React.Component {
                   <div className="after-header" style={{ color: "grey" }}>
                     {months[monthIndex + 1]} {this.state.afterDate.getFullYear()}
                   </div>
-                  <button className="next-button" onClick={this.incrementMonth}>
-                    Next
-                  </button>
+                  <div className = "next-button" onClick={this.incrementMonth}>
+                    <input type="image" src="https://cdn1.iconfinder.com/data/icons/glyphie-1/40/button_play_triangle_music_video_audio_arrow_next-512.png" name="submit" width="35" height="35" alt="submit"/>
+                  </div>
                 </div>
               <div className="day-header-container">
                 <div className="day-header">
