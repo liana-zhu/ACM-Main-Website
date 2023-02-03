@@ -45,8 +45,12 @@
     margin-bottom: 4rem;
 }
 
+.events-text p {
+    background-color: rgba(19, 19, 21, 0.5);
+}
 /* When the class name is "events-main-background" and the CSS properties are changed, the background image size doesn't change at all. 
    Maybe a bug? However, after changing the class name, the changes will show. */
+
 .background-image {
     /* Background-image height and events-text height affect each other when one of them is changed */
     height: 80vh;
