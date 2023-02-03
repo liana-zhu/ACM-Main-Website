@@ -160,7 +160,7 @@
   transform: translate3d(0, 0, 0);
 }
 .professional-slideshow .images {
-  animation: moveSlideshows 50s linear infinite;
+  animation: moveSlideshows 90s linear infinite;
 }
 
 @keyframes moveSlideshows {
