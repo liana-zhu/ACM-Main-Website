@@ -143,85 +143,69 @@ class Professional extends React.Component {
         {/* <Row className="justify-content-md-center"> */}
         <div className="past-events mx-auto">
           <p className="text-center events-header">Past Events</p>
-
-          <div className="d-flex flex-wrap justify-content-center m-2">
-            <Image
-              style={{ width: "350px", height: "30rem", margin: "1em" }}
-              src={require("./images/google-ama-event-fall-2022.jpg")}
-              thumbnail
-            />
-            <Image
-              style={{ width: "350px", height: "30rem", margin: "1em" }}
-              src={require("./images/Hackathon-Flyer-Fall-2022.png")}
-              thumbnail
-            />
-            <Image
-              style={{ width: "350px", height: "30rem", margin: "1em" }}
-              src={require("./images/Mentorship-fall-2022.png")}
-              thumbnail
-            />
-            <Image
-              style={{ width: "350px", height: "30rem", margin: "1em" }}
-              src={require("./images/Black-Panther-Wakanda-Forever-fall-2022.png")}
-              thumbnail
-            />
-          </div>
-          <div
-            className={
-              this.state.seeMore
-                ? "d-flex flex-wrap justify-content-center m-2"
-                : "d-none"
-            }
-          >
-            <Image
-              style={{ width: "350px", height: "30rem", margin: "1em" }}
-              src={require("./images/github-workshop.PNG")}
-              thumbnail
-            />
-            <Image
-              style={{ width: "350px", height: "30rem", margin: "1em" }}
-              src={require("./images/mwd-jpl-spring-2019.png")}
-              thumbnail
-            />
-            <Image
-              style={{ width: "350px", height: "30rem", margin: "1em" }}
-              src={require("./images/spring-2019-resume-workshop.png")}
-              thumbnail
-            />
-            <Image
-              style={{ width: "350px", height: "30rem", margin: "1em" }}
-              src={require("./images/richard-fung-2018-google.png")}
-              thumbnail
-            />
-            <Image
-              style={{ width: "350px", height: "30rem", margin: "1em" }}
-              src={require("./images/internship.png")}
-              thumbnail
-            />
-            <Image
-              style={{ width: "350px", height: "30rem", margin: "1em" }}
-              src={require("./images/manny-sanchez-lockheed-spring-2019.png")}
-              thumbnail
-            />
-            <Image
-              style={{ width: "350px", height: "30rem", margin: "1em" }}
-              src={require("./images/linkedin-handshake-workshop.png")}
-              thumbnail
-            />
-          </div>
-          <div className="justify-content-center text-center ">
-            <button
-              className={this.state.seeMore ? "d-none" : "see-more-button"}
-              onClick={() => this.setState({ seeMore: true })}
-            >
-              See more
-            </button>
-            <button
-              className={this.state.seeMore ? "see-more-button" : "d-none"}
-              onClick={() => this.setState({ seeMore: false })}
-            >
-              See less
-            </button>
+          <div class="professional-slideshow">
+                <div class="images">
+                <Image
+                  style={{ width: "350px", height: "30rem", margin: "1em" }}
+                  src={require("./images/google-ama-event-fall-2022.jpg")}
+                  thumbnail
+                />
+                <Image
+                  style={{ width: "350px", height: "30rem", margin: "1em" }}
+                  src={require("./images/Hackathon-Flyer-Fall-2022.png")}
+                  thumbnail
+                />
+                <Image
+                  style={{ width: "350px", height: "30rem", margin: "1em" }}
+                  src={require("./images/Mentorship-fall-2022.png")}
+                  thumbnail
+                />
+                <Image
+                  style={{ width: "350px", height: "30rem", margin: "1em" }}
+                  src={require("./images/Black-Panther-Wakanda-Forever-fall-2022.png")}
+                  thumbnail
+                />
+                <Image
+                  style={{ width: "350px", height: "30rem", margin: "1em" }}
+                  src={require("./images/github-workshop.PNG")}
+                  thumbnail
+                />
+                <Image
+                  style={{ width: "350px", height: "30rem", margin: "1em" }}
+                  src={require("./images/mwd-jpl-spring-2019.png")}
+                  thumbnail
+                />
+                <Image
+                  style={{ width: "350px", height: "30rem", margin: "1em" }}
+                  src={require("./images/spring-2019-resume-workshop.png")}
+                  thumbnail
+                />
+                <Image
+                  style={{ width: "350px", height: "30rem", margin: "1em" }}
+                  src={require("./images/richard-fung-2018-google.png")}
+                  thumbnail
+                />
+                <Image
+                  style={{ width: "350px", height: "30rem", margin: "1em" }}
+                  src={require("./images/internship.png")}
+                  thumbnail
+                />
+                <Image
+                  style={{ width: "350px", height: "30rem", margin: "1em" }}
+                  src={require("./images/manny-sanchez-lockheed-spring-2019.png")}
+                  thumbnail
+                />
+                <Image
+                  style={{ width: "350px", height: "30rem", margin: "1em" }}
+                  src={require("./images/linkedin-handshake-workshop.png")}
+                  thumbnail
+                />
+                 <Image
+                  style={{ width: "350px", height: "30rem", margin: "1em" }}
+                  src={require("./images/google-ama-event-fall-2022.jpg")}
+                  thumbnail
+                />
+            </div>
           </div>
         </div>
       </div>
