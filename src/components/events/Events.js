@@ -2,6 +2,7 @@ import React from 'react';
 import './events.css';
 import { Card, Button, Jumbotron, Container } from 'react-bootstrap';
 import Calendar from "../calendar/Calendar.js";
+import EventSlide from './EventSlide.js';
 
 // This component won't hold a state for not but decided 
 // to make it into a Class component for now
@@ -103,7 +104,7 @@ class Events extends React.Component {
                         <p>Never miss an Event</p>
                     </div>
                     {/* The class name "events-main-background" doesn't work. Changing the class name makes the code work */}
-                    <div className="background-image"></div>
+                        <EventSlide/>
                 </div>
                 <div className="blue-line"></div>
 
