@@ -137,6 +137,41 @@
   color: black;
 }
 
+.images {
+  display: flex;
+}
+
+.professional-slideshow {
+  height: 600px;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.professional-slideshow > .images {
+  height: 200px;
+  width: 6500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+}
+.professional-slideshow .images {
+  animation: moveSlideshows 90s linear infinite;
+}
+
+@keyframes moveSlideshows {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-3070px, 0, 0);
+  }
+}
+
 @media only screen and (max-width: 1004px) {
   .events-main-text {
     padding-left: 1rem;

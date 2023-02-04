@@ -7,6 +7,7 @@ import config from "../../config";
 import "bootstrap/dist/css/bootstrap.css";
 import EventModal from "./EventModal";
 import { faRubleSign } from "@fortawesome/free-solid-svg-icons";
+import NextEvents from "./NextEvents";
 
 const daysOfWeek = [
   "Monday",
@@ -32,33 +33,6 @@ const months = [
   "December",
 ];
 
-/***********************************************************
- *                EventContent Component
- * Description: This sub-component displays the date and its
- * event title. This is displayed at the "Upcoming Events" section
- * besides the calendar.
- *
- * Parameters: props
- * - it contains the event object
- *
- * Returns: a div block containing the date and the event title
- * that are pressable.
- ***********************************************************/
-function EventContent(props) {
-  if (props.id === 0) {
-    return (
-      <div className="event-block event1" >
-        <EventModal event={props.event} displayType={"full"}/>
-      </div>
-    );
-  } else {
-    return (
-      <div className="event-block event2" >
-        <EventModal event={props.event} displayType={"full"}/>
-      </div>
-    );
-  }
-}
 
 class Calendar extends React.Component {
   constructor(props) {
@@ -69,7 +43,11 @@ class Calendar extends React.Component {
       beforeDate: new Date(),
       afterDate: new Date(),
       events: {},
-      upcomingEvents: [],
+
+      //this state is a backup to currentDate
+      //this is used in case currentDate is changed
+      //currently accessed by Upcoming Events section
+      today: new Date(), 
     };
 
     this.incrementMonth = this.incrementMonth.bind(this);
@@ -141,7 +119,7 @@ class Calendar extends React.Component {
           events: events,
         });
         this.setState({
-          upcomingEvents: this.getUpcomingEvents(this.state.currentDate),
+          today: this.state.currentDate,
         });
       });
   }
@@ -272,77 +250,8 @@ class Calendar extends React.Component {
     return listOfEventModals;
   }
 
-  /***********************************************************
-   *          function getUpcomingEvents(currentDate)
-   * Description: This function collects three events that are
-   * closest from the current date. Events are accessed from this
-   * component's "events" state. The function finds events in the
-   * next 100 days
-   *
-   * Parameters: currentDate
-   * - it contains the today's date
-   *
-   * Returns: an "upcomingEvents" array containing three events
-   ***********************************************************/
-  getUpcomingEvents(currentDate) {
-    //access current date values
-    let today = currentDate;
-    let todate = today.getDate();
-    let todayMonth = today.getMonth();
-    let todayYear = today.getFullYear();
-    let upcomingEvents = []; //initialize empty array
-    let events = this.state.events; //access all events
-
-    //how many days after today?
-    let daysWithin = 100;
-
-    let dayCount = 0; //while loop counter
-    while (upcomingEvents.length < 3 && dayCount < daysWithin) {
-      let nextDay = new Date(todayYear, todayMonth, todate);
-      nextDay.setDate(todate + dayCount); //getting the dates after today
-
-      //converting int to string date values
-      let yearString = nextDay.getFullYear().toString();
-      let monthString = (nextDay.getMonth() + 1).toString();
-      let dayString = nextDay.getDate().toString();
-      if (monthString.length === 1) {
-        monthString = "0" + monthString;
-      }
-      if (dayString.length === 1) {
-        dayString = "0" + dayString;
-      }
-
-      /*this format {2XXX-XX-XX} is used for accessing
-      an event based on given date format*/
-      const dateString = yearString + "-" + monthString + "-" + dayString;
-      const eventsInDate = events[dateString];
-
-      //only execute this block if event in given date exists
-      if (typeof eventsInDate !== "undefined") {
-        for (let i = 0; i < eventsInDate.length; i++) {
-          let summary = eventsInDate[i].summary;
-
-          //exclude unimportant events
-          if (
-            summary.indexOf("Week") === -1 &&
-            summary.indexOf("Spring") === -1
-          ) {
-            const index = upcomingEvents.length;
-            //adding the upcoming event to a sub-component
-            upcomingEvents.push(
-              <EventContent event={eventsInDate[i]} date={nextDay} id={index} />
-            );
-          }
-        }
-      }
-      dayCount++;
-    }
-    return upcomingEvents;
-  }
-
   render() {
     let calendar = [];
-    let upcomingEvents = this.state.upcomingEvents;
 
     let monthIndex = this.state.currentDate.getMonth();
 
@@ -416,9 +325,9 @@ class Calendar extends React.Component {
           <Col lg={9} md={12}>
             <div className="calendar-container col-12">
                 <div className = "calendar-header">
-                  <button className="prev-button" onClick={this.decrementMonth}>
-                    Prev
-                  </button>
+                  <div className = "prev-button" onClick={this.decrementMonth}>
+                    <input type="image" src="https://cdn1.iconfinder.com/data/icons/glyphie-1/40/button_play_triangle_music_video_audio_arrow_next-512.png" name="submit" width="35" height="35" alt="submit"/>
+                  </div>
                   <div className="before-header" style={{ color: "grey" }}>
                     {months[monthIndex - 1]} {this.state.beforeDate.getFullYear()}
                   </div>
@@ -428,9 +337,9 @@ class Calendar extends React.Component {
                   <div className="after-header" style={{ color: "grey" }}>
                     {months[monthIndex + 1]} {this.state.afterDate.getFullYear()}
                   </div>
-                  <button className="next-button" onClick={this.incrementMonth}>
-                    Next
-                  </button>
+                  <div className = "next-button" onClick={this.incrementMonth}>
+                    <input type="image" src="https://cdn1.iconfinder.com/data/icons/glyphie-1/40/button_play_triangle_music_video_audio_arrow_next-512.png" name="submit" width="35" height="35" alt="submit"/>
+                  </div>
                 </div>
               <div className="day-header-container">
                 <div className="day-header">
@@ -469,10 +378,7 @@ class Calendar extends React.Component {
 
           {/*UPCOMING EVENTS*/}
           <Col lg={3} className="upcoming-container d-flex align-items-stretch">
-            <div className="col-md-12">
-              <h3>Upcoming Events:</h3>
-              <div className="events-section">{upcomingEvents}</div>
-            </div>
+            <NextEvents currDate={this.state.today} events={this.state.events}/>
           </Col>
         </Row>
       </Container>

@@ -101,6 +101,8 @@ class Board extends React.Component {
                             lastName="Tran"
                             year="2022"
                             position="President"
+                            linkedin="https://www.linkedin.com/in/ashley-t-1573401b8/"
+                            email="mailto:ashl3y.t1@gmail.com"
                           />
                           <BoardLeaders
                             photo={IMAGES.Branden2022}
@@ -108,6 +110,8 @@ class Board extends React.Component {
                             lastName="Zamora"
                             year="2022"
                             position="Vice President"
+                            linkedin="https://www.linkedin.com/in/brandenz29/"
+                            email="mailto:branden.z1229@gmail.com"
                           />
                         </div>
                         <div className="row-leaders centered-leader">
@@ -117,6 +121,8 @@ class Board extends React.Component {
                             lastName="Vazquez"
                             year="2022"
                             position="Treasurer"
+                            linkedin="https://www.linkedin.com/in/alexvaz5/"
+                            email="mailto:alexandervaz194@gmail.com"
                           />
                           <BoardLeaders
                             photo={IMAGES.Andres2022}
@@ -124,6 +130,8 @@ class Board extends React.Component {
                             lastName="Dominguez"
                             year="2022"
                             position="Secretary"
+                            //linkedin = null
+                            email="mailto:andres2002dominguez@gmail.com"
                           />
                         </div>
                         <div className="row-leaders centered-leader">
@@ -133,6 +141,8 @@ class Board extends React.Component {
                             lastName="Ashour"
                             year="2022"
                             position="VP of Internal/External Affairs"
+                            linkedin="https://www.linkedin.com/in/rana-ashour-697684247/"
+                            email="mailto:ranaashour3@gmail.com"
                           />
                           <BoardLeaders
                             photo={IMAGES.Jose2022}
@@ -140,6 +150,8 @@ class Board extends React.Component {
                             lastName="Zamora"
                             year="2022"
                             position="Project Manager"
+                            linkedin="https://www.linkedin.com/in/joseazamoracsula/"
+                            email="mailto:jazamora292@gmail.com"
                           />
                         </div>
                         <div className="row-leaders centered-leader">
@@ -161,6 +173,8 @@ class Board extends React.Component {
                             lastName="Ramirez"
                             year="2022"
                             position="Executive Officer"
+                            linkedin="https://www.linkedin.com/in/daniel-ramirez-2001/"
+                            email="mailto:daniram2001@gmail.com"
                           />
                           <BoardLeaders
                             photo={IMAGES.Joseph2022}
@@ -168,6 +182,8 @@ class Board extends React.Component {
                             lastName="Acosta"
                             year="2023"
                             position="Executive Officer"
+                            linkedin="https://www.linkedin.com/in/joseph-acosta-14ja2810/"
+                            email="mailto:josephaacosta1527@gmail.com"
                           />
                         </div>
                         <div className="row-leaders centered-leader">
@@ -177,6 +193,8 @@ class Board extends React.Component {
                             lastName="Kani"
                             year="2023"
                             position="Executive Officer"
+                            linkedin="https://www.linkedin.com/in/keyvan-mahmoodzadeh-kani/"
+                            email="mailto:arasanjkk@gmail.com"
                           />
                           <BoardLeaders
                             photo={IMAGES.Jonathan2022}
@@ -184,6 +202,8 @@ class Board extends React.Component {
                             lastName="Dang"
                             year="2022"
                             position="Project Officer"
+                            linkedin="https://www.linkedin.com/in/jd-jona-dang/"
+                            email="mailto:jdang42@calstatela.edu"
                           />
                         </div>
                         <div className="row-leaders centered-leader">
@@ -193,6 +213,8 @@ class Board extends React.Component {
                             lastName="Arreguin"
                             year="2023"
                             position="Project Officer"
+                            linkedin="https://www.linkedin.com/in/isabella-arreguin/"
+                            email="mailto:isarreguin519@gmail.com"
                           />
                         </div>
                         <div className="row-leaders centered-leader">
@@ -213,6 +235,8 @@ class Board extends React.Component {
                             lastName="Zhu"
                             year="2022"
                             position="Web Committee"
+                            linkedin="https://www.linkedin.com/in/lianazhu/"
+                            email="mailto:lianaczhu@gmail.com"
                           />
                           <BoardLeaders
                             photo={IMAGES.Mike2022}
@@ -220,6 +244,8 @@ class Board extends React.Component {
                             lastName="De Pacina"
                             year="2022"
                             position="Web Committee"
+                            linkedin="https://www.linkedin.com/in/mike-de-pacina-tech/"
+                            email="mailto:mikedpacina@gmail.com"
                           />
                         </div>
                         <div className="row-leaders centered-leader">
@@ -229,6 +255,8 @@ class Board extends React.Component {
                             lastName="Pham"
                             year="2023"
                             position="Web Committee"
+                            linkedin="https://www.linkedin.com/in/brian-pham-a5674b163/"
+                            email="mailto:brianpt1106@gmail.com"
                           />
                           <BoardLeaders
                             photo={IMAGES.John2023}
@@ -236,6 +264,8 @@ class Board extends React.Component {
                             lastName="Paolo"
                             year="2023"
                             position="Web Committee"
+                            linkedin="https://www.linkedin.com/in/jolohernandez18/"
+                            email="mailto:joloh18@yahoo.com"
                           />
                         </div>
                         <div className="row-leaders centered-leader">
@@ -245,6 +275,8 @@ class Board extends React.Component {
                             lastName="Dominguez"
                             year="2022"
                             position="Project Committee"
+                            linkedin="https://www.linkedin.com/in/charlie-martinez-dominguez-42aa461a8/"
+                            email="mailto:cherlescenter@gmail.com"
                           />
                           <BoardLeaders
                             photo={IMAGES.Ricardo2022}
@@ -252,6 +284,8 @@ class Board extends React.Component {
                             lastName="Miranda"
                             year="2022"
                             position="Project Committee"
+                            linkedin="https://www.linkedin.com/in/ricardo-miranda-cs/"
+                            email="mailto:ricmiranda1234@gmail.com"
                           />
                         </div>
                         <div className="row-leaders centered-leader">
@@ -261,6 +295,8 @@ class Board extends React.Component {
                             lastName="Bhandari"
                             year="2022"
                             position="Project Committee"
+                            linkedin="https://www.linkedin.com/in/shambhavi-bhandari-592291234/"
+                            email="mailto:bhandarishambhavi@gmail.com"
                           />
                           <BoardLeaders
                             photo={IMAGES.Fabricio2022}
@@ -268,6 +304,8 @@ class Board extends React.Component {
                             lastName="Reyes"
                             year="2022"
                             position="Project Committee"
+                            //linkedin= null
+                            email="mailto:freyes.coma12@gmail.com"
                           />
                         </div>
                         <div className="row-leaders centered-leader">
@@ -277,6 +315,8 @@ class Board extends React.Component {
                             lastName="Islam"
                             year="2022"
                             position="Project Committee"
+                            //linkedin= null
+                            email="mailto:2003raisul@gmail.com"
                           />
                           <BoardLeaders
                             photo={IMAGES.Steven2022}
@@ -284,6 +324,8 @@ class Board extends React.Component {
                             lastName="Lopez"
                             year="2022"
                             position="Project Committee"
+                            linkedin="https://www.linkedin.com/in/steven-lopezz/"
+                            email="mailto:stevo2195@gmail.com"
                           />
                         </div>
                         <div className="row-leaders centered-leader">
@@ -293,6 +335,8 @@ class Board extends React.Component {
                             lastName="Tabilas"
                             year="2022"
                             position="Project Committee"
+                            linkedin="https://www.linkedin.com/in/diane-tabilas/"
+                            email="mailto:ledianetabilas@gmail.com"
                           />
                           <BoardLeaders
                             photo={IMAGES.James2022}
@@ -300,6 +344,8 @@ class Board extends React.Component {
                             lastName="Ybarra"
                             year="2023"
                             position="Project Committee"
+                            linkedin="https://www.linkedin.com/in/ybarrajames/"
+                            email="mailto:ybarrajames17@gmail.com"
                           />
                         </div>
                         <div className="row-leaders centered-leader">
@@ -309,6 +355,8 @@ class Board extends React.Component {
                             lastName="Gutierrez"
                             year="2022"
                             position="Innovation Committee"
+                            linkedin="https://www.linkedin.com/in/ugutier17/"
+                            email="mailto:ulisesgutierrez1217@gmail.com"
                           />
                           <BoardLeaders
                             photo={IMAGES.Ivan2022}
@@ -316,6 +364,8 @@ class Board extends React.Component {
                             lastName="Ho"
                             year="2022"
                             position="Innovation Committee"
+                            linkedin="https://www.linkedin.com/in/ivanhocsula/"
+                            email="mailto:hoivan08@gmail.com"
                           />
                         </div>
                         <div className="row-leaders centered-leader">
@@ -325,6 +375,8 @@ class Board extends React.Component {
                             lastName="Syed"
                             year="2022"
                             position="Innovation Committee"
+                            linkedin="https://www.linkedin.com/in/zainsyed28/"
+                            email="mailto:zainsyed664@gmail.com"
                           />
                           <BoardLeaders
                             photo={IMAGES.Sergio2023}
@@ -332,6 +384,8 @@ class Board extends React.Component {
                             lastName="Valadez"
                             year="2023"
                             position="Innovation Committee"
+                            //linkedin=null
+                            email="mailto:s.valadezl.0001@gmail.com"
                           />
                         </div>
                         <div className="row-leaders centered-leader">
@@ -340,15 +394,18 @@ class Board extends React.Component {
                             firstName="Sahis"
                             lastName="Neupane"
                             year="2023"
-                            position="Innovation Commitee"
+                            position="Innovation Committee"
+                            linkedin="https://www.linkedin.com/in/sahisn/"
+                            email="mailto:sneupan4@calstatela.edu"
                           />
-
                           <BoardLeaders
                             photo={IMAGES.ACMLogo}
                             firstName="Veronica"
                             lastName="Barragan"
                             year="2022"
                             position="Design Committee"
+                            //linkedin=null
+                            email="mailto:veronicabarra654@gmail.com"
                           />
                         </div>
                       </div>
@@ -363,6 +420,8 @@ class Board extends React.Component {
                             lastName="Cwir"
                             year="2022"
                             position="Chapter Advisor"
+                            //linkedin=null
+                            email="mailto:wcwir2@calstatela.edu"
                           />
                           <BoardLeaders
                             photo={IMAGES.ACMLogo}
@@ -370,6 +429,8 @@ class Board extends React.Component {
                             lastName="Cross"
                             year="2022"
                             position="Chapter Advisor"
+                            linkedin="https://www.linkedin.com/in/richard-k-j-cross-8ab65431/"
+                            email="mailto:rcross3@calstatela.edu"
                           />
                         </div>
                         <div className="row-leaders centered-leader">
@@ -379,6 +440,8 @@ class Board extends React.Component {
                             lastName="Thomas"
                             year="2022"
                             position="Chapter Advisor"
+                            linkedin="https://www.linkedin.com/in/wilsonthomas2021/"
+                            email="mailto:wthomas0293@gmail.com"
                           />
                           <BoardLeaders
                             photo={IMAGES.Alvin2021}
@@ -386,6 +449,8 @@ class Board extends React.Component {
                             lastName="Lew"
                             year="2022"
                             position="Student Advisor"
+                            linkedin="https://www.linkedin.com/in/alew5/"
+                            email="mailto:alvinlew5@gmail.com"
                           />
                         </div>
                       </div>

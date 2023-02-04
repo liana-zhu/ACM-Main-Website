@@ -1,0 +1,42 @@
+// Code for slideshow: https://css-tricks.com/infinite-all-css-scrolling-slideshow/
+.tech-slideshow2 {
+    height: 80vh;
+    filter: blur(0.5px);
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    opacity: .5;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .tech-slideshow2 > div {
+    height: 200px;
+    width: 2526px;
+    background: linear-gradient(rgba(0, 0, 0, 0.40), rgb(0, 153, 255, 0.40)),
+    url('./images/flyers-collage2.jpg');
+    filter: grayscale(1%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translate3d(0, 0, 0);
+  }
+  .tech-slideshow2 .mover2-1 {
+    animation: moveSlideshow 70s linear infinite;
+  }
+  .tech-slideshow2 .mover2-2 {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+    background-position: 0 -200px;
+    animation: moveSlideshow 15s linear infinite;
+  }
+  .tech-slideshow2:hover .mover-2 {
+    opacity: 1;
+  }
+  
+  @keyframes moveSlideshow {
+    100% {
+      transform: translateX(-40%);
+    }
+  }
