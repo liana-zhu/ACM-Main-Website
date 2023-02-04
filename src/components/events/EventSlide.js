@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 
-import './slideshow.scss';
+import './eventslide.scss';
 
-class Slideshow extends Component {
+class EventSlide extends Component {
     render() {
         return (
             // Code for slideshow: https://css-tricks.com/infinite-all-css-scrolling-slideshow/
-            <div class="tech-slideshow">
-                <div class="mover-1"></div>
+            <div class="tech-slideshow2">
+                <div class="mover2-1"></div>
             </div>
         )
     }
 }
 
-export default Slideshow;
+export default EventSlide;
