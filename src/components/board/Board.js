@@ -39,7 +39,7 @@ class Board extends React.Component {
             <p>
               The team that makes ACM special at CSULA...
               <br />
-              Meet our board!
+              Meet our Leaders!
             </p>
           </div>
           <div className="board-card"></div>

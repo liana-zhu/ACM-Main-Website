@@ -3,12 +3,12 @@
 --------------------------------------------------------------*/
 .mentorship-title-card {
     /* When the height is less than 70vh, the beginner and advanced tabs are not be clickable */
-    height: 80vh;
+    height: 85vh;
     background: 
     linear-gradient(rgba(0, 0, 0, 0.40), rgb(0, 153, 255, 0.40)),
     url("./pictures/programs-background.jpg");
     background-size: cover !important;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
     align-self: center;
 	filter: blur(1px);
     font-size: 4.4rem;
