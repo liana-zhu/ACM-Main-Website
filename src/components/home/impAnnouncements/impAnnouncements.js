@@ -45,7 +45,7 @@ class ImpAnnouncements extends Component {
             </p>
           </div>
           <br></br>
-          <Row className="justify-content-center title">upcoming Events</Row>
+          <Row className="justify-content-center title">upcoming events</Row>
           <Row className="justify-content-center event-grid">
             {this.state.upcomingEvent &&
               this.state.upcomingEvent.map((upcomingEvents) => {
@@ -93,13 +93,13 @@ class ImpAnnouncements extends Component {
                   alt="featured"
                 />
                 {/* <p>Sign up starts: {upcomingEvents.signUpStart}</p>
-                      <p>Sign up Deadline: {upcomingEvents.deadline}</p>
-                      <Button
-                        href={upcomingEvents.link}
-                        style={{ backgroundColor: "#0A84FF" }}
-                      >
-                        RSVP
-                      </Button> */}
+                <p>Sign up Deadline: {upcomingEvents.deadline}</p> */}
+                <Button
+                  href={'https://forms.gle/26x5NMDnrFE3jhn89'}
+                  style={{ backgroundColor: "#0A84FF" }}
+                >
+                  Apply Now!
+                </Button>
               </center>
             </Card>
           </Row>
