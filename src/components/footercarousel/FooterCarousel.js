@@ -16,7 +16,8 @@ class FooterCarousel extends React.Component {
         <div className="row bottom-container">
           <div className="col-sm footer-text">
             <div className="col-sm footer-text">
-              <div>
+              {/*temporary commented until further notice*/}
+              {/*<div>
                 <div class="icons">
                   <div class="iconHover">
                     <div class="inner">
@@ -64,7 +65,7 @@ class FooterCarousel extends React.Component {
                   </div>
                 </div>
               </div>
-              <br></br>
+              <br></br>*/}
               Contact us: <b>acm.calstatela@gmail.com</b>
               <br></br>
               {/* Office hours: E&T C-245 3PM-4PM every <b>Thursday</b> */}
