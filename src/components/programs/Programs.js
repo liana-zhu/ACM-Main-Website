@@ -171,7 +171,92 @@ class Programs extends React.Component {
                                     */}
                       <Tab.Content className="programs-tab-content">
                         <Tab.Pane eventKey="S2023mentorship">
-                          <Mentorship />
+                            <p>
+                              <h2>
+                                <span className="highlight-text">
+                                  <b>About this program:</b>
+                                </span>
+                              </h2>
+                              <p className="aboutprogram">
+                              If you feel that you are lacking professional skills, then this program is perfect for you! 
+                              The Professional Development (PRO-DEV) program provides a series of workshops that teach
+                              valuable skills and resources that are crucial for a professional. Additionally, the program 
+                              helps you to increase your opportunity in landing jobs and improves your financial status. 
+                              By applying, you will have the opportunity to learn important tips from your ACM Leaders that 
+                              are not taught in the typical classroom environment. Overall, this program will benefit you 
+                              professionally by the time you graduate.
+                                <br />
+                                These workshops are open for{" "}
+                                <b><u>all ACM members</u></b> in all different levels
+                                (Freshmen, Sophomores, Juniors and Seniors)
+                              </p>
+
+                              {/* LIST OF WORKSHOPS/EVENTS  */}
+                              <div className="row workshop-container">
+                                <h1 className="program-description col-12">
+                                  These are the following workshops:
+                                </h1>
+                                <div className="skill-item col-lg-4 col-md-6 col-12">
+                                  <div className="icon-box">
+                                    <FileEarmarkTextFill className="icon" />
+                                    <b>Building your Resume/LinkedIn</b>
+                                  </div>
+                                </div>
+                                <div className="skill-item col-lg-4 col-md-6 col-12">
+                                  <div className="icon-box">
+                                    <Search className="icon" />
+                                    <b>Internship/Job Hunting</b>
+                                  </div>
+                                </div>
+                                <div className="skill-item col-lg-4 col-md-6 col-12">
+                                  <div className="icon-box">
+                                    <PeopleFill className="icon" />
+                                    <b>Interviews</b>
+                                  </div>
+                                </div>
+                                <div className="skill-item2 col-lg-4 col-md-6 col-12">
+                                  <div className="icon-box">
+                                    <Mortarboard className="icon" />
+                                    <b>Succeeding as an Undergrad</b>
+                                  </div>
+                                </div>
+                                <div className="skill-item2 col-lg-4 col-md-6 col-12">
+                                  <div className="icon-box">
+                                    <CashCoin className="icon" />
+                                    <b>Financial Management</b>
+                                  </div>
+                                </div>
+                              </div>
+                            </p>
+
+                            <div className="signup-section col-lg-6 col-md-9 col-12">
+                              <p className="program-description">
+                                Make the most out of it by attending all workshops!
+                              </p>
+                              {/* use for now to display image */}
+                              <img
+                                src={require("./pictures/spring2023-pro-dev.png")}
+                                className="programs-poster rounded m-auto d-block"
+                                alt="mentorship flyer"
+                              ></img>
+                              {/* {
+                              this.state.mentorshipF22 &&
+                              this.state.mentorshipF22.map(mentorshipF22 => {
+                                return (
+                                  <img src={mentorshipF22.imgUrl} className="img-fluid programs-poster" alt="mentorship flyer"></img>
+                                )
+                              })
+                            } */}
+                            <Button
+                              variant="success"
+                              className = "join-button"
+                              size="lg"
+                              href="https://forms.gle/hAjvNSbS47ghMxuE8"
+                            >
+                              Join Now!
+                            </Button>
+                            <br />
+                          </div>
                         </Tab.Pane>
                       </Tab.Content>
                     </Tab.Container>

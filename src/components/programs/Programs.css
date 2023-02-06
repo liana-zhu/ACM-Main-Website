@@ -273,7 +273,8 @@ iframe[src*=youtube] {
 }
 
 .join-button {
-    margin-left: 625px;
+    margin-left: 255px;
+    margin-top: 20px;
 }
 @media only screen and (max-width: 600px) {
     .skill-item2 {
@@ -296,6 +297,10 @@ iframe[src*=youtube] {
         min-width: 70vw;
         padding-left: 0px;
         padding-right: 0px;
+    }
+    .join-button {
+        margin-left: 50px;
+        margin-top: 10px;
     }
     .programs-tab-label {
         font-size: 0.85rem;
