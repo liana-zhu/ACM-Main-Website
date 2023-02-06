@@ -9,6 +9,7 @@ import {
   CashCoin,
 } from "react-bootstrap-icons";
 import {
+  Card,
   Row,
   Col,
   Tab,
@@ -222,35 +223,30 @@ class Programs extends React.Component {
                                 </div>
                               </div>
                             </p>
-
-                            <div className="signup-section col-lg-6 col-md-9 col-12">
-                              <p className="program-description">
-                                Make the most out of it by attending all workshops!
-                              </p>
-                              {/* use for now to display image */}
+                            <div className="program-description">
+                                <p>This Spring 2023 semester, ACM will be offering scholarships</p>
+                            </div>
+                        <Row className="pro-dev-card">
+                            <center>
                               <img
+                                style={{
+                                height: "30rem",
+                                padding: "10px",
+                                // margin: "4em",
+                                }}
                                 src={require("./pictures/spring2023-pro-dev.png")}
-                                className="programs-poster rounded m-auto d-block"
-                                alt="mentorship flyer"
-                              ></img>
-                              {/* {
-                              this.state.mentorshipF22 &&
-                              this.state.mentorshipF22.map(mentorshipF22 => {
-                                return (
-                                  <img src={mentorshipF22.imgUrl} className="img-fluid programs-poster" alt="mentorship flyer"></img>
-                                )
-                              })
-                            } */}
+                                alt="featured"
+                              />
+                            {/* <p>Sign up starts: {upcomingEvents.signUpStart}</p>
+                            <p>Sign up Deadline: {upcomingEvents.deadline}</p> */}
                             <Button
-                              variant="success"
-                              className = "join-button"
-                              size="lg"
-                              href="https://forms.gle/hAjvNSbS47ghMxuE8"
+                                href={'https://forms.gle/hAjvNSbS47ghMxuE8'}
+                                style={{ backgroundColor: "#0A84FF" }}
                             >
-                              Join Now!
+                            Apply Now!
                             </Button>
-                            <br />
-                          </div>
+                          </center>
+                      </Row>
                         </Tab.Pane>
                       </Tab.Content>
                     </Tab.Container>
