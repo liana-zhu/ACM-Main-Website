@@ -241,22 +241,15 @@ class Programs extends React.Component {
                                 )
                               })
                             } */}
-
-                            {/* Commenting JOIN BUTTON because there's no PRO-DEV sign-ups
-                            <Tab.Content className="programs-tab-content poster">
-                              <Tab.Pane eventKey="menteeRole"></Tab.Pane>
-                            </Tab.Content>
                             <Button
                               variant="success"
                               className = "join-button"
                               size="lg"
-                              href="https://docs.google.com/forms/d/e/1FAIpQLSf6apdzV5q2jrsJZCbsfV-SGx2cZimQyU3D60N3AUvHjhW40g/viewform"
+                              href="https://forms.gle/hAjvNSbS47ghMxuE8"
                             >
                               Join Now!
                             </Button>
                             <br />
-                            */}
-                            
                           </div>
                         </Tab.Pane>
                       </Tab.Content>
