@@ -39,7 +39,7 @@ class Board extends React.Component {
             <p>
               The team that makes ACM special at CSULA...
               <br />
-              Meet our board!
+              Meet our Leaders!
             </p>
           </div>
           <div className="board-card"></div>
@@ -155,6 +155,17 @@ class Board extends React.Component {
                           />
                         </div>
                         <div className="row-leaders centered-leader">
+                          <BoardLeaders
+                            photo={IMAGES.John2023}
+                            firstName="John"
+                            lastName="Paolo"
+                            year="2023"
+                            position="Webmaster"
+                            linkedin="https://www.linkedin.com/in/jolohernandez18/"
+                            email="mailto:joloh18@yahoo.com"
+                          />
+                        </div>
+                        <div className="row-leaders centered-leader">
                           {/* <BoardLeaders photo={IMAGES.Vacant} firstName="Vacant" lastName="" year="2022" position="VP of Internal Affairs" /> */}
                           {/* <BoardLeaders photo={IMAGES.Vacant} firstName="Vacant" lastName="" year="2022" position="VP of External Affairs" /> */}
                         </div>
@@ -216,6 +227,15 @@ class Board extends React.Component {
                             linkedin="https://www.linkedin.com/in/isabella-arreguin/"
                             email="mailto:isarreguin519@gmail.com"
                           />
+                           <BoardLeaders
+                            photo={IMAGES.Liana2022}
+                            firstName="Liana"
+                            lastName="Zhu"
+                            year="2022"
+                            position="Web Officer"
+                            linkedin="https://www.linkedin.com/in/lianazhu/"
+                            email="mailto:lianaczhu@gmail.com"
+                          />
                         </div>
                         <div className="row-leaders centered-leader">
                           {/* <BoardLeaders photo={IMAGES.Vacant} firstName="Vacant" lastName="" year="2022" position="Finance Officer" /> */}
@@ -230,15 +250,6 @@ class Board extends React.Component {
                       <div className="all-row-leaders">
                         <div className="row-leaders centered-leader">
                           <BoardLeaders
-                            photo={IMAGES.Liana2022}
-                            firstName="Liana"
-                            lastName="Zhu"
-                            year="2022"
-                            position="Web Committee"
-                            linkedin="https://www.linkedin.com/in/lianazhu/"
-                            email="mailto:lianaczhu@gmail.com"
-                          />
-                          <BoardLeaders
                             photo={IMAGES.Mike2022}
                             firstName="Mike"
                             lastName="De Pacina"
@@ -247,8 +258,6 @@ class Board extends React.Component {
                             linkedin="https://www.linkedin.com/in/mike-de-pacina-tech/"
                             email="mailto:mikedpacina@gmail.com"
                           />
-                        </div>
-                        <div className="row-leaders centered-leader">
                           <BoardLeaders
                             photo={IMAGES.Brian2023}
                             firstName="Brian"
@@ -257,15 +266,6 @@ class Board extends React.Component {
                             position="Web Committee"
                             linkedin="https://www.linkedin.com/in/brian-pham-a5674b163/"
                             email="mailto:brianpt1106@gmail.com"
-                          />
-                          <BoardLeaders
-                            photo={IMAGES.John2023}
-                            firstName="John"
-                            lastName="Paolo"
-                            year="2023"
-                            position="Web Committee"
-                            linkedin="https://www.linkedin.com/in/jolohernandez18/"
-                            email="mailto:joloh18@yahoo.com"
                           />
                         </div>
                         <div className="row-leaders centered-leader">
