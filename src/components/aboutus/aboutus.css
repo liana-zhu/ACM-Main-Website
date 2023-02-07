@@ -1,40 +1,43 @@
 .about-us-card {
   height: 80vh;
-  background: 
-  linear-gradient(rgba(0, 0, 0, 0.40), rgb(0, 153, 255, 0.40)),
-  url("./images/Fall2022FirstGeneralMeeting.jpg");
-  background-size: cover !important;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0, 153, 255, 0.4)),
+    url("./images/Fall2022FirstGeneralMeeting.jpg");
+  background-size: cover;
   background-attachment: fixed;
   align-self: center;
   filter: blur(1px);
-  font-size: 4.4rem;
+
   color: white;
-  opacity: .6;
+  opacity: 0.6;
   font-weight: bold;
   grid-row: 1/2;
   grid-column: 2/3;
 }
-.about-us-text {
-  height: 30vh;
-  width: 100%;
+#header-text {
   position: absolute;
   z-index: 2;
-  font-size: 3.5rem;
+  font-size: 5rem;
   color: white;
   font-weight: bold;
   line-height: 1.2;
+  top: 18%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+
   text-align: left;
   padding-top: 32vh;
-  /* display: grid; */
-  grid-template-rows: 1fr 1.4fr;
-  padding-left: 3rem;
 }
+
+.header-container {
+  position: relative;
+}
+
 /* Don't delete: .jumbotron affects all Jumbotrons */
 .jumbotron {
   color: white;
   padding-left: 3rem;
   margin-bottom: 0 !important;
-  background-color: #1F1F1F !important;
+  background-color: #1f1f1f !important;
 }
 
 .mission-statement-card {
@@ -51,28 +54,28 @@
 
 .mission-statement-text {
   text-align: center;
-  color: white;   
+  color: white;
 }
 
 .mission-statement-points {
   border-style: none;
   text-align: center;
-  font-size: 1.25rem;
-  /* color: white; */
+  font-size: 1.75rem;
+
   width: 75%;
   margin: auto;
 }
 
-.mission-statement-item{
-  background-color: #1F1F1F;
+.mission-statement-item {
+  background-color: #1f1f1f;
 }
 
-.carousel-leaders{
+.carousel-leaders {
   width: 75%;
   margin: auto;
 }
 
-.carousel-leadergroup-image{
+.carousel-leadergroup-image {
   max-height: 75rem;
   max-width: 50rem;
 }
@@ -89,7 +92,7 @@
   background-color: #282a2e;
 }
 
-.info-content-container{
+.info-content-container {
   align-items: center;
   justify-content: center;
 }
@@ -106,7 +109,7 @@
   /* font-size: 1.25rem; */
   /* margin-left: 60px; */
   list-style: none;
-  font-size: 1.0rem;
+  font-size: 1rem;
   margin: 10vw;
   color: white;
 }
@@ -122,7 +125,7 @@
 }
 
 .info-row .about-text li {
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
 }
 
 .info-col {
@@ -134,7 +137,7 @@
 .offer-text {
   list-style: none;
   text-align: center;
-  font-size: 1.0rem;
+  font-size: 1rem;
   margin: 10vw;
   color: white;
 }
@@ -144,14 +147,14 @@
 }
 
 .info-row .offer-text li {
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
 }
 
 .join-text {
   list-style: none;
   text-align: center;
   vertical-align: center;
-  font-size: 1.0rem;
+  font-size: 1rem;
   margin: 11vw;
   color: white;
 }
@@ -163,7 +166,7 @@
 .constitution-text {
   list-style: none;
   text-align: center;
-  font-size: 1.0rem;
+  font-size: 1rem;
   margin: 13vw;
   color: white;
 }
@@ -173,10 +176,10 @@
 }
 
 .info-row .join-text li {
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
 }
 .info-row .join-text p {
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
 }
 
 .about-us-image {
@@ -198,12 +201,69 @@
   text-align: center;
 }
 
-.accordian-header:hover{
-  color:  #01a4ff;
+.accordian-header:hover {
+  color: #01a4ff;
   cursor: pointer;
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 420px) {
+  .bottom-section {
+    margin-left: 15px;
+  }
+
+  .about-image {
+    height: auto;
+    width: auto;
+  }
+
+  .mission-statement-points {
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+    width: 90%;
+    margin: auto;
+  }
+
+  .our-mission-header {
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    width: 90%;
+    margin: auto;
+    background-color: black;
+    border-radius: 0.5rem;
+  }
+
+  .header-container {
+    position: relative;
+  }
+  .about-us-card {
+    height: 25.2vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0, 153, 255, 0.4)),
+      url("./images/background-image-small.jpg");
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    align-self: center;
+    filter: blur(1px);
+
+    color: white;
+    opacity: 0.6;
+    font-weight: bold;
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+  #header-text {
+    position: absolute;
+
+    top: 0%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    font-size: 1.75rem;
+  }
+}
+@media screen and (min-width: 420px) and (max-width: 800px) {
   .bottom-section {
     margin-left: 15px;
   }
@@ -228,7 +288,66 @@
     width: 90%;
     margin: auto;
     background-color: black;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
   }
 
+  .header-container {
+    position: relative;
+  }
+  .about-us-card {
+    height: 28vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0, 153, 255, 0.4)),
+      url("./images/background-image-medium.jpg");
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    align-self: center;
+    filter: blur(1px);
+
+    color: white;
+    opacity: 0.6;
+    font-weight: bold;
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+  #header-text {
+    position: absolute;
+    top: 0%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    font-size: 3.15rem;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1023px) {
+  .header-container {
+    position: relative;
+  }
+  .about-us-card {
+    /* position: relative; */
+    height: 37vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0, 153, 255, 0.4)),
+      url("./images/background-image-medium.jpg");
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    align-self: center;
+    filter: blur(1px);
+
+    color: white;
+    opacity: 0.6;
+    font-weight: bold;
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+  #header-text {
+    position: absolute;
+
+    top: 15%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    font-size: 3.95rem;
+  }
 }

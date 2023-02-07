@@ -4,7 +4,7 @@ import { Row, Col, Image, Button, Accordion, Card } from "react-bootstrap";
 import { CaretDownFill } from "react-bootstrap-icons";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
+// import { Carousel } from "react-responsive-carousel";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import "./aboutus.css";
 
@@ -14,12 +14,15 @@ class AboutUs extends React.Component {
     let acmImageCaptions = ["2021-2022 ACM Leaders", "2019-2020 ACM Leaders"];
     return (
       <div>
-        <div>
-          <div className="about-us-text">
+        {/* <div className="about-us-text">
             <p>About Us</p>
-          </div>
+          </div> */}
+        {/* <div className="about-us-card"><span className="header-text">About us</span></div> */}
+        <div className="header-container">
           <div className="about-us-card"></div>
+          <span id="header-text">About us</span>
         </div>
+
         <Jumbotron>
           {/* <div id="blue-rectangle"></div> */}
 
@@ -111,17 +114,24 @@ class AboutUs extends React.Component {
 								</div>
 							})}
 						</Carousel> */}
-					</div>
-				</Jumbotron>
-				<div className="bottom-section">
-					<div id="about-us-info">
-						<Accordion>
-							<Card>
-								<Accordion.Toggle className="accordian-container" as={Card.Header} eventKey="0">
-									<div className="accordian-header-container">
-										<h1 className="accordian-header"> Who are we? <CaretDownFill className="down-caret"/></h1>
-									</div>
-								</Accordion.Toggle>
+          </div>
+        </Jumbotron>
+        <div className="bottom-section">
+          <div id="about-us-info">
+            <Accordion>
+              <Card>
+                <Accordion.Toggle
+                  className="accordian-container"
+                  as={Card.Header}
+                  eventKey="0"
+                >
+                  <div className="accordian-header-container">
+                    <h1 className="accordian-header">
+                      {" "}
+                      Who are we? <CaretDownFill className="down-caret" />
+                    </h1>
+                  </div>
+                </Accordion.Toggle>
 
                 <Accordion.Collapse eventKey="0">
                   <Card.Body>
