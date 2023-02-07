@@ -263,7 +263,6 @@ iframe[src*=youtube] {
 }
 
 .programs-tab-content .program-description {
-    margin-top: 2.5em;
     font-size: 25px;
     text-align: center;
 }
@@ -273,8 +272,13 @@ iframe[src*=youtube] {
 }
 
 .join-button {
-    margin-left: 255px;
-    margin-top: 20px;
+    align-items: center;
+    margin-left: 175px;
+    margin-top: 10px;
+}
+
+.pro-dev-card {
+    margin-left: 325px;
 }
 @media only screen and (max-width: 600px) {
     .skill-item2 {
@@ -299,8 +303,12 @@ iframe[src*=youtube] {
         padding-right: 0px;
     }
     .join-button {
-        margin-left: 50px;
+        align-items: center;
+        margin-left: 45px;
         margin-top: 10px;
+    }
+    .pro-dev-card {
+        margin-left: -50px;
     }
     .programs-tab-label {
         font-size: 0.85rem;
