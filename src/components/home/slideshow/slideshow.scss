@@ -1,7 +1,7 @@
 // Code for slideshow: https://css-tricks.com/infinite-all-css-scrolling-slideshow/
 .tech-slideshow {
   height: 600px;
-  max-width: 100%;
+  max-width: 1000%;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
@@ -10,7 +10,7 @@
 
 .tech-slideshow > div {
   height: 200px;
-  width: 2526px;
+  width: 1000%;
   background: url('./images/acm-slide2.JPG');
   filter: grayscale(100%);
   position: absolute;
@@ -20,7 +20,7 @@
   transform: translate3d(0, 0, 0);
 }
 .tech-slideshow .mover-1 {
-  animation: moveSlideshow 70s linear infinite;
+  animation: moveSlideshow 180s linear infinite;
 }
 .tech-slideshow .mover-2 {
   opacity: 0;
@@ -34,6 +34,6 @@
 
 @keyframes moveSlideshow {
   100% {
-    transform: translateX(-40%);
+    transform: translateX(-20%);
   }
 }

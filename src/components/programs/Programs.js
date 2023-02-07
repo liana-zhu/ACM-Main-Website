@@ -21,8 +21,9 @@ import {
 import ModalImage from "./ModalImage";
 import "bootstrap/dist/css/bootstrap.css";
 import "./Programs.css";
-import Mentorship from "./Mentorship";
+import Mentorship from "./Mentorship.js";
 import flyerS2021 from "./pictures/spring2021-mentorship-flyer.png";
+import Mentor2 from "./Mentor2.js";
 
 /* Updating the Mentorship page:
   - Update schoolYears array
@@ -108,7 +109,8 @@ class Programs extends React.Component {
           <br />
           <span className="disclaimer">
             <b>
-              2. Each workshop has its own dedicated date. Keep track of them, so you won't miss each workshop.
+              2. Each workshop has its own dedicated date. Keep track of them,
+              so you won't miss each workshop.
             </b>
           </span>
         </div>
@@ -133,26 +135,30 @@ class Programs extends React.Component {
           <Tab.Container id="left-tabs-example" defaultActiveKey="first">
             <Col>
               <Col sm={12}>
-                <div class = "year-bar">
-                <DropdownButton
-                  title={this.state.currentSem}
-                  id="dropdown-button"
-                  menuVariant="dark"
-                  className="ms-2"
-                >
-                  {schoolYears.map((year) => (
-                    <Dropdown.Item
-                      eventKey={year[0]}
-                      onClick={(e) => this.changeYear(e.target.textContent)}
-                      className="item-dropdown"
-                    >
-                      {year[1]}
-                    </Dropdown.Item>
-                  ))}
-                </DropdownButton></div>
-              <Col sm={12} className="programs-tab-container">
-            </Col>
+                <div class="year-bar">
+                  <DropdownButton
+                    title={this.state.currentSem}
+                    id="dropdown-button"
+                    menuVariant="dark"
+                    className="ms-2"
+                  >
+                    {schoolYears.map((year) => (
+                      <Dropdown.Item
+                        eventKey={year[0]}
+                        onClick={(e) => this.changeYear(e.target.textContent)}
+                        className="item-dropdown"
+                      >
+                        {year[1]}
+                      </Dropdown.Item>
+                    ))}
+                  </DropdownButton>
+                </div>
+                <Col sm={12} className="programs-tab-container"></Col>
                 <Tab.Content className="programs-tab-content">
+
+                  {/*Starting here, each tab pane should be mapped*/}
+                  {/*Access total number of past mentorships*/}
+                  {/*Each event key must be identified as just index numbers 0 to n*/}
                   <Tab.Pane eventKey="first">
                     <Tab.Container defaultActiveKey="S2023mentorship">
                       {/* Most recent mentorship program goes under this block of comment
@@ -267,98 +273,7 @@ class Programs extends React.Component {
                                     */}
                       <Tab.Content className="programs-tab-content">
                         <Tab.Pane eventKey="F2022mentorship">
-                          <div>
-                            <p>
-                              <h2>
-                                <span className="highlight-text">
-                                  <b>Program Description</b>
-                                </span>
-                              </h2>
-                              <p>
-                                In this world, many people may find it difficult
-                                to transition into a stable and independent
-                                life. Thankfully, if you are one of these
-                                people, you're not alone. By becoming a mentee
-                                in this program, a mentor can show you the ropes
-                                to not only help you on your way to landing that
-                                six-figure job, but also help you navigate the
-                                pothole-filled road we call life.
-                              </p>
-                              <p className="program-description">
-                                In this program, mentees will:
-                              </p>
-                              <p>
-                                ❖
-                                <span className="highlight-text point">
-                                  <b>Time Management</b>
-                                </span>
-                                <br />❖
-                                <span className="highlight-text point">
-                                  <b>
-                                    Building your Resume, Cover Letter, Thank
-                                    You Letter
-                                  </b>
-                                </span>
-                                <br />❖
-                                <span className="highlight-text point">
-                                  <b>Behavioral and Technical Interviews</b>
-                                </span>
-                                <br />❖
-                                <span className="highlight-text point">
-                                  <b>
-                                    Creating professional social media accounts
-                                    (Handshake, LinkedIn)
-                                  </b>
-                                </span>
-                                <br />❖
-                                <span className="highlight-text point">
-                                  <b>
-                                    Technical Practices in the CS field (Agile,
-                                    Waterfall)
-                                  </b>
-                                </span>
-                                <br />❖
-                                <span className="highlight-text point">
-                                  <b>Conferences</b>
-                                </span>
-                                <br />❖
-                                <span className="highlight-text point">
-                                  <b>Finances</b>
-                                </span>
-                                <br />
-                              </p>
-                              <p className="program-description">
-                                The deadline to apply is Wednesday, August 31,
-                                2022. Join our mentorship program today before
-                                it's too late!
-                              </p>
-                            </p>
-                            {/* use for now to display image */}
-                            <img
-                              src={require("./pictures/fall2022-mentorship-flyer.png")}
-                              className="programs-poster"
-                              alt="mentorship flyer"
-                            ></img>
-                            {/* {
-                              this.state.mentorshipF22 &&
-                              this.state.mentorshipF22.map(mentorshipF22 => {
-                                return (
-                                  <img src={mentorshipF22.imgUrl} className="img-fluid programs-poster" alt="mentorship flyer"></img>
-                                )
-                              })
-                            } */}
-                            <Tab.Content className="programs-tab-content poster">
-                              <Tab.Pane eventKey="menteeRole"></Tab.Pane>
-                            </Tab.Content>
-                            {/*<Button
-                              variant="success"
-                              size="lg"
-                              href="https://docs.google.com/forms/d/e/1FAIpQLSf6apdzV5q2jrsJZCbsfV-SGx2cZimQyU3D60N3AUvHjhW40g/viewform"
-                            >
-                              Join Now!
-                          </Button>*/}
-                            <br />
-                          </div>
+                          <Mentor2/>
                         </Tab.Pane>
                       </Tab.Content>
                     </Tab.Container>
