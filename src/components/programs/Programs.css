@@ -217,12 +217,16 @@
     grid-column: 2/3;
 }
 .signup-section{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
     width: 100%;
     margin: auto;
 }
 .current-poster {
     max-width: 40em;
+    padding: 1em;
 }
 .programs-poster {
     max-width: 30em;
@@ -278,8 +282,7 @@ iframe[src*=youtube] {
 }
 
 .join-button {
-    align-self: center;
-    margin-top: 10px;
+    border: 3px solid green;
 }
 
 .pro-dev-card {
@@ -309,8 +312,6 @@ iframe[src*=youtube] {
     }
     .join-button {
         align-items: center;
-        margin-left: 45px;
-        margin-top: 10px;
     }
     .pro-dev-card {
         margin-left: -50px;

@@ -7,7 +7,7 @@ import "./Programs.css";
 
 /********* UPDATING MENTORSHIP PAGE CONTENT FOR THE NEW SEMESTER *********
   Important Note: It is best to update this page's contents once
-                  the design team has provided the flyers
+            the design team has provided the flyers for the current semester
   1. If you don't have access to firestore, ask the Web Master to follow
     this step.
 
@@ -19,7 +19,7 @@ import "./Programs.css";
 
   2. If the current program is Mentorship, leave the description as it is.
     However, if current semester has different type of program for example
-    PRO-DEV workshop, then feel free to change the description
+    PRO-DEV workshop, then feel free to change the description an
     *Mentorship default description is at the bottom page*
   3. Adding icons:
     - feel free to add topics/skills that are necessary to the current program
@@ -32,7 +32,7 @@ import "./Programs.css";
 ***************************************************************************/
 
 const Mentorship = (props) => {
-  let isVideo = false
+  let isVideo = false;
   if (props.mentorship.videoLink != "") {
     isVideo = true;
   }
@@ -64,13 +64,14 @@ const Mentorship = (props) => {
         <p className="aboutprogram">
           If you feel that you are lacking professional skills, or you seek more
           involvement in the tech industry, then this program is perfect for
-          you! The mentorship program will teach valuable skills and provide
-          resources that are crucial for a professional. Additionally, the
-          program helps increase your opportunity in landing jobs and improves
-          your financial status. By applying, you will have the opportunity to
-          learn important life lessons from your mentors that are not taught in
-          the typical classroom environment. Overall, this program will benefit
-          you professionally by the time you graduate.
+          you! The Professional Development (PRO-DEV) program will teach
+          valuable skills and provide resources that are crucial for a
+          professional. Additionally, the program helps increase your
+          opportunity in landing jobs and improves your financial status. By
+          applying, you will have the opportunity to learn important life
+          lessons from your ACM leaders that are not taught in the typical classroom
+          environment. Overall, this program will benefit you professionally by
+          the time you graduate.
           <br />
           These workshops are open for{" "}
           <b>
@@ -121,7 +122,7 @@ const Mentorship = (props) => {
 
       <div className="signup-section">
         <p className="program-description">
-          Make the most out of it by attending all workshops!
+          Sign-up now and attend all workshops!
         </p>
 
         {/*Stored in firestore*/}
@@ -134,11 +135,11 @@ const Mentorship = (props) => {
         {/*Only update here if signup link is live*/}
         <Button
           variant="success"
-          className="join-button"
+          className="join-button mx-auto"
           size="lg"
           href="https://forms.gle/hAjvNSbS47ghMxuE8"
         >
-          Join Now!
+          Apply Now!
         </Button>
       </div>
     </div>
@@ -157,9 +158,9 @@ export default Mentorship;
           your financial status. By applying, you will have the opportunity to
           learn important life lessons from your mentors that are not taught in
           the typical classroom environment. Overall, this program will benefit
-          you professionally by the time you graduate.
+          you professionally and academically by the time you graduate.
           <br />
-          These workshops are open for{" "}
+          Mentorships are open for sign up to{" "}
           <b>
             <u>all ACM members</u>
           </b>{" "}

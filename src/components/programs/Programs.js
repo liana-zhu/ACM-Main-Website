@@ -53,7 +53,6 @@ class Programs extends React.Component {
         this.setState({ prevMentorship: events.reverse() });
         this.setState({ currentSem: this.state.prevMentorship[0].season });
         this.setState({ currentProgram: this.state.prevMentorship[0] });
-        this.state.prevMentorship.splice(0, 1);
       })
       .catch((error) => console.log(error));
   }
