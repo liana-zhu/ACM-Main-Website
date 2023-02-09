@@ -1,15 +1,11 @@
 import React from "react";
 import { useState } from "react";
 import firebase from "../professional-events/firebaseConfig.js";
-import {
-  Col,
-  Tab,
-  Dropdown,
-  DropdownButton,
-} from "react-bootstrap";
+import { Col, Tab, Dropdown, DropdownButton, Nav } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 import "./Programs.css";
 import Mentorship from "./Mentorship.js";
+import ArchiveProgram from "./ArchivePrograms.js";
 
 /* Updating the Mentorship page:
   - Update schoolYears array
@@ -31,8 +27,8 @@ class Programs extends React.Component {
       showMentorship2: false,
       showTutoring: false,
       currentSem: "Season Year",
-      mentorship: null,
-      schoolYears: [],
+      currentProgram: null,
+      prevMentorship: null,
     };
   }
 
@@ -54,9 +50,10 @@ class Programs extends React.Component {
           events.push(data);
           seasons.push(data.season);
         });
-        this.setState({ mentorship: events.reverse() });
-        this.setState({ schoolYears: seasons.reverse() });
-        this.setState({ currentSem: this.state.schoolYears[0] });
+        this.setState({ prevMentorship: events.reverse() });
+        this.setState({ currentSem: this.state.prevMentorship[0].season });
+        this.setState({ currentProgram: this.state.prevMentorship[0] });
+        this.state.prevMentorship.splice(0, 1);
       })
       .catch((error) => console.log(error));
   }
@@ -110,37 +107,40 @@ class Programs extends React.Component {
           </div>
         </div>
         */}
-        <br></br>
         <div className="card programs-card">
-          <Tab.Container id="left-tabs-example" defaultActiveKey={0}>
-            <DropdownButton
-              title={this.state.currentSem}
-              id="dropdown-button"
-              menuVariant="dark"
-            >
-              {this.state.schoolYears &&
-                this.state.schoolYears.map((year, index) => (
-                  <Dropdown.Item
-                    eventKey={index}
-                    onClick={(e) => this.changeYear(e.target.textContent)}
-                    className="item-dropdown"
-                  >
-                    {year}
-                  </Dropdown.Item>
-                ))}
-            </DropdownButton>
+          <Tab.Container id="left-tabs-example" defaultActiveKey={"current"}>
+            <Nav className="project-tab-label" variant="pills">
+              <Nav.Item>
+                <Nav.Link
+                  className="project-nav-link-tab anchor-white"
+                  eventKey="current"
+                >
+                  {this.state.currentSem}
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link
+                  className="project-nav-link-tab anchor-white"
+                  eventKey="archive"
+                >
+                  Archive
+                </Nav.Link>
+              </Nav.Item>
+            </Nav>
             <Col sm={12} className="programs-tab-container"></Col>
-            <Tab.Content className="programs-tab-content">
-              {/*Starting here, each tab pane should be mapped*/}
-              {/*Access total number of past mentorships*/}
-              {/*Each event key must be identified as just index numbers 0 to n*/}
-              {this.state.mentorship &&
-                this.state.mentorship.map((m, i) => (
-                  <Tab.Pane eventKey={i}>
-                    <Mentorship video={m.videoLink} flyer={m.flyer}/>
-                  </Tab.Pane>
-                ))}
-            </Tab.Content>
+            {/*Starting here, each tab pane should be mapped*/}
+            {/*Access total number of past mentorships*/}
+            {/*Each event key must be identified as just index numbers 0 to n*/}
+            {this.state.currentProgram && (
+              <Tab.Content className="programs-tab-content">
+                <Tab.Pane eventKey={"current"}>
+                  <Mentorship mentorship={this.state.currentProgram} />
+                </Tab.Pane>
+                <Tab.Pane eventKey={"archive"}>
+                  <ArchiveProgram mentorshipList={this.state.prevMentorship} />
+                </Tab.Pane>
+              </Tab.Content>
+            )}
           </Tab.Container>
           <br></br>
         </div>

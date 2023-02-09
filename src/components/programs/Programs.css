@@ -75,7 +75,6 @@
 .programs-card {
     margin: auto;
     text-align: left;
-    padding-top: 30px;
     max-width: 100%;
     
 }
@@ -91,7 +90,7 @@
 .programs-tab-content {
     width: 100%;
     background-image: linear-gradient(#333030, #141415) ;
-    border-radius: 3rem;
+    border-radius: 2em;
     margin-top: 1.5em;
     padding: 10px;
 }
@@ -219,13 +218,20 @@
 }
 .signup-section{
     display: block;
+    width: 100%;
     margin: auto;
 }
+.current-poster {
+    max-width: 40em;
+}
 .programs-poster {
-    min-width: 300px;
-    max-width: 50vw;
-    padding: 10px;
-    margin-left: 475px;
+    max-width: 30em;
+}
+.poster-content{
+    margin-bottom: 5em;
+}
+.poster-content > h2{
+    font-size: x-large;
 }
 
 .programs-body {
@@ -272,8 +278,7 @@ iframe[src*=youtube] {
 }
 
 .join-button {
-    align-items: center;
-    margin-left: 175px;
+    align-self: center;
     margin-top: 10px;
 }
 

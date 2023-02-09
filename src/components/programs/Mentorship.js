@@ -33,7 +33,7 @@ import "./Programs.css";
 
 const Mentorship = (props) => {
   let isVideo = false
-  if (props.video != "") {
+  if (props.mentorship.videoLink != "") {
     isVideo = true;
   }
   return (
@@ -46,7 +46,7 @@ const Mentorship = (props) => {
             <iframe
               width="560"
               height="315"
-              src={props.video}
+              src={props.mentorship.videoLink}
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -119,15 +119,15 @@ const Mentorship = (props) => {
         {/*end of skills list*/}
       </p>
 
-      <div className="signup-section col-lg-6 col-md-9 col-12">
+      <div className="signup-section">
         <p className="program-description">
           Make the most out of it by attending all workshops!
         </p>
 
         {/*Stored in firestore*/}
         <img
-          src={props.flyer}
-          className="programs-poster rounded m-auto d-block"
+          src={props.mentorship.flyer}
+          className="current-poster rounded m-auto d-block"
           alt="mentorship flyer"
         ></img>
 
