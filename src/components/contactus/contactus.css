@@ -165,7 +165,7 @@
 @media screen and (max-width: 800px) {
   .header {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0, 153, 255, 0.4)),
-      url("./images/header-background-portrait-image.png");
+      url("./images/header-background-portrait-image.png") center;
   }
 
   .header-text {

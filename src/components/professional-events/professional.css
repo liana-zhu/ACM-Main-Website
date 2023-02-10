@@ -1,7 +1,7 @@
 .event-card {
   height: 85vh;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0, 153, 255, 0.4)),
-    url("./images/header-background-image.jpg");
+    url("./images/header-background-image.jpg") center;
   background-size: cover !important;
   background-position: center;
   background-attachment: fixed;
