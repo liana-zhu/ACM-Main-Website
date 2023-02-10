@@ -298,6 +298,7 @@ iframe[src*="youtube"] {
     height: 80vh;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0, 153, 255, 0.4)),
       url("./pictures/header-portrait-background-image.png") bottom;
+    background-position: center bottom;
   }
   .mentor-title-text {
     font-size: 2.55rem;
