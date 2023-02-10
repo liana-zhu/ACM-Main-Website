@@ -2,10 +2,10 @@
   height: 80vh;
   width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0, 153, 255, 0.4)),
-    url("../aboutus/images/board-background.jpg") center bottom;
+    url("../aboutus/images/board-background.jpg") center center !important;
   background-size: cover !important;
   background-attachment: fixed !important;
-  background-position: center bottom !important;
+  background-position: center !important;
   margin-top: auto;
   filter: blur(1px);
   font-size: 4.4rem;
