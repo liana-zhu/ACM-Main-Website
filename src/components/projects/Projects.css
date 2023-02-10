@@ -233,7 +233,7 @@ iframe[src*="youtube"] {
 @media only screen and (max-width: 600px) {
   .project-title-card {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0, 153, 255, 0.4)),
-      url("./header-potrait-background-image.png");
+      url("./header-potrait-background-image.png") center bottom;
     background-position: center bottom;
   }
 
