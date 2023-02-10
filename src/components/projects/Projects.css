@@ -2,7 +2,7 @@
   /* When the height is less than 70vh, the beginner and advanced tabs are not be clickable */
   height: 80vh;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0, 153, 255, 0.4)),
-    url("./fall2022/BeginnerProjectSession.jpg");
+    url("./fall2022/BeginnerProjectSession.jpg") center;
   background-size: cover !important;
   background-attachment: fixed !important;
   background-position: center;
@@ -233,7 +233,7 @@ iframe[src*="youtube"] {
 @media only screen and (max-width: 600px) {
   .project-title-card {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0, 153, 255, 0.4)),
-      url("./header-potrait-background-image.png");
+      url("./header-potrait-background-image.png") center;
   }
 
   .project-title-text {

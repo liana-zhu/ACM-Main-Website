@@ -1,7 +1,7 @@
 .about-us-card {
   height: 80vh;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0, 153, 255, 0.4)),
-    url("./images/Fall2022FirstGeneralMeeting.jpg");
+    url("./images/Fall2022FirstGeneralMeeting.jpg") center;
   background-size: cover !important;
   background-attachment: fixed !important;
   background-position: center;
@@ -238,7 +238,7 @@
   }
   .about-us-card {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0, 153, 255, 0.4)),
-      url("./images/header-potrait-background-image.png");
+      url("./images/header-potrait-background-image.png") right;
     background-position: right;
   }
   #header-text {
