@@ -54,45 +54,58 @@ class Navi extends React.Component {
                 <div className="nav-dropdown-text">events</div>
               </NavDropdown.Item>
             </NavDropdown>
-            
+
             <Nav.Link href="/events">calendar</Nav.Link>
             <Nav.Link href="/sponsor">sponsors</Nav.Link>
             {/* <Nav.Link href="/contactus">contact us</Nav.Link> */}
           </Nav>
           <Nav className="socials">
-            <Navbar.Brand id="instagram" href="https://www.instagram.com/calstatela_acm/?hl=en">
+            <Navbar.Brand
+              id="instagram"
+              href="https://www.instagram.com/calstatela_acm/?hl=en"
+            >
               <FontAwesomeIcon
-                  className="iconBrandNav"
-                  size="2x"
-                  icon={faInstagram}
+                className="iconBrandNav"
+                size="2x"
+                icon={faInstagram}
               ></FontAwesomeIcon>
             </Navbar.Brand>
-            <Navbar.Brand id="facebook" href="https://www.facebook.com/calstatela.acm">
+            <Navbar.Brand
+              id="facebook"
+              href="https://www.facebook.com/calstatela.acm"
+            >
               <FontAwesomeIcon
-                  className="iconBrandNav"
-                  size="2x"
-                  icon={faFacebookF}
+                className="iconBrandNav"
+                size="2x"
+                icon={faFacebookF}
               ></FontAwesomeIcon>
             </Navbar.Brand>
-            <Navbar.Brand id="discord" href="https://discordapp.com/invite/wX58JRv">
+            <Navbar.Brand
+              id="discord"
+              href="https://discordapp.com/invite/wX58JRv"
+            >
               <FontAwesomeIcon
-                  className="iconBrandNav"
-                  size="2x"
-                  icon={faDiscord}
+                className="iconBrandNav"
+                size="2x"
+                icon={faDiscord}
               ></FontAwesomeIcon>
             </Navbar.Brand>
-            <Navbar.Brand id="LinkedIn" href="https://www.linkedin.com/in/acm-cal-state-la-2a92b4260/">
+            <Navbar.Brand
+              id="LinkedIn"
+              href="https://www.linkedin.com/in/acm-cal-state-la-2a92b4260/"
+            >
               <FontAwesomeIcon
-                  className="iconBrandNav"
-                  size="2x"
-                  icon={faLinkedin}
+                className="iconBrandNav"
+                size="2x"
+                icon={faLinkedin}
               ></FontAwesomeIcon>
             </Navbar.Brand>
           </Nav>
-          <div class = "membership-btn">
-          <Nav.Link href="/membership">
-            <Button variant="light">Membership</Button>
-          </Nav.Link></div>
+          <div class="membership-btn">
+            <Nav.Link href="/membership">
+              <Button variant="light">Membership</Button>
+            </Nav.Link>
+          </div>
           {/* <Nav.Link href="https://calstatelaacm-portal.web.app/#/"><Button variant="light">ACM Portal</Button></Nav.Link> */}
         </Navbar.Collapse>
       </Navbar>

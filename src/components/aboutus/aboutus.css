@@ -2,8 +2,9 @@
   height: 80vh;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0, 153, 255, 0.4)),
     url("./images/Fall2022FirstGeneralMeeting.jpg");
-  background-size: cover;
-  background-attachment: fixed;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+  background-position: center;
   align-self: center;
   filter: blur(1px);
 
@@ -21,7 +22,7 @@
   font-weight: bold;
   line-height: 1.2;
   top: 18%;
-  left: 20%;
+  left: 24%;
   transform: translate(-50%, -50%);
 
   text-align: left;
@@ -106,8 +107,6 @@
 
 .about-text {
   text-align: center;
-  /* font-size: 1.25rem; */
-  /* margin-left: 60px; */
   list-style: none;
   font-size: 1rem;
   margin: 10vw;
@@ -206,64 +205,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 420px) {
-  .bottom-section {
-    margin-left: 15px;
-  }
-
-  .about-image {
-    height: auto;
-    width: auto;
-  }
-
-  .mission-statement-points {
-    text-align: center;
-    font-size: 1rem;
-    color: white;
-    width: 90%;
-    margin: auto;
-  }
-
-  .our-mission-header {
-    text-align: center;
-    font-size: 2.5rem;
-    color: white;
-    width: 90%;
-    margin: auto;
-    background-color: black;
-    border-radius: 0.5rem;
-  }
-
-  .header-container {
-    position: relative;
-  }
-  .about-us-card {
-    height: 25.2vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0, 153, 255, 0.4)),
-      url("./images/background-image-small.jpg");
-
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-attachment: fixed;
-    align-self: center;
-    filter: blur(1px);
-
-    color: white;
-    opacity: 0.6;
-    font-weight: bold;
-    grid-row: 1/2;
-    grid-column: 2/3;
-  }
-  #header-text {
-    position: absolute;
-
-    top: 0%;
-    left: 23%;
-    transform: translate(-50%, -50%);
-    font-size: 1.75rem;
-  }
-}
-@media screen and (min-width: 420px) and (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .bottom-section {
     margin-left: 15px;
   }
@@ -295,59 +237,14 @@
     position: relative;
   }
   .about-us-card {
-    height: 28vh;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0, 153, 255, 0.4)),
-      url("./images/background-image-medium.jpg");
-
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-attachment: fixed;
-    align-self: center;
-    filter: blur(1px);
-
-    color: white;
-    opacity: 0.6;
-    font-weight: bold;
-    grid-row: 1/2;
-    grid-column: 2/3;
+      url("./images/header-potrait-background-image.png");
+    background-position: right;
   }
   #header-text {
     position: absolute;
-    top: 0%;
-    left: 25%;
+    left: 38%;
     transform: translate(-50%, -50%);
-    font-size: 3.15rem;
-  }
-}
-
-@media screen and (min-width: 801px) and (max-width: 1023px) {
-  .header-container {
-    position: relative;
-  }
-  .about-us-card {
-    /* position: relative; */
-    height: 37vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0, 153, 255, 0.4)),
-      url("./images/background-image-medium.jpg");
-
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-attachment: fixed;
-    align-self: center;
-    filter: blur(1px);
-
-    color: white;
-    opacity: 0.6;
-    font-weight: bold;
-    grid-row: 1/2;
-    grid-column: 2/3;
-  }
-  #header-text {
-    position: absolute;
-
-    top: 15%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-    font-size: 3.95rem;
+    font-size: 3.5rem;
   }
 }

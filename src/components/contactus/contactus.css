@@ -2,18 +2,6 @@
   padding-top: 70px;
 }
 
-/*.txtb {
-  border: 1px solid gray;
-  /* margin: 8px 0; */ /*
-  margin-top: 8px;
-  margin-left: 5%;
-  margin-right: 5%;
-  padding: 12px 18px;
-  border-radius: 8px;
-  /*changing bg color*/ /*
-  background-color: #1c1c1e;
-} */
-
 .txtb {
   width: auto;
   height: auto;
@@ -67,18 +55,15 @@
   width: 90%;
   font-weight: bold;
   color: white;
-  /* padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 6%;
-  padding-left: 6%; */
 }
 
 .header {
-  height: 75vh;
+  height: 80vh;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0, 153, 255, 0.4)),
     url("./images/header-background-image.jpg");
   background-size: cover !important;
-  background-attachment: fixed;
+  background-attachment: fixed !important;
+  background-position: center;
   align-self: center;
   filter: blur(1px);
   font-size: 4.4rem;
@@ -94,13 +79,12 @@
   width: 100%;
   position: absolute;
   z-index: 2;
-  font-size: 3.5rem;
+  font-size: 5rem;
   color: white;
   font-weight: bold;
   line-height: 1.2;
   text-align: left;
   padding-top: 25vh;
-  /* display: grid; */
   grid-template-rows: 1fr 1.4fr;
   padding-left: 3rem;
 }
@@ -176,4 +160,16 @@
 
 .contact-info {
   font-size: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .header {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0, 153, 255, 0.4)),
+      url("./images/header-background-portrait-image.png");
+  }
+
+  .header-text {
+    font-size: 3.5rem;
+    padding-left: 0.75em;
+  }
 }
