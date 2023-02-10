@@ -1,10 +1,11 @@
 .project-title-card {
   /* When the height is less than 70vh, the beginner and advanced tabs are not be clickable */
   height: 80vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.40), rgb(0, 153, 255, 0.40)),
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0, 153, 255, 0.4)),
     url("./fall2022/BeginnerProjectSession.jpg");
   background-size: cover !important;
-  /*background-attachment: fixed;*/
+  background-attachment: fixed !important;
+  background-position: center;
   align-self: center;
   filter: blur(1px);
   font-size: 4.4rem;
@@ -57,7 +58,7 @@
 
 .project-tab-content {
   width: 100%;
-  background-image: linear-gradient(#333030, #141415) ;
+  background-image: linear-gradient(#333030, #141415);
   border-radius: 3rem;
   padding: 10px;
 }
@@ -230,6 +231,18 @@ iframe[src*="youtube"] {
 }
 
 @media only screen and (max-width: 600px) {
+  .project-title-card {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0, 153, 255, 0.4)),
+      url("./header-potrait-background-image.png");
+  }
+
+  .project-title-text {
+    font-size: 2.75rem;
+
+    padding-top: 30vh;
+
+    padding-left: 1em;
+  }
   .project-card {
     margin-left: -25px;
     text-align: left;
@@ -245,7 +258,7 @@ iframe[src*="youtube"] {
     border-radius: 3rem;
     padding-top: 15px;
   }
-  
+
   .disclaimer-body {
     padding-right: 5px;
   }

@@ -1,9 +1,10 @@
 .sponsors-card {
   height: 80vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.40), rgb(0, 153, 255, 0.40)),
-    url("./images/leaders.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgb(0, 153, 255, 0.4)),
+    url("./images/professional-background.jpg");
   background-size: cover !important;
-  background-attachment: fixed;
+  /* background-position: center; */
+  background-attachment: fixed !important;
   align-self: center;
   filter: blur(1px);
   font-size: 4.4rem;
