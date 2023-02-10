@@ -44,6 +44,7 @@ class Board extends React.Component {
           </div>
           <div className="board-card"></div>
         </div>
+
         <div className="body container">
           <Jumbotron className="row leaders-div">
             <Tab.Container id="left-tabs-example" defaultActiveKey="first">
@@ -203,7 +204,7 @@ class Board extends React.Component {
                             year="2023"
                             position="Project Officer"
                           />
-                           <BoardLeaders
+                          <BoardLeaders
                             photo={IMAGES.Liana2022}
                             firstName="Liana"
                             lastName="Zhu"
