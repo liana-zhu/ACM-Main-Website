@@ -121,7 +121,7 @@ body:not(.keyboardUser) *:focus {
 .card{
     background-color: #252830 !important;
     border-radius: 10px !important;
-    margin: 0.5rem;
+    margin: 2.5rem;
     position: relative !important;
     height: 15rem;
     width: 15rem;
@@ -266,6 +266,35 @@ body:not(.keyboardUser) *:focus {
 
 .icon{
     width: 2rem !important;
+}
+
+/*Carousel Settings*/
+
+.carousel-event-image {
+    margin-bottom: 20px;
+}
+
+.carousel .control-dots {
+    opacity: 0;
+}
+
+.carousel .btn {
+    margin-left: -5px;
+}
+
+.carousel .thumbs {
+    border-top: 2px solid rgb(50, 97, 123);
+    margin-top: -200px;
+    margin-left: -40px;
+    opacity: 0;
+}
+
+.carousel .thumbs-wrapper {
+  margin: -1px !important;
+}
+
+.carousel .carousel-status {
+    opacity: 0;
 }
 
 /* Animation for Marquee */

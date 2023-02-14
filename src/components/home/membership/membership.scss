@@ -12,6 +12,9 @@
     display: flex;
     flex-wrap: wrap;
 
+    border-left: 15px solid rgb(50, 97, 123);
+    border-right: 15px solid rgb(50, 97, 123);
+
     .container{
         display: flexbox;
         background-color: #161616;
@@ -76,6 +79,10 @@
 
 @media screen and (max-width: 750px){
     .Membership-tease{
+
+        /*borders wont appear on mobile*/
+        border-left: 0px solid rgb(50, 97, 123);
+        border-right: 0px solid rgb(50, 97, 123);
         
         .container{
 
@@ -96,6 +103,10 @@
     @media screen and (max-width: 550px) {
         .Membership-tease{
         
+            /*borders wont appear on mobile*/
+            border-left: 0px solid rgb(50, 97, 123);
+            border-right: 0px solid rgb(50, 97, 123);
+
             .container{
                 width: 44rem;
                 height: 44rem;
