@@ -6,6 +6,10 @@
     padding-bottom: 25px;
 }
 
+#calendar-header{
+    height: 80vh;
+}
+
 .events-container {
     background-color: black !important;
     height: 100% !important;
