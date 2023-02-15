@@ -128,7 +128,7 @@ class ContactUs extends React.Component {
                 </ContextAwareToggle>
                 <Accordion.Collapse eventKey="2">
                   <Card.Body className="faq-ans">
-                    Student membership fee is $5 for a whole school year
+                    Student membership fee is $5 for a whole school year.
                   </Card.Body>
                 </Accordion.Collapse>
               </Card>
@@ -159,7 +159,7 @@ class ContactUs extends React.Component {
                 <Accordion.Collapse eventKey="4">
                   <Card.Body className="faq-ans">
                     No, you do not need to sign up again, since this is a yearly
-                    membership that counts for both fall and spring semester
+                    membership that counts for both fall and spring semester.
                   </Card.Body>
                 </Accordion.Collapse>
               </Card>

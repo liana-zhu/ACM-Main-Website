@@ -11,6 +11,9 @@
     display: flex;
     flex-wrap: wrap;
 
+    border-left: 15px solid rgb(50, 97, 123);
+    border-right: 15px solid rgb(50, 97, 123);
+
     .img {
         filter: grayscale(100%);
     }
@@ -23,9 +26,7 @@
         padding-bottom: 10px;
     }
 
-
     .content {
-        padding: 4rem;
         text-align: center;
         vertical-align: middle;
         display: table-cell;
@@ -46,6 +47,7 @@
             text-align: center;
             text-transform: uppercase;
             line-height: 1;
+            text-decoration: underline;
         }
         
         .description {
@@ -53,8 +55,17 @@
             list-style-position: inside;
             font-weight: lighter;
             font-size: 2rem;
-            margin-top: 2rem;
-            margin-bottom: 3rem;
+            margin-top: 0.2rem;
+            margin-bottom: -1.5rem;
+        }
+
+        .description-header{
+            text-align: center;
+            list-style-position: inside;
+            font-weight: lighter;
+            font-size: 2rem;
+            margin-top: 1rem;
+            margin-bottom: -2rem;
         }
 
         .space {
@@ -71,21 +82,118 @@
             text-decoration: underline;
         }
     }
-
 }
 
-@media screen and (max-width: 700px) {
+.card-row {
+    display: flex;
+    border: 5px solid rgb(50, 97, 123);
+    background-color: rgba(0, 0, 0, 0.215);
+    border-radius: 3rem;
+    width: 1350px;
+    height: 830px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.card-1 {
+    margin-top: 40px;
+    margin-left: -440px;
+    margin-right: -800px;
+    width: 1120px;
+    height: 760px;
+    border-right: 5px dashed rgb(50, 97, 123);
+}
+
+.card-2 {
+    margin-top: 40px;
+    margin-left: 400px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 720px) {
     .impAnnouncements-tease {
+
+        /*borders wont appear on mobile*/
+        border-left: 0px solid rgb(50, 97, 123);
+        border-right: 0px solid rgb(50, 97, 123);
+
         .content{
         
             .title{
-                font-size: 2.7rem;
+                font-size: 1.75rem;
             }
 
             .description {
-                font-size: 1.8rem;
+                font-size: 1.4rem;
             }
+            
         }
+    }
+
+    .card-row {
+        display: block;
+        margin-left: 40px;
+        border: 0px solid rgb(50, 97, 123);
+        background-color: rgba(0, 0, 0, 0);
+        width: 0px;
+        height: 1300px;
+        margin-left: 15px;
+        margin-bottom: 40px;
+        margin-right: 20px;
+    }
+    
+    .card-1 {
+        margin-right: -750px;
+        margin-left: 2px;
+    }
+
+    .card-2 {
+        margin-left: 5px;
+        margin-top: -70px;
+    }
+    
+}
+
+
+@media screen and (min-width: 760px) and (max-width: 1280px) {
+    .impAnnouncements-tease {
+
+        border-left: 15px solid rgb(50, 97, 123);
+        border-right: 15px solid rgb(50, 97, 123);
+
+        .content{
+        
+            .title{
+                font-size: 1.75rem;
+            }
+
+            .description {
+                font-size: 1.4rem;
+            }
+            
+        }
+    }
+
+    .card-row {
+        display: block;
+        margin-left: 40px;
+        border: 0px solid rgb(50, 97, 123);
+        background-color: rgba(0, 0, 0, 0);
+        width: 0px;
+        height: 1300px;
+        margin-left: -75px;
+        margin-bottom: 120px;
+        margin-right: 20px;
+    }
+    
+    .card-1 {
+        margin-right: -750px;
+        margin-left: 2px;
+    }
+
+    .card-2 {
+        margin-left: 5px;
+        margin-top: -50px;
     }
     
 }
