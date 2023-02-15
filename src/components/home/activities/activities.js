@@ -26,7 +26,7 @@ class Activities extends Component{
               <div className="description">
               ACM hosts projects workshops, mentorship sessions, and events every year to provide students
               hands-on experience to develop skills, prepare students for their future careers, and to 
-              foster a sense of community
+              foster a sense of community.
               </div>
             </AnimationOnScroll>
           </div>
