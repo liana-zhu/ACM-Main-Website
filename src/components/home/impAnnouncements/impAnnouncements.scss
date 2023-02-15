@@ -11,8 +11,8 @@
     display: flex;
     flex-wrap: wrap;
 
-    border-left: 15px solid rgb(50, 97, 123);
-    border-right: 15px solid rgb(50, 97, 123);
+    border-left: 8px solid rgb(50, 97, 123);
+    border-right: 8px solid rgb(50, 97, 123);
 
     .img {
         filter: grayscale(100%);
@@ -55,8 +55,11 @@
             list-style-position: inside;
             font-weight: lighter;
             font-size: 2rem;
+            margin: auto;
             margin-top: 0.2rem;
-            margin-bottom: -1.5rem;
+            padding-bottom: 1em;
+            width:80%;
+            border-bottom: 5px solid white;
         }
 
         .description-header{
@@ -82,6 +85,37 @@
             text-decoration: underline;
         }
     }
+}
+
+.upcoming-title, .featured-title{
+    padding-top: 10px;
+    margin-bottom: 2rem;
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1;
+    text-decoration: underline;
+}
+
+
+.event-description {
+    font-weight: lighter;
+    font-size: 2rem;
+}
+
+.flyer-container{
+    width:22rem !important;
+    margin:auto;
+}
+
+#event-container{
+    border-radius: 4rem;
+    margin:2em 0 2em;
+}
+
+#upcoming-flyer{
+    border-right: 3px dashed rgb(196, 194, 194);
 }
 
 .card-row {
@@ -110,7 +144,7 @@
     margin-left: 400px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 720px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
     .impAnnouncements-tease {
 
         /*borders wont appear on mobile*/
@@ -128,6 +162,21 @@
             }
             
         }
+        
+
+        .description {
+            font-size: 1.4rem;
+        }
+    }
+
+    .upcoming-title, .featured-title{
+        font-size: 1.75rem;
+    }
+    .event-description {
+        font-size: 1rem;
+    }
+    #upcoming-flyer{
+        border-right: 0px dashed rgb(50, 97, 123);
     }
 
     .card-row {
@@ -155,7 +204,7 @@
 }
 
 
-@media screen and (min-width: 760px) and (max-width: 1280px) {
+@media screen and (min-width: 768px) and (max-width: 1280px) {
     .impAnnouncements-tease {
 
         border-left: 15px solid rgb(50, 97, 123);
@@ -172,6 +221,13 @@
             }
             
         }
+    }
+
+    .upcoming-title, .featured-title{
+        font-size: 1.75rem;
+    }
+    .event-description {
+        font-size: 1.4rem;
     }
 
     .card-row {
