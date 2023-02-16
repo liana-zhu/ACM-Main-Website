@@ -8,13 +8,15 @@
     overflow: hidden;
     opacity: .5;
     transform: translate3d(0, 0, 0);
+    margin-top: 3.9em;
   }
   
   .tech-slideshow2 > div {
     height: 100%;
     width: 1000%;
     background: linear-gradient(rgba(0, 0, 0, 0.40), rgb(0, 153, 255, 0.40)),
-    url('./images/flyers-collage2.jpg');
+    url('./images/banner4.jpg');
+    background-size: contain;
     filter: grayscale(1%);
     position: absolute;
     top: 0;
@@ -22,7 +24,7 @@
     transform: translate3d(0, 0, 0);
   }
   .tech-slideshow2 .mover2-1 {
-    animation: moveSlideshow 180s linear infinite;
+    animation: moveSlideshow 3000s linear infinite;
   }
   .tech-slideshow2 .mover2-2 {
     opacity: 0;
@@ -36,6 +38,6 @@
   
   @keyframes moveSlideshow {
     100% {
-      transform: translateX(-20%);
+      transform: translateX(-250%);
     }
   }
