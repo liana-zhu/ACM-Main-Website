@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Tab, Nav, Dropdown, DropdownButton } from "react-bootstrap";
+import { Row, Col, Tab, Dropdown, DropdownButton } from "react-bootstrap";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import "bootstrap/dist/css/bootstrap.css";
 import "./board.css";
@@ -134,16 +134,9 @@ class Board extends React.Component {
                             lastName="Ashour"
                             year="2022"
                             position="VP of Internal/External Affairs"
+                            linkedin="https://www.linkedin.com/in/rana-ashour-697684247"
+                            email="mailto:ranaashour3@gmail.com"
                           />
-                          <BoardLeaders
-                            photo={IMAGES.Jose2022}
-                            firstName="Jose"
-                            lastName="Zamora"
-                            year="2022"
-                            position="Project Manager"
-                          />
-                        </div>
-                        <div className="row-leaders centered-leader">
                           <BoardLeaders
                             photo={IMAGES.John2023}
                             firstName="John"
@@ -178,6 +171,8 @@ class Board extends React.Component {
                             lastName="Acosta"
                             year="2023"
                             position="Executive Officer"
+                            linkedin="www.linkedin.com/in/joseph-acosta-14ja2810"
+                            email="mailto:josephaacosta1527@gmail.com"
                           />
                         </div>
                         <div className="row-leaders centered-leader">
@@ -187,6 +182,9 @@ class Board extends React.Component {
                             lastName="Kani"
                             year="2023"
                             position="Executive Officer"
+                            linkedin="https://www.linkedin.com/in/keyvan-mahmoodzadeh-kani/"
+                            email="mailto:arasanjkk@gmail.com"
+
                           />
                           <BoardLeaders
                             photo={IMAGES.Jonathan2022}
@@ -237,6 +235,9 @@ class Board extends React.Component {
                             lastName="Pham"
                             year="2023"
                             position="Web Committee"
+                            linkedin = "https://www.linkedin.com/in/brian-pham-a5674b163/"
+                            email = "mailto:bpham23@calstatela.edu"
+                            github = "https://github.com/BPhi-ai"
                           />
                         </div>
                         <div className="row-leaders centered-leader">
@@ -246,6 +247,8 @@ class Board extends React.Component {
                             lastName="Dominguez"
                             year="2022"
                             position="Project Committee"
+                            linkedin="https://www.linkedin.com/in/charlie-martinez-dominguez-42aa461a8/"
+                            email="mailto:cherlescenter@gmail.com"
                           />
                           <BoardLeaders
                             photo={IMAGES.Ricardo2022}
@@ -278,6 +281,8 @@ class Board extends React.Component {
                             lastName="Islam"
                             year="2022"
                             position="Project Committee"
+                            linkedin="https://www.linkedin.com/mwlite/in/md-islam17"
+                            email="mailto:2003raisul@gmail.com"
                           />
                           <BoardLeaders
                             photo={IMAGES.Steven2022}
@@ -321,10 +326,10 @@ class Board extends React.Component {
                         </div>
                         <div className="row-leaders centered-leader">
                           <BoardLeaders
-                            photo={IMAGES.Zain2022}
-                            firstName="Zain"
-                            lastName="Syed"
-                            year="2022"
+                            photo={IMAGES.Sahis2023}
+                            firstName="Sahis"
+                            lastName="Neupane"
+                            year="2023"
                             position="Innovation Committee"
                           />
                           <BoardLeaders
@@ -336,13 +341,6 @@ class Board extends React.Component {
                           />
                         </div>
                         <div className="row-leaders centered-leader">
-                          <BoardLeaders
-                            photo={IMAGES.Sahis2023}
-                            firstName="Sahis"
-                            lastName="Neupane"
-                            year="2023"
-                            position="Innovation Committee"
-                          />
                           <BoardLeaders
                             photo={IMAGES.ACMLogo}
                             firstName="Veronica"
