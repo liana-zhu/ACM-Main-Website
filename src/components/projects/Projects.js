@@ -204,15 +204,6 @@ class Projects extends React.Component {
       "Diane Tablias",
       "Ricardo Miranda"
     ];
-    let buttonBFall2022 = (
-      <Button
-        variant="success"
-        size="lg"
-        href="https://forms.gle/6hUegfPTo2fhLBF57"
-      >
-        Join Now!
-      </Button>
-    );
     let begProjectImageF2022 = [
       "./fall2022/java1.jpg",
       "./fall2022/java2.jpg",
@@ -233,16 +224,6 @@ class Projects extends React.Component {
       "Jay Perez",
       "Charlie Dominguez",
     ];
-
-    let buttonAFall2022 = (
-      <Button
-        variant="success"
-        size="lg"
-        href="https://forms.gle/8qNqqZzt4heoFhqSA"
-      >
-        Join Now!
-      </Button>
-    );
     let advProjectImageF2022 = [
       "./fall2022/unity1.jpg",
       "./fall2022/unity2.jpg",
