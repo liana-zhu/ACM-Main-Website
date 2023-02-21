@@ -19,14 +19,13 @@ import NewProject from "./NewProject";
 import CurrentProjects from "./CurrentProjects.js";
 import PastProjects from "./PastProjects.js";
 
-
-
 class Projects extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       currentProjSem: "Current",
-      projects: null, //this stores all projects since the beginning
+      currentProj: null,
+      arciveProj: null,
     };
   }
 
@@ -43,7 +42,11 @@ class Projects extends React.Component {
           const data = doc.data();
           project.push(data);
         });
-        this.setState({ projects: project.reverse() });
+        this.setState({ currentProjSem: project.reverse()[0].semester });
+        this.setState({ currentProj: project.shift() });
+        this.setState({ arciveProj: project });
+        console.log(this.state.currentProj);
+        console.log(this.state.currentProj.level.advanced.flyer);
       })
       .catch((error) => console.log(error));
   }
@@ -88,7 +91,7 @@ class Projects extends React.Component {
             </b>
           </div>
         </div>
-        <div id="proj-contents">
+        <div id="proj-contents" class="pl-3">
           <Tab.Container defaultActiveKey="current-proj">
             <Nav className="project-tab-label px-3" variant="pills">
               <Nav.Item>
@@ -110,10 +113,14 @@ class Projects extends React.Component {
             </Nav>
             <Tab.Content>
               <Tab.Pane eventKey="current-proj">
-                <CurrentProjects />
+                {this.state.currentProj && (
+                  <CurrentProjects current={this.state.currentProj} />
+                )}
               </Tab.Pane>
               <Tab.Pane eventKey="archive-proj">
-                <PastProjects />
+                {this.state.arciveProj && (
+                  <PastProjects archive={this.state.arciveProj} />
+                )}
               </Tab.Pane>
             </Tab.Content>
           </Tab.Container>
