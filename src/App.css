@@ -225,7 +225,6 @@ body:not(.keyboardUser) *:focus {
     width: 19rem;
     position: absolute;
     top: 15px;
-
 }
 
 .footer p{
@@ -295,6 +294,16 @@ body:not(.keyboardUser) *:focus {
 
 .carousel .carousel-status {
     opacity: 0;
+}
+
+.carousel.carousel-slider .control-arrow {
+    top: 0;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    margin-top: 0;
+    padding: 2px;
+    height: 455px;
 }
 
 /* Animation for Marquee */
