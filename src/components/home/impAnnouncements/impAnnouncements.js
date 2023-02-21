@@ -43,6 +43,7 @@ class ImpAnnouncements extends Component {
       <section className="impAnnouncements-tease">
         <div className="content">
           <div className="title">Academic Year 2022-2023</div>
+          <div className = "video-header">
           <iframe
             width="560"
             height="315"
@@ -51,7 +52,7 @@ class ImpAnnouncements extends Component {
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
-          ></iframe>
+          ></iframe></div>
           <div className="description border-bottom">
             <p>
               Communications will be done via email, Discord, and social media
@@ -61,6 +62,7 @@ class ImpAnnouncements extends Component {
 
           <Row id="event-container">
               <Col md={6} id="upcoming-flyer" class="text-center">
+                <div className="event-section">
                 <h1 className="upcoming-title">Upcoming events</h1>
                 <p className="event-description">
                   Don't miss out with these events! See our
@@ -79,9 +81,10 @@ class ImpAnnouncements extends Component {
                       </div>
                     );
                   })}
-                </Carousel>
+                </Carousel></div>
               </Col>
               <Col md={6} id="featured-flyer" class="text-center">
+                <div className = "event-section">
                 <h1 className="featured-title">Featured Events</h1>
                 <p className="event-description">
                   For Spring 2023, ACM will be offering <br />
@@ -105,7 +108,7 @@ class ImpAnnouncements extends Component {
                       </div>
                     );
                   })}
-                </Carousel>
+                </Carousel></div>
               </Col>
           </Row>
 

@@ -1,7 +1,8 @@
 import React from "react";
-import { useState } from "react";
 import firebase from "../professional-events/firebaseConfig.js";
-import { Col, Tab, Dropdown, DropdownButton, Nav } from "react-bootstrap";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
+import { Col, Tab, Nav} from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 import "./Programs.css";
 import Mentorship from "./Mentorship.js";
@@ -58,6 +59,16 @@ class Programs extends React.Component {
   }
 
   render() {
+    let proDevImageS2023 = [
+      "./pro-dev-mentors/Daniel.jpg",
+      "./pro-dev-mentors/Gerardo.jpg",
+      "./pro-dev-mentors/wilson.jpg",
+    ];
+    let proDevNameS2023 = [
+      "Daniel Ramirez",
+      "Gerardo Ibarra",
+      "Wilson Thomas",
+    ];
     return (
       <div className="programs-body">
         <div className="mentor-title-text">
@@ -134,10 +145,36 @@ class Programs extends React.Component {
               <Tab.Content className="programs-tab-content">
                 <Tab.Pane eventKey={"current"}>
                   <Mentorship mentorship={this.state.currentProgram} />
-                </Tab.Pane>
+                  <div class = "border-carousel"></div>
+                  <h2>
+                    ❖{" "}
+                    <span className="highlight-text">
+                      Workshop Mentors and Guest Speakers:
+                    </span>
+                  </h2>
+                  <br></br>
+                  <div className="mentor-carousel">
+                    <Carousel infiniteLoop>
+                      {proDevImageS2023.map((value, index) => {
+                          return (
+                          <div>
+                            <img
+                              className="carousel-leader-image"
+                              src={require("" + value)}
+                              alt="leader"
+                            />
+                            <p className="legend">
+                              {proDevNameS2023[index]}
+                            </p>
+                          </div>
+                        );
+                      })}
+                    </Carousel>
+                  </div>
+              </Tab.Pane>
                 <Tab.Pane eventKey={"archive"}>
                   <ArchiveProgram mentorshipList={this.state.prevMentorship} />
-                </Tab.Pane>
+              </Tab.Pane>
               </Tab.Content>
             )}
           </Tab.Container>
