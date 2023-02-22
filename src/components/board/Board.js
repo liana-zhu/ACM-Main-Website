@@ -146,8 +146,20 @@ class Board extends React.Component {
                           />
                         </div>
                         <div className="row-leaders centered-leader">
-                          {/* <BoardLeaders photo={IMAGES.Vacant} firstName="Vacant" lastName="" year="2022" position="VP of Internal Affairs" /> */}
-                          {/* <BoardLeaders photo={IMAGES.Vacant} firstName="Vacant" lastName="" year="2022" position="VP of External Affairs" /> */}
+                          <BoardLeaders
+                            photo={IMAGES.Jonathan2022}
+                            firstName="Jonathan"
+                            lastName="Dang"
+                            year="2022"
+                            position="Project Manager: Beginners"
+                          />
+                          <BoardLeaders
+                            photo={IMAGES.Isabella2022}
+                            firstName="Isabella"
+                            lastName="Arreguin"
+                            year="2023"
+                            position="Project Manager: Advanced"
+                          />
                         </div>
                       </div>
                       <div className="row">
@@ -184,23 +196,6 @@ class Board extends React.Component {
                             position="Executive Officer"
                             linkedin="https://www.linkedin.com/in/keyvan-mahmoodzadeh-kani/"
                             email="mailto:arasanjkk@gmail.com"
-
-                          />
-                          <BoardLeaders
-                            photo={IMAGES.Jonathan2022}
-                            firstName="Jonathan"
-                            lastName="Dang"
-                            year="2022"
-                            position="Project Officer"
-                          />
-                        </div>
-                        <div className="row-leaders centered-leader">
-                          <BoardLeaders
-                            photo={IMAGES.Isabella2022}
-                            firstName="Isabella"
-                            lastName="Arreguin"
-                            year="2023"
-                            position="Project Officer"
                           />
                           <BoardLeaders
                             photo={IMAGES.Liana2022}
@@ -209,6 +204,9 @@ class Board extends React.Component {
                             year="2022"
                             position="Web Officer"
                           />
+                        </div>
+                        <div className="row-leaders centered-leader">
+                          
                         </div>
                         <div className="row-leaders centered-leader">
                           {/* <BoardLeaders photo={IMAGES.Vacant} firstName="Vacant" lastName="" year="2022" position="Finance Officer" /> */}
@@ -235,9 +233,9 @@ class Board extends React.Component {
                             lastName="Pham"
                             year="2023"
                             position="Web Committee"
-                            linkedin = "https://www.linkedin.com/in/brian-pham-a5674b163/"
-                            email = "mailto:bpham23@calstatela.edu"
-                            github = "https://github.com/BPhi-ai"
+                            linkedin="https://www.linkedin.com/in/brian-pham-a5674b163/"
+                            email="mailto:bpham23@calstatela.edu"
+                            github="https://github.com/BPhi-ai"
                           />
                         </div>
                         <div className="row-leaders centered-leader">
