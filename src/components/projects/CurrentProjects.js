@@ -21,6 +21,13 @@ const CurrentProjects = (props) => {
               portfolio, to which it could be used with resumes in the
               workforce!
             </Card.Text>
+            <h3>Leaders</h3>
+            <ul>
+
+            {props.current.level.beginners.leaders.map(({ img, name }) => (
+              <li>{name}</li>
+            ))}
+            </ul>
             <Button variant="primary" size="sm">
               More
             </Button>
@@ -49,6 +56,13 @@ const CurrentProjects = (props) => {
               using Java and Forge to create and implement a mod that will be
               used in Minecraft, one of the most played games in gaming history.
             </Card.Text>
+            <h3>Leaders</h3>
+            <ul>
+
+            {props.current.level.advanced.leaders.map(({ img, name }) => (
+              <li>{name}</li>
+            ))}
+            </ul>
             <Button variant="primary" size="sm">
               More
             </Button>

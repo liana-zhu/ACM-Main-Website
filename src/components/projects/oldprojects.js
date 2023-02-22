@@ -2,25 +2,33 @@ import React from "react";
 import firebase from "../professional-events/firebaseConfig.js";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import { Row, Col, Tab, Nav, Button, Container, Dropdown, DropdownButton} from "react-bootstrap";
+import {
+  Row,
+  Col,
+  Tab,
+  Nav,
+  Button,
+  Container,
+  Dropdown,
+  DropdownButton,
+} from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 import "./Projects.css";
 import LegacyProject from "./LegacyProject";
 import NewProject from "./NewProject";
 import CurrentProjects from "./CurrentProjects.js";
 
-
 const semesterYears = [
- ["spring2023projects", "Spring 2023"],
- ["fall2022projects", "Fall 2022"],
- ["spring2022projects", "Spring 2022"],
- ["fall2021projects", "Fall 2021"],
- ["spring2021projects", "Spring 2021"],
- ["fall2020projects", "Fall 2020"],
- ["spring2020projects", "Spring 2020"],
- ["fall2019projects", "Fall 2019"],
- ["spring2019projects", "Spring 2019"],
- ["fall2018projects", "Fall 2018"]
+  ["spring2023projects", "Spring 2023"],
+  ["fall2022projects", "Fall 2022"],
+  ["spring2022projects", "Spring 2022"],
+  ["fall2021projects", "Fall 2021"],
+  ["spring2021projects", "Spring 2021"],
+  ["fall2020projects", "Fall 2020"],
+  ["spring2020projects", "Spring 2020"],
+  ["fall2019projects", "Fall 2019"],
+  ["spring2019projects", "Spring 2019"],
+  ["fall2018projects", "Fall 2018"],
 ];
 
 class oldprojects extends React.Component {
@@ -36,13 +44,13 @@ class oldprojects extends React.Component {
     currentYear: semesterYears[0][1],
   };
 
-    /*This function updates the text of the dropdown button*/
-    changeYear = (sem) => {
-      this.setState({ currentYear: sem });
-    };
-    state = {
-      currentYear: semesterYears[0][1]
-    };
+  /*This function updates the text of the dropdown button*/
+  changeYear = (sem) => {
+    this.setState({ currentYear: sem });
+  };
+  state = {
+    currentYear: semesterYears[0][1],
+  };
 
   componentDidMount() {
     //this method call access all projects in reverse order
@@ -145,7 +153,7 @@ class oldprojects extends React.Component {
       })
       .catch((error) => console.log(error));
 
-      firebase
+    firebase
       .firestore()
       .collection("beginnerProjectS2023")
       .get()
@@ -190,14 +198,14 @@ class oldprojects extends React.Component {
       "./leaders/Fabricio.jpg",
       "./leaders/Shambhavi.jpg",
       "./leaders/James.jpg",
-      "./leaders/Muhammad.jpg"
+      "./leaders/Muhammad.jpg",
     ];
     let begLeaderNameS2023 = [
       "Jonathan Dang",
       "Fabricio Reyes",
       "Shambhavi Bhandari",
       "James Ybarra",
-      "Muhammad Islam"
+      "Muhammad Islam",
     ];
     let buttonASpring2023 = (
       <Button
@@ -221,7 +229,7 @@ class oldprojects extends React.Component {
       "Charlie Dominguez",
       "Steven Lopez",
       "Diane Tablias",
-      "Ricardo Miranda"
+      "Ricardo Miranda",
     ];
     let buttonBFall2022 = (
       <Button
@@ -267,7 +275,7 @@ class oldprojects extends React.Component {
       "./fall2022/unity2.jpg",
       "./fall2022/unity3.jpg",
       "./fall2022/unity4.jpg",
-    ]
+    ];
     let advLeaderImageF2022 = [
       "./leaders/AdvanceTeam.jpg",
       "./leaders/Jose.jpg",
@@ -308,7 +316,11 @@ class oldprojects extends React.Component {
     ];
 
     //let buttonBFall2021 = <Button variant="success" size="lg" href="https://forms.gle/bu8YRaxLFfTDXppN7">Join Now!</Button>
-    let begLeaderImageF2021 = ["./leaders/Ashley.jpg", "./leaders/Omar.jpg", "./leaders/Jorge.jpg"];
+    let begLeaderImageF2021 = [
+      "./leaders/Ashley.jpg",
+      "./leaders/Omar.jpg",
+      "./leaders/Jorge.jpg",
+    ];
     let begLeaderNameF2021 = ["Ashley Tran", "Omar Eclicerio", "Jorge Mata"];
 
     //let buttonAFall2021 = <Button variant="success" size="lg" href="https://forms.gle/egU7m8ra9XXh5NJ59">Join Now!</Button>
@@ -382,7 +394,6 @@ class oldprojects extends React.Component {
           </div>
         </div>
         */}
-        
 
         <div className="card project-card">
           <Tab.Container
@@ -392,25 +403,28 @@ class oldprojects extends React.Component {
             <Row>
               <Col sm={10}>
                 <Tab.Content className="project-tab-content">
-                <Col sm={2}>
-                  <div class = "semester-bar">
-                  <DropdownButton
-                    title={this.state.currentYear}
-                    id="dropdown-button"
-                    menuVariant="dark"
-                    className="ms-2"
-                  >
-                    {semesterYears.map((year) => (
-                      <Dropdown.Item
-                        eventKey={year[0]}
-                        onClick={(e) => this.changeYear(e.target.textContent)}
-                        className="item-dropdown"
+                  <Col sm={2}>
+                    <div class="semester-bar">
+                      <DropdownButton
+                        title={this.state.currentYear}
+                        id="dropdown-button"
+                        menuVariant="dark"
+                        className="ms-2"
                       >
-                      {year[1]}
-                    </Dropdown.Item>
-                    ))}
-                  </DropdownButton></div>
-                </Col>
+                        {semesterYears.map((year) => (
+                          <Dropdown.Item
+                            eventKey={year[0]}
+                            onClick={(e) =>
+                              this.changeYear(e.target.textContent)
+                            }
+                            className="item-dropdown"
+                          >
+                            {year[1]}
+                          </Dropdown.Item>
+                        ))}
+                      </DropdownButton>
+                    </div>
+                  </Col>
                   {/*
                                     New projects go under this block of comment
                                     Steps:
@@ -420,7 +434,7 @@ class oldprojects extends React.Component {
                                     4. Remember to update dates in the disclaimer above.
                                     */}
                   <Tab.Pane eventKey="spring2023projects">
-                    <CurrentProjects/> 
+                    <CurrentProjects />
                   </Tab.Pane>
                   <Tab.Pane eventKey="fall2022projects">
                     <Tab.Container defaultActiveKey="F2022beginner">
@@ -445,7 +459,7 @@ class oldprojects extends React.Component {
                       <Tab.Content className="project-tab-content">
                         <Tab.Pane eventKey="F2022beginner">
                           <div className="project-description">
-                          <div class = "border-carousel"></div>
+                            <div class="border-carousel"></div>
                             <Container>
                               <div class="row justify-content-start space">
                                 <div class="col-xs-1 col-sm-7 col-md-5 col-lg-4">
@@ -500,12 +514,9 @@ class oldprojects extends React.Component {
                               </div>
                             </Container>
                             <br></br>
-                            <div class = "border-carousel"></div>
+                            <div class="border-carousel"></div>
                             <h2>
-                              ❖{" "}
-                              <span className="highlight-text">
-                                Images:
-                              </span>
+                              ❖ <span className="highlight-text">Images:</span>
                             </h2>
                             <br></br>
                             <div className="carousel">
@@ -523,7 +534,7 @@ class oldprojects extends React.Component {
                                 })}
                               </Carousel>
                             </div>
-                            <div class = "border-carousel"></div>
+                            <div class="border-carousel"></div>
                             <h2>
                               ❖{" "}
                               <span className="highlight-text">
@@ -553,7 +564,7 @@ class oldprojects extends React.Component {
                         </Tab.Pane>
                         <Tab.Pane eventKey="F2022advanced">
                           <div className="project-description">
-                          <div class = "border-carousel"></div>
+                            <div class="border-carousel"></div>
                             <Container>
                               <div class="row justify-content-start space">
                                 <div class="col-xs-1 col-sm-7 col-md-5 col-lg-4">
@@ -605,12 +616,9 @@ class oldprojects extends React.Component {
                               </div>
                             </Container>
                             <br></br>
-                            <div class = "border-carousel"></div>
+                            <div class="border-carousel"></div>
                             <h2>
-                              ❖{" "}
-                              <span className="highlight-text">
-                                Images:
-                              </span>
+                              ❖ <span className="highlight-text">Images:</span>
                             </h2>
                             <br></br>
                             <div className="carousel">
@@ -628,7 +636,7 @@ class oldprojects extends React.Component {
                                 })}
                               </Carousel>
                             </div>
-                            <div class = "border-carousel"></div>
+                            <div class="border-carousel"></div>
                             <h2>
                               ❖{" "}
                               <span className="highlight-text">
