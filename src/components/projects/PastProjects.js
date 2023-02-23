@@ -7,6 +7,7 @@ import {
   Card,
   Row,
   Col,
+  Carousel,
 } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 import "./PastProjects.css";
@@ -23,13 +24,13 @@ class PastProjects extends React.Component {
   };
   render() {
     return (
-      <div id="archive-container">
-        <Tab.Container  defaultActiveKey={0}>
+      <div>
+        <Tab.Container id="archive-container" defaultActiveKey={0}>
           <DropdownButton
             title={this.state.currentYear}
             id="dropdown-button"
             menuVariant="dark"
-            className="ms-2"
+            className="ms-2 mb-5"
           >
             {this.state.archivedProj.map((proj, index) => (
               <Dropdown.Item
@@ -46,54 +47,80 @@ class PastProjects extends React.Component {
               <Tab.Pane eventKey={index}>
                 <Row>
                   <Col>
-                    <Card id="beginner-card" border="secondary" className="">
-                      <Row>
-                        <Col md={4}>
-                          <Card.Img
-                            variant="top"
-                            src={proj.level.beginners.flyer}
-                            class="img-fluid img-thumbnail"
-                          />
-                        </Col>
-                        <Col md={8}>
-                          <Card.Body>
-                            <h3>Beginners Workshop</h3>
-                            <h5>Skills learned</h5>
+                    <Row>
+                      <Col md={4} className="text-center">
+                        <img
+                          class="flyer img-fluid img-thumbnail"
+                          src={proj.level.beginners.flyer}
+                        />
+                      </Col>
+                      <Col md={8}>
+                        <h3>Beginners Workshop</h3>
+                        <div class="row">
+                          <div class="col-md-4">
+                            <h4>Skills:</h4>
                             <ul>
                               {proj.level.beginners.skills.map((skill) => (
                                 <li>{skill}</li>
                               ))}
                             </ul>
-                            <Card.Text></Card.Text>
-                          </Card.Body>
-                        </Col>
-                      </Row>
-                    </Card>
+                          </div>
+                          <div class="col-md-4">
+                            <h4>Leaders:</h4>
+                            <Carousel>
+                              {proj.level.beginners.leaders.map(
+                                ({ img, name }) => (
+                                  <Carousel.Item>
+                                    <img class="img-fluid" src={img}></img>
+                                    <Carousel.Caption>
+                                      <h4>{name}</h4>
+                                    </Carousel.Caption>
+                                  </Carousel.Item>
+                                )
+                              )}
+                            </Carousel>
+                          </div>
+                        </div>
+                      </Col>
+                    </Row>
                   </Col>
                   <Col>
-                    <Card id="advance-card" border="secondary" className="">
-                      <Row>
-                        <Col md={4} className="img-fluid">
-                          <Card.Img
-                            variant="top"
-                            src={proj.level.advanced.flyer}
-                            class="img-fluid img-thumbnail"
-                          />
-                        </Col>
-                        <Col md={8}>
-                          <Card.Body>
-                            <h3>Advanced Workshop</h3>
-                            <h5>Skills learned</h5>
+                    <Row>
+                      <Col md={4} className="order-md-2 text-center">
+                        <img
+                          class="flyer img-fluid img-thumbnail"
+                          src={proj.level.advanced.flyer}
+                        />
+                      </Col>
+                      <Col md={8} className="order-md-1">
+                        <h3 class="text-right">Advanced Workshop</h3>
+                        <div class="row">
+                          <div class="col-md-4">
+                            <h4>Leaders:</h4>
+                            <Carousel>
+                              {proj.level.advanced.leaders.map(
+                                ({ img, name }) => (
+                                  <Carousel.Item>
+                                    <img class="img-fluid" src={img}></img>
+                                    <Carousel.Caption>
+                                      <h4>{name}</h4>
+                                    </Carousel.Caption>
+                                  </Carousel.Item>
+                                )
+                              )}
+                            </Carousel>
+                          </div>
+                          <div class="col-md-4">
+                            <h4>Skills:</h4>
                             <ul>
                               {proj.level.advanced.skills.map((skill) => (
                                 <li>{skill}</li>
                               ))}
                             </ul>
-                            <Card.Text></Card.Text>
-                          </Card.Body>
-                        </Col>
-                      </Row>
-                    </Card>
+                          </div>
+                        </div>
+                      </Col>
+                    </Row>
                   </Col>
                 </Row>
               </Tab.Pane>
