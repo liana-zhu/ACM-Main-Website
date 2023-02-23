@@ -1,0 +1,35 @@
+#beginner-card, #advance-card{
+    background-color: rgb(169, 182, 233) !important;
+    
+}
+.card-title, .card-text{
+    color: black !important;
+}
+
+.card-title{
+    border: 3px solid black;
+    border-radius: 4em;
+    width:50%;
+    margin: auto;
+    padding: 1em 0 1em;
+    background-color: rgb(204, 235, 253);
+}
+
+.card-text{
+    font-size: larger;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    padding: 1em 0 1em;
+    margin-top: 1em 0 1em;
+}
+
+
+.carousel{
+    max-height:12em;
+    max-width:12em;
+    margin: auto;
+    background-color: rgb(0, 0, 0);
+}
+.carousel-inner, .carousel img{
+    max-height:12em;
+}

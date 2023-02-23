@@ -71,7 +71,7 @@ class PastProjects extends React.Component {
                               {proj.level.beginners.leaders.map(
                                 ({ img, name }) => (
                                   <Carousel.Item>
-                                    <img class="img-fluid" src={img}></img>
+                                    <img src={img}></img>
                                     <Carousel.Caption>
                                       <h4>{name}</h4>
                                     </Carousel.Caption>
@@ -101,7 +101,7 @@ class PastProjects extends React.Component {
                               {proj.level.advanced.leaders.map(
                                 ({ img, name }) => (
                                   <Carousel.Item>
-                                    <img class="img-fluid" src={img}></img>
+                                    <img src={img}></img>
                                     <Carousel.Caption>
                                       <h4>{name}</h4>
                                     </Carousel.Caption>
