@@ -91,40 +91,38 @@ class Projects extends React.Component {
             </b>
           </div>
         </div>
-        <div id="proj-contents" class="pl-3">
-          <Tab.Container defaultActiveKey="current-proj">
-            <Nav className="project-tab-label px-3" variant="pills">
-              <Nav.Item>
-                <Nav.Link
-                  className="project-nav-link-tab anchor-white"
-                  eventKey="current-proj"
-                >
-                  {this.state.currentProjSem}
-                </Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link
-                  className="project-nav-link-tab anchor-white"
-                  eventKey="archive-proj"
-                >
-                  Archive
-                </Nav.Link>
-              </Nav.Item>
-            </Nav>
-            <Tab.Content>
-              <Tab.Pane eventKey="current-proj">
-                {this.state.currentProj && (
-                  <CurrentProjects current={this.state.currentProj} />
-                )}
-              </Tab.Pane>
-              <Tab.Pane eventKey="archive-proj">
-                {this.state.arciveProj && (
-                  <PastProjects archive={this.state.arciveProj} />
-                )}
-              </Tab.Pane>
-            </Tab.Content>
-          </Tab.Container>
-        </div>
+        <Tab.Container defaultActiveKey="current-proj">
+          <Nav className="project-tab-label px-3" variant="pills">
+            <Nav.Item>
+              <Nav.Link
+                className="project-nav-link-tab anchor-white"
+                eventKey="current-proj"
+              >
+                {this.state.currentProjSem}
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                className="project-nav-link-tab anchor-white"
+                eventKey="archive-proj"
+              >
+                Archive
+              </Nav.Link>
+            </Nav.Item>
+          </Nav>
+          <Tab.Content id="main-content">
+            <Tab.Pane eventKey="current-proj">
+              {this.state.currentProj && (
+                <CurrentProjects current={this.state.currentProj} />
+              )}
+            </Tab.Pane>
+            <Tab.Pane eventKey="archive-proj" className="px-3">
+              {this.state.arciveProj && (
+                <PastProjects archive={this.state.arciveProj} />
+              )}
+            </Tab.Pane>
+          </Tab.Content>
+        </Tab.Container>
       </div>
     );
   }

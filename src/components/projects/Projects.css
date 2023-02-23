@@ -45,6 +45,9 @@
   padding-top: 30px;
 }
 
+#proj-contents{
+  width:100%;
+}
 .project-nav-link {
   color: white;
 }
