@@ -11,6 +11,7 @@ import {
   Container,
   Dropdown,
   DropdownButton,
+  NavDropdown,
 } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 import "./Projects.css";
@@ -25,7 +26,7 @@ class Projects extends React.Component {
     this.state = {
       currentProjSem: "Current",
       currentProj: null,
-      arciveProj: null,
+      archiveProj: null,
     };
   }
 
@@ -44,7 +45,7 @@ class Projects extends React.Component {
         });
         this.setState({ currentProjSem: project.reverse()[0].semester });
         this.setState({ currentProj: project.shift() });
-        this.setState({ arciveProj: project });
+        this.setState({ archiveProj: project });
         console.log(this.state.currentProj);
         console.log(this.state.currentProj.level.advanced.flyer);
       })
@@ -91,38 +92,37 @@ class Projects extends React.Component {
             </b>
           </div>
         </div>
-        <Tab.Container defaultActiveKey="current-proj">
-          <Nav className="project-tab-label px-3" variant="pills">
-            <Nav.Item>
-              <Nav.Link
-                className="project-nav-link-tab anchor-white"
-                eventKey="archive-proj"
-              >
-                Archive
-              </Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link
-                className="project-nav-link-tab anchor-white"
-                eventKey="current-proj"
-              >
-                {this.state.currentProjSem}
-              </Nav.Link>
-            </Nav.Item>
-          </Nav>
-          <Tab.Content id="main-content">
-            <Tab.Pane eventKey="current-proj">
-              {this.state.currentProj && (
+        {this.state.currentProj && this.state.archiveProj && (
+          <Tab.Container defaultActiveKey={this.state.currentProjSem}>
+            <Nav className="project-tab-label px-3" variant="pills">
+              <NavDropdown title="Archives">
+                {this.state.archiveProj.map((sem) => (
+                  <NavDropdown.Item eventKey={sem.semester}>
+                    {sem.semester}
+                  </NavDropdown.Item>
+                ))}
+              </NavDropdown>
+              <Nav.Item>
+                <Nav.Link
+                  className="project-nav-link-tab anchor-white"
+                  eventKey={this.state.currentProjSem}
+                >
+                  {this.state.currentProjSem}
+                </Nav.Link>
+              </Nav.Item>
+            </Nav>
+            <Tab.Content id="main-content">
+              <Tab.Pane eventKey={this.state.currentProjSem}>
                 <CurrentProjects current={this.state.currentProj} />
-              )}
-            </Tab.Pane>
-            <Tab.Pane eventKey="archive-proj" className="px-3">
-              {this.state.arciveProj && (
-                <PastProjects archive={this.state.arciveProj} />
-              )}
-            </Tab.Pane>
-          </Tab.Content>
-        </Tab.Container>
+              </Tab.Pane>
+              {this.state.archiveProj.map((sem) => (
+                <Tab.Pane eventKey={sem.semester} >
+                  <PastProjects archive={sem}/>
+                </Tab.Pane>
+              ))}
+            </Tab.Content>
+          </Tab.Container>
+        )}
       </div>
     );
   }

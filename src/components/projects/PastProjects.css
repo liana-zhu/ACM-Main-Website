@@ -1,41 +1,82 @@
-.carousel{
-    max-height:12em;
-    max-width:12em;
+.archive-flyer {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content-row {
+  margin: auto !important;
+}
+
+.carousel {
+  max-height: 12em;
+  max-width: 12em;
+  margin: auto;
+  background-color: rgb(0, 0, 0);
+}
+.carousel-inner,
+.carousel img {
+  max-height: 12em;
+  margin: auto;
+}
+.carousel-caption {
+  position: absolute;
+  top: 63%;
+}
+
+.carousel-caption h4 {
+  font-size: 1em;
+}
+.carousel-indicators {
+  bottom: -18px;
+}
+
+/**************************** Card Rotation ******************************/
+  
+  .cardbody {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+  }
+  
+  .cardbody:hover {
+    transform: rotateY(180deg);
+  }
+  
+  
+  /* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+  .thefront {
+    backface-visibility: hidden;
+  }
+  
+  /* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+  .theback {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    transform: rotateY(180deg);
+  }
+
+  /**************************** End Card Rotation ******************************/
+@media only screen and (max-width: 768px) {
+  .carousel {
+    max-height: 10em;
+    max-width: 10em;
     margin: auto;
     background-color: rgb(0, 0, 0);
-}
-.carousel-inner, .carousel img{
-    max-height:12em;
+  }
+  .carousel-inner,
+  .carousel img {
+    max-height: 10em;
     margin: auto;
-}
-.carousel-caption{
+  }
+  .carousel-caption {
     position: absolute;
-    top: 63%;
-    
-}
-
-.carousel-caption h4{
-    font-size: 1em;
-    
-}
-.carousel-indicators{
-    bottom:-18px;
-}
-
-@media only screen and (max-width: 768px){
-    .carousel{
-        max-height:10em;
-        max-width:10em;
-        margin: auto;
-        background-color: rgb(0, 0, 0);
-    }
-    .carousel-inner, .carousel img{
-        max-height:10em;
-        margin: auto;
-    }
-    .carousel-caption{
-        position: absolute;
-        top: 55%;
-        
-    }
+    top: 55%;
+  }
 }

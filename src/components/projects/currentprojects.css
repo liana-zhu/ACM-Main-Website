@@ -1,5 +1,5 @@
 #beginner-card, #advance-card{
-    background-color: rgb(169, 182, 233) !important;
+    background: url("./img/bluewavecard.jpg");
     
 }
 .card-title, .card-text{
