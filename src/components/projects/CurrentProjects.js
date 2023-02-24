@@ -14,8 +14,29 @@ import "bootstrap/dist/css/bootstrap.css";
 import "./currentprojects.css";
 
 const CurrentProjects = (props) => {
+  const [begInfoButton, setBegInfo] = useState("More");
+  const [advInfoButton, setAdvInfo] = useState("More");
   const [begOpen, setBegOpen] = useState(false);
   const [advOpen, setAdvOpen] = useState(false);
+
+  const infoButtonHandler = (projType) => {
+    if (projType === "beg") {
+      setBegOpen(!begOpen);
+      if (begOpen) {
+        setBegInfo("More");
+      } else {
+        setBegInfo("Less");
+      }
+    } else {
+      setAdvOpen(!advOpen);
+      if (advOpen) {
+        setAdvInfo("More");
+      } else {
+        setAdvInfo("Less");
+      }
+    }
+  };
+
   return (
     <Container>
       <Row>
@@ -24,11 +45,12 @@ const CurrentProjects = (props) => {
             <Card.Img
               variant="top"
               src={props.current.level.beginners.flyer}
-              style={{ width: "65%", margin: "auto" }}
-              class="mt-3 img-thumbnail"
+              class="current-flyer img-thumbnail shadow-lg mb-5 bg-white rounded"
             />
             <Card.Body>
-              <Card.Title>Beginners Workshop</Card.Title>
+              <Card.Title className="shadow mb-3">
+                Beginners Workshop
+              </Card.Title>
               <Card.Text>
                 Interested of making your own website portfolio? In this
                 workshop series, we will be using HTML and CSS to create your
@@ -37,18 +59,18 @@ const CurrentProjects = (props) => {
                 <Collapse in={begOpen}>
                   <div>
                     <div class="skills-section my-4">
-                      <h4 class="skill-header">Skills:</h4>
+                      <h4 class="skill-header">You will learn:</h4>
                       {props.current.level.beginners.skills.map((skill) => (
                         <div>
-                          <Icon.CaretLeftFill className="d-inline" />
-                          <span>{skill}</span>
                           <Icon.CaretRightFill className="d-inline" />
+                          <span>{skill}</span>
+                          <Icon.CaretLeftFill className="d-inline" />
                         </div>
                       ))}
                     </div>
                     <div class="leaders-section">
                       <h4 class="leaders-header">Leaders:</h4>
-                      <Carousel>
+                      <Carousel class="current-carousel">
                         {props.current.level.beginners.leaders.map(
                           ({ img, name }) => (
                             <Carousel.Item>
@@ -65,12 +87,13 @@ const CurrentProjects = (props) => {
                 </Collapse>
               </Card.Text>
               <Button
-                onClick={() => setBegOpen(!begOpen)}
+                onClick={(e) => infoButtonHandler(e.target.value)}
                 aria-expanded={begOpen}
                 variant="primary"
                 size="sm"
+                value={"beg"}
               >
-                More
+                {begInfoButton}
               </Button>
               <Button
                 variant="success"
@@ -87,11 +110,10 @@ const CurrentProjects = (props) => {
             <Card.Img
               variant="top"
               src={props.current.level.advanced.flyer}
-              style={{ width: "65%", margin: "auto" }}
-              class="mt-3 img-thumbnail"
+              class="current-flyer img-thumbnail shadow-lg mb-5 bg-white rounded"
             />
             <Card.Body>
-              <Card.Title>Advanced Workshop</Card.Title>
+              <Card.Title className="shadow mb-3">Advanced Workshop</Card.Title>
               <Card.Text>
                 Interested in game development? In this workshop series, we are
                 using Java and Forge to create and implement a mod that will be
@@ -100,12 +122,12 @@ const CurrentProjects = (props) => {
                 <Collapse in={advOpen}>
                   <div>
                     <div class="skills-section my-4">
-                      <h4 class="skill-header">Skills:</h4>
+                      <h4 class="skill-header">You will learn:</h4>
                       {props.current.level.advanced.skills.map((skill) => (
                         <div>
-                          <Icon.CaretLeftFill className="d-inline" />
-                          <span>{skill}</span>
                           <Icon.CaretRightFill className="d-inline" />
+                          <span>{skill}</span>
+                          <Icon.CaretLeftFill className="d-inline" />
                         </div>
                       ))}
                     </div>
@@ -130,10 +152,12 @@ const CurrentProjects = (props) => {
               <Button
                 variant="primary"
                 size="sm"
-                onClick={() => setAdvOpen(!advOpen)}
+                onClick={(e) => infoButtonHandler(e.target.value)}
                 aria-expanded={advOpen}
+                value={"adv"}
+                className="shadow"
               >
-                More
+                {advInfoButton}
               </Button>
               <Button
                 variant="success"

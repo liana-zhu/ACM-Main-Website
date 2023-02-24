@@ -96,17 +96,17 @@ class Projects extends React.Component {
             <Nav.Item>
               <Nav.Link
                 className="project-nav-link-tab anchor-white"
-                eventKey="current-proj"
+                eventKey="archive-proj"
               >
-                {this.state.currentProjSem}
+                Archive
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link
                 className="project-nav-link-tab anchor-white"
-                eventKey="archive-proj"
+                eventKey="current-proj"
               >
-                Archive
+                {this.state.currentProjSem}
               </Nav.Link>
             </Nav.Item>
           </Nav>
