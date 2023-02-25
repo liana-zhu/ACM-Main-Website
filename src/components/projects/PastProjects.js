@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import {
   Col,
   Row,
@@ -18,9 +19,6 @@ class PastProjects extends React.Component {
       archivedProj: props.archive,
       currentYear: props.archive.semester,
 
-      //These states are for the "more" button
-      begInfoButton: "More",
-      advInfoButton: "More",
       begOpen: false,
       advOpen: false,
     };
@@ -29,148 +27,137 @@ class PastProjects extends React.Component {
     this.setState({ currentYear: sem });
   };
 
-  infoButtonHandler = (projType) => {
-    if (projType === "beg") {
-      this.setState({ begOpen: !this.state.begOpen });
-      if (this.setState.begOpen) {
-        this.setState({ begInfoButton: "More" });
-      } else {
-        this.setState({ begInfoButton: "Less" });
-      }
-    } else {
-      this.setState({ advOpen: !this.state.advOpen });
-      if (this.state.advOpen) {
-        this.setState({ advInfoButton: "More" });
-      } else {
-        this.setState({ advInfoButton: "Less" });
-      }
-    }
-  };
   render() {
     return (
       <Container>
         <Row>
+        <div id="past-header" class="projectheader container-fluid text-center py-4">
+          <h1>{this.state.archivedProj.semester} (Archive)</h1>
+        </div>
           <Col md={6}>
-            <Card border="secondary" className="archive-card text-center">
-              <Card.Img
-                variant="top"
-                src={this.state.archivedProj.level.beginners.flyer}
-                class="archive-flyer img-thumbnail shadow-lg mb-5 bg-white rounded"
-              />
-              <Card.Body>
-                <Card.Title className="shadow mb-3">
+            <Card
+              border="secondary"
+              className="cardbody archive-card text-center"
+              style={{ transform: this.state.begOpen ? "rotateY(180deg)" : "none" }}
+            >
+              <div class="thefront">
+                <Card.Title className="shadow mt-3">
                   Beginners Workshop
                 </Card.Title>
-                <Card.Text>
-                  Interested of making your own website portfolio? In this
-                  workshop series, we will be using HTML and CSS to create your
-                  very own portfolio, to which it could be used with resumes in
-                  the workforce!
-                  <Collapse in={this.state.begOpen}>
+                <Card.Img
+                  variant="top"
+                  src={this.state.archivedProj.level.beginners.flyer}
+                  class="archive-flyer img-thumbnail shadow-lg mb-2 bg-white rounded"
+                />
+                <Card.Body>
+                  <Button
+                    variant="success"
+                    size="md"
+                    onClick={() => this.setState({begOpen: !this.state.begOpen})}
+                  >
+                    More info
+                  </Button>
+                </Card.Body>
+              </div>
+              <div class="theback">
+                <div class="skills-section my-4">
+                  <h4 class="skill-header">Skills:</h4>
+                  {this.state.archivedProj.level.beginners.skills.map((skill) => (
                     <div>
-                      <div class="skills-section my-4">
-                        <h4 class="skill-header">You will learn:</h4>
-                        {this.state.archivedProj.level.beginners.skills.map(
-                          (skill) => (
-                            <div>
-                              <Icon.CaretRightFill className="d-inline" />
-                              <span>{skill}</span>
-                              <Icon.CaretLeftFill className="d-inline" />
-                            </div>
-                          )
-                        )}
-                      </div>
-                      <div class="leaders-section">
-                        <h4 class="leaders-header">Leaders:</h4>
-                        <Carousel class="leader-carousel">
-                          {this.state.archivedProj.level.beginners.leaders.map(
-                            ({ img, name }) => (
-                              <Carousel.Item>
-                                <img src={img}></img>
-                                <Carousel.Caption>
-                                  <h4 class="leadername">{name}</h4>
-                                </Carousel.Caption>
-                              </Carousel.Item>
-                            )
-                          )}
-                        </Carousel>
-                      </div>
+                      <Icon.CaretRightFill className="d-inline" />
+                      <span>{skill}</span>
+                      <Icon.CaretLeftFill className="d-inline" />
                     </div>
-                  </Collapse>
-                </Card.Text>
-                <Button
-                  onClick={(e) => this.infoButtonHandler(e.target.value)}
-                  aria-expanded={this.state.begOpen}
-                  variant="primary"
-                  size="sm"
-                  value={"beg"}
-                >
-                  {this.state.begInfoButton}
-                </Button>
-                
-              </Card.Body>
+                  ))}
+                </div>
+                <div class="leaders-section">
+                  <h4 class="leaders-header">Leaders:</h4>
+                  <Carousel className="leadercarousel">
+                    {this.state.archivedProj.level.beginners.leaders.map(
+                      ({ img, name }) => (
+                        <Carousel.Item>
+                          <img src={img}></img>
+                          <Carousel.Caption>
+                            <h4 class="leadername">{name}</h4>
+                          </Carousel.Caption>
+                        </Carousel.Item>
+                      )
+                    )}
+                  </Carousel>
+                </div>
+                <Card.Footer>
+                  <Button
+                    variant="success"
+                    size="md"
+                    onClick={() => this.setState({begOpen: !this.state.begOpen})}
+                  >
+                    back
+                  </Button>
+                </Card.Footer>
+              </div>
             </Card>
           </Col>
           <Col md={6}>
-            <Card border="secondary" className="text-center">
-              <Card.Img
-                variant="top"
-                src={this.state.archivedProj.level.advanced.flyer}
-                class="archive-flyer img-thumbnail shadow-lg mb-5 bg-white rounded"
-              />
-              <Card.Body>
-                <Card.Title className="shadow mb-3">
+            <Card
+              border="secondary"
+              className="cardbody archive-card text-center"
+              style={{ transform: this.state.advOpen ? "rotateY(180deg)" : "none" }}
+            >
+              <div class="thefront">
+                <Card.Title className="shadow mt-3">
                   Advanced Workshop
                 </Card.Title>
-                <Card.Text>
-                  Interested in game development? In this workshop series, we
-                  are using Java and Forge to create and implement a mod that
-                  will be used in Minecraft, one of the most played games in
-                  gaming history.
-                  <Collapse in={this.state.advOpen}>
+                <Card.Img
+                  variant="top"
+                  src={this.state.archivedProj.level.advanced.flyer}
+                  class="archive-flyer img-thumbnail shadow-lg mb-2 bg-white rounded"
+                />
+                <Card.Body>
+                  <Button
+                    variant="success"
+                    size="md"
+                    onClick={() => this.setState({advOpen: !this.state.advOpen})}
+                  >
+                    More info
+                  </Button>
+                </Card.Body>
+              </div>
+              <div class="theback">
+                <div class="skills-section my-4">
+                  <h4 class="skill-header">Skills:</h4>
+                  {this.state.archivedProj.level.advanced.skills.map((skill) => (
                     <div>
-                      <div class="skills-section my-4">
-                        <h4 class="skill-header">You will learn:</h4>
-                        {this.state.archivedProj.level.advanced.skills.map(
-                          (skill) => (
-                            <div>
-                              <Icon.CaretRightFill className="d-inline" />
-                              <span>{skill}</span>
-                              <Icon.CaretLeftFill className="d-inline" />
-                            </div>
-                          )
-                        )}
-                      </div>
-                      <div class="leaders-section">
-                        <h4 class="leaders-header">Leaders:</h4>
-                        <Carousel>
-                          {this.state.archivedProj.level.advanced.leaders.map(
-                            ({ img, name }) => (
-                              <Carousel.Item>
-                                <img src={img}></img>
-                                <Carousel.Caption>
-                                  <h4 class="leadername">{name}</h4>
-                                </Carousel.Caption>
-                              </Carousel.Item>
-                            )
-                          )}
-                        </Carousel>
-                      </div>
+                      <Icon.CaretRightFill className="d-inline" />
+                      <span>{skill}</span>
+                      <Icon.CaretLeftFill className="d-inline" />
                     </div>
-                  </Collapse>
-                </Card.Text>
-                <Button
-                  variant="primary"
-                  size="sm"
-                  onClick={(e) => this.infoButtonHandler(e.target.value)}
-                  aria-expanded={this.state.advOpen}
-                  value={"adv"}
-                  className="shadow"
-                >
-                  {this.state.advInfoButton}
-                </Button>
-                
-              </Card.Body>
+                  ))}
+                </div>
+                <div class="leaders-section">
+                  <h4 class="leaders-header">Leaders:</h4>
+                  <Carousel className="leadercarousel">
+                    {this.state.archivedProj.level.advanced.leaders.map(
+                      ({ img, name }) => (
+                        <Carousel.Item>
+                          <img src={img}></img>
+                          <Carousel.Caption>
+                            <h4 class="leadername">{name}</h4>
+                          </Carousel.Caption>
+                        </Carousel.Item>
+                      )
+                    )}
+                  </Carousel>
+                </div>
+                <Card.Footer>
+                  <Button
+                    variant="success"
+                    size="md"
+                    onClick={() => this.setState({advOpen: !this.state.advOpen})}
+                  >
+                    back
+                  </Button>
+                </Card.Footer>
+              </div>
             </Card>
           </Col>
         </Row>

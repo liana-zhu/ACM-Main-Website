@@ -94,8 +94,8 @@ class Projects extends React.Component {
         </div>
         {this.state.currentProj && this.state.archiveProj && (
           <Tab.Container defaultActiveKey={this.state.currentProjSem}>
-            <Nav className="project-tab-label px-3" variant="pills">
-              <NavDropdown title="Archives">
+            <Nav className="project-tab-label px-3 mx-auto" variant="pills">
+              <NavDropdown className="archivedropdown btn-primary text-center" title="Archive" menuVariant="dark">
                 {this.state.archiveProj.map((sem) => (
                   <NavDropdown.Item eventKey={sem.semester}>
                     {sem.semester}
@@ -104,7 +104,7 @@ class Projects extends React.Component {
               </NavDropdown>
               <Nav.Item>
                 <Nav.Link
-                  className="project-nav-link-tab anchor-white"
+                  className="project-nav-link-tab"
                   eventKey={this.state.currentProjSem}
                 >
                   {this.state.currentProjSem}
