@@ -1,79 +1,105 @@
-#beginner-card, #advance-card{
-    background: url("./img/bluewavecard.jpg");
-    
+.current-card {
+  background-image: url("./img/bluewavecard.jpg");
+  background-size: cover;
 }
-.card-title, .card-text{
-    color: black !important;
-}
-
-.card-title{
-    border: 3px solid black;
-    border-radius: 4em;
-    width:50%;
-    margin: auto;
-    padding: 1em 0 1em;
-    background-color: rgb(204, 235, 253);
+.current-flyer {
+  width: 27em !important;
+  margin: auto !important;
+  margin-top: 1em !important;
 }
 
-.card-text{
-    font-size: larger;
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
-    padding: 1em 0 1em;
-    margin-bottom: 1em 0 1em;
+.content-row {
+  margin: auto !important;
 }
 
-.current-flyer{
-    width:27em !important;
-    margin:auto !important;
-    margin-top: 1em !important;
+.current-desc {
+  font-size: larger;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  padding: 0 10px 1em;
+  background-color: aliceblue;
+  color: black;
 }
 
-.skills-section{
-    border: .5em inset  rgb(0, 157, 248);
-    width: 65%;
-    margin:auto;
-    padding: .7em 0 .7em;
+.photos-section {
+  margin-top: 2em;
 }
 
+.carousel {
+  max-height: 12em;
+  max-width: 12em;
+  margin: auto;
+  background-color: rgb(0, 0, 0);
+}
+.photos-carousel {
+  max-height: 12em;
+  max-width: 17.5em;
+  margin: auto;
+  background-color: rgb(0, 0, 0);
+}
+.carousel-inner,
+.carousel img {
+  max-height: 12em;
+}
+.carousel-caption {
+  position: absolute;
+  top: 63%;
+}
+.carousel-caption h4 {
+  font-size: 1em;
+  background-color: rgba(46, 46, 46, 0.6);
+  padding: 3px 0 3px;
+  border-radius: 1em;
+}
+.carousel-indicators {
+  bottom: -18px;
+}
+/**************************** Card Rotation ******************************/
 
-.carousel{
-    max-height:12em;
-    max-width:12em;
+.cardbody {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+}
+
+/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+.thefront {
+  backface-visibility: hidden;
+}
+
+/* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+.theback {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+/**************************** End Card Rotation ******************************/
+@media only screen and (max-width: 768px) {
+  .carousel {
+    max-height: 10em;
+    max-width: 10em;
     margin: auto;
     background-color: rgb(0, 0, 0);
-}
-.carousel-inner, .carousel img{
-    max-height:12em;
-}
-.carousel-caption{
+  }
+  .photos-carousel {
+    max-height: 12em;
+    max-width: 17.5em;
+    margin: auto;
+    background-color: rgb(0, 0, 0);
+  }
+  .carousel-inner,
+  .carousel img {
+    max-height: 10em;
+    margin: auto;
+  }
+  .carousel-caption {
     position: absolute;
-    top: 63%;
-}
-.carousel-caption h4{
-    font-size: 1em;
-    background-color: rgba(46, 46, 46, 0.6);
-    padding: 3px 0 3px;
-    border-radius: 1em;
-}
-.carousel-indicators{
-    bottom:-18px;
-}
-
-@media only screen and (max-width: 768px){
-    .carousel{
-        max-height:10em;
-        max-width:10em;
-        margin: auto;
-        background-color: rgb(0, 0, 0);
-    }
-    .carousel-inner, .carousel img{
-        max-height:10em;
-        margin: auto;
-    }
-    .carousel-caption{
-        position: absolute;
-        top: 55%;
-        
-    }
+    top: 55%;
+  }
 }
